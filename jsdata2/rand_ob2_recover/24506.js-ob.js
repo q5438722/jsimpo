@@ -1,0 +1,4 @@
+function* myGenerator(_0x3ca6f9) {
+    var _0x2b93d7, _0x30751b;
+    return _0x30751b = (_0x2b93d7 = _0x3ca6f9, yield _0x2b93d7), Math['abs'](_0x30751b);
+}

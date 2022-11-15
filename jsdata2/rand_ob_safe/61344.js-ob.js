@@ -1,0 +1,16 @@
+  (function f() {
+    do
+    {
+      return 0x17;
+    }while (! []);
+    with (0x0)
+    {
+      try {
+        return 0x2a;
+      }
+      finally {
+        
+      }
+    }
+  }());
+  

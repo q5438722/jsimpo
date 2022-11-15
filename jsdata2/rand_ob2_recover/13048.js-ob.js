@@ -1,0 +1,7 @@
+function foo() {
+    var _0x268dfc = _0x2e49;
+    for (var _0x197369 = arguments[_0x268dfc(455)], _0x2a321c = new Array(_0x197369), _0x4cf642 = 0; _0x4cf642 < _0x197369; _0x4cf642++) {
+        _0x2a321c[_0x4cf642] = arguments[_0x4cf642];
+    }
+    var _0x51cf14 = _0x2a321c[0];
+}

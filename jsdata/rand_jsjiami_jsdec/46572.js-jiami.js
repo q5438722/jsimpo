@@ -1,0 +1,1 @@
+import _0x48474e from'fs';export default(_0x1c7577,_0x3b9e82)=>{var _0x1abe6f={'UuEMw':'Index should work'};_0x3b9e82['send'](_0x1abe6f['UuEMw']);};

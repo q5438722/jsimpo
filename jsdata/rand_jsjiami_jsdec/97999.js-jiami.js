@@ -1,0 +1,1 @@
+const {useState}=require('react');const {useCustom}=require('./useCustom');function Component(_0x87a2c2){var _0x45046d={'NYvNK':function(_0x4475a9,_0x544c21){return _0x4475a9(_0x544c21);},'bwubD':function(_0x555927){return _0x555927();}};const [_0x10ed1b]=_0x45046d['NYvNK'](useState,0x0);_0x45046d['bwubD'](useCustom);return _0x10ed1b;}module['exports']={'Component':Component};

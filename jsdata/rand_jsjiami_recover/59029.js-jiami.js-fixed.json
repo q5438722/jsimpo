@@ -1,0 +1,286 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "ObjectPattern",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "session"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "session"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "contextGroup"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "contextGroup"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "Protocol"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "Protocol"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true
+                            }
+                        ]
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "InspectorTest"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "start",
+                                "raw": "'start'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "Checks that Runtime.evaluate works with dirty context.",
+                                "raw": "'Checks that Runtime.evaluate works with dirty context.'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "let"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "contextGroup"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "setupInjectedScriptEnvironment",
+                        "raw": "'setupInjectedScriptEnvironment'"
+                    }
+                },
+                "arguments": []
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "Protocol"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "Runtime",
+                            "raw": "'Runtime'"
+                        }
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "enable",
+                        "raw": "'enable'"
+                    }
+                },
+                "arguments": []
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "Protocol"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "Runtime",
+                            "raw": "'Runtime'"
+                        }
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "onConsoleAPICalled",
+                        "raw": "'onConsoleAPICalled'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "InspectorTest"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "logMessage",
+                            "raw": "'logMessage'"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "Protocol"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "Runtime",
+                                            "raw": "'Runtime'"
+                                        }
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "evaluate",
+                                        "raw": "'evaluate'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "ObjectExpression",
+                                        "properties": [
+                                            {
+                                                "type": "Property",
+                                                "key": {
+                                                    "type": "Literal",
+                                                    "value": "expression",
+                                                    "raw": "'expression'"
+                                                },
+                                                "computed": false,
+                                                "value": {
+                                                    "type": "Literal",
+                                                    "value": "console.log(42)",
+                                                    "raw": "'console.log(42)'"
+                                                },
+                                                "kind": "init",
+                                                "method": false,
+                                                "shorthand": false
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "then",
+                                "raw": "'then'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "InspectorTest"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "logMessage",
+                                    "raw": "'logMessage'"
+                                }
+                            }
+                        ]
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "then",
+                        "raw": "'then'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "InspectorTest"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "completeTest",
+                            "raw": "'completeTest'"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

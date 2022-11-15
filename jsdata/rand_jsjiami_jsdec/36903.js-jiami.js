@@ -1,0 +1,1 @@
+import _0x412f5d from'./utils/createSvgIcon';import{jsx as _0x13a220}from'react/jsx-runtime';export default _0x412f5d(_0x13a220('path',{'d':'M20\x202H4c-1.1\x200-1.99.9-1.99\x202L2\x2022l4-4h14c1.1\x200\x202-.9\x202-2V4c0-1.1-.9-2-2-2zM6\x209h12v2H6V9zm8\x205H6v-2h8v2zm4-6H6V6h12v2z'}),'Chat');

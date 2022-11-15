@@ -1,0 +1,1 @@
+import _0x7c16bb from'./utils/createSvgIcon';import{jsx as _0x1ca24f}from'react/jsx-runtime';export default _0x7c16bb(_0x1ca24f('path',{'d':'M6\x2015v3h8v-3h-2.21l3.42-8H18V4h-8v3h2.21l-3.42\x208z'}),'FormatItalicTwoTone');

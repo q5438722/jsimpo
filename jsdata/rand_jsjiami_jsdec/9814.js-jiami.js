@@ -1,0 +1,1 @@
+module['exports']=function insertEnv(_0x4a34d9){var _0x45bf13={'sCjJI':'import\x20foo\x20from\x20\x27./foo\x27;'};const _0x3a81e0=_0x4a34d9['template'](_0x45bf13['sCjJI']);return{'visitor':{'Program'(_0x895dd6){_0x895dd6['node']['body']['unshift'](_0x3a81e0());}}};};

@@ -1,0 +1,48 @@
+Facts = {};const serverFactsCollection = "meteor_Facts_server";
+if (Meteor.isServer) {
+  var userIdFilter = function (e) {
+    return !!Package.autopublish;
+  };
+
+  Facts.setUserIdFilter = function (e) {
+    userIdFilter = e;
+  };const factsByPackage = {};
+  var activeSubscriptions = [];
+  Facts._factsByPackage = factsByPackage;Facts.incrementServerFact = function (t, e, a) {
+    if (!_.has(factsByPackage, t)) {
+      factsByPackage[t] = {};factsByPackage[t][e] = a;_.each(activeSubscriptions, function (e) {
+        e.added(serverFactsCollection, t, factsByPackage[t]);
+      });return;
+    }const c = factsByPackage[t];
+    if (!_.has(c, e)) factsByPackage[t][e] = 0;factsByPackage[t][e] += a;const s = {};
+    s[e] = factsByPackage[t][e];_.each(activeSubscriptions, function (e) {
+      e.changed(serverFactsCollection, t, s);
+    });
+  };Meteor.defer(function () {
+    Meteor.publish("meteor_facts", function () {
+      const a = this;
+      if (!userIdFilter(this.userId)) {
+        a.ready();return;
+      }activeSubscriptions.push(a);_.each(factsByPackage, function (e, t) {
+        a.added(serverFactsCollection, t, e);
+      });a.onStop(function () {
+        activeSubscriptions = _.without(activeSubscriptions, a);
+      });a.ready();
+    }, { is_auto: true });
+  });
+} else {
+  Facts.server = new Mongo.Collection(serverFactsCollection);Template.serverFacts.helpers({ factsByPackage: function () {
+      return Facts.server.find();
+    }, facts: function () {
+      const a = [];
+      _.each(this, function (e, t) {
+        if (t !== "_id") a.push({ name: t, value: e });
+      });return a;
+    } });Template.serverFacts.onCreated(function () {
+    this._stopHandle = Meteor.subscribe("meteor_facts");
+  });Template.serverFacts.onDestroyed(function () {
+    if (this._stopHandle) {
+      this._stopHandle.stop();this._stopHandle = null;
+    }
+  });
+}

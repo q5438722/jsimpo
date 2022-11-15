@@ -1,0 +1,1 @@
+beforeEach(function(){var _0x230ce6={'XWsEK':function(_0x598eb9,_0x35dec5){return _0x598eb9===_0x35dec5;}};this['addMatchers']({'toBePlaying':function(_0x480d02){var _0x45dbfd=this['actual'];return _0x230ce6['XWsEK'](_0x45dbfd['currentlyPlayingSong'],_0x480d02)&&_0x45dbfd['isPlaying'];}});});

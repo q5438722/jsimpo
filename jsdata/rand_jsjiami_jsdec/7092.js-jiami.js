@@ -1,0 +1,1 @@
+import{LANGUAGES}from'./constants';export default LANGUAGES['filter'](_0x406aae=>_0x406aae['highlight'])['map'](_0x396562=>_0x396562['short']||_0x396562['mode'])['map'](_0x1cce1b=>[_0x1cce1b,require('highlight.js/lib/languages/'+_0x1cce1b)]);

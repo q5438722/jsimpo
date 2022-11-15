@@ -1,0 +1,61 @@
+it("should parse fancy function calls with arrow functions", function () {
+  ("function" == typeof define && define.amd ? define : (e, t) => {
+    return t();
+  })(["./constructor"], e => {
+    return new e(1324);
+  });expect(module.exports).toHaveProperty("value", 1324);("function" == typeof define && define.amd ? define : (e, t) => {
+    return t();
+  })(["./constructor"], e => {
+    return new e(4231);
+  });expect(module.exports).toHaveProperty("value", 4231);
+});it("should parse fancy AMD calls with arrow functions", function () {
+  require(["./constructor", "./a"]);require("-> require module exports *constructor *a".substr(3).replace(/\*/g, "./").split(" "), (e, t, o, n, r) => {
+    expect(typeof e).toBe("function");expect(typeof t).toBe("object");expect(typeof o).toBe("object");expect(typeof e("./constructor")).toBe("function");expect(typeof n).toBe("function");expect(r).toBe("a");
+  });define("-> require module exports *constructor *a".substr(3).replace(/\*/g, "./").split(" "), (e, t, o, n, r) => {
+    expect(typeof e).toBe("function");expect(typeof t).toBe("object");expect(typeof o).toBe("object");expect(typeof e("./constructor")).toBe("function");expect(typeof n).toBe("function");expect(r).toBe("a");
+  });
+});it("should be able to use AMD-style require with arrow functions", function (n) {
+  const e = "b";
+  require(["./circular", "./templates/b", "./circular"], (e, t, o) => {
+    expect(e).toBe(1);expect(o).toBe(1);expect(t).toBe("b");n();
+  });
+});it("should be able to use require.js-style define with arrow functions", function (t) {
+  define("name", ["./circular"], e => {
+    expect(e).toBe(1);t();
+  });
+});it("should be able to use require.js-style define, optional dependencies, not exist, with arrow function", function (t) {
+  define("name", ["./optional"], e => {
+    expect(e.b).toBeFalsy();t();
+  });
+});it("should be able to use require.js-style define, special string, with arrow function", function (t) {
+  define(["require"], e => {
+    expect(e("./circular")).toBe(1);t();
+  });
+});it("should be able to use require.js-style define, without name, with arrow function", function (t) {
+  true && define(["./circular"], e => {
+    expect(e).toBe(1);t();
+  });
+});it("should be able to use require.js-style define, with empty dependencies, with arrow function", function (e) {
+  define("name", [], () => {
+    e();
+  });
+});it("should be able to use require.js-style define, without dependencies, with arrow function", function (e) {
+  true && define("name", () => {
+    e();
+  });
+});it("should offer AMD-style define for CommonJs with arrow function", function (n) {
+  const r = exports;
+  const i = module;
+  define((e, t, o) => {
+    expect(typeof e).toBe("function");expect(t).toBe(r);expect(o).toBe(i);expect(e("./circular")).toBe(1);n();
+  });
+});it("should pull in all dependencies of an AMD module with arrow function", function (t) {
+  define(e => {
+    expect(e("./amdmodule")).toBe("a");t();
+  });
+});it("should create a chunk for require.js require, with arrow function", function (t) {
+  var o = true;
+  require(["./c"], e => {
+    expect(o).toBe(false);expect(e).toBe("c");expect(require("./d")).toBe("d");t();
+  });o = false;
+});

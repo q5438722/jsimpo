@@ -1,0 +1,1 @@
+import jQuery from"../core.js";import"../queue.js";import"../effects.js";jQuery.fn.delay=function(r,e){r=jQuery.fx?jQuery.fx.speeds[r]||r:r;e=e||"fx";return this.queue(e,function(e,u){var o=window.setTimeout(e,r);u.stop=function(){window.clearTimeout(o)}})};

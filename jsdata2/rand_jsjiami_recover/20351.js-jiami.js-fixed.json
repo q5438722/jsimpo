@@ -1,0 +1,117 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "MemberExpression",
+                "computed": true,
+                "object": {
+                    "type": "Identifier",
+                    "name": "Array"
+                },
+                "property": {
+                    "type": "Literal",
+                    "value": "map",
+                    "raw": "'map'"
+                }
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "makeIterator"
+            },
+            "params": [],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "YieldExpression",
+                            "argument": {
+                                "type": "Literal",
+                                "value": 1,
+                                "raw": "0x1"
+                            },
+                            "delegate": false
+                        }
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "YieldExpression",
+                            "argument": {
+                                "type": "Literal",
+                                "value": 2,
+                                "raw": "0x2"
+                            },
+                            "delegate": false
+                        }
+                    }
+                ]
+            },
+            "generator": true,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "ForOfStatement",
+            "left": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "itItem"
+                        },
+                        "init": null
+                    }
+                ],
+                "kind": "const"
+            },
+            "right": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "makeIterator"
+                },
+                "arguments": []
+            },
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "console"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "log",
+                                    "raw": "'log'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "itItem"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

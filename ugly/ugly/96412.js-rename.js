@@ -1,0 +1,1 @@
+var mkdirp=require("../");var path=require("path");var fs=require("fs");var test=require("tap").test;var _0755=parseInt("0755",8);test("root",function(e){var t=path.resolve("/");mkdirp(t,_0755,function(r){if(r)throw r;fs.stat(t,function(r,t){if(r)throw r;e.ok(t.isDirectory(),"target is a directory");e.end()})})});

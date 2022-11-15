@@ -1,0 +1,1 @@
+var PropertyValueSet=function(e,r,f,n,i,t){if(n===undefined){n=0}if(i===undefined){i=0}if(t===undefined){t=1}var u;var d=0;var o=e.length;if(t===1){for(u=i;u<o;u++){e[u][r]=f+d*n;d++}}else{for(u=i;u>=0;u--){e[u][r]=f+d*n;d++}}return e};module.exports=PropertyValueSet;

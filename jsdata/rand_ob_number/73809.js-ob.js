@@ -1,0 +1,59 @@
+import _0x15951b from 'assert';
+import { slice } from './utils.js';
+import _0x38025b from '../dropRightWhile.js';
+describe('dropRightWhile', function () {
+    var _0x4ea87d = [
+            0x5e + 0x9 * 0x279 + 0x243 * -0xa,
+            0x3b3 * 0x2 + -0x1 * 0x2669 + 0x1f05,
+            0xf57 + -0x18d * -0x1 + -0x10e1,
+            0xb * 0x33b + -0x1 * 0x13de + -0x1 * 0xfa7
+        ], _0x46598b = [
+            {
+                'a': 0x0,
+                'b': 0x0
+            },
+            {
+                'a': 0x1,
+                'b': 0x1
+            },
+            {
+                'a': 0x2,
+                'b': 0x2
+            }
+        ];
+    it('should\x20drop\x20elements\x20while\x20`predicate`\x20returns\x20truthy', function () {
+        var _0x36d629 = _0x38025b(_0x4ea87d, function (_0x3039de) {
+            return _0x3039de > 0x2 * 0x107 + 0x1d3 + -0x1 * 0x3df;
+        });
+        _0x15951b['deepStrictEqual'](_0x36d629, [
+            -0xa92 + 0x1178 + -0x161 * 0x5,
+            0xbaf * -0x3 + -0x25e1 * 0x1 + 0x2478 * 0x2
+        ]);
+    }), it('should\x20provide\x20correct\x20`predicate`\x20arguments', function () {
+        var _0x4ca7c0;
+        _0x38025b(_0x4ea87d, function () {
+            _0x4ca7c0 = slice['call'](arguments);
+        }), _0x15951b['deepStrictEqual'](_0x4ca7c0, [
+            0x2ad * -0x1 + 0x2 * 0xa17 + -0x117d,
+            0x1 * -0x1cb9 + 0x7a9 + 0x1513,
+            _0x4ea87d
+        ]);
+    }), it('should\x20work\x20with\x20`_.matches`\x20shorthands', function () {
+        _0x15951b['deepStrictEqual'](_0x38025b(_0x46598b, { 'b': 0x2 }), _0x46598b['slice'](0x1 * -0x11a6 + 0x2 * 0x11a + 0x3 * 0x526, -0x5 * -0x337 + 0xe4f + -0x24 * 0xd8));
+    }), it('should\x20work\x20with\x20`_.matchesProperty`\x20shorthands', function () {
+        _0x15951b['deepStrictEqual'](_0x38025b(_0x46598b, [
+            'b',
+            -0x3 * 0x73a + -0x978 + 0x1f28
+        ]), _0x46598b['slice'](-0x138 + 0x1 * -0x8cb + 0xa03, 0x1369 * -0x1 + -0xb6a + -0x36d * -0x9));
+    }), it('should\x20work\x20with\x20`_.property`\x20shorthands', function () {
+        _0x15951b['deepStrictEqual'](_0x38025b(_0x46598b, 'b'), _0x46598b['slice'](-0x5aa + 0x20a6 + -0xb * 0x274, -0x363 * -0x4 + -0x1 * -0xd8a + 0x1 * -0x1b15));
+    }), it('should\x20return\x20a\x20wrapped\x20value\x20when\x20chaining', function () {
+        var _0x38e691 = _(_0x4ea87d)['dropRightWhile'](function (_0x92daa3) {
+            return _0x92daa3 > 0x30 * 0x86 + 0x2 * -0x90 + -0xbff * 0x2;
+        });
+        _0x15951b['ok'](_0x38e691 instanceof _), _0x15951b['deepEqual'](_0x38e691['value'](), [
+            -0x7 * 0xd3 + -0x43 * -0x7 + 0x3f1,
+            0x5 * -0x3d7 + 0x122f + 0x106
+        ]);
+    });
+});

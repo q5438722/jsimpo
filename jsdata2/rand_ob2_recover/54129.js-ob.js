@@ -1,0 +1,5 @@
+const common = require(_0x27a60a(364)), fixtures = require('../common/fixtures'), tmpdir = require(_0x27a60a(365)), assert = require(_0x27a60a(366)), {join} = require(_0x27a60a(367)), childProcess = require('child_process'), fs = require('fs'), stdoutScript = fixtures[_0x27a60a(367)](_0x27a60a(368)), tmpFile = join(tmpdir[_0x27a60a(367)], _0x27a60a(369)), cmd = '"' + process['argv'][0] + _0x27a60a(370) + stdoutScript + _0x27a60a(371) + tmpFile + '"', string = _0x27a60a(372) + _0x27a60a(373) + _0x27a60a(374) + _0x27a60a(375) + _0x27a60a(376) + _0x27a60a(377) + _0x27a60a(378) + _0x27a60a(379) + '采用封建制和郡县制并存的制度\uFF0C' + _0x27a60a(380) + '有效的改善了岭南地区落后的政治\u3001##济现状\u3002\n';
+tmpdir[_0x27a60a(381)](), console[_0x27a60a(382)](cmd + '\n\n'), fs['writeFileSync'](tmpFile, string), childProcess[_0x27a60a(383)](cmd, common['mustCall'](function (_0x59b5a4, _0x273507, _0xc8e00b) {
+    const _0x38dedc = _0x27a60a;
+    fs[_0x38dedc(384)](tmpFile), assert[_0x38dedc(385)](_0x59b5a4), assert[_0x38dedc(386)](_0x273507, _0x38dedc(387) + string), assert[_0x38dedc(386)](_0xc8e00b, '');
+}));

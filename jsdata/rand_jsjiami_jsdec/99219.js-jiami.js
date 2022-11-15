@@ -1,0 +1,1 @@
+'use strict';const cliCommandsSchema=require('../cli/commands-schema');class Metrics{constructor(_0x2292ca,_0xffa73a){var _0x17e272={'FiCTv':'metrics'};this['serverless']=_0x2292ca;this['options']=_0xffa73a;this['commands']={'metrics':{...cliCommandsSchema['get'](_0x17e272['FiCTv'])}};}}module['exports']=Metrics;

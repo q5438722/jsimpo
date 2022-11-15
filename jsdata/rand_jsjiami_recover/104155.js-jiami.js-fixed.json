@@ -1,0 +1,159 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "Literal",
+                "value": "use strict",
+                "raw": "'use strict'"
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "hasPragma"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x4750d0"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Literal",
+                                    "value": {},
+                                    "raw": "/^\\s*#[^\\S\\n]*@(format|prettier)\\s*(\\n|$)/",
+                                    "regex": {
+                                        "pattern": "^\\s*#[^\\S\\n]*@(format|prettier)\\s*(\\n|$)",
+                                        "flags": ""
+                                    }
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "test",
+                                    "raw": "'test'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x4750d0"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "insertPragma"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x59546a"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                                "type": "Literal",
+                                "value": "# @format\n\n",
+                                "raw": "'#\\x20@format\\x0a\\x0a'"
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "_0x59546a"
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "module"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "exports",
+                        "raw": "'exports'"
+                    }
+                },
+                "right": {
+                    "type": "ObjectExpression",
+                    "properties": [
+                        {
+                            "type": "Property",
+                            "key": {
+                                "type": "Literal",
+                                "value": "hasPragma",
+                                "raw": "'hasPragma'"
+                            },
+                            "computed": false,
+                            "value": {
+                                "type": "Identifier",
+                                "name": "hasPragma"
+                            },
+                            "kind": "init",
+                            "method": false,
+                            "shorthand": false
+                        },
+                        {
+                            "type": "Property",
+                            "key": {
+                                "type": "Literal",
+                                "value": "insertPragma",
+                                "raw": "'insertPragma'"
+                            },
+                            "computed": false,
+                            "value": {
+                                "type": "Identifier",
+                                "name": "insertPragma"
+                            },
+                            "kind": "init",
+                            "method": false,
+                            "shorthand": false
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}

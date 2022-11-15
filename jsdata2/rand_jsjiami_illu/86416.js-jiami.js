@@ -1,0 +1,81 @@
+const vip = 'vip.v6';
+const _0x4570 = ['vip.v6', 'Ek99BnDDkD4cw6lC', 'Vvuidph.JGwvQ6kObEtfYdhV=='];
+(function (_0x1d3c9a, _0x523c8f, _0xd08376) {
+  const _0x4e007d = function (_0x18e31f, _0x3dce63, _0x195881, _0x4f21f3, _0x6fb64e) {
+    _0x3dce63 = _0x3dce63 >> 0x8, _0x6fb64e = 'po';const _0x506dbd = 'shift';
+    const _0x591d98 = 'push';
+    if (_0x3dce63 < _0x18e31f) {
+      while (--_0x18e31f) {
+        _0x4f21f3 = _0x1d3c9a.shift();if (_0x3dce63 === _0x18e31f) {
+          _0x3dce63 = _0x4f21f3;_0x195881 = _0x1d3c9a.pop();
+        } else if (_0x3dce63 && _0x195881.replace(/[VudhJGwQkObEtfYdhV=]/g, '') === _0x3dce63) {
+          _0x1d3c9a.push(_0x4f21f3);
+        }
+      }_0x1d3c9a.push(_0x1d3c9a.shift());
+    }return 0xa3266;
+  };
+
+  return _0x4e007d(++_0x523c8f, _0xd08376) >> _0x523c8f ^ _0xd08376;
+})(_0x4570, 0x13c, 0x13c00);
+const _0x43d5 = function (_0x1377c0, _0x1b8776) {
+  _0x1377c0 = ~~'0x'.concat(_0x1377c0);var _0x10cc18 = _0x4570[_0x1377c0];
+  if (_0x43d5.gBQOYn === undefined) {
+    (function () {
+      const _0x2236f9 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x593d5f = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x2236f9.atob || (_0x2236f9['atob'] = function (_0x5c63a5) {
+        const _0x3d591d = String(_0x5c63a5).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x1e5bcb = 0x0, _0x2f27f8, _0x43bc71, _0x14ce81 = 0x0, _0x2b718c = ''; _0x43bc71 = _0x3d591d.charAt(_0x14ce81++); ~_0x43bc71 && (_0x2f27f8 = _0x1e5bcb % 0x4 ? _0x2f27f8 * 0x40 + _0x43bc71 : _0x43bc71, _0x1e5bcb++ % 0x4) ? _0x2b718c += String.fromCharCode(0xff & _0x2f27f8 >> (-2 * _0x1e5bcb & 0x6)) : 0x0) {
+          _0x43bc71 = _0x593d5f.indexOf(_0x43bc71);
+        }return _0x2b718c;
+      });
+    })();
+    const _0x4b7d99 = function (_0x5c35aa, _0x1b8776) {
+      const _0xa38a5e = [];
+      var _0x55c7d1 = 0x0;
+
+      var _0x23f976;
+
+      var _0x3c6020 = '';
+      var _0x24fc90 = '';
+      _0x5c35aa = atob(_0x5c35aa); // Unknown loop control variable
+      for (var _0x5079a7 = 0x0, _0x3274a9 = _0x5c35aa.length; _0x5079a7 < _0x3274a9; _0x5079a7++) {
+        _0x24fc90 += '%' + ('00' + _0x5c35aa.charCodeAt(_0x5079a7).toString(0x10)).slice(-2);
+      }_0x5c35aa = decodeURIComponent(_0x24fc90); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x18c2aa = 0x0; _0x18c2aa < 0x100; _0x18c2aa++) {
+        _0xa38a5e[_0x18c2aa] = _0x18c2aa;
+      } // Unknown loop control variable
+      for (_0x18c2aa = 0x0; _0x18c2aa < 0x100; _0x18c2aa++) {
+        _0x55c7d1 = (_0x55c7d1 + _0xa38a5e[_0x18c2aa] + _0x1b8776.charCodeAt(_0x18c2aa % _0x1b8776.length)) % 0x100;_0x23f976 = _0xa38a5e[_0x18c2aa];_0xa38a5e[_0x18c2aa] = _0xa38a5e[_0x55c7d1];_0xa38a5e[_0x55c7d1] = _0x23f976;
+      }_0x18c2aa = 0x0;_0x55c7d1 = 0x0; // Unevaluable loop test expression
+      for (var _0x5fc7c = 0x0; _0x5fc7c < _0x5c35aa.length; _0x5fc7c++) {
+        _0x18c2aa = (_0x18c2aa + 0x1) % 0x100;_0x55c7d1 = (_0x55c7d1 + _0xa38a5e[_0x18c2aa]) % 0x100;_0x23f976 = _0xa38a5e[_0x18c2aa];_0xa38a5e[_0x18c2aa] = _0xa38a5e[_0x55c7d1];_0xa38a5e[_0x55c7d1] = _0x23f976;_0x3c6020 += String.fromCharCode(_0x5c35aa.charCodeAt(_0x5fc7c) ^ _0xa38a5e[(_0xa38a5e[_0x18c2aa] + _0xa38a5e[_0x55c7d1]) % 0x100]);
+      }return _0x3c6020;
+    };
+
+    _0x43d5['EKPCpV'] = _0x4b7d99;_0x43d5['pFQXsC'] = {};_0x43d5['gBQOYn'] = true;
+  }const _0x936ade = _0x43d5.pFQXsC[_0x1377c0];
+  if (_0x936ade === undefined) {
+    if (_0x43d5.GoGYrd === undefined) {
+      _0x43d5['GoGYrd'] = true;
+    }_0x10cc18 = _0x43d5.EKPCpV(_0x10cc18, _0x1b8776);_0x43d5.pFQXsC[_0x1377c0] = _0x10cc18;
+  } else {
+    _0x10cc18 = _0x936ade;
+  }return _0x10cc18;
+}; /**
+   * @author       Richard Davey <rich@photonstorm.com>
+   * @copyright    2020 Photon Storm Ltd.
+   * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+   */
+
+
+const Triangle = require(_0x43d5('0', 'ujYs'));
+
+const Clone = function (_0x487ef8) {
+  return new Triangle(_0x487ef8.x1, _0x487ef8.y1, _0x487ef8.x2, _0x487ef8.y2, _0x487ef8.x3, _0x487ef8.y3);
+};
+
+module['exports'] = Clone;

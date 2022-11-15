@@ -1,0 +1,110 @@
+const _0x7280 = [
+    '47umjSsd',
+    '154631oXekwu',
+    '1KiENhj',
+    '1rVfBZd',
+    '73905LInrGp',
+    '24BFxEyP',
+    '4038tgQtCG',
+    'repeat',
+    'split',
+    'length',
+    'shift',
+    'join',
+    'replace',
+    'grey',
+    'green',
+    'bold',
+    'cyan',
+    'white',
+    'Nuxt\x20Message',
+    'assign',
+    '✔\x20Nuxt\x20Success',
+    'yellow',
+    '⚠\x20Nuxt\x20Warning',
+    'red',
+    '✖\x20Nuxt\x20Fatal\x20Error',
+    '68739WMKxjt',
+    '33ZEFfaF',
+    '3911zaXRHa',
+    '193850xGOIrp',
+    '881JalrKd'
+];
+(function (_0x46a902, _0x1f439d) {
+    const _0x145c80 = _0x3e32;
+    while (!![]) {
+        try {
+            const _0x5121c5 = parseInt(_0x145c80(0xb2)) + parseInt(_0x145c80(0xb3)) * parseInt(_0x145c80(0xb4)) + parseInt(_0x145c80(0xb5)) + -parseInt(_0x145c80(0xb6)) * -parseInt(_0x145c80(0xb7)) + -parseInt(_0x145c80(0xb8)) * parseInt(_0x145c80(0xb9)) + parseInt(_0x145c80(0xba)) * -parseInt(_0x145c80(0xbb)) + parseInt(_0x145c80(0xbc)) * -parseInt(_0x145c80(0xbd));
+            if (_0x5121c5 === _0x1f439d)
+                break;
+            else
+                _0x46a902['push'](_0x46a902['shift']());
+        } catch (_0x18d4ba) {
+            _0x46a902['push'](_0x46a902['shift']());
+        }
+    }
+}(_0x7280, 0x1a45b));
+import _0x5b4906 from 'wrap-ansi';
+import _0xc18b0 from 'chalk';
+function _0x3e32(_0x529c0e, _0x1412bc) {
+    return _0x3e32 = function (_0x728008, _0x3e32c6) {
+        _0x728008 = _0x728008 - 0xb2;
+        let _0x9a17d7 = _0x7280[_0x728008];
+        return _0x9a17d7;
+    }, _0x3e32(_0x529c0e, _0x1412bc);
+}
+import _0x5ddebc from 'boxen';
+import { maxCharsPerLine } from './constants';
+export function indent(_0x2555b9, _0x169639 = '\x20') {
+    const _0x170cb0 = _0x3e32;
+    return _0x169639[_0x170cb0(0xbe)](_0x2555b9);
+}
+export function indentLines(_0x1f9f90, _0x522151, _0x194e69) {
+    const _0x492896 = _0x3e32, _0x3cafd7 = Array['isArray'](_0x1f9f90) ? _0x1f9f90 : _0x1f9f90[_0x492896(0xbf)]('\x0a');
+    let _0x360b74 = '';
+    if (_0x3cafd7[_0x492896(0xc0)]) {
+        const _0x2061bd = indent(_0x194e69 === undefined ? _0x522151 : _0x194e69);
+        _0x360b74 = _0x2061bd + _0x3cafd7[_0x492896(0xc1)]();
+    }
+    if (_0x3cafd7['length']) {
+        const _0x1f58e1 = indent(_0x522151);
+        _0x360b74 += '\x0a' + _0x3cafd7['map'](_0x100bf5 => _0x1f58e1 + _0x100bf5)[_0x492896(0xc2)]('\x0a');
+    }
+    return _0x360b74;
+}
+export function foldLines(_0x2259c9, _0x305112, _0x1496ed, _0x31a097 = maxCharsPerLine()) {
+    return indentLines(_0x5b4906(_0x2259c9, _0x31a097), _0x305112, _0x1496ed);
+}
+export function colorize(_0x4f4edc) {
+    const _0x23ae41 = _0x3e32;
+    return _0x4f4edc[_0x23ae41(0xc3)](/\[[^ ]+]/g, _0x53de05 => _0xc18b0[_0x23ae41(0xc4)](_0x53de05))[_0x23ae41(0xc3)](/<[^ ]+>/g, _0x59b3f8 => _0xc18b0[_0x23ae41(0xc5)](_0x59b3f8))[_0x23ae41(0xc3)](/ (-[-\w,]+)/g, _0x33bbb8 => _0xc18b0['bold'](_0x33bbb8))[_0x23ae41(0xc3)](/`([^`]+)`/g, (_0x5d2033, _0x42d718) => _0xc18b0[_0x23ae41(0xc6)][_0x23ae41(0xc7)](_0x42d718));
+}
+export function box(_0x2b9f15, _0x154a94, _0x2b988d) {
+    const _0x47342a = _0x3e32;
+    return _0x5ddebc([
+        _0x154a94 || _0xc18b0[_0x47342a(0xc8)](_0x47342a(0xc9)),
+        '',
+        _0xc18b0[_0x47342a(0xc8)](foldLines(_0x2b9f15, 0x0, 0x0, maxCharsPerLine()))
+    ][_0x47342a(0xc2)]('\x0a'), Object[_0x47342a(0xca)]({
+        'borderColor': _0x47342a(0xc8),
+        'borderStyle': 'round',
+        'padding': 0x1,
+        'margin': 0x1
+    }, _0x2b988d)) + '\x0a';
+}
+export function successBox(_0x2a33ec, _0x23e1c5) {
+    const _0xd7b326 = _0x3e32;
+    return box(_0x2a33ec, _0x23e1c5 || _0xc18b0['green'](_0xd7b326(0xcb)), { 'borderColor': 'green' });
+}
+export function warningBox(_0x5a59c9, _0x3ec4cb) {
+    const _0x9da1b5 = _0x3e32;
+    return box(_0x5a59c9, _0x3ec4cb || _0xc18b0[_0x9da1b5(0xcc)](_0x9da1b5(0xcd)), { 'borderColor': _0x9da1b5(0xcc) });
+}
+export function errorBox(_0x50434c, _0x2d1ebe) {
+    const _0x32a1c7 = _0x3e32;
+    return box(_0x50434c, _0x2d1ebe || _0xc18b0[_0x32a1c7(0xce)]('✖\x20Nuxt\x20Error'), { 'borderColor': _0x32a1c7(0xce) });
+}
+export function fatalBox(_0x328ebe, _0x569795) {
+    const _0x45c3f6 = _0x3e32;
+    return errorBox(_0x328ebe, _0x569795 || _0xc18b0['red'](_0x45c3f6(0xcf)));
+}

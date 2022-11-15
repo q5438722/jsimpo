@@ -1,0 +1,1 @@
+description('Tests that creating an indexed setter on the global object doesn\'t break things.');var thingy;this['__defineSetter__'](0x2a,function(_0x121b6b){thingy=_0x121b6b;});this[0x2a]='foo';shouldBe('thingy','\x22foo\x22');

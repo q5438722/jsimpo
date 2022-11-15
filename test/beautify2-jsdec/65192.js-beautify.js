@@ -1,0 +1,1 @@
+load('../base.js');load('toLocaleString.js');function PrintResult(name,result){console.log(name);console.log(name+'-Dates(Score): '+result)}function PrintError(name,error){PrintResult(name,error)}BenchmarkSuite.config.doWarmup=undefined;BenchmarkSuite.config.doDeterministic=undefined;BenchmarkSuite.RunSuites({NotifyResult:PrintResult,NotifyError:PrintError});

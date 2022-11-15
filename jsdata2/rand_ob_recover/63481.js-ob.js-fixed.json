@@ -1,0 +1,135 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "strictFunctionArrowEval"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x24619f"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "Literal",
+                            "value": "use strict",
+                            "raw": "'use strict'"
+                        },
+                        "directive": "use strict"
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "ArrowFunctionExpression",
+                                "id": null,
+                                "params": [],
+                                "body": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "eval"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x24619f"
+                                        }
+                                    ]
+                                },
+                                "generator": false,
+                                "expression": true,
+                                "async": false
+                            },
+                            "arguments": []
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertEquals"
+                },
+                "arguments": [
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "strictFunctionArrowEval"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "42",
+                                "raw": "'42'"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "left": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                                "type": "UnaryExpression",
+                                "operator": "-",
+                                "argument": {
+                                    "type": "Literal",
+                                    "value": 5247,
+                                    "raw": "0x147f"
+                                },
+                                "prefix": true
+                            },
+                            "right": {
+                                "type": "UnaryExpression",
+                                "operator": "-",
+                                "argument": {
+                                    "type": "Literal",
+                                    "value": 5251,
+                                    "raw": "0x1483"
+                                },
+                                "prefix": true
+                            }
+                        },
+                        "right": {
+                            "type": "BinaryExpression",
+                            "operator": "*",
+                            "left": {
+                                "type": "Literal",
+                                "value": 17,
+                                "raw": "0x11"
+                            },
+                            "right": {
+                                "type": "Literal",
+                                "value": 620,
+                                "raw": "0x26c"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

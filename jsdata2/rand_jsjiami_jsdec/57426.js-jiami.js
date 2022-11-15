@@ -1,0 +1,1 @@
+setup({'single_test':!![]});var interval;function next(){var _0x422ecf={'LKcNt':function(_0x52afa0,_0x42446e){return _0x52afa0(_0x42446e);},'qlHBY':function(_0x26adb4){return _0x26adb4();}};_0x422ecf['LKcNt'](clearInterval,interval);_0x422ecf['qlHBY'](done);}interval=setInterval(next,Math['pow'](0x2,0x20));setTimeout(assert_unreached,0x64);

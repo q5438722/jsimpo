@@ -1,0 +1,1 @@
+load("test/mjsunit/wasm/wasm-module-builder.js");(function(){var a=new WasmModuleBuilder;a.addMemory(31,31,false);a.addFunction("test",kSig_l_v).addBodyWithEnd([kExprUnreachable,kExprEnd]).exportFunc();var d=a.instantiate()})();

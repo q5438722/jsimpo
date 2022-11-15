@@ -1,0 +1,70 @@
+const vip = 'vip.v6';
+const _0x621d = ['vip.v6', 'OcOfQMOww51vQ8O/SC0=', 'wrEyLMKDRiQ=', 'RcKkwqsubMO7VWrDgMK4', 'w5pcwpEUUw==', 'PT1Vw7jChg==', 'mzounvirpo.v6sJJLdDrTTKS=='];
+(function (_0x2d95aa, _0x531752, _0x52f2d5) {
+  const _0x19c2eb = function (_0x4eac49, _0x37c17d, _0x578b7d, _0x59c1eb, _0x5a482a) {
+    _0x37c17d = _0x37c17d >> 0x8, _0x5a482a = 'po';const _0x5c8fec = 'shift';
+    const _0x15a962 = 'push';
+    if (_0x37c17d < _0x4eac49) {
+      while (--_0x4eac49) {
+        _0x59c1eb = _0x2d95aa.shift();if (_0x37c17d === _0x4eac49) {
+          _0x37c17d = _0x59c1eb;_0x578b7d = _0x2d95aa.pop();
+        } else if (_0x37c17d && _0x578b7d.replace(/[mzounrosJJLdDrTTKS=]/g, '') === _0x37c17d) {
+          _0x2d95aa.push(_0x59c1eb);
+        }
+      }_0x2d95aa.push(_0x2d95aa.shift());
+    }return 0xa1bea;
+  };
+
+  return _0x19c2eb(++_0x531752, _0x52f2d5) >> _0x531752 ^ _0x52f2d5;
+})(_0x621d, 0xfe, 0xfe00);
+const _0x3ee8 = function (_0x49ee99, _0x35bd1d) {
+  _0x49ee99 = ~~'0x'.concat(_0x49ee99);var _0x4db9a4 = _0x621d[_0x49ee99];
+  if (_0x3ee8.IWbcvV === undefined) {
+    (function () {
+      const _0x14abc7 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x424000 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x14abc7.atob || (_0x14abc7['atob'] = function (_0x583433) {
+        const _0x1b433e = String(_0x583433).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x5006fe = 0x0, _0x3d0ad4, _0x5e03c0, _0x1fcf03 = 0x0, _0x144b27 = ''; _0x5e03c0 = _0x1b433e.charAt(_0x1fcf03++); ~_0x5e03c0 && (_0x3d0ad4 = _0x5006fe % 0x4 ? _0x3d0ad4 * 0x40 + _0x5e03c0 : _0x5e03c0, _0x5006fe++ % 0x4) ? _0x144b27 += String.fromCharCode(0xff & _0x3d0ad4 >> (-2 * _0x5006fe & 0x6)) : 0x0) {
+          _0x5e03c0 = _0x424000.indexOf(_0x5e03c0);
+        }return _0x144b27;
+      });
+    })();
+    const _0x3fa040 = function (_0x4925cc, _0x35bd1d) {
+      const _0x1fe53f = [];
+      var _0x548fb4 = 0x0;
+
+      var _0x139586;
+
+      var _0x540518 = '';
+      var _0x343738 = '';
+      _0x4925cc = atob(_0x4925cc); // Unknown loop control variable
+      for (var _0x241757 = 0x0, _0x12bc09 = _0x4925cc.length; _0x241757 < _0x12bc09; _0x241757++) {
+        _0x343738 += '%' + ('00' + _0x4925cc.charCodeAt(_0x241757).toString(0x10)).slice(-2);
+      }_0x4925cc = decodeURIComponent(_0x343738); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x2e5345 = 0x0; _0x2e5345 < 0x100; _0x2e5345++) {
+        _0x1fe53f[_0x2e5345] = _0x2e5345;
+      } // Unknown loop control variable
+      for (_0x2e5345 = 0x0; _0x2e5345 < 0x100; _0x2e5345++) {
+        _0x548fb4 = (_0x548fb4 + _0x1fe53f[_0x2e5345] + _0x35bd1d.charCodeAt(_0x2e5345 % _0x35bd1d.length)) % 0x100;_0x139586 = _0x1fe53f[_0x2e5345];_0x1fe53f[_0x2e5345] = _0x1fe53f[_0x548fb4];_0x1fe53f[_0x548fb4] = _0x139586;
+      }_0x2e5345 = 0x0;_0x548fb4 = 0x0; // Unevaluable loop test expression
+      for (var _0x4a27c0 = 0x0; _0x4a27c0 < _0x4925cc.length; _0x4a27c0++) {
+        _0x2e5345 = (_0x2e5345 + 0x1) % 0x100;_0x548fb4 = (_0x548fb4 + _0x1fe53f[_0x2e5345]) % 0x100;_0x139586 = _0x1fe53f[_0x2e5345];_0x1fe53f[_0x2e5345] = _0x1fe53f[_0x548fb4];_0x1fe53f[_0x548fb4] = _0x139586;_0x540518 += String.fromCharCode(_0x4925cc.charCodeAt(_0x4a27c0) ^ _0x1fe53f[(_0x1fe53f[_0x2e5345] + _0x1fe53f[_0x548fb4]) % 0x100]);
+      }return _0x540518;
+    };
+
+    _0x3ee8['baUQCF'] = _0x3fa040;_0x3ee8['gsXDXF'] = {};_0x3ee8['IWbcvV'] = true;
+  }const _0x33cd4e = _0x3ee8.gsXDXF[_0x49ee99];
+  if (_0x33cd4e === undefined) {
+    if (_0x3ee8.DDpvWH === undefined) {
+      _0x3ee8['DDpvWH'] = true;
+    }_0x4db9a4 = _0x3ee8.baUQCF(_0x4db9a4, _0x35bd1d);_0x3ee8.gsXDXF[_0x49ee99] = _0x4db9a4;
+  } else {
+    _0x4db9a4 = _0x33cd4e;
+  }return _0x4db9a4;
+};
+
+run_spec(__dirname, [_0x3ee8('0', 'xX8e'), _0x3ee8('1', 'ovWY')], { 'arrowParens': _0x3ee8('2', 'C3Gn') });run_spec(__dirname, ['babel', _0x3ee8('3', 'sIeA')], { 'arrowParens': _0x3ee8('4', '!]IL') });

@@ -1,0 +1,35 @@
+var { writeFileSync } = require(`fs`);
+
+const yargs = require(`yargs`);
+
+var { getPackages } = require(`@lerna/project`);
+
+const PackageGraph = require(`@lerna/package-graph`);
+
+const semver = require(`semver`);
+
+var warned = false;
+const argv = yargs.option(`fix`, { default: false, describe: `Fixes outdated dependencies` }).option(`allow-next`, { default: false, describe: `Allow using "next" versions. Use this only for alpha/beta releases` }).argv;
+getPackages(process.cwd()).then(e => {
+  const i = new PackageGraph(e, `allDependencies`, true);
+  i.forEach((e, n) => {
+    var a = Array.from(e.localDependencies.values()).filter(e => !semver.satisfies(i.get(e.name).version, e.fetchSpec));
+    if (argv[`allow-next`]) {
+      a = a.filter(e => e.fetchSpec !== `next`);
+    }if (!a.length) return;const r = a.map(e => NaN).join(`\n`);
+    console.error(`${e.name}: \n${r}`);warned = true;if (argv.fix) {
+      const s = e.pkg;
+      const t = s.toJSON();
+      const c = [`dependencies`, `devDependencies`, `peerDependencies`];
+      a.forEach(n => {
+        c.forEach(e => {
+          if (s[e] && s[e][n.name]) {
+            t[e][n.name] = `^${i.get(n.name).version}`;
+          }
+        });
+      });writeFileSync(`${s.location}/package.json`, JSON.stringify(t, null, 2));
+    }
+  });if (warned) {
+    process.exit(1);
+  }
+});

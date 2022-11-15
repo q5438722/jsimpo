@@ -1,0 +1,1 @@
+import _0x5a8b43 from'./warnAboutDeprecatedESMImport.js';_0x5a8b43('matchPath');import{matchPath}from'../esm/react-router.js';export default matchPath;

@@ -1,0 +1,112 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ForStatement",
+            "init": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "_iterator"
+                        },
+                        "init": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "babelHelpers"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "createForOfIteratorHelperLoose",
+                                    "raw": "'createForOfIteratorHelperLoose'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "arr"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "_step"
+                        },
+                        "init": null
+                    }
+                ],
+                "kind": "var"
+            },
+            "test": {
+                "type": "UnaryExpression",
+                "operator": "!",
+                "argument": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "Identifier",
+                            "name": "_step"
+                        },
+                        "right": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "_iterator"
+                            },
+                            "arguments": []
+                        }
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "done",
+                        "raw": "'done'"
+                    }
+                },
+                "prefix": true
+            },
+            "update": null,
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "i"
+                            },
+                            "right": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "_step"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "value",
+                                    "raw": "'value'"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

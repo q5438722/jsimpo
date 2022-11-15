@@ -1,0 +1,5 @@
+let x = 0x23a5 + -0x1aa1 + -0x482 * 0x2;
+function heartbeat() {
+    ++x;
+}
+setInterval(heartbeat, -0x1cd1 + -0x21bd + 0x3ec0);

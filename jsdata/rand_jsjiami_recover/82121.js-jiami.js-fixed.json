@@ -1,0 +1,683 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "ObjectID"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "bson-objectid",
+                                "raw": "'bson-objectid'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "logging"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "@tryghost/logging",
+                                "raw": "'@tryghost/logging'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "ObjectPattern",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "createTransactionalMigration"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "createTransactionalMigration"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true
+                            }
+                        ]
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../../utils.js",
+                                "raw": "'../../utils.js'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "MIGRATION_USER"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": 1,
+                        "raw": "0x1"
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "module"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "exports",
+                        "raw": "'exports'"
+                    }
+                },
+                "right": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "Identifier",
+                        "name": "createTransactionalMigration"
+                    },
+                    "arguments": [
+                        {
+                            "type": "FunctionExpression",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "up"
+                            },
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x1d569a"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "VariableDeclaration",
+                                        "declarations": [
+                                            {
+                                                "type": "VariableDeclarator",
+                                                "id": {
+                                                    "type": "Identifier",
+                                                    "name": "_0x147639"
+                                                },
+                                                "init": {
+                                                    "type": "AwaitExpression",
+                                                    "argument": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "CallExpression",
+                                                                        "callee": {
+                                                                            "type": "Identifier",
+                                                                            "name": "_0x1d569a"
+                                                                        },
+                                                                        "arguments": [
+                                                                            {
+                                                                                "type": "Literal",
+                                                                                "value": "settings",
+                                                                                "raw": "'settings'"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "where",
+                                                                        "raw": "'where'"
+                                                                    }
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "Literal",
+                                                                        "value": "key",
+                                                                        "raw": "'key'"
+                                                                    },
+                                                                    {
+                                                                        "type": "Literal",
+                                                                        "value": "=",
+                                                                        "raw": "'='"
+                                                                    },
+                                                                    {
+                                                                        "type": "Literal",
+                                                                        "value": "email_verification_required",
+                                                                        "raw": "'email_verification_required'"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "first",
+                                                                "raw": "'first'"
+                                                            }
+                                                        },
+                                                        "arguments": []
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "kind": "const"
+                                    },
+                                    {
+                                        "type": "IfStatement",
+                                        "test": {
+                                            "type": "UnaryExpression",
+                                            "operator": "!",
+                                            "argument": {
+                                                "type": "Identifier",
+                                                "name": "_0x147639"
+                                            },
+                                            "prefix": true
+                                        },
+                                        "consequent": {
+                                            "type": "BlockStatement",
+                                            "body": [
+                                                {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "logging"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "info",
+                                                                "raw": "'info'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "Adding \"email_verification_required\" record to \"settings\" table",
+                                                                "raw": "'Adding \"email_verification_required\" record to \"settings\" table'"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "VariableDeclaration",
+                                                    "declarations": [
+                                                        {
+                                                            "type": "VariableDeclarator",
+                                                            "id": {
+                                                                "type": "Identifier",
+                                                                "name": "_0x2367df"
+                                                            },
+                                                            "init": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x1d569a"
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "raw",
+                                                                        "raw": "'raw'"
+                                                                    }
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "Literal",
+                                                                        "value": "CURRENT_TIMESTAMP",
+                                                                        "raw": "'CURRENT_TIMESTAMP'"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "kind": "const"
+                                                },
+                                                {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                        "type": "AwaitExpression",
+                                                        "argument": {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x1d569a"
+                                                                    },
+                                                                    "arguments": [
+                                                                        {
+                                                                            "type": "Literal",
+                                                                            "value": "settings",
+                                                                            "raw": "'settings'"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "insert",
+                                                                    "raw": "'insert'"
+                                                                }
+                                                            },
+                                                            "arguments": [
+                                                                {
+                                                                    "type": "ObjectExpression",
+                                                                    "properties": [
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Literal",
+                                                                                "value": "id",
+                                                                                "raw": "'id'"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "CallExpression",
+                                                                                "callee": {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "CallExpression",
+                                                                                        "callee": {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "ObjectID"
+                                                                                        },
+                                                                                        "arguments": []
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "toHexString",
+                                                                                        "raw": "'toHexString'"
+                                                                                    }
+                                                                                },
+                                                                                "arguments": []
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": false
+                                                                        },
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Literal",
+                                                                                "value": "key",
+                                                                                "raw": "'key'"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "Literal",
+                                                                                "value": "email_verification_required",
+                                                                                "raw": "'email_verification_required'"
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": false
+                                                                        },
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Literal",
+                                                                                "value": "value",
+                                                                                "raw": "'value'"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "Literal",
+                                                                                "value": "false",
+                                                                                "raw": "'false'"
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": false
+                                                                        },
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Literal",
+                                                                                "value": "group",
+                                                                                "raw": "'group'"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "Literal",
+                                                                                "value": "email",
+                                                                                "raw": "'email'"
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": false
+                                                                        },
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Literal",
+                                                                                "value": "type",
+                                                                                "raw": "'type'"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "Literal",
+                                                                                "value": "boolean",
+                                                                                "raw": "'boolean'"
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": false
+                                                                        },
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Literal",
+                                                                                "value": "flags",
+                                                                                "raw": "'flags'"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "Literal",
+                                                                                "value": "RO",
+                                                                                "raw": "'RO'"
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": false
+                                                                        },
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Literal",
+                                                                                "value": "created_at",
+                                                                                "raw": "'created_at'"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "Identifier",
+                                                                                "name": "_0x2367df"
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": false
+                                                                        },
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Literal",
+                                                                                "value": "created_by",
+                                                                                "raw": "'created_by'"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "Identifier",
+                                                                                "name": "MIGRATION_USER"
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": false
+                                                                        },
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Literal",
+                                                                                "value": "updated_at",
+                                                                                "raw": "'updated_at'"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "Identifier",
+                                                                                "name": "_0x2367df"
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": false
+                                                                        },
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Literal",
+                                                                                "value": "updated_by",
+                                                                                "raw": "'updated_by'"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "Identifier",
+                                                                                "name": "MIGRATION_USER"
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": false
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "alternate": {
+                                            "type": "BlockStatement",
+                                            "body": [
+                                                {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "logging"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "warn",
+                                                                "raw": "'warn'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "Skipped adding \"email_verification_required\" record to \"settings\" table. Record already exists!",
+                                                                "raw": "'Skipped adding \"email_verification_required\" record to \"settings\" table. Record already exists!'"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": true
+                        },
+                        {
+                            "type": "FunctionExpression",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "down"
+                            },
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x55679e"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "logging"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "info",
+                                                    "raw": "'info'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Literal",
+                                                    "value": "Removing \"email_verification_required\" record from \"settings\" table",
+                                                    "raw": "'Removing \"email_verification_required\" record from \"settings\" table'"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "AwaitExpression",
+                                            "argument": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x55679e"
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "Literal",
+                                                                        "value": "settings",
+                                                                        "raw": "'settings'"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "where",
+                                                                "raw": "'where'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "key",
+                                                                "raw": "'key'"
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "=",
+                                                                "raw": "'='"
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "email_verification_required",
+                                                                "raw": "'email_verification_required'"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "del",
+                                                        "raw": "'del'"
+                                                    }
+                                                },
+                                                "arguments": []
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": true
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}

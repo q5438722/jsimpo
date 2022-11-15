@@ -1,0 +1,6 @@
+function f(_0x3c46ca = 2, _0x5593fa = 3) {
+    var _0x3c46ca, _0x5593fa = 4;
+    var _0x3c46ca;
+    var _0x5593fa;
+    return _0x3c46ca + _0x5593fa;
+}

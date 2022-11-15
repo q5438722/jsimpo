@@ -1,0 +1,8 @@
+module['exports'] = function (_0x2b941a) {
+    var _0x296e92 = _0x2b941a['loopback']['Router']();
+    _0x296e92['get']('/wiki/*', _0x40bb10);
+    _0x2b941a['use'](_0x296e92);
+    function _0x40bb10(_0x452344, _0x328c69) {
+        _0x328c69['redirect']('http://forum.freecodecamp.org/');
+    }
+};

@@ -1,0 +1,86 @@
+const vip = 'vip.v6';
+const _0x53f0 = ['vip.v6', 'aMOcb3nDtsKp', 'w43DqsKf', 'wqLCvMKXw69L', 'anDDvcKQw6k=', 'aW0Cwr84', 'Qn0cwrIr', 'wqgEw4DCi04tPWXDrsOkbQ==', 'vOip.zQvo6xzfPlaXunchc=='];
+(function (_0x88562a, _0x248480, _0x33e646) {
+  const _0x28c7b1 = function (_0x59979a, _0x40057c, _0x183b37, _0x5c80af, _0x240000) {
+    _0x40057c = _0x40057c >> 0x8, _0x240000 = 'po';const _0x1f8ee4 = 'shift';
+    const _0x53995b = 'push';
+    if (_0x40057c < _0x59979a) {
+      while (--_0x59979a) {
+        _0x5c80af = _0x88562a.shift();if (_0x40057c === _0x59979a) {
+          _0x40057c = _0x5c80af;_0x183b37 = _0x88562a.pop();
+        } else if (_0x40057c && _0x183b37.replace(/[OzQoxzfPlaXunchc=]/g, '') === _0x40057c) {
+          _0x88562a.push(_0x5c80af);
+        }
+      }_0x88562a.push(_0x88562a.shift());
+    }return 0xa32d4;
+  };
+
+  return _0x28c7b1(++_0x248480, _0x33e646) >> _0x248480 ^ _0x33e646;
+})(_0x53f0, 0xda, 0xda00);
+const _0x43e4 = function (_0x1eb371, _0x4a42c2) {
+  _0x1eb371 = ~~'0x'.concat(_0x1eb371);var _0x4182e3 = _0x53f0[_0x1eb371];
+  if (_0x43e4.DglmxK === undefined) {
+    (function () {
+      const _0x4a3340 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x90eed4 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x4a3340.atob || (_0x4a3340['atob'] = function (_0x180798) {
+        const _0x342514 = String(_0x180798).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x100291 = 0x0, _0x113731, _0x167e82, _0x304f86 = 0x0, _0x2c27c5 = ''; _0x167e82 = _0x342514.charAt(_0x304f86++); ~_0x167e82 && (_0x113731 = _0x100291 % 0x4 ? _0x113731 * 0x40 + _0x167e82 : _0x167e82, _0x100291++ % 0x4) ? _0x2c27c5 += String.fromCharCode(0xff & _0x113731 >> (-2 * _0x100291 & 0x6)) : 0x0) {
+          _0x167e82 = _0x90eed4.indexOf(_0x167e82);
+        }return _0x2c27c5;
+      });
+    })();
+    const _0x4f0cd5 = function (_0x1754d9, _0x4a42c2) {
+      const _0x371473 = [];
+      var _0x2d45b5 = 0x0;
+
+      var _0x29f9c8;
+
+      var _0x3afc73 = '';
+      var _0x5bd0e5 = '';
+      _0x1754d9 = atob(_0x1754d9); // Unknown loop control variable
+      for (var _0x57e53a = 0x0, _0x36563a = _0x1754d9.length; _0x57e53a < _0x36563a; _0x57e53a++) {
+        _0x5bd0e5 += '%' + ('00' + _0x1754d9.charCodeAt(_0x57e53a).toString(0x10)).slice(-2);
+      }_0x1754d9 = decodeURIComponent(_0x5bd0e5); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x2ddef3 = 0x0; _0x2ddef3 < 0x100; _0x2ddef3++) {
+        _0x371473[_0x2ddef3] = _0x2ddef3;
+      } // Unknown loop control variable
+      for (_0x2ddef3 = 0x0; _0x2ddef3 < 0x100; _0x2ddef3++) {
+        _0x2d45b5 = (_0x2d45b5 + _0x371473[_0x2ddef3] + _0x4a42c2.charCodeAt(_0x2ddef3 % _0x4a42c2.length)) % 0x100;_0x29f9c8 = _0x371473[_0x2ddef3];_0x371473[_0x2ddef3] = _0x371473[_0x2d45b5];_0x371473[_0x2d45b5] = _0x29f9c8;
+      }_0x2ddef3 = 0x0;_0x2d45b5 = 0x0; // Unevaluable loop test expression
+      for (var _0x38f00a = 0x0; _0x38f00a < _0x1754d9.length; _0x38f00a++) {
+        _0x2ddef3 = (_0x2ddef3 + 0x1) % 0x100;_0x2d45b5 = (_0x2d45b5 + _0x371473[_0x2ddef3]) % 0x100;_0x29f9c8 = _0x371473[_0x2ddef3];_0x371473[_0x2ddef3] = _0x371473[_0x2d45b5];_0x371473[_0x2d45b5] = _0x29f9c8;_0x3afc73 += String.fromCharCode(_0x1754d9.charCodeAt(_0x38f00a) ^ _0x371473[(_0x371473[_0x2ddef3] + _0x371473[_0x2d45b5]) % 0x100]);
+      }return _0x3afc73;
+    };
+
+    _0x43e4['ymfgip'] = _0x4f0cd5;_0x43e4['SsEntd'] = {};_0x43e4['DglmxK'] = true;
+  }const _0x4f6891 = _0x43e4.SsEntd[_0x1eb371];
+  if (_0x4f6891 === undefined) {
+    if (_0x43e4.xsMrLS === undefined) {
+      _0x43e4['xsMrLS'] = true;
+    }_0x4182e3 = _0x43e4.ymfgip(_0x4182e3, _0x4a42c2);_0x43e4.SsEntd[_0x1eb371] = _0x4182e3;
+  } else {
+    _0x4182e3 = _0x4f6891;
+  }return _0x4182e3;
+};
+
+var { createElement, useLayoutEffect, useState } = React;
+var { createRoot } = ReactDOM;
+function App() {
+  const _0x38a37f = { 'ZLllf': function (_0x3f5a2f, _0x2f9056) {
+      return _0x3f5a2f(_0x2f9056);
+    }, 'LqSAB': function (_0x3abc94, _0x18bd78, _0x26c1b0) {
+      return _0x3abc94(_0x18bd78, _0x26c1b0);
+    }, 'QXsBB': function (_0x595d35, _0x49d1bf, _0x28e13e, _0x342661) {
+      return _0x595d35(_0x49d1bf, _0x28e13e, _0x342661);
+    }, 'zHmOQ': _0x43e4('0', 'GfW!') };
+  var [_0xb02e78, _0x47a0b2] = useState(false);
+  _0x38a37f[_0x43e4('1', 'T3pB')](useLayoutEffect, () => {
+    _0x38a37f[_0x43e4('2', 'P5XS')](_0x47a0b2, true);
+  }, []);return _0x38a37f[_0x43e4('3', 'wbtZ')](createElement, _0x38a37f[_0x43e4('4', 'wbtZ')], null, _0x43e4('5', '7!S@') + _0xb02e78);
+}const container = document.getElementById('container');
+const root = createRoot(container);
+root[_0x43e4('6', 'jpmK')](createElement(App));

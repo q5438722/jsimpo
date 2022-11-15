@@ -1,0 +1,1 @@
+var Point=require("../point/Point");var GetNearestPoint=function(r,e,t){if(t===undefined){t=new Point}var n=r.x1;var i=r.y1;var a=r.x2;var o=r.y2;var v=(a-n)*(a-n)+(o-i)*(o-i);if(v===0){return t}var u=((e.x-n)*(a-n)+(e.y-i)*(o-i))/v;t.x=n+u*(a-n);t.y=i+u*(o-i);return t};module.exports=GetNearestPoint;

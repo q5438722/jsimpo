@@ -1,0 +1,10 @@
+var x;
+function f() {
+    if (g()) {
+    }
+}
+function g() {
+    if (x)
+        return !![];
+}
+f();

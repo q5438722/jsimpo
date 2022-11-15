@@ -1,0 +1,76 @@
+const _0x33cf = [
+    '337RMFbzN',
+    '2539sbQNWk',
+    '1571TMOjVS',
+    '169NuqnJr',
+    '720323uKKRia',
+    '828959ChyMCD',
+    '@vue/cli-shared-utils',
+    'exports',
+    'git',
+    'status',
+    'env',
+    'VUE_CLI_SKIP_DIRTY_GIT_PROMPT',
+    'VUE_CLI_API_MODE',
+    'dsKbx',
+    'HjcEv',
+    'wHEXO',
+    'prompt',
+    'confirm',
+    '2357BLHLvB',
+    '1kcbfvF',
+    '353715zYEfaG',
+    '11JlcTju',
+    '29774wKQxkL'
+];
+const _0x4d13c3 = _0x4660;
+(function (_0x280604, _0x3f334d) {
+    const _0x2405d3 = _0x4660;
+    while (!![]) {
+        try {
+            const _0x435681 = -parseInt(_0x2405d3(0x1e2)) + -parseInt(_0x2405d3(0x1e3)) * parseInt(_0x2405d3(0x1e4)) + parseInt(_0x2405d3(0x1e5)) * parseInt(_0x2405d3(0x1e6)) + -parseInt(_0x2405d3(0x1e7)) * -parseInt(_0x2405d3(0x1e8)) + -parseInt(_0x2405d3(0x1e9)) * parseInt(_0x2405d3(0x1ea)) + parseInt(_0x2405d3(0x1eb)) + -parseInt(_0x2405d3(0x1ec));
+            if (_0x435681 === _0x3f334d)
+                break;
+            else
+                _0x280604['push'](_0x280604['shift']());
+        } catch (_0x5a3202) {
+            _0x280604['push'](_0x280604['shift']());
+        }
+    }
+}(_0x33cf, 0x5 * -0xb27d + 0x1 * -0xb174e + -0x1a729 * -0xd));
+function _0x4660(_0x52a3ce, _0x466f86) {
+    return _0x4660 = function (_0x3c642e, _0x16add9) {
+        _0x3c642e = _0x3c642e - (0x370 + 0xe * -0x43 + -0x87 * -0x4);
+        let _0xbe31f = _0x33cf[_0x3c642e];
+        return _0xbe31f;
+    }, _0x4660(_0x52a3ce, _0x466f86);
+}
+const inquirer = require('inquirer'), {execa, warn, hasProjectGit} = require(_0x4d13c3(0x1ed));
+module[_0x4d13c3(0x1ee)] = async function confirmIfGitDirty(_0x348954) {
+    const _0x31803c = _0x4d13c3, _0x36007d = {
+            'dsKbx': _0x31803c(0x1ef),
+            'HjcEv': _0x31803c(0x1f0),
+            'wHEXO': function (_0x282b60, _0x231943) {
+                return _0x282b60(_0x231943);
+            }
+        };
+    if (process[_0x31803c(0x1f1)][_0x31803c(0x1f2)] || process[_0x31803c(0x1f1)][_0x31803c(0x1f3)])
+        return !![];
+    process[_0x31803c(0x1f1)][_0x31803c(0x1f2)] = !![];
+    if (!hasProjectGit(_0x348954))
+        return !![];
+    const {stdout: _0x4d7c09} = await execa(_0x36007d[_0x31803c(0x1f4)], [
+        _0x36007d[_0x31803c(0x1f5)],
+        '--porcelain'
+    ], { 'cwd': _0x348954 });
+    if (!_0x4d7c09)
+        return !![];
+    _0x36007d[_0x31803c(0x1f6)](warn, 'There\x20are\x20uncommitted\x20changes\x20in\x20the\x20current\x20repository,\x20it\x27s\x20recommended\x20to\x20commit\x20or\x20stash\x20them\x20first.');
+    const {ok: _0xd64960} = await inquirer[_0x31803c(0x1f7)]([{
+            'name': 'ok',
+            'type': _0x31803c(0x1f8),
+            'message': 'Still\x20proceed?',
+            'default': ![]
+        }]);
+    return _0xd64960;
+};

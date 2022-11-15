@@ -1,0 +1,1645 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "parser"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../",
+                                "raw": "'../'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "test"
+                    },
+                    "init": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "require"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": "tap",
+                                    "raw": "'tap'"
+                                }
+                            ]
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "test",
+                            "raw": "'test'"
+                        }
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "fs"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "fs",
+                                "raw": "'fs'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "path"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "path",
+                                "raw": "'path'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "files"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "main",
+                                    "raw": "'main'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "path"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "join",
+                                            "raw": "'join'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "__dirname"
+                                        },
+                                        {
+                                            "type": "Literal",
+                                            "value": "/files/main.js",
+                                            "raw": "'/files/main.js'"
+                                        }
+                                    ]
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "foo",
+                                    "raw": "'foo'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "path"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "join",
+                                            "raw": "'join'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "__dirname"
+                                        },
+                                        {
+                                            "type": "Literal",
+                                            "value": "/files/foo.js",
+                                            "raw": "'/files/foo.js'"
+                                        }
+                                    ]
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "bar",
+                                    "raw": "'bar'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "path"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "join",
+                                            "raw": "'join'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "__dirname"
+                                        },
+                                        {
+                                            "type": "Literal",
+                                            "value": "/files/bar.js",
+                                            "raw": "'/files/bar.js'"
+                                        }
+                                    ]
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "sources"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "Object"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "keys",
+                                        "raw": "'keys'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "files"
+                                    }
+                                ]
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "reduce",
+                                "raw": "'reduce'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "FunctionExpression",
+                                "id": null,
+                                "params": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "_0xbfef49"
+                                    },
+                                    {
+                                        "type": "Identifier",
+                                        "name": "_0x5a4452"
+                                    }
+                                ],
+                                "body": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                                "type": "AssignmentExpression",
+                                                "operator": "=",
+                                                "left": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "_0xbfef49"
+                                                    },
+                                                    "property": {
+                                                        "type": "Identifier",
+                                                        "name": "_0x5a4452"
+                                                    }
+                                                },
+                                                "right": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "fs"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "readFileSync",
+                                                            "raw": "'readFileSync'"
+                                                        }
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "files"
+                                                            },
+                                                            "property": {
+                                                                "type": "Identifier",
+                                                                "name": "_0x5a4452"
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "Literal",
+                                                            "value": "utf8",
+                                                            "raw": "'utf8'"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "ReturnStatement",
+                                            "argument": {
+                                                "type": "Identifier",
+                                                "name": "_0xbfef49"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "generator": false,
+                                "expression": false,
+                                "async": false
+                            },
+                            {
+                                "type": "ObjectExpression",
+                                "properties": []
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "test"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "deps",
+                        "raw": "'deps'"
+                    },
+                    {
+                        "type": "FunctionExpression",
+                        "id": null,
+                        "params": [
+                            {
+                                "type": "Identifier",
+                                "name": "_0x4c6d27"
+                            }
+                        ],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "_0x4c6d27"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "plan",
+                                                "raw": "'plan'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": 1,
+                                                "raw": "0x1"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "VariableDeclaration",
+                                    "declarations": [
+                                        {
+                                            "type": "VariableDeclarator",
+                                            "id": {
+                                                "type": "Identifier",
+                                                "name": "_0x516719"
+                                            },
+                                            "init": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "parser"
+                                                },
+                                                "arguments": []
+                                            }
+                                        }
+                                    ],
+                                    "kind": "var"
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "_0x516719"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "end",
+                                                "raw": "'end'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ObjectExpression",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "file",
+                                                            "raw": "'file'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "files"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "main",
+                                                                "raw": "'main'"
+                                                            }
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    },
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "entry",
+                                                            "raw": "'entry'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "UnaryExpression",
+                                                            "operator": "!",
+                                                            "argument": {
+                                                                "type": "UnaryExpression",
+                                                                "operator": "!",
+                                                                "argument": {
+                                                                    "type": "ArrayExpression",
+                                                                    "elements": []
+                                                                },
+                                                                "prefix": true
+                                                            },
+                                                            "prefix": true
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "VariableDeclaration",
+                                    "declarations": [
+                                        {
+                                            "type": "VariableDeclarator",
+                                            "id": {
+                                                "type": "Identifier",
+                                                "name": "_0x1d2d49"
+                                            },
+                                            "init": {
+                                                "type": "ArrayExpression",
+                                                "elements": []
+                                            }
+                                        }
+                                    ],
+                                    "kind": "var"
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "_0x516719"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "on",
+                                                "raw": "'on'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": "data",
+                                                "raw": "'data'"
+                                            },
+                                            {
+                                                "type": "FunctionExpression",
+                                                "id": null,
+                                                "params": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x21f861"
+                                                    }
+                                                ],
+                                                "body": {
+                                                    "type": "BlockStatement",
+                                                    "body": [
+                                                        {
+                                                            "type": "ExpressionStatement",
+                                                            "expression": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x1d2d49"
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "push",
+                                                                        "raw": "'push'"
+                                                                    }
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x21f861"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "generator": false,
+                                                "expression": false,
+                                                "async": false
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "_0x516719"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "on",
+                                                "raw": "'on'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": "end",
+                                                "raw": "'end'"
+                                            },
+                                            {
+                                                "type": "FunctionExpression",
+                                                "id": null,
+                                                "params": [],
+                                                "body": {
+                                                    "type": "BlockStatement",
+                                                    "body": [
+                                                        {
+                                                            "type": "IfStatement",
+                                                            "test": {
+                                                                "type": "BinaryExpression",
+                                                                "operator": "!==",
+                                                                "left": {
+                                                                    "type": "Literal",
+                                                                    "value": "SxXOP",
+                                                                    "raw": "'SxXOP'"
+                                                                },
+                                                                "right": {
+                                                                    "type": "Literal",
+                                                                    "value": "SYLZh",
+                                                                    "raw": "'SYLZh'"
+                                                                }
+                                                            },
+                                                            "consequent": {
+                                                                "type": "BlockStatement",
+                                                                "body": [
+                                                                    {
+                                                                        "type": "ExpressionStatement",
+                                                                        "expression": {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "MemberExpression",
+                                                                                "computed": true,
+                                                                                "object": {
+                                                                                    "type": "Identifier",
+                                                                                    "name": "_0x4c6d27"
+                                                                                },
+                                                                                "property": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "same",
+                                                                                    "raw": "'same'"
+                                                                                }
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "CallExpression",
+                                                                                    "callee": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "_0x1d2d49"
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "sort",
+                                                                                            "raw": "'sort'"
+                                                                                        }
+                                                                                    },
+                                                                                    "arguments": [
+                                                                                        {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "cmp"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "type": "CallExpression",
+                                                                                    "callee": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "ArrayExpression",
+                                                                                            "elements": [
+                                                                                                {
+                                                                                                    "type": "ObjectExpression",
+                                                                                                    "properties": [
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "id",
+                                                                                                                "raw": "'id'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "files"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "main",
+                                                                                                                    "raw": "'main'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "file",
+                                                                                                                "raw": "'file'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "files"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "main",
+                                                                                                                    "raw": "'main'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "source",
+                                                                                                                "raw": "'source'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "sources"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "main",
+                                                                                                                    "raw": "'main'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "entry",
+                                                                                                                "raw": "'entry'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "UnaryExpression",
+                                                                                                                "operator": "!",
+                                                                                                                "argument": {
+                                                                                                                    "type": "UnaryExpression",
+                                                                                                                    "operator": "!",
+                                                                                                                    "argument": {
+                                                                                                                        "type": "ArrayExpression",
+                                                                                                                        "elements": []
+                                                                                                                    },
+                                                                                                                    "prefix": true
+                                                                                                                },
+                                                                                                                "prefix": true
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "deps",
+                                                                                                                "raw": "'deps'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "ObjectExpression",
+                                                                                                                "properties": [
+                                                                                                                    {
+                                                                                                                        "type": "Property",
+                                                                                                                        "key": {
+                                                                                                                            "type": "Literal",
+                                                                                                                            "value": "./foo",
+                                                                                                                            "raw": "'./foo'"
+                                                                                                                        },
+                                                                                                                        "computed": false,
+                                                                                                                        "value": {
+                                                                                                                            "type": "MemberExpression",
+                                                                                                                            "computed": true,
+                                                                                                                            "object": {
+                                                                                                                                "type": "Identifier",
+                                                                                                                                "name": "files"
+                                                                                                                            },
+                                                                                                                            "property": {
+                                                                                                                                "type": "Literal",
+                                                                                                                                "value": "foo",
+                                                                                                                                "raw": "'foo'"
+                                                                                                                            }
+                                                                                                                        },
+                                                                                                                        "kind": "init",
+                                                                                                                        "method": false,
+                                                                                                                        "shorthand": false
+                                                                                                                    }
+                                                                                                                ]
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "type": "ObjectExpression",
+                                                                                                    "properties": [
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "id",
+                                                                                                                "raw": "'id'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "files"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "foo",
+                                                                                                                    "raw": "'foo'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "file",
+                                                                                                                "raw": "'file'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "files"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "foo",
+                                                                                                                    "raw": "'foo'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "source",
+                                                                                                                "raw": "'source'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "sources"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "foo",
+                                                                                                                    "raw": "'foo'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "deps",
+                                                                                                                "raw": "'deps'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "ObjectExpression",
+                                                                                                                "properties": [
+                                                                                                                    {
+                                                                                                                        "type": "Property",
+                                                                                                                        "key": {
+                                                                                                                            "type": "Literal",
+                                                                                                                            "value": "./bar",
+                                                                                                                            "raw": "'./bar'"
+                                                                                                                        },
+                                                                                                                        "computed": false,
+                                                                                                                        "value": {
+                                                                                                                            "type": "MemberExpression",
+                                                                                                                            "computed": true,
+                                                                                                                            "object": {
+                                                                                                                                "type": "Identifier",
+                                                                                                                                "name": "files"
+                                                                                                                            },
+                                                                                                                            "property": {
+                                                                                                                                "type": "Literal",
+                                                                                                                                "value": "bar",
+                                                                                                                                "raw": "'bar'"
+                                                                                                                            }
+                                                                                                                        },
+                                                                                                                        "kind": "init",
+                                                                                                                        "method": false,
+                                                                                                                        "shorthand": false
+                                                                                                                    }
+                                                                                                                ]
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "type": "ObjectExpression",
+                                                                                                    "properties": [
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "id",
+                                                                                                                "raw": "'id'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "files"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "bar",
+                                                                                                                    "raw": "'bar'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "file",
+                                                                                                                "raw": "'file'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "files"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "bar",
+                                                                                                                    "raw": "'bar'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "source",
+                                                                                                                "raw": "'source'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "sources"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "bar",
+                                                                                                                    "raw": "'bar'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "deps",
+                                                                                                                "raw": "'deps'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "ObjectExpression",
+                                                                                                                "properties": []
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "sort",
+                                                                                            "raw": "'sort'"
+                                                                                        }
+                                                                                    },
+                                                                                    "arguments": [
+                                                                                        {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "cmp"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "alternate": {
+                                                                "type": "BlockStatement",
+                                                                "body": [
+                                                                    {
+                                                                        "type": "ExpressionStatement",
+                                                                        "expression": {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "MemberExpression",
+                                                                                "computed": true,
+                                                                                "object": {
+                                                                                    "type": "Identifier",
+                                                                                    "name": "_0x4c6d27"
+                                                                                },
+                                                                                "property": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "same",
+                                                                                    "raw": "'same'"
+                                                                                }
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "CallExpression",
+                                                                                    "callee": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "_0x1d2d49"
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "sort",
+                                                                                            "raw": "'sort'"
+                                                                                        }
+                                                                                    },
+                                                                                    "arguments": [
+                                                                                        {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "cmp"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "type": "CallExpression",
+                                                                                    "callee": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "ArrayExpression",
+                                                                                            "elements": [
+                                                                                                {
+                                                                                                    "type": "ObjectExpression",
+                                                                                                    "properties": [
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "id",
+                                                                                                                "raw": "'id'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "files"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "main",
+                                                                                                                    "raw": "'main'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "file",
+                                                                                                                "raw": "'file'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "files"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "main",
+                                                                                                                    "raw": "'main'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "source",
+                                                                                                                "raw": "'source'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "sources"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "main",
+                                                                                                                    "raw": "'main'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "entry",
+                                                                                                                "raw": "'entry'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "UnaryExpression",
+                                                                                                                "operator": "!",
+                                                                                                                "argument": {
+                                                                                                                    "type": "UnaryExpression",
+                                                                                                                    "operator": "!",
+                                                                                                                    "argument": {
+                                                                                                                        "type": "ArrayExpression",
+                                                                                                                        "elements": []
+                                                                                                                    },
+                                                                                                                    "prefix": true
+                                                                                                                },
+                                                                                                                "prefix": true
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "deps",
+                                                                                                                "raw": "'deps'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "ObjectExpression",
+                                                                                                                "properties": [
+                                                                                                                    {
+                                                                                                                        "type": "Property",
+                                                                                                                        "key": {
+                                                                                                                            "type": "Literal",
+                                                                                                                            "value": "./foo",
+                                                                                                                            "raw": "'./foo'"
+                                                                                                                        },
+                                                                                                                        "computed": false,
+                                                                                                                        "value": {
+                                                                                                                            "type": "MemberExpression",
+                                                                                                                            "computed": true,
+                                                                                                                            "object": {
+                                                                                                                                "type": "Identifier",
+                                                                                                                                "name": "files"
+                                                                                                                            },
+                                                                                                                            "property": {
+                                                                                                                                "type": "Literal",
+                                                                                                                                "value": "foo",
+                                                                                                                                "raw": "'foo'"
+                                                                                                                            }
+                                                                                                                        },
+                                                                                                                        "kind": "init",
+                                                                                                                        "method": false,
+                                                                                                                        "shorthand": false
+                                                                                                                    }
+                                                                                                                ]
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "type": "ObjectExpression",
+                                                                                                    "properties": [
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "id",
+                                                                                                                "raw": "'id'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "files"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "foo",
+                                                                                                                    "raw": "'foo'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "file",
+                                                                                                                "raw": "'file'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "files"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "foo",
+                                                                                                                    "raw": "'foo'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "source",
+                                                                                                                "raw": "'source'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "sources"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "foo",
+                                                                                                                    "raw": "'foo'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "deps",
+                                                                                                                "raw": "'deps'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "ObjectExpression",
+                                                                                                                "properties": [
+                                                                                                                    {
+                                                                                                                        "type": "Property",
+                                                                                                                        "key": {
+                                                                                                                            "type": "Literal",
+                                                                                                                            "value": "./bar",
+                                                                                                                            "raw": "'./bar'"
+                                                                                                                        },
+                                                                                                                        "computed": false,
+                                                                                                                        "value": {
+                                                                                                                            "type": "MemberExpression",
+                                                                                                                            "computed": true,
+                                                                                                                            "object": {
+                                                                                                                                "type": "Identifier",
+                                                                                                                                "name": "files"
+                                                                                                                            },
+                                                                                                                            "property": {
+                                                                                                                                "type": "Literal",
+                                                                                                                                "value": "bar",
+                                                                                                                                "raw": "'bar'"
+                                                                                                                            }
+                                                                                                                        },
+                                                                                                                        "kind": "init",
+                                                                                                                        "method": false,
+                                                                                                                        "shorthand": false
+                                                                                                                    }
+                                                                                                                ]
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "type": "ObjectExpression",
+                                                                                                    "properties": [
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "id",
+                                                                                                                "raw": "'id'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "files"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "bar",
+                                                                                                                    "raw": "'bar'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "file",
+                                                                                                                "raw": "'file'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "files"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "bar",
+                                                                                                                    "raw": "'bar'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "source",
+                                                                                                                "raw": "'source'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "MemberExpression",
+                                                                                                                "computed": true,
+                                                                                                                "object": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "sources"
+                                                                                                                },
+                                                                                                                "property": {
+                                                                                                                    "type": "Literal",
+                                                                                                                    "value": "bar",
+                                                                                                                    "raw": "'bar'"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "type": "Property",
+                                                                                                            "key": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "deps",
+                                                                                                                "raw": "'deps'"
+                                                                                                            },
+                                                                                                            "computed": false,
+                                                                                                            "value": {
+                                                                                                                "type": "ObjectExpression",
+                                                                                                                "properties": []
+                                                                                                            },
+                                                                                                            "kind": "init",
+                                                                                                            "method": false,
+                                                                                                            "shorthand": false
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "sort",
+                                                                                            "raw": "'sort'"
+                                                                                        }
+                                                                                    },
+                                                                                    "arguments": [
+                                                                                        {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "cmp"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "generator": false,
+                                                "expression": false,
+                                                "async": false
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "cmp"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x44d57c"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x2e0d5f"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "ConditionalExpression",
+                            "test": {
+                                "type": "BinaryExpression",
+                                "operator": "<",
+                                "left": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "_0x44d57c"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "id",
+                                        "raw": "'id'"
+                                    }
+                                },
+                                "right": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "_0x2e0d5f"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "id",
+                                        "raw": "'id'"
+                                    }
+                                }
+                            },
+                            "consequent": {
+                                "type": "UnaryExpression",
+                                "operator": "-",
+                                "argument": {
+                                    "type": "Literal",
+                                    "value": 1,
+                                    "raw": "0x1"
+                                },
+                                "prefix": true
+                            },
+                            "alternate": {
+                                "type": "Literal",
+                                "value": 1,
+                                "raw": "0x1"
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

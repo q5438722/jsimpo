@@ -1,0 +1,3 @@
+module[_0x245c99(429)] = function (_0x46ce2f, _0xa4a537) {
+    return _0x46ce2f + _0xa4a537;
+};

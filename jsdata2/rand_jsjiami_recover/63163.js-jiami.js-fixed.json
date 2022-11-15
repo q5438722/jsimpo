@@ -1,0 +1,90 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertThrows"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "function f() { break }",
+                        "raw": "'function f() { break }'"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "SyntaxError"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertThrows"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "function f() { break a }",
+                        "raw": "'function\\x20f()\\x20{\\x20break\\x20a\\x20}'"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "SyntaxError"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertThrows"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "function f() { continue }",
+                        "raw": "'function\\x20f()\\x20{\\x20continue\\x20}'"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "SyntaxError"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertThrows"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "function f() { continue a }",
+                        "raw": "'function f() { continue a }'"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "SyntaxError"
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

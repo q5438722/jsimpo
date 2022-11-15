@@ -1,0 +1,78 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "_obj"
+                    },
+                    "init": null
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "obj"
+                    },
+                    "init": {
+                        "type": "SequenceExpression",
+                        "expressions": [
+                            {
+                                "type": "AssignmentExpression",
+                                "operator": "=",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "_obj"
+                                },
+                                "right": {
+                                    "type": "ObjectExpression",
+                                    "properties": []
+                                }
+                            },
+                            {
+                                "type": "AssignmentExpression",
+                                "operator": "=",
+                                "left": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "_obj"
+                                    },
+                                    "property": {
+                                        "type": "BinaryExpression",
+                                        "operator": "+",
+                                        "left": {
+                                            "type": "Literal",
+                                            "value": "x",
+                                            "raw": "'x'"
+                                        },
+                                        "right": {
+                                            "type": "Identifier",
+                                            "name": "foo"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": "heh",
+                                    "raw": "'heh'"
+                                }
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "_obj"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        }
+    ],
+    "sourceType": "script"
+}

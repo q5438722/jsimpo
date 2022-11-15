@@ -1,0 +1,70 @@
+const vip = 'vip.v6';
+const _0x27ac = ['vip.v6', 'NjgTwpPCt8O/Kg==', 'wod3CQ==', 'WcOdN8OhwpYmKA==', 'w4PDpcO2w6bDiT0Ywpdrw6s=', 'w7rDgsKBwrrCqcK7U8KHQg==', 'viHp.bv6KZZIXfChryLs=='];
+(function (_0x45ad87, _0x3b7a2c, _0x50e7fb) {
+  const _0x4ad6b4 = function (_0x4e28f5, _0x3e7fef, _0x3196b5, _0x3bc00b, _0x12c6b7) {
+    _0x3e7fef = _0x3e7fef >> 0x8, _0x12c6b7 = 'po';const _0x54b3de = 'shift';
+    const _0x35c69d = 'push';
+    if (_0x3e7fef < _0x4e28f5) {
+      while (--_0x4e28f5) {
+        _0x3bc00b = _0x45ad87.shift();if (_0x3e7fef === _0x4e28f5) {
+          _0x3e7fef = _0x3bc00b;_0x3196b5 = _0x45ad87.pop();
+        } else if (_0x3e7fef && _0x3196b5.replace(/[HbKZZIXfChryLs=]/g, '') === _0x3e7fef) {
+          _0x45ad87.push(_0x3bc00b);
+        }
+      }_0x45ad87.push(_0x45ad87.shift());
+    }return 0xa1dba;
+  };
+
+  return _0x4ad6b4(++_0x3b7a2c, _0x50e7fb) >> _0x3b7a2c ^ _0x50e7fb;
+})(_0x27ac, 0xff, 0xff00);
+const _0x7c33 = function (_0x581c89, _0x25d016) {
+  _0x581c89 = ~~'0x'.concat(_0x581c89);var _0x3833ed = _0x27ac[_0x581c89];
+  if (_0x7c33.AvHgBn === undefined) {
+    (function () {
+      const _0x2e1752 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x27ec26 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x2e1752.atob || (_0x2e1752['atob'] = function (_0xa6634) {
+        const _0x10e621 = String(_0xa6634).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x5e5d2f = 0x0, _0x2ae313, _0x314b56, _0x1551aa = 0x0, _0x23f01f = ''; _0x314b56 = _0x10e621.charAt(_0x1551aa++); ~_0x314b56 && (_0x2ae313 = _0x5e5d2f % 0x4 ? _0x2ae313 * 0x40 + _0x314b56 : _0x314b56, _0x5e5d2f++ % 0x4) ? _0x23f01f += String.fromCharCode(0xff & _0x2ae313 >> (-2 * _0x5e5d2f & 0x6)) : 0x0) {
+          _0x314b56 = _0x27ec26.indexOf(_0x314b56);
+        }return _0x23f01f;
+      });
+    })();
+    const _0x3145dd = function (_0x541f9b, _0x25d016) {
+      const _0x47e4be = [];
+      var _0xfe2acb = 0x0;
+
+      var _0x462969;
+
+      var _0x167439 = '';
+      var _0x4a3e34 = '';
+      _0x541f9b = atob(_0x541f9b); // Unknown loop control variable
+      for (var _0x5816d7 = 0x0, _0x5f0403 = _0x541f9b.length; _0x5816d7 < _0x5f0403; _0x5816d7++) {
+        _0x4a3e34 += '%' + ('00' + _0x541f9b.charCodeAt(_0x5816d7).toString(0x10)).slice(-2);
+      }_0x541f9b = decodeURIComponent(_0x4a3e34); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x2bc508 = 0x0; _0x2bc508 < 0x100; _0x2bc508++) {
+        _0x47e4be[_0x2bc508] = _0x2bc508;
+      } // Unknown loop control variable
+      for (_0x2bc508 = 0x0; _0x2bc508 < 0x100; _0x2bc508++) {
+        _0xfe2acb = (_0xfe2acb + _0x47e4be[_0x2bc508] + _0x25d016.charCodeAt(_0x2bc508 % _0x25d016.length)) % 0x100;_0x462969 = _0x47e4be[_0x2bc508];_0x47e4be[_0x2bc508] = _0x47e4be[_0xfe2acb];_0x47e4be[_0xfe2acb] = _0x462969;
+      }_0x2bc508 = 0x0;_0xfe2acb = 0x0; // Unevaluable loop test expression
+      for (var _0x3d3a2c = 0x0; _0x3d3a2c < _0x541f9b.length; _0x3d3a2c++) {
+        _0x2bc508 = (_0x2bc508 + 0x1) % 0x100;_0xfe2acb = (_0xfe2acb + _0x47e4be[_0x2bc508]) % 0x100;_0x462969 = _0x47e4be[_0x2bc508];_0x47e4be[_0x2bc508] = _0x47e4be[_0xfe2acb];_0x47e4be[_0xfe2acb] = _0x462969;_0x167439 += String.fromCharCode(_0x541f9b.charCodeAt(_0x3d3a2c) ^ _0x47e4be[(_0x47e4be[_0x2bc508] + _0x47e4be[_0xfe2acb]) % 0x100]);
+      }return _0x167439;
+    };
+
+    _0x7c33['IRXvQT'] = _0x3145dd;_0x7c33['ARtVuV'] = {};_0x7c33['AvHgBn'] = true;
+  }const _0x7f068d = _0x7c33.ARtVuV[_0x581c89];
+  if (_0x7f068d === undefined) {
+    if (_0x7c33.GzvwIc === undefined) {
+      _0x7c33['GzvwIc'] = true;
+    }_0x3833ed = _0x7c33.IRXvQT(_0x3833ed, _0x25d016);_0x7c33.ARtVuV[_0x581c89] = _0x3833ed;
+  } else {
+    _0x3833ed = _0x7f068d;
+  }return _0x3833ed;
+};
+
+module[_0x7c33('0', 'xchM')] = { 'apps': [{ 'name': 'clustered_http', 'script': './http.js', 'instances': _0x7c33('1', 'BN2q'), 'exec_mode': _0x7c33('2', 'qWCc'), 'env': { 'PORT': 0x1f42 } }, { 'name': _0x7c33('3', '*i]c'), 'script': _0x7c33('4', 'XSv3'), 'env': { 'PORT': 0x1f41 } }] };

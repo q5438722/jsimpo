@@ -1,0 +1,1 @@
+var Utils={get:function t(){}};var{get:_get}=Utils;var bar={get:function t(a){_get(a,"baz")}};var f=function t({foo:a="bar"}){var n={foo:function t(){a}}};

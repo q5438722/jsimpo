@@ -1,0 +1,22 @@
+'use strict';
+import _0xc48e08 from "./about";
+import _0x2f965b from "./app";
+import _0x22ac34 from "./edit";
+import _0x20c7b2 from "./help";
+import _0x3fdaf2 from "./menu";
+import _0x16fd59 from "./preferences";
+import _0x43ea71 from "./subnav";
+import _0x43d0b0 from "./task";
+import _0x2ba509 from "./window";
+export default{
+  "about" : _0xc48e08,
+  "app" : _0x2f965b,
+  "edit" : _0x22ac34,
+  "help" : _0x20c7b2,
+  "menu" : _0x3fdaf2,
+  "preferences" : _0x16fd59,
+  "subnav" : _0x43ea71,
+  "task" : _0x43d0b0,
+  "window" : _0x2ba509
+};
+

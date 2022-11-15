@@ -1,0 +1,19 @@
+import path from "path";import { expect } from "chai";import jscodeshift from "jscodeshift";import transform from "./optimal-imports";import readFile from "../util/readFile";function trim(e) {
+  return e ? e.replace(/^\s+|\s+$/, "") : "";
+}function read(e) {
+  return readFile(path.join(__dirname, e));
+}describe("@material-ui/codemod", () => {
+  describe("v4.0.0", () => {
+    describe("optimal-imports", () => {
+      it("convert path as needed", () => {
+        const e = transform({ source: read("./optimal-imports.test/actual.js"), path: require.resolve("./optimal-imports.test/actual.js") }, { jscodeshift: jscodeshift }, {});
+        const t = read("./optimal-imports.test/expected.js");
+        expect(trim(e)).to.equal(trim(t), "The transformed version should be correct");
+      });it("should be idempotent", () => {
+        const e = transform({ source: read("./optimal-imports.test/expected.js"), path: require.resolve("./optimal-imports.test/expected.js") }, { jscodeshift: jscodeshift }, {});
+        const t = read("./optimal-imports.test/expected.js");
+        expect(trim(e)).to.equal(trim(t), "The transformed version should be correct");
+      });
+    });
+  });
+});

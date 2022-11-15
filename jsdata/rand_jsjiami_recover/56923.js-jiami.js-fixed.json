@@ -1,0 +1,828 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "Literal",
+                "value": "use strict",
+                "raw": "'use strict'"
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "common"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../common",
+                                "raw": "'../common'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "IfStatement",
+            "test": {
+                "type": "UnaryExpression",
+                "operator": "!",
+                "argument": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "common"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "hasCrypto",
+                        "raw": "'hasCrypto'"
+                    }
+                },
+                "prefix": true
+            },
+            "consequent": {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "common"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "skip",
+                            "raw": "'skip'"
+                        }
+                    },
+                    "arguments": [
+                        {
+                            "type": "Literal",
+                            "value": "missing crypto",
+                            "raw": "'missing\\x20crypto'"
+                        }
+                    ]
+                }
+            },
+            "alternate": null
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "assert"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "assert",
+                                "raw": "'assert'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "fs"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "fs",
+                                "raw": "'fs'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "fixtures"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../common/fixtures",
+                                "raw": "'../common/fixtures'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "tls"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "tls",
+                                "raw": "'tls'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "filenamePEM"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x38d9a7"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "fixtures"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "path",
+                                    "raw": "'path'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": "keys",
+                                    "raw": "'keys'"
+                                },
+                                {
+                                    "type": "BinaryExpression",
+                                    "operator": "+",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "_0x38d9a7"
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": ".pem",
+                                        "raw": "'.pem'"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "loadPEM"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x27d3ef"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "fs"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "readFileSync",
+                                    "raw": "'readFileSync'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "filenamePEM"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x27d3ef"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "caCert"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "loadPEM"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "ca1-cert",
+                                "raw": "'ca1-cert'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "opts"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "rejectUnauthorized",
+                                    "raw": "'rejectUnauthorized'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "UnaryExpression",
+                                    "operator": "!",
+                                    "argument": {
+                                        "type": "UnaryExpression",
+                                        "operator": "!",
+                                        "argument": {
+                                            "type": "ArrayExpression",
+                                            "elements": []
+                                        },
+                                        "prefix": true
+                                    },
+                                    "prefix": true
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "tls"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "connect",
+                        "raw": "'connect'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "opts"
+                    },
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "common"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "mustCall",
+                                "raw": "'mustCall'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Identifier",
+                                "name": "end"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "opts"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "ca",
+                        "raw": "'ca'"
+                    }
+                },
+                "right": {
+                    "type": "Identifier",
+                    "name": "caCert"
+                }
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "tls"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "connect",
+                                "raw": "'connect'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Identifier",
+                                "name": "opts"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "fail"
+                            }
+                        ]
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "on",
+                        "raw": "'on'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "error",
+                        "raw": "'error'"
+                    },
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "common"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "mustCall",
+                                "raw": "'mustCall'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "ArrowFunctionExpression",
+                                "id": null,
+                                "params": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "_0x3070c6"
+                                    }
+                                ],
+                                "body": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "assert"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "strictEqual",
+                                                        "raw": "'strictEqual'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "_0x3070c6"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "message",
+                                                            "raw": "'message'"
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "unable to get local issuer certificate",
+                                                        "raw": "'unable\\x20to\\x20get\\x20local\\x20issuer\\x20certificate'"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "generator": false,
+                                "expression": false,
+                                "async": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "fail"
+            },
+            "params": [],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "assert"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "fail",
+                                    "raw": "'fail'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": "should fail to connect",
+                                    "raw": "'should fail to connect'"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "opts"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "secureContext",
+                        "raw": "'secureContext'"
+                    }
+                },
+                "right": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "tls"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "createSecureContext",
+                            "raw": "'createSecureContext'"
+                        }
+                    },
+                    "arguments": []
+                }
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "tls"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "connect",
+                        "raw": "'connect'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "opts"
+                    },
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "common"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "mustCall",
+                                "raw": "'mustCall'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Identifier",
+                                "name": "end"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "opts"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "secureContext",
+                                "raw": "'secureContext'"
+                            }
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "context",
+                            "raw": "'context'"
+                        }
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "addCACert",
+                        "raw": "'addCACert'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "caCert"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "tls"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "connect",
+                        "raw": "'connect'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "opts"
+                    },
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "common"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "mustCall",
+                                "raw": "'mustCall'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Identifier",
+                                "name": "end"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "end"
+            },
+            "params": [],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "ThisExpression"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "end",
+                                    "raw": "'end'"
+                                }
+                            },
+                            "arguments": []
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

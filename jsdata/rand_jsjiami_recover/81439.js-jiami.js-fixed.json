@@ -1,0 +1,435 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "i18n"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../../../../shared/i18n",
+                                "raw": "'../../../../shared/i18n'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "errors"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "@tryghost/errors",
+                                "raw": "'@tryghost/errors'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "urlUtils"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../../../../shared/url-utils",
+                                "raw": "'../../../../shared/url-utils'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "module"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "exports",
+                        "raw": "'exports'"
+                    }
+                },
+                "right": {
+                    "type": "FunctionExpression",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "handlePageParam"
+                    },
+                    "params": [
+                        {
+                            "type": "Identifier",
+                            "name": "_0xf2ea3d"
+                        },
+                        {
+                            "type": "Identifier",
+                            "name": "_0x5c052c"
+                        },
+                        {
+                            "type": "Identifier",
+                            "name": "_0xb0d659"
+                        },
+                        {
+                            "type": "Identifier",
+                            "name": "_0x4faa1a"
+                        }
+                    ],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "Identifier",
+                                            "name": "_0x450395"
+                                        },
+                                        "init": {
+                                            "type": "NewExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "RegExp"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Literal",
+                                                    "value": "/page/(.*)?/",
+                                                    "raw": "'/page/(.*)?/'"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "kind": "const"
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "AssignmentExpression",
+                                    "operator": "=",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "_0x4faa1a"
+                                    },
+                                    "right": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "parseInt"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "_0x4faa1a"
+                                            },
+                                            {
+                                                "type": "Literal",
+                                                "value": 10,
+                                                "raw": "0xa"
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "type": "IfStatement",
+                                "test": {
+                                    "type": "BinaryExpression",
+                                    "operator": "===",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "_0x4faa1a"
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": 1,
+                                        "raw": "0x1"
+                                    }
+                                },
+                                "consequent": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ReturnStatement",
+                                            "argument": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "urlUtils"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "redirect301",
+                                                        "raw": "'redirect301'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x5c052c"
+                                                    },
+                                                    {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0xf2ea3d"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "originalUrl",
+                                                                    "raw": "'originalUrl'"
+                                                                }
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "replace",
+                                                                "raw": "'replace'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "Identifier",
+                                                                "name": "_0x450395"
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "/",
+                                                                "raw": "'/'"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "alternate": {
+                                    "type": "IfStatement",
+                                    "test": {
+                                        "type": "LogicalExpression",
+                                        "operator": "||",
+                                        "left": {
+                                            "type": "BinaryExpression",
+                                            "operator": "<",
+                                            "left": {
+                                                "type": "Identifier",
+                                                "name": "_0x4faa1a"
+                                            },
+                                            "right": {
+                                                "type": "Literal",
+                                                "value": 1,
+                                                "raw": "0x1"
+                                            }
+                                        },
+                                        "right": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "isNaN"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x4faa1a"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "consequent": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                            {
+                                                "type": "ReturnStatement",
+                                                "argument": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "_0xb0d659"
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "NewExpression",
+                                                            "callee": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "errors"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "NotFoundError",
+                                                                    "raw": "'NotFoundError'"
+                                                                }
+                                                            },
+                                                            "arguments": [
+                                                                {
+                                                                    "type": "ObjectExpression",
+                                                                    "properties": [
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Literal",
+                                                                                "value": "message",
+                                                                                "raw": "'message'"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "CallExpression",
+                                                                                "callee": {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "Identifier",
+                                                                                        "name": "i18n"
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "t",
+                                                                                        "raw": "'t'"
+                                                                                    }
+                                                                                },
+                                                                                "arguments": [
+                                                                                    {
+                                                                                        "type": "Literal",
+                                                                                        "value": "errors.errors.pageNotFound",
+                                                                                        "raw": "'errors.errors.pageNotFound'"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": false
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "alternate": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                            {
+                                                "type": "ExpressionStatement",
+                                                "expression": {
+                                                    "type": "AssignmentExpression",
+                                                    "operator": "=",
+                                                    "left": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "_0xf2ea3d"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "params",
+                                                                "raw": "'params'"
+                                                            }
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "page",
+                                                            "raw": "'page'"
+                                                        }
+                                                    },
+                                                    "right": {
+                                                        "type": "Identifier",
+                                                        "name": "_0x4faa1a"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "ReturnStatement",
+                                                "argument": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "_0xb0d659"
+                                                    },
+                                                    "arguments": []
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "generator": false,
+                    "expression": false,
+                    "async": false
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}

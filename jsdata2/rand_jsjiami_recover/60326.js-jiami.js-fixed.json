@@ -1,0 +1,65 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "f"
+            },
+            "params": [],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ThrowStatement",
+                        "argument": {
+                            "type": "Literal",
+                            "value": "boom",
+                            "raw": "'boom'"
+                        }
+                    },
+                    {
+                        "type": "TryStatement",
+                        "block": {
+                            "type": "BlockStatement",
+                            "body": []
+                        },
+                        "handler": {
+                            "type": "CatchClause",
+                            "param": {
+                                "type": "Identifier",
+                                "name": "_0x2552ef"
+                            },
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": []
+                            }
+                        },
+                        "finalizer": null
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertThrows"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "f"
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

@@ -1,0 +1,1 @@
+assertThrows(_0x96b73c(138), SyntaxError), assertThrows('function f() { break a }', SyntaxError), assertThrows('function f() { continue }', SyntaxError), assertThrows('function f() { continue a }', SyntaxError);

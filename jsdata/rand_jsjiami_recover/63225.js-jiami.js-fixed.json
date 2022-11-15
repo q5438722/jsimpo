@@ -1,0 +1,140 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "threw"
+                    },
+                    "init": {
+                        "type": "UnaryExpression",
+                        "operator": "!",
+                        "argument": {
+                            "type": "ArrayExpression",
+                            "elements": []
+                        },
+                        "prefix": true
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "TryStatement",
+            "block": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "obj"
+                                },
+                                "init": {
+                                    "type": "NewExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "Function"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "__proto__",
+                                            "raw": "'__proto__'"
+                                        }
+                                    },
+                                    "arguments": []
+                                }
+                            }
+                        ],
+                        "kind": "var"
+                    }
+                ]
+            },
+            "handler": {
+                "type": "CatchClause",
+                "param": {
+                    "type": "Identifier",
+                    "name": "_0x4c9db8"
+                },
+                "body": {
+                    "type": "BlockStatement",
+                    "body": [
+                        {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "assertInstanceof"
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "_0x4c9db8"
+                                    },
+                                    {
+                                        "type": "Identifier",
+                                        "name": "TypeError"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                                "type": "AssignmentExpression",
+                                "operator": "=",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "threw"
+                                },
+                                "right": {
+                                    "type": "UnaryExpression",
+                                    "operator": "!",
+                                    "argument": {
+                                        "type": "UnaryExpression",
+                                        "operator": "!",
+                                        "argument": {
+                                            "type": "ArrayExpression",
+                                            "elements": []
+                                        },
+                                        "prefix": true
+                                    },
+                                    "prefix": true
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "finalizer": null
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertTrue"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "threw"
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

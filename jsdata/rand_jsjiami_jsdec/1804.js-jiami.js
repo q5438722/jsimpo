@@ -1,0 +1,1 @@
+export default function setTransition(_0x3920b3,_0x391a64){const _0x4add3c=this;if(!_0x4add3c['params']['cssMode']){_0x4add3c['$wrapperEl']['transition'](_0x3920b3);}_0x4add3c['emit']('setTransition',_0x3920b3,_0x391a64);}

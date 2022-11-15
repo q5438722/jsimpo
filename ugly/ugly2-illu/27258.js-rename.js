@@ -1,0 +1,6 @@
+import renameProps from "../util/renameProps";export default function transformer(o, r, s) {
+  const e = r.jscodeshift;
+  const n = e(o.source);
+  const t = s.printOptions;
+  renameProps({ root: n, componentName: "TextareaAutosize", props: { rows: "minRows", rowsMin: "minRows", rowsMax: "maxRows" } });renameProps({ root: n, componentName: "TextField", props: { rowsMin: "minRows", rowsMax: "maxRows" } });return n.toSource(t);
+}

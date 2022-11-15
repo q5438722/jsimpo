@@ -1,0 +1,1 @@
+function TestNestedLoops(){var sum=0;for(var i=0;i<200;i=i+1){for(var j=0;j<200;j=j+1){sum=sum+1}}return sum}assertEquals(200*200,TestNestedLoops());

@@ -1,0 +1,1 @@
+function TestNestedLoops(){var s=0;for(var e=0;e<200;e=e+1){for(var r=0;r<200;r=r+1){s=s+1}}return s}assertEquals(200*200,TestNestedLoops());

@@ -1,0 +1,1 @@
+Array.map;function*makeIterator(){

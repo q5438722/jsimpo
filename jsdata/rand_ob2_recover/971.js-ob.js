@@ -1,0 +1,1 @@
+module[_0x563c08(138)] = require('./dist/index.js')[_0x563c08(139)], module['exports'][_0x563c08(139)] = module['exports'];

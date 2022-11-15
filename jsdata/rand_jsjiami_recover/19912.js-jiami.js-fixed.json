@@ -1,0 +1,227 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "Literal",
+                "value": "use strict",
+                "raw": "'use strict'"
+            }
+        },
+        {
+            "type": "ClassDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "Hello"
+            },
+            "superClass": null,
+            "body": {
+                "type": "ClassBody",
+                "body": [
+                    {
+                        "type": "MethodDefinition",
+                        "key": {
+                            "type": "Literal",
+                            "value": "toString",
+                            "raw": "'toString'"
+                        },
+                        "computed": true,
+                        "value": {
+                            "type": "FunctionExpression",
+                            "id": null,
+                            "params": [],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ReturnStatement",
+                                        "argument": {
+                                            "type": "Literal",
+                                            "value": "hello",
+                                            "raw": "'hello'"
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        },
+                        "kind": "method",
+                        "static": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ClassDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "Outer"
+            },
+            "superClass": {
+                "type": "Identifier",
+                "name": "Hello"
+            },
+            "body": {
+                "type": "ClassBody",
+                "body": [
+                    {
+                        "type": "MethodDefinition",
+                        "key": {
+                            "type": "Identifier",
+                            "name": "constructor"
+                        },
+                        "computed": false,
+                        "value": {
+                            "type": "FunctionExpression",
+                            "id": null,
+                            "params": [],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Super"
+                                            },
+                                            "arguments": []
+                                        }
+                                    },
+                                    {
+                                        "type": "ClassDeclaration",
+                                        "id": {
+                                            "type": "Identifier",
+                                            "name": "_0x565142"
+                                        },
+                                        "superClass": null,
+                                        "body": {
+                                            "type": "ClassBody",
+                                            "body": [
+                                                {
+                                                    "type": "MethodDefinition",
+                                                    "key": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Super"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "toString",
+                                                                "raw": "'toString'"
+                                                            }
+                                                        },
+                                                        "arguments": []
+                                                    },
+                                                    "computed": true,
+                                                    "value": {
+                                                        "type": "FunctionExpression",
+                                                        "id": null,
+                                                        "params": [],
+                                                        "body": {
+                                                            "type": "BlockStatement",
+                                                            "body": [
+                                                                {
+                                                                    "type": "ReturnStatement",
+                                                                    "argument": {
+                                                                        "type": "Literal",
+                                                                        "value": "hello",
+                                                                        "raw": "'hello'"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        "generator": false,
+                                                        "expression": false,
+                                                        "async": false
+                                                    },
+                                                    "kind": "method",
+                                                    "static": false
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "ReturnStatement",
+                                        "argument": {
+                                            "type": "NewExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0x565142"
+                                            },
+                                            "arguments": []
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        },
+                        "kind": "constructor",
+                        "static": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "expect"
+                        },
+                        "arguments": [
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "NewExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "Outer"
+                                        },
+                                        "arguments": []
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "hello",
+                                        "raw": "'hello'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "toBe",
+                        "raw": "'toBe'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "hello",
+                        "raw": "'hello'"
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

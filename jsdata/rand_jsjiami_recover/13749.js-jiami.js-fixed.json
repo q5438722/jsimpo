@@ -1,0 +1,67 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "foo"
+                    },
+                    "init": {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "left": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                                "type": "BinaryExpression",
+                                "operator": "+",
+                                "left": {
+                                    "type": "Literal",
+                                    "value": "test ",
+                                    "raw": "'test '"
+                                },
+                                "right": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "test",
+                                            "raw": "'test'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "foo"
+                                        }
+                                    ]
+                                }
+                            },
+                            "right": {
+                                "type": "Literal",
+                                "value": " ",
+                                "raw": "'\\x20'"
+                            }
+                        },
+                        "right": {
+                            "type": "Identifier",
+                            "name": "bar"
+                        }
+                    }
+                }
+            ],
+            "kind": "var"
+        }
+    ],
+    "sourceType": "script"
+}

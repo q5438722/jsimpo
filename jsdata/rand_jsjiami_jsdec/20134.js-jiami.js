@@ -1,0 +1,1 @@
+var _obj;foo=_obj={'bar'(){var _0x58a2c9={'bErOF':'baz'};return babelHelpers['set'](babelHelpers['getPrototypeOf'](_obj),_0x58a2c9['bErOF'],Math['pow'](babelHelpers['get'](babelHelpers['getPrototypeOf'](_obj),_0x58a2c9['bErOF'],this),0xc),this,![]);}};

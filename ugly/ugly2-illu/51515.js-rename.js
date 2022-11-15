@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = _default;
+const t = require("@babel/types");
+
+function _default(e) {
+  const r = e.params;
+  for (let e = 0; e < r.length; e++) {
+    const s = r[e];
+    if (t.isAssignmentPattern(s) || t.isRestElement(s)) {
+      return e;
+    }
+  }return r.length;
+}

@@ -1,0 +1,7 @@
+function* myGenerator(_0x256bf7) {
+  var _0x9c5a30;
+
+  var _0xe78d70;
+
+  return _0xe78d70 = (_0x9c5a30 = _0x256bf7, yield _0x9c5a30), Math.abs(_0xe78d70);
+}

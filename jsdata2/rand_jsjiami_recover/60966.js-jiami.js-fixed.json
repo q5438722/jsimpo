@@ -1,0 +1,570 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "load"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "test/mjsunit/wasm/wasm-module-builder.js",
+                        "raw": "'test/mjsunit/wasm/wasm-module-builder.js'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "builder"
+                    },
+                    "init": {
+                        "type": "NewExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "WasmModuleBuilder"
+                        },
+                        "arguments": []
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "builder"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "addType",
+                        "raw": "'addType'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "makeSig"
+                        },
+                        "arguments": [
+                            {
+                                "type": "ArrayExpression",
+                                "elements": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "kWasmI32"
+                                    },
+                                    {
+                                        "type": "Identifier",
+                                        "name": "kWasmI32"
+                                    },
+                                    {
+                                        "type": "Identifier",
+                                        "name": "kWasmI32"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "ArrayExpression",
+                                "elements": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "kWasmI32"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "builder"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "addFunction",
+                                                "raw": "'addFunction'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "undefined"
+                                            },
+                                            {
+                                                "type": "Literal",
+                                                "value": 0,
+                                                "raw": "0x0"
+                                            }
+                                        ]
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "addLocals",
+                                        "raw": "'addLocals'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "kWasmI32"
+                                    },
+                                    {
+                                        "type": "Literal",
+                                        "value": 2,
+                                        "raw": "0x2"
+                                    }
+                                ]
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "addLocals",
+                                "raw": "'addLocals'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Identifier",
+                                "name": "kWasmF32"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 2,
+                                "raw": "0x2"
+                            }
+                        ]
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "addBodyWithEnd",
+                        "raw": "'addBodyWithEnd'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "ArrayExpression",
+                        "elements": [
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Const"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 0,
+                                "raw": "0x0"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Const"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 0,
+                                "raw": "0x0"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Const"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 249,
+                                "raw": "0xf9"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 0,
+                                "raw": "0x0"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Ior"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Eqz"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Add"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kSimdPrefix"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32x4Splat"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprF32Const"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 70,
+                                "raw": "0x46"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 93,
+                                "raw": "0x5d"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 0,
+                                "raw": "0x0"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 0,
+                                "raw": "0x0"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Const"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 131,
+                                "raw": "0x83"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 1,
+                                "raw": "0x1"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Const"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 131,
+                                "raw": "0x83"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 1,
+                                "raw": "0x1"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Const"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 131,
+                                "raw": "0x83"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 1,
+                                "raw": "0x1"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Add"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Add"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprIf"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kWasmI32"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Const"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 0,
+                                "raw": "0x0"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprElse"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Const"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 0,
+                                "raw": "0x0"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprEnd"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprIf"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kWasmI32"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Const"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 0,
+                                "raw": "0x0"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprElse"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Const"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 0,
+                                "raw": "0x0"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprEnd"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprF32ReinterpretI32"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprF32Max"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kSimdPrefix"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprF32x4Splat"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32Const"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 131,
+                                "raw": "0x83"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 1,
+                                "raw": "0x1"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kSimdPrefix"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32x4Splat"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kSimdPrefix"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32x4Eq"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kSimdPrefix"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprI32x4Eq"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kSimdPrefix"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprV128AnyTrue"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "kExprEnd"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "builder"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "addExport",
+                        "raw": "'addExport'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "main",
+                        "raw": "'main'"
+                    },
+                    {
+                        "type": "Literal",
+                        "value": 0,
+                        "raw": "0x0"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "instance"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "builder"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "instantiate",
+                                "raw": "'instantiate'"
+                            }
+                        },
+                        "arguments": []
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "print"
+                },
+                "arguments": [
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "instance"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "exports",
+                                    "raw": "'exports'"
+                                }
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "main",
+                                "raw": "'main'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": 1,
+                                "raw": "0x1"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 2,
+                                "raw": "0x2"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 3,
+                                "raw": "0x3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

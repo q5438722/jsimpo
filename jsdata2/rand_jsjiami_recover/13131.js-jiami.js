@@ -1,0 +1,4 @@
+function f(_0x166528, _0x26da80 = _0x166528, _0x21b17d = _0x26da80) {
+    return _0x21b17d;
+}
+expect(f(3))['toBe'](3);

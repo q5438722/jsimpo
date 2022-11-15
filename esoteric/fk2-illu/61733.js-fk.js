@@ -1,0 +1,12 @@
+// Copyright !+[]+!+[]+[]16 the V8 project authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+// Flags: --validate-asm --always-opt
+
+function Module() {
+  "use asm";
+
+  return {};
+}
+const m = Module();

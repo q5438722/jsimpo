@@ -1,0 +1,68 @@
+const _ = require('lodash');
+const utils = require('../../index');
+const mapper = require('./utils/mapper');
+const _private = {};
+_private['settingsFilter'] = (_0x4dd8c2, _0x4d1104) => {
+    let _0x2cc598 = _0x4d1104 ? _0x4d1104['split'](',') : ![];
+    return _['filter'](_0x4dd8c2, _0x5d21c3 => {
+        if (_0x2cc598) {
+            if ('wpduR' !== 'DlmtK') {
+                return _['includes'](_0x2cc598, _0x5d21c3['group']);
+            } else {
+                frame['response']['meta']['filters']['type'] = frame['options']['type'];
+            }
+        }
+        return !![];
+    });
+};
+module['exports'] = {
+    'browse'(_0x3c0904, _0xe52b4e, _0xfc77a8) {
+        let _0x58da53;
+        if (utils['isContentAPI'](_0xfc77a8)) {
+            if ('rWfjC' === 'rWfjC') {
+                _0x58da53 = _0x3c0904;
+            } else {
+                _0xfc77a8['response']['meta']['filters']['group'] = _0xfc77a8['options']['group'];
+            }
+        } else {
+            _0x58da53 = _['values'](_private['settingsFilter'](_0x3c0904, _0xfc77a8['options']['group']));
+        }
+        _0xfc77a8['response'] = {
+            'settings': mapper['mapSettings'](_0x58da53, _0xfc77a8),
+            'meta': {}
+        };
+        if (_0xfc77a8['options']['type'] || _0xfc77a8['options']['group']) {
+            _0xfc77a8['response']['meta']['filters'] = {};
+            if (_0xfc77a8['options']['type']) {
+                if ('vcWhB' === 'vcWhB') {
+                    _0xfc77a8['response']['meta']['filters']['type'] = _0xfc77a8['options']['type'];
+                } else {
+                    let _0x101107 = filter ? filter['split'](',') : ![];
+                    return _['filter'](settings, _0x56282a => {
+                        if (_0x101107) {
+                            return _['includes'](_0x101107, _0x56282a['group']);
+                        }
+                        return !![];
+                    });
+                }
+            }
+            if (_0xfc77a8['options']['group']) {
+                if ('XKDAE' === 'XKDAE') {
+                    _0xfc77a8['response']['meta']['filters']['group'] = _0xfc77a8['options']['group'];
+                } else {
+                    return _['includes'](filteredGroups, setting['group']);
+                }
+            }
+        }
+    },
+    'read'() {
+        this['browse'](...arguments);
+    },
+    'edit'(_0x187981, _0x4f67e6, _0x274260) {
+        const _0x43ae15 = _['keyBy'](_['invokeMap'](_0x187981, 'toJSON'), 'key');
+        this['browse'](_0x43ae15, _0x4f67e6, _0x274260);
+    },
+    'download'(_0x4ef429, _0x295a05, _0x2f2eb7) {
+        _0x2f2eb7['response'] = _0x4ef429;
+    }
+};

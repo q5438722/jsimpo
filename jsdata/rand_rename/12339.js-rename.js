@@ -1,0 +1,1 @@
+const selectCollectionTypesRelatedPermissions=e=>e.get("permissionsManager").collectionTypesRelatedPermissions;export default selectCollectionTypesRelatedPermissions;

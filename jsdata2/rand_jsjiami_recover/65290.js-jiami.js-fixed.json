@@ -1,0 +1,285 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "NewExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "BenchmarkSuite"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "ES5",
+                        "raw": "'ES5'"
+                    },
+                    {
+                        "type": "ArrayExpression",
+                        "elements": [
+                            {
+                                "type": "Literal",
+                                "value": 1000,
+                                "raw": "0x3e8"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ArrayExpression",
+                        "elements": [
+                            {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "Benchmark"
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Literal",
+                                        "value": "ES5",
+                                        "raw": "'ES5'"
+                                    },
+                                    {
+                                        "type": "UnaryExpression",
+                                        "operator": "!",
+                                        "argument": {
+                                            "type": "ArrayExpression",
+                                            "elements": []
+                                        },
+                                        "prefix": true
+                                    },
+                                    {
+                                        "type": "UnaryExpression",
+                                        "operator": "!",
+                                        "argument": {
+                                            "type": "ArrayExpression",
+                                            "elements": []
+                                        },
+                                        "prefix": true
+                                    },
+                                    {
+                                        "type": "Literal",
+                                        "value": 0,
+                                        "raw": "0x0"
+                                    },
+                                    {
+                                        "type": "Identifier",
+                                        "name": "ES5"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "Point"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x32d742"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x69aeb7"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "ThisExpression"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "x",
+                                    "raw": "'x'"
+                                }
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "_0x32d742"
+                            }
+                        }
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "ThisExpression"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "y",
+                                    "raw": "'y'"
+                                }
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "_0x69aeb7"
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "MyPoint"
+            },
+            "params": [],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "Point"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "apply",
+                                    "raw": "'apply'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "ThisExpression"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "arguments"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "makePoint"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x4283ce"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x239b12"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "NewExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "MyPoint"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x4283ce"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x239b12"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "ES5"
+            },
+            "params": [],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "Literal",
+                            "value": "use strict",
+                            "raw": "'use strict'"
+                        }
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "makePoint"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": 1,
+                                    "raw": "0x1"
+                                },
+                                {
+                                    "type": "Literal",
+                                    "value": 2,
+                                    "raw": "0x2"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

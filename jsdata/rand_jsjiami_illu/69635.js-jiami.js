@@ -1,0 +1,72 @@
+const vip = 'vip.v6';
+const _0x1945 = ['vip.v6', 'wonDjX1pTzYc', 'woYba8Ocw5xEacKdYcKZO8Ov', 'avipQ.xv6HFwWLtkSmtlhxmk=='];
+(function (_0x1a7301, _0x3200ef, _0xf7e967) {
+  const _0x461063 = function (_0xe4f3af, _0x1c3b2a, _0x177d2f, _0x24db9, _0x108471) {
+    _0x1c3b2a = _0x1c3b2a >> 0x8, _0x108471 = 'po';const _0x4adc95 = 'shift';
+    const _0x130c41 = 'push';
+    if (_0x1c3b2a < _0xe4f3af) {
+      while (--_0xe4f3af) {
+        _0x24db9 = _0x1a7301.shift();if (_0x1c3b2a === _0xe4f3af) {
+          _0x1c3b2a = _0x24db9;_0x177d2f = _0x1a7301.pop();
+        } else if (_0x1c3b2a && _0x177d2f.replace(/[aQxHFwWLtkSmtlhxmk=]/g, '') === _0x1c3b2a) {
+          _0x1a7301.push(_0x24db9);
+        }
+      }_0x1a7301.push(_0x1a7301.shift());
+    }return 0xa1d34;
+  };
+
+  return _0x461063(++_0x3200ef, _0xf7e967) >> _0x3200ef ^ _0xf7e967;
+})(_0x1945, 0x1b9, 0x1b900);
+const _0x3a3b = function (_0x4dae5f, _0x14f52c) {
+  _0x4dae5f = ~~'0x'.concat(_0x4dae5f);var _0x24e5ec = _0x1945[_0x4dae5f];
+  if (_0x3a3b.VBFQCF === undefined) {
+    (function () {
+      const _0x44cf3b = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x4e20f5 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x44cf3b.atob || (_0x44cf3b['atob'] = function (_0x48008f) {
+        const _0x52ff08 = String(_0x48008f).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x394817 = 0x0, _0x52e2d3, _0x1b749f, _0x54456f = 0x0, _0x1365ff = ''; _0x1b749f = _0x52ff08.charAt(_0x54456f++); ~_0x1b749f && (_0x52e2d3 = _0x394817 % 0x4 ? _0x52e2d3 * 0x40 + _0x1b749f : _0x1b749f, _0x394817++ % 0x4) ? _0x1365ff += String.fromCharCode(0xff & _0x52e2d3 >> (-2 * _0x394817 & 0x6)) : 0x0) {
+          _0x1b749f = _0x4e20f5.indexOf(_0x1b749f);
+        }return _0x1365ff;
+      });
+    })();
+    const _0x241e79 = function (_0x43d760, _0x14f52c) {
+      const _0x4eb14f = [];
+      var _0x6f2574 = 0x0;
+
+      var _0x54c59d;
+
+      var _0x4b0499 = '';
+      var _0x47a79f = '';
+      _0x43d760 = atob(_0x43d760); // Unknown loop control variable
+      for (var _0x1c7462 = 0x0, _0x681c21 = _0x43d760.length; _0x1c7462 < _0x681c21; _0x1c7462++) {
+        _0x47a79f += '%' + ('00' + _0x43d760.charCodeAt(_0x1c7462).toString(0x10)).slice(-2);
+      }_0x43d760 = decodeURIComponent(_0x47a79f); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x14fbca = 0x0; _0x14fbca < 0x100; _0x14fbca++) {
+        _0x4eb14f[_0x14fbca] = _0x14fbca;
+      } // Unknown loop control variable
+      for (_0x14fbca = 0x0; _0x14fbca < 0x100; _0x14fbca++) {
+        _0x6f2574 = (_0x6f2574 + _0x4eb14f[_0x14fbca] + _0x14f52c.charCodeAt(_0x14fbca % _0x14f52c.length)) % 0x100;_0x54c59d = _0x4eb14f[_0x14fbca];_0x4eb14f[_0x14fbca] = _0x4eb14f[_0x6f2574];_0x4eb14f[_0x6f2574] = _0x54c59d;
+      }_0x14fbca = 0x0;_0x6f2574 = 0x0; // Unevaluable loop test expression
+      for (var _0x1131c0 = 0x0; _0x1131c0 < _0x43d760.length; _0x1131c0++) {
+        _0x14fbca = (_0x14fbca + 0x1) % 0x100;_0x6f2574 = (_0x6f2574 + _0x4eb14f[_0x14fbca]) % 0x100;_0x54c59d = _0x4eb14f[_0x14fbca];_0x4eb14f[_0x14fbca] = _0x4eb14f[_0x6f2574];_0x4eb14f[_0x6f2574] = _0x54c59d;_0x4b0499 += String.fromCharCode(_0x43d760.charCodeAt(_0x1131c0) ^ _0x4eb14f[(_0x4eb14f[_0x14fbca] + _0x4eb14f[_0x6f2574]) % 0x100]);
+      }return _0x4b0499;
+    };
+
+    _0x3a3b['tUZqnZ'] = _0x241e79;_0x3a3b['GSYXdu'] = {};_0x3a3b['VBFQCF'] = true;
+  }const _0xf07f95 = _0x3a3b.GSYXdu[_0x4dae5f];
+  if (_0xf07f95 === undefined) {
+    if (_0x3a3b.yguull === undefined) {
+      _0x3a3b['yguull'] = true;
+    }_0x24e5ec = _0x3a3b.tUZqnZ(_0x24e5ec, _0x14f52c);_0x3a3b.GSYXdu[_0x4dae5f] = _0x24e5ec;
+  } else {
+    _0x24e5ec = _0xf07f95;
+  }return _0x24e5ec;
+};
+
+var { ConsumeSharedPlugin } = require(_0x3a3b('0', 'cZS6'))[_0x3a3b('1', '74dJ')];
+
+module['exports'] = { 'plugins': [new ConsumeSharedPlugin({ 'consumes': { 'shared': { 'import': false, 'strictVersion': true }, 'shared2': { 'import': false } } })] };

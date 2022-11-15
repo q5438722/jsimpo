@@ -1,0 +1,6 @@
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var BuildGameObject=require('../BuildGameObject');var GameObjectCreator=require('../GameObjectCreator');var GetAdvancedValue=require('../../utils/object/GetAdvancedValue');var Video=require('./Video');GameObjectCreator['register']('video',function(_0xd0a2cc,_0x54cce1){var _0x4c77a8={'EkIky':'0|1|2|4|6|3|5','HYtvu':function(_0x4d0924,_0x400133){return _0x4d0924===_0x400133;},'kPTbr':function(_0x429fef,_0x3ab6a3,_0x1defb4,_0x1d1c40){return _0x429fef(_0x3ab6a3,_0x1defb4,_0x1d1c40);},'XiNDQ':'key'};var _0x25720e=_0x4c77a8['EkIky']['split']('|'),_0x5b32df=0x0;while(!![]){switch(_0x25720e[_0x5b32df++]){case'0':if(_0x4c77a8['HYtvu'](_0xd0a2cc,undefined)){_0xd0a2cc={};}continue;case'1':var _0x370047=_0x4c77a8['kPTbr'](GetAdvancedValue,_0xd0a2cc,_0x4c77a8['XiNDQ'],null);continue;case'2':var _0x3b135a=new Video(this['scene'],0x0,0x0,_0x370047);continue;case'3':if(!_0xd0a2cc['add']){this['updateList']['add'](_0x3b135a);}continue;case'4':if(_0x54cce1!==undefined){_0xd0a2cc['add']=_0x54cce1;}continue;case'5':return _0x3b135a;case'6':_0x4c77a8['kPTbr'](BuildGameObject,this['scene'],_0x3b135a,_0xd0a2cc);continue;}break;}});

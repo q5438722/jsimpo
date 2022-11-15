@@ -1,0 +1,1 @@
+import{unstable_capitalize as capitalize}from"@material-ui/utils";function isEmpty(t){return t.length===0}export default function propsToClassKey(i){const{variant:t,...a}=i;let e=t||"";Object.keys(a).sort().forEach(t=>{if(t==="color"){e+=isEmpty(e)?i[t]:capitalize(i[t])}else{e+=`${isEmpty(e)?t:capitalize(t)}${capitalize(i[t].toString())}`}});return e}

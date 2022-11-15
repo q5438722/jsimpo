@@ -1,0 +1,1032 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "Literal",
+                "value": "use strict",
+                "raw": "'use strict'"
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "chai"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "chai",
+                                "raw": "'chai'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "path"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "path",
+                                "raw": "'path'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "overrideEnv"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "process-utils/override-env",
+                                "raw": "'process-utils/override-env'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "fs"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "fs",
+                                "raw": "'fs'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "conditionallyLoadDotenv"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../../../../lib/cli/conditionally-load-dotenv",
+                                "raw": "'../../../../lib/cli/conditionally-load-dotenv'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "chai"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "use",
+                        "raw": "'use'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "chai-as-promised",
+                                "raw": "'chai-as-promised'"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "expect"
+                    },
+                    "init": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "require"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": "chai",
+                                    "raw": "'chai'"
+                                }
+                            ]
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "expect",
+                            "raw": "'expect'"
+                        }
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "describe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "test/unit/lib/cli/conditionally-load-dotenv.test.js",
+                        "raw": "'test/unit/lib/cli/conditionally-load-dotenv.test.js'"
+                    },
+                    {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "VariableDeclaration",
+                                    "declarations": [
+                                        {
+                                            "type": "VariableDeclarator",
+                                            "id": {
+                                                "type": "Identifier",
+                                                "name": "_0x479608"
+                                            },
+                                            "init": null
+                                        }
+                                    ],
+                                    "kind": "let"
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "before"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ArrowFunctionExpression",
+                                                "id": null,
+                                                "params": [],
+                                                "body": {
+                                                    "type": "BlockStatement",
+                                                    "body": [
+                                                        {
+                                                            "type": "VariableDeclaration",
+                                                            "declarations": [
+                                                                {
+                                                                    "type": "VariableDeclarator",
+                                                                    "id": {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x38b0aa"
+                                                                    },
+                                                                    "init": {
+                                                                        "type": "Literal",
+                                                                        "value": "DEFAULT_ENV_VARIABLE=valuefromdefault",
+                                                                        "raw": "'DEFAULT_ENV_VARIABLE=valuefromdefault'"
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "kind": "const"
+                                                        },
+                                                        {
+                                                            "type": "ExpressionStatement",
+                                                            "expression": {
+                                                                "type": "AwaitExpression",
+                                                                "argument": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "MemberExpression",
+                                                                            "computed": true,
+                                                                            "object": {
+                                                                                "type": "Identifier",
+                                                                                "name": "fs"
+                                                                            },
+                                                                            "property": {
+                                                                                "type": "Literal",
+                                                                                "value": "promises",
+                                                                                "raw": "'promises'"
+                                                                            }
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "writeFile",
+                                                                            "raw": "'writeFile'"
+                                                                        }
+                                                                    },
+                                                                    "arguments": [
+                                                                        {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "MemberExpression",
+                                                                                "computed": true,
+                                                                                "object": {
+                                                                                    "type": "Identifier",
+                                                                                    "name": "path"
+                                                                                },
+                                                                                "property": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "resolve",
+                                                                                    "raw": "'resolve'"
+                                                                                }
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "Literal",
+                                                                                    "value": ".env",
+                                                                                    "raw": "'.env'"
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "type": "Identifier",
+                                                                            "name": "_0x38b0aa"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "VariableDeclaration",
+                                                            "declarations": [
+                                                                {
+                                                                    "type": "VariableDeclarator",
+                                                                    "id": {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x1032b7"
+                                                                    },
+                                                                    "init": {
+                                                                        "type": "Literal",
+                                                                        "value": "testing",
+                                                                        "raw": "'testing'"
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "kind": "const"
+                                                        },
+                                                        {
+                                                            "type": "VariableDeclaration",
+                                                            "declarations": [
+                                                                {
+                                                                    "type": "VariableDeclarator",
+                                                                    "id": {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x2b1214"
+                                                                    },
+                                                                    "init": {
+                                                                        "type": "Literal",
+                                                                        "value": "STAGE_ENV_VARIABLE=valuefromstage",
+                                                                        "raw": "'STAGE_ENV_VARIABLE=valuefromstage'"
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "kind": "const"
+                                                        },
+                                                        {
+                                                            "type": "ExpressionStatement",
+                                                            "expression": {
+                                                                "type": "AwaitExpression",
+                                                                "argument": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "MemberExpression",
+                                                                            "computed": true,
+                                                                            "object": {
+                                                                                "type": "Identifier",
+                                                                                "name": "fs"
+                                                                            },
+                                                                            "property": {
+                                                                                "type": "Literal",
+                                                                                "value": "promises",
+                                                                                "raw": "'promises'"
+                                                                            }
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "writeFile",
+                                                                            "raw": "'writeFile'"
+                                                                        }
+                                                                    },
+                                                                    "arguments": [
+                                                                        {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "MemberExpression",
+                                                                                "computed": true,
+                                                                                "object": {
+                                                                                    "type": "Identifier",
+                                                                                    "name": "path"
+                                                                                },
+                                                                                "property": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "resolve",
+                                                                                    "raw": "'resolve'"
+                                                                                }
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "BinaryExpression",
+                                                                                    "operator": "+",
+                                                                                    "left": {
+                                                                                        "type": "Literal",
+                                                                                        "value": ".env.",
+                                                                                        "raw": "'.env.'"
+                                                                                    },
+                                                                                    "right": {
+                                                                                        "type": "Identifier",
+                                                                                        "name": "_0x1032b7"
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "type": "Identifier",
+                                                                            "name": "_0x2b1214"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "generator": false,
+                                                "expression": false,
+                                                "async": true
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "beforeEach"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ArrowFunctionExpression",
+                                                "id": null,
+                                                "params": [],
+                                                "body": {
+                                                    "type": "BlockStatement",
+                                                    "body": [
+                                                        {
+                                                            "type": "ExpressionStatement",
+                                                            "expression": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "Identifier",
+                                                                        "name": "conditionallyLoadDotenv"
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "clear",
+                                                                        "raw": "'clear'"
+                                                                    }
+                                                                },
+                                                                "arguments": []
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "ExpressionStatement",
+                                                            "expression": {
+                                                                "type": "AssignmentExpression",
+                                                                "operator": "=",
+                                                                "left": {
+                                                                    "type": "ObjectPattern",
+                                                                    "properties": [
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Identifier",
+                                                                                "name": "restoreEnv"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "Identifier",
+                                                                                "name": "restoreEnv"
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": true
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "right": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "Identifier",
+                                                                        "name": "overrideEnv"
+                                                                    },
+                                                                    "arguments": []
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "generator": false,
+                                                "expression": false,
+                                                "async": false
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "afterEach"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ArrowFunctionExpression",
+                                                "id": null,
+                                                "params": [],
+                                                "body": {
+                                                    "type": "BlockStatement",
+                                                    "body": [
+                                                        {
+                                                            "type": "ExpressionStatement",
+                                                            "expression": {
+                                                                "type": "LogicalExpression",
+                                                                "operator": "&&",
+                                                                "left": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x479608"
+                                                                },
+                                                                "right": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x479608"
+                                                                    },
+                                                                    "arguments": []
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "generator": false,
+                                                "expression": false,
+                                                "async": false
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "it"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": "should load environment variables from default .env file if no matching stage",
+                                                "raw": "'should\\x20load\\x20environment\\x20variables\\x20from\\x20default\\x20.env\\x20file\\x20if\\x20no\\x20matching\\x20stage'"
+                                            },
+                                            {
+                                                "type": "ArrowFunctionExpression",
+                                                "id": null,
+                                                "params": [],
+                                                "body": {
+                                                    "type": "BlockStatement",
+                                                    "body": [
+                                                        {
+                                                            "type": "ExpressionStatement",
+                                                            "expression": {
+                                                                "type": "AwaitExpression",
+                                                                "argument": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "Identifier",
+                                                                            "name": "_0xfb7434"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "tWhQR",
+                                                                            "raw": "'tWhQR'"
+                                                                        }
+                                                                    },
+                                                                    "arguments": [
+                                                                        {
+                                                                            "type": "Identifier",
+                                                                            "name": "conditionallyLoadDotenv"
+                                                                        },
+                                                                        {
+                                                                            "type": "ObjectExpression",
+                                                                            "properties": []
+                                                                        },
+                                                                        {
+                                                                            "type": "ObjectExpression",
+                                                                            "properties": [
+                                                                                {
+                                                                                    "type": "Property",
+                                                                                    "key": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "useDotenv",
+                                                                                        "raw": "'useDotenv'"
+                                                                                    },
+                                                                                    "computed": false,
+                                                                                    "value": {
+                                                                                        "type": "UnaryExpression",
+                                                                                        "operator": "!",
+                                                                                        "argument": {
+                                                                                            "type": "UnaryExpression",
+                                                                                            "operator": "!",
+                                                                                            "argument": {
+                                                                                                "type": "ArrayExpression",
+                                                                                                "elements": []
+                                                                                            },
+                                                                                            "prefix": true
+                                                                                        },
+                                                                                        "prefix": true
+                                                                                    },
+                                                                                    "kind": "init",
+                                                                                    "method": false,
+                                                                                    "shorthand": false
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "ExpressionStatement",
+                                                            "expression": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "Identifier",
+                                                                                "name": "expect"
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "process"
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "env",
+                                                                                            "raw": "'env'"
+                                                                                        }
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "DEFAULT_ENV_VARIABLE",
+                                                                                        "raw": "'DEFAULT_ENV_VARIABLE'"
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "to",
+                                                                            "raw": "'to'"
+                                                                        }
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "equal",
+                                                                        "raw": "'equal'"
+                                                                    }
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "Literal",
+                                                                        "value": "valuefromdefault",
+                                                                        "raw": "'valuefromdefault'"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "ExpressionStatement",
+                                                            "expression": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "Identifier",
+                                                                                "name": "expect"
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "process"
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "env",
+                                                                                            "raw": "'env'"
+                                                                                        }
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "STAGE_ENV_VARIABLE",
+                                                                                        "raw": "'STAGE_ENV_VARIABLE'"
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "to",
+                                                                            "raw": "'to'"
+                                                                        }
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "be",
+                                                                        "raw": "'be'"
+                                                                    }
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "undefined",
+                                                                    "raw": "'undefined'"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "generator": false,
+                                                "expression": false,
+                                                "async": true
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "it"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": "should load environment variables from stage .env file if matching stage",
+                                                "raw": "'should load environment variables from stage .env file if matching stage'"
+                                            },
+                                            {
+                                                "type": "ArrowFunctionExpression",
+                                                "id": null,
+                                                "params": [],
+                                                "body": {
+                                                    "type": "BlockStatement",
+                                                    "body": [
+                                                        {
+                                                            "type": "ExpressionStatement",
+                                                            "expression": {
+                                                                "type": "AwaitExpression",
+                                                                "argument": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "Identifier",
+                                                                        "name": "conditionallyLoadDotenv"
+                                                                    },
+                                                                    "arguments": [
+                                                                        {
+                                                                            "type": "ObjectExpression",
+                                                                            "properties": [
+                                                                                {
+                                                                                    "type": "Property",
+                                                                                    "key": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "stage",
+                                                                                        "raw": "'stage'"
+                                                                                    },
+                                                                                    "computed": false,
+                                                                                    "value": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "testing",
+                                                                                        "raw": "'testing'"
+                                                                                    },
+                                                                                    "kind": "init",
+                                                                                    "method": false,
+                                                                                    "shorthand": false
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "type": "ObjectExpression",
+                                                                            "properties": [
+                                                                                {
+                                                                                    "type": "Property",
+                                                                                    "key": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "useDotenv",
+                                                                                        "raw": "'useDotenv'"
+                                                                                    },
+                                                                                    "computed": false,
+                                                                                    "value": {
+                                                                                        "type": "UnaryExpression",
+                                                                                        "operator": "!",
+                                                                                        "argument": {
+                                                                                            "type": "UnaryExpression",
+                                                                                            "operator": "!",
+                                                                                            "argument": {
+                                                                                                "type": "ArrayExpression",
+                                                                                                "elements": []
+                                                                                            },
+                                                                                            "prefix": true
+                                                                                        },
+                                                                                        "prefix": true
+                                                                                    },
+                                                                                    "kind": "init",
+                                                                                    "method": false,
+                                                                                    "shorthand": false
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "ExpressionStatement",
+                                                            "expression": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "Identifier",
+                                                                                "name": "expect"
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "process"
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "env",
+                                                                                            "raw": "'env'"
+                                                                                        }
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "DEFAULT_ENV_VARIABLE",
+                                                                                        "raw": "'DEFAULT_ENV_VARIABLE'"
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "to",
+                                                                            "raw": "'to'"
+                                                                        }
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "be",
+                                                                        "raw": "'be'"
+                                                                    }
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "undefined",
+                                                                    "raw": "'undefined'"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "ExpressionStatement",
+                                                            "expression": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "Identifier",
+                                                                                "name": "expect"
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "process"
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "env",
+                                                                                            "raw": "'env'"
+                                                                                        }
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "STAGE_ENV_VARIABLE",
+                                                                                        "raw": "'STAGE_ENV_VARIABLE'"
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "to",
+                                                                            "raw": "'to'"
+                                                                        }
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "equal",
+                                                                        "raw": "'equal'"
+                                                                    }
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "Literal",
+                                                                        "value": "valuefromstage",
+                                                                        "raw": "'valuefromstage'"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "generator": false,
+                                                "expression": false,
+                                                "async": true
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

@@ -1,0 +1,21 @@
+'use strict';
+const common = require('../common');
+const fixtures = require('../common/fixtures');
+const tmpdir = require('../common/tmpdir');
+const assert = require('assert');
+const {join} = require('path');
+const childProcess = require('child_process');
+const fs = require('fs');
+const stdoutScript = fixtures['path']('echo-close-check.js');
+const tmpFile = join(tmpdir['path'], 'stdin.txt');
+const cmd = '"' + process['argv'][0] + '" "' + stdoutScript + '" < "' + tmpFile + '"';
+const string = 'abc\nümlaut.\nsomething else\n' + '南越国是前203年至前111年存在于岭南地区的一个国家\uFF0C国都位于番禺\uFF0C' + '疆域包括今天中国的广东\u3001广西两省区的大部份地区\uFF0C福建省\u3001湖南\u3001贵州\u3001' + '云南的一小部份地区和越南的北部\u3002南越国是秦朝灭亡后\uFF0C' + '由南海郡尉赵佗于前203年起兵兼并桂林郡和象郡后建立\u3002前196年和前179年\uFF0C' + '南越国曾先后两次名义上臣属于西汉\uFF0C成为西汉的\u201C外臣\u201D\u3002前112年\uFF0C' + '南越国末代君主赵建德与西汉发生战争\uFF0C被汉武帝于前111年所灭\u3002南越国共存在93年\uFF0C' + '历经五代君主\u3002南越国是岭南地区的第一个有记载的政权国家\uFF0C' + '采用封建制和郡县制并存的制度\uFF0C' + '它的建立保证了秦末乱世岭南地区社会秩序的稳定\uFF0C' + '有效的改善了岭南地区落后的政治\u3001##济现状\u3002\n';
+tmpdir['refresh']();
+console['log'](cmd + '\n\n');
+fs['writeFileSync'](tmpFile, string);
+childProcess['exec'](cmd, common['mustCall'](function (_0x16a77b, _0x250234, _0xbff9ab) {
+    fs['unlinkSync'](tmpFile);
+    assert['ifError'](_0x16a77b);
+    assert['strictEqual'](_0x250234, 'hello world\r\n' + string);
+    assert['strictEqual'](_0xbff9ab, '');
+}));

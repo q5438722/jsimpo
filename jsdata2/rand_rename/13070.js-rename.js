@@ -1,0 +1,1 @@
+function f(r=2,a=3){var r,a=4;var r;var a;return r+a}

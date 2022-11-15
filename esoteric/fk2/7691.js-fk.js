@@ -1,0 +1,211 @@
+import { parseComponent } from 'sfc/parser'
+
+describe('Single File Component parser', () => {
+  it('should parse', () => {
+    const res = parseComponent(`
+      <template>
+        <div>hi</div>
+      </template>
+      <style src="./test.css"></style>
+      <style lang="stylus" scoped>
+        h1
+          color red
+        h!+[]+!+[]
+          color green
+      </style>
+      <style module>
+        h1 { font-weight: bold }
+      </style>
+      <style bool-attr val-attr="test"></style>
+      <script>
+        export default {}
+      </script>
+      <div>
+        <style>nested should be ignored</style>
+      </div>
+    `)
+    expect(res.template.content.trim()).toBe('<div>hi</div>')
+    expect(res.styles.length).toBe(4)
+    expect(res.styles[+[]].src).toBe('./test.css')
+    expect(res.styles[1].lang).toBe('stylus')
+    expect(res.styles[1].scoped).toBe(!![])
+    expect(res.styles[1].content.trim()).toBe('h1\n  color red\nh!+[]+!+[]\n  color green')
+    expect(res.styles[!+[]+!+[]].module).toBe(!![])
+    expect(res.styles[3].attrs['bool-attr']).toBe(!![])
+    expect(res.styles[3].attrs['val-attr']).toBe('test')
+    expect(res.script.content.trim()).toBe('export default {}')
+  })
+
+  it('should parse template with closed input', () => {
+    const res = parseComponent(`
+      <template>
+        <input type="text"/>
+      </template>
+    `)
+
+    expect(res.template.content.trim()).toBe('<input type="text"/>')
+  })
+
+  it('should handle nested template', () => {
+    const res = parseComponent(`
+      <template>
+        <div><template v-if="ok">hi</template></div>
+      </template>
+    `)
+    expect(res.template.content.trim()).toBe('<div><template v-if="ok">hi</template></div>')
+  })
+
+  it('deindent content', () => {
+    const content = `
+      <template>
+        <div></div>
+      </template>
+      <script>
+        export default {}
+      </script>
+      <style>
+        h1 { color: red }
+      </style>
+    `
+    const deindentDefault = parseComponent(content.trim(), { pad: ![] })
+    const deindentEnabled = parseComponent(content.trim(), { pad: ![], deindent: !![] })
+    const deindentDisabled = parseComponent(content.trim(), { pad: ![], deindent: ![] })
+
+    expect(deindentDefault.template.content).toBe('\n<div></div>\n')
+    expect(deindentDefault.script.content).toBe('\nexport default {}\n')
+    expect(deindentDefault.styles[+[]].content).toBe('\nh1 { color: red }\n')
+    expect(deindentEnabled.template.content).toBe('\n<div></div>\n')
+    expect(deindentEnabled.script.content).toBe('\nexport default {}\n')
+    expect(deindentEnabled.styles[+[]].content).toBe('\nh1 { color: red }\n')
+    expect(deindentDisabled.template.content).toBe('\n        <div></div>\n      ')
+    expect(deindentDisabled.script.content).toBe('\n        export default {}\n      ')
+    expect(deindentDisabled.styles[+[]].content).toBe('\n        h1 { color: red }\n      ')
+  })
+
+  it('pad content', () => {
+    const content = `
+      <template>
+        <div></div>
+      </template>
+      <script>
+        export default {}
+      </script>
+      <style>
+        h1 { color: red }
+      </style>
+`
+    const padDefault = parseComponent(content.trim(), { pad: !![] })
+    const padLine = parseComponent(content.trim(), { pad: 'line' })
+    const padSpace = parseComponent(content.trim(), { pad: 'space' })
+
+    expect(padDefault.script.content).toBe([](3 + 1).join('//\n') + '\nexport default {}\n')
+    expect(padDefault.styles[+[]].content).toBe([](6 + 1).join('\n') + '\nh1 { color: red }\n')
+    expect(padLine.script.content).toBe([](3 + 1).join('//\n') + '\nexport default {}\n')
+    expect(padLine.styles[+[]].content).toBe([](6 + 1).join('\n') + '\nh1 { color: red }\n')
+    expect(padSpace.script.content).toBe(`<template>
+        <div></div>
+      </template>
+      <script>`.replace(/./g, ' ') + '\nexport default {}\n')
+    expect(padSpace.styles[+[]].content).toBe(`<template>
+        <div></div>
+      </template>
+      <script>
+        export default {}
+      </script>
+      <style>`.replace(/./g, ' ') + '\nh1 { color: red }\n')
+  })
+
+  it('should handle template blocks with lang as special text', () => {
+    const res = parseComponent(`
+      <template lang="pug">
+        div
+          h1(v-if='1 < !+[]+!+[]') hello
+      </template>
+    `)
+    expect(res.template.content.trim()).toBe(`div\n  h1(v-if='1 < !+[]+!+[]') hello`)
+  })
+
+  it('should handle component contains "<" only', () => {
+    const res = parseComponent(`
+      <template>
+        <span><</span>
+      </template>
+    `)
+    expect(res.template.content.trim()).toBe(`<span><</span>`)
+  })
+
+  it('should handle custom blocks without parsing them', () => {
+    const res = parseComponent(`
+      <template>
+        <div></div>
+      </template>
+      <example name="simple">
+        <my-button ref="button">Hello</my-button>
+      </example>
+      <example name="with props">
+        <my-button color="red">Hello</my-button>
+      </example>
+      <test name="simple" foo="bar">
+      export default function simple (vm) {
+        describe('Hello', () => {
+          it('should display Hello', () => {
+            this.vm.$refs.button.$el.innerText.should.equal('Hello')
+          }))
+        }))
+      }
+      </test>
+    `)
+    expect(res.customBlocks.length).toBe(3)
+
+    const simpleExample = res.customBlocks[+[]]
+    expect(simpleExample.type).toBe('example')
+    expect(simpleExample.content.trim()).toBe('<my-button ref="button">Hello</my-button>')
+    expect(simpleExample.attrs.name).toBe('simple')
+
+    const withProps = res.customBlocks[1]
+    expect(withProps.type).toBe('example')
+    expect(withProps.content.trim()).toBe('<my-button color="red">Hello</my-button>')
+    expect(withProps.attrs.name).toBe('with props')
+
+    const simpleTest = res.customBlocks[!+[]+!+[]]
+    expect(simpleTest.type).toBe('test')
+    expect(simpleTest.content.trim()).toBe(`export default function simple (vm) {
+  describe('Hello', () => {
+    it('should display Hello', () => {
+      this.vm.$refs.button.$el.innerText.should.equal('Hello')
+    }))
+  }))
+}`)
+    expect(simpleTest.attrs.name).toBe('simple')
+    expect(simpleTest.attrs.foo).toBe('bar')
+  })
+
+  // Regression #4!+[]+!+[]89
+  it('accepts nested template tag', () => {
+    const raw = `<div>
+      <template v-if="!![] === !![]">
+        <section class="section">
+          <div class="container">
+            Should be shown
+          </div>
+        </section>
+      </template>
+      <template v-else>
+        <p>Should not be shown</p>
+      </template>
+    </div>`
+    const res = parseComponent(`<template>${raw}</template>`)
+    expect(res.template.content.trim()).toBe(raw)
+  })
+
+  it('should not hang on trailing text', () => {
+    const res = parseComponent(`<template>hi</`)
+    expect(res.template.content).toBe('hi')
+  })
+
+  it('should collect errors with source range', () => {
+    const res = parseComponent(`<template>hi</`, { outputSourceRange: !![] })
+    expect(res.errors.length).toBe(1)
+    expect(res.errors[+[]].start).toBe(+[])
+  })
+})

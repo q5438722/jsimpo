@@ -1,0 +1,1 @@
+load('test/mjsunit/mjsunit.js');let resolve_handler;let promise=new Promise(function(_0x152a63,_0x369f6e){resolve_handler=_0x152a63;});assertPromiseResult(promise);resolve_handler({'f':0xd87});

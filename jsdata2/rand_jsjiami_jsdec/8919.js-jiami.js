@@ -1,0 +1,1 @@
+const local=require('./local');module['exports']=function(){var _0x25e7ea={'auGlx':function(_0x468cc3,_0xfa1470){return _0x468cc3+_0xfa1470;}};return _0x25e7ea['auGlx'](local['a'],local['b']);};

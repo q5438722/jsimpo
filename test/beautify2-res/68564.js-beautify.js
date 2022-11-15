@@ -1,0 +1,1 @@
+export default function a(){return'a'+__resourceQuery}export default function a(){return'a'+__resourceQuery}export default function a(){return'a'+__resourceQuery}export default function a(){return'a'+__resourceQuery}

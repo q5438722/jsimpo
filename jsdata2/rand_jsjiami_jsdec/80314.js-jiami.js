@@ -1,0 +1,1 @@
+import{createLivePusherContext as _0x4a4d7a}from'uni-platforms/app-plus-nvue/service/api/context/live-pusher';export function createLivePusherContext(_0x4a022c,_0x19ce3a){var _0x309899={'ncomG':function(_0x476b2b,_0x25d10a,_0x36acfa){return _0x476b2b(_0x25d10a,_0x36acfa);}};return _0x309899['ncomG'](_0x4a4d7a,_0x4a022c,_0x19ce3a);}

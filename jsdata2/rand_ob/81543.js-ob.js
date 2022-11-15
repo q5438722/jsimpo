@@ -1,0 +1,113 @@
+const _0x2a8e = [
+    'GGTXc',
+    'dojGx',
+    'resourceNotFound',
+    'handleJSONResponseV2',
+    'BUMIp',
+    'WjBCE',
+    '37hevPdM',
+    '3901rsqoZA',
+    '913ksAKGW',
+    '142ynkNXQ',
+    '88296hJWmep',
+    '7TdkXmg',
+    '13561jqZcsk',
+    '69OzubIK',
+    '672GHEofL',
+    '1IZzuTV',
+    '146994kxCoJo',
+    '587282oAJctn',
+    'members',
+    'url',
+    'body-parser',
+    '../../../shared/url-utils',
+    '../../services/members',
+    'middleware',
+    '../shared',
+    'private',
+    '1mb',
+    '/api/session',
+    '/api/create-stripe-checkout-session',
+    '/api/create-stripe-update-session',
+    '/api',
+    'Members\x20App\x20setup\x20end',
+    'IRclt',
+    'gMldX',
+    'middlewares',
+    'maintenance',
+    'use',
+    'cacheControl',
+    'DPogI',
+    'getSiteUrl',
+    'origin',
+    'createSessionFromMagicLink',
+    'post',
+    '/webhooks/stripe',
+    'stripeWebhooks',
+    'get',
+    'MwwmQ',
+    'json',
+    'updateMemberData',
+    'getIdentityToken',
+    'getMemberSiteData',
+    'XYDtD',
+    'brute',
+    'membersAuth',
+    'yerHm',
+    'api',
+    'bCmoY',
+    'createCheckoutSetupSession',
+    'put',
+    'updateSubscription',
+    'errorHandler'
+];
+function _0x512d(_0x345f6e, _0x1c909e) {
+    return _0x512d = function (_0x14d4c8, _0x5c7611) {
+        _0x14d4c8 = _0x14d4c8 - (0x26 + 0x2 * -0x8c7 + 0x132f);
+        let _0x340bcb = _0x2a8e[_0x14d4c8];
+        return _0x340bcb;
+    }, _0x512d(_0x345f6e, _0x1c909e);
+}
+const _0x242daa = _0x512d;
+(function (_0x71f32a, _0x5c5508) {
+    const _0x267b10 = _0x512d;
+    while (!![]) {
+        try {
+            const _0x23724c = -parseInt(_0x267b10(0x1c7)) * parseInt(_0x267b10(0x1c8)) + -parseInt(_0x267b10(0x1c9)) * parseInt(_0x267b10(0x1ca)) + parseInt(_0x267b10(0x1cb)) + parseInt(_0x267b10(0x1cc)) * -parseInt(_0x267b10(0x1cd)) + parseInt(_0x267b10(0x1ce)) * -parseInt(_0x267b10(0x1cf)) + -parseInt(_0x267b10(0x1d0)) * parseInt(_0x267b10(0x1d1)) + parseInt(_0x267b10(0x1d2));
+            if (_0x23724c === _0x5c5508)
+                break;
+            else
+                _0x71f32a['push'](_0x71f32a['shift']());
+        } catch (_0x492530) {
+            _0x71f32a['push'](_0x71f32a['shift']());
+        }
+    }
+}(_0x2a8e, 0x1 * -0x180d + -0xf4db * 0x1 + 0x5d5 * 0x7a));
+const debug = require('@tryghost/debug')(_0x242daa(0x1d3)), {URL} = require(_0x242daa(0x1d4)), cors = require('cors'), bodyParser = require(_0x242daa(0x1d5)), express = require('../../../shared/express'), urlUtils = require(_0x242daa(0x1d6)), membersService = require(_0x242daa(0x1d7)), middleware = membersService[_0x242daa(0x1d8)], shared = require(_0x242daa(0x1d9));
+module['exports'] = function setupMembersApp() {
+    const _0x87faeb = _0x242daa, _0x26b975 = {
+            'gMldX': function (_0x36150d, _0x41c45c) {
+                return _0x36150d(_0x41c45c);
+            },
+            'IRclt': 'Members\x20App\x20setup\x20start',
+            'kSkmt': _0x87faeb(0x1d3),
+            'DPogI': _0x87faeb(0x1da),
+            'MwwmQ': '/api/member',
+            'GXass': _0x87faeb(0x1db),
+            'gNIia': _0x87faeb(0x1dc),
+            'XYDtD': '/api/send-magic-link',
+            'yerHm': _0x87faeb(0x1dd),
+            'bCmoY': _0x87faeb(0x1de),
+            'GGTXc': _0x87faeb(0x1df),
+            'dojGx': '/webhooks',
+            'BUMIp': function (_0x3c9da0, _0x2c0b00) {
+                return _0x3c9da0(_0x2c0b00);
+            },
+            'WjBCE': _0x87faeb(0x1e0)
+        };
+    _0x26b975['gMldX'](debug, _0x26b975[_0x87faeb(0x1e1)]);
+    const _0x365853 = _0x26b975[_0x87faeb(0x1e2)](express, _0x26b975['kSkmt']);
+    _0x365853['use'](shared[_0x87faeb(0x1e3)][_0x87faeb(0x1e4)]), _0x365853[_0x87faeb(0x1e5)](shared[_0x87faeb(0x1e3)][_0x87faeb(0x1e6)](_0x26b975[_0x87faeb(0x1e7)]));
+    const _0x56e923 = new URL(urlUtils[_0x87faeb(0x1e8)]());
+    return _0x365853[_0x87faeb(0x1e5)](cors(_0x56e923[_0x87faeb(0x1e9)])), _0x365853[_0x87faeb(0x1e5)](middleware[_0x87faeb(0x1ea)]), _0x365853[_0x87faeb(0x1eb)](_0x87faeb(0x1ec), middleware[_0x87faeb(0x1ed)]), _0x365853[_0x87faeb(0x1ee)](_0x26b975[_0x87faeb(0x1ef)], middleware['getMemberData']), _0x365853['put'](_0x26b975[_0x87faeb(0x1ef)], bodyParser[_0x87faeb(0x1f0)]({ 'limit': _0x26b975['GXass'] }), middleware[_0x87faeb(0x1f1)]), _0x365853[_0x87faeb(0x1ee)](_0x26b975['gNIia'], middleware[_0x87faeb(0x1f2)]), _0x365853['delete']('/api/session', middleware['deleteSession']), _0x365853[_0x87faeb(0x1ee)]('/api/site', middleware[_0x87faeb(0x1f3)]), _0x365853[_0x87faeb(0x1eb)](_0x26b975[_0x87faeb(0x1f4)], bodyParser[_0x87faeb(0x1f0)](), shared[_0x87faeb(0x1e3)][_0x87faeb(0x1f5)][_0x87faeb(0x1f6)], (_0xb189ae, _0x307f06, _0x193f14) => membersService['api'][_0x87faeb(0x1d8)]['sendMagicLink'](_0xb189ae, _0x307f06, _0x193f14)), _0x365853[_0x87faeb(0x1eb)](_0x26b975[_0x87faeb(0x1f7)], (_0x16df42, _0x2d3616, _0x152095) => membersService[_0x87faeb(0x1f8)][_0x87faeb(0x1d8)]['createCheckoutSession'](_0x16df42, _0x2d3616, _0x152095)), _0x365853[_0x87faeb(0x1eb)](_0x26b975[_0x87faeb(0x1f9)], (_0x325f3e, _0x3d1455, _0x26e5f2) => membersService['api'][_0x87faeb(0x1d8)][_0x87faeb(0x1fa)](_0x325f3e, _0x3d1455, _0x26e5f2)), _0x365853[_0x87faeb(0x1fb)]('/api/subscriptions/:id', (_0x5f2451, _0xa8303a, _0x28b2d6) => membersService[_0x87faeb(0x1f8)]['middleware'][_0x87faeb(0x1fc)](_0x5f2451, _0xa8303a, _0x28b2d6)), _0x365853[_0x87faeb(0x1e5)](_0x87faeb(0x1df), shared[_0x87faeb(0x1e3)][_0x87faeb(0x1fd)]['resourceNotFound']), _0x365853['use'](_0x26b975[_0x87faeb(0x1fe)], shared[_0x87faeb(0x1e3)]['errorHandler']['handleJSONResponseV2']), _0x365853[_0x87faeb(0x1e5)](_0x26b975[_0x87faeb(0x1ff)], shared[_0x87faeb(0x1e3)][_0x87faeb(0x1fd)][_0x87faeb(0x200)]), _0x365853[_0x87faeb(0x1e5)](_0x26b975[_0x87faeb(0x1ff)], shared['middlewares']['errorHandler'][_0x87faeb(0x201)]), _0x26b975[_0x87faeb(0x202)](debug, _0x26b975[_0x87faeb(0x203)]), _0x365853;
+};

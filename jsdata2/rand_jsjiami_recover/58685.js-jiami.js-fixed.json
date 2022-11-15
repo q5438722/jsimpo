@@ -1,0 +1,1180 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "description"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "Test to ensure correct behaviour of prototype caching with dictionary prototypes",
+                        "raw": "'Test\\x20to\\x20ensure\\x20correct\\x20behaviour\\x20of\\x20prototype\\x20caching\\x20with\\x20dictionary\\x20prototypes'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "protoTest"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x4d786b"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "_0x4d786b"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "protoProp",
+                                "raw": "'protoProp'"
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "proto"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": []
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "o"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "__proto__",
+                                    "raw": "'__proto__'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "proto"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "UnaryExpression",
+                "operator": "delete",
+                "argument": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "proto"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "propToRemove",
+                        "raw": "'propToRemove'"
+                    }
+                },
+                "prefix": true
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "protoTest"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "o"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "protoTest"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "o"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "protoTest"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "o"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "shouldBe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "protoTest(o)",
+                        "raw": "'protoTest(o)'"
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "'PASS'",
+                        "raw": "''PASS''"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "UnaryExpression",
+                "operator": "delete",
+                "argument": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "proto"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "protoProp",
+                        "raw": "'protoProp'"
+                    }
+                },
+                "prefix": true
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "proto"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "fakeProtoProp",
+                        "raw": "'fakeProtoProp'"
+                    }
+                },
+                "right": {
+                    "type": "Literal",
+                    "value": "FAIL",
+                    "raw": "'FAIL'"
+                }
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "shouldBeUndefined"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "protoTest(o)",
+                        "raw": "'protoTest(o)'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "protoTest2"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x4f9f57"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "_0x4f9f57"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "b",
+                                "raw": "'b'"
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "proto"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": []
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "o"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "__proto__",
+                                    "raw": "'__proto__'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "proto"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "UnaryExpression",
+                "operator": "delete",
+                "argument": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "proto"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "b",
+                        "raw": "'b'"
+                    }
+                },
+                "prefix": true
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "proto"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "d",
+                        "raw": "'d'"
+                    }
+                },
+                "right": {
+                    "type": "Literal",
+                    "value": 3,
+                    "raw": "0x3"
+                }
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "protoTest2"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "o"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "protoTest2"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "o"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "protoTest2"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "o"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "protoKeys"
+                    },
+                    "init": {
+                        "type": "ArrayExpression",
+                        "elements": []
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ForInStatement",
+            "left": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "i"
+                        },
+                        "init": null
+                    }
+                ],
+                "kind": "var"
+            },
+            "right": {
+                "type": "Identifier",
+                "name": "proto"
+            },
+            "body": {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "protoKeys"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "push",
+                            "raw": "'push'"
+                        }
+                    },
+                    "arguments": [
+                        {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "proto"
+                            },
+                            "property": {
+                                "type": "Identifier",
+                                "name": "i"
+                            }
+                        }
+                    ]
+                }
+            },
+            "each": false
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "shouldBe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "protoKeys",
+                        "raw": "'protoKeys'"
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "[1,2,3]",
+                        "raw": "'[1,2,3]'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "protoTest3"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x26c9d4"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "_0x26c9d4"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "b",
+                                "raw": "'b'"
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "proto"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": []
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "o"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "__proto__",
+                                    "raw": "'__proto__'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "proto"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "UnaryExpression",
+                "operator": "delete",
+                "argument": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "proto"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "b",
+                        "raw": "'b'"
+                    }
+                },
+                "prefix": true
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "protoTest2"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "o"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "protoTest2"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "o"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "protoTest2"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "o"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "proto"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "d",
+                        "raw": "'d'"
+                    }
+                },
+                "right": {
+                    "type": "Literal",
+                    "value": 3,
+                    "raw": "0x3"
+                }
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "protoKeys"
+                    },
+                    "init": {
+                        "type": "ArrayExpression",
+                        "elements": []
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ForInStatement",
+            "left": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "i"
+                        },
+                        "init": null
+                    }
+                ],
+                "kind": "var"
+            },
+            "right": {
+                "type": "Identifier",
+                "name": "proto"
+            },
+            "body": {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "protoKeys"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "push",
+                            "raw": "'push'"
+                        }
+                    },
+                    "arguments": [
+                        {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "proto"
+                            },
+                            "property": {
+                                "type": "Identifier",
+                                "name": "i"
+                            }
+                        }
+                    ]
+                }
+            },
+            "each": false
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "shouldBe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "protoKeys",
+                        "raw": "'protoKeys'"
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "[1,2,3]",
+                        "raw": "'[1,2,3]'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "testFunction"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x4a3ce0"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "_0x4a3ce0"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "test",
+                                "raw": "'test'"
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "proto"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "test",
+                                    "raw": "'test'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "UnaryExpression",
+                                    "operator": "!",
+                                    "argument": {
+                                        "type": "UnaryExpression",
+                                        "operator": "!",
+                                        "argument": {
+                                            "type": "ArrayExpression",
+                                            "elements": []
+                                        },
+                                        "prefix": true
+                                    },
+                                    "prefix": true
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "subclass1"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "__proto__",
+                                    "raw": "'__proto__'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "proto"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "subclass2"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "__proto__",
+                                    "raw": "'__proto__'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "proto"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ForStatement",
+            "init": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "i"
+                        },
+                        "init": {
+                            "type": "Literal",
+                            "value": 0,
+                            "raw": "0x0"
+                        }
+                    }
+                ],
+                "kind": "var"
+            },
+            "test": {
+                "type": "BinaryExpression",
+                "operator": "<",
+                "left": {
+                    "type": "Identifier",
+                    "name": "i"
+                },
+                "right": {
+                    "type": "Literal",
+                    "value": 500,
+                    "raw": "0x1f4"
+                }
+            },
+            "update": {
+                "type": "UpdateExpression",
+                "operator": "++",
+                "argument": {
+                    "type": "Identifier",
+                    "name": "i"
+                },
+                "prefix": false
+            },
+            "body": {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "subclass2"
+                        },
+                        "property": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                                "type": "Literal",
+                                "value": "a",
+                                "raw": "'a'"
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "i"
+                            }
+                        }
+                    },
+                    "right": {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "left": {
+                            "type": "Literal",
+                            "value": "a",
+                            "raw": "'a'"
+                        },
+                        "right": {
+                            "type": "Identifier",
+                            "name": "i"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "testFunction"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "subclass1"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "shouldBeTrue"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "testFunction(subclass1)",
+                        "raw": "'testFunction(subclass1)'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "shouldBeTrue"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "testFunction(subclass2)",
+                        "raw": "'testFunction(subclass2)'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "proto"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "test",
+                        "raw": "'test'"
+                    }
+                },
+                "right": {
+                    "type": "UnaryExpression",
+                    "operator": "!",
+                    "argument": {
+                        "type": "ArrayExpression",
+                        "elements": []
+                    },
+                    "prefix": true
+                }
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "subclass2"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "test",
+                        "raw": "'test'"
+                    }
+                },
+                "right": {
+                    "type": "UnaryExpression",
+                    "operator": "!",
+                    "argument": {
+                        "type": "UnaryExpression",
+                        "operator": "!",
+                        "argument": {
+                            "type": "ArrayExpression",
+                            "elements": []
+                        },
+                        "prefix": true
+                    },
+                    "prefix": true
+                }
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "shouldBeTrue"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "testFunction(subclass2)",
+                        "raw": "'testFunction(subclass2)'"
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

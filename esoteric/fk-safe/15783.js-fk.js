@@ -1,0 +1,5 @@
+  function chives() {
+    await;
+    foo;
+  }
+  

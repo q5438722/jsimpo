@@ -1,0 +1,1 @@
+var argv=require('../')(process['argv']['slice'](0x2));console['dir'](argv);

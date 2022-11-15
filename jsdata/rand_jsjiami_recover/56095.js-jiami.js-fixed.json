@@ -1,0 +1,659 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "Literal",
+                "value": "use strict",
+                "raw": "'use strict'"
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "common"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../common",
+                                "raw": "'../common'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "tmpdir"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../common/tmpdir",
+                                "raw": "'../common/tmpdir'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "assert"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "assert",
+                                "raw": "'assert'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "fs"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "fs",
+                                "raw": "'fs'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "path"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "path",
+                                "raw": "'path'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "tmpdir"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "refresh",
+                        "raw": "'refresh'"
+                    }
+                },
+                "arguments": []
+            }
+        },
+        {
+            "type": "BlockStatement",
+            "body": [
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "assert"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "throws",
+                                "raw": "'throws'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "ArrowFunctionExpression",
+                                "id": null,
+                                "params": [],
+                                "body": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "fs"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "rmdirSync",
+                                            "raw": "'rmdirSync'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "path"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "join",
+                                                    "raw": "'join'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "tmpdir"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "path",
+                                                        "raw": "'path'"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Literal",
+                                                    "value": "noexist.txt",
+                                                    "raw": "'noexist.txt'"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "ObjectExpression",
+                                            "properties": [
+                                                {
+                                                    "type": "Property",
+                                                    "key": {
+                                                        "type": "Literal",
+                                                        "value": "recursive",
+                                                        "raw": "'recursive'"
+                                                    },
+                                                    "computed": false,
+                                                    "value": {
+                                                        "type": "UnaryExpression",
+                                                        "operator": "!",
+                                                        "argument": {
+                                                            "type": "UnaryExpression",
+                                                            "operator": "!",
+                                                            "argument": {
+                                                                "type": "ArrayExpression",
+                                                                "elements": []
+                                                            },
+                                                            "prefix": true
+                                                        },
+                                                        "prefix": true
+                                                    },
+                                                    "kind": "init",
+                                                    "method": false,
+                                                    "shorthand": false
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "generator": false,
+                                "expression": true,
+                                "async": false
+                            },
+                            {
+                                "type": "ObjectExpression",
+                                "properties": [
+                                    {
+                                        "type": "Property",
+                                        "key": {
+                                            "type": "Literal",
+                                            "value": "code",
+                                            "raw": "'code'"
+                                        },
+                                        "computed": false,
+                                        "value": {
+                                            "type": "Literal",
+                                            "value": "ENOENT",
+                                            "raw": "'ENOENT'"
+                                        },
+                                        "kind": "init",
+                                        "method": false,
+                                        "shorthand": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "BlockStatement",
+            "body": [
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "fs"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "rmdir",
+                                "raw": "'rmdir'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "path"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "join",
+                                        "raw": "'join'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "tmpdir"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "path",
+                                            "raw": "'path'"
+                                        }
+                                    },
+                                    {
+                                        "type": "Literal",
+                                        "value": "noexist.txt",
+                                        "raw": "'noexist.txt'"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "ObjectExpression",
+                                "properties": [
+                                    {
+                                        "type": "Property",
+                                        "key": {
+                                            "type": "Literal",
+                                            "value": "recursive",
+                                            "raw": "'recursive'"
+                                        },
+                                        "computed": false,
+                                        "value": {
+                                            "type": "UnaryExpression",
+                                            "operator": "!",
+                                            "argument": {
+                                                "type": "UnaryExpression",
+                                                "operator": "!",
+                                                "argument": {
+                                                    "type": "ArrayExpression",
+                                                    "elements": []
+                                                },
+                                                "prefix": true
+                                            },
+                                            "prefix": true
+                                        },
+                                        "kind": "init",
+                                        "method": false,
+                                        "shorthand": false
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustCall",
+                                        "raw": "'mustCall'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "ArrowFunctionExpression",
+                                        "id": null,
+                                        "params": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "_0x6bf45a"
+                                            }
+                                        ],
+                                        "body": {
+                                            "type": "BlockStatement",
+                                            "body": [
+                                                {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "assert"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "strictEqual",
+                                                                "raw": "'strictEqual'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x6bf45a"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "code",
+                                                                    "raw": "'code'"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "ENOENT",
+                                                                "raw": "'ENOENT'"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "generator": false,
+                                        "expression": false,
+                                        "async": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "BlockStatement",
+            "body": [
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "assert"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "rejects",
+                                        "raw": "'rejects'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "ArrowFunctionExpression",
+                                        "id": null,
+                                        "params": [],
+                                        "body": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "fs"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "promises",
+                                                        "raw": "'promises'"
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "rmdir",
+                                                    "raw": "'rmdir'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "path"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "join",
+                                                            "raw": "'join'"
+                                                        }
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "tmpdir"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "path",
+                                                                "raw": "'path'"
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "Literal",
+                                                            "value": "noexist.txt",
+                                                            "raw": "'noexist.txt'"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "ObjectExpression",
+                                                    "properties": [
+                                                        {
+                                                            "type": "Property",
+                                                            "key": {
+                                                                "type": "Literal",
+                                                                "value": "recursive",
+                                                                "raw": "'recursive'"
+                                                            },
+                                                            "computed": false,
+                                                            "value": {
+                                                                "type": "UnaryExpression",
+                                                                "operator": "!",
+                                                                "argument": {
+                                                                    "type": "UnaryExpression",
+                                                                    "operator": "!",
+                                                                    "argument": {
+                                                                        "type": "ArrayExpression",
+                                                                        "elements": []
+                                                                    },
+                                                                    "prefix": true
+                                                                },
+                                                                "prefix": true
+                                                            },
+                                                            "kind": "init",
+                                                            "method": false,
+                                                            "shorthand": false
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        "generator": false,
+                                        "expression": true,
+                                        "async": false
+                                    },
+                                    {
+                                        "type": "ObjectExpression",
+                                        "properties": [
+                                            {
+                                                "type": "Property",
+                                                "key": {
+                                                    "type": "Literal",
+                                                    "value": "code",
+                                                    "raw": "'code'"
+                                                },
+                                                "computed": false,
+                                                "value": {
+                                                    "type": "Literal",
+                                                    "value": "ENOENT",
+                                                    "raw": "'ENOENT'"
+                                                },
+                                                "kind": "init",
+                                                "method": false,
+                                                "shorthand": false
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "then",
+                                "raw": "'then'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustCall",
+                                        "raw": "'mustCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "sourceType": "script"
+}

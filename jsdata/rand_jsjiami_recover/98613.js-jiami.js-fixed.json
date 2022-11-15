@@ -1,0 +1,488 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "webpack"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "webpack",
+                                "raw": "'webpack'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "module"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "exports",
+                        "raw": "'exports'"
+                    }
+                },
+                "right": {
+                    "type": "ObjectExpression",
+                    "properties": [
+                        {
+                            "type": "Property",
+                            "key": {
+                                "type": "Literal",
+                                "value": "context",
+                                "raw": "'context'"
+                            },
+                            "computed": false,
+                            "value": {
+                                "type": "Identifier",
+                                "name": "__dirname"
+                            },
+                            "kind": "init",
+                            "method": false,
+                            "shorthand": false
+                        },
+                        {
+                            "type": "Property",
+                            "key": {
+                                "type": "Literal",
+                                "value": "entry",
+                                "raw": "'entry'"
+                            },
+                            "computed": false,
+                            "value": {
+                                "type": "Literal",
+                                "value": "./app.js",
+                                "raw": "'./app.js'"
+                            },
+                            "kind": "init",
+                            "method": false,
+                            "shorthand": false
+                        },
+                        {
+                            "type": "Property",
+                            "key": {
+                                "type": "Literal",
+                                "value": "module",
+                                "raw": "'module'"
+                            },
+                            "computed": false,
+                            "value": {
+                                "type": "ObjectExpression",
+                                "properties": [
+                                    {
+                                        "type": "Property",
+                                        "key": {
+                                            "type": "Literal",
+                                            "value": "loaders",
+                                            "raw": "'loaders'"
+                                        },
+                                        "computed": false,
+                                        "value": {
+                                            "type": "ArrayExpression",
+                                            "elements": [
+                                                {
+                                                    "type": "ObjectExpression",
+                                                    "properties": [
+                                                        {
+                                                            "type": "Property",
+                                                            "key": {
+                                                                "type": "Literal",
+                                                                "value": "loader",
+                                                                "raw": "'loader'"
+                                                            },
+                                                            "computed": false,
+                                                            "value": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "Identifier",
+                                                                        "name": "require"
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "resolve",
+                                                                        "raw": "'resolve'"
+                                                                    }
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "Literal",
+                                                                        "value": "babel-loader",
+                                                                        "raw": "'babel-loader'"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "kind": "init",
+                                                            "method": false,
+                                                            "shorthand": false
+                                                        },
+                                                        {
+                                                            "type": "Property",
+                                                            "key": {
+                                                                "type": "Literal",
+                                                                "value": "test",
+                                                                "raw": "'test'"
+                                                            },
+                                                            "computed": false,
+                                                            "value": {
+                                                                "type": "Literal",
+                                                                "value": {},
+                                                                "raw": "/\\.js$/",
+                                                                "regex": {
+                                                                    "pattern": "\\.js$",
+                                                                    "flags": ""
+                                                                }
+                                                            },
+                                                            "kind": "init",
+                                                            "method": false,
+                                                            "shorthand": false
+                                                        },
+                                                        {
+                                                            "type": "Property",
+                                                            "key": {
+                                                                "type": "Literal",
+                                                                "value": "exclude",
+                                                                "raw": "'exclude'"
+                                                            },
+                                                            "computed": false,
+                                                            "value": {
+                                                                "type": "Literal",
+                                                                "value": {},
+                                                                "raw": "/node_modules/",
+                                                                "regex": {
+                                                                    "pattern": "node_modules",
+                                                                    "flags": ""
+                                                                }
+                                                            },
+                                                            "kind": "init",
+                                                            "method": false,
+                                                            "shorthand": false
+                                                        },
+                                                        {
+                                                            "type": "Property",
+                                                            "key": {
+                                                                "type": "Literal",
+                                                                "value": "query",
+                                                                "raw": "'query'"
+                                                            },
+                                                            "computed": false,
+                                                            "value": {
+                                                                "type": "ObjectExpression",
+                                                                "properties": [
+                                                                    {
+                                                                        "type": "Property",
+                                                                        "key": {
+                                                                            "type": "Literal",
+                                                                            "value": "presets",
+                                                                            "raw": "'presets'"
+                                                                        },
+                                                                        "computed": false,
+                                                                        "value": {
+                                                                            "type": "ArrayExpression",
+                                                                            "elements": [
+                                                                                {
+                                                                                    "type": "CallExpression",
+                                                                                    "callee": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "require"
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "resolve",
+                                                                                            "raw": "'resolve'"
+                                                                                        }
+                                                                                    },
+                                                                                    "arguments": [
+                                                                                        {
+                                                                                            "type": "Literal",
+                                                                                            "value": "@babel/preset-env",
+                                                                                            "raw": "'@babel/preset-env'"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "type": "CallExpression",
+                                                                                    "callee": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "require"
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "resolve",
+                                                                                            "raw": "'resolve'"
+                                                                                        }
+                                                                                    },
+                                                                                    "arguments": [
+                                                                                        {
+                                                                                            "type": "Literal",
+                                                                                            "value": "@babel/preset-react",
+                                                                                            "raw": "'@babel/preset-react'"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "kind": "init",
+                                                                        "method": false,
+                                                                        "shorthand": false
+                                                                    },
+                                                                    {
+                                                                        "type": "Property",
+                                                                        "key": {
+                                                                            "type": "Literal",
+                                                                            "value": "plugins",
+                                                                            "raw": "'plugins'"
+                                                                        },
+                                                                        "computed": false,
+                                                                        "value": {
+                                                                            "type": "ArrayExpression",
+                                                                            "elements": [
+                                                                                {
+                                                                                    "type": "CallExpression",
+                                                                                    "callee": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "require"
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "resolve",
+                                                                                            "raw": "'resolve'"
+                                                                                        }
+                                                                                    },
+                                                                                    "arguments": [
+                                                                                        {
+                                                                                            "type": "Literal",
+                                                                                            "value": "@babel/plugin-proposal-class-properties",
+                                                                                            "raw": "'@babel/plugin-proposal-class-properties'"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "kind": "init",
+                                                                        "method": false,
+                                                                        "shorthand": false
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "kind": "init",
+                                                            "method": false,
+                                                            "shorthand": false
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        "kind": "init",
+                                        "method": false,
+                                        "shorthand": false
+                                    }
+                                ]
+                            },
+                            "kind": "init",
+                            "method": false,
+                            "shorthand": false
+                        },
+                        {
+                            "type": "Property",
+                            "key": {
+                                "type": "Literal",
+                                "value": "plugins",
+                                "raw": "'plugins'"
+                            },
+                            "computed": false,
+                            "value": {
+                                "type": "ArrayExpression",
+                                "elements": [
+                                    {
+                                        "type": "NewExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "webpack"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "DefinePlugin",
+                                                "raw": "'DefinePlugin'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ObjectExpression",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "process.env",
+                                                            "raw": "'process.env'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "ObjectExpression",
+                                                            "properties": [
+                                                                {
+                                                                    "type": "Property",
+                                                                    "key": {
+                                                                        "type": "Literal",
+                                                                        "value": "NODE_ENV",
+                                                                        "raw": "'NODE_ENV'"
+                                                                    },
+                                                                    "computed": false,
+                                                                    "value": {
+                                                                        "type": "CallExpression",
+                                                                        "callee": {
+                                                                            "type": "MemberExpression",
+                                                                            "computed": true,
+                                                                            "object": {
+                                                                                "type": "Identifier",
+                                                                                "name": "JSON"
+                                                                            },
+                                                                            "property": {
+                                                                                "type": "Literal",
+                                                                                "value": "stringify",
+                                                                                "raw": "'stringify'"
+                                                                            }
+                                                                        },
+                                                                        "arguments": [
+                                                                            {
+                                                                                "type": "Literal",
+                                                                                "value": "development",
+                                                                                "raw": "'development'"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "kind": "init",
+                                                                    "method": false,
+                                                                    "shorthand": false
+                                                                }
+                                                            ]
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "kind": "init",
+                            "method": false,
+                            "shorthand": false
+                        },
+                        {
+                            "type": "Property",
+                            "key": {
+                                "type": "Literal",
+                                "value": "resolve",
+                                "raw": "'resolve'"
+                            },
+                            "computed": false,
+                            "value": {
+                                "type": "ObjectExpression",
+                                "properties": [
+                                    {
+                                        "type": "Property",
+                                        "key": {
+                                            "type": "Literal",
+                                            "value": "alias",
+                                            "raw": "'alias'"
+                                        },
+                                        "computed": false,
+                                        "value": {
+                                            "type": "ObjectExpression",
+                                            "properties": [
+                                                {
+                                                    "type": "Property",
+                                                    "key": {
+                                                        "type": "Literal",
+                                                        "value": "react",
+                                                        "raw": "'react'"
+                                                    },
+                                                    "computed": false,
+                                                    "value": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "require"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "resolve",
+                                                                "raw": "'resolve'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "react",
+                                                                "raw": "'react'"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "kind": "init",
+                                                    "method": false,
+                                                    "shorthand": false
+                                                }
+                                            ]
+                                        },
+                                        "kind": "init",
+                                        "method": false,
+                                        "shorthand": false
+                                    }
+                                ]
+                            },
+                            "kind": "init",
+                            "method": false,
+                            "shorthand": false
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}

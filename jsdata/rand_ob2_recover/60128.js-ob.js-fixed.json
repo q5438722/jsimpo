@@ -1,0 +1,103 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ForStatement",
+            "init": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "i"
+                        },
+                        "init": {
+                            "type": "Literal",
+                            "value": 0,
+                            "raw": "0x0"
+                        }
+                    }
+                ],
+                "kind": "let"
+            },
+            "test": {
+                "type": "BinaryExpression",
+                "operator": "<",
+                "left": {
+                    "type": "Identifier",
+                    "name": "i"
+                },
+                "right": {
+                    "type": "Literal",
+                    "value": 5,
+                    "raw": "0x5"
+                }
+            },
+            "update": {
+                "type": "UpdateExpression",
+                "operator": "++",
+                "argument": {
+                    "type": "Identifier",
+                    "name": "i"
+                },
+                "prefix": false
+            },
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "TryStatement",
+                        "block": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "UnaryExpression",
+                                        "operator": "typeof",
+                                        "argument": {
+                                            "type": "Identifier",
+                                            "name": "x"
+                                        },
+                                        "prefix": true
+                                    }
+                                }
+                            ]
+                        },
+                        "handler": {
+                            "type": "CatchClause",
+                            "param": {
+                                "type": "Identifier",
+                                "name": "_0x3da27e"
+                            },
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": []
+                            }
+                        },
+                        "finalizer": null
+                    },
+                    {
+                        "type": "EmptyStatement"
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "x"
+                                },
+                                "init": null
+                            }
+                        ],
+                        "kind": "let"
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

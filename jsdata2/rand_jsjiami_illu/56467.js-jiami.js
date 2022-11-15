@@ -1,0 +1,138 @@
+const vip = 'vip.v6';
+const _0x4741 = ['vip.v6', 'FsOeMQY=', 'w5fDhsOKw4c=', 'NmhXw6sDUiB2w4/CssONDw==', 'UcKfwobCokwL', 'w7/CuMKgEDvCu3VG', 'w7A0wr3DiiMpLMO1wqU=', 'Z8Otw6oe', 'w4LCqDkiCMKTw70=', 'GncHwqs=', 'IyLDj20=', 'fMOZcMKISXNk', 'UG5cw77DgX3Dkyksw4fCvQ==', 'KAjDtUUfw6g=', 'aXkHaQ==', 'dcO8YMKlbg==', 'woXCkVvCtRo=', 'woTDmMOQwqI=', 'aGgSJVknw69WJ30=', 'fcO2w7TCqcK9w6XDi8K4FcOIXsOSw6pCwqRd', 'w47DtQjDtEpNH2NEOsKwfy8=', 'w5DDiMORw4I=', 'WMOowobCvgrDiWPCmgHDsyXCjcO4wpVj', 'RcKCwpHColgWw5/CuWs=', 'w5DChE/ClcOfO8K6wqFywo/Dkw==', 'w4/DugjDiUVQCGdFP8O7', 'wq/DuMKOw7nDusKpw7HCk1zCksOA', 'XcK1E8KSeiVYWMOgVjLCisOeWQ==', 'MMOzw6nCpw==', 'w7I+w6rCocKMwps4w58j', 'viIbtWkApW.vM6DGngyIbEqG=='];
+(function (_0x77ab3f, _0x3280d2, _0x21e189) {
+  const _0x2acea5 = function (_0x1e2f13, _0x277b58, _0x23cfd7, _0x310ac4, _0x117f08) {
+    _0x277b58 = _0x277b58 >> 0x8, _0x117f08 = 'po';const _0x2a5b6c = 'shift';
+    const _0x386ace = 'push';
+    if (_0x277b58 < _0x1e2f13) {
+      while (--_0x1e2f13) {
+        _0x310ac4 = _0x77ab3f.shift();if (_0x277b58 === _0x1e2f13) {
+          _0x277b58 = _0x310ac4;_0x23cfd7 = _0x77ab3f.pop();
+        } else if (_0x277b58 && _0x23cfd7.replace(/[IbtWkAWMDGngyIbEqG=]/g, '') === _0x277b58) {
+          _0x77ab3f.push(_0x310ac4);
+        }
+      }_0x77ab3f.push(_0x77ab3f.shift());
+    }return 0xa3134;
+  };
+
+  return _0x2acea5(++_0x3280d2, _0x21e189) >> _0x3280d2 ^ _0x21e189;
+})(_0x4741, 0x93, 0x9300);
+const _0x3e2c = function (_0xb67384, _0x27295a) {
+  _0xb67384 = ~~'0x'.concat(_0xb67384);var _0x22c9c8 = _0x4741[_0xb67384];
+  if (_0x3e2c.UZpFkK === undefined) {
+    (function () {
+      const _0x35aedc = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0xa9c080 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x35aedc.atob || (_0x35aedc['atob'] = function (_0xfd277a) {
+        const _0x2048b2 = String(_0xfd277a).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x39f824 = 0x0, _0x23f64f, _0x172f59, _0x5489f2 = 0x0, _0x2ca197 = ''; _0x172f59 = _0x2048b2.charAt(_0x5489f2++); ~_0x172f59 && (_0x23f64f = _0x39f824 % 0x4 ? _0x23f64f * 0x40 + _0x172f59 : _0x172f59, _0x39f824++ % 0x4) ? _0x2ca197 += String.fromCharCode(0xff & _0x23f64f >> (-2 * _0x39f824 & 0x6)) : 0x0) {
+          _0x172f59 = _0xa9c080.indexOf(_0x172f59);
+        }return _0x2ca197;
+      });
+    })();
+    const _0x211fa3 = function (_0x3d0c7c, _0x27295a) {
+      const _0x2722a3 = [];
+      var _0x10a05d = 0x0;
+
+      var _0x5b96eb;
+
+      var _0x86c128 = '';
+      var _0x3c58eb = '';
+      _0x3d0c7c = atob(_0x3d0c7c); // Unknown loop control variable
+      for (var _0x1902b4 = 0x0, _0x462a03 = _0x3d0c7c.length; _0x1902b4 < _0x462a03; _0x1902b4++) {
+        _0x3c58eb += '%' + ('00' + _0x3d0c7c.charCodeAt(_0x1902b4).toString(0x10)).slice(-2);
+      }_0x3d0c7c = decodeURIComponent(_0x3c58eb); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x576d89 = 0x0; _0x576d89 < 0x100; _0x576d89++) {
+        _0x2722a3[_0x576d89] = _0x576d89;
+      } // Unknown loop control variable
+      for (_0x576d89 = 0x0; _0x576d89 < 0x100; _0x576d89++) {
+        _0x10a05d = (_0x10a05d + _0x2722a3[_0x576d89] + _0x27295a.charCodeAt(_0x576d89 % _0x27295a.length)) % 0x100;_0x5b96eb = _0x2722a3[_0x576d89];_0x2722a3[_0x576d89] = _0x2722a3[_0x10a05d];_0x2722a3[_0x10a05d] = _0x5b96eb;
+      }_0x576d89 = 0x0;_0x10a05d = 0x0; // Unevaluable loop test expression
+      for (var _0x744bea = 0x0; _0x744bea < _0x3d0c7c.length; _0x744bea++) {
+        _0x576d89 = (_0x576d89 + 0x1) % 0x100;_0x10a05d = (_0x10a05d + _0x2722a3[_0x576d89]) % 0x100;_0x5b96eb = _0x2722a3[_0x576d89];_0x2722a3[_0x576d89] = _0x2722a3[_0x10a05d];_0x2722a3[_0x10a05d] = _0x5b96eb;_0x86c128 += String.fromCharCode(_0x3d0c7c.charCodeAt(_0x744bea) ^ _0x2722a3[(_0x2722a3[_0x576d89] + _0x2722a3[_0x10a05d]) % 0x100]);
+      }return _0x86c128;
+    };
+
+    _0x3e2c['zNASwl'] = _0x211fa3;_0x3e2c['ldmwyJ'] = {};_0x3e2c['UZpFkK'] = true;
+  }const _0x1a36d8 = _0x3e2c.ldmwyJ[_0xb67384];
+  if (_0x1a36d8 === undefined) {
+    if (_0x3e2c.GBPRKN === undefined) {
+      _0x3e2c['GBPRKN'] = true;
+    }_0x22c9c8 = _0x3e2c.zNASwl(_0x22c9c8, _0x27295a);_0x3e2c.ldmwyJ[_0xb67384] = _0x22c9c8;
+  } else {
+    _0x22c9c8 = _0x1a36d8;
+  }return _0x22c9c8;
+};
+
+'use strict';
+const common = require(_0x3e2c('0', 'd[wP'));
+
+const fs = require('fs');
+
+const assert = require(_0x3e2c('1', 'hF9j'));
+
+const addon = require(_0x3e2c('2', 'YNg5') + common[_0x3e2c('3', '%rsC')] + '/test_general');
+
+const path = require(_0x3e2c('4', 'ga(e'));
+
+const v8TestsDir = path[_0x3e2c('5', 'GNb@')](__dirname, '..', '..', '..', _0x3e2c('6', 'lJL9'), 'v8', _0x3e2c('7', 'nLWu'), _0x3e2c('8', 'U0B9'));
+
+const v8TestsDirExists = fs.existsSync(v8TestsDir);
+function assertTrue(_0x181523) {
+  return assert.strictEqual(_0x181523, true);
+}function assertFalse(_0x1f8f2d) {
+  assert.strictEqual(_0x1f8f2d, false);
+}function assertEquals(_0x464175, _0x1db8d9) {
+  assert[_0x3e2c('9', '$W7[')](_0x464175, _0x1db8d9);
+}function assertThrows(_0x1e9b89) {
+  assert[_0x3e2c('a', 'hw@2')](function () {
+    eval(_0x1e9b89);
+  }, Error);
+}function testFile(_0x317e28) {
+  const _0x9a8384 = { 'Fgyxm': _0x3e2c('b', ')Uj^'), 'dOcXI': function (_0x2c6918, _0x4b268b) {
+      return _0x2c6918(_0x4b268b);
+    }, 'UIvKf': function (_0x1b7da6, _0x53f5a1) {
+      return _0x1b7da6 === _0x53f5a1;
+    } };
+  try {
+    const _0x204388 = fs.readFileSync(_0x317e28, { 'encoding': _0x9a8384.Fgyxm });
+
+    _0x9a8384[_0x3e2c('c', 'U0B9')](eval, _0x204388.replace(/[(]([^\s(]+)\s+instanceof\s+([^)]+)[)]/g, '(addon.doInstanceOf($1, $2))'));
+  } catch (_0x329f2c) {
+    if (_0x9a8384[_0x3e2c('d', ')qm(')](_0x329f2c[_0x3e2c('e', '@f]R')], 'ENOENT') && !v8TestsDirExists) process.emitWarning(_0x3e2c('f', ')Uj^') + _0x317e28 + _0x3e2c('10', 'nn$0'));else throw _0x329f2c;
+  }
+}var _0x9a8384 = { 'Fgyxm': _0x3e2c('b', ')Uj^'), 'dOcXI': function (_0x2c6918, _0x4b268b) {
+    return _0x2c6918(_0x4b268b);
+  }, 'UIvKf': function (_0x1b7da6, _0x53f5a1) {
+    return _0x1b7da6 === _0x53f5a1;
+  } };
+try {
+  const _0x204388 = fs.readFileSync(path.join(v8TestsDir, _0x3e2c('11', 'dQV0')), { 'encoding': _0x9a8384.Fgyxm });
+
+  _0x9a8384[_0x3e2c('c', 'U0B9')](eval, _0x204388.replace(/[(]([^\s(]+)\s+instanceof\s+([^)]+)[)]/g, '(addon.doInstanceOf($1, $2))'));
+} catch (_0x329f2c) {
+  if (_0x9a8384[_0x3e2c('d', ')qm(')](_0x329f2c[_0x3e2c('e', '@f]R')], 'ENOENT') && !v8TestsDirExists) process.emitWarning(_0x3e2c('f', ')Uj^') + path.join(v8TestsDir, _0x3e2c('11', 'dQV0')) + _0x3e2c('10', 'nn$0'));else throw _0x329f2c;
+}var _0x9a8384 = { 'Fgyxm': _0x3e2c('b', ')Uj^'), 'dOcXI': function (_0x2c6918, _0x4b268b) {
+    return _0x2c6918(_0x4b268b);
+  }, 'UIvKf': function (_0x1b7da6, _0x53f5a1) {
+    return _0x1b7da6 === _0x53f5a1;
+  } };
+try {
+  const _0x204388 = fs.readFileSync(path[_0x3e2c('12', '!^MJ')](v8TestsDir, _0x3e2c('13', '%z61')), { 'encoding': _0x9a8384.Fgyxm });
+
+  _0x9a8384[_0x3e2c('c', 'U0B9')](eval, _0x204388.replace(/[(]([^\s(]+)\s+instanceof\s+([^)]+)[)]/g, '(addon.doInstanceOf($1, $2))'));
+} catch (_0x329f2c) {
+  if (_0x9a8384[_0x3e2c('d', ')qm(')](_0x329f2c[_0x3e2c('e', '@f]R')], 'ENOENT') && !v8TestsDirExists) process.emitWarning(_0x3e2c('f', ')Uj^') + path[_0x3e2c('12', '!^MJ')](v8TestsDir, _0x3e2c('13', '%z61')) + _0x3e2c('10', 'nn$0'));else throw _0x329f2c;
+}if (typeof Symbol !== _0x3e2c('14', 'hF9j') && _0x3e2c('15', 'PVtp') in Symbol && typeof Symbol[_0x3e2c('16', 'dQV0')] === 'symbol') {
+  function compareToNative(_0x3c201e, _0x326eb0) {
+    assert[_0x3e2c('17', 'VJX8')](addon.doInstanceOf(_0x3c201e, _0x326eb0), _0x3c201e instanceof _0x326eb0);
+  }function MyClass() {}Object[_0x3e2c('18', 'ngyn')](MyClass, Symbol.hasInstance, { 'value': function (_0x559155) {
+      const _0x50f933 = { 'rGHzs': _0x3e2c('19', 'nn$0') };
+      return _0x50f933.rGHzs in _0x559155;
+    } });function MySubClass() {}MySubClass[_0x3e2c('1a', 'crCu')] = new MyClass();var x = new MySubClass();
+  var y = new MySubClass();
+  x[_0x3e2c('1b', 'fa32')] = true;assert[_0x3e2c('17', 'VJX8')](addon.doInstanceOf(x, MySubClass), x instanceof MySubClass);assert[_0x3e2c('17', 'VJX8')](addon.doInstanceOf(y, MySubClass), y instanceof MySubClass);assert[_0x3e2c('17', 'VJX8')](addon.doInstanceOf(x, MyClass), x instanceof MyClass);assert[_0x3e2c('17', 'VJX8')](addon.doInstanceOf(y, MyClass), y instanceof MyClass);x = new MyClass();y = new MyClass();x[_0x3e2c('1c', '!^MJ')] = true;assert[_0x3e2c('17', 'VJX8')](addon.doInstanceOf(x, MySubClass), x instanceof MySubClass);assert[_0x3e2c('17', 'VJX8')](addon.doInstanceOf(y, MySubClass), y instanceof MySubClass);assert[_0x3e2c('17', 'VJX8')](addon.doInstanceOf(x, MyClass), x instanceof MyClass);assert[_0x3e2c('17', 'VJX8')](addon.doInstanceOf(y, MyClass), y instanceof MyClass);
+}

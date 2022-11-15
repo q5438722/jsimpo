@@ -1,0 +1,1 @@
+const x = 0x2a;

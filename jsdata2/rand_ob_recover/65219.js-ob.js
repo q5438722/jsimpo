@@ -1,0 +1,30 @@
+var benchmarks = [
+    [
+        Exec,
+        Exec1Setup
+    ],
+    [
+        Exec,
+        Exec2Setup
+    ],
+    [
+        Exec,
+        Exec3Setup
+    ],
+    [
+        Exec,
+        Exec4Setup
+    ],
+    [
+        Exec,
+        Exec5Setup
+    ],
+    [
+        Exec,
+        Exec6Setup
+    ],
+    [
+        Exec,
+        Exec7Setup
+    ]
+];

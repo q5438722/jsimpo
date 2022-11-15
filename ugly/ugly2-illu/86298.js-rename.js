@@ -1,0 +1,48 @@
+const CanvasPool = require("../../display/canvas/CanvasPool");
+
+const MeasureText = function (e) {
+  const a = CanvasPool.create(this);
+  const t = a.getContext("2d");
+  e.syncFont(a, t);const n = t.measureText(e.testString);
+  if ("actualBoundingBoxAscent" in n) {
+    const r = n.actualBoundingBoxAscent;
+    const s = n.actualBoundingBoxDescent;
+    CanvasPool.remove(a);return { ascent: r, descent: s, fontSize: r + s };
+  }const o = Math.ceil(n.width * e.baselineX);
+  var i = o;
+  const l = 2 * i;
+  i = i * e.baselineY | 0;a.width = o;a.height = l;t.fillStyle = "#f00";t.fillRect(0, 0, o, l);t.font = e._font;t.textBaseline = "alphabetic";t.fillStyle = "#000";t.fillText(e.testString, 0, i);const v = { ascent: 0, descent: 0, fontSize: 0 };
+  const c = t.getImageData(0, 0, o, l);
+  if (!c) {
+    v.ascent = i;v.descent = i + 6;v.fontSize = v.ascent + v.descent;CanvasPool.remove(a);return v;
+  }const f = c.data;
+  const u = f.length;
+  const d = o * 4;
+  var g;
+  var x;
+  var h = 0;
+  var S = false;
+  for (g = 0; g < i; g++) {
+    for (x = 0; x < d; x += 4) {
+      if (f[h + x] !== 255) {
+        S = true;break;
+      }
+    }if (!S) {
+      h += d;
+    } else {
+      break;
+    }
+  }v.ascent = i - g;h = u - d;S = false;for (g = l; g > i; g--) {
+    for (x = 0; x < d; x += 4) {
+      if (f[h + x] !== 255) {
+        S = true;break;
+      }
+    }if (!S) {
+      h -= d;
+    } else {
+      break;
+    }
+  }v.descent = g - i;v.fontSize = v.ascent + v.descent;CanvasPool.remove(a);return v;
+};
+
+module.exports = MeasureText;

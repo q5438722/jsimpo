@@ -1,0 +1,1 @@
+import { LANGUAGES } from "./constants";export default LANGUAGES.filter(t => t.highlight).map(t => t.short || t.mode).map(t => [t, require(`highlight.js/lib/languages/${t}`)]);

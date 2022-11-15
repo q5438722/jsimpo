@@ -1,0 +1,9 @@
+function _0x3996(_0x17ba8e, _0x253573) {
+    return _0x3996 = function (_0x392f80, _0x399606) {
+        _0x392f80 = _0x392f80 - 347;
+        var _0x1d692a = _0x392f[_0x392f80];
+        return _0x1d692a;
+    }, _0x3996(_0x17ba8e, _0x253573);
+}
+var argv = require(_0x312da5(357))(process[_0x312da5(358)][_0x312da5(359)](2));
+console['dir'](argv);

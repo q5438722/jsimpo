@@ -1,0 +1,25 @@
+"use strict";
+
+const fetch = require("node-fetch");
+
+var { writeFileSync } = require("fs");
+
+const stories = 50;
+async function getStory(t) {
+  const s = await fetch(`https://hacker-news.firebaseio.com/v0/item/${t}.json`);
+  return await s.json();
+}async function getTopStories() {
+  const t = await fetch("https://hacker-news.firebaseio.com/v0/topstories.js");
+  const s = await t.json();
+  const e = [];
+  for (let t = 0; t < stories; t++) {
+    const o = s[t];
+    e.push((await getStory(o)));
+  }writeFileSync("top-stories.json", `window.stories = ${JSON.stringify(e)}`);
+}const t = await fetch("https://hacker-news.firebaseio.com/v0/topstories.js");
+const s = await t.json();
+const e = [];
+for (let t = 0; t < stories; t++) {
+  const o = s[t];
+  e.push((await getStory(o)));
+}writeFileSync("top-stories.json", `window.stories = ${JSON.stringify(e)}`);

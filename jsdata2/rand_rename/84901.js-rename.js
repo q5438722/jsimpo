@@ -1,0 +1,1 @@
+const testSetup=require("../__shared__/test-setup");if(testSetup.isLocal){test("skipped locally",()=>{})}else{test("builds in development",async()=>{const{fulfilled:t}=await testSetup.scripts.start({smoke:true});expect(t).toBe(true)});test("builds in production",async()=>{const{fulfilled:t}=await testSetup.scripts.build();expect(t).toBe(true)})}

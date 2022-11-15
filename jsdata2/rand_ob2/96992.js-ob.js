@@ -1,0 +1,91 @@
+var _0x3c1a = [
+    'push',
+    'object',
+    'ext',
+    'split',
+    'cwd',
+    '409016EDNDAK',
+    '41csraGn',
+    '29209KvtqSB',
+    '317777nedwTF',
+    '1lLiFQk',
+    '87019BDMwpW',
+    '13kGLRaI',
+    '858417uSTPZi',
+    '5kmJpTs',
+    '37091CmmytQ',
+    '2285956TTukvU',
+    '../../../constants.js',
+    'accessSync',
+    'R_OK',
+    'statSync',
+    'isDirectory',
+    'indexOf',
+    'node_modules',
+    'mode',
+    'readdirSync',
+    'parseInt',
+    'lastIndexOf',
+    'length',
+    'test'
+];
+var _0x1a17c4 = _0x4ee1;
+(function (_0x217127, _0x3e4600) {
+    var _0x3c268f = _0x4ee1;
+    while (!![]) {
+        try {
+            var _0xc6b6b9 = parseInt(_0x3c268f(0x173)) + parseInt(_0x3c268f(0x174)) * -parseInt(_0x3c268f(0x175)) + parseInt(_0x3c268f(0x176)) * -parseInt(_0x3c268f(0x177)) + parseInt(_0x3c268f(0x178)) * -parseInt(_0x3c268f(0x179)) + parseInt(_0x3c268f(0x17a)) + parseInt(_0x3c268f(0x17b)) * -parseInt(_0x3c268f(0x17c)) + parseInt(_0x3c268f(0x17d));
+            if (_0xc6b6b9 === _0x3e4600)
+                break;
+            else
+                _0x217127['push'](_0x217127['shift']());
+        } catch (_0xd91405) {
+            _0x217127['push'](_0x217127['shift']());
+        }
+    }
+}(_0x3c1a, 0xb01bd));
+var fs = require('fs'), conf = require(_0x1a17c4(0x17e));
+function _0x4ee1(_0x1c188b, _0x36ada4) {
+    return _0x4ee1 = function (_0x3c1a7b, _0x4ee1cf) {
+        _0x3c1a7b = _0x3c1a7b - 0x173;
+        var _0x1d0efe = _0x3c1a[_0x3c1a7b];
+        return _0x1d0efe;
+    }, _0x4ee1(_0x1c188b, _0x36ada4);
+}
+function find_extensions(_0x4ddae6, _0x342f46, _0x4b8b08) {
+    var _0x20f671 = _0x1a17c4;
+    try {
+        fs[_0x20f671(0x17f)](_0x4ddae6, fs['constants'][_0x20f671(0x180)]);
+    } catch (_0x2334ce) {
+        return;
+    }
+    fs[_0x20f671(0x181)](_0x4ddae6)[_0x20f671(0x182)]() && _0x4ddae6[_0x20f671(0x183)](_0x20f671(0x184)) == -0x1 && fs[_0x20f671(0x181)](_0x4ddae6)[_0x20f671(0x185)] & 0x4 && fs[_0x20f671(0x186)](_0x4ddae6)['forEach'](_0x5e79f8 => {
+        var _0x5d3a05 = _0x20f671, _0x26f0d8;
+        if (Number[_0x5d3a05(0x187)](_0x4ddae6[_0x5d3a05(0x188)]('/') + 0x1) === _0x4ddae6[_0x5d3a05(0x189)])
+            _0x26f0d8 = _0x4ddae6 + _0x5e79f8;
+        else
+            _0x26f0d8 = _0x4ddae6 + '/' + _0x5e79f8;
+        if (fs[_0x5d3a05(0x181)](_0x26f0d8)[_0x5d3a05(0x182)]())
+            find_extensions(_0x26f0d8, _0x342f46, _0x4b8b08);
+        else {
+            var _0x3df4bd = !![];
+            for (var _0x19ee70 = 0x0; _0x19ee70 < _0x342f46[_0x5d3a05(0x189)]; _0x19ee70++)
+                if (_0x342f46[_0x19ee70][_0x5d3a05(0x18a)](_0x5e79f8))
+                    _0x3df4bd = ![];
+            if (_0x3df4bd)
+                _0x4b8b08[_0x5d3a05(0x18b)](_0x4ddae6 + '/' + _0x5e79f8);
+        }
+    });
+}
+module['exports']['make_available_extension'] = function make_available_extension(_0x31d225, _0x39c938) {
+    var _0x1996e8 = _0x1a17c4;
+    if (typeof _0x31d225 == 'object' && typeof _0x39c938 == _0x1996e8(0x18c)) {
+        var _0x225059 = _0x31d225[_0x1996e8(0x18d)][_0x1996e8(0x18e)](',');
+        for (var _0x58750b = 0x0; _0x58750b < _0x225059['length']; _0x58750b++)
+            _0x225059[_0x58750b] = '.' + _0x225059[_0x58750b];
+        var _0xadb73a = [];
+        for (var _0x58750b = 0x0; _0x58750b < _0x225059[_0x1996e8(0x189)]; _0x58750b++)
+            _0xadb73a[_0x58750b] = new RegExp(_0x225059[_0x58750b] + '$');
+        find_extensions(process[_0x1996e8(0x18f)](), _0xadb73a, _0x39c938);
+    }
+};

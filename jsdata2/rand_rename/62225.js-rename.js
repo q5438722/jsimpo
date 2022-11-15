@@ -1,0 +1,1 @@
+(function n(){function r(n){for(var r=0;r<2;r++){n[r]=0}}var u;function a(){var n=arguments;r(n);u=n[5];assertEquals(undefined,u)}r([]);a(1)})();(function n(){"use strict";function r(n){for(var r=0;r<2;r++){n[r]=0}}var u;function a(){var n=arguments;r(n);u=n[5];assertEquals(undefined,u)}r([]);a(1)})();

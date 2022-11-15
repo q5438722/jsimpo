@@ -1,0 +1,62 @@
+'use strict';
+function t(buildingApp, value) {
+  assertTrue(buildingApp["test"](value));
+}
+function f(buildingApp, value) {
+  assertFalse(buildingApp["test"](value));
+}
+t(null, "abc123");
+f(null, "\u24d0\u24d1\u24d2\u2460\u2461\u2462");
+f(null, "\ud83c\udd30\ud83c\udd31\ud83c\udd32\u2460\u2461\u2462");
+f(null, "abcd123");
+t(null, "\u24d0\u24d1\u24d2\u2460\u2461\u2462");
+t(null, "\u598b\ue103\u1171\u2442\u24c6\u243d");
+f(null, "abc123");
+f(null, "\u24d0\u24d1\u24d2\u2460\u2461\u2462");
+f(null, "\ue1fb\u2994\u81cc\u24c5\u244d\u24f9");
+t(null, "abcd123");
+t(null, "\u24d0\u24d1\u24d2\u2460\u2461\u2462");
+f(null, "\ud83c\udd30\ud83c\udd31\ud83c\udd32\u2460\u2461\u2462");
+t(null, "\u35c4\u550d\ub1a7\u24da\u244b\u2422");
+assertEquals(["\ufffd"], null["exec"]("\ufffd\ufffd"));
+assertEquals(["\ufffd"], null["exec"]("\ufffd\ufffd"));
+assertEquals(["\ud800\udc01"], null["exec"]("\ud800\udc01"));
+assertEquals(["\ufffd"], null["exec"]("\ufffd"));
+f(null, "123");
+f(null, "123");
+t(null, "123");
+t(null, "123");
+t(null, "123");
+t(null, "\u8d68\uf14f\ue92f");
+f(null, "\ufdd0");
+f(null, "\udbbf\udfff");
+f(null, "123");
+f(null, "\ud83c\udd30\ud83c\udd31\ud83c\udd32");
+t(null, "\ufdd0");
+t(null, "\udbbf\udfff");
+f(null, "");
+t(null, "123");
+f(null, "\ud83c\udd30\ud83c\udd31\ud83c\udd32");
+f(null, "\ufdd0");
+t(null, "\udbbf\udfff");
+f(null, "");
+f(null, "\u1234");
+t(null, "x");
+t(null, "\u1234");
+assertThrows("/\\p{Other_Alphabetic}/u");
+assertThrows("/\\P{OAlpha}/u");
+assertThrows("/\\p{Other_Default_Ignorable_Code_Point}/u");
+assertThrows("/\\P{ODI}/u");
+assertThrows("/\\p{Other_Grapheme_Extend}/u");
+assertThrows("/\\P{OGr_Ext}/u");
+assertThrows("/\\p{Other_ID_Continue}/u");
+assertThrows("/\\P{OIDC}/u");
+assertThrows("/\\p{Other_ID_Start}/u");
+assertThrows("/\\P{OIDS}/u");
+assertThrows("/\\p{Other_Lowercase}/u");
+assertThrows("/\\P{OLower}/u");
+assertThrows("/\\p{Other_Math}/u");
+assertThrows("/\\P{OMath}/u");
+assertThrows("/\\p{Other_Uppercase}/u");
+assertThrows("/\\P{OUpper}/u");
+

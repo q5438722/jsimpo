@@ -1,0 +1,5 @@
+'use strict';
+module["exports"] = ["Adriana", "Alexandra", "Alice", "Am\u00e9lia", "Ana", "Ariana", "\u00c1urea", "Aurora", "B\u00e1rbara", "Beatriz", "Benedita", "Bruna", "Caetana", "Camila", "Carla", "Carlota", "Carminho", "Carmo", "Carolina", "Catarina", "Cec\u00edlia", "C\u00e9lia", "Clara", "Constan\u00e7a", "Daniela", "D\u00e9bora", "Diana", "Eduarda", "Elisa", "Ema", "Em\u00edlia", "\u00c9rica", "Eva", "Fabiana", "Filipa", "Flor", "Francisca", "Frederica", "Gabriela", "Helena", "In\u00eas", "Irina", "\u00cdris", 
+"Isabel", "J\u00e9ssica", "Joana", "J\u00falia", "Juliana", "Julieta", "Lara", "Laura", "Leonor", "Let\u00edcia", "Lia", "Lorena", "Luana", "Luena", "Lu\u00edsa", "Luna", "Madalena", "Mafalda", "Mara", "M\u00e1rcia", "Margarida", "Maria", "Mariana", "Marta", "Matilde", "Melissa", "Mia", "Miriam", "Nat\u00e1lia", "Nicole", "N\u00faria", "Of\u00e9lia", "Ol\u00edvia", "Paula", "Pilar", "Rafaela", "Raquel", "Rita", "Rosa", "Safira", "Sara", "S\u00edlvia", "Sofia", "Soraia", "Tatiana", "Teresa", "Valentina", 
+"V\u00e2nia", "Vera", "Vit\u00f3ria"];
+

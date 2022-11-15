@@ -1,0 +1,1 @@
+import _0x303a81 from'shared/invariant';_0x303a81(![],'This module must be shimmed by a specific renderer.');

@@ -1,0 +1,395 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "path"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "path",
+                                "raw": "'path'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "exports"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "createPages",
+                        "raw": "'createPages'"
+                    }
+                },
+                "right": {
+                    "type": "ArrowFunctionExpression",
+                    "id": null,
+                    "params": [
+                        {
+                            "type": "ObjectPattern",
+                            "properties": [
+                                {
+                                    "type": "Property",
+                                    "key": {
+                                        "type": "Identifier",
+                                        "name": "graphql"
+                                    },
+                                    "computed": false,
+                                    "value": {
+                                        "type": "Identifier",
+                                        "name": "graphql"
+                                    },
+                                    "kind": "init",
+                                    "method": false,
+                                    "shorthand": true
+                                },
+                                {
+                                    "type": "Property",
+                                    "key": {
+                                        "type": "Identifier",
+                                        "name": "actions"
+                                    },
+                                    "computed": false,
+                                    "value": {
+                                        "type": "Identifier",
+                                        "name": "actions"
+                                    },
+                                    "kind": "init",
+                                    "method": false,
+                                    "shorthand": true
+                                }
+                            ]
+                        }
+                    ],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "ObjectPattern",
+                                            "properties": [
+                                                {
+                                                    "type": "Property",
+                                                    "key": {
+                                                        "type": "Identifier",
+                                                        "name": "createPage"
+                                                    },
+                                                    "computed": false,
+                                                    "value": {
+                                                        "type": "Identifier",
+                                                        "name": "createPage"
+                                                    },
+                                                    "kind": "init",
+                                                    "method": false,
+                                                    "shorthand": true
+                                                }
+                                            ]
+                                        },
+                                        "init": {
+                                            "type": "Identifier",
+                                            "name": "actions"
+                                        }
+                                    }
+                                ],
+                                "kind": "const"
+                            },
+                            {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "ObjectPattern",
+                                            "properties": [
+                                                {
+                                                    "type": "Property",
+                                                    "key": {
+                                                        "type": "Identifier",
+                                                        "name": "data"
+                                                    },
+                                                    "computed": false,
+                                                    "value": {
+                                                        "type": "Identifier",
+                                                        "name": "data"
+                                                    },
+                                                    "kind": "init",
+                                                    "method": false,
+                                                    "shorthand": true
+                                                }
+                                            ]
+                                        },
+                                        "init": {
+                                            "type": "AwaitExpression",
+                                            "argument": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "graphql"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "\n    {\n      allMongodbCloudDocuments(limit: 1000) {\n        edges {\n          node {\n            id\n          }\n        }\n      }\n    }\n  ",
+                                                        "raw": "'\n    {\n      allMongodbCloudDocuments(limit: 1000) {\n        edges {\n          node {\n            id\n          }\n        }\n      }\n    }\n  '"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "kind": "const"
+                            },
+                            {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "Identifier",
+                                            "name": "_0x32f0ec"
+                                        },
+                                        "init": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "path"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "resolve",
+                                                    "raw": "'resolve'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Literal",
+                                                    "value": "./src/templates/item.js",
+                                                    "raw": "'./src/templates/item.js'"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "kind": "const"
+                            },
+                            {
+                                "type": "ForOfStatement",
+                                "left": {
+                                    "type": "VariableDeclaration",
+                                    "declarations": [
+                                        {
+                                            "type": "VariableDeclarator",
+                                            "id": {
+                                                "type": "ObjectPattern",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Identifier",
+                                                            "name": "node"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "Identifier",
+                                                            "name": "node"
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": true
+                                                    }
+                                                ]
+                                            },
+                                            "init": null
+                                        }
+                                    ],
+                                    "kind": "const"
+                                },
+                                "right": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "data"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "allMongodbCloudDocuments",
+                                            "raw": "'allMongodbCloudDocuments'"
+                                        }
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "edges",
+                                        "raw": "'edges'"
+                                    }
+                                },
+                                "body": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "createPage"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "path",
+                                                                    "raw": "'path'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "BinaryExpression",
+                                                                    "operator": "+",
+                                                                    "left": {
+                                                                        "type": "BinaryExpression",
+                                                                        "operator": "+",
+                                                                        "left": {
+                                                                            "type": "Literal",
+                                                                            "value": "/item/",
+                                                                            "raw": "'/item/'"
+                                                                        },
+                                                                        "right": {
+                                                                            "type": "MemberExpression",
+                                                                            "computed": true,
+                                                                            "object": {
+                                                                                "type": "Identifier",
+                                                                                "name": "node"
+                                                                            },
+                                                                            "property": {
+                                                                                "type": "Literal",
+                                                                                "value": "id",
+                                                                                "raw": "'id'"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "right": {
+                                                                        "type": "Literal",
+                                                                        "value": "/",
+                                                                        "raw": "'/'"
+                                                                    }
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            },
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "component",
+                                                                    "raw": "'component'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x32f0ec"
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            },
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "context",
+                                                                    "raw": "'context'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "ObjectExpression",
+                                                                    "properties": [
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Literal",
+                                                                                "value": "id",
+                                                                                "raw": "'id'"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "MemberExpression",
+                                                                                "computed": true,
+                                                                                "object": {
+                                                                                    "type": "Identifier",
+                                                                                    "name": "node"
+                                                                                },
+                                                                                "property": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "id",
+                                                                                    "raw": "'id'"
+                                                                                }
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": false
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "generator": false,
+                    "expression": false,
+                    "async": true
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}

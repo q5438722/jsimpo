@@ -1,0 +1,1 @@
+it("should name require in define correctly",function(){define(["require"],function(e){expect(typeof e).toBe("function")})});

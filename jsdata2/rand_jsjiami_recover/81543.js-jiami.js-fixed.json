@@ -1,0 +1,1520 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "debug"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "require"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": "@tryghost/debug",
+                                    "raw": "'@tryghost/debug'"
+                                }
+                            ]
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "members",
+                                "raw": "'members'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "ObjectPattern",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "URL"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "URL"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true
+                            }
+                        ]
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "url",
+                                "raw": "'url'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "cors"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "cors",
+                                "raw": "'cors'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "bodyParser"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "body-parser",
+                                "raw": "'body-parser'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "express"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../../../shared/express",
+                                "raw": "'../../../shared/express'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "urlUtils"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../../../shared/url-utils",
+                                "raw": "'../../../shared/url-utils'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "membersService"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../../services/members",
+                                "raw": "'../../services/members'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "middleware"
+                    },
+                    "init": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "membersService"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "middleware",
+                            "raw": "'middleware'"
+                        }
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "shared"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../shared",
+                                "raw": "'../shared'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "module"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "exports",
+                        "raw": "'exports'"
+                    }
+                },
+                "right": {
+                    "type": "FunctionExpression",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "setupMembersApp"
+                    },
+                    "params": [],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "debug"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "Members App setup start",
+                                            "raw": "'Members App setup start'"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "init": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "express"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Literal",
+                                                    "value": "members",
+                                                    "raw": "'members'"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "kind": "const"
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "use",
+                                            "raw": "'use'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "shared"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "middlewares",
+                                                    "raw": "'middlewares'"
+                                                }
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "maintenance",
+                                                "raw": "'maintenance'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "use",
+                                            "raw": "'use'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "shared"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "middlewares",
+                                                        "raw": "'middlewares'"
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "cacheControl",
+                                                    "raw": "'cacheControl'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Literal",
+                                                    "value": "private",
+                                                    "raw": "'private'"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "Identifier",
+                                            "name": "_0x42cc79"
+                                        },
+                                        "init": {
+                                            "type": "NewExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "URL"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "urlUtils"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "getSiteUrl",
+                                                            "raw": "'getSiteUrl'"
+                                                        }
+                                                    },
+                                                    "arguments": []
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "kind": "const"
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "use",
+                                            "raw": "'use'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "cors"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "_0x42cc79"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "origin",
+                                                        "raw": "'origin'"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "use",
+                                            "raw": "'use'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "middleware"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "createSessionFromMagicLink",
+                                                "raw": "'createSessionFromMagicLink'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "post",
+                                            "raw": "'post'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/webhooks/stripe",
+                                            "raw": "'/webhooks/stripe'"
+                                        },
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "middleware"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "stripeWebhooks",
+                                                "raw": "'stripeWebhooks'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "get",
+                                            "raw": "'get'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/api/member",
+                                            "raw": "'/api/member'"
+                                        },
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "middleware"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "getMemberData",
+                                                "raw": "'getMemberData'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "put",
+                                            "raw": "'put'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/api/member",
+                                            "raw": "'/api/member'"
+                                        },
+                                        {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "bodyParser"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "json",
+                                                    "raw": "'json'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "ObjectExpression",
+                                                    "properties": [
+                                                        {
+                                                            "type": "Property",
+                                                            "key": {
+                                                                "type": "Literal",
+                                                                "value": "limit",
+                                                                "raw": "'limit'"
+                                                            },
+                                                            "computed": false,
+                                                            "value": {
+                                                                "type": "Literal",
+                                                                "value": "1mb",
+                                                                "raw": "'1mb'"
+                                                            },
+                                                            "kind": "init",
+                                                            "method": false,
+                                                            "shorthand": false
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "middleware"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "updateMemberData",
+                                                "raw": "'updateMemberData'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "get",
+                                            "raw": "'get'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/api/session",
+                                            "raw": "'/api/session'"
+                                        },
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "middleware"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "getIdentityToken",
+                                                "raw": "'getIdentityToken'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "delete",
+                                            "raw": "'delete'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/api/session",
+                                            "raw": "'/api/session'"
+                                        },
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "middleware"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "deleteSession",
+                                                "raw": "'deleteSession'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "get",
+                                            "raw": "'get'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/api/site",
+                                            "raw": "'/api/site'"
+                                        },
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "middleware"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "getMemberSiteData",
+                                                "raw": "'getMemberSiteData'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "post",
+                                            "raw": "'post'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/api/send-magic-link",
+                                            "raw": "'/api/send-magic-link'"
+                                        },
+                                        {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "bodyParser"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "json",
+                                                    "raw": "'json'"
+                                                }
+                                            },
+                                            "arguments": []
+                                        },
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "shared"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "middlewares",
+                                                        "raw": "'middlewares'"
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "brute",
+                                                    "raw": "'brute'"
+                                                }
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "membersAuth",
+                                                "raw": "'membersAuth'"
+                                            }
+                                        },
+                                        {
+                                            "type": "ArrowFunctionExpression",
+                                            "id": null,
+                                            "params": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x174ef3"
+                                                },
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x361c52"
+                                                },
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x3b36b0"
+                                                }
+                                            ],
+                                            "body": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "membersService"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "api",
+                                                                "raw": "'api'"
+                                                            }
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "middleware",
+                                                            "raw": "'middleware'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "sendMagicLink",
+                                                        "raw": "'sendMagicLink'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x174ef3"
+                                                    },
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x361c52"
+                                                    },
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x3b36b0"
+                                                    }
+                                                ]
+                                            },
+                                            "generator": false,
+                                            "expression": true,
+                                            "async": false
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "post",
+                                            "raw": "'post'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/api/create-stripe-checkout-session",
+                                            "raw": "'/api/create-stripe-checkout-session'"
+                                        },
+                                        {
+                                            "type": "ArrowFunctionExpression",
+                                            "id": null,
+                                            "params": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x24b359"
+                                                },
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x502fee"
+                                                },
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x5a0be9"
+                                                }
+                                            ],
+                                            "body": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "membersService"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "api",
+                                                                "raw": "'api'"
+                                                            }
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "middleware",
+                                                            "raw": "'middleware'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "createCheckoutSession",
+                                                        "raw": "'createCheckoutSession'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x24b359"
+                                                    },
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x502fee"
+                                                    },
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x5a0be9"
+                                                    }
+                                                ]
+                                            },
+                                            "generator": false,
+                                            "expression": true,
+                                            "async": false
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "post",
+                                            "raw": "'post'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/api/create-stripe-update-session",
+                                            "raw": "'/api/create-stripe-update-session'"
+                                        },
+                                        {
+                                            "type": "ArrowFunctionExpression",
+                                            "id": null,
+                                            "params": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x153e84"
+                                                },
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x1c40ea"
+                                                },
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x47ccd3"
+                                                }
+                                            ],
+                                            "body": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "membersService"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "api",
+                                                                "raw": "'api'"
+                                                            }
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "middleware",
+                                                            "raw": "'middleware'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "createCheckoutSetupSession",
+                                                        "raw": "'createCheckoutSetupSession'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x153e84"
+                                                    },
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x1c40ea"
+                                                    },
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x47ccd3"
+                                                    }
+                                                ]
+                                            },
+                                            "generator": false,
+                                            "expression": true,
+                                            "async": false
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "put",
+                                            "raw": "'put'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/api/subscriptions/:id",
+                                            "raw": "'/api/subscriptions/:id'"
+                                        },
+                                        {
+                                            "type": "ArrowFunctionExpression",
+                                            "id": null,
+                                            "params": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x2850c5"
+                                                },
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x30b8bd"
+                                                },
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x42ccd3"
+                                                }
+                                            ],
+                                            "body": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "membersService"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "api",
+                                                                "raw": "'api'"
+                                                            }
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "middleware",
+                                                            "raw": "'middleware'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "updateSubscription",
+                                                        "raw": "'updateSubscription'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x2850c5"
+                                                    },
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x30b8bd"
+                                                    },
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x42ccd3"
+                                                    }
+                                                ]
+                                            },
+                                            "generator": false,
+                                            "expression": true,
+                                            "async": false
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "use",
+                                            "raw": "'use'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/api",
+                                            "raw": "'/api'"
+                                        },
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "shared"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "middlewares",
+                                                        "raw": "'middlewares'"
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "errorHandler",
+                                                    "raw": "'errorHandler'"
+                                                }
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "resourceNotFound",
+                                                "raw": "'resourceNotFound'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "use",
+                                            "raw": "'use'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/api",
+                                            "raw": "'/api'"
+                                        },
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "shared"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "middlewares",
+                                                        "raw": "'middlewares'"
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "errorHandler",
+                                                    "raw": "'errorHandler'"
+                                                }
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "handleJSONResponseV2",
+                                                "raw": "'handleJSONResponseV2'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "use",
+                                            "raw": "'use'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/webhooks",
+                                            "raw": "'/webhooks'"
+                                        },
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "shared"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "middlewares",
+                                                        "raw": "'middlewares'"
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "errorHandler",
+                                                    "raw": "'errorHandler'"
+                                                }
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "resourceNotFound",
+                                                "raw": "'resourceNotFound'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x130f90"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "use",
+                                            "raw": "'use'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "/webhooks",
+                                            "raw": "'/webhooks'"
+                                        },
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "shared"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "middlewares",
+                                                        "raw": "'middlewares'"
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "errorHandler",
+                                                    "raw": "'errorHandler'"
+                                                }
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "handleJSONResponseV2",
+                                                "raw": "'handleJSONResponseV2'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "debug"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "Members App setup end",
+                                            "raw": "'Members App setup end'"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ReturnStatement",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "_0x130f90"
+                                }
+                            }
+                        ]
+                    },
+                    "generator": false,
+                    "expression": false,
+                    "async": false
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}

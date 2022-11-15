@@ -1,0 +1,85 @@
+var _0x471d = [
+    'functionName',
+    'columnNumber',
+    'message',
+    'Console',
+    'messageRepeatCountUpdated.ConsoleAgent',
+    'messagesCleared.ConsoleAgent',
+    'off',
+    '.ConsoleAgent',
+    'enable',
+    'load',
+    'unload',
+    '6567ghGWYs',
+    '23TGOFOH',
+    '46099jcidhr',
+    '5FaRlOp',
+    '98152jpWeFH',
+    '696029zApnqW',
+    '707664bfdheL',
+    '145585mDfFmX',
+    '56854idgvOs',
+    'LiveDevelopment/Inspector/Inspector',
+    'level',
+    'url',
+    'stackTrace',
+    '\x20in\x20'
+];
+function _0x1bfe(_0x5400bd, _0x34c57c) {
+    return _0x1bfe = function (_0x471d6f, _0x1bfe5b) {
+        _0x471d6f = _0x471d6f - 0x83;
+        var _0x5666bf = _0x471d[_0x471d6f];
+        return _0x5666bf;
+    }, _0x1bfe(_0x5400bd, _0x34c57c);
+}
+(function (_0x978dcb, _0x3b68a4) {
+    var _0x41728f = _0x1bfe;
+    while (!![]) {
+        try {
+            var _0x43d5e4 = parseInt(_0x41728f(0x83)) * -parseInt(_0x41728f(0x84)) + -parseInt(_0x41728f(0x85)) + parseInt(_0x41728f(0x86)) * parseInt(_0x41728f(0x87)) + -parseInt(_0x41728f(0x88)) + parseInt(_0x41728f(0x89)) + parseInt(_0x41728f(0x8a)) + -parseInt(_0x41728f(0x8b));
+            if (_0x43d5e4 === _0x3b68a4)
+                break;
+            else
+                _0x978dcb['push'](_0x978dcb['shift']());
+        } catch (_0x45318f) {
+            _0x978dcb['push'](_0x978dcb['shift']());
+        }
+    }
+}(_0x471d, 0x60302), define(function ConsoleAgent(_0x57205f, _0x5489a4, _0x16bd14) {
+    'use strict';
+    var _0x39989f = _0x1bfe;
+    var _0x615678 = _0x57205f(_0x39989f(0x8c)), _0x24c2b0;
+    function _0x4a6fd8(_0x10cb85) {
+        var _0x3d80ca = _0x39989f, _0x287e68 = _0x10cb85[_0x3d80ca(0x8d)];
+        _0x287e68 === 'warning' && (_0x287e68 = 'warn');
+        var _0x3c830a = 'ConsoleAgent:\x20' + _0x10cb85['text'];
+        _0x10cb85[_0x3d80ca(0x8e)] && (_0x3c830a += '\x20(url:\x20' + _0x10cb85[_0x3d80ca(0x8e)] + ')');
+        if (_0x10cb85[_0x3d80ca(0x8f)]) {
+            var _0x3312f1 = _0x10cb85['stackTrace'][0x0];
+            _0x3c830a += _0x3d80ca(0x90) + _0x3312f1[_0x3d80ca(0x91)] + ':' + _0x3312f1[_0x3d80ca(0x92)];
+        }
+        console[_0x287e68](_0x3c830a);
+    }
+    function _0x2779c6(_0x4234a9, _0x3a1ad5) {
+        var _0x5f4ffd = _0x39989f;
+        _0x24c2b0 = _0x3a1ad5[_0x5f4ffd(0x93)], _0x4a6fd8(_0x24c2b0);
+    }
+    function _0xe8df0b(_0x545957, _0x38beb1) {
+        _0x24c2b0 && _0x4a6fd8(_0x24c2b0);
+    }
+    function _0x98160c(_0x2060ea, _0x357669) {
+    }
+    function _0x5e0313() {
+        var _0x1e42d7 = _0x39989f;
+        return _0x615678[_0x1e42d7(0x94)]['enable']();
+    }
+    function _0x9d26d2() {
+        var _0x13498d = _0x39989f;
+        _0x615678['Console']['on']('messageAdded.ConsoleAgent', _0x2779c6)['on'](_0x13498d(0x95), _0xe8df0b)['on'](_0x13498d(0x96), _0x98160c);
+    }
+    function _0xf1852c() {
+        var _0x10f065 = _0x39989f;
+        _0x615678[_0x10f065(0x94)][_0x10f065(0x97)](_0x10f065(0x98));
+    }
+    _0x5489a4[_0x39989f(0x99)] = _0x5e0313, _0x5489a4[_0x39989f(0x9a)] = _0x9d26d2, _0x5489a4[_0x39989f(0x9b)] = _0xf1852c;
+}));

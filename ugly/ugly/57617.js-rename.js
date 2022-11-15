@@ -1,0 +1,1 @@
+var ATrue;(function(e){e[e["IsTrue"]=1]="IsTrue";e[e["IsFalse"]=0]="IsFalse"})(ATrue||(ATrue={}));if(false){console.info("unreachable")}else if(true){throw Error("throw early")}else{console.info("unreachable")}

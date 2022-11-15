@@ -1,0 +1,1 @@
+assertFalse(/ſ/i.test("S"));assertFalse(/ſ/i.test("S"));assertTrue(/ſ/i.test("\u017F"));assertTrue(/ſ/i.test("\u017F"));assertFalse(/ſ/i.test("S"));assertFalse(/ſ/i.test("S"));assertFalse(/ſ/i.test("S"));assertFalse(/ſ/i.test("S"));assertFalse(/ſ/i.test("S"));assertFalse(/ſ/i.test("S"));

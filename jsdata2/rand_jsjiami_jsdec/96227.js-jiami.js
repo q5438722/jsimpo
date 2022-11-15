@@ -1,0 +1,1 @@
+import _0x357e7f from'../core.js';import'../queue.js';import'../effects.js';_0x357e7f['fn']['delay']=function(time,type){time=_0x357e7f['fx']?_0x357e7f['fx']['speeds'][time]||time:time;type=type||'fx';return this['queue'](type,function(next,hooks){var timeout=window['setTimeout'](next,time);hooks['stop']=function(){window['clearTimeout'](timeout);};});};

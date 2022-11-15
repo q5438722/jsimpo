@@ -1,0 +1,180 @@
+const _0x1e70 = ['segmentTree', 'toEqual', 'length', 'toBe', 'AEnxW', 'PAzNi', 'DOUwk', 'sviEi', 'should build tree for input array #1 with length not of power of two', 'JYCoG', 'PLnJp', 'cOKEn', 'aQceO', 'max', 'agnhp', 'wIEjC', 'ESGGN', 'should build sum array', 'LYMoo', 'rangeQuery', 'Cwxfx', 'nOydu', 'jIAVg', 'AQrpm', 'iVGAG', 'HHfek', 'JGfNl', 'UxYXz', 'hGfCl', 'MYQgC', 'PstZj', '917762GCoWzL', '276UifhAn', '3929tkSvwQ', '7WEiNfy', '117115bUeshy', '612208EQwPRk', '1417026RHGsjW', '1SkMMfW', '95313skcHEQ', '2402041iisVyX', 'should build tree for input array #1 with length of power of two', 'should do min range query on power of two length array', 'should do min range query on not power of two length array', 'should do max range query', 'should do sum range query', 'KFRaA', 'should build tree for input array #0 with length of power of two', 'min'];
+
+(function (_0x25c2ce, _0x56afee) {
+    const _0x51abdc = _0x1794;
+
+    while (true) {
+        try {
+            const _0x1a7ae5 = -parseInt(_0x51abdc(0xb8)) + -parseInt(_0x51abdc(0xb9)) * -parseInt(_0x51abdc(0xba)) + parseInt(_0x51abdc(0xbb)) * parseInt(_0x51abdc(0xbc)) + parseInt(_0x51abdc(0xbd)) + parseInt(_0x51abdc(0xbe)) + -parseInt(_0x51abdc(0xbf)) * -parseInt(_0x51abdc(0xc0)) + -parseInt(_0x51abdc(0xc1));
+
+            if (_0x1a7ae5 === _0x56afee) break;else _0x25c2ce.push(_0x25c2ce.shift());
+        } catch (_0x59db03) {
+            _0x25c2ce.push(_0x25c2ce.shift());
+        }
+    }
+})(_0x1e70, 708953);
+function _0x1794(_0x2035dc, _0x195e17) {
+    return _0x1794 = function (_0x1943d5, _0x4929a5) {
+        _0x1943d5 = _0x1943d5 - 184;
+        const _0x1a34df = _0x1e70[_0x1943d5];
+
+        return _0x1a34df;
+    }, _0x1794(_0x2035dc, _0x195e17);
+}
+import _0x5a837e from '../SegmentTree';
+describe('SegmentTree', () => {
+    const _0x5b64e9 = _0x1794;
+    const _0x295b7d = {
+        'AEnxW': function (_0x52d24a, _0x5a3aa2) {
+            return _0x52d24a - _0x5a3aa2;
+        },
+        'sBimN': function (_0x59449d, _0x4d568e) {
+            return _0x59449d(_0x4d568e);
+        },
+        'DOUwk': function (_0xf8c10f, _0x5c2433) {
+            return _0xf8c10f * _0x5c2433;
+        },
+        'JYCoG': function (_0x397356, _0x180dbd) {
+            return _0x397356(_0x180dbd);
+        },
+        'PLnJp': function (_0x3f2a8f, _0x534ec7) {
+            return _0x3f2a8f - _0x534ec7;
+        },
+        'cOKEn': function (_0x585681, _0x1eb6ac) {
+            return _0x585681 * _0x1eb6ac;
+        },
+        'agnhp': function (_0xbdee8e, _0x4747bc) {
+            return _0xbdee8e(_0x4747bc);
+        },
+        'wIEjC': function (_0x3f443b, _0x355a55) {
+            return _0x3f443b(_0x355a55);
+        },
+        'lovTV': function (_0x33a1b8, _0x58e53d) {
+            return _0x33a1b8(_0x58e53d);
+        },
+        'XCPOi': function (_0x4a5836, _0x2f50d8) {
+            return _0x4a5836 - _0x2f50d8;
+        },
+        'Cwxfx': function (_0x42a351, _0x4b88db) {
+            return _0x42a351(_0x4b88db);
+        },
+        'nOydu': function (_0x2e11d3, _0x209cef) {
+            return _0x2e11d3(_0x209cef);
+        },
+        'jIAVg': function (_0x13d224, _0xfe65a4) {
+            return _0x13d224(_0xfe65a4);
+        },
+        'iVGAG': function (_0x1a15c7, _0x4408c0) {
+            return _0x1a15c7(_0x4408c0);
+        },
+        'HHfek': function (_0x5ab499, _0x45fcb5) {
+            return _0x5ab499(_0x45fcb5);
+        },
+        'JGfNl': function (_0x1e252a, _0x34632) {
+            return _0x1e252a(_0x34632);
+        },
+        'UxYXz': function (_0x3916ae, _0x16976e) {
+            return _0x3916ae(_0x16976e);
+        },
+        'MYQgC': function (_0x5a805e, _0x555910) {
+            return _0x5a805e(_0x555910);
+        },
+        'gcOmQ': function (_0x5e5dce, _0x1ae7dd) {
+            return _0x5e5dce(_0x1ae7dd);
+        },
+        'PstZj': function (_0x1f791e, _0x22e313) {
+            return _0x1f791e(_0x22e313);
+        },
+        'KFRaA': function (_0x52a0ef, _0x4cbbc1, _0x3de29d) {
+            return _0x52a0ef(_0x4cbbc1, _0x3de29d);
+        },
+        'PAzNi': _0x5b64e9(0xc2),
+        'sviEi': 'should build tree for input array #0 with length not of power of two',
+        'aQceO': 'should build max array',
+        'ESGGN': function (_0x583c2f, _0x3731ce, _0x1e3911) {
+            return _0x583c2f(_0x3731ce, _0x1e3911);
+        },
+        'LYMoo': _0x5b64e9(0xc3),
+        'AQrpm': function (_0x21a26e, _0x4b85d8, _0x49f274) {
+            return _0x21a26e(_0x4b85d8, _0x49f274);
+        },
+        'ppKih': _0x5b64e9(0xc4),
+        'GIDcn': function (_0x39cf40, _0x1a8bd6, _0x1fbbe6) {
+            return _0x39cf40(_0x1a8bd6, _0x1fbbe6);
+        },
+        'RjXrg': _0x5b64e9(0xc5),
+        'hGfCl': _0x5b64e9(0xc6)
+    };
+
+    _0x295b7d[_0x5b64e9(0xc7)](it, _0x5b64e9(0xc8), () => {
+        const _0x5bdf2f = _0x5b64e9;
+        const _0x33cb26 = [-1, 2];
+
+        const _0x261791 = new _0x5a837e(_0x33cb26, Math[_0x5bdf2f(0xc9)], Infinity);
+
+        expect(_0x261791[_0x5bdf2f(0xca)])[_0x5bdf2f(0xcb)]([-1, -1, 2]), expect(_0x261791[_0x5bdf2f(0xca)][_0x5bdf2f(0xcc)])[_0x5bdf2f(0xcd)](_0x295b7d[_0x5bdf2f(0xce)](2 * _0x33cb26.length, 1));
+    }), _0x295b7d[_0x5b64e9(0xc7)](it, _0x295b7d[_0x5b64e9(0xcf)], () => {
+        const _0x9723bc = _0x5b64e9;
+        const _0x2737b1 = [-1, 2, 4, 0];
+
+        const _0x125571 = new _0x5a837e(_0x2737b1, Math[_0x9723bc(0xc9)], Infinity);
+
+        _0x295b7d.sBimN(expect, _0x125571.segmentTree)[_0x9723bc(0xcb)]([-1, -1, 0, -1, 2, 4, 0]), _0x295b7d.sBimN(expect, _0x125571.segmentTree[_0x9723bc(0xcc)]).toBe(_0x295b7d[_0x9723bc(0xce)](_0x295b7d[_0x9723bc(0xd0)](2, _0x2737b1[_0x9723bc(0xcc)]), 1));
+    }), _0x295b7d[_0x5b64e9(0xc7)](it, _0x295b7d[_0x5b64e9(0xd1)], () => {
+        const _0x395686 = _0x5b64e9;
+        const _0x1eec93 = [0, 1, 2];
+
+        const _0x5cdfca = new _0x5a837e(_0x1eec93, Math[_0x395686(0xc9)], Infinity);
+
+        expect(_0x5cdfca.segmentTree)[_0x395686(0xcb)]([0, 0, 2, 0, 1, null, null]), _0x295b7d.sBimN(expect, _0x5cdfca[_0x395686(0xca)].length).toBe(_0x295b7d.AEnxW(8, 1));
+    }), it(_0x5b64e9(0xd2), () => {
+        const _0x585649 = _0x5b64e9;
+        const _0x4ec710 = [-1, 3, 4, 0, 2, 1];
+
+        const _0x1019ed = new _0x5a837e(_0x4ec710, Math[_0x585649(0xc9)], Infinity);
+
+        _0x295b7d[_0x585649(0xd3)](expect, _0x1019ed[_0x585649(0xca)])[_0x585649(0xcb)]([-1, -1, 0, -1, 4, 0, 1, -1, 3, null, null, 0, 2, null, null]), _0x295b7d[_0x585649(0xd3)](expect, _0x1019ed[_0x585649(0xca)].length).toBe(_0x295b7d[_0x585649(0xd4)](_0x295b7d[_0x585649(0xd5)](2, 8), 1));
+    }), _0x295b7d[_0x5b64e9(0xc7)](it, _0x295b7d[_0x5b64e9(0xd6)], () => {
+        const _0x5dc8f2 = _0x5b64e9;
+        const _0x4c7500 = [-1, 2, 4, 0];
+
+        const _0x2e4922 = new _0x5a837e(_0x4c7500, Math[_0x5dc8f2(0xd7)], -Infinity);
+
+        _0x295b7d[_0x5dc8f2(0xd8)](expect, _0x2e4922.segmentTree).toEqual([4, 2, 4, -1, 2, 4, 0]), _0x295b7d[_0x5dc8f2(0xd9)](expect, _0x2e4922[_0x5dc8f2(0xca)][_0x5dc8f2(0xcc)])[_0x5dc8f2(0xcd)](_0x295b7d[_0x5dc8f2(0xd4)](2 * _0x4c7500[_0x5dc8f2(0xcc)], 1));
+    }), _0x295b7d[_0x5b64e9(0xda)](it, _0x5b64e9(0xdb), () => {
+        const _0x5d09de = _0x5b64e9;
+        const _0x1b1be7 = [-1, 2, 4, 0];
+
+        const _0x370bdb = new _0x5a837e(_0x1b1be7, (_0x4ef0c7, _0xd7542) => _0x4ef0c7 + _0xd7542, 0);
+
+        _0x295b7d.lovTV(expect, _0x370bdb[_0x5d09de(0xca)])[_0x5d09de(0xcb)]([5, 1, 4, -1, 2, 4, 0]), expect(_0x370bdb.segmentTree.length)[_0x5d09de(0xcd)](_0x295b7d.XCPOi(2 * _0x1b1be7[_0x5d09de(0xcc)], 1));
+    }), it(_0x295b7d[_0x5b64e9(0xdc)], () => {
+        const _0x419eab = _0x5b64e9;
+        const _0x32d9e2 = [-1, 3, 4, 0, 2, 1];
+
+        const _0x32d2d7 = new _0x5a837e(_0x32d9e2, Math[_0x419eab(0xc9)], Infinity);
+
+        expect(_0x32d2d7[_0x419eab(0xdd)](0, 5)).toBe(-1), _0x295b7d[_0x419eab(0xde)](expect, _0x32d2d7[_0x419eab(0xdd)](0, 2))[_0x419eab(0xcd)](-1), _0x295b7d[_0x419eab(0xde)](expect, _0x32d2d7.rangeQuery(1, 3))[_0x419eab(0xcd)](0), expect(_0x32d2d7.rangeQuery(2, 4)).toBe(0), _0x295b7d[_0x419eab(0xdf)](expect, _0x32d2d7[_0x419eab(0xdd)](4, 5))[_0x419eab(0xcd)](1), _0x295b7d[_0x419eab(0xe0)](expect, _0x32d2d7[_0x419eab(0xdd)](2, 2)).toBe(4);
+    }), _0x295b7d[_0x5b64e9(0xe1)](it, _0x295b7d.ppKih, () => {
+        const _0x4f9924 = _0x5b64e9;
+        const _0x29b3cc = [-1, 2, 4, 0];
+
+        const _0x5374b6 = new _0x5a837e(_0x29b3cc, Math.min, Infinity);
+
+        _0x295b7d.iVGAG(expect, _0x5374b6[_0x4f9924(0xdd)](0, 4))[_0x4f9924(0xcd)](-1), _0x295b7d[_0x4f9924(0xe2)](expect, _0x5374b6.rangeQuery(0, 1))[_0x4f9924(0xcd)](-1), expect(_0x5374b6[_0x4f9924(0xdd)](1, 3)).toBe(0), expect(_0x5374b6[_0x4f9924(0xdd)](1, 2))[_0x4f9924(0xcd)](2), _0x295b7d[_0x4f9924(0xe3)](expect, _0x5374b6[_0x4f9924(0xdd)](2, 3))[_0x4f9924(0xcd)](0), _0x295b7d.HHfek(expect, _0x5374b6[_0x4f9924(0xdd)](2, 2))[_0x4f9924(0xcd)](4);
+    }), _0x295b7d.GIDcn(it, _0x295b7d.RjXrg, () => {
+        const _0xf76ca6 = _0x5b64e9;
+        const _0x487fc5 = [-1, 3, 4, 0, 2, 1];
+
+        const _0x6b6b7e = new _0x5a837e(_0x487fc5, Math[_0xf76ca6(0xd7)], -Infinity);
+
+        _0x295b7d.HHfek(expect, _0x6b6b7e[_0xf76ca6(0xdd)](0, 5))[_0xf76ca6(0xcd)](4), expect(_0x6b6b7e.rangeQuery(0, 1))[_0xf76ca6(0xcd)](3), _0x295b7d.HHfek(expect, _0x6b6b7e.rangeQuery(1, 3))[_0xf76ca6(0xcd)](4), expect(_0x6b6b7e[_0xf76ca6(0xdd)](2, 4))[_0xf76ca6(0xcd)](4), _0x295b7d[_0xf76ca6(0xe4)](expect, _0x6b6b7e[_0xf76ca6(0xdd)](4, 5))[_0xf76ca6(0xcd)](2), _0x295b7d[_0xf76ca6(0xe5)](expect, _0x6b6b7e[_0xf76ca6(0xdd)](3, 3))[_0xf76ca6(0xcd)](0);
+    }), it(_0x295b7d[_0x5b64e9(0xe6)], () => {
+        const _0x56e790 = _0x5b64e9;
+        const _0x50c65e = [-1, 3, 4, 0, 2, 1];
+
+        const _0x23f167 = new _0x5a837e(_0x50c65e, (_0x240932, _0x5316ae) => _0x240932 + _0x5316ae, 0);
+
+        _0x295b7d[_0x56e790(0xe5)](expect, _0x23f167.rangeQuery(0, 5))[_0x56e790(0xcd)](9), _0x295b7d[_0x56e790(0xe7)](expect, _0x23f167[_0x56e790(0xdd)](0, 1))[_0x56e790(0xcd)](2), _0x295b7d.gcOmQ(expect, _0x23f167[_0x56e790(0xdd)](1, 3)).toBe(7), _0x295b7d.PstZj(expect, _0x23f167[_0x56e790(0xdd)](2, 4))[_0x56e790(0xcd)](6), _0x295b7d[_0x56e790(0xe8)](expect, _0x23f167.rangeQuery(4, 5)).toBe(3), _0x295b7d.PstZj(expect, _0x23f167[_0x56e790(0xdd)](3, 3)).toBe(0);
+    });
+});

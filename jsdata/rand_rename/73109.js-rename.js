@@ -1,0 +1,1 @@
+const router=require("express").Router();const{INFO}=require("../models");const{reqLimiter}=require("../req-limiter");router.get("/",reqLimiter,async(e,r)=>{const[{lastUpdate:t,numPRs:s,prRange:o}]=await INFO.find({});r.json({ok:true,lastUpdate:t,numPRs:s,prRange:o})});module.exports=router;

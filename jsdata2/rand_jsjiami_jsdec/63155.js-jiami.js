@@ -1,0 +1,1 @@
+Realm['create']();var object=Realm['eval'](0x1,'Object');var f=Realm['eval'](0x1,'function f() { return this }; f');Number['prototype']['f']=f;var number=0x1;assertEquals(object['prototype'],f['call'](number)['__proto__']['__proto__']);assertEquals(object['prototype'],number['f']()['__proto__']['__proto__']);assertEquals(Realm['global'](0x1),f());

@@ -1,0 +1,1 @@
+import _0x49f77d from'./commonTrads.json';const formatMessagesWithPluginId=(_0x500d75,_0x1230d5)=>{return Object['keys'](_0x1230d5)['reduce']((_0x5dfcd2,_0x16f5a8)=>{_0x5dfcd2[_0x500d75+'.'+_0x16f5a8]=_0x1230d5[_0x16f5a8];return _0x5dfcd2;},_0x49f77d);};export default formatMessagesWithPluginId;

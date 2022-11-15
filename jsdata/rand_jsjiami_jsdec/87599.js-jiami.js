@@ -1,0 +1,1 @@
+module['exports']={'config':{'type':'line','data':{'datasets':[{'data':[{'x':0x1,'y':0xa},{'x':0x5,'y':0x0},{'x':0xf,'y':-0xa},{'x':0x13,'y':-0x5}],'borderColor':'red','fill':![],'tension':0x0}]},'options':{'scales':{'x':{'type':'linear','display':![],'min':0x0,'max':0x14},'y':{'display':![],'min':-0xf,'max':0xf}}}},'options':{'canvas':{'height':0x100,'width':0x200}}};

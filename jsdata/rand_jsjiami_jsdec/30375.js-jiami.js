@@ -1,0 +1,1 @@
+import _0x14101e from'./utils/createSvgIcon';import{jsx as _0x833030}from'react/jsx-runtime';export default _0x14101e(_0x833030('path',{'d':'M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z'}),'RepeatOutlined');

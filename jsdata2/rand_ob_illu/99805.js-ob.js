@@ -1,0 +1,31 @@
+const _0x5dad = ['5638OyElul', '172JkDZYv', '1knMJlV', '1492287YvFcar', '3xUctYp', '390505gliIPh', '1vRFfTW', '1393011PKODGg', '884437InkGac', '95467zHjjBs', '1xMTwcw', '1998371xScgUF', 'Middleware Error'];
+
+function _0x11c0(_0x8167a3, _0x583ecf) {
+    return _0x11c0 = function (_0x5bf3a7, _0x582b7c) {
+        _0x5bf3a7 = _0x5bf3a7 - 189;
+        const _0x4da0cb = _0x5dad[_0x5bf3a7];
+
+        return _0x4da0cb;
+    }, _0x11c0(_0x8167a3, _0x583ecf);
+}
+(function (_0x5e915f, _0x3c0c74) {
+    const _0x28e270 = _0x11c0;
+
+    while (true) {
+        try {
+            const _0xf6681 = -parseInt(_0x28e270(0xbd)) * -parseInt(_0x28e270(0xbe)) + parseInt(_0x28e270(0xbf)) * -parseInt(_0x28e270(0xc0)) + parseInt(_0x28e270(0xc1)) * parseInt(_0x28e270(0xc2)) + parseInt(_0x28e270(0xc3)) * parseInt(_0x28e270(0xc4)) + parseInt(_0x28e270(0xc5)) + -parseInt(_0x28e270(0xc6)) * parseInt(_0x28e270(0xc7)) + -parseInt(_0x28e270(0xc8));
+
+            if (_0xf6681 === _0x3c0c74) break;else _0x5e915f.push(_0x5e915f.shift());
+        } catch (_0x59cbd2) {
+            _0x5e915f.push(_0x5e915f.shift());
+        }
+    }
+})(_0x5dad, 832574);
+export default function ({ error }) {
+    const _0x5274ab = _0x11c0;
+
+    error({
+        'message': _0x5274ab(0xc9),
+        'statusCode': 0x1f9
+    });
+}

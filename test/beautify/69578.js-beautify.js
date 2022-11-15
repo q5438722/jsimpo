@@ -1,0 +1,1 @@
+eval(function(p,a,c,k,e,d){while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+c+'\\b','g'),k[c])}}return p}('0.1([],2(0){',3,3,'require|ensure|function'.split('|')))

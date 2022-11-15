@@ -1,0 +1,8 @@
+const path=require("path");const fs=require("fs");const terser=require("terser");const prettier=require("prettier");const doWrite=process.argv.includes("--write");const files=["lib/util/semver.js"];(async()=>{for(const t of files){const r=path.resolve(__dirname,"..",t);const o=fs.readFileSync(r,"utf-8");const n=require(`../${t}`);const s=/\n\/\/#region runtime code: (.+)\n[\s\S]+?\/\/#endregion\n/g;const i=new Map;let e=s.exec(o);while(e){const[u,a]=e;const p=n[a].toString();const f=/^\(?([^=)]+)\)?\s=> \{/.exec(p);const d=p.slice(f[0].length,-1);const $=await terser.minify({["input.js"]:d},{compress:true,mangle:true,ecma:5,toplevel:true,parse:{bare_returns:true}});const g=f[1];if(/`|const|let|=>|\.\.\./.test($.code)){throw new Error(`Code Style of ${a} in ${t} is too high`)}let r=false;const m=$.code.replace(/\\/g,"\\\\").replace(/'/g,"\\'").replace(/function\(([^)]+)\)/g,(e,t)=>{r=true;return`\${runtimeTemplate.supportsArrowFunction() ? '${t.includes(",")?`(${t})`:t}=>' : 'function(${t})'}`});i.set(u,`
+//#region runtime code: ${a}
+exports.${a}RuntimeCode = runtimeTemplate => \`var ${a} = \${runtimeTemplate.basicFunction("${g}", [
+	"// see webpack/${t} for original code",
+	${r?`\`${m}\``:`'${m}'`}
+])}\`;
+//#endregion
+`);e=s.exec(o)}const c=prettier.resolveConfig.sync(r);const l=prettier.format(o.replace(s,e=>i.get(e)),{filepath:r,...c});if(l!==o){if(doWrite){fs.writeFileSync(r,l,"utf-8");console.error(`${t} updated`)}else{console.error(`${t} need to be updated`);process.exitCode=1}}}})();

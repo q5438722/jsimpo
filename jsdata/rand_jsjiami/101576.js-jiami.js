@@ -1,0 +1,1 @@
+function f(_0x14da94,_0x14da94){return _0x14da94;}

@@ -1,0 +1,183 @@
+'use strict';
+const _0x26ea = [
+    'utf',
+    'asc',
+    'buf',
+    '--expose-internals',
+    '--no-warnings',
+    'binding',
+    'tcp_wrap',
+    'stream_wrap',
+    'SERVER',
+    'bind',
+    '127.0.0.1',
+    'listen',
+    'connect',
+    'onread',
+    'async',
+    'from',
+    'write',
+    'oncomplete',
+    'readStart',
+    'alloc',
+    'repeat',
+    'invalid\x20type:\x20',
+    'SOCKET',
+    'read',
+    'byteLength',
+    'start',
+    'end',
+    'exit',
+    'writeQueueSize',
+    'writeBuffer',
+    '264224nQFYmT',
+    '3ZAgXla',
+    '258697IcsGSu',
+    '81183lrwXcg',
+    '35715zspgLZ',
+    '1004347fJTQfb',
+    '1QXnrPi',
+    '1374598HBITMk',
+    '1963950gqeIuD',
+    '../common.js',
+    'util',
+    'createBenchmark'
+];
+const _0x145b9d = _0x26ab;
+(function (_0x5188f4, _0xf684be) {
+    const _0x3de165 = _0x26ab;
+    while (!![]) {
+        try {
+            const _0x5c5f1b = parseInt(_0x3de165(0x114)) + -parseInt(_0x3de165(0x115)) * -parseInt(_0x3de165(0x116)) + parseInt(_0x3de165(0x117)) + parseInt(_0x3de165(0x118)) + -parseInt(_0x3de165(0x119)) + parseInt(_0x3de165(0x11a)) * -parseInt(_0x3de165(0x11b)) + parseInt(_0x3de165(0x11c));
+            if (_0x5c5f1b === _0xf684be)
+                break;
+            else
+                _0x5188f4['push'](_0x5188f4['shift']());
+        } catch (_0x54df39) {
+            _0x5188f4['push'](_0x5188f4['shift']());
+        }
+    }
+}(_0x26ea, 0xb534a));
+function _0x26ab(_0x2d67b6, _0x80a76f) {
+    return _0x26ab = function (_0x26eab4, _0x26ab58) {
+        _0x26eab4 = _0x26eab4 - 0x114;
+        let _0x40bcbe = _0x26ea[_0x26eab4];
+        return _0x40bcbe;
+    }, _0x26ab(_0x2d67b6, _0x80a76f);
+}
+const common = require(_0x145b9d(0x11d)), util = require(_0x145b9d(0x11e)), bench = common[_0x145b9d(0x11f)](main, {
+        'len': [
+            0x19000,
+            0x400 * 0x400 * 0x10
+        ],
+        'type': [
+            _0x145b9d(0x120),
+            _0x145b9d(0x121),
+            _0x145b9d(0x122)
+        ],
+        'dur': [0x5]
+    }, {
+        'test': { 'len': 0x400 },
+        'flags': [
+            _0x145b9d(0x123),
+            _0x145b9d(0x124)
+        ]
+    });
+function main({
+    dur: _0x3337a1,
+    len: _0x129439,
+    type: _0x4c7d1d
+}) {
+    const _0x534e09 = _0x145b9d, {
+            TCP: _0x387b20,
+            TCPConnectWrap: _0x4d02ea,
+            constants: _0xa27120
+        } = common[_0x534e09(0x125)](_0x534e09(0x126)), {WriteWrap: _0x202f48} = common[_0x534e09(0x125)](_0x534e09(0x127)), _0x5c2ce1 = common['PORT'];
+    function _0x391825(_0x9ebf96, _0x587a08) {
+        throw util['_errnoException'](_0x9ebf96, _0x587a08);
+    }
+    const _0x2cacbf = new _0x387b20(_0xa27120[_0x534e09(0x128)]);
+    let _0x4c83e5 = _0x2cacbf[_0x534e09(0x129)](_0x534e09(0x12a), _0x5c2ce1);
+    if (_0x4c83e5)
+        _0x391825(_0x4c83e5, _0x534e09(0x129));
+    _0x4c83e5 = _0x2cacbf[_0x534e09(0x12b)](0x1ff);
+    if (_0x4c83e5)
+        _0x391825(_0x4c83e5, _0x534e09(0x12b));
+    _0x2cacbf['onconnection'] = function (_0x3b8082, _0x54a7ab) {
+        const _0x2c4379 = _0x534e09;
+        if (_0x3b8082)
+            _0x391825(_0x3b8082, _0x2c4379(0x12c));
+        _0x54a7ab[_0x2c4379(0x12d)] = function (_0x4f293e) {
+            const _0x3e0032 = _0x2c4379;
+            if (!_0x4f293e)
+                _0x391825('read');
+            const _0x19cfe9 = new _0x202f48();
+            _0x19cfe9[_0x3e0032(0x12e)] = ![], _0x3b8082 = _0x54a7ab['writeBuffer'](_0x19cfe9, Buffer[_0x3e0032(0x12f)](_0x4f293e));
+            if (_0x3b8082)
+                _0x391825(_0x3b8082, _0x3e0032(0x130));
+            _0x19cfe9[_0x3e0032(0x131)] = function (_0xf25749, _0x5a7412, _0x14c7b7) {
+                if (_0x14c7b7)
+                    _0x391825(_0x14c7b7, 'write');
+            };
+        }, _0x54a7ab[_0x2c4379(0x132)]();
+    };
+    let _0x5a433d;
+    switch (_0x4c7d1d) {
+    case _0x534e09(0x122):
+        _0x5a433d = Buffer[_0x534e09(0x133)](_0x129439, 'x');
+        break;
+    case _0x534e09(0x120):
+        _0x5a433d = 'ü'[_0x534e09(0x134)](_0x129439 / 0x2);
+        break;
+    case _0x534e09(0x121):
+        _0x5a433d = 'x'[_0x534e09(0x134)](_0x129439);
+        break;
+    default:
+        throw new Error(_0x534e09(0x135) + _0x4c7d1d);
+    }
+    const _0x36f40e = new _0x387b20(_0xa27120[_0x534e09(0x136)]), _0x303f83 = new _0x4d02ea();
+    let _0x5e71d9 = 0x0;
+    _0x4c83e5 = _0x36f40e[_0x534e09(0x12c)](_0x303f83, _0x534e09(0x12a), _0x5c2ce1);
+    if (_0x4c83e5)
+        _0x391825(_0x4c83e5, _0x534e09(0x12c));
+    _0x36f40e[_0x534e09(0x12d)] = function (_0x1667a1) {
+        const _0x4728c9 = _0x534e09;
+        if (!_0x1667a1)
+            _0x391825(_0x4728c9(0x137));
+        _0x5e71d9 += _0x1667a1[_0x4728c9(0x138)];
+    }, _0x303f83['oncomplete'] = function (_0x4a5931) {
+        const _0x5a481e = _0x534e09;
+        if (_0x4a5931)
+            _0x391825(_0x4a5931, _0x5a481e(0x12c));
+        bench[_0x5a481e(0x139)](), _0x36f40e[_0x5a481e(0x132)](), setTimeout(() => {
+            const _0x3f1b23 = _0x5a481e;
+            bench[_0x3f1b23(0x13a)](0x2 * (_0x5e71d9 * 0x8) / (0x400 * 0x400 * 0x400)), process[_0x3f1b23(0x13b)](0x0);
+        }, _0x3337a1 * 0x3e8);
+        while (_0x36f40e[_0x5a481e(0x13c)] === 0x0)
+            _0x1837c4();
+    };
+    function _0x1837c4() {
+        const _0x1c645b = _0x534e09, _0x4fba69 = new _0x202f48();
+        _0x4fba69['oncomplete'] = _0x2615f5;
+        let _0xa1235;
+        switch (_0x4c7d1d) {
+        case 'buf':
+            _0xa1235 = _0x36f40e[_0x1c645b(0x13d)](_0x4fba69, _0x5a433d);
+            break;
+        case 'utf':
+            _0xa1235 = _0x36f40e['writeUtf8String'](_0x4fba69, _0x5a433d);
+            break;
+        case _0x1c645b(0x121):
+            _0xa1235 = _0x36f40e['writeAsciiString'](_0x4fba69, _0x5a433d);
+            break;
+        }
+        if (_0xa1235)
+            _0x391825(_0xa1235, _0x1c645b(0x130));
+    }
+    function _0x2615f5(_0x663411, _0x154ac6) {
+        if (_0x663411)
+            _0x391825(_0x663411, 'write');
+        while (_0x36f40e['writeQueueSize'] === 0x0)
+            _0x1837c4();
+    }
+}

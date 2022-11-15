@@ -1,0 +1,29 @@
+function break_from_for_in() {
+    _0x210baa: {
+        try {
+            for (var _0x4e9b42 in [
+                    -0xfe7 + -0x1f2b + 0x2f13,
+                    -0xdbd + 0x9 * -0x37a + 0x2d09,
+                    -0x2009 * -0x1 + -0x1d * 0x11 + -0x1e19
+                ]) {
+                break _0x210baa;
+            }
+        } finally {
+        }
+    }
+}
+function break_from_finally() {
+    _0x12e218: {
+        try {
+        } finally {
+            break _0x12e218;
+        }
+    }
+}
+for (var i = -0x1bd6 + 0xa9e + 0x26 * 0x74; i < -0x18d * 0x2 + 0x3 * 0x28a + -0x47a; i++) {
+    break_from_for_in(), gc();
+}
+for (var j = 0x1de * -0x1 + -0x1 * -0xfb3 + -0xdd5; j < 0x59d + -0x8d7 + 0x344; j++) {
+    break_from_finally(), gc();
+}
+assertEquals(-0x1 * -0x570 + 0x143c + -0x19a2, i), assertEquals(0xae1 + 0x1726 + 0x4db * -0x7, j);

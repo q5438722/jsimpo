@@ -1,0 +1,109 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "fn"
+                    },
+                    "init": {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [
+                            {
+                                "type": "ObjectPattern",
+                                "properties": [
+                                    {
+                                        "type": "Property",
+                                        "key": {
+                                            "type": "Identifier",
+                                            "name": "foo"
+                                        },
+                                        "computed": false,
+                                        "value": {
+                                            "type": "AssignmentPattern",
+                                            "left": {
+                                                "type": "Identifier",
+                                                "name": "foo"
+                                            },
+                                            "right": {
+                                                "type": "AssignmentExpression",
+                                                "operator": "=",
+                                                "left": {
+                                                    "type": "ObjectPattern",
+                                                    "properties": []
+                                                },
+                                                "right": {
+                                                    "type": "ObjectExpression",
+                                                    "properties": []
+                                                }
+                                            }
+                                        },
+                                        "kind": "init",
+                                        "method": false,
+                                        "shorthand": false
+                                    }
+                                ]
+                            }
+                        ],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "Identifier",
+                                        "name": "foo"
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "LogicalExpression",
+                "operator": "&&",
+                "left": {
+                    "type": "UnaryExpression",
+                    "operator": "!",
+                    "argument": {
+                        "type": "UnaryExpression",
+                        "operator": "!",
+                        "argument": {
+                            "type": "ArrayExpression",
+                            "elements": []
+                        },
+                        "prefix": true
+                    },
+                    "prefix": true
+                },
+                "right": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "Identifier",
+                        "name": "fn"
+                    },
+                    "arguments": [
+                        {
+                            "type": "ObjectExpression",
+                            "properties": []
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}

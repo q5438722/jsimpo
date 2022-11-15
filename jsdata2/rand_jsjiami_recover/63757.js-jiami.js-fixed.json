@@ -1,0 +1,483 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "throwTypeErrorFunction"
+                    },
+                    "init": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "Object"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "getOwnPropertyDescriptor",
+                                    "raw": "'getOwnPropertyDescriptor'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "Function"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "prototype",
+                                        "raw": "'prototype'"
+                                    }
+                                },
+                                {
+                                    "type": "Literal",
+                                    "value": "arguments",
+                                    "raw": "'arguments'"
+                                }
+                            ]
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "get",
+                            "raw": "'get'"
+                        }
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "nameDesc"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "Object"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "getOwnPropertyDescriptor",
+                                "raw": "'getOwnPropertyDescriptor'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Identifier",
+                                "name": "throwTypeErrorFunction"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": "name",
+                                "raw": "'name'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertFalse"
+                },
+                "arguments": [
+                    {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "nameDesc"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "configurable",
+                            "raw": "'configurable'"
+                        }
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "configurable",
+                        "raw": "'configurable'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertFalse"
+                },
+                "arguments": [
+                    {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "nameDesc"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "enumerable",
+                            "raw": "'enumerable'"
+                        }
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "enumerable",
+                        "raw": "'enumerable'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertFalse"
+                },
+                "arguments": [
+                    {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "nameDesc"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "writable",
+                            "raw": "'writable'"
+                        }
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "writable",
+                        "raw": "'writable'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertThrows"
+                },
+                "arguments": [
+                    {
+                        "type": "FunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "Literal",
+                                        "value": "use strict",
+                                        "raw": "'use strict'"
+                                    }
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "AssignmentExpression",
+                                        "operator": "=",
+                                        "left": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "throwTypeErrorFunction"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "name",
+                                                "raw": "'name'"
+                                            }
+                                        },
+                                        "right": {
+                                            "type": "Literal",
+                                            "value": "foo",
+                                            "raw": "'foo'"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "TypeError"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "lengthDesc"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "Object"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "getOwnPropertyDescriptor",
+                                "raw": "'getOwnPropertyDescriptor'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Identifier",
+                                "name": "throwTypeErrorFunction"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": "length",
+                                "raw": "'length'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertFalse"
+                },
+                "arguments": [
+                    {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "lengthDesc"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "configurable",
+                            "raw": "'configurable'"
+                        }
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "configurable",
+                        "raw": "'configurable'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertFalse"
+                },
+                "arguments": [
+                    {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "lengthDesc"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "enumerable",
+                            "raw": "'enumerable'"
+                        }
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "enumerable",
+                        "raw": "'enumerable'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertFalse"
+                },
+                "arguments": [
+                    {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "lengthDesc"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "writable",
+                            "raw": "'writable'"
+                        }
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "writable",
+                        "raw": "'writable'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertThrows"
+                },
+                "arguments": [
+                    {
+                        "type": "FunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "Literal",
+                                        "value": "use strict",
+                                        "raw": "'use strict'"
+                                    },
+                                    "directive": "use strict"
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "AssignmentExpression",
+                                        "operator": "=",
+                                        "left": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "throwTypeErrorFunction"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "length",
+                                                "raw": "'length'"
+                                            }
+                                        },
+                                        "right": {
+                                            "type": "Literal",
+                                            "value": 42,
+                                            "raw": "0x2a"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "TypeError"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertTrue"
+                },
+                "arguments": [
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "Object"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "isFrozen",
+                                "raw": "'isFrozen'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Identifier",
+                                "name": "throwTypeErrorFunction"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

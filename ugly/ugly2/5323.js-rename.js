@@ -1,0 +1,1 @@
+var through=require("through2");module.exports=function(r){return through(function(r,t,u){this.push(String(r).replace(/BBB/g,"50"));u()})};

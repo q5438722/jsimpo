@@ -1,0 +1,19 @@
+(function (t) {
+  "use strict";
+  function n(t, n, s, e) {
+    if (n.flatdata === true) {
+      const i = n.start || 0;
+      const o = typeof n.step === "number" ? n.step : 1;
+      e.pointsize = 2; // Unknown loop control variable
+      for (var a = 0, p = 0; a < s.length; a++, p += 2) {
+        e.points[p] = i + a * o;e.points[p + 1] = s[a];
+      }if (e.points !== undefined) {
+        e.points.length = s.length * 2;
+      } else {
+        e.points = [];
+      }
+    }
+  }t.plot.plugins.push({ init: function (t) {
+      t.hooks.processRawData.push(n);
+    }, name: "flatdata", version: "0.0.2" });
+})(jQuery);

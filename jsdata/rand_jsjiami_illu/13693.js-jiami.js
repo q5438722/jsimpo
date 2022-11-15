@@ -1,0 +1,83 @@
+const vip = 'vip.v6';
+const _0x521b = ['vip.v6', 'w6LDh8Kh', 'vidSEp.v6LucXnObcPdAglzD=='];
+(function (_0x474936, _0x360a07, _0x122374) {
+  const _0x5d4701 = function (_0x51cd27, _0x410070, _0x27cc67, _0x3fa4d0, _0x33ac67) {
+    _0x410070 = _0x410070 >> 0x8, _0x33ac67 = 'po';const _0x3c115b = 'shift';
+    const _0x48d9b9 = 'push';
+    if (_0x410070 < _0x51cd27) {
+      while (--_0x51cd27) {
+        _0x3fa4d0 = _0x474936.shift();if (_0x410070 === _0x51cd27) {
+          _0x410070 = _0x3fa4d0;_0x27cc67 = _0x474936.pop();
+        } else if (_0x410070 && _0x27cc67.replace(/[dSELucXnObcPdAglzD=]/g, '') === _0x410070) {
+          _0x474936.push(_0x3fa4d0);
+        }
+      }_0x474936.push(_0x474936.shift());
+    }return 0xa18c8;
+  };
+
+  return _0x5d4701(++_0x360a07, _0x122374) >> _0x360a07 ^ _0x122374;
+})(_0x521b, 0x12c, 0x12c00);
+const _0x106f = function (_0x578520, _0x143b3e) {
+  _0x578520 = ~~'0x'.concat(_0x578520);var _0x574b73 = _0x521b[_0x578520];
+  if (_0x106f.SbPJlJ === undefined) {
+    (function () {
+      const _0x3e7c4 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x8e8d48 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x3e7c4.atob || (_0x3e7c4['atob'] = function (_0x2aeed6) {
+        const _0x5d327b = String(_0x2aeed6).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x3e14be = 0x0, _0x1c9dec, _0x52e9ef, _0x363ed0 = 0x0, _0x3f8dd6 = ''; _0x52e9ef = _0x5d327b.charAt(_0x363ed0++); ~_0x52e9ef && (_0x1c9dec = _0x3e14be % 0x4 ? _0x1c9dec * 0x40 + _0x52e9ef : _0x52e9ef, _0x3e14be++ % 0x4) ? _0x3f8dd6 += String.fromCharCode(0xff & _0x1c9dec >> (-2 * _0x3e14be & 0x6)) : 0x0) {
+          _0x52e9ef = _0x8e8d48.indexOf(_0x52e9ef);
+        }return _0x3f8dd6;
+      });
+    })();
+    const _0x4e2964 = function (_0x91c075, _0x143b3e) {
+      const _0x46c053 = [];
+      var _0x535604 = 0x0;
+
+      var _0x3d8d05;
+
+      var _0x31ea27 = '';
+      var _0x58daeb = '';
+      _0x91c075 = atob(_0x91c075); // Unknown loop control variable
+      for (var _0x31baf5 = 0x0, _0x39c3b0 = _0x91c075.length; _0x31baf5 < _0x39c3b0; _0x31baf5++) {
+        _0x58daeb += '%' + ('00' + _0x91c075.charCodeAt(_0x31baf5).toString(0x10)).slice(-2);
+      }_0x91c075 = decodeURIComponent(_0x58daeb); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x1e54a8 = 0x0; _0x1e54a8 < 0x100; _0x1e54a8++) {
+        _0x46c053[_0x1e54a8] = _0x1e54a8;
+      } // Unknown loop control variable
+      for (_0x1e54a8 = 0x0; _0x1e54a8 < 0x100; _0x1e54a8++) {
+        _0x535604 = (_0x535604 + _0x46c053[_0x1e54a8] + _0x143b3e.charCodeAt(_0x1e54a8 % _0x143b3e.length)) % 0x100;_0x3d8d05 = _0x46c053[_0x1e54a8];_0x46c053[_0x1e54a8] = _0x46c053[_0x535604];_0x46c053[_0x535604] = _0x3d8d05;
+      }_0x1e54a8 = 0x0;_0x535604 = 0x0; // Unevaluable loop test expression
+      for (var _0x7883f4 = 0x0; _0x7883f4 < _0x91c075.length; _0x7883f4++) {
+        _0x1e54a8 = (_0x1e54a8 + 0x1) % 0x100;_0x535604 = (_0x535604 + _0x46c053[_0x1e54a8]) % 0x100;_0x3d8d05 = _0x46c053[_0x1e54a8];_0x46c053[_0x1e54a8] = _0x46c053[_0x535604];_0x46c053[_0x535604] = _0x3d8d05;_0x31ea27 += String.fromCharCode(_0x91c075.charCodeAt(_0x7883f4) ^ _0x46c053[(_0x46c053[_0x1e54a8] + _0x46c053[_0x535604]) % 0x100]);
+      }return _0x31ea27;
+    };
+
+    _0x106f['bOinBb'] = _0x4e2964;_0x106f['WAaFOZ'] = {};_0x106f['SbPJlJ'] = true;
+  }const _0x249bcb = _0x106f.WAaFOZ[_0x578520];
+  if (_0x249bcb === undefined) {
+    if (_0x106f.ruKGzA === undefined) {
+      _0x106f['ruKGzA'] = true;
+    }_0x574b73 = _0x106f.bOinBb(_0x574b73, _0x143b3e);_0x106f.WAaFOZ[_0x578520] = _0x574b73;
+  } else {
+    _0x574b73 = _0x249bcb;
+  }return _0x574b73;
+};
+
+const Utils = { 'get': function get() {} };
+var { get: _get } = Utils;
+const bar = { 'get': function get(_0x21f760) {
+    const _0x213662 = { 'LAnCO': function (_0x250725, _0x11476f, _0x9a9a0a) {
+        return _0x250725(_0x11476f, _0x9a9a0a);
+      } };
+    _0x213662.LAnCO(_get, _0x21f760, _0x106f('0', 'jAzn'));
+  } };
+
+const f = function f({ foo: _0x4352ca = 'bar' }) {
+  const _0x1822ed = { 'foo': function foo() {
+      _0x4352ca;
+    } };
+};

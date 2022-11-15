@@ -1,0 +1,730 @@
+const _0x513c = [
+    'matchSnapshot',
+    'should\x20list\x20configs',
+    'data',
+    'set',
+    'Foo',
+    'f00ba1',
+    '~/.npmrc',
+    'init.author.name',
+    'Bar',
+    'cli',
+    'config\x20list\x20--long',
+    'long',
+    'npm\x20config\x20list\x20--long',
+    'should\x20list\x20all\x20configs',
+    'config\x20list\x20--json',
+    'json',
+    'get',
+    'npm\x20config\x20list\x20--json',
+    'same',
+    'parse',
+    'should\x20list\x20configs\x20usin\x20json',
+    'config\x20delete\x20no\x20args',
+    'delete',
+    'config\x20delete\x20key',
+    'foo',
+    'save',
+    'should\x20save\x20user\x20config\x20post-delete',
+    'npm\x20config\x20delete\x20key',
+    'bar',
+    'shift',
+    'should\x20delete\x20key\x20from\x20user\x20config\x20by\x20default',
+    'npm\x20config\x20delete\x20keys',
+    'global',
+    'should\x20save\x20global\x20config\x20post-delete',
+    'npm\x20config\x20delete\x20key\x20--location=global',
+    'location',
+    'config\x20set\x20no\x20args',
+    '\x0aUsage:\x20usage\x20instructions',
+    'config\x20set\x20key',
+    'should\x20set\x20expected\x20key\x20to\x20user\x20config',
+    'should\x20set\x20expected\x20value\x20to\x20user\x20config',
+    'should\x20set\x20key/val\x20in\x20user\x20config\x20by\x20default',
+    'should\x20save\x20user\x20config',
+    'npm\x20config\x20set\x20key',
+    'config\x20set\x20key=val',
+    'foo=bar',
+    'config\x20set\x20multiple\x20keys',
+    'baz',
+    'config\x20set\x20key\x20to\x20empty\x20value',
+    'should\x20set\x20\x22\x22\x20to\x20user\x20config',
+    'npm\x20config\x20set\x20key\x20to\x20empty\x20value',
+    'config\x20set\x20invalid\x20key',
+    'validate',
+    'omitting\x20invalid\x20config\x20values',
+    'npm\x20config\x20set\x20invalid\x20key',
+    'config\x20set\x20key\x20--location=global',
+    'should\x20set\x20expected\x20key\x20to\x20global\x20config',
+    'should\x20set\x20expected\x20value\x20to\x20global\x20config',
+    'should\x20save\x20global\x20config',
+    'npm\x20config\x20set\x20key\x20--location=global',
+    'config\x20get\x20no\x20args',
+    'npm\x20config\x20get\x20no\x20args',
+    'should\x20list\x20configs\x20on\x20config\x20get\x20no\x20args',
+    'config\x20get\x20key',
+    'should\x20use\x20expected\x20key',
+    'should\x20not\x20save',
+    'npm\x20config\x20get\x20key',
+    'config\x20get\x20multiple\x20keys',
+    'asdf',
+    'npm\x20config\x20get\x20multiple\x20keys',
+    'config\x20get\x20private\x20key',
+    '//private-reg.npmjs.org/:_authThoken',
+    'should\x20throw\x20unable\x20to\x20retrieve\x20error',
+    'config\x20edit',
+    '//registry.npmjs.org/:_authToken=0000000\x0ainit.author.name=Foo\x0asign-git-commit=true',
+    'should\x20write\x20config\x20file',
+    'should\x20use\x20default\x20editor',
+    'strictSame',
+    'emit',
+    'exit',
+    'mock',
+    'edit',
+    'readFile',
+    '../../lib/config.js',
+    'npm\x20config\x20edit',
+    'init.author.name=Foo',
+    'should\x20save\x20to\x20global\x20config',
+    'should\x20save\x20to\x20global\x20file\x20location',
+    'should\x20write\x20global\x20config\x20file',
+    'should\x20match\x20global\x20source\x20data',
+    'nextTick',
+    'propagated\x20exit\x20code\x20from\x20editor',
+    'completion',
+    'resolveMatch',
+    'join',
+    'npm',
+    'npm\x20config',
+    '428271fxzHQZ',
+    '428518fgbCOQ',
+    '1208wtzCXa',
+    '417IQvuxR',
+    '3yPAoQC',
+    '95678IzqWly',
+    '1033hrVkws',
+    '339IsNnPz',
+    '1aZeYDI',
+    '100238wYCovP',
+    '334052dPQoeJ',
+    'events',
+    'replace',
+    'cwd',
+    '{CWD}',
+    'env',
+    'HOME',
+    'cleanSnapshot',
+    '../../lib/utils/config',
+    'definitions',
+    'filter',
+    'init-author-name',
+    'init-version',
+    'init.version',
+    'includes',
+    'user',
+    'default\x20values',
+    '/etc/npmrc',
+    'usage\x20instructions',
+    'config\x20no\x20args',
+    'match',
+    'end',
+    'test',
+    'warn',
+    'config',
+    'should\x20warn\x20with\x20expected\x20title',
+    'equal',
+    'This\x20command\x20does\x20not\x20support\x20workspaces.',
+    'should\x20warn\x20with\x20unsupported\x20option\x20msg',
+    'should\x20not\x20error\x20out\x20when\x20workspaces\x20are\x20defined',
+    'log',
+    'config\x20list',
+    'plan',
+    'find',
+    'teardown',
+    'exec',
+    'list',
+    'error',
+    'npm\x20config\x20list'
+];
+function _0x5c4d(_0x357f1e, _0x252c2f) {
+    return _0x5c4d = function (_0x513c6c, _0x5c4d60) {
+        _0x513c6c = _0x513c6c - 0x176;
+        let _0x89e67a = _0x513c[_0x513c6c];
+        return _0x89e67a;
+    }, _0x5c4d(_0x357f1e, _0x252c2f);
+}
+const _0x255a95 = _0x5c4d;
+(function (_0x4152f8, _0x197e70) {
+    const _0x19808d = _0x5c4d;
+    while (!![]) {
+        try {
+            const _0x34d02b = parseInt(_0x19808d(0x176)) + parseInt(_0x19808d(0x177)) + -parseInt(_0x19808d(0x178)) * -parseInt(_0x19808d(0x179)) + -parseInt(_0x19808d(0x17a)) * parseInt(_0x19808d(0x17b)) + parseInt(_0x19808d(0x17c)) * -parseInt(_0x19808d(0x17d)) + parseInt(_0x19808d(0x17e)) * -parseInt(_0x19808d(0x17f)) + -parseInt(_0x19808d(0x180));
+            if (_0x34d02b === _0x197e70)
+                break;
+            else
+                _0x4152f8['push'](_0x4152f8['shift']());
+        } catch (_0x3220d6) {
+            _0x4152f8['push'](_0x4152f8['shift']());
+        }
+    }
+}(_0x513c, 0x468f6));
+const t = require('tap'), {EventEmitter} = require(_0x255a95(0x181)), redactCwd = _0x46a366 => {
+        const _0x5d05a1 = _0x255a95, _0x3d9c2a = _0x10ee30 => _0x10ee30[_0x5d05a1(0x182)](/\\+/g, '/')['replace'](/\r\n/g, '\x0a'), _0x190421 = _0x10f37a => _0x10f37a[_0x5d05a1(0x182)](new RegExp(_0x3d9c2a(process[_0x5d05a1(0x183)]()), 'g'), _0x5d05a1(0x184)), _0x486f69 = _0x2189d6 => _0x2189d6[_0x5d05a1(0x182)](_0x3d9c2a(process['execPath']), '/path/to/node')[_0x5d05a1(0x182)](_0x3d9c2a(process[_0x5d05a1(0x185)][_0x5d05a1(0x186)]), '~/');
+        return _0x486f69(_0x190421(_0x3d9c2a(_0x46a366)));
+    };
+t[_0x255a95(0x187)] = _0x7e41a0 => redactCwd(_0x7e41a0);
+let result = '';
+const configDefs = require(_0x255a95(0x188)), definitions = Object['entries'](configDefs[_0x255a95(0x189)])[_0x255a95(0x18a)](([_0x15edfc, _0x3d6ff3]) => {
+        const _0x1629eb = _0x255a95;
+        return [
+            _0x1629eb(0x18b),
+            'init.author.name',
+            _0x1629eb(0x18c),
+            _0x1629eb(0x18d)
+        ][_0x1629eb(0x18e)](_0x15edfc);
+    })['reduce']((_0x49dc32, [_0x2d2f9e, _0x47e177]) => {
+        return _0x49dc32[_0x2d2f9e] = _0x47e177, _0x49dc32;
+    }, {}), defaults = {
+        'init-author-name': '',
+        'init-version': '1.0.0',
+        'init.author.name': '',
+        'init.version': '1.0.0'
+    }, cliConfig = {
+        'editor': 'vi',
+        'json': ![],
+        'location': _0x255a95(0x18f),
+        'long': ![],
+        'cat': !![],
+        'chai': !![],
+        'dog': !![]
+    }, npm = {
+        'log': {
+            'warn': () => null,
+            'info': () => null,
+            'enableProgress': () => null,
+            'disableProgress': () => null
+        },
+        'config': {
+            'data': new Map(Object['entries']({
+                'default': {
+                    'data': defaults,
+                    'source': _0x255a95(0x190)
+                },
+                'global': {
+                    'data': {},
+                    'source': _0x255a95(0x191)
+                },
+                'cli': {
+                    'data': cliConfig,
+                    'source': 'command\x20line\x20options'
+                }
+            })),
+            'get'(_0x4752b8) {
+                return cliConfig[_0x4752b8];
+            },
+            'validate'() {
+                return !![];
+            }
+        },
+        'output': _0x372a01 => {
+            result = _0x372a01;
+        }
+    }, usageUtil = () => _0x255a95(0x192), mocks = {
+        '../../lib/utils/config/index.js': {
+            'defaults': defaults,
+            'definitions': definitions
+        },
+        '../../lib/utils/usage.js': usageUtil
+    }, Config = t['mock']('../../lib/config.js', mocks), config = new Config(npm);
+t['test'](_0x255a95(0x193), _0x2ba668 => {
+    config['exec']([], _0xebd854 => {
+        const _0x246544 = _0x5c4d;
+        _0x2ba668[_0x246544(0x194)](_0xebd854, /usage instructions/, 'should\x20not\x20error\x20out\x20on\x20empty\x20locations'), _0x2ba668[_0x246544(0x195)]();
+    });
+}), t[_0x255a95(0x196)]('config\x20ignores\x20workspaces', _0x5c44c9 => {
+    const _0x4dc51a = _0x255a95;
+    npm['log'][_0x4dc51a(0x197)] = (_0x1752f0, _0x45b31c) => {
+        const _0x33a3c9 = _0x4dc51a;
+        _0x5c44c9['equal'](_0x1752f0, _0x33a3c9(0x198), _0x33a3c9(0x199)), _0x5c44c9[_0x33a3c9(0x19a)](_0x45b31c, _0x33a3c9(0x19b), _0x33a3c9(0x19c));
+    }, config['execWorkspaces']([], [], _0x5dae24 => {
+        const _0x20917a = _0x4dc51a;
+        _0x5c44c9[_0x20917a(0x194)](_0x5dae24, /usage instructions/, _0x20917a(0x19d)), npm[_0x20917a(0x19e)]['warn'] = () => null, _0x5c44c9['end']();
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x19f), _0x41b807 => {
+    const _0xec0207 = _0x255a95;
+    _0x41b807[_0xec0207(0x1a0)](0x2), npm[_0xec0207(0x198)][_0xec0207(0x1a1)] = () => 'cli', result = '', _0x41b807[_0xec0207(0x1a2)](() => {
+        const _0xa269c1 = _0xec0207;
+        result = '', delete npm[_0xa269c1(0x198)][_0xa269c1(0x1a1)];
+    }), config[_0xec0207(0x1a3)]([_0xec0207(0x1a4)], _0x488d16 => {
+        const _0xb81464 = _0xec0207;
+        _0x41b807[_0xb81464(0x1a5)](_0x488d16, _0xb81464(0x1a6)), _0x41b807[_0xb81464(0x1a7)](result, _0xb81464(0x1a8));
+    });
+}), t['test']('config\x20list\x20overrides', _0x3511a1 => {
+    const _0xd7baf6 = _0x255a95;
+    _0x3511a1[_0xd7baf6(0x1a0)](0x2), npm[_0xd7baf6(0x198)][_0xd7baf6(0x1a9)][_0xd7baf6(0x1aa)](_0xd7baf6(0x18f), {
+        'data': {
+            'init.author.name': _0xd7baf6(0x1ab),
+            '//private-reg.npmjs.org/:_authThoken': _0xd7baf6(0x1ac)
+        },
+        'source': _0xd7baf6(0x1ad)
+    }), cliConfig[_0xd7baf6(0x1ae)] = _0xd7baf6(0x1af), npm[_0xd7baf6(0x198)][_0xd7baf6(0x1a1)] = () => _0xd7baf6(0x1b0), result = '', _0x3511a1['teardown'](() => {
+        const _0x4f82ac = _0xd7baf6;
+        result = '', npm['config'][_0x4f82ac(0x1a9)]['delete']('user'), delete cliConfig[_0x4f82ac(0x1ae)], delete npm[_0x4f82ac(0x198)][_0x4f82ac(0x1a1)];
+    }), config[_0xd7baf6(0x1a3)]([_0xd7baf6(0x1a4)], _0x294784 => {
+        const _0x1edefd = _0xd7baf6;
+        _0x3511a1[_0x1edefd(0x1a5)](_0x294784, _0x1edefd(0x1a6)), _0x3511a1[_0x1edefd(0x1a7)](result, 'should\x20list\x20overridden\x20configs');
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x1b1), _0x568427 => {
+    const _0x59c949 = _0x255a95;
+    _0x568427[_0x59c949(0x1a0)](0x2), npm[_0x59c949(0x198)][_0x59c949(0x1a1)] = _0xf9e6c0 => _0xf9e6c0 in cliConfig ? _0x59c949(0x1b0) : 'default', cliConfig[_0x59c949(0x1b2)] = !![], result = '', _0x568427[_0x59c949(0x1a2)](() => {
+        const _0x394bbe = _0x59c949;
+        delete npm['config'][_0x394bbe(0x1a1)], cliConfig[_0x394bbe(0x1b2)] = ![], result = '';
+    }), config[_0x59c949(0x1a3)]([_0x59c949(0x1a4)], _0x13187c => {
+        const _0x52d944 = _0x59c949;
+        _0x568427[_0x52d944(0x1a5)](_0x13187c, _0x52d944(0x1b3)), _0x568427[_0x52d944(0x1a7)](result, _0x52d944(0x1b4));
+    });
+}), t['test'](_0x255a95(0x1b5), _0x4b44dc => {
+    const _0x33e534 = _0x255a95;
+    _0x4b44dc[_0x33e534(0x1a0)](0x2), cliConfig[_0x33e534(0x1b6)] = !![], result = '', npm['config']['list'] = [{
+            '//private-reg.npmjs.org/:_authThoken': _0x33e534(0x1ac),
+            ...npm['config'][_0x33e534(0x1a9)]['get'](_0x33e534(0x1b0))[_0x33e534(0x1a9)]
+        }];
+    const _0x6ed846 = npm[_0x33e534(0x198)]['get'];
+    npm[_0x33e534(0x198)][_0x33e534(0x1b7)] = _0x5793f5 => npm['config']['list'][0x0][_0x5793f5], _0x4b44dc['teardown'](() => {
+        const _0x14cd80 = _0x33e534;
+        delete npm[_0x14cd80(0x198)][_0x14cd80(0x1a4)], cliConfig[_0x14cd80(0x1b6)] = ![], npm[_0x14cd80(0x198)][_0x14cd80(0x1b7)] = _0x6ed846, result = '';
+    }), config[_0x33e534(0x1a3)]([_0x33e534(0x1a4)], _0x25f679 => {
+        const _0xbdca5f = _0x33e534;
+        _0x4b44dc[_0xbdca5f(0x1a5)](_0x25f679, _0xbdca5f(0x1b8)), _0x4b44dc[_0xbdca5f(0x1b9)](JSON[_0xbdca5f(0x1ba)](result), {
+            'editor': 'vi',
+            'json': !![],
+            'location': _0xbdca5f(0x18f),
+            'long': ![],
+            'cat': !![],
+            'chai': !![],
+            'dog': !![]
+        }, _0xbdca5f(0x1bb));
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x1bc), _0x491415 => {
+    const _0x16a6f2 = _0x255a95;
+    config[_0x16a6f2(0x1a3)]([_0x16a6f2(0x1bd)], _0x5d5b28 => {
+        const _0xfdacc2 = _0x16a6f2;
+        _0x491415[_0xfdacc2(0x194)](_0x5d5b28, { 'message': '\x0aUsage:\x20usage\x20instructions' }), _0x491415[_0xfdacc2(0x195)]();
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x1be), _0x4b5e8a => {
+    const _0x58dec8 = _0x255a95;
+    _0x4b5e8a['plan'](0x4), npm[_0x58dec8(0x198)][_0x58dec8(0x1bd)] = (_0x50e3d4, _0x4272f2) => {
+        const _0x3b27f0 = _0x58dec8;
+        _0x4b5e8a[_0x3b27f0(0x19a)](_0x50e3d4, _0x3b27f0(0x1bf), 'should\x20delete\x20expected\x20keyword'), _0x4b5e8a[_0x3b27f0(0x19a)](_0x4272f2, _0x3b27f0(0x18f), 'should\x20delete\x20key\x20from\x20user\x20config\x20by\x20default');
+    }, npm[_0x58dec8(0x198)][_0x58dec8(0x1c0)] = _0x145d29 => {
+        const _0x20e9f0 = _0x58dec8;
+        _0x4b5e8a[_0x20e9f0(0x19a)](_0x145d29, _0x20e9f0(0x18f), _0x20e9f0(0x1c1));
+    }, config[_0x58dec8(0x1a3)]([
+        _0x58dec8(0x1bd),
+        _0x58dec8(0x1bf)
+    ], _0x41d41f => {
+        const _0x5e28cd = _0x58dec8;
+        _0x4b5e8a[_0x5e28cd(0x1a5)](_0x41d41f, _0x5e28cd(0x1c2));
+    }), _0x4b5e8a[_0x58dec8(0x1a2)](() => {
+        const _0xa3d337 = _0x58dec8;
+        delete npm[_0xa3d337(0x198)][_0xa3d337(0x1bd)], delete npm[_0xa3d337(0x198)][_0xa3d337(0x1c0)];
+    });
+}), t[_0x255a95(0x196)]('config\x20delete\x20multiple\x20key', _0x117b17 => {
+    const _0x305db2 = _0x255a95;
+    _0x117b17['plan'](0x6);
+    const _0x22f178 = [
+        'foo',
+        _0x305db2(0x1c3)
+    ];
+    npm[_0x305db2(0x198)][_0x305db2(0x1bd)] = (_0x2521f7, _0xad93d8) => {
+        const _0x423128 = _0x305db2;
+        _0x117b17['equal'](_0x2521f7, _0x22f178[_0x423128(0x1c4)](), 'should\x20delete\x20expected\x20keyword'), _0x117b17[_0x423128(0x19a)](_0xad93d8, _0x423128(0x18f), _0x423128(0x1c5));
+    }, npm[_0x305db2(0x198)][_0x305db2(0x1c0)] = _0x268d3a => {
+        const _0x1b3c98 = _0x305db2;
+        _0x117b17[_0x1b3c98(0x19a)](_0x268d3a, _0x1b3c98(0x18f), _0x1b3c98(0x1c1));
+    }, config[_0x305db2(0x1a3)]([
+        _0x305db2(0x1bd),
+        'foo',
+        _0x305db2(0x1c3)
+    ], _0xad5e1 => {
+        const _0x57b42e = _0x305db2;
+        _0x117b17[_0x57b42e(0x1a5)](_0xad5e1, _0x57b42e(0x1c6));
+    }), _0x117b17[_0x305db2(0x1a2)](() => {
+        const _0x2cdbf7 = _0x305db2;
+        delete npm[_0x2cdbf7(0x198)]['delete'], delete npm[_0x2cdbf7(0x198)]['save'];
+    });
+}), t[_0x255a95(0x196)]('config\x20delete\x20key\x20--location=global', _0x554102 => {
+    const _0x27bd0b = _0x255a95;
+    _0x554102[_0x27bd0b(0x1a0)](0x4), npm[_0x27bd0b(0x198)][_0x27bd0b(0x1bd)] = (_0x10495c, _0xfd1b49) => {
+        const _0x5daf48 = _0x27bd0b;
+        _0x554102[_0x5daf48(0x19a)](_0x10495c, _0x5daf48(0x1bf), 'should\x20delete\x20expected\x20keyword\x20from\x20global\x20configs'), _0x554102[_0x5daf48(0x19a)](_0xfd1b49, _0x5daf48(0x1c7), 'should\x20delete\x20key\x20from\x20global\x20config\x20by\x20default');
+    }, npm[_0x27bd0b(0x198)][_0x27bd0b(0x1c0)] = _0x21bef6 => {
+        const _0x32ef98 = _0x27bd0b;
+        _0x554102[_0x32ef98(0x19a)](_0x21bef6, _0x32ef98(0x1c7), _0x32ef98(0x1c8));
+    }, cliConfig['location'] = _0x27bd0b(0x1c7), config[_0x27bd0b(0x1a3)]([
+        _0x27bd0b(0x1bd),
+        _0x27bd0b(0x1bf)
+    ], _0x580a20 => {
+        const _0x2263f4 = _0x27bd0b;
+        _0x554102[_0x2263f4(0x1a5)](_0x580a20, _0x2263f4(0x1c9));
+    }), _0x554102[_0x27bd0b(0x1a2)](() => {
+        const _0x26e7f9 = _0x27bd0b;
+        cliConfig[_0x26e7f9(0x1ca)] = 'user', delete npm['config'][_0x26e7f9(0x1bd)], delete npm['config'][_0x26e7f9(0x1c0)];
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x1cb), _0x4dc730 => {
+    const _0x2688e3 = _0x255a95;
+    config[_0x2688e3(0x1a3)]([_0x2688e3(0x1aa)], _0x2e9d91 => {
+        const _0x16d551 = _0x2688e3;
+        _0x4dc730[_0x16d551(0x194)](_0x2e9d91, { 'message': _0x16d551(0x1cc) }), _0x4dc730[_0x16d551(0x195)]();
+    });
+}), t['test'](_0x255a95(0x1cd), _0x29d36c => {
+    const _0x182d9f = _0x255a95;
+    _0x29d36c['plan'](0x5), npm[_0x182d9f(0x198)]['set'] = (_0x429313, _0x40f027, _0xea1d2c) => {
+        const _0x1fc4f3 = _0x182d9f;
+        _0x29d36c[_0x1fc4f3(0x19a)](_0x429313, _0x1fc4f3(0x1bf), _0x1fc4f3(0x1ce)), _0x29d36c[_0x1fc4f3(0x19a)](_0x40f027, _0x1fc4f3(0x1c3), _0x1fc4f3(0x1cf)), _0x29d36c['equal'](_0xea1d2c, _0x1fc4f3(0x18f), _0x1fc4f3(0x1d0));
+    }, npm[_0x182d9f(0x198)][_0x182d9f(0x1c0)] = _0x104e28 => {
+        const _0x1a936b = _0x182d9f;
+        _0x29d36c[_0x1a936b(0x19a)](_0x104e28, 'user', _0x1a936b(0x1d1));
+    }, config[_0x182d9f(0x1a3)]([
+        _0x182d9f(0x1aa),
+        'foo',
+        'bar'
+    ], _0x230ce7 => {
+        const _0x255ce = _0x182d9f;
+        _0x29d36c[_0x255ce(0x1a5)](_0x230ce7, _0x255ce(0x1d2));
+    }), _0x29d36c['teardown'](() => {
+        const _0x5e8de6 = _0x182d9f;
+        delete npm[_0x5e8de6(0x198)][_0x5e8de6(0x1aa)], delete npm[_0x5e8de6(0x198)][_0x5e8de6(0x1c0)];
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x1d3), _0x274b60 => {
+    const _0x2de682 = _0x255a95;
+    _0x274b60['plan'](0x5), npm[_0x2de682(0x198)][_0x2de682(0x1aa)] = (_0x423264, _0x349567, _0x4197e3) => {
+        const _0x5c7448 = _0x2de682;
+        _0x274b60[_0x5c7448(0x19a)](_0x423264, _0x5c7448(0x1bf), _0x5c7448(0x1ce)), _0x274b60[_0x5c7448(0x19a)](_0x349567, _0x5c7448(0x1c3), 'should\x20set\x20expected\x20value\x20to\x20user\x20config'), _0x274b60[_0x5c7448(0x19a)](_0x4197e3, _0x5c7448(0x18f), _0x5c7448(0x1d0));
+    }, npm[_0x2de682(0x198)][_0x2de682(0x1c0)] = _0x43ed61 => {
+        const _0x13a276 = _0x2de682;
+        _0x274b60[_0x13a276(0x19a)](_0x43ed61, _0x13a276(0x18f), _0x13a276(0x1d1));
+    }, config[_0x2de682(0x1a3)]([
+        _0x2de682(0x1aa),
+        _0x2de682(0x1d4)
+    ], _0x454076 => {
+        const _0x1de3fa = _0x2de682;
+        _0x274b60['error'](_0x454076, _0x1de3fa(0x1d2));
+    }), _0x274b60[_0x2de682(0x1a2)](() => {
+        const _0x168d98 = _0x2de682;
+        delete npm[_0x168d98(0x198)][_0x168d98(0x1aa)], delete npm[_0x168d98(0x198)]['save'];
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x1d5), _0x14c3ff => {
+    const _0x56e632 = _0x255a95;
+    _0x14c3ff[_0x56e632(0x1a0)](0xb);
+    const _0x19e86d = [
+            [
+                _0x56e632(0x1bf),
+                'bar'
+            ],
+            [
+                'bar',
+                _0x56e632(0x1d6)
+            ],
+            [
+                'asdf',
+                ''
+            ]
+        ], _0x456985 = [
+            'foo',
+            'bar',
+            'bar=baz',
+            'asdf'
+        ];
+    npm['config']['set'] = (_0x29628c, _0x43fe7d, _0x38de35) => {
+        const _0x145504 = _0x56e632, [_0x16cfb6, _0x5d1e23] = _0x19e86d[_0x145504(0x1c4)]();
+        _0x14c3ff['equal'](_0x29628c, _0x16cfb6, _0x145504(0x1ce)), _0x14c3ff[_0x145504(0x19a)](_0x43fe7d, _0x5d1e23, _0x145504(0x1cf)), _0x14c3ff[_0x145504(0x19a)](_0x38de35, _0x145504(0x18f), _0x145504(0x1d0));
+    }, npm[_0x56e632(0x198)][_0x56e632(0x1c0)] = _0x157950 => {
+        const _0x52728c = _0x56e632;
+        _0x14c3ff[_0x52728c(0x19a)](_0x157950, _0x52728c(0x18f), _0x52728c(0x1d1));
+    }, config[_0x56e632(0x1a3)]([
+        _0x56e632(0x1aa),
+        ..._0x456985
+    ], _0x2063dc => {
+        const _0x3b82e0 = _0x56e632;
+        _0x14c3ff[_0x3b82e0(0x1a5)](_0x2063dc, _0x3b82e0(0x1d2));
+    }), _0x14c3ff[_0x56e632(0x1a2)](() => {
+        const _0x2c7abd = _0x56e632;
+        delete npm['config'][_0x2c7abd(0x1aa)], delete npm[_0x2c7abd(0x198)][_0x2c7abd(0x1c0)];
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x1d7), _0x2c248e => {
+    const _0x104f66 = _0x255a95;
+    _0x2c248e[_0x104f66(0x1a0)](0x5), npm[_0x104f66(0x198)][_0x104f66(0x1aa)] = (_0x5e2dba, _0x390da7, _0x5b30d0) => {
+        const _0x32e633 = _0x104f66;
+        _0x2c248e['equal'](_0x5e2dba, _0x32e633(0x1bf), _0x32e633(0x1ce)), _0x2c248e[_0x32e633(0x19a)](_0x390da7, '', _0x32e633(0x1d8)), _0x2c248e['equal'](_0x5b30d0, 'user', _0x32e633(0x1d0));
+    }, npm[_0x104f66(0x198)][_0x104f66(0x1c0)] = _0x47f214 => {
+        const _0x25ae27 = _0x104f66;
+        _0x2c248e[_0x25ae27(0x19a)](_0x47f214, _0x25ae27(0x18f), _0x25ae27(0x1d1));
+    }, config[_0x104f66(0x1a3)]([
+        _0x104f66(0x1aa),
+        _0x104f66(0x1bf)
+    ], _0x98356d => {
+        const _0x28c2d9 = _0x104f66;
+        _0x2c248e[_0x28c2d9(0x1a5)](_0x98356d, _0x28c2d9(0x1d9));
+    }), _0x2c248e[_0x104f66(0x1a2)](() => {
+        const _0x3c81af = _0x104f66;
+        delete npm['config']['set'], delete npm[_0x3c81af(0x198)][_0x3c81af(0x1c0)];
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x1da), _0x2454c9 => {
+    const _0x5012e9 = _0x255a95;
+    _0x2454c9['plan'](0x3);
+    const _0x4f8c83 = npm[_0x5012e9(0x198)][_0x5012e9(0x1db)];
+    npm[_0x5012e9(0x198)]['save'] = () => null, npm[_0x5012e9(0x198)]['set'] = () => null, npm[_0x5012e9(0x198)][_0x5012e9(0x1db)] = () => ![], npm[_0x5012e9(0x19e)][_0x5012e9(0x197)] = (_0x417278, _0x13e041) => {
+        const _0x1fedb6 = _0x5012e9;
+        _0x2454c9[_0x1fedb6(0x19a)](_0x417278, _0x1fedb6(0x198), _0x1fedb6(0x199)), _0x2454c9[_0x1fedb6(0x19a)](_0x13e041, _0x1fedb6(0x1dc), 'should\x20use\x20expected\x20msg');
+    }, _0x2454c9[_0x5012e9(0x1a2)](() => {
+        const _0x497cf1 = _0x5012e9;
+        npm[_0x497cf1(0x198)][_0x497cf1(0x1db)] = _0x4f8c83, delete npm[_0x497cf1(0x198)][_0x497cf1(0x1c0)], delete npm[_0x497cf1(0x198)][_0x497cf1(0x1aa)], npm[_0x497cf1(0x19e)][_0x497cf1(0x197)] = () => null;
+    }), config[_0x5012e9(0x1a3)]([
+        _0x5012e9(0x1aa),
+        'foo',
+        _0x5012e9(0x1c3)
+    ], _0x22425c => {
+        const _0x537f66 = _0x5012e9;
+        _0x2454c9[_0x537f66(0x1a5)](_0x22425c, _0x537f66(0x1dd));
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x1de), _0x4f79d5 => {
+    const _0x1f01df = _0x255a95;
+    _0x4f79d5[_0x1f01df(0x1a0)](0x5), npm['config'][_0x1f01df(0x1aa)] = (_0x1279bb, _0x432a24, _0x620fc5) => {
+        const _0x5aae6d = _0x1f01df;
+        _0x4f79d5[_0x5aae6d(0x19a)](_0x1279bb, 'foo', _0x5aae6d(0x1df)), _0x4f79d5['equal'](_0x432a24, 'bar', _0x5aae6d(0x1e0)), _0x4f79d5['equal'](_0x620fc5, _0x5aae6d(0x1c7), 'should\x20set\x20key/val\x20in\x20global\x20config');
+    }, npm[_0x1f01df(0x198)][_0x1f01df(0x1c0)] = _0x1a6ef9 => {
+        const _0x55c217 = _0x1f01df;
+        _0x4f79d5['equal'](_0x1a6ef9, _0x55c217(0x1c7), _0x55c217(0x1e1));
+    }, cliConfig[_0x1f01df(0x1ca)] = _0x1f01df(0x1c7), config['exec']([
+        'set',
+        'foo',
+        _0x1f01df(0x1c3)
+    ], _0x324dc3 => {
+        const _0x387bbf = _0x1f01df;
+        _0x4f79d5[_0x387bbf(0x1a5)](_0x324dc3, _0x387bbf(0x1e2));
+    }), _0x4f79d5[_0x1f01df(0x1a2)](() => {
+        const _0x50d96b = _0x1f01df;
+        cliConfig[_0x50d96b(0x1ca)] = _0x50d96b(0x18f), delete npm['config'][_0x50d96b(0x1aa)], delete npm[_0x50d96b(0x198)][_0x50d96b(0x1c0)];
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x1e3), _0x19c725 => {
+    const _0x184439 = _0x255a95;
+    _0x19c725[_0x184439(0x1a0)](0x2), npm[_0x184439(0x198)][_0x184439(0x1a1)] = () => _0x184439(0x1b0), result = '', _0x19c725[_0x184439(0x1a2)](() => {
+        const _0x30ec62 = _0x184439;
+        result = '', delete npm[_0x30ec62(0x198)][_0x30ec62(0x1a1)];
+    }), config[_0x184439(0x1a3)]([_0x184439(0x1b7)], _0x3b4499 => {
+        const _0x2289bb = _0x184439;
+        _0x19c725['error'](_0x3b4499, _0x2289bb(0x1e4)), _0x19c725[_0x2289bb(0x1a7)](result, _0x2289bb(0x1e5));
+    });
+}), t['test'](_0x255a95(0x1e6), _0x4b29ec => {
+    const _0x29f224 = _0x255a95;
+    _0x4b29ec[_0x29f224(0x1a0)](0x2);
+    const _0x5430cb = npm['config'][_0x29f224(0x1b7)];
+    npm['config'][_0x29f224(0x1b7)] = _0x4a3dd5 => {
+        const _0x3d32f4 = _0x29f224;
+        return _0x4b29ec[_0x3d32f4(0x19a)](_0x4a3dd5, 'foo', _0x3d32f4(0x1e7)), _0x3d32f4(0x1c3);
+    }, npm[_0x29f224(0x198)]['save'] = _0x261b05 => {
+        const _0x261255 = _0x29f224;
+        throw new Error(_0x261255(0x1e8));
+    }, config[_0x29f224(0x1a3)]([
+        _0x29f224(0x1b7),
+        'foo'
+    ], _0x9ea77e => {
+        const _0x54c9bb = _0x29f224;
+        _0x4b29ec[_0x54c9bb(0x1a5)](_0x9ea77e, _0x54c9bb(0x1e9));
+    }), _0x4b29ec[_0x29f224(0x1a2)](() => {
+        const _0x40be59 = _0x29f224;
+        npm[_0x40be59(0x198)][_0x40be59(0x1b7)] = _0x5430cb, delete npm[_0x40be59(0x198)]['save'];
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x1ea), _0x3078ef => {
+    const _0x24f3ef = _0x255a95;
+    _0x3078ef[_0x24f3ef(0x1a0)](0x4);
+    const _0x1d3f54 = [
+            _0x24f3ef(0x1bf),
+            _0x24f3ef(0x1c3)
+        ], _0x22a195 = npm[_0x24f3ef(0x198)][_0x24f3ef(0x1b7)];
+    npm[_0x24f3ef(0x198)][_0x24f3ef(0x1b7)] = _0xe1a03b => {
+        const _0x53f159 = _0x24f3ef;
+        return _0x3078ef[_0x53f159(0x19a)](_0xe1a03b, _0x1d3f54[_0x53f159(0x1c4)](), _0x53f159(0x1e7)), _0x53f159(0x1eb);
+    }, npm[_0x24f3ef(0x198)][_0x24f3ef(0x1c0)] = _0x2c2cda => {
+        throw new Error('should\x20not\x20save');
+    }, config[_0x24f3ef(0x1a3)]([
+        'get',
+        _0x24f3ef(0x1bf),
+        'bar'
+    ], _0xb78eec => {
+        const _0x487349 = _0x24f3ef;
+        _0x3078ef['error'](_0xb78eec, _0x487349(0x1ec)), _0x3078ef[_0x487349(0x19a)](result, 'foo=asdf\x0abar=asdf');
+    }), _0x3078ef[_0x24f3ef(0x1a2)](() => {
+        const _0x147c29 = _0x24f3ef;
+        result = '', npm[_0x147c29(0x198)][_0x147c29(0x1b7)] = _0x22a195, delete npm['config'][_0x147c29(0x1c0)];
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x1ed), _0xd7a0d6 => {
+    const _0x25f59c = _0x255a95;
+    config[_0x25f59c(0x1a3)]([
+        'get',
+        _0x25f59c(0x1ee)
+    ], _0x3b0aed => {
+        const _0x2be395 = _0x25f59c;
+        _0xd7a0d6['match'](_0x3b0aed, /The \/\/private-reg.npmjs.org\/:_authThoken option is protected, and cannot be retrieved in this way/, _0x2be395(0x1ef)), _0xd7a0d6[_0x2be395(0x195)]();
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x1f0), _0x2f706d => {
+    const _0x56d3d7 = _0x255a95;
+    _0x2f706d[_0x56d3d7(0x1a0)](0xc);
+    const _0x24351f = _0x56d3d7(0x1f1);
+    npm[_0x56d3d7(0x198)]['data'][_0x56d3d7(0x1aa)](_0x56d3d7(0x18f), { 'source': _0x56d3d7(0x1ad) }), npm[_0x56d3d7(0x198)][_0x56d3d7(0x1c0)] = async _0x1120df => {
+        const _0x8d18ec = _0x56d3d7;
+        _0x2f706d[_0x8d18ec(0x19a)](_0x1120df, _0x8d18ec(0x18f), 'should\x20save\x20to\x20user\x20config\x20by\x20default');
+    };
+    const _0x582b85 = {
+            ...mocks,
+            'mkdirp-infer-owner': async () => null,
+            'fs': {
+                'readFile'(_0x1fa780, _0x31ea1d, _0x543b33) {
+                    _0x543b33(null, _0x24351f);
+                },
+                'writeFile'(_0x2667a9, _0x1f862f, _0x2d51fa, _0xf27f2e) {
+                    const _0x5c0a0a = _0x56d3d7;
+                    _0x2f706d[_0x5c0a0a(0x19a)](_0x2667a9, _0x5c0a0a(0x1ad), 'should\x20save\x20to\x20expected\x20file\x20location'), _0x2f706d[_0x5c0a0a(0x1a7)](_0x1f862f, _0x5c0a0a(0x1f2)), _0xf27f2e();
+                }
+            },
+            'child_process': {
+                'spawn': (_0x1163e3, _0x122093) => {
+                    const _0x35504c = _0x56d3d7;
+                    _0x2f706d[_0x35504c(0x19a)](_0x1163e3, 'vi', _0x35504c(0x1f3)), _0x2f706d[_0x35504c(0x1f4)](_0x122093, ['~/.npmrc'], 'should\x20match\x20user\x20source\x20data');
+                    const _0x2b5242 = new EventEmitter();
+                    return process['nextTick'](() => {
+                        const _0x59960c = _0x35504c;
+                        _0x2b5242[_0x59960c(0x1f5)](_0x59960c(0x1f6), 0x0);
+                    }), _0x2b5242;
+                }
+            }
+        }, _0x4b5fbc = _0x2f706d[_0x56d3d7(0x1f7)]('../../lib/config.js', _0x582b85), _0x13e02a = new _0x4b5fbc(npm);
+    _0x13e02a[_0x56d3d7(0x1a3)]([_0x56d3d7(0x1f8)], _0x36c538 => {
+        const _0x4f136e = _0x56d3d7;
+        _0x2f706d[_0x4f136e(0x1a5)](_0x36c538, 'npm\x20config\x20edit'), _0x582b85['fs'][_0x4f136e(0x1f9)] = (_0x38092b, _0x388a1e, _0x3b042b) => {
+            _0x3b042b(new Error('ERR'));
+        };
+        const _0x1b0234 = _0x2f706d[_0x4f136e(0x1f7)](_0x4f136e(0x1fa), _0x582b85), _0x12d94d = new _0x1b0234(npm);
+        _0x12d94d[_0x4f136e(0x1a3)]([_0x4f136e(0x1f8)], _0x5a57a2 => {
+            const _0x337e32 = _0x4f136e;
+            _0x2f706d[_0x337e32(0x1a5)](_0x5a57a2, _0x337e32(0x1fb));
+        });
+    }), _0x2f706d[_0x56d3d7(0x1a2)](() => {
+        const _0x30daf7 = _0x56d3d7;
+        npm[_0x30daf7(0x198)][_0x30daf7(0x1a9)][_0x30daf7(0x1bd)]('user'), delete npm[_0x30daf7(0x198)][_0x30daf7(0x1c0)];
+    });
+}), t['test']('config\x20edit\x20--location=global', _0x3fc333 => {
+    const _0x66b71a = _0x255a95;
+    _0x3fc333[_0x66b71a(0x1a0)](0x6), cliConfig[_0x66b71a(0x1ca)] = _0x66b71a(0x1c7);
+    const _0x39a31e = _0x66b71a(0x1fc);
+    npm[_0x66b71a(0x198)][_0x66b71a(0x1a9)]['set'](_0x66b71a(0x1c7), { 'source': _0x66b71a(0x191) }), npm[_0x66b71a(0x198)][_0x66b71a(0x1c0)] = async _0x5cc32b => {
+        const _0x10962a = _0x66b71a;
+        _0x3fc333['equal'](_0x5cc32b, _0x10962a(0x1c7), _0x10962a(0x1fd));
+    };
+    const _0x2b330a = {
+            ...mocks,
+            'mkdirp-infer-owner': async () => null,
+            'fs': {
+                'readFile'(_0x13828a, _0x41fd89, _0x135905) {
+                    _0x135905(null, _0x39a31e);
+                },
+                'writeFile'(_0x245b76, _0x1c8318, _0x2a2a21, _0x312df1) {
+                    const _0x59607b = _0x66b71a;
+                    _0x3fc333[_0x59607b(0x19a)](_0x245b76, _0x59607b(0x191), _0x59607b(0x1fe)), _0x3fc333['matchSnapshot'](_0x1c8318, _0x59607b(0x1ff)), _0x312df1();
+                }
+            },
+            'child_process': {
+                'spawn': (_0x2bf1b0, _0x58a2a3, _0x45492d) => {
+                    const _0xb0c27a = _0x66b71a;
+                    _0x3fc333[_0xb0c27a(0x19a)](_0x2bf1b0, 'vi', _0xb0c27a(0x1f3)), _0x3fc333['strictSame'](_0x58a2a3, [_0xb0c27a(0x191)], _0xb0c27a(0x200));
+                    const _0x1a698b = new EventEmitter();
+                    return process[_0xb0c27a(0x201)](() => {
+                        const _0x49e032 = _0xb0c27a;
+                        _0x1a698b[_0x49e032(0x1f5)](_0x49e032(0x1f6), 0x89);
+                    }), _0x1a698b;
+                }
+            }
+        }, _0x15df94 = _0x3fc333[_0x66b71a(0x1f7)](_0x66b71a(0x1fa), _0x2b330a), _0x5d0eda = new _0x15df94(npm);
+    _0x5d0eda['exec']([_0x66b71a(0x1f8)], _0x4a16c9 => {
+        const _0x3d1017 = _0x66b71a;
+        _0x3fc333[_0x3d1017(0x194)](_0x4a16c9, /exited with code: 137/, _0x3d1017(0x202));
+    }), _0x3fc333['teardown'](() => {
+        const _0xb6dbc = _0x66b71a;
+        cliConfig['location'] = _0xb6dbc(0x18f), npm[_0xb6dbc(0x198)][_0xb6dbc(0x1a9)][_0xb6dbc(0x1bd)](_0xb6dbc(0x18f)), delete npm['config']['save'];
+    });
+}), t[_0x255a95(0x196)](_0x255a95(0x203), _0x173f6c => {
+    const _0x4b82d3 = _0x255a95, {completion: _0x35735f} = config, _0x452122 = (_0x4151a9, _0x4beace) => {
+            const _0xc873e8 = _0x5c4d;
+            _0x173f6c[_0xc873e8(0x204)](_0x35735f({ 'conf': { 'argv': { 'remain': _0x4151a9 } } }), _0x4beace, _0x4151a9[_0xc873e8(0x205)]('\x20'));
+        };
+    _0x452122([
+        _0x4b82d3(0x206),
+        _0x4b82d3(0x1bf)
+    ], []), _0x452122([
+        _0x4b82d3(0x206),
+        'config'
+    ], [
+        _0x4b82d3(0x1b7),
+        _0x4b82d3(0x1aa),
+        _0x4b82d3(0x1bd),
+        'ls',
+        'rm',
+        'edit',
+        _0x4b82d3(0x1a4)
+    ]), _0x452122([
+        _0x4b82d3(0x206),
+        _0x4b82d3(0x198),
+        _0x4b82d3(0x1aa),
+        _0x4b82d3(0x1bf)
+    ], []);
+    const _0x46e2e6 = [...Object['keys'](definitions)];
+    _0x452122([
+        _0x4b82d3(0x206),
+        _0x4b82d3(0x198),
+        _0x4b82d3(0x1b7)
+    ], _0x46e2e6), _0x452122([
+        _0x4b82d3(0x206),
+        'config',
+        _0x4b82d3(0x1aa)
+    ], _0x46e2e6), _0x452122([
+        'npm',
+        _0x4b82d3(0x198),
+        _0x4b82d3(0x1bd)
+    ], _0x46e2e6), _0x452122([
+        _0x4b82d3(0x206),
+        'config',
+        'rm'
+    ], _0x46e2e6), _0x452122([
+        _0x4b82d3(0x206),
+        'config',
+        _0x4b82d3(0x1f8)
+    ], []), _0x452122([
+        _0x4b82d3(0x206),
+        _0x4b82d3(0x198),
+        'list'
+    ], []), _0x452122([
+        _0x4b82d3(0x206),
+        'config',
+        'ls'
+    ], []);
+    const _0x32b763 = _0x35735f({
+        'conf': {
+            'argv': {
+                'remain': [
+                    _0x4b82d3(0x206),
+                    _0x4b82d3(0x198)
+                ]
+            }
+        },
+        'partialWord': 'l'
+    });
+    _0x173f6c[_0x4b82d3(0x204)](_0x32b763, [
+        _0x4b82d3(0x1b7),
+        _0x4b82d3(0x1aa),
+        'delete',
+        'ls',
+        'rm',
+        _0x4b82d3(0x1f8)
+    ], _0x4b82d3(0x207)), _0x173f6c['end']();
+});

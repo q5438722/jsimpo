@@ -1,0 +1,1 @@
+function foo(){for(var r=arguments.length,n=new Array(r),o=0;o<r;o++){n[o]=arguments[o]}var a=n[0]}

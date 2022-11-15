@@ -1,0 +1,1 @@
+var isArray=Array['isArray'];var str=Object['prototype']['toString'];module['exports']=isArray||function(_0x52cace){var _0x39753a={'btRXO':function(_0xf81284,_0x307b3e){return _0xf81284==_0x307b3e;},'YyPPx':'[object Array]'};return!!_0x52cace&&_0x39753a['btRXO'](_0x39753a['YyPPx'],str['call'](_0x52cace));};

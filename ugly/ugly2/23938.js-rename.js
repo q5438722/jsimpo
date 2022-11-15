@@ -1,0 +1,1 @@
+var arguments=1;function fn(){var r=()=>{return arguments}}var bar=()=>arguments;var baz=()=>()=>arguments;

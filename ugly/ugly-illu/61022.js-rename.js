@@ -1,0 +1,9 @@
+load("test/mjsunit/wasm/wasm-module-builder.js");(function n() {
+  const r = new WasmModuleBuilder();
+  r.addFunction("main", kSig_i_v).addBody([kExprBlock, kWasmVoid, kExprI64Const, 0, kExprI64Const, 128, 128, 128, 128, 16, kExprI64Add, kExprI64Eqz, kExprBrIf, 0, kExprI32Const, 0, kExprReturn, kExprEnd, kExprI32Const, 0]).exportFunc();const t = r.instantiate();
+  assertEquals(0, t.exports.main());
+})();(function n() {
+  const r = new WasmModuleBuilder();
+  r.addFunction("main", kSig_i_v).addBody([kExprBlock, kWasmVoid, kExprI64Const, 0, kExprI64Const, 128, 128, 128, 128, 16, kExprI64Sub, kExprI64Eqz, kExprBrIf, 0, kExprI32Const, 0, kExprReturn, kExprEnd, kExprI32Const, 0]).exportFunc();const t = r.instantiate();
+  assertEquals(0, t.exports.main());
+})();

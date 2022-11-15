@@ -1,0 +1,1 @@
+description("This tests that a constant folding on a node that has obviously mispredicted type doesn't send the compiler into an infinite loop.");function foo(x){var a=1;var b=4000;var c=(a/b)+x;var d=0;for(var i=0;i<1000;++i)d++;return c+d}for(var i=0;i<5;++i)shouldBe("foo(0.5)","1000.50025");

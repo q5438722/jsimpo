@@ -1,0 +1,1 @@
+var c=require('./c');it('should have the correct values',function(){var _0x23b18e={'YGgdF':function(_0x20aec5,_0xd1576e){return _0x20aec5(_0xd1576e);},'vrtuz':'named'};_0x23b18e['YGgdF'](expect,c['named'])['toBe'](_0x23b18e['vrtuz']);});

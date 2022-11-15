@@ -1,0 +1,1 @@
+import _0x2b11b5 from'./utils/createSvgIcon';import{jsx as _0x5afa7d}from'react/jsx-runtime';export default _0x2b11b5(_0x5afa7d('path',{'d':'m16 18 2.29-2.29-4.88-4.88-4 4L2 7.41 3.41 6l6 6 4-4 6.3 6.29L22 12v6h-6z'}),'TrendingDownOutlined');

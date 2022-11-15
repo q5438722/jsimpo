@@ -1,0 +1,1 @@
+class Foo extends Bar{constructor(){var _0x1ced89={'cUkwH':function(_0x1f242b){return _0x1f242b();}};const _0x46c049=()=>this;_0x1ced89['cUkwH'](_0x46c049);super();}}

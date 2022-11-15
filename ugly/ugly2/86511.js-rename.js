@@ -1,0 +1,1 @@
+var Circle=require("./Circle");var Clone=function(e){return new Circle(e.x,e.y,e.radius)};module.exports=Clone;

@@ -1,0 +1,84 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "SequenceExpression",
+                "expressions": [
+                    {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "Identifier",
+                            "name": "b"
+                        },
+                        "right": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "_obj"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "b",
+                                "raw": "'b'"
+                            }
+                        }
+                    },
+                    {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "Identifier",
+                            "name": "c"
+                        },
+                        "right": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "babelHelpers"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "objectWithoutPropertiesLoose",
+                                    "raw": "'objectWithoutPropertiesLoose'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_obj"
+                                },
+                                {
+                                    "type": "ArrayExpression",
+                                    "elements": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "a",
+                                            "raw": "'a'"
+                                        },
+                                        {
+                                            "type": "Literal",
+                                            "value": "b",
+                                            "raw": "'b'"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "_obj"
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

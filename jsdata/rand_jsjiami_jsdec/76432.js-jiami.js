@@ -1,0 +1,1 @@
+import{BaseRaw}from'../../../../../app/models/server/raw/BaseRaw';import _0xea93c9 from'../models/CannedResponse';export class CannedResponseRaw extends BaseRaw{}export default new CannedResponseRaw(_0xea93c9['model']['rawCollection']());

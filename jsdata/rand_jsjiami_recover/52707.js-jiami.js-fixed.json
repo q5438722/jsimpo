@@ -1,0 +1,543 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "Literal",
+                "value": "use strict",
+                "raw": "'use strict'"
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "util"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "util",
+                                "raw": "'util'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "Action"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../action",
+                                "raw": "'../action'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "c"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../const",
+                                "raw": "'../const'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "ActionAppend"
+                    },
+                    "init": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "module"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "exports",
+                                "raw": "'exports'"
+                            }
+                        },
+                        "right": {
+                            "type": "FunctionExpression",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "ActionAppend"
+                            },
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x3608bd"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "AssignmentExpression",
+                                            "operator": "=",
+                                            "left": {
+                                                "type": "Identifier",
+                                                "name": "_0x3608bd"
+                                            },
+                                            "right": {
+                                                "type": "LogicalExpression",
+                                                "operator": "||",
+                                                "left": {
+                                                    "type": "Identifier",
+                                                    "name": "_0x3608bd"
+                                                },
+                                                "right": {
+                                                    "type": "ObjectExpression",
+                                                    "properties": []
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "IfStatement",
+                                        "test": {
+                                            "type": "BinaryExpression",
+                                            "operator": "<=",
+                                            "left": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "ThisExpression"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "nargs",
+                                                    "raw": "'nargs'"
+                                                }
+                                            },
+                                            "right": {
+                                                "type": "Literal",
+                                                "value": 0,
+                                                "raw": "0x0"
+                                            }
+                                        },
+                                        "consequent": {
+                                            "type": "BlockStatement",
+                                            "body": [
+                                                {
+                                                    "type": "ThrowStatement",
+                                                    "argument": {
+                                                        "type": "NewExpression",
+                                                        "callee": {
+                                                            "type": "Identifier",
+                                                            "name": "Error"
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "BinaryExpression",
+                                                                "operator": "+",
+                                                                "left": {
+                                                                    "type": "BinaryExpression",
+                                                                    "operator": "+",
+                                                                    "left": {
+                                                                        "type": "Literal",
+                                                                        "value": "nargs for append actions must be > 0; if arg ",
+                                                                        "raw": "'nargs\\x20for\\x20append\\x20actions\\x20must\\x20be\\x20>\\x200;\\x20if\\x20arg\\x20'"
+                                                                    },
+                                                                    "right": {
+                                                                        "type": "Literal",
+                                                                        "value": "strings are not supplying the value to append, ",
+                                                                        "raw": "'strings are not supplying the value to append, '"
+                                                                    }
+                                                                },
+                                                                "right": {
+                                                                    "type": "Literal",
+                                                                    "value": "the append const action may be more appropriate",
+                                                                    "raw": "'the append const action may be more appropriate'"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "alternate": null
+                                    },
+                                    {
+                                        "type": "IfStatement",
+                                        "test": {
+                                            "type": "LogicalExpression",
+                                            "operator": "&&",
+                                            "left": {
+                                                "type": "UnaryExpression",
+                                                "operator": "!",
+                                                "argument": {
+                                                    "type": "UnaryExpression",
+                                                    "operator": "!",
+                                                    "argument": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "ThisExpression"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "constant",
+                                                            "raw": "'constant'"
+                                                        }
+                                                    },
+                                                    "prefix": true
+                                                },
+                                                "prefix": true
+                                            },
+                                            "right": {
+                                                "type": "BinaryExpression",
+                                                "operator": "!==",
+                                                "left": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "ThisExpression"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "nargs",
+                                                        "raw": "'nargs'"
+                                                    }
+                                                },
+                                                "right": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "c"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "OPTIONAL",
+                                                        "raw": "'OPTIONAL'"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "consequent": {
+                                            "type": "BlockStatement",
+                                            "body": [
+                                                {
+                                                    "type": "ThrowStatement",
+                                                    "argument": {
+                                                        "type": "NewExpression",
+                                                        "callee": {
+                                                            "type": "Identifier",
+                                                            "name": "Error"
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "nargs must be OPTIONAL to supply const",
+                                                                "raw": "'nargs\\x20must\\x20be\\x20OPTIONAL\\x20to\\x20supply\\x20const'"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "alternate": null
+                                    },
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "Action"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "call",
+                                                    "raw": "'call'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "ThisExpression"
+                                                },
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x3608bd"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "util"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "inherits",
+                        "raw": "'inherits'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "ActionAppend"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "Action"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "ActionAppend"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "prototype",
+                            "raw": "'prototype'"
+                        }
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "call",
+                        "raw": "'call'"
+                    }
+                },
+                "right": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "params": [
+                        {
+                            "type": "Identifier",
+                            "name": "_0x5004cd"
+                        },
+                        {
+                            "type": "Identifier",
+                            "name": "_0x2c1e73"
+                        },
+                        {
+                            "type": "Identifier",
+                            "name": "_0x1b7ab8"
+                        }
+                    ],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "Identifier",
+                                            "name": "_0x3b067a"
+                                        },
+                                        "init": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "LogicalExpression",
+                                                    "operator": "||",
+                                                    "left": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "_0x2c1e73"
+                                                        },
+                                                        "property": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "ThisExpression"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "dest",
+                                                                "raw": "'dest'"
+                                                            }
+                                                        }
+                                                    },
+                                                    "right": {
+                                                        "type": "ArrayExpression",
+                                                        "elements": []
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "slice",
+                                                    "raw": "'slice'"
+                                                }
+                                            },
+                                            "arguments": []
+                                        }
+                                    }
+                                ],
+                                "kind": "var"
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x3b067a"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "push",
+                                            "raw": "'push'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x1b7ab8"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_0x2c1e73"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "set",
+                                            "raw": "'set'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "ThisExpression"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "dest",
+                                                "raw": "'dest'"
+                                            }
+                                        },
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x3b067a"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "generator": false,
+                    "expression": false,
+                    "async": false
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}

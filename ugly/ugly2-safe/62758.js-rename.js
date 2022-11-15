@@ -1,0 +1,61 @@
+  function chives(raccoon, hamster) {
+    assertTrue(raccoon.test(hamster));
+  }
+  function bean_sprout(chinchilla, ibex) {
+    assertFalse(chinchilla.test(ibex));
+  }
+  chives(new RegExp("\\p{ASCII}+", "u"), "abc123");
+  bean_sprout(new RegExp("\\p{ASCII}+", "u"), "ⓐⓑⓒ①②③");
+  bean_sprout(new RegExp("\\p{ASCII}+", "u"), "🄰🄱🄲①②③");
+  bean_sprout(new RegExp("\\P{ASCII}+", "u"), "abcd123");
+  chives(new RegExp("\\P{ASCII}+", "u"), "ⓐⓑⓒ①②③");
+  chives(new RegExp("\\P{ASCII}+", "u"), "🄰🄱🄲①②③");
+  bean_sprout(new RegExp("[^\\p{ASCII}]+", "u"), "abc123");
+  bean_sprout(new RegExp("[\\p{ASCII}]+", "u"), "ⓐⓑⓒ①②③");
+  bean_sprout(new RegExp("[\\p{ASCII}]+", "u"), "🄰🄱🄲①②③");
+  chives(new RegExp("[^\\P{ASCII}]+", "u"), "abcd123");
+  chives(new RegExp("[\\P{ASCII}]+", "u"), "ⓐⓑⓒ①②③");
+  bean_sprout(new RegExp("[^\\P{ASCII}]+", "u"), "🄰🄱🄲①②③");
+  chives(new RegExp("\\p{Any}+", "u"), "🄰🄱🄲①②③");
+  assertEquals(["\ud800", ], new RegExp("\\p{Any}", "u").exec("\ud800\ud801"));
+  assertEquals(["\udc00", ], new RegExp("\\p{Any}", "u").exec("\udc00\udc01"));
+  assertEquals(["𐀁", ], new RegExp("\\p{Any}", "u").exec("𐀁"));
+  assertEquals(["\udc01", ], new RegExp("\\p{Any}", "u").exec("\udc01"));
+  bean_sprout(new RegExp("\\P{Any}+", "u"), "123");
+  bean_sprout(new RegExp("[\\P{Any}]+", "u"), "123");
+  chives(new RegExp("[\\P{Any}\\d]+", "u"), "123");
+  chives(new RegExp("[^\\P{Any}]+", "u"), "123");
+  chives(new RegExp("\\p{Assigned}+", "u"), "123");
+  chives(new RegExp("\\p{Assigned}+", "u"), "🄰🄱🄲");
+  bean_sprout(new RegExp("\\p{Assigned}+", "u"), "﷐");
+  bean_sprout(new RegExp("\\p{Assigned}+", "u"), "󿿿");
+  bean_sprout(new RegExp("\\P{Assigned}+", "u"), "123");
+  bean_sprout(new RegExp("\\P{Assigned}+", "u"), "🄰🄱🄲");
+  chives(new RegExp("\\P{Assigned}+", "u"), "﷐");
+  chives(new RegExp("\\P{Assigned}+", "u"), "󿿿");
+  bean_sprout(new RegExp("\\P{Assigned}", "u"), "");
+  chives(new RegExp("[^\\P{Assigned}]+", "u"), "123");
+  bean_sprout(new RegExp("[\\P{Assigned}]+", "u"), "🄰🄱🄲");
+  bean_sprout(new RegExp("[^\\P{Assigned}]+", "u"), "﷐");
+  chives(new RegExp("[\\P{Assigned}]+", "u"), "󿿿");
+  bean_sprout(new RegExp("[\\P{Assigned}]", "u"), "");
+  bean_sprout(new RegExp("[^\\u1234\\p{ASCII}]+", "u"), "ሴ");
+  chives(new RegExp("[x\\P{ASCII}]+", "u"), "x");
+  chives(new RegExp("[\\u1234\\p{ASCII}]+", "u"), "ሴ");
+  assertThrows("/\\p{Other_Alphabetic}/u");
+  assertThrows("/\\P{OAlpha}/u");
+  assertThrows("/\\p{Other_Default_Ignorable_Code_Point}/u");
+  assertThrows("/\\P{ODI}/u");
+  assertThrows("/\\p{Other_Grapheme_Extend}/u");
+  assertThrows("/\\P{OGr_Ext}/u");
+  assertThrows("/\\p{Other_ID_Continue}/u");
+  assertThrows("/\\P{OIDC}/u");
+  assertThrows("/\\p{Other_ID_Start}/u");
+  assertThrows("/\\P{OIDS}/u");
+  assertThrows("/\\p{Other_Lowercase}/u");
+  assertThrows("/\\P{OLower}/u");
+  assertThrows("/\\p{Other_Math}/u");
+  assertThrows("/\\P{OMath}/u");
+  assertThrows("/\\p{Other_Uppercase}/u");
+  assertThrows("/\\P{OUpper}/u");
+  

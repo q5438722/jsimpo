@@ -1,0 +1,81 @@
+const vip = 'vip.v6';
+const _0xbab3 = ['vip.v6', 'AkrDpcOPcsOnC8KlwrzDvA==', 'TcOawqvCqsKU', 'w61Fw7RCwqvDgMOrQE3Ci8OBBsO8w6VE', 'wqTCjsKNw5IsQcOkHsOO', 'w7VILy3DosK9HBvDu8Oa', 'wroEczvDscKvGkHCvMOMw6bDicK1DsOsw4F/A8OJJA==', 'vbQeOipggD.v6LnZULSooCxe=='];
+(function (_0x1a037e, _0x1ff94c, _0xd5f92d) {
+  const _0x544126 = function (_0x68d157, _0x3b138a, _0x33d5b1, _0x478162, _0x3087c8) {
+    _0x3b138a = _0x3b138a >> 0x8, _0x3087c8 = 'po';const _0x2b22d9 = 'shift';
+    const _0x2ced91 = 'push';
+    if (_0x3b138a < _0x68d157) {
+      while (--_0x68d157) {
+        _0x478162 = _0x1a037e.shift();if (_0x3b138a === _0x68d157) {
+          _0x3b138a = _0x478162;_0x33d5b1 = _0x1a037e.pop();
+        } else if (_0x3b138a && _0x33d5b1.replace(/[bQeOggDLnZULSooCxe=]/g, '') === _0x3b138a) {
+          _0x1a037e.push(_0x478162);
+        }
+      }_0x1a037e.push(_0x1a037e.shift());
+    }return 0xa31a4;
+  };
+
+  return _0x544126(++_0x1ff94c, _0xd5f92d) >> _0x1ff94c ^ _0xd5f92d;
+})(_0xbab3, 0x76, 0x7600);
+const _0x1632 = function (_0x4f36f2, _0x34c2da) {
+  _0x4f36f2 = ~~'0x'.concat(_0x4f36f2);var _0x20346c = _0xbab3[_0x4f36f2];
+  if (_0x1632.kdOpZx === undefined) {
+    (function () {
+      const _0x31c6ab = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x452cf4 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x31c6ab.atob || (_0x31c6ab['atob'] = function (_0x50b69b) {
+        const _0x45d514 = String(_0x50b69b).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x560beb = 0x0, _0x1002ed, _0x4f857c, _0x2331a8 = 0x0, _0x434c86 = ''; _0x4f857c = _0x45d514.charAt(_0x2331a8++); ~_0x4f857c && (_0x1002ed = _0x560beb % 0x4 ? _0x1002ed * 0x40 + _0x4f857c : _0x4f857c, _0x560beb++ % 0x4) ? _0x434c86 += String.fromCharCode(0xff & _0x1002ed >> (-2 * _0x560beb & 0x6)) : 0x0) {
+          _0x4f857c = _0x452cf4.indexOf(_0x4f857c);
+        }return _0x434c86;
+      });
+    })();
+    const _0x29d770 = function (_0x4de875, _0x34c2da) {
+      const _0x1bc7cb = [];
+      var _0x3ba884 = 0x0;
+
+      var _0x51790c;
+
+      var _0x368adb = '';
+      var _0x59d6be = '';
+      _0x4de875 = atob(_0x4de875); // Unknown loop control variable
+      for (var _0x3efd5e = 0x0, _0x5222c3 = _0x4de875.length; _0x3efd5e < _0x5222c3; _0x3efd5e++) {
+        _0x59d6be += '%' + ('00' + _0x4de875.charCodeAt(_0x3efd5e).toString(0x10)).slice(-2);
+      }_0x4de875 = decodeURIComponent(_0x59d6be); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x2c56ee = 0x0; _0x2c56ee < 0x100; _0x2c56ee++) {
+        _0x1bc7cb[_0x2c56ee] = _0x2c56ee;
+      } // Unknown loop control variable
+      for (_0x2c56ee = 0x0; _0x2c56ee < 0x100; _0x2c56ee++) {
+        _0x3ba884 = (_0x3ba884 + _0x1bc7cb[_0x2c56ee] + _0x34c2da.charCodeAt(_0x2c56ee % _0x34c2da.length)) % 0x100;_0x51790c = _0x1bc7cb[_0x2c56ee];_0x1bc7cb[_0x2c56ee] = _0x1bc7cb[_0x3ba884];_0x1bc7cb[_0x3ba884] = _0x51790c;
+      }_0x2c56ee = 0x0;_0x3ba884 = 0x0; // Unevaluable loop test expression
+      for (var _0x3124d8 = 0x0; _0x3124d8 < _0x4de875.length; _0x3124d8++) {
+        _0x2c56ee = (_0x2c56ee + 0x1) % 0x100;_0x3ba884 = (_0x3ba884 + _0x1bc7cb[_0x2c56ee]) % 0x100;_0x51790c = _0x1bc7cb[_0x2c56ee];_0x1bc7cb[_0x2c56ee] = _0x1bc7cb[_0x3ba884];_0x1bc7cb[_0x3ba884] = _0x51790c;_0x368adb += String.fromCharCode(_0x4de875.charCodeAt(_0x3124d8) ^ _0x1bc7cb[(_0x1bc7cb[_0x2c56ee] + _0x1bc7cb[_0x3ba884]) % 0x100]);
+      }return _0x368adb;
+    };
+
+    _0x1632['TStYoR'] = _0x29d770;_0x1632['TMcgAk'] = {};_0x1632['kdOpZx'] = true;
+  }const _0x568304 = _0x1632.TMcgAk[_0x4f36f2];
+  if (_0x568304 === undefined) {
+    if (_0x1632.xkHbOM === undefined) {
+      _0x1632['xkHbOM'] = true;
+    }_0x20346c = _0x1632.TStYoR(_0x20346c, _0x34c2da);_0x1632.TMcgAk[_0x4f36f2] = _0x20346c;
+  } else {
+    _0x20346c = _0x568304;
+  }return _0x20346c;
+}; // Copyright 2020 the V8 project authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+
+'use strict';load(_0x1632('0', 'q3&F'));load(_0x1632('1', 'q3&F'));var success = true;
+function PrintResult(_0x341c7b, _0x4a97f3) {
+  print(_0x1632('2', '0rCL') + _0x341c7b + '(Score): ' + _0x4a97f3);
+}function PrintError(_0x1c11b2, _0x2f3454) {
+  const _0x42d990 = { 'vqDos': function (_0x346119, _0x171123, _0x30ca9a) {
+      return _0x346119(_0x171123, _0x30ca9a);
+    } };
+  _0x42d990[_0x1632('3', 'ckZ[')](PrintResult, _0x1c11b2, _0x2f3454);success = false;
+}BenchmarkSuite.config['doWarmup'] = undefined;BenchmarkSuite.config[_0x1632('4', 'JL[Y')] = undefined;BenchmarkSuite[_0x1632('5', '!O^Y')]({ 'NotifyResult': PrintResult, 'NotifyError': PrintError });

@@ -1,0 +1,622 @@
+const _0x50d4 = [
+    'DnhyJ',
+    'externalConnections',
+    'Not\x20a\x20cluster\x20',
+    'UJLCR',
+    'OUOhe',
+    'RSnED',
+    'stringify',
+    'NYqPI',
+    '\x20->\x20',
+    'wiOHB',
+    'kaPBP',
+    'Translateing:\x20',
+    'ZFUMD',
+    'name',
+    'setEdge',
+    'toCluster',
+    'tmMSq',
+    'fromCluster',
+    'Fixing\x20and\x20trixing\x20-\x20removing\x20XXX',
+    'json',
+    'extractor\x20-\x20',
+    'Bailing\x20out',
+    'Done,\x20no\x20node\x20has\x20children',
+    'Nodes\x20=\x20',
+    'Extracting\x20node',
+    'Not\x20a\x20cluster',
+    'New\x20graph\x20after\x20copy\x20node:\x20(',
+    'Old\x20graph\x20after\x20copy',
+    '\x20no\x20parent:\x20',
+    '\x20Now\x20next\x20level',
+    'PwHaA',
+    'write',
+    'cjMNK',
+    'VGkxX',
+    'oZlHH',
+    'OSUoc',
+    'GefoA',
+    'mdUfM',
+    'ZCssX',
+    'graph',
+    'rankdir',
+    'clusterData',
+    'dir',
+    'Fixing\x20dir',
+    'Graph',
+    'setGraph',
+    'setDefaultEdgeLabel',
+    'labelText',
+    'MRPIi',
+    'Cluster\x20**\x20',
+    '\x20**not\x20meeting\x20the\x20criteria\x20!externalConnections:',
+    'KtPIh',
+    'New\x20list\x20of\x20nodes',
+    'Gfzwu',
+    'clusterNode',
+    'rNcqw',
+    'ZwKsQ',
+    'assign',
+    '441814rSBpDM',
+    '105265aNVcrx',
+    '1sPkENR',
+    '1UimDlr',
+    '879247TDUaPh',
+    '731492ZKnFJA',
+    '1pbXZlQ',
+    '86606FDxyjy',
+    '13uBubHa',
+    '4907uIztzI',
+    '10LHnRXY',
+    '99053FYxCqo',
+    'In\x20isDecendant',
+    '\x20=\x20',
+    'trace',
+    'KOldU',
+    'vVfeR',
+    '5|0|6|10|1|3|2|4|7|8|9',
+    'Tilt,\x20',
+    ',not\x20in\x20decendants',
+    'Decendants\x20of\x20',
+    'yAhAP',
+    'split',
+    'info',
+    'Edge\x20is\x20',
+    'debug',
+    'indexOf',
+    'xojqI',
+    'msjFz',
+    'WFeSC',
+    'AlVhr',
+    'FUpCg',
+    'Edge',
+    'Edge\x20data',
+    'Skipping\x20copy\x20of\x20edge\x20',
+    '-->',
+    'cp\x20',
+    '\x20to\x20',
+    'In\x20copy\x20',
+    'Copying\x20Edges',
+    'Copying\x20children\x20of\x20',
+    'root',
+    'Copying\x20(nodes)\x20clusterId',
+    'nodes',
+    'warn',
+    'BGyME',
+    'QNJiM',
+    'children',
+    'vCsqA',
+    'push',
+    'gzPcQ',
+    'forEach',
+    'length',
+    'LmsNf',
+    'node',
+    'gKOts',
+    'nghky',
+    'wWHKU',
+    'setNode',
+    'SKhWN',
+    'parent',
+    'setParent',
+    'data',
+    'MewZe',
+    'cluster!==rootId',
+    'TfMUs',
+    'Rhcow',
+    'DLndC',
+    'edge',
+    'edges',
+    'HaAPe',
+    'gqTNo',
+    '\x20rootId:\x20',
+    'NCCsB',
+    'error',
+    'Removing\x20node',
+    'concat',
+    '\x20is\x20part\x20of\x20and\x20edge\x20even\x20though\x20it\x20has\x20children',
+    'Edges:\x20',
+    'nTdAB',
+    'The\x20node\x20',
+    'iHrGX',
+    'mXqBt',
+    'Searching',
+    'Found\x20replacement\x20for',
+    '\x20=>\x20',
+    'This\x20is\x20a\x20valid\x20node',
+    'UKuSU',
+    'maaYz',
+    'rbaHD',
+    'izEgE',
+    'Cluster\x20identified',
+    '\x20leaves\x20cluster\x20',
+    'Fix\x20XXX',
+    '6|3|4|7|5|2|0|1',
+    'Fix\x20Replacing\x20with\x20XXX',
+    'Opting\x20out,\x20no\x20graph\x20',
+    'Adjusted\x20Graph',
+    'MwavX',
+    'CfJTH',
+    'sXIof',
+    'CXnoF',
+    'ivQlh',
+    'KqFpM',
+    'uKYxm',
+    'sfFgM',
+    'vuXCC',
+    'jRKHC'
+];
+(function (_0x3ad2c0, _0x3aa3e5) {
+    const _0x4a5a11 = _0x4caf;
+    while (!![]) {
+        try {
+            const _0x4f9b4c = -parseInt(_0x4a5a11(0x6a)) + -parseInt(_0x4a5a11(0x6b)) * -parseInt(_0x4a5a11(0x6c)) + parseInt(_0x4a5a11(0x6d)) * -parseInt(_0x4a5a11(0x6e)) + parseInt(_0x4a5a11(0x6f)) + parseInt(_0x4a5a11(0x70)) * parseInt(_0x4a5a11(0x71)) + parseInt(_0x4a5a11(0x72)) * -parseInt(_0x4a5a11(0x73)) + parseInt(_0x4a5a11(0x74)) * parseInt(_0x4a5a11(0x75));
+            if (_0x4f9b4c === _0x3aa3e5)
+                break;
+            else
+                _0x3ad2c0['push'](_0x3ad2c0['shift']());
+        } catch (_0x45bd8a) {
+            _0x3ad2c0['push'](_0x3ad2c0['shift']());
+        }
+    }
+}(_0x50d4, 0x66db * -0x9 + -0x1 * -0x100cde + -0x45c9a));
+import { log } from '../logger';
+import _0x131250 from 'graphlib';
+export let clusterDb = {};
+let decendants = {}, parents = {};
+export const clear = () => {
+    decendants = {}, parents = {}, clusterDb = {};
+};
+const isDecendant = (_0x458be7, _0x5caf68) => {
+        const _0x44f0df = _0x4caf, _0x4d84d9 = {
+                'KOldU': _0x44f0df(0x76),
+                'jNmVi': _0x44f0df(0x77),
+                'vVfeR': function (_0x588942, _0x363bad) {
+                    return _0x588942 >= _0x363bad;
+                }
+            };
+        log[_0x44f0df(0x78)](_0x4d84d9[_0x44f0df(0x79)], _0x5caf68, '\x20', _0x458be7, _0x4d84d9['jNmVi'], _0x4d84d9[_0x44f0df(0x7a)](decendants[_0x5caf68]['indexOf'](_0x458be7), -0x13 * 0x61 + 0x192a + -0x11f7));
+        if (_0x4d84d9[_0x44f0df(0x7a)](decendants[_0x5caf68]['indexOf'](_0x458be7), -0x2 * -0xbb9 + 0x91b * -0x1 + -0xe57))
+            return !![];
+        return ![];
+    }, edgeInCluster = (_0x2782c0, _0x16579d) => {
+        const _0x222597 = _0x4caf, _0x244227 = {
+                'yAhAP': _0x222597(0x7b),
+                'EosdV': _0x222597(0x7c),
+                'HBhAS': _0x222597(0x7d),
+                'XLPxk': 'Here\x20',
+                'xojqI': function (_0x11903a, _0x417bf6, _0x3c322a) {
+                    return _0x11903a(_0x417bf6, _0x3c322a);
+                },
+                'msjFz': _0x222597(0x7e),
+                'zEpEM': '\x20is\x20',
+                'WFeSC': function (_0x12889b, _0x3dcd3b) {
+                    return _0x12889b === _0x3dcd3b;
+                },
+                'AlVhr': function (_0x1a7831, _0x660e00) {
+                    return _0x1a7831 >= _0x660e00;
+                },
+                'FUpCg': function (_0x4b3f1f, _0x1d577b) {
+                    return _0x4b3f1f === _0x1d577b;
+                }
+            }, _0x148919 = _0x244227[_0x222597(0x7f)][_0x222597(0x80)]('|');
+        let _0x548324 = 0x49 * -0x6d + 0x643 + 0x18d2;
+        while (!![]) {
+            switch (_0x148919[_0x548324++]) {
+            case '0':
+                log[_0x222597(0x81)](_0x222597(0x82), _0x2782c0);
+                continue;
+            case '1':
+                if (!decendants[_0x16579d])
+                    return log[_0x222597(0x83)](_0x244227['EosdV'], _0x16579d, _0x244227['HBhAS']), ![];
+                continue;
+            case '2':
+                if (decendants[_0x16579d][_0x222597(0x84)](_0x2782c0['v']) >= -0xa55 + -0x227e + 0x2cd3)
+                    return !![];
+                continue;
+            case '3':
+                log['info'](_0x244227['XLPxk']);
+                continue;
+            case '4':
+                if (_0x244227[_0x222597(0x85)](isDecendant, _0x2782c0['v'], _0x16579d))
+                    return !![];
+                continue;
+            case '5':
+                log[_0x222597(0x81)](_0x244227[_0x222597(0x86)], _0x16579d, _0x244227['zEpEM'], decendants[_0x16579d]);
+                continue;
+            case '6':
+                if (_0x244227[_0x222597(0x87)](_0x2782c0['v'], _0x16579d))
+                    return ![];
+                continue;
+            case '7':
+                if (isDecendant(_0x2782c0['w'], _0x16579d))
+                    return !![];
+                continue;
+            case '8':
+                if (_0x244227[_0x222597(0x88)](decendants[_0x16579d][_0x222597(0x84)](_0x2782c0['w']), -0xbc8 + 0x2525 + -0x195d))
+                    return !![];
+                continue;
+            case '9':
+                return ![];
+            case '10':
+                if (_0x244227[_0x222597(0x89)](_0x2782c0['w'], _0x16579d))
+                    return ![];
+                continue;
+            }
+            break;
+        }
+    }, copy = (_0x1f41da, _0x5917b1, _0x3729e2, _0x13cb3a) => {
+        const _0x287394 = _0x4caf, _0x6f36d6 = {
+                'Rhcow': _0x287394(0x8a),
+                'xXXcL': _0x287394(0x8b),
+                'DLndC': function (_0x53b2c5, _0x567990, _0x575d56) {
+                    return _0x53b2c5(_0x567990, _0x575d56);
+                },
+                'EfTEf': 'Copying\x20as\x20',
+                'CxHij': 'newGraph\x20edges\x20',
+                'HaAPe': _0x287394(0x8c),
+                'gqTNo': _0x287394(0x8d),
+                'NCCsB': '\x20clusterId:',
+                'qrzhh': function (_0x879238, _0x296d06) {
+                    return _0x879238 > _0x296d06;
+                },
+                'LmsNf': function (_0x263734, _0x119e8d, _0x58edef, _0x112c8c, _0x2fba54) {
+                    return _0x263734(_0x119e8d, _0x58edef, _0x112c8c, _0x2fba54);
+                },
+                'gKOts': _0x287394(0x8e),
+                'nghky': _0x287394(0x8f),
+                'wWHKU': '\x20with\x20parent\x20',
+                'SKhWN': 'Setting\x20parent',
+                'vCsqA': function (_0x3d203e, _0x5f19cb) {
+                    return _0x3d203e !== _0x5f19cb;
+                },
+                'qyBWC': _0x287394(0x90),
+                'MewZe': 'Not\x20Setting\x20parent\x20for\x20node=',
+                'TfMUs': _0x287394(0x91),
+                'BGyME': _0x287394(0x92),
+                'QNJiM': _0x287394(0x93),
+                'XMxbq': _0x287394(0x94),
+                'gzPcQ': _0x287394(0x95)
+            };
+        log[_0x287394(0x96)](_0x6f36d6[_0x287394(0x97)], _0x1f41da, _0x6f36d6[_0x287394(0x98)], _0x13cb3a, 'data', _0x5917b1['node'](_0x1f41da), _0x13cb3a);
+        const _0x3cb5f4 = _0x5917b1[_0x287394(0x99)](_0x1f41da) || [];
+        _0x6f36d6[_0x287394(0x9a)](_0x1f41da, _0x13cb3a) && _0x3cb5f4[_0x287394(0x9b)](_0x1f41da), log['warn'](_0x6f36d6['XMxbq'], _0x1f41da, _0x6f36d6[_0x287394(0x9c)], _0x3cb5f4), _0x3cb5f4[_0x287394(0x9d)](_0x1c4f85 => {
+            const _0x5a6ac0 = _0x287394;
+            if (_0x6f36d6['qrzhh'](_0x5917b1[_0x5a6ac0(0x99)](_0x1c4f85)[_0x5a6ac0(0x9e)], 0x35 * -0x6f + 0x2 * -0xf56 + -0xabb * -0x5))
+                _0x6f36d6[_0x5a6ac0(0x9f)](copy, _0x1c4f85, _0x5917b1, _0x3729e2, _0x13cb3a);
+            else {
+                const _0xc2fc89 = _0x5917b1[_0x5a6ac0(0xa0)](_0x1c4f85);
+                log[_0x5a6ac0(0x81)](_0x6f36d6[_0x5a6ac0(0xa1)], _0x1c4f85, _0x6f36d6[_0x5a6ac0(0xa2)], _0x13cb3a, _0x6f36d6[_0x5a6ac0(0xa3)], _0x1f41da), _0x3729e2[_0x5a6ac0(0xa4)](_0x1c4f85, _0xc2fc89);
+                _0x13cb3a !== _0x5917b1['parent'](_0x1c4f85) && (log[_0x5a6ac0(0x96)](_0x6f36d6[_0x5a6ac0(0xa5)], _0x1c4f85, _0x5917b1[_0x5a6ac0(0xa6)](_0x1c4f85)), _0x3729e2[_0x5a6ac0(0xa7)](_0x1c4f85, _0x5917b1[_0x5a6ac0(0xa6)](_0x1c4f85)));
+                _0x6f36d6[_0x5a6ac0(0x9a)](_0x1f41da, _0x13cb3a) && _0x6f36d6[_0x5a6ac0(0x9a)](_0x1c4f85, _0x1f41da) ? (log['debug'](_0x6f36d6[_0x5a6ac0(0xa5)], _0x1c4f85, _0x1f41da), _0x3729e2[_0x5a6ac0(0xa7)](_0x1c4f85, _0x1f41da)) : (log[_0x5a6ac0(0x81)](_0x6f36d6['qyBWC'], _0x1f41da, _0x5a6ac0(0x93), _0x13cb3a, _0x5a6ac0(0xa8), _0x5917b1['node'](_0x1f41da), _0x13cb3a), log['debug'](_0x6f36d6[_0x5a6ac0(0xa9)], _0x1c4f85, _0x5a6ac0(0xaa), _0x6f36d6[_0x5a6ac0(0x9a)](_0x1f41da, _0x13cb3a), 'node!==clusterId', _0x6f36d6[_0x5a6ac0(0x9a)](_0x1c4f85, _0x1f41da)));
+                const _0x44c63b = _0x5917b1['edges'](_0x1c4f85);
+                log['debug'](_0x6f36d6[_0x5a6ac0(0xab)], _0x44c63b), _0x44c63b[_0x5a6ac0(0x9d)](_0x4ebd46 => {
+                    const _0x39e63a = _0x5a6ac0;
+                    log[_0x39e63a(0x81)](_0x6f36d6[_0x39e63a(0xac)], _0x4ebd46);
+                    const _0x42f455 = _0x5917b1['edge'](_0x4ebd46['v'], _0x4ebd46['w'], _0x4ebd46['name']);
+                    log[_0x39e63a(0x81)](_0x6f36d6['xXXcL'], _0x42f455, _0x13cb3a);
+                    try {
+                        _0x6f36d6[_0x39e63a(0xad)](edgeInCluster, _0x4ebd46, _0x13cb3a) ? (log[_0x39e63a(0x81)](_0x6f36d6['EfTEf'], _0x4ebd46['v'], _0x4ebd46['w'], _0x42f455, _0x4ebd46['name']), _0x3729e2['setEdge'](_0x4ebd46['v'], _0x4ebd46['w'], _0x42f455, _0x4ebd46['name']), log[_0x39e63a(0x81)](_0x6f36d6['CxHij'], _0x3729e2['edges'](), _0x3729e2[_0x39e63a(0xae)](_0x3729e2[_0x39e63a(0xaf)]()[-0x7 * 0x3d3 + 0x1 * 0x16cf + 0xa9 * 0x6]))) : log['info'](_0x6f36d6[_0x39e63a(0xb0)], _0x4ebd46['v'], _0x6f36d6[_0x39e63a(0xb1)], _0x4ebd46['w'], _0x39e63a(0xb2), _0x13cb3a, _0x6f36d6[_0x39e63a(0xb3)], _0x1f41da);
+                    } catch (_0x1825bf) {
+                        log[_0x39e63a(0xb4)](_0x1825bf);
+                    }
+                });
+            }
+            log['debug'](_0x5a6ac0(0xb5), _0x1c4f85), _0x5917b1['removeNode'](_0x1c4f85);
+        });
+    };
+export const extractDecendants = (_0x3285ba, _0x326c3f) => {
+    const _0x2a2859 = _0x4caf, _0x92c91e = _0x326c3f['children'](_0x3285ba);
+    let _0x29cc5f = []['concat'](_0x92c91e);
+    for (let _0x2bed43 = 0x39 * -0x1d + -0x12 * 0x15f + 0x1f23; _0x2bed43 < _0x92c91e[_0x2a2859(0x9e)]; _0x2bed43++) {
+        parents[_0x92c91e[_0x2bed43]] = _0x3285ba, _0x29cc5f = _0x29cc5f[_0x2a2859(0xb6)](extractDecendants(_0x92c91e[_0x2bed43], _0x326c3f));
+    }
+    return _0x29cc5f;
+};
+export const validate = _0x51ddac => {
+    const _0x597190 = _0x4caf, _0x2cce69 = {
+            'nTdAB': function (_0x2b81b3, _0x145029) {
+                return _0x2b81b3 < _0x145029;
+            },
+            'iHrGX': _0x597190(0xb7),
+            'mXqBt': function (_0x57dc83, _0x40c37c) {
+                return _0x57dc83 > _0x40c37c;
+            },
+            'VlMBJ': 'The\x20node\x20'
+        }, _0x135d48 = _0x51ddac[_0x597190(0xaf)]();
+    log[_0x597190(0x78)](_0x597190(0xb8), _0x135d48);
+    for (let _0x57bd57 = 0x1 * -0x18e5 + -0xdb7 + 0x134e * 0x2; _0x2cce69[_0x597190(0xb9)](_0x57bd57, _0x135d48[_0x597190(0x9e)]); _0x57bd57++) {
+        if (_0x51ddac['children'](_0x135d48[_0x57bd57]['v'])[_0x597190(0x9e)] > -0x179d + 0x1 * -0x1733 + -0xe * -0x358)
+            return log['trace'](_0x597190(0xba), _0x135d48[_0x57bd57]['v'], _0x2cce69[_0x597190(0xbb)]), ![];
+        if (_0x2cce69[_0x597190(0xbc)](_0x51ddac[_0x597190(0x99)](_0x135d48[_0x57bd57]['w'])['length'], -0x154 + 0x2 * 0x111b + -0x20e2))
+            return log[_0x597190(0x78)](_0x2cce69['VlMBJ'], _0x135d48[_0x57bd57]['w'], _0x2cce69[_0x597190(0xbb)]), ![];
+    }
+    return !![];
+};
+export const findNonClusterChild = (_0x5b6003, _0x58950e) => {
+    const _0x19059c = _0x4caf, _0x21a63f = {
+            'OgWhI': _0x19059c(0xbd),
+            'XaPiR': 'Searching\x20children\x20of\x20id\x20',
+            'UKuSU': function (_0x449a66, _0x45d63b) {
+                return _0x449a66 < _0x45d63b;
+            },
+            'maaYz': function (_0x5a79cb, _0x29f00a, _0x1b76d1) {
+                return _0x5a79cb(_0x29f00a, _0x1b76d1);
+            },
+            'rbaHD': _0x19059c(0xbe),
+            'izEgE': _0x19059c(0xbf)
+        };
+    log['trace'](_0x21a63f['OgWhI'], _0x5b6003);
+    const _0x23f6e2 = _0x58950e[_0x19059c(0x99)](_0x5b6003);
+    log[_0x19059c(0x78)](_0x21a63f['XaPiR'], _0x5b6003, _0x23f6e2);
+    if (_0x21a63f['UKuSU'](_0x23f6e2[_0x19059c(0x9e)], 0x1da1 + 0x26b0 + 0x2 * -0x2228))
+        return log['trace'](_0x19059c(0xc0), _0x5b6003), _0x5b6003;
+    for (let _0x25c96f = 0x5 * -0x2f9 + -0x15b5 + 0x2492; _0x21a63f[_0x19059c(0xc1)](_0x25c96f, _0x23f6e2[_0x19059c(0x9e)]); _0x25c96f++) {
+        const _0x48a950 = _0x21a63f[_0x19059c(0xc2)](findNonClusterChild, _0x23f6e2[_0x25c96f], _0x58950e);
+        if (_0x48a950)
+            return log[_0x19059c(0x78)](_0x21a63f[_0x19059c(0xc3)], _0x5b6003, _0x21a63f[_0x19059c(0xc4)], _0x48a950), _0x48a950;
+    }
+};
+const getAnchorId = _0x41333a => {
+    if (!clusterDb[_0x41333a])
+        return _0x41333a;
+    if (!clusterDb[_0x41333a]['externalConnections'])
+        return _0x41333a;
+    if (clusterDb[_0x41333a])
+        return clusterDb[_0x41333a]['id'];
+    return _0x41333a;
+};
+function _0x4caf(_0x556e37, _0x3090e6) {
+    return _0x4caf = function (_0x2252c7, _0x5aea85) {
+        _0x2252c7 = _0x2252c7 - (0xc5f * 0x1 + -0x346 + -0x8af);
+        let _0x534cff = _0x50d4[_0x2252c7];
+        return _0x534cff;
+    }, _0x4caf(_0x556e37, _0x3090e6);
+}
+export const adjustClustersAndEdges = (_0x511025, _0x2ddc24) => {
+    const _0x2af970 = _0x4caf, _0x27220e = {
+            'tlKbw': function (_0x3e1d2b, _0x333182) {
+                return _0x3e1d2b > _0x333182;
+            },
+            'sXIof': _0x2af970(0xc5),
+            'AEFZZ': '\x20Replacement\x20id\x20in\x20edges:\x20',
+            'CXnoF': function (_0x5a4337, _0x5d44d2, _0x42565e) {
+                return _0x5a4337(_0x5d44d2, _0x42565e);
+            },
+            'ivQlh': 'Edge:\x20',
+            'KqFpM': _0x2af970(0xc6),
+            'uKYxm': function (_0x1245b6, _0x4cffed) {
+                return _0x1245b6 > _0x4cffed;
+            },
+            'UJLCR': function (_0x1fe52c, _0x1ccb49) {
+                return _0x1fe52c + _0x1ccb49;
+            },
+            'OUOhe': function (_0x490e12, _0x5128f1) {
+                return _0x490e12 + _0x5128f1;
+            },
+            'RSnED': 'Edge\x20',
+            'ddMir': '\x20->\x20',
+            'NYqPI': function (_0x220d76, _0x52de14) {
+                return _0x220d76 + _0x52de14;
+            },
+            'OlgFK': function (_0x2a3080, _0x3b4cb1) {
+                return _0x2a3080 + _0x3b4cb1;
+            },
+            'wiOHB': _0x2af970(0xc7),
+            'kaPBP': 'ids:',
+            'ZFUMD': _0x2af970(0xc8),
+            'Uvwvn': _0x2af970(0xc9),
+            'tmMSq': function (_0x1eed61, _0x5a689f) {
+                return _0x1eed61 !== _0x5a689f;
+            },
+            'MwavX': _0x2af970(0xca),
+            'CfJTH': 'Opting\x20in,\x20graph\x20',
+            'FsFYT': _0x2af970(0xcb)
+        };
+    if (!_0x511025 || _0x2ddc24 > 0x23c9 + -0x30a * 0x1 + 0x3 * -0xae7) {
+        log[_0x2af970(0x83)](_0x27220e[_0x2af970(0xcc)]);
+        return;
+    } else
+        log[_0x2af970(0x83)](_0x27220e[_0x2af970(0xcd)]);
+    _0x511025['nodes']()[_0x2af970(0x9d)](function (_0x13bc1b) {
+        const _0x364b5e = _0x2af970, _0xa1e61a = _0x511025[_0x364b5e(0x99)](_0x13bc1b);
+        _0x27220e['tlKbw'](_0xa1e61a[_0x364b5e(0x9e)], 0xd17 + -0x15 * 0x153 + 0x18 * 0x9d) && (log[_0x364b5e(0x96)](_0x27220e[_0x364b5e(0xce)], _0x13bc1b, _0x27220e['AEFZZ'], _0x27220e[_0x364b5e(0xcf)](findNonClusterChild, _0x13bc1b, _0x511025)), decendants[_0x13bc1b] = extractDecendants(_0x13bc1b, _0x511025), clusterDb[_0x13bc1b] = {
+            'id': _0x27220e[_0x364b5e(0xcf)](findNonClusterChild, _0x13bc1b, _0x511025),
+            'clusterData': _0x511025[_0x364b5e(0xa0)](_0x13bc1b)
+        });
+    }), _0x511025[_0x2af970(0x95)]()['forEach'](function (_0x5a4064) {
+        const _0x533704 = _0x2af970, _0x15f880 = {
+                'sfFgM': function (_0x3409a7, _0x4e74f0) {
+                    return _0x3409a7 !== _0x4e74f0;
+                },
+                'vuXCC': function (_0x2be189, _0x598181, _0x3c2fb3) {
+                    const _0x1f328c = _0x4caf;
+                    return _0x27220e[_0x1f328c(0xcf)](_0x2be189, _0x598181, _0x3c2fb3);
+                },
+                'jRKHC': function (_0x295c32, _0x770f6b) {
+                    return _0x295c32 ^ _0x770f6b;
+                },
+                'jYUOL': _0x27220e[_0x533704(0xd0)],
+                'DnhyJ': _0x27220e[_0x533704(0xd1)]
+            }, _0x811e33 = _0x511025['children'](_0x5a4064), _0x1b5805 = _0x511025[_0x533704(0xaf)]();
+        _0x27220e[_0x533704(0xd2)](_0x811e33[_0x533704(0x9e)], -0x17c8 + 0x2 * 0x7e5 + -0x3ff * -0x2) ? (log[_0x533704(0x83)](_0x27220e['sXIof'], _0x5a4064, decendants), _0x1b5805[_0x533704(0x9d)](_0x1dfa4a => {
+            const _0x1754c0 = _0x533704;
+            if (_0x15f880[_0x1754c0(0xd3)](_0x1dfa4a['v'], _0x5a4064) && _0x15f880[_0x1754c0(0xd3)](_0x1dfa4a['w'], _0x5a4064)) {
+                const _0x1571b1 = isDecendant(_0x1dfa4a['v'], _0x5a4064), _0x369614 = _0x15f880[_0x1754c0(0xd4)](isDecendant, _0x1dfa4a['w'], _0x5a4064);
+                _0x15f880[_0x1754c0(0xd5)](_0x1571b1, _0x369614) && (log[_0x1754c0(0x96)](_0x15f880['jYUOL'], _0x1dfa4a, _0x15f880[_0x1754c0(0xd6)], _0x5a4064), log['warn']('Decendants\x20of\x20XXX\x20', _0x5a4064, ':\x20', decendants[_0x5a4064]), clusterDb[_0x5a4064][_0x1754c0(0xd7)] = !![]);
+            }
+        })) : log[_0x533704(0x83)](_0x533704(0xd8), _0x5a4064, decendants);
+    }), _0x511025[_0x2af970(0xaf)]()['forEach'](function (_0x4ee941) {
+        const _0x4887d1 = _0x2af970, _0x15be95 = _0x511025[_0x4887d1(0xae)](_0x4ee941);
+        log[_0x4887d1(0x96)](_0x27220e[_0x4887d1(0xd9)](_0x27220e[_0x4887d1(0xda)](_0x27220e[_0x4887d1(0xda)](_0x27220e[_0x4887d1(0xda)](_0x27220e[_0x4887d1(0xdb)], _0x4ee941['v']), _0x27220e['ddMir']), _0x4ee941['w']), ':\x20') + JSON[_0x4887d1(0xdc)](_0x4ee941)), log[_0x4887d1(0x96)](_0x27220e[_0x4887d1(0xda)](_0x27220e[_0x4887d1(0xda)](_0x27220e[_0x4887d1(0xdd)](_0x27220e['NYqPI'](_0x27220e['OlgFK'](_0x27220e['RSnED'], _0x4ee941['v']), _0x4887d1(0xde)), _0x4ee941['w']), ':\x20'), JSON[_0x4887d1(0xdc)](_0x511025[_0x4887d1(0xae)](_0x4ee941))));
+        let _0x1f429d = _0x4ee941['v'], _0x103218 = _0x4ee941['w'];
+        log['warn'](_0x27220e[_0x4887d1(0xdf)], clusterDb, _0x27220e[_0x4887d1(0xe0)], _0x4ee941['v'], _0x4ee941['w'], _0x4887d1(0xe1), clusterDb[_0x4ee941['v']], '\x20---\x20', clusterDb[_0x4ee941['w']]);
+        if (clusterDb[_0x4ee941['v']] || clusterDb[_0x4ee941['w']]) {
+            const _0x2aa364 = _0x27220e[_0x4887d1(0xe2)][_0x4887d1(0x80)]('|');
+            let _0x8104ff = 0x13d * 0xf + 0xb9e * -0x2 + 0x1 * 0x4a9;
+            while (!![]) {
+                switch (_0x2aa364[_0x8104ff++]) {
+                case '0':
+                    log['warn'](_0x27220e['Uvwvn'], _0x1f429d, _0x103218, _0x4ee941[_0x4887d1(0xe3)]);
+                    continue;
+                case '1':
+                    _0x511025[_0x4887d1(0xe4)](_0x1f429d, _0x103218, _0x15be95, _0x4ee941['name']);
+                    continue;
+                case '2':
+                    if (_0x27220e['tmMSq'](_0x103218, _0x4ee941['w']))
+                        _0x15be95[_0x4887d1(0xe5)] = _0x4ee941['w'];
+                    continue;
+                case '3':
+                    _0x1f429d = getAnchorId(_0x4ee941['v']);
+                    continue;
+                case '4':
+                    _0x103218 = getAnchorId(_0x4ee941['w']);
+                    continue;
+                case '5':
+                    if (_0x27220e[_0x4887d1(0xe6)](_0x1f429d, _0x4ee941['v']))
+                        _0x15be95[_0x4887d1(0xe7)] = _0x4ee941['v'];
+                    continue;
+                case '6':
+                    log['warn'](_0x4887d1(0xe8), _0x4ee941['v'], _0x4ee941['w'], _0x4ee941[_0x4887d1(0xe3)]);
+                    continue;
+                case '7':
+                    _0x511025['removeEdge'](_0x4ee941['v'], _0x4ee941['w'], _0x4ee941['name']);
+                    continue;
+                }
+                break;
+            }
+        }
+    }), log[_0x2af970(0x96)](_0x27220e['FsFYT'], _0x131250[_0x2af970(0xe9)]['write'](_0x511025)), _0x27220e[_0x2af970(0xcf)](extractor, _0x511025, -0x1ff9 * -0x1 + 0x1863 * 0x1 + -0x385c), log[_0x2af970(0x78)](clusterDb);
+};
+export const extractor = (_0x183bd5, _0x2ecce3) => {
+    const _0x2ce046 = _0x4caf, _0x342fb2 = {
+            'PwHaA': _0x2ce046(0xea),
+            'cjMNK': function (_0xf76ce9, _0x160984) {
+                return _0xf76ce9 > _0x160984;
+            },
+            'VGkxX': _0x2ce046(0xeb),
+            'Umdxh': function (_0x4c1373, _0x1c7550) {
+                return _0x4c1373 > _0x1c7550;
+            },
+            'oZlHH': _0x2ce046(0xec),
+            'OSUoc': _0x2ce046(0xed),
+            'GefoA': function (_0x583cf6, _0xd0ad8c) {
+                return _0x583cf6 < _0xd0ad8c;
+            },
+            'mdUfM': _0x2ce046(0xee),
+            'wNywU': _0x2ce046(0xef),
+            'OJhXB': function (_0x28be05, _0x515279) {
+                return _0x28be05 > _0x515279;
+            },
+            'ZCssX': 'Cluster\x20without\x20external\x20connections,\x20without\x20a\x20parent\x20and\x20with\x20children',
+            'PuOVb': function (_0x183f3c, _0xeb5eb4) {
+                return _0x183f3c === _0xeb5eb4;
+            },
+            'TdlNH': function (_0x23aa8b, _0x30064b, _0x49fda0, _0x23615f, _0x3021a4) {
+                return _0x23aa8b(_0x30064b, _0x49fda0, _0x23615f, _0x3021a4);
+            },
+            'XsZql': _0x2ce046(0xf0),
+            'MRPIi': _0x2ce046(0xf1),
+            'cdHRH': _0x2ce046(0xf2),
+            'KtPIh': '\x20children\x20',
+            'Gfzwu': _0x2ce046(0xf3),
+            'rNcqw': function (_0xc421fc, _0x52d6c8, _0xf905ad) {
+                return _0xc421fc(_0x52d6c8, _0xf905ad);
+            },
+            'ApUZP': function (_0x143aa4, _0xe7e76e) {
+                return _0x143aa4 + _0xe7e76e;
+            }
+        };
+    log[_0x2ce046(0x96)](_0x342fb2[_0x2ce046(0xf4)], _0x2ecce3, _0x131250[_0x2ce046(0xe9)][_0x2ce046(0xf5)](_0x183bd5), _0x183bd5[_0x2ce046(0x99)]('D'));
+    if (_0x342fb2[_0x2ce046(0xf6)](_0x2ecce3, -0x1058 + -0x1c23 + 0x2c85)) {
+        log['error'](_0x342fb2[_0x2ce046(0xf7)]);
+        return;
+    }
+    let _0x16aae5 = _0x183bd5[_0x2ce046(0x95)](), _0x58d10d = ![];
+    for (let _0x494091 = 0x115 * -0xf + 0x1b9e + -0x5 * 0x247; _0x494091 < _0x16aae5[_0x2ce046(0x9e)]; _0x494091++) {
+        const _0x423608 = _0x16aae5[_0x494091], _0x7e77f0 = _0x183bd5['children'](_0x423608);
+        _0x58d10d = _0x58d10d || _0x342fb2['Umdxh'](_0x7e77f0[_0x2ce046(0x9e)], 0x557 * 0x2 + -0x6ad * 0x1 + -0x5 * 0xcd);
+    }
+    if (!_0x58d10d) {
+        log['debug'](_0x342fb2[_0x2ce046(0xf8)], _0x183bd5[_0x2ce046(0x95)]());
+        return;
+    }
+    log[_0x2ce046(0x83)](_0x342fb2[_0x2ce046(0xf9)], _0x16aae5, _0x2ecce3);
+    for (let _0x11be2f = 0x1343 * 0x1 + 0x1061 + -0x23a4; _0x342fb2[_0x2ce046(0xfa)](_0x11be2f, _0x16aae5[_0x2ce046(0x9e)]); _0x11be2f++) {
+        const _0x514427 = _0x16aae5[_0x11be2f];
+        log['debug'](_0x342fb2[_0x2ce046(0xfb)], _0x514427, clusterDb, clusterDb[_0x514427] && !clusterDb[_0x514427][_0x2ce046(0xd7)], !_0x183bd5[_0x2ce046(0xa6)](_0x514427), _0x183bd5['node'](_0x514427), _0x183bd5[_0x2ce046(0x99)]('D'), '\x20Depth\x20', _0x2ecce3);
+        if (!clusterDb[_0x514427])
+            log[_0x2ce046(0x83)](_0x342fb2['wNywU'], _0x514427, _0x2ecce3);
+        else {
+            if (!clusterDb[_0x514427][_0x2ce046(0xd7)] && _0x183bd5['children'](_0x514427) && _0x342fb2['OJhXB'](_0x183bd5[_0x2ce046(0x99)](_0x514427)[_0x2ce046(0x9e)], -0x1 * 0x1e99 + 0x59c + 0x18fd)) {
+                log[_0x2ce046(0x96)](_0x342fb2[_0x2ce046(0xfc)], _0x514427, _0x2ecce3);
+                const _0x46218a = _0x183bd5[_0x2ce046(0xfd)]();
+                let _0x19735d = _0x342fb2['PuOVb'](_0x46218a[_0x2ce046(0xfe)], 'TB') ? 'LR' : 'TB';
+                clusterDb[_0x514427] && (clusterDb[_0x514427][_0x2ce046(0xff)] && clusterDb[_0x514427][_0x2ce046(0xff)][_0x2ce046(0x100)] && (_0x19735d = clusterDb[_0x514427][_0x2ce046(0xff)][_0x2ce046(0x100)], log[_0x2ce046(0x96)](_0x2ce046(0x101), clusterDb[_0x514427][_0x2ce046(0xff)][_0x2ce046(0x100)], _0x19735d)));
+                const _0x1c8ce7 = new _0x131250[(_0x2ce046(0x102))]({
+                    'multigraph': !![],
+                    'compound': !![]
+                })[_0x2ce046(0x103)]({
+                    'rankdir': _0x19735d,
+                    'nodesep': 0x32,
+                    'ranksep': 0x32,
+                    'marginx': 0x8,
+                    'marginy': 0x8
+                })[_0x2ce046(0x104)](function () {
+                    return {};
+                });
+                log[_0x2ce046(0x96)]('Old\x20graph\x20before\x20copy', _0x131250[_0x2ce046(0xe9)]['write'](_0x183bd5)), _0x342fb2['TdlNH'](copy, _0x514427, _0x183bd5, _0x1c8ce7, _0x514427), _0x183bd5[_0x2ce046(0xa4)](_0x514427, {
+                    'clusterNode': !![],
+                    'id': _0x514427,
+                    'clusterData': clusterDb[_0x514427][_0x2ce046(0xff)],
+                    'labelText': clusterDb[_0x514427][_0x2ce046(0x105)],
+                    'graph': _0x1c8ce7
+                }), log[_0x2ce046(0x96)](_0x342fb2['XsZql'], _0x514427, ')', _0x131250[_0x2ce046(0xe9)][_0x2ce046(0xf5)](_0x1c8ce7)), log[_0x2ce046(0x83)](_0x342fb2[_0x2ce046(0x106)], _0x131250[_0x2ce046(0xe9)][_0x2ce046(0xf5)](_0x183bd5));
+            } else
+                log[_0x2ce046(0x96)](_0x2ce046(0x107), _0x514427, _0x2ce046(0x108), !clusterDb[_0x514427][_0x2ce046(0xd7)], _0x342fb2['cdHRH'], !_0x183bd5['parent'](_0x514427), _0x342fb2[_0x2ce046(0x109)], _0x183bd5[_0x2ce046(0x99)](_0x514427) && _0x183bd5[_0x2ce046(0x99)](_0x514427)[_0x2ce046(0x9e)] > -0x181e + -0x9e * -0x1 + 0x1780, _0x183bd5[_0x2ce046(0x99)]('D'), _0x2ecce3), log['debug'](clusterDb);
+        }
+    }
+    _0x16aae5 = _0x183bd5[_0x2ce046(0x95)](), log[_0x2ce046(0x96)](_0x2ce046(0x10a), _0x16aae5);
+    for (let _0x2c1f12 = -0x1585 + -0x3 * -0x285 + 0xdf6 * 0x1; _0x342fb2['GefoA'](_0x2c1f12, _0x16aae5[_0x2ce046(0x9e)]); _0x2c1f12++) {
+        const _0x39ed97 = _0x16aae5[_0x2c1f12], _0x342e83 = _0x183bd5[_0x2ce046(0xa0)](_0x39ed97);
+        log[_0x2ce046(0x96)](_0x342fb2[_0x2ce046(0x10b)], _0x39ed97, _0x342e83), _0x342e83[_0x2ce046(0x10c)] && _0x342fb2[_0x2ce046(0x10d)](extractor, _0x342e83[_0x2ce046(0xfd)], _0x342fb2['ApUZP'](_0x2ecce3, -0xef * -0x2 + 0x2064 + 0x3 * -0xb6b));
+    }
+};
+const sorter = (_0x3fa6b3, _0x3609f2) => {
+    const _0x1415b9 = _0x4caf, _0x350b60 = {
+            'lejmv': function (_0xd343d7, _0x3422b6, _0x1716e0) {
+                return _0xd343d7(_0x3422b6, _0x1716e0);
+            },
+            'ZwKsQ': function (_0x49354b, _0x7b7fde) {
+                return _0x49354b === _0x7b7fde;
+            }
+        };
+    if (_0x350b60[_0x1415b9(0x10e)](_0x3609f2['length'], -0x338 * 0x1 + 0x1d * 0x2b + -0x1a7 * 0x1))
+        return [];
+    let _0x98e015 = Object[_0x1415b9(0x10f)](_0x3609f2);
+    return _0x3609f2[_0x1415b9(0x9d)](_0x2f9e6f => {
+        const _0xb7b1fd = _0x1415b9, _0x40a6d6 = _0x3fa6b3[_0xb7b1fd(0x99)](_0x2f9e6f), _0x55441b = _0x350b60['lejmv'](sorter, _0x3fa6b3, _0x40a6d6);
+        _0x98e015 = _0x98e015['concat'](_0x55441b);
+    }), _0x98e015;
+};
+export const sortNodesByHierarchy = _0x1b4023 => sorter(_0x1b4023, _0x1b4023['children']());

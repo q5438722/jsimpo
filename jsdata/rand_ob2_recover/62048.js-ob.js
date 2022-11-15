@@ -1,0 +1,2 @@
+var msg = _0x184ceb(197), obj = JSON[_0x184ceb(198)](msg), obj2 = JSON[_0x184ceb(198)](msg);
+assertEquals(JSON[_0x184ceb(199)](obj), JSON[_0x184ceb(199)](obj2)), assertEquals(JSON['stringify'](obj, null, 0), JSON[_0x184ceb(199)](obj2));

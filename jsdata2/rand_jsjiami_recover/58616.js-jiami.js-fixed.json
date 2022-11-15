@@ -1,0 +1,328 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "description"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "This tests that speculation recovery of destructive additions on unboxed integers works.",
+                        "raw": "'This tests that speculation recovery of destructive additions on unboxed integers works.'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "destructiveAddForBoxedInteger"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x430076"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x2559d1"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x124c0b"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "_0x56dec4"
+                                },
+                                "init": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "_0x430076"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "x",
+                                        "raw": "'x'"
+                                    }
+                                }
+                            }
+                        ],
+                        "kind": "var"
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "_0x506bda"
+                                },
+                                "init": {
+                                    "type": "BinaryExpression",
+                                    "operator": "+",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "_0x56dec4"
+                                    },
+                                    "right": {
+                                        "type": "Identifier",
+                                        "name": "_0x2559d1"
+                                    }
+                                }
+                            }
+                        ],
+                        "kind": "var"
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                                "type": "BinaryExpression",
+                                "operator": "+",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "_0x124c0b"
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "_0x506bda"
+                                }
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "_0x2559d1"
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "ForStatement",
+            "init": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "i"
+                        },
+                        "init": {
+                            "type": "Literal",
+                            "value": 0,
+                            "raw": "0x0"
+                        }
+                    }
+                ],
+                "kind": "var"
+            },
+            "test": {
+                "type": "BinaryExpression",
+                "operator": "<",
+                "left": {
+                    "type": "Identifier",
+                    "name": "i"
+                },
+                "right": {
+                    "type": "Literal",
+                    "value": 100,
+                    "raw": "0x64"
+                }
+            },
+            "update": {
+                "type": "UpdateExpression",
+                "operator": "++",
+                "argument": {
+                    "type": "Identifier",
+                    "name": "i"
+                },
+                "prefix": true
+            },
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "destructiveAddForBoxedInteger"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "ObjectExpression",
+                                    "properties": [
+                                        {
+                                            "type": "Property",
+                                            "key": {
+                                                "type": "Literal",
+                                                "value": "x",
+                                                "raw": "'x'"
+                                            },
+                                            "computed": false,
+                                            "value": {
+                                                "type": "Literal",
+                                                "value": 1,
+                                                "raw": "0x1"
+                                            },
+                                            "kind": "init",
+                                            "method": false,
+                                            "shorthand": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Literal",
+                                    "value": 2,
+                                    "raw": "0x2"
+                                },
+                                {
+                                    "type": "Literal",
+                                    "value": 3,
+                                    "raw": "0x3"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "shouldBe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "destructiveAddForBoxedInteger({x:1}, 2, 4)",
+                        "raw": "'destructiveAddForBoxedInteger({x:1}, 2, 4)'"
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "9",
+                        "raw": "'9'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "shouldBe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "destructiveAddForBoxedInteger({x:2147483647}, 2, 4)",
+                        "raw": "'destructiveAddForBoxedInteger({x:2147483647}, 2, 4)'"
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "2147483655",
+                        "raw": "'2147483655'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "shouldBe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "destructiveAddForBoxedInteger({x:2}, 2147483647, 4)",
+                        "raw": "'destructiveAddForBoxedInteger({x:2}, 2147483647, 4)'"
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "4294967300",
+                        "raw": "'4294967300'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "shouldBe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "destructiveAddForBoxedInteger({x:2147483647}, 2147483647, 4)",
+                        "raw": "'destructiveAddForBoxedInteger({x:2147483647}, 2147483647, 4)'"
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "6442450945",
+                        "raw": "'6442450945'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "shouldBe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "destructiveAddForBoxedInteger({x:1}, 2, 2147483647)",
+                        "raw": "'destructiveAddForBoxedInteger({x:1},\\x202,\\x202147483647)'"
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "2147483652",
+                        "raw": "'2147483652'"
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

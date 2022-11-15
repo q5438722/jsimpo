@@ -1,0 +1,1710 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "Literal",
+                "value": "use strict",
+                "raw": "'use strict'"
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "loadSubScript"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "chrome://juggler/content/content/Runtime.js",
+                        "raw": "'chrome://juggler/content/content/Runtime.js'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "loadSubScript"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "chrome://juggler/content/SimpleChannel.js",
+                        "raw": "'chrome://juggler/content/SimpleChannel.js'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "channel"
+                    },
+                    "init": {
+                        "type": "NewExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "SimpleChannel"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "worker::worker",
+                                "raw": "'worker::worker'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "eventListener"
+                    },
+                    "init": {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [
+                            {
+                                "type": "Identifier",
+                                "name": "_0x59c3aa"
+                            }
+                        ],
+                        "body": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "channel"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "_onMessage",
+                                    "raw": "'_onMessage'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "JSON"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "parse",
+                                            "raw": "'parse'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "_0x59c3aa"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "data",
+                                                "raw": "'data'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": true,
+                        "async": false
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "ThisExpression"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "addEventListener",
+                        "raw": "'addEventListener'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "message",
+                        "raw": "'message'"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "eventListener"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "channel"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "setTransport",
+                        "raw": "'setTransport'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "ObjectExpression",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "sendMessage",
+                                    "raw": "'sendMessage'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "ArrowFunctionExpression",
+                                    "id": null,
+                                    "params": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x55cf74"
+                                        }
+                                    ],
+                                    "body": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "postMessage"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "JSON"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "stringify",
+                                                        "raw": "'stringify'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x55cf74"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "generator": false,
+                                    "expression": true,
+                                    "async": false
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "dispose",
+                                    "raw": "'dispose'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "ArrowFunctionExpression",
+                                    "id": null,
+                                    "params": [],
+                                    "body": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "ThisExpression"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "removeEventListener",
+                                                "raw": "'removeEventListener'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": "message",
+                                                "raw": "'message'"
+                                            },
+                                            {
+                                                "type": "Identifier",
+                                                "name": "eventListener"
+                                            }
+                                        ]
+                                    },
+                                    "generator": false,
+                                    "expression": true,
+                                    "async": false
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "runtime"
+                    },
+                    "init": {
+                        "type": "NewExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "Runtime"
+                        },
+                        "arguments": [
+                            {
+                                "type": "UnaryExpression",
+                                "operator": "!",
+                                "argument": {
+                                    "type": "UnaryExpression",
+                                    "operator": "!",
+                                    "argument": {
+                                        "type": "ArrayExpression",
+                                        "elements": []
+                                    },
+                                    "prefix": true
+                                },
+                                "prefix": true
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "ArrowFunctionExpression",
+                    "id": null,
+                    "params": [],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "Identifier",
+                                            "name": "_0x4a8cff"
+                                        },
+                                        "init": {
+                                            "type": "NewExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "Debugger"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "global"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "kind": "const"
+                            },
+                            {
+                                "type": "IfStatement",
+                                "test": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "_0x4a8cff"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "findScripts",
+                                                "raw": "'findScripts'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ObjectExpression",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "global",
+                                                            "raw": "'global'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "Identifier",
+                                                            "name": "global"
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "length",
+                                        "raw": "'length'"
+                                    }
+                                },
+                                "consequent": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "IfStatement",
+                                            "test": {
+                                                "type": "BinaryExpression",
+                                                "operator": "===",
+                                                "left": {
+                                                    "type": "Literal",
+                                                    "value": "EXhoC",
+                                                    "raw": "'EXhoC'"
+                                                },
+                                                "right": {
+                                                    "type": "Literal",
+                                                    "value": "EXhoC",
+                                                    "raw": "'EXhoC'"
+                                                }
+                                            },
+                                            "consequent": {
+                                                "type": "BlockStatement",
+                                                "body": [
+                                                    {
+                                                        "type": "ExpressionStatement",
+                                                        "expression": {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "runtime"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "createExecutionContext",
+                                                                    "raw": "'createExecutionContext'"
+                                                                }
+                                                            },
+                                                            "arguments": [
+                                                                {
+                                                                    "type": "Literal",
+                                                                    "value": null,
+                                                                    "raw": "null"
+                                                                },
+                                                                {
+                                                                    "type": "Identifier",
+                                                                    "name": "global"
+                                                                },
+                                                                {
+                                                                    "type": "ObjectExpression",
+                                                                    "properties": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "alternate": {
+                                                "type": "BlockStatement",
+                                                "body": [
+                                                    {
+                                                        "type": "ExpressionStatement",
+                                                        "expression": {
+                                                            "type": "AssignmentExpression",
+                                                            "operator": "=",
+                                                            "left": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x4a8cff"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "onNewScript",
+                                                                    "raw": "'onNewScript'"
+                                                                }
+                                                            },
+                                                            "right": {
+                                                                "type": "Identifier",
+                                                                "name": "undefined"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "ExpressionStatement",
+                                                        "expression": {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x4a8cff"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "removeAllDebuggees",
+                                                                    "raw": "'removeAllDebuggees'"
+                                                                }
+                                                            },
+                                                            "arguments": []
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "ExpressionStatement",
+                                                        "expression": {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "runtime"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "createExecutionContext",
+                                                                    "raw": "'createExecutionContext'"
+                                                                }
+                                                            },
+                                                            "arguments": [
+                                                                {
+                                                                    "type": "Literal",
+                                                                    "value": null,
+                                                                    "raw": "null"
+                                                                },
+                                                                {
+                                                                    "type": "Identifier",
+                                                                    "name": "global"
+                                                                },
+                                                                {
+                                                                    "type": "ObjectExpression",
+                                                                    "properties": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "alternate": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                                "type": "AssignmentExpression",
+                                                "operator": "=",
+                                                "left": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "_0x4a8cff"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "onNewScript",
+                                                        "raw": "'onNewScript'"
+                                                    }
+                                                },
+                                                "right": {
+                                                    "type": "FunctionExpression",
+                                                    "id": null,
+                                                    "params": [
+                                                        {
+                                                            "type": "Identifier",
+                                                            "name": "_0x5f4599"
+                                                        }
+                                                    ],
+                                                    "body": {
+                                                        "type": "BlockStatement",
+                                                        "body": [
+                                                            {
+                                                                "type": "ExpressionStatement",
+                                                                "expression": {
+                                                                    "type": "AssignmentExpression",
+                                                                    "operator": "=",
+                                                                    "left": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "Identifier",
+                                                                            "name": "_0x4a8cff"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "onNewScript",
+                                                                            "raw": "'onNewScript'"
+                                                                        }
+                                                                    },
+                                                                    "right": {
+                                                                        "type": "Identifier",
+                                                                        "name": "undefined"
+                                                                    }
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "ExpressionStatement",
+                                                                "expression": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "Identifier",
+                                                                            "name": "_0x4a8cff"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "removeAllDebuggees",
+                                                                            "raw": "'removeAllDebuggees'"
+                                                                        }
+                                                                    },
+                                                                    "arguments": []
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "ExpressionStatement",
+                                                                "expression": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "Identifier",
+                                                                            "name": "runtime"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "createExecutionContext",
+                                                                            "raw": "'createExecutionContext'"
+                                                                        }
+                                                                    },
+                                                                    "arguments": [
+                                                                        {
+                                                                            "type": "Literal",
+                                                                            "value": null,
+                                                                            "raw": "null"
+                                                                        },
+                                                                        {
+                                                                            "type": "Identifier",
+                                                                            "name": "global"
+                                                                        },
+                                                                        {
+                                                                            "type": "ObjectExpression",
+                                                                            "properties": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    "generator": false,
+                                                    "expression": false,
+                                                    "async": false
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "generator": false,
+                    "expression": false,
+                    "async": false
+                },
+                "arguments": []
+            }
+        },
+        {
+            "type": "ClassDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "RuntimeAgent"
+            },
+            "superClass": null,
+            "body": {
+                "type": "ClassBody",
+                "body": [
+                    {
+                        "type": "MethodDefinition",
+                        "key": {
+                            "type": "Identifier",
+                            "name": "constructor"
+                        },
+                        "computed": false,
+                        "value": {
+                            "type": "FunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x3569f3"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x26b8ac"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "AssignmentExpression",
+                                            "operator": "=",
+                                            "left": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "ThisExpression"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "_runtime",
+                                                    "raw": "'_runtime'"
+                                                }
+                                            },
+                                            "right": {
+                                                "type": "Identifier",
+                                                "name": "_0x3569f3"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "AssignmentExpression",
+                                            "operator": "=",
+                                            "left": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "ThisExpression"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "_browserRuntime",
+                                                    "raw": "'_browserRuntime'"
+                                                }
+                                            },
+                                            "right": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "_0x26b8ac"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "connect",
+                                                        "raw": "'connect'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "runtime",
+                                                        "raw": "'runtime'"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "ForOfStatement",
+                                        "left": {
+                                            "type": "VariableDeclaration",
+                                            "declarations": [
+                                                {
+                                                    "type": "VariableDeclarator",
+                                                    "id": {
+                                                        "type": "Identifier",
+                                                        "name": "_0x334474"
+                                                    },
+                                                    "init": null
+                                                }
+                                            ],
+                                            "kind": "const"
+                                        },
+                                        "right": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "ThisExpression"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "_runtime",
+                                                        "raw": "'_runtime'"
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "executionContexts",
+                                                    "raw": "'executionContexts'"
+                                                }
+                                            },
+                                            "arguments": []
+                                        },
+                                        "body": {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "ThisExpression"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "_onExecutionContextCreated",
+                                                        "raw": "'_onExecutionContextCreated'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x334474"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "AssignmentExpression",
+                                            "operator": "=",
+                                            "left": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "ThisExpression"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "_eventListeners",
+                                                    "raw": "'_eventListeners'"
+                                                }
+                                            },
+                                            "right": {
+                                                "type": "ArrayExpression",
+                                                "elements": [
+                                                    {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "ThisExpression"
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "_runtime",
+                                                                        "raw": "'_runtime'"
+                                                                    }
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "events",
+                                                                    "raw": "'events'"
+                                                                }
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "onConsoleMessage",
+                                                                "raw": "'onConsoleMessage'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "ArrowFunctionExpression",
+                                                                "id": null,
+                                                                "params": [
+                                                                    {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x33441c"
+                                                                    }
+                                                                ],
+                                                                "body": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "MemberExpression",
+                                                                            "computed": true,
+                                                                            "object": {
+                                                                                "type": "ThisExpression"
+                                                                            },
+                                                                            "property": {
+                                                                                "type": "Literal",
+                                                                                "value": "_browserRuntime",
+                                                                                "raw": "'_browserRuntime'"
+                                                                            }
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "emit",
+                                                                            "raw": "'emit'"
+                                                                        }
+                                                                    },
+                                                                    "arguments": [
+                                                                        {
+                                                                            "type": "Literal",
+                                                                            "value": "runtimeConsole",
+                                                                            "raw": "'runtimeConsole'"
+                                                                        },
+                                                                        {
+                                                                            "type": "Identifier",
+                                                                            "name": "_0x33441c"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "generator": false,
+                                                                "expression": true,
+                                                                "async": false
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "ThisExpression"
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "_runtime",
+                                                                        "raw": "'_runtime'"
+                                                                    }
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "events",
+                                                                    "raw": "'events'"
+                                                                }
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "onExecutionContextCreated",
+                                                                "raw": "'onExecutionContextCreated'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "ThisExpression"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "_onExecutionContextCreated",
+                                                                            "raw": "'_onExecutionContextCreated'"
+                                                                        }
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "bind",
+                                                                        "raw": "'bind'"
+                                                                    }
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "ThisExpression"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "ThisExpression"
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "_runtime",
+                                                                        "raw": "'_runtime'"
+                                                                    }
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "events",
+                                                                    "raw": "'events'"
+                                                                }
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "onExecutionContextDestroyed",
+                                                                "raw": "'onExecutionContextDestroyed'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "ThisExpression"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "_onExecutionContextDestroyed",
+                                                                            "raw": "'_onExecutionContextDestroyed'"
+                                                                        }
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "bind",
+                                                                        "raw": "'bind'"
+                                                                    }
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "ThisExpression"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "_0x26b8ac"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "register",
+                                                                "raw": "'register'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "runtime",
+                                                                "raw": "'runtime'"
+                                                            },
+                                                            {
+                                                                "type": "ObjectExpression",
+                                                                "properties": [
+                                                                    {
+                                                                        "type": "Property",
+                                                                        "key": {
+                                                                            "type": "Literal",
+                                                                            "value": "evaluate",
+                                                                            "raw": "'evaluate'"
+                                                                        },
+                                                                        "computed": false,
+                                                                        "value": {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "MemberExpression",
+                                                                                "computed": true,
+                                                                                "object": {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "ThisExpression"
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "_runtime",
+                                                                                            "raw": "'_runtime'"
+                                                                                        }
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "evaluate",
+                                                                                        "raw": "'evaluate'"
+                                                                                    }
+                                                                                },
+                                                                                "property": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "bind",
+                                                                                    "raw": "'bind'"
+                                                                                }
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "ThisExpression"
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "_runtime",
+                                                                                        "raw": "'_runtime'"
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "kind": "init",
+                                                                        "method": false,
+                                                                        "shorthand": false
+                                                                    },
+                                                                    {
+                                                                        "type": "Property",
+                                                                        "key": {
+                                                                            "type": "Literal",
+                                                                            "value": "callFunction",
+                                                                            "raw": "'callFunction'"
+                                                                        },
+                                                                        "computed": false,
+                                                                        "value": {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "MemberExpression",
+                                                                                "computed": true,
+                                                                                "object": {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "ThisExpression"
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "_runtime",
+                                                                                            "raw": "'_runtime'"
+                                                                                        }
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "callFunction",
+                                                                                        "raw": "'callFunction'"
+                                                                                    }
+                                                                                },
+                                                                                "property": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "bind",
+                                                                                    "raw": "'bind'"
+                                                                                }
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "ThisExpression"
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "_runtime",
+                                                                                        "raw": "'_runtime'"
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "kind": "init",
+                                                                        "method": false,
+                                                                        "shorthand": false
+                                                                    },
+                                                                    {
+                                                                        "type": "Property",
+                                                                        "key": {
+                                                                            "type": "Literal",
+                                                                            "value": "getObjectProperties",
+                                                                            "raw": "'getObjectProperties'"
+                                                                        },
+                                                                        "computed": false,
+                                                                        "value": {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "MemberExpression",
+                                                                                "computed": true,
+                                                                                "object": {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "ThisExpression"
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "_runtime",
+                                                                                            "raw": "'_runtime'"
+                                                                                        }
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "getObjectProperties",
+                                                                                        "raw": "'getObjectProperties'"
+                                                                                    }
+                                                                                },
+                                                                                "property": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "bind",
+                                                                                    "raw": "'bind'"
+                                                                                }
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "ThisExpression"
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "_runtime",
+                                                                                        "raw": "'_runtime'"
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "kind": "init",
+                                                                        "method": false,
+                                                                        "shorthand": false
+                                                                    },
+                                                                    {
+                                                                        "type": "Property",
+                                                                        "key": {
+                                                                            "type": "Literal",
+                                                                            "value": "disposeObject",
+                                                                            "raw": "'disposeObject'"
+                                                                        },
+                                                                        "computed": false,
+                                                                        "value": {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "MemberExpression",
+                                                                                "computed": true,
+                                                                                "object": {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "MemberExpression",
+                                                                                        "computed": true,
+                                                                                        "object": {
+                                                                                            "type": "ThisExpression"
+                                                                                        },
+                                                                                        "property": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "_runtime",
+                                                                                            "raw": "'_runtime'"
+                                                                                        }
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "disposeObject",
+                                                                                        "raw": "'disposeObject'"
+                                                                                    }
+                                                                                },
+                                                                                "property": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "bind",
+                                                                                    "raw": "'bind'"
+                                                                                }
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "ThisExpression"
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "_runtime",
+                                                                                        "raw": "'_runtime'"
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        "kind": "init",
+                                                                        "method": false,
+                                                                        "shorthand": false
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        },
+                        "kind": "constructor",
+                        "static": false
+                    },
+                    {
+                        "type": "MethodDefinition",
+                        "key": {
+                            "type": "Literal",
+                            "value": "_onExecutionContextCreated",
+                            "raw": "'_onExecutionContextCreated'"
+                        },
+                        "computed": true,
+                        "value": {
+                            "type": "FunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x29e225"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "ThisExpression"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "_browserRuntime",
+                                                        "raw": "'_browserRuntime'"
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "emit",
+                                                    "raw": "'emit'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Literal",
+                                                    "value": "runtimeExecutionContextCreated",
+                                                    "raw": "'runtimeExecutionContextCreated'"
+                                                },
+                                                {
+                                                    "type": "ObjectExpression",
+                                                    "properties": [
+                                                        {
+                                                            "type": "Property",
+                                                            "key": {
+                                                                "type": "Literal",
+                                                                "value": "executionContextId",
+                                                                "raw": "'executionContextId'"
+                                                            },
+                                                            "computed": false,
+                                                            "value": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x29e225"
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "id",
+                                                                        "raw": "'id'"
+                                                                    }
+                                                                },
+                                                                "arguments": []
+                                                            },
+                                                            "kind": "init",
+                                                            "method": false,
+                                                            "shorthand": false
+                                                        },
+                                                        {
+                                                            "type": "Property",
+                                                            "key": {
+                                                                "type": "Literal",
+                                                                "value": "auxData",
+                                                                "raw": "'auxData'"
+                                                            },
+                                                            "computed": false,
+                                                            "value": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x29e225"
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "auxData",
+                                                                        "raw": "'auxData'"
+                                                                    }
+                                                                },
+                                                                "arguments": []
+                                                            },
+                                                            "kind": "init",
+                                                            "method": false,
+                                                            "shorthand": false
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        },
+                        "kind": "method",
+                        "static": false
+                    },
+                    {
+                        "type": "MethodDefinition",
+                        "key": {
+                            "type": "Literal",
+                            "value": "_onExecutionContextDestroyed",
+                            "raw": "'_onExecutionContextDestroyed'"
+                        },
+                        "computed": true,
+                        "value": {
+                            "type": "FunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x9db425"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "ThisExpression"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "_browserRuntime",
+                                                        "raw": "'_browserRuntime'"
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "emit",
+                                                    "raw": "'emit'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Literal",
+                                                    "value": "runtimeExecutionContextDestroyed",
+                                                    "raw": "'runtimeExecutionContextDestroyed'"
+                                                },
+                                                {
+                                                    "type": "ObjectExpression",
+                                                    "properties": [
+                                                        {
+                                                            "type": "Property",
+                                                            "key": {
+                                                                "type": "Literal",
+                                                                "value": "executionContextId",
+                                                                "raw": "'executionContextId'"
+                                                            },
+                                                            "computed": false,
+                                                            "value": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x9db425"
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "id",
+                                                                        "raw": "'id'"
+                                                                    }
+                                                                },
+                                                                "arguments": []
+                                                            },
+                                                            "kind": "init",
+                                                            "method": false,
+                                                            "shorthand": false
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        },
+                        "kind": "method",
+                        "static": false
+                    },
+                    {
+                        "type": "MethodDefinition",
+                        "key": {
+                            "type": "Literal",
+                            "value": "dispose",
+                            "raw": "'dispose'"
+                        },
+                        "computed": true,
+                        "value": {
+                            "type": "FunctionExpression",
+                            "id": null,
+                            "params": [],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ForOfStatement",
+                                        "left": {
+                                            "type": "VariableDeclaration",
+                                            "declarations": [
+                                                {
+                                                    "type": "VariableDeclarator",
+                                                    "id": {
+                                                        "type": "Identifier",
+                                                        "name": "_0xc0cd87"
+                                                    },
+                                                    "init": null
+                                                }
+                                            ],
+                                            "kind": "const"
+                                        },
+                                        "right": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "ThisExpression"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "_eventListeners",
+                                                "raw": "'_eventListeners'"
+                                            }
+                                        },
+                                        "body": {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "_0xc0cd87"
+                                                },
+                                                "arguments": []
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "AssignmentExpression",
+                                            "operator": "=",
+                                            "left": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "ThisExpression"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "_eventListeners",
+                                                    "raw": "'_eventListeners'"
+                                                }
+                                            },
+                                            "right": {
+                                                "type": "ArrayExpression",
+                                                "elements": []
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        },
+                        "kind": "method",
+                        "static": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "NewExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "RuntimeAgent"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "runtime"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "channel"
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

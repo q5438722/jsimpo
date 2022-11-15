@@ -1,0 +1,19 @@
+import path from "path";import { EOL } from "os";import { expect } from "chai";import jscodeshift from "jscodeshift";import transform from "./theme-spacing-api";import readFile from "../util/readFile";function trim(e) {
+  return e.replace(/^\s+|\s+$/, "").replace(/\r*\n/g, EOL);
+}function read(e) {
+  return readFile(path.join(__dirname, e));
+}describe("@material-ui/codemod", () => {
+  describe("v4.0.0", () => {
+    describe("theme-spacing", () => {
+      it("update theme spacing API", () => {
+        const e = transform({ source: read("./theme-spacing-api.test/actual.js") }, { jscodeshift: jscodeshift });
+        const t = read("./theme-spacing-api.test/expected.js");
+        expect(trim(e)).to.equal(trim(t), "The transformed version should be correct");
+      });it("update theme spacing API for destructured", () => {
+        const e = transform({ source: read("./theme-spacing-api.test/actual_destructured.js") }, { jscodeshift: jscodeshift });
+        const t = read("./theme-spacing-api.test/expected_destructured.js");
+        expect(trim(e)).to.equal(trim(t), "The transformed version should be correct");
+      });
+    });
+  });
+});

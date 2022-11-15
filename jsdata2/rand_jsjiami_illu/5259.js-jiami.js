@@ -1,0 +1,104 @@
+const vip = 'vip.v6';
+const _0x4841 = ['vip.v6', 'EAxjw7Rc', 'M8OIw5HDig==', 'wrrCuMKDSA==', 'LcOIw5XDgQ==', 'DCbCtcOo', 'w7/DtTs=', 'wozDq8K0', 'IsKoPA==', 'cHTCmQ==', 'AH9J', 'w6NNNcKa', 'KWx8w7w=', 'wrlERsK8', 'aTjClA==', 'AsOeHg==', 'awhY', 'M8KmPMKG', 'FsOFEA==', 'w64IQg==', 'w7BGRcKc', 'ccOfQ2TDmX13wr8dwrUEw4kbwoI=', 'w4vDm8OwUg==', 'S8OXGEPDrMORFMOEwq/DuhkWwpA=', 'wrUPW3HDksKDwo3CqWw2GzrDqg==', 'Ij5MwoA=', 'B3Ubwpg=', 'w7pfSnQ8', 'IWNx', 'wqF1YXE=', 'wpHDpQU3Xw==', 'b8KdwqV6', 'w50tOwI=', 'MMOcw4/Dhw==', 'OCbCpMOwwqU=', 'wpXDrEA7Pw==', 'wqTDmGMSIQ==', 'vispGzcQ.WXv6yKhDXADBMQs=='];
+(function (_0xd2517f, _0x336ab5, _0x33555f) {
+  const _0x543694 = function (_0x41d46f, _0x13dcd6, _0x4182cd, _0x5cbe4d, _0x3d4755) {
+    _0x13dcd6 = _0x13dcd6 >> 0x8, _0x3d4755 = 'po';const _0x489cf4 = 'shift';
+    const _0x6baac5 = 'push';
+    if (_0x13dcd6 < _0x41d46f) {
+      while (--_0x41d46f) {
+        _0x5cbe4d = _0xd2517f.shift();if (_0x13dcd6 === _0x41d46f) {
+          _0x13dcd6 = _0x5cbe4d;_0x4182cd = _0xd2517f.pop();
+        } else if (_0x13dcd6 && _0x4182cd.replace(/[sGzcQWXyKhDXADBMQs=]/g, '') === _0x13dcd6) {
+          _0xd2517f.push(_0x5cbe4d);
+        }
+      }_0xd2517f.push(_0xd2517f.shift());
+    }return 0xa3110;
+  };
+
+  return _0x543694(++_0x336ab5, _0x33555f) >> _0x336ab5 ^ _0x33555f;
+})(_0x4841, 0x131, 0x13100);
+const _0x263f = function (_0xf084d2, _0x3e8609) {
+  _0xf084d2 = ~~'0x'.concat(_0xf084d2);var _0x278305 = _0x4841[_0xf084d2];
+  if (_0x263f.aHpntv === undefined) {
+    (function () {
+      const _0x21f494 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x875602 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x21f494.atob || (_0x21f494['atob'] = function (_0x1e7840) {
+        const _0x436b20 = String(_0x1e7840).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0xddb307 = 0x0, _0x181a4a, _0x2f2be8, _0x5800b4 = 0x0, _0x5768ee = ''; _0x2f2be8 = _0x436b20.charAt(_0x5800b4++); ~_0x2f2be8 && (_0x181a4a = _0xddb307 % 0x4 ? _0x181a4a * 0x40 + _0x2f2be8 : _0x2f2be8, _0xddb307++ % 0x4) ? _0x5768ee += String.fromCharCode(0xff & _0x181a4a >> (-2 * _0xddb307 & 0x6)) : 0x0) {
+          _0x2f2be8 = _0x875602.indexOf(_0x2f2be8);
+        }return _0x5768ee;
+      });
+    })();
+    const _0x85e5ea = function (_0x3efab1, _0x3e8609) {
+      const _0x2e6856 = [];
+      var _0x464aad = 0x0;
+
+      var _0x132a9e;
+
+      var _0x5ee192 = '';
+      var _0x5ee283 = '';
+      _0x3efab1 = atob(_0x3efab1); // Unknown loop control variable
+      for (var _0xad17ab = 0x0, _0x59bd1b = _0x3efab1.length; _0xad17ab < _0x59bd1b; _0xad17ab++) {
+        _0x5ee283 += '%' + ('00' + _0x3efab1.charCodeAt(_0xad17ab).toString(0x10)).slice(-2);
+      }_0x3efab1 = decodeURIComponent(_0x5ee283); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0xee114e = 0x0; _0xee114e < 0x100; _0xee114e++) {
+        _0x2e6856[_0xee114e] = _0xee114e;
+      } // Unknown loop control variable
+      for (_0xee114e = 0x0; _0xee114e < 0x100; _0xee114e++) {
+        _0x464aad = (_0x464aad + _0x2e6856[_0xee114e] + _0x3e8609.charCodeAt(_0xee114e % _0x3e8609.length)) % 0x100;_0x132a9e = _0x2e6856[_0xee114e];_0x2e6856[_0xee114e] = _0x2e6856[_0x464aad];_0x2e6856[_0x464aad] = _0x132a9e;
+      }_0xee114e = 0x0;_0x464aad = 0x0; // Unevaluable loop test expression
+      for (var _0x3fd106 = 0x0; _0x3fd106 < _0x3efab1.length; _0x3fd106++) {
+        _0xee114e = (_0xee114e + 0x1) % 0x100;_0x464aad = (_0x464aad + _0x2e6856[_0xee114e]) % 0x100;_0x132a9e = _0x2e6856[_0xee114e];_0x2e6856[_0xee114e] = _0x2e6856[_0x464aad];_0x2e6856[_0x464aad] = _0x132a9e;_0x5ee192 += String.fromCharCode(_0x3efab1.charCodeAt(_0x3fd106) ^ _0x2e6856[(_0x2e6856[_0xee114e] + _0x2e6856[_0x464aad]) % 0x100]);
+      }return _0x5ee192;
+    };
+
+    _0x263f['wdGpXv'] = _0x85e5ea;_0x263f['wZXCuX'] = {};_0x263f['aHpntv'] = true;
+  }const _0x29b30e = _0x263f.wZXCuX[_0xf084d2];
+  if (_0x29b30e === undefined) {
+    if (_0x263f.JRSHFC === undefined) {
+      _0x263f['JRSHFC'] = true;
+    }_0x278305 = _0x263f.wdGpXv(_0x278305, _0x3e8609);_0x263f.wZXCuX[_0xf084d2] = _0x278305;
+  } else {
+    _0x278305 = _0x29b30e;
+  }return _0x278305;
+};
+
+const parser = require(_0x263f('0', '3t$q'));
+
+const test = require(_0x263f('1', 'G12B')).test;
+
+const fs = require('fs');
+
+const path = require(_0x263f('2', 'vxjo'));
+
+const files = { 'main': path.join(__dirname, _0x263f('3', 'THBq')), 'foo': path[_0x263f('4', '4bDK')](__dirname, _0x263f('5', 'xQpw')), 'bar': path.join(__dirname, _0x263f('6', 'G12B')) };
+const sources = Object.keys(files).reduce(function (_0xbfef49, _0x5a4452) {
+  const _0x2ea4de = { 'xZVcf': _0x263f('7', '0dx4') };
+  _0xbfef49[_0x5a4452] = fs.readFileSync(files[_0x5a4452], _0x2ea4de.xZVcf);return _0xbfef49;
+}, {});
+test(_0x263f('8', 'b2mv'), function (_0x4c6d27) {
+  const _0x4c8a0e = { 'SYWjl': function (_0x3a2b73, _0x11c3b7) {
+      return _0x3a2b73 !== _0x11c3b7;
+    }, 'bmtCr': _0x263f('9', '8!GF'), 'GFILY': 'SYLZh', 'IwfuX': function (_0x2b2997) {
+      return _0x2b2997();
+    }, 'YaxvF': _0x263f('a', 'au[%') };
+  _0x4c6d27[_0x263f('b', '38m3')](0x1);
+  const _0x516719 = _0x4c8a0e[_0x263f('c', 'Z#c3')](parser);
+
+  _0x516719.end({ 'file': files[_0x263f('d', 'duaQ')], 'entry': true });const _0x1d2d49 = [];
+  _0x516719.on(_0x263f('e', 'x1J9'), function (_0x21f861) {
+    _0x1d2d49[_0x263f('f', 'pIri')](_0x21f861);
+  });_0x516719.on(_0x4c8a0e[_0x263f('10', 'H]sJ')], function () {
+    if (_0x4c8a0e[_0x263f('11', 'nLmv')](_0x4c8a0e[_0x263f('12', 'nLmv')], _0x4c8a0e[_0x263f('13', '0dx4')])) {
+      _0x4c6d27[_0x263f('14', 'pIri')](_0x1d2d49[_0x263f('15', 'Koeh')](cmp), [{ 'id': files[_0x263f('16', 'pIri')], 'file': files[_0x263f('17', 'H]sJ')], 'source': sources.main, 'entry': true, 'deps': { './foo': files[_0x263f('18', 'IrOD')] } }, { 'id': files.foo, 'file': files.foo, 'source': sources[_0x263f('19', 'vu)q')], 'deps': { './bar': files.bar } }, { 'id': files[_0x263f('1a', 'xvdC')], 'file': files[_0x263f('1b', 'O9BX')], 'source': sources[_0x263f('1c', 'twiG')], 'deps': {} }].sort(cmp));
+    } else {
+      _0x4c6d27[_0x263f('1d', '7pX3')](_0x1d2d49[_0x263f('15', 'Koeh')](cmp), [{ 'id': files[_0x263f('1e', 'au[%')], 'file': files[_0x263f('1e', 'au[%')], 'source': sources[_0x263f('1f', 'Y0mZ')], 'entry': true, 'deps': { './foo': files.foo } }, { 'id': files[_0x263f('20', 'r4!u')], 'file': files[_0x263f('21', 'xQpw')], 'source': sources.foo, 'deps': { './bar': files.bar } }, { 'id': files[_0x263f('22', '[Hvn')], 'file': files.bar, 'source': sources.bar, 'deps': {} }][_0x263f('23', 'xvdC')](cmp));
+    }
+  });
+});function cmp(_0x44d57c, _0x2e0d5f) {
+  return _0x44d57c.id < _0x2e0d5f.id ? -1 : 0x1;
+}

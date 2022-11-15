@@ -1,0 +1,1 @@
+const{createElement,useLayoutEffect,useState}=React;const{createRoot}=ReactDOM;function App(){const[e,t]=useState(false);useLayoutEffect(()=>{t(true)},[]);return createElement("div",null,`isMounted? ${e}`)}const container=document.getElementById("container");const root=createRoot(container);root.render(createElement(App));

@@ -1,0 +1,834 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "gulp"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "gulp",
+                                "raw": "'gulp'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "browserify"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "browserify",
+                                "raw": "'browserify'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "streamify"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "gulp-streamify",
+                                "raw": "'gulp-streamify'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "rename"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "gulp-rename",
+                                "raw": "'gulp-rename'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "uglify"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "gulp-uglify",
+                                "raw": "'gulp-uglify'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "source"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "vinyl-source-stream",
+                                "raw": "'vinyl-source-stream'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "OUTPUT_PATH"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "../../build/browserify",
+                        "raw": "'../../build/browserify'"
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "TMP_FILE_PREFIX"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "../../build/browserify_",
+                        "raw": "'../../build/browserify_'"
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "gulp"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "task",
+                        "raw": "'task'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "build-bundle",
+                        "raw": "'build-bundle'"
+                    },
+                    {
+                        "type": "FunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "CallExpression",
+                                                                        "callee": {
+                                                                            "type": "MemberExpression",
+                                                                            "computed": true,
+                                                                            "object": {
+                                                                                "type": "CallExpression",
+                                                                                "callee": {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "CallExpression",
+                                                                                        "callee": {
+                                                                                            "type": "Identifier",
+                                                                                            "name": "browserify"
+                                                                                        },
+                                                                                        "arguments": [
+                                                                                            {
+                                                                                                "type": "Literal",
+                                                                                                "value": "main.js",
+                                                                                                "raw": "'main.js'"
+                                                                                            },
+                                                                                            {
+                                                                                                "type": "ObjectExpression",
+                                                                                                "properties": [
+                                                                                                    {
+                                                                                                        "type": "Property",
+                                                                                                        "key": {
+                                                                                                            "type": "Literal",
+                                                                                                            "value": "output",
+                                                                                                            "raw": "'output'"
+                                                                                                        },
+                                                                                                        "computed": false,
+                                                                                                        "value": {
+                                                                                                            "type": "BinaryExpression",
+                                                                                                            "operator": "+",
+                                                                                                            "left": {
+                                                                                                                "type": "Identifier",
+                                                                                                                "name": "TMP_FILE_PREFIX"
+                                                                                                            },
+                                                                                                            "right": {
+                                                                                                                "type": "Literal",
+                                                                                                                "value": "main.tmp",
+                                                                                                                "raw": "'main.tmp'"
+                                                                                                            }
+                                                                                                        },
+                                                                                                        "kind": "init",
+                                                                                                        "method": false,
+                                                                                                        "shorthand": false
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "ignore",
+                                                                                        "raw": "'ignore'"
+                                                                                    }
+                                                                                },
+                                                                                "arguments": [
+                                                                                    {
+                                                                                        "type": "CallExpression",
+                                                                                        "callee": {
+                                                                                            "type": "MemberExpression",
+                                                                                            "computed": true,
+                                                                                            "object": {
+                                                                                                "type": "Identifier",
+                                                                                                "name": "require"
+                                                                                            },
+                                                                                            "property": {
+                                                                                                "type": "Literal",
+                                                                                                "value": "resolve",
+                                                                                                "raw": "'resolve'"
+                                                                                            }
+                                                                                        },
+                                                                                        "arguments": [
+                                                                                            {
+                                                                                                "type": "Literal",
+                                                                                                "value": "pdfjs-dist/build/pdf.worker",
+                                                                                                "raw": "'pdfjs-dist/build/pdf.worker'"
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "property": {
+                                                                                "type": "Literal",
+                                                                                "value": "bundle",
+                                                                                "raw": "'bundle'"
+                                                                            }
+                                                                        },
+                                                                        "arguments": []
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "pipe",
+                                                                        "raw": "'pipe'"
+                                                                    }
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "CallExpression",
+                                                                        "callee": {
+                                                                            "type": "Identifier",
+                                                                            "name": "source"
+                                                                        },
+                                                                        "arguments": [
+                                                                            {
+                                                                                "type": "BinaryExpression",
+                                                                                "operator": "+",
+                                                                                "left": {
+                                                                                    "type": "Identifier",
+                                                                                    "name": "TMP_FILE_PREFIX"
+                                                                                },
+                                                                                "right": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "main.tmp",
+                                                                                    "raw": "'main.tmp'"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "pipe",
+                                                                "raw": "'pipe'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "Identifier",
+                                                                    "name": "streamify"
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "CallExpression",
+                                                                        "callee": {
+                                                                            "type": "Identifier",
+                                                                            "name": "uglify"
+                                                                        },
+                                                                        "arguments": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "pipe",
+                                                        "raw": "'pipe'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "Identifier",
+                                                            "name": "rename"
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "main.bundle.js",
+                                                                "raw": "'main.bundle.js'"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "pipe",
+                                                "raw": "'pipe'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "gulp"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "dest",
+                                                        "raw": "'dest'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "OUTPUT_PATH"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "gulp"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "task",
+                        "raw": "'task'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "build-worker",
+                        "raw": "'build-worker'"
+                    },
+                    {
+                        "type": "FunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "VariableDeclaration",
+                                    "declarations": [
+                                        {
+                                            "type": "VariableDeclarator",
+                                            "id": {
+                                                "type": "Identifier",
+                                                "name": "_0x63a5c7"
+                                            },
+                                            "init": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "require"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "resolve",
+                                                        "raw": "'resolve'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "pdfjs-dist/build/pdf.worker.entry",
+                                                        "raw": "'pdfjs-dist/build/pdf.worker.entry'"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "kind": "const"
+                                },
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "CallExpression",
+                                                                        "callee": {
+                                                                            "type": "MemberExpression",
+                                                                            "computed": true,
+                                                                            "object": {
+                                                                                "type": "CallExpression",
+                                                                                "callee": {
+                                                                                    "type": "Identifier",
+                                                                                    "name": "browserify"
+                                                                                },
+                                                                                "arguments": [
+                                                                                    {
+                                                                                        "type": "Identifier",
+                                                                                        "name": "_0x63a5c7"
+                                                                                    },
+                                                                                    {
+                                                                                        "type": "ObjectExpression",
+                                                                                        "properties": [
+                                                                                            {
+                                                                                                "type": "Property",
+                                                                                                "key": {
+                                                                                                    "type": "Literal",
+                                                                                                    "value": "output",
+                                                                                                    "raw": "'output'"
+                                                                                                },
+                                                                                                "computed": false,
+                                                                                                "value": {
+                                                                                                    "type": "BinaryExpression",
+                                                                                                    "operator": "+",
+                                                                                                    "left": {
+                                                                                                        "type": "Identifier",
+                                                                                                        "name": "TMP_FILE_PREFIX"
+                                                                                                    },
+                                                                                                    "right": {
+                                                                                                        "type": "Literal",
+                                                                                                        "value": "worker.tmp",
+                                                                                                        "raw": "'worker.tmp'"
+                                                                                                    }
+                                                                                                },
+                                                                                                "kind": "init",
+                                                                                                "method": false,
+                                                                                                "shorthand": false
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "property": {
+                                                                                "type": "Literal",
+                                                                                "value": "bundle",
+                                                                                "raw": "'bundle'"
+                                                                            }
+                                                                        },
+                                                                        "arguments": []
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "pipe",
+                                                                        "raw": "'pipe'"
+                                                                    }
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "CallExpression",
+                                                                        "callee": {
+                                                                            "type": "Identifier",
+                                                                            "name": "source"
+                                                                        },
+                                                                        "arguments": [
+                                                                            {
+                                                                                "type": "BinaryExpression",
+                                                                                "operator": "+",
+                                                                                "left": {
+                                                                                    "type": "Identifier",
+                                                                                    "name": "TMP_FILE_PREFIX"
+                                                                                },
+                                                                                "right": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "worker.tmp",
+                                                                                    "raw": "'worker.tmp'"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "pipe",
+                                                                "raw": "'pipe'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "Identifier",
+                                                                    "name": "streamify"
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "CallExpression",
+                                                                        "callee": {
+                                                                            "type": "Identifier",
+                                                                            "name": "uglify"
+                                                                        },
+                                                                        "arguments": [
+                                                                            {
+                                                                                "type": "ObjectExpression",
+                                                                                "properties": [
+                                                                                    {
+                                                                                        "type": "Property",
+                                                                                        "key": {
+                                                                                            "type": "Literal",
+                                                                                            "value": "compress",
+                                                                                            "raw": "'compress'"
+                                                                                        },
+                                                                                        "computed": false,
+                                                                                        "value": {
+                                                                                            "type": "ObjectExpression",
+                                                                                            "properties": [
+                                                                                                {
+                                                                                                    "type": "Property",
+                                                                                                    "key": {
+                                                                                                        "type": "Literal",
+                                                                                                        "value": "sequences",
+                                                                                                        "raw": "'sequences'"
+                                                                                                    },
+                                                                                                    "computed": false,
+                                                                                                    "value": {
+                                                                                                        "type": "UnaryExpression",
+                                                                                                        "operator": "!",
+                                                                                                        "argument": {
+                                                                                                            "type": "ArrayExpression",
+                                                                                                            "elements": []
+                                                                                                        },
+                                                                                                        "prefix": true
+                                                                                                    },
+                                                                                                    "kind": "init",
+                                                                                                    "method": false,
+                                                                                                    "shorthand": false
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        "kind": "init",
+                                                                                        "method": false,
+                                                                                        "shorthand": false
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "pipe",
+                                                        "raw": "'pipe'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "Identifier",
+                                                            "name": "rename"
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "pdf.worker.bundle.js",
+                                                                "raw": "'pdf.worker.bundle.js'"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "pipe",
+                                                "raw": "'pipe'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "gulp"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "dest",
+                                                        "raw": "'dest'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "OUTPUT_PATH"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "gulp"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "task",
+                        "raw": "'task'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "build",
+                        "raw": "'build'"
+                    },
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "gulp"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "series",
+                                "raw": "'series'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "build-bundle",
+                                "raw": "'build-bundle'"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": "build-worker",
+                                "raw": "'build-worker'"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

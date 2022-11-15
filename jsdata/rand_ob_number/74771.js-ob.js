@@ -1,0 +1,17 @@
+import _0x46ab6b from './is-object-empty';
+import _0x582513 from './has-own-prop';
+import _0x357f8d from './is-object';
+export default function isCalendarSpec(_0x241a7e) {
+    var _0x2c5f8f = _0x357f8d(_0x241a7e) && !_0x46ab6b(_0x241a7e), _0x3ad3c5 = ![], _0x33e944 = [
+            'sameDay',
+            'nextDay',
+            'lastDay',
+            'nextWeek',
+            'lastWeek',
+            'sameElse'
+        ], _0x1d3c77, _0x2213dd;
+    for (_0x1d3c77 = 0x16cd + 0x30e + -0x19db * 0x1; _0x1d3c77 < _0x33e944['length']; _0x1d3c77 += -0x2 * -0x520 + 0x86d * -0x3 + 0x784 * 0x2) {
+        _0x2213dd = _0x33e944[_0x1d3c77], _0x3ad3c5 = _0x3ad3c5 || _0x582513(_0x241a7e, _0x2213dd);
+    }
+    return _0x2c5f8f && _0x3ad3c5;
+}

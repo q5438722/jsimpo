@@ -1,0 +1,78 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "s"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "('')x\nx\uf670",
+                        "raw": "'('')x\nx\uf670'"
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertEquals"
+                },
+                "arguments": [
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "s"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "match",
+                                "raw": "'match'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": {},
+                                "raw": "/\\((').*\\1\\)/i",
+                                "regex": {
+                                    "pattern": "\\((').*\\1\\)",
+                                    "flags": "i"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ArrayExpression",
+                        "elements": [
+                            {
+                                "type": "Literal",
+                                "value": "('')",
+                                "raw": "'('')'"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": "'",
+                                "raw": "'\\x27'"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

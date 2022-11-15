@@ -1,0 +1,8 @@
+  var raccoon; // obj
+  var hamster; // obj2
+  
+  raccoon = JSON.parse('{"result":{"profile":{"head":{"functionName":"(root)","url":"","lineNumber":0,"totalTime":495.7243772462511,"selfTime":0,"numberOfCalls":0,"visible":true,"callUID":2771605942,"children":[{"functionName":"(program)","url":"","lineNumber":0,"totalTime":495.7243772462511,"selfTime":495.7243772462511,"numberOfCalls":0,"visible":true,"callUID":1902715303,"children":[]}]},"bottomUpHead":{"functionName":"(root)","url":"","lineNumber":0,"totalTime":495.7243772462511,"selfTime":0,"numberOfCalls":0,"visible":true,"callUID":2771605942,"children":[{"functionName":"(program)","url":"","lineNumber":0,"totalTime":495.7243772462511,"selfTime":495.7243772462511,"numberOfCalls":0,"visible":true,"callUID":1902715303,"children":[]}]}}},"id":41}');
+  hamster = JSON.parse('{"result":{"profile":{"head":{"functionName":"(root)","url":"","lineNumber":0,"totalTime":495.7243772462511,"selfTime":0,"numberOfCalls":0,"visible":true,"callUID":2771605942,"children":[{"functionName":"(program)","url":"","lineNumber":0,"totalTime":495.7243772462511,"selfTime":495.7243772462511,"numberOfCalls":0,"visible":true,"callUID":1902715303,"children":[]}]},"bottomUpHead":{"functionName":"(root)","url":"","lineNumber":0,"totalTime":495.7243772462511,"selfTime":0,"numberOfCalls":0,"visible":true,"callUID":2771605942,"children":[{"functionName":"(program)","url":"","lineNumber":0,"totalTime":495.7243772462511,"selfTime":495.7243772462511,"numberOfCalls":0,"visible":true,"callUID":1902715303,"children":[]}]}}},"id":41}');
+  assertEquals(JSON.stringify(raccoon), JSON.stringify(hamster));
+  assertEquals(JSON.stringify(raccoon, null, 0), JSON.stringify(hamster));
+  

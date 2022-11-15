@@ -1,0 +1,18 @@
+function _0x2509(_0x382077, _0x562df2) {
+    return _0x2509 = function (_0x40fe0b, _0x2509ef) {
+        _0x40fe0b = _0x40fe0b - 388;
+        var _0x290e10 = _0x40fe[_0x40fe0b];
+        return _0x290e10;
+    }, _0x2509(_0x382077, _0x562df2);
+}
+var GetTarget = function (_0x501173) {
+    var _0x55e07a = _0x2509, _0x208d8a;
+    if (_0x501173 !== '') {
+        if (typeof _0x501173 === _0x55e07a(398))
+            _0x208d8a = document[_0x55e07a(399)](_0x501173);
+        else
+            _0x501173 && _0x501173[_0x55e07a(400)] === 1 && (_0x208d8a = _0x501173);
+    }
+    return !_0x208d8a && (_0x208d8a = document[_0x55e07a(401)]), _0x208d8a;
+};
+module[_0x154580(402)] = GetTarget;

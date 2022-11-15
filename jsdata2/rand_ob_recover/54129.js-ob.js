@@ -1,0 +1,5 @@
+const common = require(_0x1d4f01(448)), fixtures = require(_0x1d4f01(449)), tmpdir = require('../common/tmpdir'), assert = require('assert'), {join} = require(_0x1d4f01(450)), childProcess = require(_0x1d4f01(451)), fs = require('fs'), stdoutScript = fixtures['path'](_0x1d4f01(452)), tmpFile = join(tmpdir['path'], _0x1d4f01(453)), cmd = '"' + process['argv'][-3215 * -1 + 9228 + -12443 * 1] + _0x1d4f01(454) + stdoutScript + _0x1d4f01(455) + tmpFile + '"', string = 'abc\nümlaut.\nsomething else\n' + _0x1d4f01(456) + _0x1d4f01(457) + _0x1d4f01(458) + _0x1d4f01(459) + _0x1d4f01(460) + _0x1d4f01(461) + _0x1d4f01(462) + '采用封建制和郡县制并存的制度\uFF0C' + _0x1d4f01(463) + '有效的改善了岭南地区落后的政治\u3001##济现状\u3002\n';
+tmpdir[_0x1d4f01(464)](), console['log'](cmd + '\n\n'), fs[_0x1d4f01(465)](tmpFile, string), childProcess[_0x1d4f01(466)](cmd, common[_0x1d4f01(467)](function (_0x5841a4, _0x35e6fd, _0x3f938e) {
+    const _0x495102 = _0x1d4f01;
+    fs['unlinkSync'](tmpFile), assert[_0x495102(468)](_0x5841a4), assert[_0x495102(469)](_0x35e6fd, _0x495102(470) + string), assert['strictEqual'](_0x3f938e, '');
+}));

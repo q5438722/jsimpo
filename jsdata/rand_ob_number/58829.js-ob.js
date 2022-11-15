@@ -1,0 +1,12 @@
+let getCount = 0x1bd0 + 0x1641 * 0x1 + -0x3211;
+new Intl['ListFormat'](['en-US'], {
+    get 'localeMatcher'() {
+        assertEquals(-0x1 * 0x23bb + 0xccb * -0x1 + 0x1 * 0x3086, getCount++);
+    },
+    get 'type'() {
+        assertEquals(0x1f5c + -0x8b8 + -0x131 * 0x13, getCount++);
+    },
+    get 'style'() {
+        assertEquals(0x2280 + -0x1 * -0x178a + -0x3a08, getCount++);
+    }
+}), assertEquals(0x707 * 0x1 + -0x1255 + -0xb51 * -0x1, getCount);

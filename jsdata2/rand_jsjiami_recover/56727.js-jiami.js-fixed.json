@@ -1,0 +1,1165 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "Literal",
+                "value": "use strict",
+                "raw": "'use strict'"
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "common"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../common",
+                                "raw": "'../common'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "assert"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "assert",
+                                "raw": "'assert'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "IfStatement",
+            "test": {
+                "type": "BinaryExpression",
+                "operator": "!==",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "process"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "argv",
+                            "raw": "'argv'"
+                        }
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": 2,
+                        "raw": "0x2"
+                    }
+                },
+                "right": {
+                    "type": "Literal",
+                    "value": "child",
+                    "raw": "'child'"
+                }
+            },
+            "consequent": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "spawn"
+                                },
+                                "init": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "require"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": "child_process",
+                                                "raw": "'child_process'"
+                                            }
+                                        ]
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "spawn",
+                                        "raw": "'spawn'"
+                                    }
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "child"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "spawn"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "process"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "execPath",
+                                                "raw": "'execPath'"
+                                            }
+                                        },
+                                        {
+                                            "type": "ArrayExpression",
+                                            "elements": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "__filename"
+                                                },
+                                                {
+                                                    "type": "Literal",
+                                                    "value": "child",
+                                                    "raw": "'child'"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "ObjectExpression",
+                                            "properties": [
+                                                {
+                                                    "type": "Property",
+                                                    "key": {
+                                                        "type": "Literal",
+                                                        "value": "stdio",
+                                                        "raw": "'stdio'"
+                                                    },
+                                                    "computed": false,
+                                                    "value": {
+                                                        "type": "Literal",
+                                                        "value": "pipe",
+                                                        "raw": "'pipe'"
+                                                    },
+                                                    "kind": "init",
+                                                    "method": false,
+                                                    "shorthand": false
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "timer"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "setTimeout"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "FunctionExpression",
+                                            "id": null,
+                                            "params": [],
+                                            "body": {
+                                                "type": "BlockStatement",
+                                                "body": [
+                                                    {
+                                                        "type": "ThrowStatement",
+                                                        "argument": {
+                                                            "type": "NewExpression",
+                                                            "callee": {
+                                                                "type": "Identifier",
+                                                                "name": "Error"
+                                                            },
+                                                            "arguments": [
+                                                                {
+                                                                    "type": "Literal",
+                                                                    "value": "child is hung",
+                                                                    "raw": "'child is hung'"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "generator": false,
+                                            "expression": false,
+                                            "async": false
+                                        },
+                                        {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "common"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "platformTimeout",
+                                                    "raw": "'platformTimeout'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Literal",
+                                                    "value": 3000,
+                                                    "raw": "0xbb8"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "child"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "on",
+                                    "raw": "'on'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": "exit",
+                                    "raw": "'exit'"
+                                },
+                                {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "common"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "mustCall",
+                                            "raw": "'mustCall'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "FunctionExpression",
+                                            "id": null,
+                                            "params": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x3c8504"
+                                                }
+                                            ],
+                                            "body": {
+                                                "type": "BlockStatement",
+                                                "body": [
+                                                    {
+                                                        "type": "ExpressionStatement",
+                                                        "expression": {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "assert"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "strictEqual",
+                                                                    "raw": "'strictEqual'"
+                                                                }
+                                                            },
+                                                            "arguments": [
+                                                                {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x3c8504"
+                                                                },
+                                                                {
+                                                                    "type": "Literal",
+                                                                    "value": 0,
+                                                                    "raw": "0x0"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "ExpressionStatement",
+                                                        "expression": {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "Identifier",
+                                                                "name": "clearTimeout"
+                                                            },
+                                                            "arguments": [
+                                                                {
+                                                                    "type": "Identifier",
+                                                                    "name": "timer"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "generator": false,
+                                            "expression": false,
+                                            "async": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "alternate": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "domain"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "require"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "domain",
+                                            "raw": "'domain'"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "d"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "domain"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "create",
+                                            "raw": "'create'"
+                                        }
+                                    },
+                                    "arguments": []
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "d"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "on",
+                                    "raw": "'on'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": "error",
+                                    "raw": "'error'"
+                                },
+                                {
+                                    "type": "FunctionExpression",
+                                    "id": null,
+                                    "params": [],
+                                    "body": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                            {
+                                                "type": "VariableDeclaration",
+                                                "declarations": [
+                                                    {
+                                                        "type": "VariableDeclarator",
+                                                        "id": {
+                                                            "type": "Identifier",
+                                                            "name": "_0x49f723"
+                                                        },
+                                                        "init": {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Literal",
+                                                                    "value": "3|2|5|0|4|1",
+                                                                    "raw": "'3|2|5|0|4|1'"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "split",
+                                                                    "raw": "'split'"
+                                                                }
+                                                            },
+                                                            "arguments": [
+                                                                {
+                                                                    "type": "Literal",
+                                                                    "value": "|",
+                                                                    "raw": "'|'"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "VariableDeclarator",
+                                                        "id": {
+                                                            "type": "Identifier",
+                                                            "name": "_0x3fbde0"
+                                                        },
+                                                        "init": {
+                                                            "type": "Literal",
+                                                            "value": 0,
+                                                            "raw": "0x0"
+                                                        }
+                                                    }
+                                                ],
+                                                "kind": "var"
+                                            },
+                                            {
+                                                "type": "WhileStatement",
+                                                "test": {
+                                                    "type": "UnaryExpression",
+                                                    "operator": "!",
+                                                    "argument": {
+                                                        "type": "UnaryExpression",
+                                                        "operator": "!",
+                                                        "argument": {
+                                                            "type": "ArrayExpression",
+                                                            "elements": []
+                                                        },
+                                                        "prefix": true
+                                                    },
+                                                    "prefix": true
+                                                },
+                                                "body": {
+                                                    "type": "BlockStatement",
+                                                    "body": [
+                                                        {
+                                                            "type": "SwitchStatement",
+                                                            "discriminant": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x49f723"
+                                                                },
+                                                                "property": {
+                                                                    "type": "UpdateExpression",
+                                                                    "operator": "++",
+                                                                    "argument": {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x3fbde0"
+                                                                    },
+                                                                    "prefix": false
+                                                                }
+                                                            },
+                                                            "cases": [
+                                                                {
+                                                                    "type": "SwitchCase",
+                                                                    "test": {
+                                                                        "type": "Literal",
+                                                                        "value": "0",
+                                                                        "raw": "'0'"
+                                                                    },
+                                                                    "consequent": [
+                                                                        {
+                                                                            "type": "ExpressionStatement",
+                                                                            "expression": {
+                                                                                "type": "CallExpression",
+                                                                                "callee": {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "Identifier",
+                                                                                        "name": "console"
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "log",
+                                                                                        "raw": "'log'"
+                                                                                    }
+                                                                                },
+                                                                                "arguments": [
+                                                                                    {
+                                                                                        "type": "Literal",
+                                                                                        "value": "d",
+                                                                                        "raw": "'d'"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "type": "ContinueStatement",
+                                                                            "label": null
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "SwitchCase",
+                                                                    "test": {
+                                                                        "type": "Literal",
+                                                                        "value": "1",
+                                                                        "raw": "'1'"
+                                                                    },
+                                                                    "consequent": [
+                                                                        {
+                                                                            "type": "ExpressionStatement",
+                                                                            "expression": {
+                                                                                "type": "CallExpression",
+                                                                                "callee": {
+                                                                                    "type": "Identifier",
+                                                                                    "name": "f"
+                                                                                },
+                                                                                "arguments": []
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "type": "ContinueStatement",
+                                                                            "label": null
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "SwitchCase",
+                                                                    "test": {
+                                                                        "type": "Literal",
+                                                                        "value": "2",
+                                                                        "raw": "'2'"
+                                                                    },
+                                                                    "consequent": [
+                                                                        {
+                                                                            "type": "ExpressionStatement",
+                                                                            "expression": {
+                                                                                "type": "CallExpression",
+                                                                                "callee": {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "Identifier",
+                                                                                        "name": "console"
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "log",
+                                                                                        "raw": "'log'"
+                                                                                    }
+                                                                                },
+                                                                                "arguments": [
+                                                                                    {
+                                                                                        "type": "Literal",
+                                                                                        "value": "b",
+                                                                                        "raw": "'b'"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "type": "ContinueStatement",
+                                                                            "label": null
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "SwitchCase",
+                                                                    "test": {
+                                                                        "type": "Literal",
+                                                                        "value": "3",
+                                                                        "raw": "'3'"
+                                                                    },
+                                                                    "consequent": [
+                                                                        {
+                                                                            "type": "ExpressionStatement",
+                                                                            "expression": {
+                                                                                "type": "CallExpression",
+                                                                                "callee": {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "Identifier",
+                                                                                        "name": "console"
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "log",
+                                                                                        "raw": "'log'"
+                                                                                    }
+                                                                                },
+                                                                                "arguments": [
+                                                                                    {
+                                                                                        "type": "Literal",
+                                                                                        "value": "a",
+                                                                                        "raw": "'a'"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "type": "ContinueStatement",
+                                                                            "label": null
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "SwitchCase",
+                                                                    "test": {
+                                                                        "type": "Literal",
+                                                                        "value": "4",
+                                                                        "raw": "'4'"
+                                                                    },
+                                                                    "consequent": [
+                                                                        {
+                                                                            "type": "ExpressionStatement",
+                                                                            "expression": {
+                                                                                "type": "CallExpression",
+                                                                                "callee": {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "Identifier",
+                                                                                        "name": "console"
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "log",
+                                                                                        "raw": "'log'"
+                                                                                    }
+                                                                                },
+                                                                                "arguments": [
+                                                                                    {
+                                                                                        "type": "Literal",
+                                                                                        "value": "e",
+                                                                                        "raw": "'e'"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "type": "ContinueStatement",
+                                                                            "label": null
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "SwitchCase",
+                                                                    "test": {
+                                                                        "type": "Literal",
+                                                                        "value": "5",
+                                                                        "raw": "'5'"
+                                                                    },
+                                                                    "consequent": [
+                                                                        {
+                                                                            "type": "ExpressionStatement",
+                                                                            "expression": {
+                                                                                "type": "CallExpression",
+                                                                                "callee": {
+                                                                                    "type": "MemberExpression",
+                                                                                    "computed": true,
+                                                                                    "object": {
+                                                                                        "type": "Identifier",
+                                                                                        "name": "console"
+                                                                                    },
+                                                                                    "property": {
+                                                                                        "type": "Literal",
+                                                                                        "value": "log",
+                                                                                        "raw": "'log'"
+                                                                                    }
+                                                                                },
+                                                                                "arguments": [
+                                                                                    {
+                                                                                        "type": "Literal",
+                                                                                        "value": "c",
+                                                                                        "raw": "'c'"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "type": "ContinueStatement",
+                                                                            "label": null
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "BreakStatement",
+                                                            "label": null
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "generator": false,
+                                    "expression": false,
+                                    "async": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "FunctionDeclaration",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "f"
+                        },
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "process"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "nextTick",
+                                                "raw": "'nextTick'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "FunctionExpression",
+                                                "id": null,
+                                                "params": [],
+                                                "body": {
+                                                    "type": "BlockStatement",
+                                                    "body": [
+                                                        {
+                                                            "type": "IfStatement",
+                                                            "test": {
+                                                                "type": "BinaryExpression",
+                                                                "operator": "===",
+                                                                "left": {
+                                                                    "type": "Literal",
+                                                                    "value": "SfhOV",
+                                                                    "raw": "'SfhOV'"
+                                                                },
+                                                                "right": {
+                                                                    "type": "Literal",
+                                                                    "value": "SfhOV",
+                                                                    "raw": "'SfhOV'"
+                                                                }
+                                                            },
+                                                            "consequent": {
+                                                                "type": "BlockStatement",
+                                                                "body": [
+                                                                    {
+                                                                        "type": "ExpressionStatement",
+                                                                        "expression": {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "MemberExpression",
+                                                                                "computed": true,
+                                                                                "object": {
+                                                                                    "type": "Identifier",
+                                                                                    "name": "d"
+                                                                                },
+                                                                                "property": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "run",
+                                                                                    "raw": "'run'"
+                                                                                }
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "FunctionExpression",
+                                                                                    "id": null,
+                                                                                    "params": [],
+                                                                                    "body": {
+                                                                                        "type": "BlockStatement",
+                                                                                        "body": [
+                                                                                            {
+                                                                                                "type": "IfStatement",
+                                                                                                "test": {
+                                                                                                    "type": "BinaryExpression",
+                                                                                                    "operator": "!==",
+                                                                                                    "left": {
+                                                                                                        "type": "Literal",
+                                                                                                        "value": "CPgww",
+                                                                                                        "raw": "'CPgww'"
+                                                                                                    },
+                                                                                                    "right": {
+                                                                                                        "type": "Literal",
+                                                                                                        "value": "JVoxn",
+                                                                                                        "raw": "'JVoxn'"
+                                                                                                    }
+                                                                                                },
+                                                                                                "consequent": {
+                                                                                                    "type": "BlockStatement",
+                                                                                                    "body": [
+                                                                                                        {
+                                                                                                            "type": "ThrowStatement",
+                                                                                                            "argument": {
+                                                                                                                "type": "NewExpression",
+                                                                                                                "callee": {
+                                                                                                                    "type": "Identifier",
+                                                                                                                    "name": "Error"
+                                                                                                                },
+                                                                                                                "arguments": [
+                                                                                                                    {
+                                                                                                                        "type": "Literal",
+                                                                                                                        "value": "x",
+                                                                                                                        "raw": "'x'"
+                                                                                                                    }
+                                                                                                                ]
+                                                                                                            }
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                "alternate": {
+                                                                                                    "type": "BlockStatement",
+                                                                                                    "body": [
+                                                                                                        {
+                                                                                                            "type": "ExpressionStatement",
+                                                                                                            "expression": {
+                                                                                                                "type": "CallExpression",
+                                                                                                                "callee": {
+                                                                                                                    "type": "MemberExpression",
+                                                                                                                    "computed": true,
+                                                                                                                    "object": {
+                                                                                                                        "type": "Identifier",
+                                                                                                                        "name": "process"
+                                                                                                                    },
+                                                                                                                    "property": {
+                                                                                                                        "type": "Literal",
+                                                                                                                        "value": "nextTick",
+                                                                                                                        "raw": "'nextTick'"
+                                                                                                                    }
+                                                                                                                },
+                                                                                                                "arguments": [
+                                                                                                                    {
+                                                                                                                        "type": "FunctionExpression",
+                                                                                                                        "id": null,
+                                                                                                                        "params": [],
+                                                                                                                        "body": {
+                                                                                                                            "type": "BlockStatement",
+                                                                                                                            "body": [
+                                                                                                                                {
+                                                                                                                                    "type": "ExpressionStatement",
+                                                                                                                                    "expression": {
+                                                                                                                                        "type": "CallExpression",
+                                                                                                                                        "callee": {
+                                                                                                                                            "type": "MemberExpression",
+                                                                                                                                            "computed": true,
+                                                                                                                                            "object": {
+                                                                                                                                                "type": "Identifier",
+                                                                                                                                                "name": "d"
+                                                                                                                                            },
+                                                                                                                                            "property": {
+                                                                                                                                                "type": "Literal",
+                                                                                                                                                "value": "run",
+                                                                                                                                                "raw": "'run'"
+                                                                                                                                            }
+                                                                                                                                        },
+                                                                                                                                        "arguments": [
+                                                                                                                                            {
+                                                                                                                                                "type": "FunctionExpression",
+                                                                                                                                                "id": null,
+                                                                                                                                                "params": [],
+                                                                                                                                                "body": {
+                                                                                                                                                    "type": "BlockStatement",
+                                                                                                                                                    "body": [
+                                                                                                                                                        {
+                                                                                                                                                            "type": "ThrowStatement",
+                                                                                                                                                            "argument": {
+                                                                                                                                                                "type": "NewExpression",
+                                                                                                                                                                "callee": {
+                                                                                                                                                                    "type": "Identifier",
+                                                                                                                                                                    "name": "Error"
+                                                                                                                                                                },
+                                                                                                                                                                "arguments": [
+                                                                                                                                                                    {
+                                                                                                                                                                        "type": "Literal",
+                                                                                                                                                                        "value": "x",
+                                                                                                                                                                        "raw": "'x'"
+                                                                                                                                                                    }
+                                                                                                                                                                ]
+                                                                                                                                                            }
+                                                                                                                                                        }
+                                                                                                                                                    ]
+                                                                                                                                                },
+                                                                                                                                                "generator": false,
+                                                                                                                                                "expression": false,
+                                                                                                                                                "async": false
+                                                                                                                                            }
+                                                                                                                                        ]
+                                                                                                                                    }
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        "generator": false,
+                                                                                                                        "expression": false,
+                                                                                                                        "async": false
+                                                                                                                    }
+                                                                                                                ]
+                                                                                                            }
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    "generator": false,
+                                                                                    "expression": false,
+                                                                                    "async": false
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "alternate": {
+                                                                "type": "BlockStatement",
+                                                                "body": [
+                                                                    {
+                                                                        "type": "ThrowStatement",
+                                                                        "argument": {
+                                                                            "type": "NewExpression",
+                                                                            "callee": {
+                                                                                "type": "Identifier",
+                                                                                "name": "Error"
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "Literal",
+                                                                                    "value": "x",
+                                                                                    "raw": "'x'"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "generator": false,
+                                                "expression": false,
+                                                "async": false
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "f"
+                            },
+                            "arguments": []
+                        }
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "setImmediate"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "FunctionExpression",
+                                    "id": null,
+                                    "params": [],
+                                    "body": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                            {
+                                                "type": "ExpressionStatement",
+                                                "expression": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "console"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "error",
+                                                            "raw": "'error'"
+                                                        }
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "Literal",
+                                                            "value": "broke in!",
+                                                            "raw": "'broke in!'"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "type": "ExpressionStatement",
+                                                "expression": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "process"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "exit",
+                                                            "raw": "'exit'"
+                                                        }
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "Literal",
+                                                            "value": 0,
+                                                            "raw": "0x0"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "generator": false,
+                                    "expression": false,
+                                    "async": false
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

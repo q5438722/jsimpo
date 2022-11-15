@@ -1,0 +1,1 @@
+try{}catch(n){}function __f_7(n,t){var _=t()}__f_7("[1,2,3]",()=>function(){return(async()=>{[...await arguments]})()}());

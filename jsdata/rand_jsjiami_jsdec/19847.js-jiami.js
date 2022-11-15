@@ -1,0 +1,1 @@
+'use strict';class Base{}class Obj extends Base{['get'](){return super['test'];}}Object['defineProperty'](Obj['prototype'],'test',{'value':0x2,'writable':!![],'configurable':!![]});const obj=new Obj();expect(obj['test'])['toBe'](0x2);expect(obj['get']())['toBeUndefined']();

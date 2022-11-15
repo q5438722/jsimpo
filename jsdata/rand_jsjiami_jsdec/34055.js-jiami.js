@@ -1,0 +1,1 @@
+import _0x3081d0 from'./utils/createSvgIcon';import{jsx as _0xeca1c4}from'react/jsx-runtime';export default _0x3081d0(_0xeca1c4('path',{'d':'M3 3v18h18V3H3zm6 10H7v-2h2v2zm0-4H7V7h2v2zm4 4h-2v-2h2v2zm0-4h-2V7h2v2zm4 4h-2v-2h2v2zm0-4h-2V7h2v2z'}),'MarginSharp');

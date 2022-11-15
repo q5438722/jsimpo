@@ -1,0 +1,66 @@
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var _0x3fec = [
+    'isStroked',
+    'stroke',
+    'restore',
+    'exports',
+    '1048199TDjzWs',
+    '11731jBUHJV',
+    '3MVMYjL',
+    '188719DFnJOC',
+    '89334tkyMoH',
+    '248222vShjst',
+    '44cHgPOt',
+    '239pnvEDX',
+    '72848BRedon',
+    '../FillStyleCanvas',
+    '../LineStyleCanvas',
+    '../../../renderer/canvas/utils/SetTransform',
+    'addToRenderList',
+    'currentContext',
+    '_displayOriginX',
+    '_displayOriginY',
+    'geom',
+    'beginPath',
+    'moveTo',
+    'lineTo',
+    'closePath',
+    'isFilled',
+    'fill'
+];
+var _0x59fbd5 = _0x4d20;
+function _0x4d20(_0x55ce78, _0x2473d4) {
+    return _0x4d20 = function (_0x3fec4f, _0x4d2069) {
+        _0x3fec4f = _0x3fec4f - 0x147;
+        var _0x2cf469 = _0x3fec[_0x3fec4f];
+        return _0x2cf469;
+    }, _0x4d20(_0x55ce78, _0x2473d4);
+}
+(function (_0x12cdae, _0x593f8a) {
+    var _0x156111 = _0x4d20;
+    while (!![]) {
+        try {
+            var _0xe062cd = parseInt(_0x156111(0x147)) + -parseInt(_0x156111(0x148)) + parseInt(_0x156111(0x149)) * -parseInt(_0x156111(0x14a)) + -parseInt(_0x156111(0x14b)) + parseInt(_0x156111(0x14c)) + -parseInt(_0x156111(0x14d)) * parseInt(_0x156111(0x14e)) + -parseInt(_0x156111(0x14f));
+            if (_0xe062cd === _0x593f8a)
+                break;
+            else
+                _0x12cdae['push'](_0x12cdae['shift']());
+        } catch (_0x3aba3c) {
+            _0x12cdae['push'](_0x12cdae['shift']());
+        }
+    }
+}(_0x3fec, 0x8542b));
+var FillStyleCanvas = require(_0x59fbd5(0x150)), LineStyleCanvas = require(_0x59fbd5(0x151)), SetTransform = require(_0x59fbd5(0x152)), TriangleCanvasRenderer = function (_0x426b7b, _0x322075, _0x8f3a9d, _0x577b09) {
+        var _0x4cc046 = _0x59fbd5;
+        _0x8f3a9d[_0x4cc046(0x153)](_0x322075);
+        var _0x19431c = _0x426b7b[_0x4cc046(0x154)];
+        if (SetTransform(_0x426b7b, _0x19431c, _0x322075, _0x8f3a9d, _0x577b09)) {
+            var _0x26c6cc = _0x322075[_0x4cc046(0x155)], _0xcd20c = _0x322075[_0x4cc046(0x156)], _0xf5b04e = _0x322075[_0x4cc046(0x157)]['x1'] - _0x26c6cc, _0x1869cd = _0x322075['geom']['y1'] - _0xcd20c, _0xc83234 = _0x322075[_0x4cc046(0x157)]['x2'] - _0x26c6cc, _0xd201c8 = _0x322075['geom']['y2'] - _0xcd20c, _0x20778c = _0x322075[_0x4cc046(0x157)]['x3'] - _0x26c6cc, _0x345ce7 = _0x322075[_0x4cc046(0x157)]['y3'] - _0xcd20c;
+            _0x19431c[_0x4cc046(0x158)](), _0x19431c[_0x4cc046(0x159)](_0xf5b04e, _0x1869cd), _0x19431c[_0x4cc046(0x15a)](_0xc83234, _0xd201c8), _0x19431c[_0x4cc046(0x15a)](_0x20778c, _0x345ce7), _0x19431c[_0x4cc046(0x15b)](), _0x322075[_0x4cc046(0x15c)] && (FillStyleCanvas(_0x19431c, _0x322075), _0x19431c[_0x4cc046(0x15d)]()), _0x322075[_0x4cc046(0x15e)] && (LineStyleCanvas(_0x19431c, _0x322075), _0x19431c[_0x4cc046(0x15f)]()), _0x19431c[_0x4cc046(0x160)]();
+        }
+    };
+module[_0x59fbd5(0x161)] = TriangleCanvasRenderer;

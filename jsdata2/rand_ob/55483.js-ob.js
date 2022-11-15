@@ -1,0 +1,68 @@
+'use strict';
+const _0x127c = [
+    'pid',
+    'exec',
+    'execFile',
+    'ENOENT',
+    'undefined',
+    '320736OUaeGX',
+    '332313FdUxTi',
+    '1296142kpLHzn',
+    '3501rOrxpN',
+    '473SCERNX',
+    '19245JhxiaZ',
+    '33MMGfoE',
+    '1463089YTUCnK',
+    '1mLcnBp',
+    '3438108jynaBZ',
+    '../common',
+    'child_process',
+    'number',
+    'does-not-exist',
+    'ArbRD',
+    'mustCall',
+    'strictEqual',
+    'code',
+    'cmd',
+    'includes'
+];
+const _0x3c4043 = _0x1c3e;
+(function (_0x2680e0, _0x28e43a) {
+    const _0x989ee4 = _0x1c3e;
+    while (!![]) {
+        try {
+            const _0x23635d = parseInt(_0x989ee4(0xe1)) + -parseInt(_0x989ee4(0xe2)) + parseInt(_0x989ee4(0xe3)) + -parseInt(_0x989ee4(0xe4)) * parseInt(_0x989ee4(0xe5)) + parseInt(_0x989ee4(0xe6)) * -parseInt(_0x989ee4(0xe7)) + -parseInt(_0x989ee4(0xe8)) * parseInt(_0x989ee4(0xe9)) + parseInt(_0x989ee4(0xea));
+            if (_0x23635d === _0x28e43a)
+                break;
+            else
+                _0x2680e0['push'](_0x2680e0['shift']());
+        } catch (_0x4304f0) {
+            _0x2680e0['push'](_0x2680e0['shift']());
+        }
+    }
+}(_0x127c, -0xd3d * -0xda + -0x1323e5 * 0x1 + 0x16a541));
+function _0x1c3e(_0xf93347, _0x57d6b6) {
+    return _0x1c3e = function (_0x4a564f, _0x41cf35) {
+        _0x4a564f = _0x4a564f - (-0x13a9 + 0xe39 + 0x651);
+        let _0x17f38a = _0x127c[_0x4a564f];
+        return _0x17f38a;
+    }, _0x1c3e(_0xf93347, _0x57d6b6);
+}
+const common = require(_0x3c4043(0xeb)), assert = require('assert'), child_process = require(_0x3c4043(0xec));
+function test(_0x1b4cd7, _0x387ef9, _0x3ad79d = _0x3c4043(0xed)) {
+    const _0x543ef8 = _0x3c4043, _0xf890c7 = {
+            'mMenm': function (_0x42b363, _0xce39) {
+                return _0x42b363(_0xce39);
+            },
+            'wbVBA': function (_0x1e680, _0x2f8fa5, _0x3546f4) {
+                return _0x1e680(_0x2f8fa5, _0x3546f4);
+            },
+            'ArbRD': _0x543ef8(0xee)
+        }, _0x12196c = _0xf890c7['wbVBA'](_0x1b4cd7, _0xf890c7[_0x543ef8(0xef)], common[_0x543ef8(0xf0)](function (_0x29044f) {
+            const _0x210a89 = _0x543ef8;
+            assert[_0x210a89(0xf1)](_0x29044f[_0x210a89(0xf2)], _0x387ef9), _0xf890c7['mMenm'](assert, _0x29044f[_0x210a89(0xf3)][_0x210a89(0xf4)](_0x210a89(0xee)));
+        }));
+    assert[_0x543ef8(0xf1)](typeof _0x12196c[_0x543ef8(0xf5)], _0x3ad79d);
+}
+common['isWindows'] ? test(child_process['exec'], 0xc21 + 0x17 + 0x3b * -0x35, _0x3c4043(0xed)) : test(child_process[_0x3c4043(0xf6)], -0x1d32 + 0x807 + -0xad5 * -0x2, _0x3c4043(0xed));
+test(child_process[_0x3c4043(0xf7)], _0x3c4043(0xf8), _0x3c4043(0xf9));

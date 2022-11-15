@@ -1,0 +1,232 @@
+'use strict';
+const _0x5e9f = [
+    'ZjVgE',
+    'Copying\x20polkit\x20configuration\x20into\x20\x22',
+    'yqqdy',
+    'rBGzz',
+    'uTCFb',
+    '.policy',
+    'Generating\x20.deb\x20file\x20from\x20',
+    'HYyID',
+    'wblSq',
+    'PyIEp',
+    'pCDhF',
+    'Copying\x20generated\x20package\x20into\x20\x22',
+    '1PhUnhn',
+    '185620MSIkee',
+    '101160tRmFLb',
+    '497336koasDp',
+    '43880UTelxl',
+    '2TjBVnr',
+    '115ofSlcf',
+    '1795iXUGvl',
+    '71113yNSlSt',
+    '11gViSMJ',
+    '8906MvBCuF',
+    '91CZrQrK',
+    'fs-extra',
+    'path',
+    './spawn-sync',
+    'lodash.template',
+    '../config',
+    'exports',
+    'stable',
+    'apm',
+    'ia32',
+    'x64',
+    'amd64',
+    'DEBIAN',
+    'applications',
+    'pixmaps',
+    'doc',
+    'chrome-sandbox',
+    '4755',
+    '-sk',
+    'control.in',
+    'control',
+    'atom.desktop.in',
+    '/usr',
+    'copyright',
+    'atom.policy',
+    'polkit-1',
+    'actions',
+    'fakeroot',
+    'dpkg-deb',
+    'inherit',
+    'log',
+    'channel',
+    'hkAUi',
+    'atom',
+    'atom-',
+    'VFaKj',
+    'apm-',
+    'appMetadata',
+    'version',
+    'arch',
+    'CBMxG',
+    'CxrPx',
+    'FyyHt',
+    'UBAiY',
+    'join',
+    'buildOutputPath',
+    'basename',
+    'yZRFl',
+    'FzPOc',
+    'tWAal',
+    'Kffha',
+    'ivhTI',
+    'existsSync',
+    'Deleting\x20existing\x20build\x20dir\x20for\x20Debian\x20package\x20at\x20\x22',
+    'removeSync',
+    'Deleting\x20existing\x20Debian\x20package\x20at\x20\x22',
+    '.deb\x22',
+    '.deb',
+    'Creating\x20Debian\x20package\x20directory\x20structure\x20at\x20\x22',
+    'mkdirpSync',
+    'Copying\x20\x22',
+    'copySync',
+    'chmodSync',
+    '755',
+    'Copying\x20binaries\x20into\x20\x22',
+    'repositoryRootPath',
+    'symlinkSync',
+    'share',
+    'resources',
+    'afEtH',
+    'GTgwq',
+    'Writing\x20control\x20file\x20into\x20\x22',
+    'CEWhF',
+    'MPulN',
+    'split',
+    'readFileSync',
+    'linux',
+    'zcvVI',
+    'EFAAH',
+    'writeFileSync',
+    'wHGlP',
+    'Writing\x20desktop\x20entry\x20file\x20into\x20\x22',
+    'ecIpl',
+    'hIwaO',
+    'LCBRE',
+    'appName',
+    'AuzJF',
+    '.desktop',
+    'Copying\x20icon\x20into\x20\x22',
+    '.png',
+    'Copying\x20license\x20into\x20\x22',
+    'Qlxii'
+];
+const _0x1f3b0e = _0x562c;
+(function (_0x36d695, _0x2d2f8f) {
+    const _0x397878 = _0x562c;
+    while (!![]) {
+        try {
+            const _0x20dfb7 = parseInt(_0x397878(0x11a)) * parseInt(_0x397878(0x11b)) + -parseInt(_0x397878(0x11c)) + parseInt(_0x397878(0x11d)) + -parseInt(_0x397878(0x11e)) * parseInt(_0x397878(0x11f)) + -parseInt(_0x397878(0x120)) * -parseInt(_0x397878(0x121)) + parseInt(_0x397878(0x122)) * parseInt(_0x397878(0x123)) + parseInt(_0x397878(0x124)) * -parseInt(_0x397878(0x125));
+            if (_0x20dfb7 === _0x2d2f8f)
+                break;
+            else
+                _0x36d695['push'](_0x36d695['shift']());
+        } catch (_0x14168b) {
+            _0x36d695['push'](_0x36d695['shift']());
+        }
+    }
+}(_0x5e9f, 0x29e8a * 0x2 + 0x38 * 0x30dd + 0x5ab6a * -0x1));
+const fs = require(_0x1f3b0e(0x126)), os = require('os'), path = require(_0x1f3b0e(0x127)), spawnSync = require(_0x1f3b0e(0x128)), template = require(_0x1f3b0e(0x129)), CONFIG = require(_0x1f3b0e(0x12a));
+function _0x562c(_0x571e84, _0xaaa360) {
+    return _0x562c = function (_0x4d5af6, _0xa3f632) {
+        _0x4d5af6 = _0x4d5af6 - (0x8ec * -0x2 + -0x12c + 0x141e);
+        let _0x440fd7 = _0x5e9f[_0x4d5af6];
+        return _0x440fd7;
+    }, _0x562c(_0x571e84, _0xaaa360);
+}
+module[_0x1f3b0e(0x12b)] = function (_0x2577e9) {
+    const _0x5162e2 = _0x1f3b0e, _0x4216d4 = {
+            'FyyHt': function (_0x2bff98, _0x274f19) {
+                return _0x2bff98 === _0x274f19;
+            },
+            'hkAUi': _0x5162e2(0x12c),
+            'VFaKj': _0x5162e2(0x12d),
+            'CBMxG': _0x5162e2(0x12e),
+            'CxrPx': 'i386',
+            'UBAiY': _0x5162e2(0x12f),
+            'FnwEa': _0x5162e2(0x130),
+            'AuwWE': 'powerpc',
+            'yZRFl': _0x5162e2(0x131),
+            'FzPOc': 'usr',
+            'fVJYT': 'bin',
+            'tWAal': 'share',
+            'Kffha': _0x5162e2(0x132),
+            'zfWyI': _0x5162e2(0x133),
+            'ivhTI': _0x5162e2(0x134),
+            'ywwFo': 'app',
+            'afEtH': 'node_modules',
+            'GTgwq': _0x5162e2(0x135),
+            'DVLVY': _0x5162e2(0x136),
+            'CEWhF': function (_0x3957e1, _0x479bdb, _0x15a9cc) {
+                return _0x3957e1(_0x479bdb, _0x15a9cc);
+            },
+            'MPulN': _0x5162e2(0x137),
+            'zcvVI': 'debian',
+            'GElHq': _0x5162e2(0x138),
+            'EFAAH': function (_0x1ccc7a, _0x5e73ef) {
+                return _0x1ccc7a(_0x5e73ef);
+            },
+            'wHGlP': _0x5162e2(0x139),
+            'ecIpl': 'resources',
+            'hIwaO': _0x5162e2(0x13a),
+            'LCBRE': function (_0x594de2, _0x516c11) {
+                return _0x594de2(_0x516c11);
+            },
+            'AuzJF': _0x5162e2(0x13b),
+            'Qlxii': 'LICENSE.md',
+            'ZjVgE': _0x5162e2(0x13c),
+            'yqqdy': _0x5162e2(0x13d),
+            'rBGzz': _0x5162e2(0x13e),
+            'uTCFb': _0x5162e2(0x13f),
+            'HYyID': function (_0x3595c9, _0x3bf792, _0x385ea6, _0x156ec1) {
+                return _0x3595c9(_0x3bf792, _0x385ea6, _0x156ec1);
+            },
+            'wblSq': _0x5162e2(0x140),
+            'PyIEp': _0x5162e2(0x141),
+            'pCDhF': _0x5162e2(0x142)
+        };
+    console[_0x5162e2(0x143)]('Creating\x20Debian\x20package\x20for\x20\x22' + _0x2577e9 + '\x22');
+    const _0x1fa4ab = _0x4216d4['FyyHt'](CONFIG[_0x5162e2(0x144)], _0x4216d4[_0x5162e2(0x145)]) ? _0x5162e2(0x146) : _0x5162e2(0x147) + CONFIG[_0x5162e2(0x144)], _0x52e4e9 = CONFIG['channel'] === _0x4216d4[_0x5162e2(0x145)] ? _0x4216d4[_0x5162e2(0x148)] : _0x5162e2(0x149) + CONFIG['channel'], _0x3d6a4a = CONFIG[_0x5162e2(0x14a)]['description'], _0x599408 = CONFIG[_0x5162e2(0x14a)][_0x5162e2(0x14b)];
+    let _0x51089e;
+    if (process[_0x5162e2(0x14c)] === _0x4216d4[_0x5162e2(0x14d)])
+        _0x51089e = _0x4216d4[_0x5162e2(0x14e)];
+    else {
+        if (_0x4216d4[_0x5162e2(0x14f)](process[_0x5162e2(0x14c)], _0x4216d4[_0x5162e2(0x150)]))
+            _0x51089e = _0x4216d4['FnwEa'];
+        else
+            _0x4216d4[_0x5162e2(0x14f)](process[_0x5162e2(0x14c)], 'ppc') ? _0x51089e = _0x4216d4['AuwWE'] : _0x51089e = process['arch'];
+    }
+    const _0x3fe667 = path[_0x5162e2(0x151)](CONFIG[_0x5162e2(0x152)], _0x5162e2(0x147) + _0x51089e + '.deb'), _0x4216dc = path[_0x5162e2(0x151)](os['tmpdir'](), path[_0x5162e2(0x153)](_0x2577e9)), _0x146691 = path[_0x5162e2(0x151)](_0x4216dc, _0x4216d4[_0x5162e2(0x154)]), _0x267ab7 = path[_0x5162e2(0x151)](_0x4216dc, _0x4216d4[_0x5162e2(0x155)]), _0x2baffa = path['join'](_0x267ab7, _0x4216d4['fVJYT']), _0x1cd9f9 = path['join'](_0x267ab7, _0x4216d4[_0x5162e2(0x156)]), _0x25eb42 = path['join'](_0x1cd9f9, _0x1fa4ab), _0xdab2b8 = path[_0x5162e2(0x151)](_0x1cd9f9, _0x4216d4[_0x5162e2(0x157)]), _0x47786f = path['join'](_0x1cd9f9, _0x4216d4['zfWyI']), _0x20d565 = path[_0x5162e2(0x151)](_0x1cd9f9, _0x4216d4[_0x5162e2(0x158)], _0x1fa4ab);
+    fs[_0x5162e2(0x159)](_0x4216dc) && (console['log'](_0x5162e2(0x15a) + _0x4216dc + '\x22'), fs[_0x5162e2(0x15b)](_0x4216dc));
+    fs[_0x5162e2(0x159)](_0x4216dc + '.deb') && (console[_0x5162e2(0x143)](_0x5162e2(0x15c) + _0x4216dc + _0x5162e2(0x15d)), fs[_0x5162e2(0x15b)](_0x4216dc + _0x5162e2(0x15e)));
+    fs[_0x5162e2(0x159)](_0x4216dc) && (console[_0x5162e2(0x143)](_0x5162e2(0x15c) + _0x3fe667 + '\x22'), fs[_0x5162e2(0x15b)](_0x4216dc));
+    console[_0x5162e2(0x143)](_0x5162e2(0x15f) + _0x4216dc + '\x22'), fs['mkdirpSync'](_0x4216dc), fs[_0x5162e2(0x160)](_0x146691), fs[_0x5162e2(0x160)](_0x267ab7), fs[_0x5162e2(0x160)](_0x1cd9f9), fs[_0x5162e2(0x160)](_0xdab2b8), fs['mkdirpSync'](_0x47786f), fs['mkdirpSync'](_0x20d565), fs['mkdirpSync'](_0x2baffa), console[_0x5162e2(0x143)](_0x5162e2(0x161) + _0x2577e9 + '\x22\x20to\x20\x22' + _0x25eb42 + '\x22'), fs[_0x5162e2(0x162)](_0x2577e9, _0x25eb42), fs[_0x5162e2(0x163)](_0x25eb42, _0x5162e2(0x164)), console[_0x5162e2(0x143)](_0x5162e2(0x165) + _0x2baffa + '\x22'), fs[_0x5162e2(0x162)](path[_0x5162e2(0x151)](CONFIG[_0x5162e2(0x166)], 'atom.sh'), path[_0x5162e2(0x151)](_0x2baffa, _0x1fa4ab)), fs[_0x5162e2(0x167)](path[_0x5162e2(0x151)]('..', _0x5162e2(0x168), _0x1fa4ab, _0x5162e2(0x169), _0x4216d4['ywwFo'], _0x5162e2(0x12d), _0x4216d4[_0x5162e2(0x16a)], '.bin', _0x4216d4[_0x5162e2(0x148)]), path['join'](_0x2baffa, _0x52e4e9)), fs[_0x5162e2(0x163)](path[_0x5162e2(0x151)](_0x25eb42, _0x4216d4[_0x5162e2(0x16b)]), _0x4216d4['DVLVY']), console[_0x5162e2(0x143)](_0x5162e2(0x16c) + _0x146691 + '\x22');
+    const _0x33ef8f = _0x4216d4[_0x5162e2(0x16d)](spawnSync, 'du', [
+            _0x4216d4[_0x5162e2(0x16e)],
+            _0x2577e9
+        ])['stdout']['toString']()[_0x5162e2(0x16f)](/\s+/)[-0x188d + 0x1 * 0x1a63 + -0xeb * 0x2], _0x4522cb = fs[_0x5162e2(0x170)](path['join'](CONFIG[_0x5162e2(0x166)], _0x5162e2(0x169), _0x5162e2(0x171), _0x4216d4[_0x5162e2(0x172)], _0x4216d4['GElHq'])), _0x21dcd2 = _0x4216d4[_0x5162e2(0x173)](template, _0x4522cb)({
+            'appFileName': _0x1fa4ab,
+            'version': _0x599408,
+            'arch': _0x51089e,
+            'installedSize': _0x33ef8f,
+            'description': _0x3d6a4a
+        });
+    fs[_0x5162e2(0x174)](path[_0x5162e2(0x151)](_0x146691, _0x4216d4[_0x5162e2(0x175)]), _0x21dcd2), console['log'](_0x5162e2(0x176) + _0xdab2b8 + '\x22');
+    const _0x24501c = fs[_0x5162e2(0x170)](path[_0x5162e2(0x151)](CONFIG[_0x5162e2(0x166)], _0x4216d4[_0x5162e2(0x177)], _0x5162e2(0x171), _0x4216d4[_0x5162e2(0x178)])), _0x2dff1b = _0x4216d4[_0x5162e2(0x179)](template, _0x24501c)({
+            'appName': CONFIG[_0x5162e2(0x17a)],
+            'appFileName': _0x1fa4ab,
+            'description': _0x3d6a4a,
+            'installDir': _0x4216d4[_0x5162e2(0x17b)],
+            'iconPath': _0x1fa4ab
+        });
+    fs[_0x5162e2(0x174)](path[_0x5162e2(0x151)](_0xdab2b8, _0x1fa4ab + _0x5162e2(0x17c)), _0x2dff1b), console[_0x5162e2(0x143)](_0x5162e2(0x17d) + _0x47786f + '\x22'), fs[_0x5162e2(0x162)](path['join'](_0x2577e9, _0x4216d4[_0x5162e2(0x177)], 'app.asar.unpacked', _0x4216d4['ecIpl'], 'atom.png'), path['join'](_0x47786f, _0x1fa4ab + _0x5162e2(0x17e))), console[_0x5162e2(0x143)](_0x5162e2(0x17f) + _0x20d565 + '\x22'), fs[_0x5162e2(0x162)](path['join'](_0x2577e9, _0x4216d4[_0x5162e2(0x177)], _0x4216d4[_0x5162e2(0x180)]), path[_0x5162e2(0x151)](_0x20d565, _0x4216d4[_0x5162e2(0x181)])), console['log'](_0x5162e2(0x182) + _0x1cd9f9 + '\x22'), fs['copySync'](path[_0x5162e2(0x151)](CONFIG[_0x5162e2(0x166)], _0x4216d4[_0x5162e2(0x177)], _0x5162e2(0x171), _0x4216d4[_0x5162e2(0x183)]), path[_0x5162e2(0x151)](_0x1cd9f9, _0x4216d4[_0x5162e2(0x184)], _0x4216d4[_0x5162e2(0x185)], 'atom-' + CONFIG[_0x5162e2(0x144)] + _0x5162e2(0x186))), console[_0x5162e2(0x143)](_0x5162e2(0x187) + _0x4216dc), _0x4216d4[_0x5162e2(0x188)](spawnSync, _0x4216d4[_0x5162e2(0x189)], [
+        _0x4216d4[_0x5162e2(0x18a)],
+        '-b',
+        _0x4216dc
+    ], { 'stdio': _0x4216d4[_0x5162e2(0x18b)] }), console['log'](_0x5162e2(0x18c) + _0x3fe667 + '\x22'), fs[_0x5162e2(0x162)](_0x4216dc + _0x5162e2(0x15e), _0x3fe667);
+};

@@ -1,0 +1,1170 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "ObjectPattern",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "session"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "session"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "contextGroup"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "contextGroup"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "Protocol"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "Protocol"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true
+                            }
+                        ]
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "InspectorTest"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "start",
+                                "raw": "'start'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "Tests that Runtime.evaluate can run with breaks disabled.",
+                                "raw": "'Tests that Runtime.evaluate can run with breaks disabled.'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "let"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "session"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "setupScriptMap",
+                        "raw": "'setupScriptMap'"
+                    }
+                },
+                "arguments": []
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "contextGroup"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "addScript",
+                        "raw": "'addScript'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "\n    function f() {\n      debugger;\n    } //# sourceURL=test.js",
+                        "raw": "'\n    function f() {\n      debugger;\n    } //# sourceURL=test.js'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "Protocol"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "Runtime",
+                            "raw": "'Runtime'"
+                        }
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "enable",
+                        "raw": "'enable'"
+                    }
+                },
+                "arguments": []
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "Protocol"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "Debugger",
+                            "raw": "'Debugger'"
+                        }
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "enable",
+                        "raw": "'enable'"
+                    }
+                },
+                "arguments": []
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "Protocol"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "Debugger",
+                            "raw": "'Debugger'"
+                        }
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "onPaused",
+                        "raw": "'onPaused'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [
+                            {
+                                "type": "Identifier",
+                                "name": "_0xae4f22"
+                            }
+                        ],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "InspectorTest"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "log",
+                                                "raw": "'log'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": "paused",
+                                                "raw": "'paused'"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "Protocol"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "Debugger",
+                                                    "raw": "'Debugger'"
+                                                }
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "resume",
+                                                "raw": "'resume'"
+                                            }
+                                        },
+                                        "arguments": []
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "params": [],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "log",
+                                            "raw": "'log'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "Test disableBreaks: false",
+                                            "raw": "'Test disableBreaks: false'"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "logMessage",
+                                            "raw": "'logMessage'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "AwaitExpression",
+                                            "argument": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "Protocol"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "Runtime",
+                                                            "raw": "'Runtime'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "evaluate",
+                                                        "raw": "'evaluate'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "expression",
+                                                                    "raw": "'expression'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "Literal",
+                                                                    "value": "debugger;",
+                                                                    "raw": "'debugger;'"
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            },
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "disableBreaks",
+                                                                    "raw": "'disableBreaks'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "UnaryExpression",
+                                                                    "operator": "!",
+                                                                    "argument": {
+                                                                        "type": "ArrayExpression",
+                                                                        "elements": []
+                                                                    },
+                                                                    "prefix": true
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "log",
+                                            "raw": "'log'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "Test disableBreaks: true",
+                                            "raw": "'Test disableBreaks: true'"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "logMessage",
+                                            "raw": "'logMessage'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "AwaitExpression",
+                                            "argument": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "Protocol"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "Runtime",
+                                                            "raw": "'Runtime'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "evaluate",
+                                                        "raw": "'evaluate'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "expression",
+                                                                    "raw": "'expression'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "Literal",
+                                                                    "value": "debugger;",
+                                                                    "raw": "'debugger;'"
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            },
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "disableBreaks",
+                                                                    "raw": "'disableBreaks'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "UnaryExpression",
+                                                                    "operator": "!",
+                                                                    "argument": {
+                                                                        "type": "UnaryExpression",
+                                                                        "operator": "!",
+                                                                        "argument": {
+                                                                            "type": "ArrayExpression",
+                                                                            "elements": []
+                                                                        },
+                                                                        "prefix": true
+                                                                    },
+                                                                    "prefix": true
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "log",
+                                            "raw": "'log'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "Test calling out with disableBreaks: false",
+                                            "raw": "'Test\\x20calling\\x20out\\x20with\\x20disableBreaks:\\x20false'"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "logMessage",
+                                            "raw": "'logMessage'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "AwaitExpression",
+                                            "argument": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "Protocol"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "Runtime",
+                                                            "raw": "'Runtime'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "evaluate",
+                                                        "raw": "'evaluate'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "expression",
+                                                                    "raw": "'expression'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "Literal",
+                                                                    "value": "f();",
+                                                                    "raw": "'f();'"
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            },
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "disableBreaks",
+                                                                    "raw": "'disableBreaks'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "UnaryExpression",
+                                                                    "operator": "!",
+                                                                    "argument": {
+                                                                        "type": "ArrayExpression",
+                                                                        "elements": []
+                                                                    },
+                                                                    "prefix": true
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "log",
+                                            "raw": "'log'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "Test calling out with disableBreaks: true",
+                                            "raw": "'Test calling out with disableBreaks: true'"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "logMessage",
+                                            "raw": "'logMessage'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "AwaitExpression",
+                                            "argument": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "Protocol"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "Runtime",
+                                                            "raw": "'Runtime'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "evaluate",
+                                                        "raw": "'evaluate'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "expression",
+                                                                    "raw": "'expression'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "Literal",
+                                                                    "value": "f();",
+                                                                    "raw": "'f();'"
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            },
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "disableBreaks",
+                                                                    "raw": "'disableBreaks'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "UnaryExpression",
+                                                                    "operator": "!",
+                                                                    "argument": {
+                                                                        "type": "UnaryExpression",
+                                                                        "operator": "!",
+                                                                        "argument": {
+                                                                            "type": "ArrayExpression",
+                                                                            "elements": []
+                                                                        },
+                                                                        "prefix": true
+                                                                    },
+                                                                    "prefix": true
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "log",
+                                            "raw": "'log'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "Test Debugger.pause with disableBreaks: false",
+                                            "raw": "'Test Debugger.pause with disableBreaks: false'"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "logMessage",
+                                            "raw": "'logMessage'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "AwaitExpression",
+                                            "argument": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "Protocol"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "Debugger",
+                                                            "raw": "'Debugger'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "pause",
+                                                        "raw": "'pause'"
+                                                    }
+                                                },
+                                                "arguments": []
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "logMessage",
+                                            "raw": "'logMessage'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "AwaitExpression",
+                                            "argument": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "Protocol"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "Runtime",
+                                                            "raw": "'Runtime'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "evaluate",
+                                                        "raw": "'evaluate'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "expression",
+                                                                    "raw": "'expression'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "Literal",
+                                                                    "value": "1",
+                                                                    "raw": "'1'"
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            },
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "disableBreaks",
+                                                                    "raw": "'disableBreaks'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "UnaryExpression",
+                                                                    "operator": "!",
+                                                                    "argument": {
+                                                                        "type": "ArrayExpression",
+                                                                        "elements": []
+                                                                    },
+                                                                    "prefix": true
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "log",
+                                            "raw": "'log'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "Test Debugger.pause with disableBreaks: true",
+                                            "raw": "'Test\\x20Debugger.pause\\x20with\\x20disableBreaks:\\x20true'"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "logMessage",
+                                            "raw": "'logMessage'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "AwaitExpression",
+                                            "argument": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "Protocol"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "Debugger",
+                                                            "raw": "'Debugger'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "pause",
+                                                        "raw": "'pause'"
+                                                    }
+                                                },
+                                                "arguments": []
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "logMessage",
+                                            "raw": "'logMessage'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "AwaitExpression",
+                                            "argument": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "Protocol"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "Runtime",
+                                                            "raw": "'Runtime'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "evaluate",
+                                                        "raw": "'evaluate'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "expression",
+                                                                    "raw": "'expression'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "Literal",
+                                                                    "value": "1",
+                                                                    "raw": "'1'"
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            },
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "disableBreaks",
+                                                                    "raw": "'disableBreaks'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "UnaryExpression",
+                                                                    "operator": "!",
+                                                                    "argument": {
+                                                                        "type": "UnaryExpression",
+                                                                        "operator": "!",
+                                                                        "argument": {
+                                                                            "type": "ArrayExpression",
+                                                                            "elements": []
+                                                                        },
+                                                                        "prefix": true
+                                                                    },
+                                                                    "prefix": true
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "completeTest",
+                                            "raw": "'completeTest'"
+                                        }
+                                    },
+                                    "arguments": []
+                                }
+                            }
+                        ]
+                    },
+                    "generator": false,
+                    "expression": false,
+                    "async": true
+                },
+                "arguments": []
+            }
+        }
+    ],
+    "sourceType": "script"
+}

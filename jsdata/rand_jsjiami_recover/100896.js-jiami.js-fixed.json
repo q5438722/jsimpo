@@ -1,0 +1,1555 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "Literal",
+                "value": "use strict",
+                "raw": "'use strict'"
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "ObjectPattern",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "isCI"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "isCI"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true
+                            }
+                        ]
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "ci-info",
+                                "raw": "'ci-info'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "runPrettier"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../runPrettier.js",
+                                "raw": "'../runPrettier.js'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "describe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "format correctly if stdin content compatible with stdin-filepath",
+                        "raw": "'format correctly if stdin content compatible with stdin-filepath'"
+                    },
+                    {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "runPrettier"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "cli",
+                                                        "raw": "'cli'"
+                                                    },
+                                                    {
+                                                        "type": "ArrayExpression",
+                                                        "elements": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "--stdin-filepath",
+                                                                "raw": "'--stdin-filepath'"
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "abc.css",
+                                                                "raw": "'abc.css'"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "input",
+                                                                    "raw": "'input'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "Literal",
+                                                                    "value": ".name { display: none; }",
+                                                                    "raw": "'.name { display: none; }'"
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "test",
+                                                "raw": "'test'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ObjectExpression",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "status",
+                                                            "raw": "'status'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "Literal",
+                                                            "value": 0,
+                                                            "raw": "0x0"
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "describe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "throw error if stdin content incompatible with stdin-filepath",
+                        "raw": "'throw error if stdin content incompatible with stdin-filepath'"
+                    },
+                    {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "runPrettier"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "cli",
+                                                        "raw": "'cli'"
+                                                    },
+                                                    {
+                                                        "type": "ArrayExpression",
+                                                        "elements": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "--stdin-filepath",
+                                                                "raw": "'--stdin-filepath'"
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "abc.js",
+                                                                "raw": "'abc.js'"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "input",
+                                                                    "raw": "'input'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "Literal",
+                                                                    "value": ".name { display: none; }",
+                                                                    "raw": "'.name { display: none; }'"
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "test",
+                                                "raw": "'test'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ObjectExpression",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "status",
+                                                            "raw": "'status'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "Literal",
+                                                            "value": "non-zero",
+                                                            "raw": "'non-zero'"
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "describe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "gracefully handle stdin-filepath with nonexistent directory",
+                        "raw": "'gracefully handle stdin-filepath with nonexistent directory'"
+                    },
+                    {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "runPrettier"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "cli",
+                                                        "raw": "'cli'"
+                                                    },
+                                                    {
+                                                        "type": "ArrayExpression",
+                                                        "elements": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "--stdin-filepath",
+                                                                "raw": "'--stdin-filepath'"
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "definitely/nonexistent/path.css",
+                                                                "raw": "'definitely/nonexistent/path.css'"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "input",
+                                                                    "raw": "'input'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "Literal",
+                                                                    "value": ".name { display: none; }",
+                                                                    "raw": "'.name { display: none; }'"
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "test",
+                                                "raw": "'test'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ObjectExpression",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "status",
+                                                            "raw": "'status'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "Literal",
+                                                            "value": 0,
+                                                            "raw": "0x0"
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "describe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "apply editorconfig for stdin-filepath with nonexistent file",
+                        "raw": "'apply editorconfig for stdin-filepath with nonexistent file'"
+                    },
+                    {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "runPrettier"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "cli",
+                                                        "raw": "'cli'"
+                                                    },
+                                                    {
+                                                        "type": "ArrayExpression",
+                                                        "elements": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "--stdin-filepath",
+                                                                "raw": "'--stdin-filepath'"
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "config/editorconfig/nonexistent.js",
+                                                                "raw": "'config/editorconfig/nonexistent.js'"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "input",
+                                                                    "raw": "'input'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "Literal",
+                                                                            "value": "\nfunction f() {\n  console.log(\"should be indented with a tab\");\n}\n",
+                                                                            "raw": "'\nfunction f() {\n  console.log(\"should be indented with a tab\");\n}\n'"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "trim",
+                                                                            "raw": "'trim'"
+                                                                        }
+                                                                    },
+                                                                    "arguments": []
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "test",
+                                                "raw": "'test'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ObjectExpression",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "status",
+                                                            "raw": "'status'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "Literal",
+                                                            "value": 0,
+                                                            "raw": "0x0"
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "describe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "apply editorconfig for stdin-filepath with nonexistent directory",
+                        "raw": "'apply editorconfig for stdin-filepath with nonexistent directory'"
+                    },
+                    {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "runPrettier"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "cli",
+                                                        "raw": "'cli'"
+                                                    },
+                                                    {
+                                                        "type": "ArrayExpression",
+                                                        "elements": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "--stdin-filepath",
+                                                                "raw": "'--stdin-filepath'"
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "config/editorconfig/nonexistent/one/two/three.js",
+                                                                "raw": "'config/editorconfig/nonexistent/one/two/three.js'"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "input",
+                                                                    "raw": "'input'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "Literal",
+                                                                            "value": "\nfunction f() {\n  console.log(\"should be indented with a tab\");\n}\n",
+                                                                            "raw": "'\\x0afunction\\x20f()\\x20{\\x0a\\x20\\x20console.log(\\x22should\\x20be\\x20indented\\x20with\\x20a\\x20tab\\x22);\\x0a}\\x0a'"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "trim",
+                                                                            "raw": "'trim'"
+                                                                        }
+                                                                    },
+                                                                    "arguments": []
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "test",
+                                                "raw": "'test'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ObjectExpression",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "status",
+                                                            "raw": "'status'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "Literal",
+                                                            "value": 0,
+                                                            "raw": "0x0"
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "describe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "apply editorconfig for stdin-filepath with a deep path",
+                        "raw": "'apply editorconfig for stdin-filepath with a deep path'"
+                    },
+                    {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "runPrettier"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "cli",
+                                                        "raw": "'cli'"
+                                                    },
+                                                    {
+                                                        "type": "ArrayExpression",
+                                                        "elements": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "--stdin-filepath",
+                                                                "raw": "'--stdin-filepath'"
+                                                            },
+                                                            {
+                                                                "type": "BinaryExpression",
+                                                                "operator": "+",
+                                                                "left": {
+                                                                    "type": "BinaryExpression",
+                                                                    "operator": "+",
+                                                                    "left": {
+                                                                        "type": "Literal",
+                                                                        "value": "config/editorconfig/",
+                                                                        "raw": "'config/editorconfig/'"
+                                                                    },
+                                                                    "right": {
+                                                                        "type": "CallExpression",
+                                                                        "callee": {
+                                                                            "type": "MemberExpression",
+                                                                            "computed": true,
+                                                                            "object": {
+                                                                                "type": "Literal",
+                                                                                "value": "a/",
+                                                                                "raw": "'a/'"
+                                                                            },
+                                                                            "property": {
+                                                                                "type": "Literal",
+                                                                                "value": "repeat",
+                                                                                "raw": "'repeat'"
+                                                                            }
+                                                                        },
+                                                                        "arguments": [
+                                                                            {
+                                                                                "type": "Literal",
+                                                                                "value": 30,
+                                                                                "raw": "0x1e"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "right": {
+                                                                    "type": "Literal",
+                                                                    "value": "three.js",
+                                                                    "raw": "'three.js'"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "input",
+                                                                    "raw": "'input'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "Literal",
+                                                                            "value": "\nfunction f() {\n  console.log(\"should be indented with a tab\");\n}\n",
+                                                                            "raw": "'\nfunction f() {\n  console.log(\"should be indented with a tab\");\n}\n'"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "trim",
+                                                                            "raw": "'trim'"
+                                                                        }
+                                                                    },
+                                                                    "arguments": []
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "test",
+                                                "raw": "'test'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ObjectExpression",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "status",
+                                                            "raw": "'status'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "Literal",
+                                                            "value": 0,
+                                                            "raw": "0x0"
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "IfStatement",
+            "test": {
+                "type": "Identifier",
+                "name": "isCI"
+            },
+            "consequent": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "describe"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": "apply editorconfig for stdin-filepath in root",
+                                    "raw": "'apply editorconfig for stdin-filepath in root'"
+                                },
+                                {
+                                    "type": "ArrowFunctionExpression",
+                                    "id": null,
+                                    "params": [],
+                                    "body": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                            {
+                                                "type": "VariableDeclaration",
+                                                "declarations": [
+                                                    {
+                                                        "type": "VariableDeclarator",
+                                                        "id": {
+                                                            "type": "Identifier",
+                                                            "name": "_0x7f6774"
+                                                        },
+                                                        "init": {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Literal",
+                                                                    "value": "\nfunction f() {\n  console.log(\"should be indented with a tab\");\n}\n",
+                                                                    "raw": "'\nfunction f() {\n  console.log(\"should be indented with a tab\");\n}\n'"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "trim",
+                                                                    "raw": "'trim'"
+                                                                }
+                                                            },
+                                                            "arguments": []
+                                                        }
+                                                    }
+                                                ],
+                                                "kind": "const"
+                                            },
+                                            {
+                                                "type": "ExpressionStatement",
+                                                "expression": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "Identifier",
+                                                                "name": "runPrettier"
+                                                            },
+                                                            "arguments": [
+                                                                {
+                                                                    "type": "Literal",
+                                                                    "value": "cli",
+                                                                    "raw": "'cli'"
+                                                                },
+                                                                {
+                                                                    "type": "ArrayExpression",
+                                                                    "elements": [
+                                                                        {
+                                                                            "type": "Literal",
+                                                                            "value": "--stdin-filepath",
+                                                                            "raw": "'--stdin-filepath'"
+                                                                        },
+                                                                        {
+                                                                            "type": "Literal",
+                                                                            "value": "/foo.js",
+                                                                            "raw": "'/foo.js'"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "ObjectExpression",
+                                                                    "properties": [
+                                                                        {
+                                                                            "type": "Property",
+                                                                            "key": {
+                                                                                "type": "Literal",
+                                                                                "value": "input",
+                                                                                "raw": "'input'"
+                                                                            },
+                                                                            "computed": false,
+                                                                            "value": {
+                                                                                "type": "Identifier",
+                                                                                "name": "_0x7f6774"
+                                                                            },
+                                                                            "kind": "init",
+                                                                            "method": false,
+                                                                            "shorthand": false
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "test",
+                                                            "raw": "'test'"
+                                                        }
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "ObjectExpression",
+                                                            "properties": [
+                                                                {
+                                                                    "type": "Property",
+                                                                    "key": {
+                                                                        "type": "Literal",
+                                                                        "value": "status",
+                                                                        "raw": "'status'"
+                                                                    },
+                                                                    "computed": false,
+                                                                    "value": {
+                                                                        "type": "Literal",
+                                                                        "value": 0,
+                                                                        "raw": "0x0"
+                                                                    },
+                                                                    "kind": "init",
+                                                                    "method": false,
+                                                                    "shorthand": false
+                                                                },
+                                                                {
+                                                                    "type": "Property",
+                                                                    "key": {
+                                                                        "type": "Literal",
+                                                                        "value": "stdout",
+                                                                        "raw": "'stdout'"
+                                                                    },
+                                                                    "computed": false,
+                                                                    "value": {
+                                                                        "type": "BinaryExpression",
+                                                                        "operator": "+",
+                                                                        "left": {
+                                                                            "type": "Identifier",
+                                                                            "name": "_0x7f6774"
+                                                                        },
+                                                                        "right": {
+                                                                            "type": "Literal",
+                                                                            "value": "\n",
+                                                                            "raw": "'\\x0a'"
+                                                                        }
+                                                                    },
+                                                                    "kind": "init",
+                                                                    "method": false,
+                                                                    "shorthand": false
+                                                                },
+                                                                {
+                                                                    "type": "Property",
+                                                                    "key": {
+                                                                        "type": "Literal",
+                                                                        "value": "stderr",
+                                                                        "raw": "'stderr'"
+                                                                    },
+                                                                    "computed": false,
+                                                                    "value": {
+                                                                        "type": "Literal",
+                                                                        "value": "",
+                                                                        "raw": "''"
+                                                                    },
+                                                                    "kind": "init",
+                                                                    "method": false,
+                                                                    "shorthand": false
+                                                                },
+                                                                {
+                                                                    "type": "Property",
+                                                                    "key": {
+                                                                        "type": "Literal",
+                                                                        "value": "write",
+                                                                        "raw": "'write'"
+                                                                    },
+                                                                    "computed": false,
+                                                                    "value": {
+                                                                        "type": "ArrayExpression",
+                                                                        "elements": []
+                                                                    },
+                                                                    "kind": "init",
+                                                                    "method": false,
+                                                                    "shorthand": false
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "generator": false,
+                                    "expression": false,
+                                    "async": false
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "alternate": null
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "describe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "apply editorconfig for stdin-filepath with a deep path",
+                        "raw": "'apply\\x20editorconfig\\x20for\\x20stdin-filepath\\x20with\\x20a\\x20deep\\x20path'"
+                    },
+                    {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "runPrettier"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "cli",
+                                                        "raw": "'cli'"
+                                                    },
+                                                    {
+                                                        "type": "ArrayExpression",
+                                                        "elements": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "--stdin-filepath",
+                                                                "raw": "'--stdin-filepath'"
+                                                            },
+                                                            {
+                                                                "type": "BinaryExpression",
+                                                                "operator": "+",
+                                                                "left": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "Identifier",
+                                                                            "name": "_0x248a9f"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "rabZQ",
+                                                                            "raw": "'rabZQ'"
+                                                                        }
+                                                                    },
+                                                                    "arguments": [
+                                                                        {
+                                                                            "type": "Literal",
+                                                                            "value": "config/editorconfig/",
+                                                                            "raw": "'config/editorconfig/'"
+                                                                        },
+                                                                        {
+                                                                            "type": "CallExpression",
+                                                                            "callee": {
+                                                                                "type": "MemberExpression",
+                                                                                "computed": true,
+                                                                                "object": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "a/",
+                                                                                    "raw": "'a/'"
+                                                                                },
+                                                                                "property": {
+                                                                                    "type": "Literal",
+                                                                                    "value": "repeat",
+                                                                                    "raw": "'repeat'"
+                                                                                }
+                                                                            },
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "type": "Literal",
+                                                                                    "value": 30,
+                                                                                    "raw": "0x1e"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "right": {
+                                                                    "type": "Literal",
+                                                                    "value": "three.js",
+                                                                    "raw": "'three.js'"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "input",
+                                                                    "raw": "'input'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "Literal",
+                                                                            "value": "\nfunction f() {\n  console.log(\"should be indented with a tab\");\n}\n",
+                                                                            "raw": "'\nfunction f() {\n  console.log(\"should be indented with a tab\");\n}\n'"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "trim",
+                                                                            "raw": "'trim'"
+                                                                        }
+                                                                    },
+                                                                    "arguments": []
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "test",
+                                                "raw": "'test'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ObjectExpression",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "status",
+                                                            "raw": "'status'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "Literal",
+                                                            "value": 0,
+                                                            "raw": "0x0"
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "describe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "don\u2019t apply editorconfig outside project for stdin-filepath with nonexistent directory",
+                        "raw": "'don\u2019t apply editorconfig outside project for stdin-filepath with nonexistent directory'"
+                    },
+                    {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "runPrettier"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "cli",
+                                                        "raw": "'cli'"
+                                                    },
+                                                    {
+                                                        "type": "ArrayExpression",
+                                                        "elements": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "--stdin-filepath",
+                                                                "raw": "'--stdin-filepath'"
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "config/editorconfig/repo-root/nonexistent/one/two/three.js",
+                                                                "raw": "'config/editorconfig/repo-root/nonexistent/one/two/three.js'"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "input",
+                                                                    "raw": "'input'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "Literal",
+                                                                            "value": "\nfunction f() {\n  console.log(\"should be indented with 2 spaces\");\n}\n",
+                                                                            "raw": "'\\x0afunction\\x20f()\\x20{\\x0a\\x20\\x20console.log(\\x22should\\x20be\\x20indented\\x20with\\x202\\x20spaces\\x22);\\x0a}\\x0a'"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "trim",
+                                                                            "raw": "'trim'"
+                                                                        }
+                                                                    },
+                                                                    "arguments": []
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "test",
+                                                "raw": "'test'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ObjectExpression",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "status",
+                                                            "raw": "'status'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "Literal",
+                                                            "value": 0,
+                                                            "raw": "0x0"
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "describe"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "output file as-is if stdin-filepath matched patterns in ignore-path",
+                        "raw": "'output file as-is if stdin-filepath matched patterns in ignore-path'"
+                    },
+                    {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "runPrettier"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "cli/stdin-ignore",
+                                                        "raw": "'cli/stdin-ignore'"
+                                                    },
+                                                    {
+                                                        "type": "ArrayExpression",
+                                                        "elements": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "--stdin-filepath",
+                                                                "raw": "'--stdin-filepath'"
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "ignore/example.js",
+                                                                "raw": "'ignore/example.js'"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "input",
+                                                                    "raw": "'input'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "Literal",
+                                                                    "value": "hello_world( );",
+                                                                    "raw": "'hello_world(\\x20);'"
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "test",
+                                                "raw": "'test'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "ObjectExpression",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "stdout",
+                                                            "raw": "'stdout'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "Literal",
+                                                            "value": "hello_world( );",
+                                                            "raw": "'hello_world( );'"
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    },
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "status",
+                                                            "raw": "'status'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "Literal",
+                                                            "value": 0,
+                                                            "raw": "0x0"
+                                                        },
+                                                        "kind": "init",
+                                                        "method": false,
+                                                        "shorthand": false
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

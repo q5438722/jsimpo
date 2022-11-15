@@ -1,0 +1,21 @@
+"use strict";
+angular.module("ngLocale", [], ["$provide", function (a) {
+  const n = { ZERO: "zero", ONE: "one", TWO: "two", FEW: "few", MANY: "many", OTHER: "other" };
+  function M(a) {
+    a = a + "";const r = a.indexOf(".");
+    return r == -1 ? 0 : a.length - r - 1;
+  }function t(a, r) {
+    var e = r;
+    if (undefined === e) {
+      e = Math.min(M(a), 3);
+    }const o = Math.pow(10, e);
+    const n = (a * o | 0) % o;
+    return { v: e, f: n };
+  }a.value("$locale", { DATETIME_FORMATS: { AMPMS: ["AM", "PM"], DAY: ["Alahady", "Alatsinainy", "Talata", "Alarobia", "Alakamisy", "Zoma", "Asabotsy"], ERANAMES: ["Alohan\u2019i JK", "Aorian\u2019i JK"], ERAS: ["BC", "AD"], FIRSTDAYOFWEEK: 0, MONTH: ["Janoary", "Febroary", "Martsa", "Aprily", "Mey", "Jona", "Jolay", "Aogositra", "Septambra", "Oktobra", "Novambra", "Desambra"], SHORTDAY: ["Alah", "Alats", "Tal", "Alar", "Alak", "Zom", "Asab"], SHORTMONTH: ["Jan", "Feb", "Mar", "Apr", "Mey", "Jon", "Jol", "Aog", "Sep", "Okt", "Nov", "Des"], STANDALONEMONTH: ["Janoary", "Febroary", "Martsa", "Aprily", "Mey", "Jona", "Jolay", "Aogositra", "Septambra", "Oktobra", "Novambra", "Desambra"], WEEKENDRANGE: [5, 6], fullDate: "EEEE d MMMM y", longDate: "d MMMM y", medium: "y MMM d HH:mm:ss", mediumDate: "y MMM d", mediumTime: "HH:mm:ss", short: "y-MM-dd HH:mm", shortDate: "y-MM-dd", shortTime: "HH:mm" }, NUMBER_FORMATS: { CURRENCY_SYM: "Ar", DECIMAL_SEP: ".", GROUP_SEP: ",", PATTERNS: [{ gSize: 3, lgSize: 3, maxFrac: 3, minFrac: 0, minInt: 1, negPre: "-", negSuf: "", posPre: "", posSuf: "" }, { gSize: 3, lgSize: 3, maxFrac: 2, minFrac: 2, minInt: 1, negPre: "-\xA4\xA0", negSuf: "", posPre: "\xA4\xA0", posSuf: "" }] }, id: "mg", localeID: "mg", pluralCat: function (a, r) {
+      const e = a | 0;
+      const o = t(a, r);
+      if (e == 1 && o.v == 0) {
+        return n.ONE;
+      }return n.OTHER;
+    } });
+}]);

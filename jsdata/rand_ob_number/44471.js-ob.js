@@ -1,0 +1,5 @@
+'use strict';
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+Object['defineProperty'](exports, '__esModule', { 'value': !![] }), exports['default'] = void (-0x19a4 * 0x1 + -0x31 * -0xb2 + -0x53 * 0x1a);
+var _createSvgIcon = _interopRequireDefault(require('./utils/createSvgIcon')), _jsxRuntime = require('react/jsx-runtime'), _default = (-0x23 * 0xb1 + -0xbee + -0xc0b * -0x3, _createSvgIcon['default'])((0x266 * -0xd + 0x2098 + 0x1 * -0x16a, _jsxRuntime['jsx'])('path', { 'd': 'M23\x2011.01\x2018\x2011c-.55\x200-1\x20.45-1\x201v9c0\x20.55.45\x201\x201\x201h5c.55\x200\x201-.45\x201-1v-9c0-.55-.45-.99-1-.99zM23\x2020h-5v-7h5v7zM20\x202H2C.9\x202\x200\x202.9\x200\x204v12c0\x201.1.9\x202\x202\x202h7v2H8c-.55\x200-1\x20.45-1\x201s.45\x201\x201\x201h6c.55\x200\x201-.45\x201-1s-.45-1-1-1h-1v-2h1c.55\x200\x201-.45\x201-1s-.45-1-1-1H3c-.55\x200-1-.45-1-1V5c0-.55.45-1\x201-1h16c.55\x200\x201\x20.45\x201\x201v3c0\x20.55.45\x201\x201\x201s1-.45\x201-1V4c0-1.1-.9-2-2-2zm-8.03\x207L11\x206l-.97\x203H7l2.47\x201.76-.94\x202.91\x202.47-1.8\x202.47\x201.8-.94-2.91L15\x209h-3.03z' }), 'ImportantDevicesRounded');
+exports['default'] = _default;

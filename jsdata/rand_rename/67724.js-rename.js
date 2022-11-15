@@ -1,0 +1,1 @@
+module.exports=function(r){try{var t=require(r+".js")}catch(r){}try{var e=require(""+r+".js")}catch(r){}try{var c=require("./"+r+".js")}catch(r){}try{var n=require("./"+r)}catch(r){}return{a:typeof t==="function",b:typeof e==="function",c:typeof c==="function",d:typeof n==="function"}};

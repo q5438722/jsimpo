@@ -1,0 +1,4 @@
+  setInterval(function () {
+    
+  }, 1 + [] + [] + []);
+  

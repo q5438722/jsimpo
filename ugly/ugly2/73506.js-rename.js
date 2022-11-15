@@ -1,0 +1,1 @@
+chrome.runtime.onMessage.addListener(function(e,t,a){if(e.action==="updateIcon"){chrome.browserAction.setIcon({imageData:drawIcon(e.value)})}});function drawIcon(e){let t=document.createElement("canvas");let a=t.getContext("2d");a.beginPath();a.fillStyle=e.color;a.arc(100,100,50,0,2*Math.PI);a.fill();return a.getImageData(50,50,100,100)}

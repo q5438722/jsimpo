@@ -1,0 +1,135 @@
+const async = require("../lib");
+
+var { expect } = require("chai");
+
+const _ = require("lodash");
+
+describe("some", () => {
+  it("some true", s => {
+    async.some([3, 1, 2], (e, t) => {
+      setTimeout(() => {
+        t(null, e === 1);
+      }, 0);
+    }, (e, t) => {
+      expect(e).to.equal(null);expect(t).to.equal(true);s();
+    });
+  });it("some false", s => {
+    async.some([3, 1, 2], (e, t) => {
+      setTimeout(() => {
+        t(null, e === 10);
+      }, 0);
+    }, (e, t) => {
+      expect(e).to.equal(null);expect(t).to.equal(false);s();
+    });
+  });it("some early return", e => {
+    const s = [];
+    async.some([1, 2, 3], (e, t) => {
+      setTimeout(() => {
+        s.push(e);t(null, e === 1);
+      }, e * 5);
+    }, () => {
+      s.push("callback");
+    });setTimeout(() => {
+      expect(s).to.eql([1, "callback", 2, 3]);e();
+    }, 25);
+  });it("some error", s => {
+    async.some([3, 1, 2], (e, t) => {
+      setTimeout(() => {
+        t("error");
+      }, 0);
+    }, (e, t) => {
+      expect(e).to.equal("error");expect(t).to.not.exist;s();
+    });
+  });it("some canceled", e => {
+    const s = [];
+    async.some([3, 1, 2], (e, t) => {
+      s.push(e);if (e === 1) {
+        return t(false);
+      }t();
+    }, () => {
+      throw new Error("should not get here");
+    });setTimeout(() => {
+      expect(s).to.eql([3, 1, 2]);e();
+    }, 25);
+  });it("some no callback", e => {
+    const s = [];
+    async.some([1, 2, 3], (e, t) => {
+      s.push(e);t();
+    });setTimeout(() => {
+      expect(s).to.eql([1, 2, 3]);e();
+    }, 10);
+  });it("someLimit true", s => {
+    async.someLimit([3, 1, 2], 2, (e, t) => {
+      setTimeout(() => {
+        t(null, e === 2);
+      }, 0);
+    }, (e, t) => {
+      expect(e).to.equal(null);expect(t).to.equal(true);s();
+    });
+  });it("someLimit false", s => {
+    async.someLimit([3, 1, 2], 2, (e, t) => {
+      setTimeout(() => {
+        t(null, e === 10);
+      }, 0);
+    }, (e, t) => {
+      expect(e).to.equal(null);expect(t).to.equal(false);s();
+    });
+  });it("someLimit canceled", e => {
+    const s = [];
+    async.someLimit([1, 1, 2, 2, 3], 2, (e, t) => {
+      s.push(e);async.setImmediate(() => {
+        if (e === 2) {
+          return t(false);
+        }t();
+      });
+    }, () => {
+      throw new Error("should not get here");
+    });setTimeout(() => {
+      expect(s).to.eql([1, 1, 2, 2]);e();
+    }, 50);
+  });it("someSeries canceled", e => {
+    const s = [];
+    async.someSeries([1, 2, 3], (e, t) => {
+      s.push(e);async.setImmediate(() => {
+        if (e === 2) {
+          return t(false);
+        }t();
+      });
+    }, () => {
+      throw new Error("should not get here");
+    });setTimeout(() => {
+      expect(s).to.eql([1, 2]);e();
+    }, 50);
+  });it("someLimit short-circuit", s => {
+    var a = 0;
+    async.someLimit([3, 1, 2], 1, (e, t) => {
+      a++;t(null, e === 1);
+    }, (e, t) => {
+      expect(e).to.equal(null);expect(t).to.equal(true);expect(a).to.equal(2);s();
+    });
+  });it("someSeries doesn't cause stack overflow (#1293)", t => {
+    const e = _.range(1e4);
+
+    var s = 0;
+    async.someSeries(e, (e, t) => {
+      s += 1;async.setImmediate(_.partial(t, null, true));
+    }, e => {
+      expect(e).to.equal(null);expect(s).to.equal(1);t();
+    });
+  });it("someLimit doesn't cause stack overflow (#1293)", t => {
+    const e = _.range(1e4);
+
+    var s = 0;
+    async.someLimit(e, 100, (e, t) => {
+      s += 1;async.setImmediate(_.partial(t, null, true));
+    }, e => {
+      expect(e).to.equal(null);expect(s).to.equal(100);t();
+    });
+  });it("any alias", () => {
+    expect(async.any).to.equal(async.some);
+  });it("anyLimit alias", () => {
+    expect(async.anyLimit).to.equal(async.someLimit);
+  });it("anySeries alias", () => {
+    expect(async.anySeries).to.be.a("function");expect(async.anySeries).to.equal(async.someSeries);
+  });
+});

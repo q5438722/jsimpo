@@ -1,0 +1,485 @@
+const _0x1200 = [
+    'execute',
+    'error',
+    'resolves',
+    'toBe',
+    'IMMDB',
+    'toBeCalledTimes',
+    'VdFPE',
+    'toBeCalledWith',
+    'test\x20processed',
+    'DDcwh',
+    'toBeCalled',
+    'GOFUK',
+    '/js/test.js',
+    'Worker\x20executor\x20should\x20successfully\x20execute\x20two\x20tasks\x20in\x20parallel',
+    'test2\x20processed',
+    'test1\x20processed',
+    'yVUWr',
+    'QbXkt',
+    'UyFZH',
+    'dyQSf',
+    'test2',
+    'TdzYr',
+    'all',
+    'toEqual',
+    'KpYvB',
+    'WzaRX',
+    'QbOJK',
+    'zQJTL',
+    'lBujn',
+    'jqPuB',
+    'Worker\x20executor\x20should\x20successfully\x20execute\x203\x20tasks\x20in\x20parallel\x20and\x20use\x20two\x20workers',
+    'test1',
+    'pMeOb',
+    'XTGSS',
+    'ChGpz',
+    'test3',
+    'test3\x20processed',
+    'Worker\x20executor\x20should\x20successfully\x20execute\x203\x20tasks,\x20use\x203\x20workers\x20and\x20terminate\x20each\x20worker',
+    'fvzCV',
+    'lkPOI',
+    'dxzGJ',
+    'UCELD',
+    'alRaS',
+    'VByXj',
+    'Worker\x20executor\x20should\x20successfully\x20execute\x203\x20tasks\x20in\x20parallel\x20and\x20use\x203\x20workers',
+    'ruFMs',
+    'PXAxg',
+    'xmKkD',
+    'GuxGG',
+    'AhfTg',
+    'Worker\x20executor\x20should\x20successfully\x20execute\x203\x20tasks\x20and\x20use\x201\x20worker',
+    'EuXKZ',
+    'fdpnm',
+    'dhStU',
+    'zeknI',
+    'fFQmE',
+    'WBrNw',
+    'VVDta',
+    'AtkdF',
+    'qKpXc',
+    'Worker\x20executor\x20should\x20reject\x20task',
+    'Error\x20on\x20init\x20worker',
+    'nBzFa',
+    'TOvZe',
+    'rejects',
+    'Worker\x20executor\x20should\x20emit\x20LOG\x20events',
+    'LOG',
+    'HpEHM',
+    'tuxxr',
+    'oIEUY',
+    'ixktu',
+    'ZhMHr',
+    'zcCQw',
+    'wvXiB',
+    'kmAGk',
+    'AldBq',
+    'mock',
+    'Worker\x20executor\x20should\x20reject\x20task\x20on\x20timeout',
+    'hvSlN',
+    'luAKw',
+    'ZTanA',
+    'DYmLX',
+    'calls',
+    'Worker\x20executor\x20should\x20get\x20worker\x20from\x20specified\x20location',
+    '/other/location/',
+    'EqFoj',
+    'YAzpZ',
+    '/other/location/test.js',
+    '146751deeNBQ',
+    '110305CIxBub',
+    '1018aPePnE',
+    '77meImaC',
+    '1wRWyND',
+    '23609eKexBp',
+    '30508QnZkJr',
+    '15805Yenaul',
+    '8ZGOTJB',
+    '251920aCuLbb',
+    'Worker',
+    '3|0|1|2|4',
+    'split',
+    'onmessage',
+    'postMessage',
+    'kAHHy',
+    '\x20processed',
+    'terminate',
+    'wBQtf',
+    'contentLoaded',
+    'test',
+    'done',
+    'DgDol',
+    'LHBDd',
+    'not',
+    'toBeUndefined'
+];
+const _0xea3a1 = _0xc22e;
+(function (_0x7fcc00, _0x2ffd7b) {
+    const _0x12496f = _0xc22e;
+    while (!![]) {
+        try {
+            const _0x4249a1 = parseInt(_0x12496f(0x9e)) + parseInt(_0x12496f(0x9f)) + parseInt(_0x12496f(0xa0)) * -parseInt(_0x12496f(0xa1)) + -parseInt(_0x12496f(0xa2)) * -parseInt(_0x12496f(0xa3)) + parseInt(_0x12496f(0xa4)) + -parseInt(_0x12496f(0xa5)) * -parseInt(_0x12496f(0xa6)) + -parseInt(_0x12496f(0xa7));
+            if (_0x4249a1 === _0x2ffd7b)
+                break;
+            else
+                _0x7fcc00['push'](_0x7fcc00['shift']());
+        } catch (_0xd8ec04) {
+            _0x7fcc00['push'](_0x7fcc00['shift']());
+        }
+    }
+}(_0x1200, -0x1 * 0x24db1 + 0x2 * -0x10297 + 0x5f60a));
+import _0x31136d from './worker-executor';
+function mockWorker({
+    init: _0x117167,
+    postMessage: _0x46dd45,
+    terminate: _0x4f9dad
+} = {}) {
+    const _0x3c8187 = _0xc22e, _0x23c5be = {
+            'kAHHy': function (_0x4002cf, _0x5517e9) {
+                return _0x4002cf(_0x5517e9);
+            },
+            'wBQtf': function (_0x2b455c, _0x38eb9c) {
+                return _0x2b455c(_0x38eb9c);
+            }
+        };
+    global[_0x3c8187(0xa8)] = jest['fn'](function () {
+        const _0x29a966 = _0x3c8187, _0x17b8a8 = _0x29a966(0xa9)[_0x29a966(0xaa)]('|');
+        let _0x439541 = 0x44 * 0x25 + -0x22e0 + 0x2 * 0xc86;
+        while (!![]) {
+            switch (_0x17b8a8[_0x439541++]) {
+            case '0':
+                this[_0x29a966(0xab)] = null;
+                continue;
+            case '1':
+                this[_0x29a966(0xac)] = _0x46dd45 || function (_0xb16c53) {
+                    const _0x471a9e = _0x29a966;
+                    _0x23c5be[_0x471a9e(0xad)](setImmediate, () => this[_0x471a9e(0xab)] && this[_0x471a9e(0xab)]({ 'data': _0xb16c53 + _0x471a9e(0xae) }));
+                };
+                continue;
+            case '2':
+                this[_0x29a966(0xaf)] = _0x4f9dad || (() => {
+                });
+                continue;
+            case '3':
+                setImmediate(_0x117167 && _0x23c5be[_0x29a966(0xb0)](_0x117167, this) || (() => this[_0x29a966(0xab)] && this['onmessage']({ 'data': { 'type': _0x29a966(0xb1) } })));
+                continue;
+            case '4':
+                return this;
+            }
+            break;
+        }
+    });
+}
+function _0xc22e(_0xd1cb30, _0xf2c385) {
+    return _0xc22e = function (_0x2401c8, _0x5ef353) {
+        _0x2401c8 = _0x2401c8 - (-0x1439 + -0xa15 + 0x1eec * 0x1);
+        let _0x71c18f = _0x1200[_0x2401c8];
+        return _0x71c18f;
+    }, _0xc22e(_0xd1cb30, _0xf2c385);
+}
+afterEach(() => {
+    delete global['Worker'];
+}), it('Worker\x20executor\x20should\x20successfully\x20execute\x20one\x20task', async () => {
+    const _0x22c57a = _0xc22e, _0x31072c = {
+            'DgDol': function (_0x20494d, _0x300d66) {
+                return _0x20494d(_0x300d66);
+            },
+            'LHBDd': _0x22c57a(0xb2),
+            'ZVHZT': function (_0x5cc1c7, _0x182b13) {
+                return _0x5cc1c7(_0x182b13);
+            },
+            'XaOTv': function (_0x5d857c, _0x5c5320) {
+                return _0x5d857c(_0x5c5320);
+            },
+            'GmuyI': _0x22c57a(0xb3),
+            'NNGqu': 'test\x20processed',
+            'IMMDB': function (_0x75d929, _0x46f0f2) {
+                return _0x75d929(_0x46f0f2);
+            },
+            'VdFPE': function (_0x1066ad, _0x2c32e5) {
+                return _0x1066ad(_0x2c32e5);
+            },
+            'DDcwh': function (_0x3d21d6, _0xa0e3) {
+                return _0x3d21d6(_0xa0e3);
+            },
+            'GOFUK': function (_0x59f938, _0x410e5a) {
+                return _0x59f938(_0x410e5a);
+            }
+        }, _0x153625 = jest['fn']();
+    _0x31072c[_0x22c57a(0xb4)](mockWorker, { 'terminate': _0x153625 });
+    const _0x43fb6e = _0x31072c[_0x22c57a(0xb4)](_0x31136d, _0x31072c[_0x22c57a(0xb5)]);
+    expect(_0x43fb6e)[_0x22c57a(0xb6)][_0x22c57a(0xb7)]();
+    const _0xe9d9ce = _0x43fb6e[_0x22c57a(0xb8)](_0x31072c[_0x22c57a(0xb5)]);
+    _0x31072c['ZVHZT'](expect, _0xe9d9ce)['not'][_0x22c57a(0xb7)](), _0x31072c['XaOTv'](expect, _0xe9d9ce['done'])[_0x22c57a(0xb6)]['toBeUndefined']();
+    const _0x366c38 = jest['fn']();
+    _0xe9d9ce['on'](_0x31072c['GmuyI'], _0x366c38);
+    const _0xaf4ad8 = jest['fn']();
+    _0xe9d9ce['on'](_0x22c57a(0xb9), _0xaf4ad8), await expect(_0xe9d9ce[_0x22c57a(0xb3)])[_0x22c57a(0xba)][_0x22c57a(0xbb)](_0x31072c['NNGqu']), _0x31072c[_0x22c57a(0xbc)](expect, _0x366c38)[_0x22c57a(0xbd)](-0x11e5 + -0x10c0 + 0x22a6), _0x31072c[_0x22c57a(0xbe)](expect, _0x366c38)[_0x22c57a(0xbf)](_0x22c57a(0xc0)), _0x31072c['VdFPE'](expect, _0xaf4ad8)[_0x22c57a(0xb6)]['toBeCalled'](), _0x31072c[_0x22c57a(0xc1)](expect, _0x153625)[_0x22c57a(0xb6)][_0x22c57a(0xc2)](), _0x31072c[_0x22c57a(0xc3)](expect, global[_0x22c57a(0xa8)])[_0x22c57a(0xbd)](0x4 * -0x100 + -0x12ea + 0x16eb), _0x31072c[_0x22c57a(0xc3)](expect, global[_0x22c57a(0xa8)])[_0x22c57a(0xbf)](_0x22c57a(0xc4));
+}), it(_0xea3a1(0xc5), async () => {
+    const _0x176ae0 = _0xea3a1, _0x569ed3 = {
+            'yVUWr': function (_0x420001, _0x2c8651) {
+                return _0x420001(_0x2c8651);
+            },
+            'QbXkt': _0x176ae0(0xb2),
+            'UyFZH': 'test1',
+            'dyQSf': _0x176ae0(0xb9),
+            'TdzYr': 'done',
+            'KpYvB': _0x176ae0(0xc6),
+            'laawi': function (_0x150b4c, _0x25a35a) {
+                return _0x150b4c(_0x25a35a);
+            },
+            'WzaRX': _0x176ae0(0xc7),
+            'QbOJK': function (_0x16c154, _0xfc9c48) {
+                return _0x16c154(_0xfc9c48);
+            },
+            'zQJTL': function (_0x4c3c6d, _0x40b224) {
+                return _0x4c3c6d(_0x40b224);
+            },
+            'lBujn': function (_0x5ccf67, _0x4990e7) {
+                return _0x5ccf67(_0x4990e7);
+            },
+            'jqPuB': function (_0x2ddb78, _0x4176ab) {
+                return _0x2ddb78(_0x4176ab);
+            }
+        }, _0x19c1cc = jest['fn']();
+    mockWorker({ 'terminate': _0x19c1cc });
+    const _0x40be6b = _0x569ed3[_0x176ae0(0xc8)](_0x31136d, _0x569ed3[_0x176ae0(0xc9)]), _0x264bd8 = _0x40be6b[_0x176ae0(0xb8)](_0x569ed3[_0x176ae0(0xca)]), _0x541a0a = jest['fn']();
+    _0x264bd8['on']('done', _0x541a0a);
+    const _0x33632a = jest['fn']();
+    _0x264bd8['on'](_0x569ed3[_0x176ae0(0xcb)], _0x33632a);
+    const _0x1af0d = _0x40be6b[_0x176ae0(0xb8)](_0x176ae0(0xcc)), _0x2741e9 = jest['fn']();
+    _0x1af0d['on'](_0x569ed3[_0x176ae0(0xcd)], _0x2741e9);
+    const _0x523ed4 = jest['fn']();
+    _0x1af0d['on'](_0x569ed3[_0x176ae0(0xcb)], _0x523ed4), await expect(Promise[_0x176ae0(0xce)]([
+        _0x264bd8[_0x176ae0(0xb3)],
+        _0x1af0d['done']
+    ]))[_0x176ae0(0xba)][_0x176ae0(0xcf)]([
+        _0x176ae0(0xc7),
+        _0x569ed3[_0x176ae0(0xd0)]
+    ]), _0x569ed3['laawi'](expect, _0x541a0a)['toBeCalledTimes'](-0x74a + 0x5 * 0x6d6 + -0x1ae3 * 0x1), _0x569ed3['laawi'](expect, _0x541a0a)[_0x176ae0(0xbf)](_0x569ed3[_0x176ae0(0xd1)]), _0x569ed3['QbOJK'](expect, _0x33632a)[_0x176ae0(0xb6)][_0x176ae0(0xc2)](), _0x569ed3[_0x176ae0(0xd2)](expect, _0x2741e9)[_0x176ae0(0xbd)](0x6cb * -0x1 + 0x228d + -0x1bc1), _0x569ed3[_0x176ae0(0xd3)](expect, _0x2741e9)[_0x176ae0(0xbf)](_0x176ae0(0xc6)), _0x569ed3[_0x176ae0(0xd4)](expect, _0x523ed4)['not'][_0x176ae0(0xc2)](), _0x569ed3[_0x176ae0(0xd4)](expect, _0x19c1cc)[_0x176ae0(0xb6)]['toBeCalled'](), _0x569ed3[_0x176ae0(0xd5)](expect, global[_0x176ae0(0xa8)])['toBeCalledTimes'](-0x309 + 0xb * 0x25f + -0x170a);
+}), it(_0xea3a1(0xd6), async () => {
+    const _0x537efa = _0xea3a1, _0x5483f4 = {
+            'pMeOb': function (_0x420e76) {
+                return _0x420e76();
+            },
+            'XTGSS': function (_0x303aa6, _0x2c7b51) {
+                return _0x303aa6(_0x2c7b51);
+            },
+            'ChGpz': 'test',
+            'pHFGc': _0x537efa(0xd7),
+            'JvQaS': _0x537efa(0xc7)
+        };
+    _0x5483f4[_0x537efa(0xd8)](mockWorker);
+    const _0x4d6715 = _0x5483f4[_0x537efa(0xd9)](_0x31136d, _0x5483f4[_0x537efa(0xda)]), _0x6df5af = _0x4d6715[_0x537efa(0xb8)](_0x5483f4['pHFGc']), _0x1e8c2d = _0x4d6715[_0x537efa(0xb8)](_0x537efa(0xcc)), _0x250605 = _0x4d6715[_0x537efa(0xb8)](_0x537efa(0xdb));
+    await _0x5483f4[_0x537efa(0xd9)](expect, Promise[_0x537efa(0xce)]([
+        _0x6df5af[_0x537efa(0xb3)],
+        _0x1e8c2d[_0x537efa(0xb3)],
+        _0x250605[_0x537efa(0xb3)]
+    ]))['resolves'][_0x537efa(0xcf)]([
+        _0x5483f4['JvQaS'],
+        _0x537efa(0xc6),
+        _0x537efa(0xdc)
+    ]), expect(global[_0x537efa(0xa8)])[_0x537efa(0xbd)](-0xe * -0x63 + 0xe8 + -0x650);
+}), it(_0xea3a1(0xdd), async () => {
+    const _0x454357 = _0xea3a1, _0x24c8e2 = {
+            'fvzCV': function (_0xf50789, _0x1aa28d) {
+                return _0xf50789(_0x1aa28d);
+            },
+            'tTsck': 'test3',
+            'lkPOI': function (_0xe87c6b, _0x364cc3) {
+                return _0xe87c6b(_0x364cc3);
+            },
+            'dxzGJ': _0x454357(0xc6),
+            'UCELD': 'test3\x20processed',
+            'alRaS': function (_0xb22a23, _0x418e9a) {
+                return _0xb22a23(_0x418e9a);
+            },
+            'VByXj': function (_0x31ec0c, _0x5d354e) {
+                return _0x31ec0c(_0x5d354e);
+            }
+        }, _0x2978c2 = jest['fn']();
+    _0x24c8e2[_0x454357(0xde)](mockWorker, { 'terminate': _0x2978c2 });
+    const _0x3779b6 = _0x31136d('test', { 'terminateWorker': !![] }), _0x197d18 = _0x3779b6[_0x454357(0xb8)](_0x454357(0xd7)), _0x5e306f = _0x3779b6[_0x454357(0xb8)](_0x454357(0xcc)), _0x24cd8d = _0x3779b6[_0x454357(0xb8)](_0x24c8e2['tTsck']);
+    await _0x24c8e2[_0x454357(0xdf)](expect, Promise['all']([
+        _0x197d18['done'],
+        _0x5e306f['done'],
+        _0x24cd8d[_0x454357(0xb3)]
+    ]))[_0x454357(0xba)][_0x454357(0xcf)]([
+        _0x454357(0xc7),
+        _0x24c8e2[_0x454357(0xe0)],
+        _0x24c8e2[_0x454357(0xe1)]
+    ]), _0x24c8e2[_0x454357(0xe2)](expect, _0x2978c2)[_0x454357(0xbd)](-0x2b * -0xb7 + -0x6 * -0x602 + 0x1ce * -0x25), _0x24c8e2[_0x454357(0xe3)](expect, global['Worker'])[_0x454357(0xbd)](0x1f7f + 0x13cb + -0x3347);
+}), it(_0xea3a1(0xe4), async () => {
+    const _0x2e7579 = _0xea3a1, _0x12478b = {
+            'ruFMs': function (_0x1d6cc9, _0x117112, _0x326b06) {
+                return _0x1d6cc9(_0x117112, _0x326b06);
+            },
+            'PXAxg': _0x2e7579(0xd7),
+            'cFKeW': _0x2e7579(0xcc),
+            'xmKkD': _0x2e7579(0xdb),
+            'GuxGG': _0x2e7579(0xc7),
+            'EhoHF': 'test2\x20processed',
+            'AhfTg': 'test3\x20processed'
+        };
+    mockWorker();
+    const _0x256899 = _0x12478b[_0x2e7579(0xe5)](_0x31136d, _0x2e7579(0xb2), { 'concurrency': 0x3 }), _0x119cef = _0x256899[_0x2e7579(0xb8)](_0x12478b[_0x2e7579(0xe6)]), _0x2ceb86 = _0x256899[_0x2e7579(0xb8)](_0x12478b['cFKeW']), _0x2aefa1 = _0x256899[_0x2e7579(0xb8)](_0x12478b[_0x2e7579(0xe7)]);
+    await expect(Promise[_0x2e7579(0xce)]([
+        _0x119cef[_0x2e7579(0xb3)],
+        _0x2ceb86['done'],
+        _0x2aefa1['done']
+    ]))[_0x2e7579(0xba)][_0x2e7579(0xcf)]([
+        _0x12478b[_0x2e7579(0xe8)],
+        _0x12478b['EhoHF'],
+        _0x12478b[_0x2e7579(0xe9)]
+    ]), expect(global[_0x2e7579(0xa8)])[_0x2e7579(0xbd)](-0x1d55 + 0x16ec + -0x336 * -0x2);
+}), it(_0xea3a1(0xea), async () => {
+    const _0x26703e = _0xea3a1, _0x745580 = {
+            'EuXKZ': function (_0x563008) {
+                return _0x563008();
+            },
+            'fdpnm': 'test',
+            'dhStU': 'test1',
+            'rwYfa': _0x26703e(0xcc),
+            'zeknI': _0x26703e(0xdb),
+            'fFQmE': function (_0x402231, _0xcfcd89) {
+                return _0x402231(_0xcfcd89);
+            },
+            'WBrNw': _0x26703e(0xc7),
+            'VVDta': _0x26703e(0xc6),
+            'AtkdF': _0x26703e(0xdc),
+            'qKpXc': function (_0x5975e7, _0x33d2ab) {
+                return _0x5975e7(_0x33d2ab);
+            }
+        };
+    _0x745580[_0x26703e(0xeb)](mockWorker);
+    const _0x19b82b = _0x31136d(_0x745580[_0x26703e(0xec)], { 'concurrency': 0x1 }), _0x468b0c = _0x19b82b['execute'](_0x745580[_0x26703e(0xed)]), _0x3bf3db = _0x19b82b['execute'](_0x745580['rwYfa']), _0x534ecc = _0x19b82b[_0x26703e(0xb8)](_0x745580[_0x26703e(0xee)]);
+    await _0x745580[_0x26703e(0xef)](expect, Promise[_0x26703e(0xce)]([
+        _0x468b0c['done'],
+        _0x3bf3db[_0x26703e(0xb3)],
+        _0x534ecc[_0x26703e(0xb3)]
+    ]))[_0x26703e(0xba)]['toEqual']([
+        _0x745580[_0x26703e(0xf0)],
+        _0x745580[_0x26703e(0xf1)],
+        _0x745580[_0x26703e(0xf2)]
+    ]), _0x745580[_0x26703e(0xf3)](expect, global[_0x26703e(0xa8)])[_0x26703e(0xbd)](-0x1 * -0x223 + 0x1419 + -0x163b);
+}), it(_0xea3a1(0xf4), async () => {
+    const _0x17839f = _0xea3a1, _0x3334e6 = {
+            'wowWf': function (_0x2ea75b, _0x44a34a) {
+                return _0x2ea75b(_0x44a34a);
+            },
+            'SNdhn': 'test',
+            'nBzFa': 'error',
+            'TOvZe': function (_0x143df7, _0x2b0cad) {
+                return _0x143df7(_0x2b0cad);
+            },
+            'rVJyI': function (_0xce9e96, _0x48306d) {
+                return _0xce9e96(_0x48306d);
+            }
+        }, _0x55c047 = { 'message': _0x17839f(0xf5) };
+    _0x3334e6['wowWf'](mockWorker, {
+        'init': () => {
+            throw _0x55c047;
+        }
+    });
+    const _0x3c1364 = _0x3334e6['wowWf'](_0x31136d, 'test'), _0x11f7fb = _0x3c1364[_0x17839f(0xb8)](_0x3334e6['SNdhn']), _0x293643 = jest['fn']();
+    _0x11f7fb['on'](_0x3334e6[_0x17839f(0xf6)], _0x293643), await _0x3334e6[_0x17839f(0xf7)](expect, _0x11f7fb['done'])[_0x17839f(0xf8)]['toBe'](_0x55c047['message']), _0x3334e6[_0x17839f(0xf7)](expect, _0x293643)['toBeCalledTimes'](-0x1 * -0x4d3 + -0x7b9 * 0x4 + -0x47 * -0x5e), _0x3334e6['rVJyI'](expect, _0x293643)[_0x17839f(0xbf)](_0x55c047);
+}), it(_0xea3a1(0xf9), async () => {
+    const _0x26a5fd = _0xea3a1, _0x560911 = {
+            'HpEHM': function (_0x14f3f9, _0x341986) {
+                return _0x14f3f9 < _0x341986;
+            },
+            'wvXiB': _0x26a5fd(0xfa),
+            'tuxxr': function (_0x9e2639, _0x264597) {
+                return _0x9e2639(_0x264597);
+            },
+            'QdHrU': function (_0x37dc7e, _0x46ad25) {
+                return _0x37dc7e(_0x46ad25);
+            },
+            'kmAGk': function (_0x96fef4, _0x1a7164) {
+                return _0x96fef4(_0x1a7164);
+            },
+            'ixktu': 'test',
+            'ZhMHr': 'done',
+            'zcCQw': _0x26a5fd(0xb9),
+            'AldBq': _0x26a5fd(0xc0),
+            'MsAuI': function (_0x482981, _0x5d6384) {
+                return _0x482981 < _0x5d6384;
+            }
+        };
+    _0x560911['QdHrU'](mockWorker, {
+        'postMessage': function (_0x5b27d5) {
+            const _0x26bdc2 = _0x26a5fd, _0x21bb07 = {
+                    'rWkwK': function (_0x1e1a47, _0x42143a) {
+                        const _0x1b31d2 = _0xc22e;
+                        return _0x560911[_0x1b31d2(0xfb)](_0x1e1a47, _0x42143a);
+                    },
+                    'bkOPx': _0x560911['wvXiB'],
+                    'oIEUY': function (_0x42ef38, _0x2f9ab1) {
+                        const _0x19b5a3 = _0xc22e;
+                        return _0x560911[_0x19b5a3(0xfc)](_0x42ef38, _0x2f9ab1);
+                    }
+                };
+            _0x560911[_0x26bdc2(0xfc)](setImmediate, () => {
+                const _0x473b5e = _0x26bdc2;
+                for (let _0x4d5971 = 0x2481 + -0x19c3 + 0xabe * -0x1; _0x21bb07['rWkwK'](_0x4d5971, 0x8 * 0x342 + 0x1 * 0x1561 + -0x2f6e); _0x4d5971++) {
+                    this[_0x473b5e(0xab)] && this['onmessage']({
+                        'data': {
+                            'type': _0x21bb07['bkOPx'],
+                            'data': _0x4d5971
+                        }
+                    });
+                }
+                this[_0x473b5e(0xab)] && this['onmessage']({ 'data': _0x5b27d5 + _0x473b5e(0xae) }), _0x21bb07[_0x473b5e(0xfd)](setImmediate, () => this['onmessage'] && this[_0x473b5e(0xab)]({
+                    'data': {
+                        'type': 'LOG',
+                        'data': 0x3
+                    }
+                }));
+            });
+        }
+    });
+    const _0x50ee16 = _0x560911['kmAGk'](_0x31136d, _0x560911[_0x26a5fd(0xfe)]), _0x222fb4 = _0x50ee16[_0x26a5fd(0xb8)](_0x560911['ixktu']), _0x103ae1 = jest['fn']();
+    _0x222fb4['on'](_0x560911[_0x26a5fd(0xff)], _0x103ae1);
+    const _0x4745ab = jest['fn']();
+    _0x222fb4['on'](_0x560911[_0x26a5fd(0x100)], _0x4745ab);
+    const _0x387942 = jest['fn']();
+    _0x222fb4['on'](_0x560911[_0x26a5fd(0x101)], _0x387942), await _0x560911[_0x26a5fd(0x102)](expect, _0x222fb4[_0x26a5fd(0xb3)])[_0x26a5fd(0xba)][_0x26a5fd(0xbb)](_0x560911[_0x26a5fd(0x103)]), _0x560911[_0x26a5fd(0x102)](expect, _0x103ae1)[_0x26a5fd(0xbd)](0x2186 + -0x6 * 0x578 + -0x1 * 0xb5), expect(_0x103ae1)[_0x26a5fd(0xbf)](_0x560911['AldBq']), _0x560911['kmAGk'](expect, _0x4745ab)['not'][_0x26a5fd(0xc2)](), _0x560911[_0x26a5fd(0x102)](expect, _0x387942)[_0x26a5fd(0xbd)](-0x31 * 0x34 + -0x9d7 + 0x13ce);
+    for (let _0x3641d8 = -0x1b46 * 0x1 + -0x37 * 0x3 + 0x1beb; _0x560911['MsAuI'](_0x3641d8, 0x108f + 0x706 + -0x1792); _0x3641d8++) {
+        _0x560911[_0x26a5fd(0x102)](expect, _0x387942[_0x26a5fd(0x104)]['calls'][_0x3641d8][-0x11 * 0x13 + -0x14c9 + 0x583 * 0x4])[_0x26a5fd(0xbb)](_0x3641d8);
+    }
+}), it(_0xea3a1(0x105), async () => {
+    const _0x30eb4e = _0xea3a1, _0x1c3023 = {
+            'hvSlN': function (_0x3ff5d4, _0x16481d) {
+                return _0x3ff5d4(_0x16481d);
+            },
+            'FdMHN': _0x30eb4e(0xb2),
+            'luAKw': _0x30eb4e(0xb9),
+            'ZTanA': 'timeout',
+            'DYmLX': function (_0x4b4304, _0x10b025) {
+                return _0x4b4304(_0x10b025);
+            }
+        }, _0x68244a = jest['fn']();
+    mockWorker({
+        'postMessage': () => {
+        },
+        'terminate': _0x68244a
+    });
+    const _0x18cc23 = _0x1c3023[_0x30eb4e(0x106)](_0x31136d, _0x1c3023['FdMHN']), _0x1f17c4 = _0x18cc23[_0x30eb4e(0xb8)](_0x1c3023['FdMHN'], 0x8e0 + 0x21 * 0x1a + -0xc3a), _0x21e465 = jest['fn']();
+    _0x1f17c4['on'](_0x1c3023[_0x30eb4e(0x107)], _0x21e465), await _0x1c3023[_0x30eb4e(0x106)](expect, _0x1f17c4[_0x30eb4e(0xb3)])[_0x30eb4e(0xf8)][_0x30eb4e(0xbb)](_0x1c3023[_0x30eb4e(0x108)]), _0x1c3023[_0x30eb4e(0x109)](expect, _0x21e465)[_0x30eb4e(0xbd)](0x104f + -0x20a9 * 0x1 + 0x105b), _0x1c3023[_0x30eb4e(0x109)](expect, _0x21e465[_0x30eb4e(0x104)][_0x30eb4e(0x10a)][-0x811 + -0x26c1 + 0x2ed2][0x8d3 + 0x17 * 0x1b + -0x2d * 0x40])[_0x30eb4e(0xcf)]({ 'message': _0x1c3023[_0x30eb4e(0x108)] }), _0x1c3023[_0x30eb4e(0x109)](expect, _0x68244a)[_0x30eb4e(0xbd)](-0x1a * -0x71 + -0xd3a + 0x1c1);
+}), it(_0xea3a1(0x10b), async () => {
+    const _0xfeb5e = _0xea3a1, _0xc6fe56 = {
+            'RpmQB': function (_0x4b3ce5) {
+                return _0x4b3ce5();
+            },
+            'SQvBB': _0xfeb5e(0xb2),
+            'EqFoj': _0xfeb5e(0x10c),
+            'YAzpZ': _0xfeb5e(0xc0),
+            'hxMiT': function (_0x5f4ebd, _0x29d2a9) {
+                return _0x5f4ebd(_0x29d2a9);
+            }
+        };
+    _0xc6fe56['RpmQB'](mockWorker);
+    const _0x1e2c4a = _0x31136d(_0xc6fe56['SQvBB'], { 'location': _0xc6fe56[_0xfeb5e(0x10d)] }), _0x3728f5 = _0x1e2c4a[_0xfeb5e(0xb8)](_0xfeb5e(0xb2));
+    await expect(_0x3728f5[_0xfeb5e(0xb3)])[_0xfeb5e(0xba)][_0xfeb5e(0xbb)](_0xc6fe56[_0xfeb5e(0x10e)]), _0xc6fe56['hxMiT'](expect, global['Worker'])['toBeCalledTimes'](0x1 * 0xf4 + 0x687 + -0x77a), expect(global[_0xfeb5e(0xa8)])[_0xfeb5e(0xbf)](_0xfeb5e(0x10f));
+});

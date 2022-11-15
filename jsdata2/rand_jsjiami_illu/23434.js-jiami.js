@@ -1,0 +1,9 @@
+function* foo() {
+  var _0x33c312 = yield wat();
+
+  const _0x5114c2 = 0x2;
+
+  const _0x28b219 = yield _0x33c312 = _0x5114c2;
+
+  yield _0x33c312, yield _0x5114c2;yield _0x33c312 = _0x5114c2;return (yield 0x1) || (yield 0x2);
+}

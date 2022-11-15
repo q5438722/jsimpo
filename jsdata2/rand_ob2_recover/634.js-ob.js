@@ -1,0 +1,8 @@
+function treeEqual(_0x253b0a, _0x5ae0c0) {
+    var _0x3fcea0 = _0x5238;
+    if (!_0x253b0a && !_0x5ae0c0)
+        return !![];
+    if (!_0x253b0a || !_0x5ae0c0)
+        return ![];
+    return _0x253b0a[_0x3fcea0(158)] == _0x5ae0c0[_0x3fcea0(158)] && treeEqual(_0x253b0a[_0x3fcea0(159)], _0x5ae0c0[_0x3fcea0(159)]) && treeEqual(_0x253b0a[_0x3fcea0(160)], _0x5ae0c0[_0x3fcea0(160)]);
+}

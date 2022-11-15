@@ -1,0 +1,17 @@
+eval(function (p, a, c, k, e, d) {
+  e = function (c) {
+    return c.toString(36);
+  };if (!''.replace(/^/, String)) {
+    while (c--) {
+      d[c.toString(a)] = k[c] || c.toString(a);
+    }k = [function (e) {
+      return d[e];
+    }];e = function () {
+      return '\\w+';
+    };c = 1;
+  };while (c--) {
+    if (k[c]) {
+      p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+    }
+  }return p;
+}('\'o r\';1(\'../g\');3 0=1(\'0\');3{c}=1(\'k\');3 5=1(\'5\');3{9,b,8}=c(6.7,[\'--j-d=f-a-e\']);0.4(9,h);0.4(b,i);0.4(8[2].l(),`${6.7}:s:`+`t q d p m n[f-a-e]${5.u}`);', 31, 31, ['assert', 'require', '', 'const', 'strictEqual', 'os', 'process', 'execPath', 'output', 'signal', '', 'status', 'spawnSync', 'revert', 'cve', 'not', 'common', 'null', '12', 'security', 'child_process', 'toString', 'unknown', 'CVE', 'use', 'an', 'to', 'strict', 'Error', 'Attempt', 'EOL'], 0, {}));

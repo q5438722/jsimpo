@@ -1,0 +1,31 @@
+const _0x5bed = ['exports', 'foo', '__esModule', 'default', '20443xYdspR', '6AeyGtA', '231295uCznaM', '3jMNYwL', '464559QyKjfh', '127536VozSQT', '271290pehFsw', '3XHXObl', '62172jVcGbA', '83wuHOAb', '1607nfimZK'];
+
+function _0x2151(_0x27f308, _0x4eb062) {
+    return _0x2151 = function (_0x35d5e0, _0x15a2a0) {
+        _0x35d5e0 = _0x35d5e0 - 171;
+        const _0x1b515c = _0x5bed[_0x35d5e0];
+
+        return _0x1b515c;
+    }, _0x2151(_0x27f308, _0x4eb062);
+}
+const _0x47a3d4 = _0x2151;
+
+(function (_0x40d5f4, _0x359acf) {
+    const _0x5c4cc4 = _0x2151;
+
+    while (true) {
+        try {
+            const _0x483177 = -parseInt(_0x5c4cc4(0xab)) * -parseInt(_0x5c4cc4(0xac)) + parseInt(_0x5c4cc4(0xad)) * parseInt(_0x5c4cc4(0xae)) + parseInt(_0x5c4cc4(0xaf)) + -parseInt(_0x5c4cc4(0xb0)) + -parseInt(_0x5c4cc4(0xb1)) * parseInt(_0x5c4cc4(0xb2)) + parseInt(_0x5c4cc4(0xb3)) + parseInt(_0x5c4cc4(0xb4)) * parseInt(_0x5c4cc4(0xb5));
+
+            if (_0x483177 === _0x359acf) break;else _0x40d5f4.push(_0x40d5f4.shift());
+        } catch (_0x4c9fc5) {
+            _0x40d5f4.push(_0x40d5f4.shift());
+        }
+    }
+})(_0x5bed, 535249), define([_0x47a3d4(0xb6), _0x47a3d4(0xb7)], function (_0x22c886, _0x6da414) {
+    'use strict';
+
+    const _0x23bc36 = _0x47a3d4;
+
+    _0x22c886[_0x23bc36(0xb8)] = true, _0x22c886[_0x23bc36(0xb9)] = void 0, _0x22c886[_0x23bc36(0xb9)] = _0x6da414.foo;
+});

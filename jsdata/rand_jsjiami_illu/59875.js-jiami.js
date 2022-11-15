@@ -1,0 +1,5 @@
+function foo(_0x3dd15e, _0x1f0015, _0x231fd0, _0x4f680a) {
+  'use strict';
+  var _0x5b4826 = 0xa;
+  _0x5b4826 = 0x14;
+}assertThrows('foo.length()');

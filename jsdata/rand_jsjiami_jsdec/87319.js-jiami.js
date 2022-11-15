@@ -1,0 +1,1 @@
+module['exports']={'config':{'type':'bar','data':{'datasets':[{'data':[0x1,0x2,0x3]}],'labels':['Long long label 1','Label2','Label3']},'options':{'indexAxis':'y','scales':{'y':{'position':'right','ticks':{'crossAlign':'near'}}}}},'options':{'spriteText':!![],'canvas':{'height':0x100,'width':0x200}}};

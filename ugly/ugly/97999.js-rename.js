@@ -1,0 +1,1 @@
+const{useState}=require("react");const{useCustom}=require("./useCustom");function Component(e){const[t]=useState(0);useCustom();return t}module.exports={Component:Component};

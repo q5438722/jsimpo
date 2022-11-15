@@ -1,0 +1,4 @@
+var Offset = function (_0xf0ea18, _0x4950f7, _0x2eeb14) {
+    return _0xf0ea18['x'] += _0x4950f7, _0xf0ea18['y'] += _0x2eeb14, _0xf0ea18;
+};
+module[_0x30acf6(420)] = Offset;

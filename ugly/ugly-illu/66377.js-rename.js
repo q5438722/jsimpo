@@ -1,0 +1,13 @@
+"use strict";
+
+const __importDefault = this && this.__importDefault || function (t) {
+  return t && t.__esModule ? t : { default: t };
+};
+
+const agent_1 = __importDefault(require("./agent"));
+
+function createHttpProxyAgent(t) {
+  return new agent_1.default(t);
+}(function (t) {
+  t.HttpProxyAgent = agent_1.default;t.prototype = agent_1.default.prototype;
+})(createHttpProxyAgent || (createHttpProxyAgent = {}));module.exports = createHttpProxyAgent;

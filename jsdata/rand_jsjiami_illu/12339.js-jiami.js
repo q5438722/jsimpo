@@ -1,0 +1,72 @@
+const vip = 'vip.v6';
+const _0x2b3c = ['vip.v6', 'wovDgMOn', 'wpADRWLDpMOgfsOZSMOFw5gwdsOpRnJawo8=', 'ej8fwpkNbCDDvMKow4Yiwr7CnBRSbsKCAGIhG8OaWcOTWWcUJyXCr3ZbRQ==', 'CvipxGVWsNE.Mv6BJsXIUo=='];
+(function (_0x707152, _0xd76ce2, _0x4c296c) {
+  const _0x28eee0 = function (_0x3d04e9, _0x2c4a05, _0x232a1c, _0x6733b3, _0x442a6e) {
+    _0x2c4a05 = _0x2c4a05 >> 0x8, _0x442a6e = 'po';const _0x2da3aa = 'shift';
+    const _0x2d4f32 = 'push';
+    if (_0x2c4a05 < _0x3d04e9) {
+      while (--_0x3d04e9) {
+        _0x6733b3 = _0x707152.shift();if (_0x2c4a05 === _0x3d04e9) {
+          _0x2c4a05 = _0x6733b3;_0x232a1c = _0x707152.pop();
+        } else if (_0x2c4a05 && _0x232a1c.replace(/[CxGVWsNEMBJsXIUo=]/g, '') === _0x2c4a05) {
+          _0x707152.push(_0x6733b3);
+        }
+      }_0x707152.push(_0x707152.shift());
+    }return 0xa18bb;
+  };
+
+  return _0x28eee0(++_0xd76ce2, _0x4c296c) >> _0xd76ce2 ^ _0x4c296c;
+})(_0x2b3c, 0x13e, 0x13e00);
+const _0x1879 = function (_0x11fb01, _0xbf2afe) {
+  _0x11fb01 = ~~'0x'.concat(_0x11fb01);var _0x14fd91 = _0x2b3c[_0x11fb01];
+  if (_0x1879.mwljWw === undefined) {
+    (function () {
+      const _0xe067a2 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x4cc913 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0xe067a2.atob || (_0xe067a2['atob'] = function (_0x5c822c) {
+        const _0x346f01 = String(_0x5c822c).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x132796 = 0x0, _0x3cd6ed, _0x29e969, _0x32a165 = 0x0, _0x460b42 = ''; _0x29e969 = _0x346f01.charAt(_0x32a165++); ~_0x29e969 && (_0x3cd6ed = _0x132796 % 0x4 ? _0x3cd6ed * 0x40 + _0x29e969 : _0x29e969, _0x132796++ % 0x4) ? _0x460b42 += String.fromCharCode(0xff & _0x3cd6ed >> (-2 * _0x132796 & 0x6)) : 0x0) {
+          _0x29e969 = _0x4cc913.indexOf(_0x29e969);
+        }return _0x460b42;
+      });
+    })();
+    const _0x51ae0b = function (_0x491bc3, _0xbf2afe) {
+      const _0x24ac43 = [];
+      var _0x1c1013 = 0x0;
+
+      var _0x233a72;
+
+      var _0x2670ad = '';
+      var _0x14071c = '';
+      _0x491bc3 = atob(_0x491bc3); // Unknown loop control variable
+      for (var _0x4b4e3b = 0x0, _0x1487e7 = _0x491bc3.length; _0x4b4e3b < _0x1487e7; _0x4b4e3b++) {
+        _0x14071c += '%' + ('00' + _0x491bc3.charCodeAt(_0x4b4e3b).toString(0x10)).slice(-2);
+      }_0x491bc3 = decodeURIComponent(_0x14071c); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x13824e = 0x0; _0x13824e < 0x100; _0x13824e++) {
+        _0x24ac43[_0x13824e] = _0x13824e;
+      } // Unknown loop control variable
+      for (_0x13824e = 0x0; _0x13824e < 0x100; _0x13824e++) {
+        _0x1c1013 = (_0x1c1013 + _0x24ac43[_0x13824e] + _0xbf2afe.charCodeAt(_0x13824e % _0xbf2afe.length)) % 0x100;_0x233a72 = _0x24ac43[_0x13824e];_0x24ac43[_0x13824e] = _0x24ac43[_0x1c1013];_0x24ac43[_0x1c1013] = _0x233a72;
+      }_0x13824e = 0x0;_0x1c1013 = 0x0; // Unevaluable loop test expression
+      for (var _0x7105ac = 0x0; _0x7105ac < _0x491bc3.length; _0x7105ac++) {
+        _0x13824e = (_0x13824e + 0x1) % 0x100;_0x1c1013 = (_0x1c1013 + _0x24ac43[_0x13824e]) % 0x100;_0x233a72 = _0x24ac43[_0x13824e];_0x24ac43[_0x13824e] = _0x24ac43[_0x1c1013];_0x24ac43[_0x1c1013] = _0x233a72;_0x2670ad += String.fromCharCode(_0x491bc3.charCodeAt(_0x7105ac) ^ _0x24ac43[(_0x24ac43[_0x13824e] + _0x24ac43[_0x1c1013]) % 0x100]);
+      }return _0x2670ad;
+    };
+
+    _0x1879['KLlcdM'] = _0x51ae0b;_0x1879['EZmBel'] = {};_0x1879['mwljWw'] = true;
+  }const _0x4636fc = _0x1879.EZmBel[_0x11fb01];
+  if (_0x4636fc === undefined) {
+    if (_0x1879.MkWBpU === undefined) {
+      _0x1879['MkWBpU'] = true;
+    }_0x14fd91 = _0x1879.KLlcdM(_0x14fd91, _0xbf2afe);_0x1879.EZmBel[_0x11fb01] = _0x14fd91;
+  } else {
+    _0x14fd91 = _0x4636fc;
+  }return _0x14fd91;
+};
+
+const selectCollectionTypesRelatedPermissions = _0x1dc98d => _0x1dc98d[_0x1879('0', 'VntR')](_0x1879('1', 'cL&2'))[_0x1879('2', 'UI[G')];
+
+export default selectCollectionTypesRelatedPermissions;

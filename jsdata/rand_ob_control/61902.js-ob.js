@@ -1,0 +1,2 @@
+var re = /a/g, str = 'bbbbabbbbabbbb';
+re['test'](str), assertEquals(0x5, re['lastIndex']), re['lastIndex'] = 0x0, re['test'](str), assertEquals(0x5, re['lastIndex']), re['lastIndex'] = 0x0, re['test'](str), assertEquals(0x5, re['lastIndex']), re = /a/g, re['exec'](str), assertEquals(0x5, re['lastIndex']), re['lastIndex'] = 0x0, re['exec'](str), assertEquals(0x5, re['lastIndex']), re['lastIndex'] = 0x0, re['exec'](str), assertEquals(0x5, re['lastIndex']);

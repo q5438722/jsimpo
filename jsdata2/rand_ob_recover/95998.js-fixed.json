@@ -1,0 +1,617 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "fs"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "fs",
+                                "raw": "'fs'"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "_dirtyFilesCache"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": []
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "clearDirtyFilesCache"
+            },
+            "params": [],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "_dirtyFilesCache"
+                            },
+                            "right": {
+                                "type": "ObjectExpression",
+                                "properties": []
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "updateDirtyFilesCache"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x3265eb"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x166a79"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "ConditionalExpression",
+                            "test": {
+                                "type": "Identifier",
+                                "name": "_0x166a79"
+                            },
+                            "consequent": {
+                                "type": "AssignmentExpression",
+                                "operator": "=",
+                                "left": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "_dirtyFilesCache"
+                                    },
+                                    "property": {
+                                        "type": "Identifier",
+                                        "name": "_0x3265eb"
+                                    }
+                                },
+                                "right": {
+                                    "type": "UnaryExpression",
+                                    "operator": "!",
+                                    "argument": {
+                                        "type": "UnaryExpression",
+                                        "operator": "!",
+                                        "argument": {
+                                            "type": "ArrayExpression",
+                                            "elements": []
+                                        },
+                                        "prefix": true
+                                    },
+                                    "prefix": true
+                                }
+                            },
+                            "alternate": {
+                                "type": "LogicalExpression",
+                                "operator": "&&",
+                                "left": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "_dirtyFilesCache"
+                                    },
+                                    "property": {
+                                        "type": "Identifier",
+                                        "name": "_0x3265eb"
+                                    }
+                                },
+                                "right": {
+                                    "type": "UnaryExpression",
+                                    "operator": "delete",
+                                    "argument": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "_dirtyFilesCache"
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "_0x3265eb"
+                                        }
+                                    },
+                                    "prefix": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "_readFile"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x9f3250"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x5914ea"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "_0x314a0c"
+                                },
+                                "init": {
+                                    "type": "Identifier",
+                                    "name": "_0x1773"
+                                }
+                            },
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "_0x363cbd"
+                                },
+                                "init": {
+                                    "type": "ObjectExpression",
+                                    "properties": [
+                                        {
+                                            "type": "Property",
+                                            "key": {
+                                                "type": "Literal",
+                                                "value": "XBHKC",
+                                                "raw": "'XBHKC'"
+                                            },
+                                            "computed": false,
+                                            "value": {
+                                                "type": "Literal",
+                                                "value": "utf8",
+                                                "raw": "'utf8'"
+                                            },
+                                            "kind": "init",
+                                            "method": false,
+                                            "shorthand": false
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "var"
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "fs"
+                                },
+                                "property": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x314a0c"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": 479,
+                                            "raw": "0x1df"
+                                        }
+                                    ]
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x9f3250"
+                                },
+                                {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "_0x363cbd"
+                                    },
+                                    "property": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "_0x314a0c"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": 480,
+                                                "raw": "0x1e0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "FunctionExpression",
+                                    "id": null,
+                                    "params": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x5670ee"
+                                        },
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x54c0e6"
+                                        }
+                                    ],
+                                    "body": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                            {
+                                                "type": "VariableDeclaration",
+                                                "declarations": [
+                                                    {
+                                                        "type": "VariableDeclarator",
+                                                        "id": {
+                                                            "type": "Identifier",
+                                                            "name": "_0x1f8a40"
+                                                        },
+                                                        "init": {
+                                                            "type": "Identifier",
+                                                            "name": "_0x314a0c"
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "VariableDeclarator",
+                                                        "id": {
+                                                            "type": "Identifier",
+                                                            "name": "_0x61af1c"
+                                                        },
+                                                        "init": {
+                                                            "type": "Literal",
+                                                            "value": "",
+                                                            "raw": "''"
+                                                        }
+                                                    }
+                                                ],
+                                                "kind": "var"
+                                            },
+                                            {
+                                                "type": "ExpressionStatement",
+                                                "expression": {
+                                                    "type": "SequenceExpression",
+                                                    "expressions": [
+                                                        {
+                                                            "type": "LogicalExpression",
+                                                            "operator": "&&",
+                                                            "left": {
+                                                                "type": "UnaryExpression",
+                                                                "operator": "!",
+                                                                "argument": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x5670ee"
+                                                                },
+                                                                "prefix": true
+                                                            },
+                                                            "right": {
+                                                                "type": "AssignmentExpression",
+                                                                "operator": "=",
+                                                                "left": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x61af1c"
+                                                                },
+                                                                "right": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x54c0e6"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x5914ea"
+                                                                },
+                                                                "property": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0x1f8a40"
+                                                                    },
+                                                                    "arguments": [
+                                                                        {
+                                                                            "type": "Literal",
+                                                                            "value": 481,
+                                                                            "raw": "0x1e1"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            "arguments": [
+                                                                {
+                                                                    "type": "Literal",
+                                                                    "value": null,
+                                                                    "raw": "null"
+                                                                },
+                                                                {
+                                                                    "type": "ArrayExpression",
+                                                                    "elements": [
+                                                                        {
+                                                                            "type": "Identifier",
+                                                                            "name": "_0x9f3250"
+                                                                        },
+                                                                        {
+                                                                            "type": "Identifier",
+                                                                            "name": "_0x61af1c"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "generator": false,
+                                    "expression": false,
+                                    "async": false
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "extractContent"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x563cab"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0xef347a"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x23f975"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "_0x44a9d9"
+                                },
+                                "init": {
+                                    "type": "Identifier",
+                                    "name": "_0x1773"
+                                }
+                            }
+                        ],
+                        "kind": "var"
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "_0x23f975"
+                                },
+                                "property": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x44a9d9"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": 481,
+                                            "raw": "0x1e1"
+                                        }
+                                    ]
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": null,
+                                    "raw": "null"
+                                },
+                                {
+                                    "type": "ArrayExpression",
+                                    "elements": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x563cab"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "SequenceExpression",
+                "expressions": [
+                    {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "exports"
+                            },
+                            "property": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "_0x389e73"
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Literal",
+                                        "value": 482,
+                                        "raw": "0x1e2"
+                                    }
+                                ]
+                            }
+                        },
+                        "right": {
+                            "type": "Identifier",
+                            "name": "extractContent"
+                        }
+                    },
+                    {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "exports"
+                            },
+                            "property": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "_0x389e73"
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Literal",
+                                        "value": 483,
+                                        "raw": "0x1e3"
+                                    }
+                                ]
+                            }
+                        },
+                        "right": {
+                            "type": "Identifier",
+                            "name": "clearDirtyFilesCache"
+                        }
+                    },
+                    {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "exports"
+                            },
+                            "property": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "_0x389e73"
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Literal",
+                                        "value": 484,
+                                        "raw": "0x1e4"
+                                    }
+                                ]
+                            }
+                        },
+                        "right": {
+                            "type": "Identifier",
+                            "name": "updateDirtyFilesCache"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

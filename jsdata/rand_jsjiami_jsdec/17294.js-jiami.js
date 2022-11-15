@@ -1,0 +1,1 @@
+function*f(){var _0xa70ffb={'RFPUr':'4|1|6|3|5|0|2'};var _0x40617a=_0xa70ffb['RFPUr']['split']('|'),_0x2233f0=0x0;while(!![]){switch(_0x40617a[_0x2233f0++]){case'0':!![]?yield:0x1;continue;case'1':[yield];continue;case'2':yield,0x1;continue;case'3':;continue;case'4':yield;continue;case'5':yield;continue;case'6':{yield;}continue;}break;}}

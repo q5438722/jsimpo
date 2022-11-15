@@ -1,0 +1,267 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "description"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "Test for function.prototype's property descriptor.",
+                        "raw": "'Test for function.prototype's property descriptor.'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "test"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x1aba37"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "descriptor"
+                            },
+                            "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "Object"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "getOwnPropertyDescriptor",
+                                        "raw": "'getOwnPropertyDescriptor'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "_0x1aba37"
+                                    },
+                                    {
+                                        "type": "Literal",
+                                        "value": "prototype",
+                                        "raw": "'prototype'"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "shouldBeTrue"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": "descriptor['writable']",
+                                    "raw": "'descriptor[\\x27writable\\x27]'"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "shouldBeFalse"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": "descriptor['enumerable']",
+                                    "raw": "'descriptor[\\x27enumerable\\x27]'"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "shouldBeFalse"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": "descriptor['configurable']",
+                                    "raw": "'descriptor['configurable']'"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "a"
+            },
+            "params": [],
+            "body": {
+                "type": "BlockStatement",
+                "body": []
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "test"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "a"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "b"
+            },
+            "params": [],
+            "body": {
+                "type": "BlockStatement",
+                "body": []
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "b"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "prototype",
+                        "raw": "'prototype'"
+                    }
+                },
+                "right": {
+                    "type": "ObjectExpression",
+                    "properties": []
+                }
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "test"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "b"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "c"
+            },
+            "params": [],
+            "body": {
+                "type": "BlockStatement",
+                "body": []
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "shouldThrow"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "Object.defineProperty(c, 'prototype', { get: function(){} })",
+                        "raw": "'Object.defineProperty(c, 'prototype', { get: function(){} })'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "test"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "c"
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

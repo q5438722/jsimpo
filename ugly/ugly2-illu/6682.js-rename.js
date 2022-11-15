@@ -1,0 +1,7 @@
+import produce from "immer";import { CHANGE_USERNAME } from "./constants";export const initialState = { username: "" };
+const homeReducer = (e = initialState, t) => produce(e, e => {
+  switch (t.type) {case CHANGE_USERNAME:
+      e.username = t.username.replace(/@/gi, "");break;}
+});
+
+export default homeReducer;

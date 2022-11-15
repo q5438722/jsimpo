@@ -1,0 +1,20 @@
+var SafeRange = require(_0x29d5ee(464)), CountAllMatching = function (_0x3e1502, _0x19afc0, _0x4cf6ba, _0x5052e9, _0x135285) {
+        var _0x28be1d = _0x29d5ee;
+        _0x5052e9 === undefined && (_0x5052e9 = 0);
+        _0x135285 === undefined && (_0x135285 = _0x3e1502[_0x28be1d(465)]);
+        var _0x3234dc = 0;
+        if (SafeRange(_0x3e1502, _0x5052e9, _0x135285))
+            for (var _0x435267 = _0x5052e9; _0x435267 < _0x135285; _0x435267++) {
+                var _0x3fbb4f = _0x3e1502[_0x435267];
+                _0x3fbb4f[_0x19afc0] === _0x4cf6ba && _0x3234dc++;
+            }
+        return _0x3234dc;
+    };
+function _0x1ee6(_0x27f3bf, _0x360897) {
+    return _0x1ee6 = function (_0x33cf27, _0x1ee67b) {
+        _0x33cf27 = _0x33cf27 - 454;
+        var _0x319688 = _0x33cf[_0x33cf27];
+        return _0x319688;
+    }, _0x1ee6(_0x27f3bf, _0x360897);
+}
+module[_0x29d5ee(466)] = CountAllMatching;

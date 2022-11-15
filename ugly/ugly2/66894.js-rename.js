@@ -1,0 +1,1 @@
+module.exports=function(e){expect(e).toMatch(/^\}\)\]/);this.cacheable(false);return new Promise(e=>{setTimeout(()=>{e("module.exports = require('./foo/' + WATCH_STEP);")},500)})};

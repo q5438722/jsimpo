@@ -1,0 +1,1 @@
+import'./module-unused';import{NativeClass,TranspiledClass}from'./module-used';export function test(){expect(NativeClass['f']())['toBe'](0x2a);expect(TranspiledClass['f']())['toBe'](0x2a);}

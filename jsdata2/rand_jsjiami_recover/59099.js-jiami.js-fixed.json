@@ -1,0 +1,681 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "source"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "\nfunction g(a, b, c) {\n  return 'bye';\n};\nclass Tree {};\nclass Flower extends Tree{};\nvar f = new Flower();\n// We store the type when a variable is used. If a toStringTag is\n// changes the type, we want to collect that changed feedback.\n// This tests ensures that we collect that information rather than\n// for example infer the types from the internal map, which wouldn't\n// know about a toStringTag.\nf[Symbol.toStringTag] = 'Dog';\ng({}, [], f);\ng(3, 2.3, {a: 42});\n",
+                        "raw": "'\\x0afunction\\x20g(a,\\x20b,\\x20c)\\x20{\\x0a\\x20\\x20return\\x20\\x27bye\\x27;\\x0a};\\x0aclass\\x20Tree\\x20{};\\x0aclass\\x20Flower\\x20extends\\x20Tree{};\\x0avar\\x20f\\x20=\\x20new\\x20Flower();\\x0a//\\x20We\\x20store\\x20the\\x20type\\x20when\\x20a\\x20variable\\x20is\\x20used.\\x20If\\x20a\\x20toStringTag\\x20is\\x0a//\\x20changes\\x20the\\x20type,\\x20we\\x20want\\x20to\\x20collect\\x20that\\x20changed\\x20feedback.\\x0a//\\x20This\\x20tests\\x20ensures\\x20that\\x20we\\x20collect\\x20that\\x20information\\x20rather\\x20than\\x0a//\\x20for\\x20example\\x20infer\\x20the\\x20types\\x20from\\x20the\\x20internal\\x20map,\\x20which\\x20wouldn\\x27t\\x0a//\\x20know\\x20about\\x20a\\x20toStringTag.\\x0af[Symbol.toStringTag]\\x20=\\x20\\x27Dog\\x27;\\x0ag({},\\x20[],\\x20f);\\x0ag(3,\\x202.3,\\x20{a:\\x2042});\\x0a'"
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "ObjectPattern",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "session"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "session"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "contextGroup"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "contextGroup"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "Protocol"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Identifier",
+                                    "name": "Protocol"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true
+                            }
+                        ]
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "InspectorTest"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "start",
+                                "raw": "'start'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "BinaryExpression",
+                                "operator": "+",
+                                "left": {
+                                    "type": "Literal",
+                                    "value": "Test collecting ",
+                                    "raw": "'Test collecting '"
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": "type profile data with Profiler.takeTypeProfile.",
+                                    "raw": "'type profile data with Profiler.takeTypeProfile.'"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "let"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "FunctionExpression",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "testTypeProfile"
+                    },
+                    "params": [],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "AwaitExpression",
+                                    "argument": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "Protocol"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "Profiler",
+                                                    "raw": "'Profiler'"
+                                                }
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "enable",
+                                                "raw": "'enable'"
+                                            }
+                                        },
+                                        "arguments": []
+                                    }
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "AwaitExpression",
+                                    "argument": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "Protocol"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "Profiler",
+                                                    "raw": "'Profiler'"
+                                                }
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "startTypeProfile",
+                                                "raw": "'startTypeProfile'"
+                                            }
+                                        },
+                                        "arguments": []
+                                    }
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "Protocol"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "Runtime",
+                                                "raw": "'Runtime'"
+                                            }
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "enable",
+                                            "raw": "'enable'"
+                                        }
+                                    },
+                                    "arguments": []
+                                }
+                            },
+                            {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "ObjectPattern",
+                                            "properties": [
+                                                {
+                                                    "type": "Property",
+                                                    "key": {
+                                                        "type": "Identifier",
+                                                        "name": "result"
+                                                    },
+                                                    "computed": false,
+                                                    "value": {
+                                                        "type": "ObjectPattern",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Identifier",
+                                                                    "name": "scriptId"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "Identifier",
+                                                                    "name": "scriptId"
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": true
+                                                            }
+                                                        ]
+                                                    },
+                                                    "kind": "init",
+                                                    "method": false,
+                                                    "shorthand": false
+                                                }
+                                            ]
+                                        },
+                                        "init": {
+                                            "type": "AwaitExpression",
+                                            "argument": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "Protocol"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "Runtime",
+                                                            "raw": "'Runtime'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "compileScript",
+                                                        "raw": "'compileScript'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "ObjectExpression",
+                                                        "properties": [
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "expression",
+                                                                    "raw": "'expression'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "Identifier",
+                                                                    "name": "source"
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            },
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "sourceURL",
+                                                                    "raw": "'sourceURL'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "Identifier",
+                                                                            "name": "arguments"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "callee",
+                                                                            "raw": "'callee'"
+                                                                        }
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "name",
+                                                                        "raw": "'name'"
+                                                                    }
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            },
+                                                            {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                    "type": "Literal",
+                                                                    "value": "persistScript",
+                                                                    "raw": "'persistScript'"
+                                                                },
+                                                                "computed": false,
+                                                                "value": {
+                                                                    "type": "UnaryExpression",
+                                                                    "operator": "!",
+                                                                    "argument": {
+                                                                        "type": "UnaryExpression",
+                                                                        "operator": "!",
+                                                                        "argument": {
+                                                                            "type": "ArrayExpression",
+                                                                            "elements": []
+                                                                        },
+                                                                        "prefix": true
+                                                                    },
+                                                                    "prefix": true
+                                                                },
+                                                                "kind": "init",
+                                                                "method": false,
+                                                                "shorthand": false
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "kind": "let"
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "Protocol"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "Runtime",
+                                                "raw": "'Runtime'"
+                                            }
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "runScript",
+                                            "raw": "'runScript'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "ObjectExpression",
+                                            "properties": [
+                                                {
+                                                    "type": "Property",
+                                                    "key": {
+                                                        "type": "Literal",
+                                                        "value": "scriptId",
+                                                        "raw": "'scriptId'"
+                                                    },
+                                                    "computed": false,
+                                                    "value": {
+                                                        "type": "Identifier",
+                                                        "name": "scriptId"
+                                                    },
+                                                    "kind": "init",
+                                                    "method": false,
+                                                    "shorthand": false
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "AwaitExpression",
+                                    "argument": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "Protocol"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "Profiler",
+                                                    "raw": "'Profiler'"
+                                                }
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "startTypeProfile",
+                                                "raw": "'startTypeProfile'"
+                                            }
+                                        },
+                                        "arguments": []
+                                    }
+                                }
+                            },
+                            {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "Identifier",
+                                            "name": "_0x48ee0a"
+                                        },
+                                        "init": {
+                                            "type": "AwaitExpression",
+                                            "argument": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "Protocol"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "Profiler",
+                                                            "raw": "'Profiler'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "takeTypeProfile",
+                                                        "raw": "'takeTypeProfile'"
+                                                    }
+                                                },
+                                                "arguments": []
+                                            }
+                                        }
+                                    }
+                                ],
+                                "kind": "let"
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "AwaitExpression",
+                                    "argument": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "session"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "logTypeProfile",
+                                                "raw": "'logTypeProfile'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "_0x48ee0a"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "result",
+                                                            "raw": "'result'"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "result",
+                                                        "raw": "'result'"
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": 0,
+                                                    "raw": "0x0"
+                                                }
+                                            },
+                                            {
+                                                "type": "Identifier",
+                                                "name": "source"
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "Protocol"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "Profiler",
+                                                "raw": "'Profiler'"
+                                            }
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "stopTypeProfile",
+                                            "raw": "'stopTypeProfile'"
+                                        }
+                                    },
+                                    "arguments": []
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "Protocol"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "Profiler",
+                                                "raw": "'Profiler'"
+                                            }
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "disable",
+                                            "raw": "'disable'"
+                                        }
+                                    },
+                                    "arguments": []
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "AwaitExpression",
+                                    "argument": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "Protocol"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "Runtime",
+                                                    "raw": "'Runtime'"
+                                                }
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "disable",
+                                                "raw": "'disable'"
+                                            }
+                                        },
+                                        "arguments": []
+                                    }
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "InspectorTest"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "completeTest",
+                                            "raw": "'completeTest'"
+                                        }
+                                    },
+                                    "arguments": []
+                                }
+                            }
+                        ]
+                    },
+                    "generator": false,
+                    "expression": false,
+                    "async": true
+                },
+                "arguments": []
+            }
+        }
+    ],
+    "sourceType": "script"
+}

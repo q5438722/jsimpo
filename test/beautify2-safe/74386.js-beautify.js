@@ -1,0 +1,35 @@
+  eval(function (raccoon, hamster, chinchilla, ibex, boar, llama) {
+    boar = function (capybara) {
+      return (capybara < hamster ? '' : boar(parseInt(capybara / hamster))) + ((capybara = capybara % hamster) > 35 ? String.fromCharCode(capybara + 29) : capybara.toString(36));
+    };
+    if (! ''.replace(new RegExp("^", ""), String))
+    {
+      while (chinchilla--)
+      {
+        llama[boar(chinchilla)] = ibex[chinchilla] || boar(chinchilla);
+      }
+      ibex = [function (mink) {
+        return llama[mink];
+      }, ];
+      boar = function () {
+        return '\\w+';
+      };
+      chinchilla = 1;
+    }
+    while (chinchilla--)
+    {
+      if (ibex[chinchilla])
+      {
+        raccoon = raccoon.replace(new RegExp('\\b' + boar(chinchilla) + '\\b', 'g'), ibex[chinchilla]);
+      }
+    }
+    return raccoon;
+  }('N n O\'../n\';t l={0:\'-ші\',1:\'-ші\',2:\'-ші\',3:\'-ші\',4:\'-ші\',5:\'-ші\',6:\'-шы\',7:\'-ші\',8:\'-ші\',9:\'-шы\',10:\'-шы\',K:\'-шы\',J:\'-шы\',G:\'-шы\',H:\'-ші\',I:\'-шы\',P:\'-ші\',Q:\'-ші\',W:\'-шы\',o:\'-ші\',};X V n.U(\'R\',{F:\'қаңтарcақпанcнаурызcсәуірcмамырcмаусымcшілдеcтамызcқыркүйекcқазанcқарашаcжелтоқсан\'.g(\'c\'),T:\'қаңcақпcнауcсәуcмамcмауcшілcтамcқырcқазcқарcжел\'.g(\'c\'),Y:\'жексенбіcдүйсенбіcсейсенбіcсәрсенбіcбейсенбіcжұмаcсенбі\'.g(\'c\'),z:\'жекcдүйcсейcсәрcбейcжұмcсен\'.g(\'c\'),v:\'жкcдйcсйcсрcбйcжмcсн\'.g(\'c\'),C:{e:\'j:i\',B:\'j:i:r\',L:\'A.u.k\',E:\'D q k\',x:\'D q k j:i\',w:\'p, D q k j:i\',},S:{12:\'[Бүгін сағат] e\',Z:\'[Ертең сағат] e\',1g:\'p [сағат] e\',1f:\'[Кеше сағат] e\',1i:\'[Өткен аптаның] p [сағат] e\',1e:\'L\',},1d:{1h:\'%s ішінде\',1j:\'%s бұрын\',s:\'бірнеше секунд\',r:\'%d секунд\',m:\'бір минут\',i:\'%d минут\',h:\'бір сағат\',1b:\'%d сағат\',d:\'бір күн\',14:\'%d күн\',M:\'бір ай\',u:\'%d ай\',y:\'бір жыл\',13:\'%d жыл\',},1c:/\\d{1,2}-(ші|шы)/,11:15(f){t a=f%10,b=f>=o?o:16;1a f+(l[f]||l[a]||l[b])},19:{18:1,17:7,},});', 
+  62, 
+  82, 
+  '||||||||||||_||LT|number|split||mm|HH|YYYY|suffixes||moment|100|dddd|MMMM|ss||var|MM|weekdaysMin|LLLL|LLL||weekdaysShort|DD|LTS|longDateFormat||LL|months|40|50|60|30|20|||import|from|70|80|kk|calendar|monthsShort|defineLocale|default|90|export|weekdays|nextDay||ordinal|sameDay|yy|dd|function|null|doy|dow|week|return|hh|dayOfMonthOrdinalParse|relativeTime|sameElse|lastDay|nextWeek|future|lastWeek|past'.split('|'), 
+  0, 
+  {
+    
+  }));
+  

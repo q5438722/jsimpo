@@ -1,0 +1,1 @@
+import _0xc9bb5b from'shared/invariant';_0xc9bb5b(![],'This\x20module\x20must\x20be\x20shimmed\x20by\x20a\x20specific\x20renderer.');

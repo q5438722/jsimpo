@@ -1,0 +1,181 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "oldNoDeprecationValue"
+                    },
+                    "init": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "process"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "noDeprecation",
+                            "raw": "'noDeprecation'"
+                        }
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "TryStatement",
+            "block": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "process"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "noDeprecation",
+                                    "raw": "'noDeprecation'"
+                                }
+                            },
+                            "right": {
+                                "type": "UnaryExpression",
+                                "operator": "!",
+                                "argument": {
+                                    "type": "UnaryExpression",
+                                    "operator": "!",
+                                    "argument": {
+                                        "type": "ArrayExpression",
+                                        "elements": []
+                                    },
+                                    "prefix": true
+                                },
+                                "prefix": true
+                            }
+                        }
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "NpmModuleMongodb"
+                            },
+                            "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "Npm"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "require",
+                                        "raw": "'require'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Literal",
+                                        "value": "mongodb",
+                                        "raw": "'mongodb'"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "handler": null,
+            "finalizer": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "process"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "noDeprecation",
+                                    "raw": "'noDeprecation'"
+                                }
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "oldNoDeprecationValue"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "Identifier",
+                    "name": "NpmModuleMongodbVersion"
+                },
+                "right": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "Npm"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "require",
+                                "raw": "'require'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "mongodb/package.json",
+                                "raw": "'mongodb/package.json'"
+                            }
+                        ]
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "version",
+                        "raw": "'version'"
+                    }
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}

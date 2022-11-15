@@ -1,0 +1,77 @@
+const vip = 'vip.v6';
+const _0x550c = ['vip.v6', 'YMOkw7tFw6bCtmkNw7I=', 'DQlbwpZCdgfDuMKTPcOqYSU=', 'wrc4wprDgsO5wqAmBcKW', 'ScO+w48hLnnCmAQ6VVlxwrrCoQ==', 'TvipbA.GgOSSPDvhb6dZ=='];
+(function (_0x2a3ec7, _0x26d9de, _0x500149) {
+  const _0x610839 = function (_0x1cb2ff, _0x1c51cc, _0x1e3f73, _0x1dc803, _0x521455) {
+    _0x1c51cc = _0x1c51cc >> 0x8, _0x521455 = 'po';const _0x2984c5 = 'shift';
+    const _0x34c3a5 = 'push';
+    if (_0x1c51cc < _0x1cb2ff) {
+      while (--_0x1cb2ff) {
+        _0x1dc803 = _0x2a3ec7.shift();if (_0x1c51cc === _0x1cb2ff) {
+          _0x1c51cc = _0x1dc803;_0x1e3f73 = _0x2a3ec7.pop();
+        } else if (_0x1c51cc && _0x1e3f73.replace(/[TbAGgOSSPDhbdZ=]/g, '') === _0x1c51cc) {
+          _0x2a3ec7.push(_0x1dc803);
+        }
+      }_0x2a3ec7.push(_0x2a3ec7.shift());
+    }return 0xa1d0a;
+  };
+
+  return _0x610839(++_0x26d9de, _0x500149) >> _0x26d9de ^ _0x500149;
+})(_0x550c, 0x1e6, 0x1e600);
+const _0x56ae = function (_0x46ee1c, _0x935035) {
+  _0x46ee1c = ~~'0x'.concat(_0x46ee1c);var _0x4b5a0d = _0x550c[_0x46ee1c];
+  if (_0x56ae.GcEKmZ === undefined) {
+    (function () {
+      const _0x272370 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x58b5d0 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x272370.atob || (_0x272370['atob'] = function (_0x41dc5a) {
+        const _0xca5113 = String(_0x41dc5a).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x430a01 = 0x0, _0x2e8380, _0x10f191, _0x547cc8 = 0x0, _0x7174d9 = ''; _0x10f191 = _0xca5113.charAt(_0x547cc8++); ~_0x10f191 && (_0x2e8380 = _0x430a01 % 0x4 ? _0x2e8380 * 0x40 + _0x10f191 : _0x10f191, _0x430a01++ % 0x4) ? _0x7174d9 += String.fromCharCode(0xff & _0x2e8380 >> (-2 * _0x430a01 & 0x6)) : 0x0) {
+          _0x10f191 = _0x58b5d0.indexOf(_0x10f191);
+        }return _0x7174d9;
+      });
+    })();
+    const _0xe64601 = function (_0x3b1f50, _0x935035) {
+      const _0x91178 = [];
+      var _0x58625e = 0x0;
+
+      var _0x30e9d5;
+
+      var _0x493973 = '';
+      var _0x922339 = '';
+      _0x3b1f50 = atob(_0x3b1f50); // Unknown loop control variable
+      for (var _0x13195e = 0x0, _0x386400 = _0x3b1f50.length; _0x13195e < _0x386400; _0x13195e++) {
+        _0x922339 += '%' + ('00' + _0x3b1f50.charCodeAt(_0x13195e).toString(0x10)).slice(-2);
+      }_0x3b1f50 = decodeURIComponent(_0x922339); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x37e617 = 0x0; _0x37e617 < 0x100; _0x37e617++) {
+        _0x91178[_0x37e617] = _0x37e617;
+      } // Unknown loop control variable
+      for (_0x37e617 = 0x0; _0x37e617 < 0x100; _0x37e617++) {
+        _0x58625e = (_0x58625e + _0x91178[_0x37e617] + _0x935035.charCodeAt(_0x37e617 % _0x935035.length)) % 0x100;_0x30e9d5 = _0x91178[_0x37e617];_0x91178[_0x37e617] = _0x91178[_0x58625e];_0x91178[_0x58625e] = _0x30e9d5;
+      }_0x37e617 = 0x0;_0x58625e = 0x0; // Unevaluable loop test expression
+      for (var _0x5c2a8d = 0x0; _0x5c2a8d < _0x3b1f50.length; _0x5c2a8d++) {
+        _0x37e617 = (_0x37e617 + 0x1) % 0x100;_0x58625e = (_0x58625e + _0x91178[_0x37e617]) % 0x100;_0x30e9d5 = _0x91178[_0x37e617];_0x91178[_0x37e617] = _0x91178[_0x58625e];_0x91178[_0x58625e] = _0x30e9d5;_0x493973 += String.fromCharCode(_0x3b1f50.charCodeAt(_0x5c2a8d) ^ _0x91178[(_0x91178[_0x37e617] + _0x91178[_0x58625e]) % 0x100]);
+      }return _0x493973;
+    };
+
+    _0x56ae['nFJBSE'] = _0xe64601;_0x56ae['LYqCul'] = {};_0x56ae['GcEKmZ'] = true;
+  }const _0x4cc9e5 = _0x56ae.LYqCul[_0x46ee1c];
+  if (_0x4cc9e5 === undefined) {
+    if (_0x56ae.ljlXDM === undefined) {
+      _0x56ae['ljlXDM'] = true;
+    }_0x4b5a0d = _0x56ae.nFJBSE(_0x4b5a0d, _0x935035);_0x56ae.LYqCul[_0x46ee1c] = _0x4b5a0d;
+  } else {
+    _0x4b5a0d = _0x4cc9e5;
+  }return _0x4b5a0d;
+};
+
+const __v_9 = {};
+__v_2 = { '__v_2': 0x1 };__v_12 = new Proxy({}, {});function f() {
+  const _0x5d541a = new Proxy({}, __v_2);
+
+  __v_9[_0x56ae('0', 'kbxT')] = _0x5d541a;__v_2[_0x56ae('1', 'gQAR')] = function () {
+    return __v_9;
+  };Object[_0x56ae('2', '$(YH')][_0x56ae('3', 't7N0')].call(__v_0, _0x5d541a);
+};assertThrows(f, RangeError);

@@ -1,0 +1,1 @@
+var global=this;assertEquals('object',typeof global);var s=new Set();s['add'](global);assertTrue(s['has'](global));for(var i=0x0;i<0x64;i++){s['add'](i);}assertTrue(s['has'](global));

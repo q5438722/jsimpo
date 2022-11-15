@@ -1,0 +1,3 @@
+import _0x5ed4ca from './utils/createSvgIcon';
+import { jsx as _0x2d5012 } from 'react/jsx-runtime';
+export default _0x5ed4ca(_0x2d5012('path', { 'd': 'M12\x204c3.87\x200\x207\x203.13\x207\x207v1h-4v.17l6\x206V11c0-4.97-4.03-9-9-9-2.02\x200-3.88.67-5.38\x201.8l1.43\x201.43C9.17\x204.45\x2010.53\x204\x2012\x204zM2.1\x202.1.69\x203.51l3.33\x203.33C3.37\x208.09\x203\x209.5\x203\x2011v9h6v-8H5v-1c0-.94.19-1.83.52-2.65L15\x2017.83V20h2.17l1\x201H12v2h8.17l.31.31\x201.41-1.41L2.1\x202.1z' }), 'HeadsetOffSharp');

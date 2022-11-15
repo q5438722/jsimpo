@@ -1,0 +1,1 @@
+testCodePointRange(0x5);

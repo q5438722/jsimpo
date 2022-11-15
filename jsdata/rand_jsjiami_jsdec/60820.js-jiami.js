@@ -1,0 +1,1 @@
+load('test/mjsunit/wasm/wasm-module-builder.js');(function(){var _0xe11074={'Iesqb':'test'};var _0x14ff17=new WasmModuleBuilder();_0x14ff17['addMemory'](0x1f,0x1f,![]);_0x14ff17['addFunction'](_0xe11074['Iesqb'],kSig_l_v)['addBodyWithEnd']([kExprUnreachable,kExprEnd])['exportFunc']();var _0x134ace=_0x14ff17['instantiate']();}());

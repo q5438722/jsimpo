@@ -1,0 +1,1 @@
+'use strict';class Hello{['toString'](){return 'hello';}}class Outer extends Hello{constructor(){var _0x4f668f={'uLbkw':'hello'};super();class _0x565142{[super['toString']()](){return _0x4f668f['uLbkw'];}}return new _0x565142();}}expect(new Outer()['hello']())['toBe']('hello');

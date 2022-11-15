@@ -1,0 +1,1 @@
+require('coffeescript/register'), module[_0x156b5b(444)] = require('./nuxt.config.coffee');

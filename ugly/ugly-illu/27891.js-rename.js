@@ -1,0 +1,12 @@
+"use strict";
+
+const _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+const _createSvgIcon = _interopRequireDefault(require("./utils/createSvgIcon"));
+
+const _jsxRuntime = require("react/jsx-runtime");
+
+const _default = (0, _createSvgIcon.default)((0, _jsxRuntime.jsx)("path", { d: "M22 3.41 16.71 8.7 20 12h-8V4l3.29 3.29L20.59 2 22 3.41zM3.41 22l5.29-5.29L12 20v-8H4l3.29 3.29L2 20.59 3.41 22z" }), "CloseFullscreenOutlined");
+
+exports.default = _default;

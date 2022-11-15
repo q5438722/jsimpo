@@ -1,0 +1,190 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "it"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "should not fail on optional externals",
+                        "raw": "'should\\x20not\\x20fail\\x20on\\x20optional\\x20externals'"
+                    },
+                    {
+                        "type": "FunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "require"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": "external2",
+                                                "raw": "'external2'"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "TryStatement",
+                                    "block": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                            {
+                                                "type": "ExpressionStatement",
+                                                "expression": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "require"
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "Literal",
+                                                            "value": "external",
+                                                            "raw": "'external'"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "handler": {
+                                        "type": "CatchClause",
+                                        "param": {
+                                            "type": "Identifier",
+                                            "name": "_0xc17598"
+                                        },
+                                        "body": {
+                                            "type": "BlockStatement",
+                                            "body": [
+                                                {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "Identifier",
+                                                                    "name": "expect"
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "Identifier",
+                                                                        "name": "_0xc17598"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "toBeInstanceOf",
+                                                                "raw": "'toBeInstanceOf'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "Identifier",
+                                                                "name": "Error"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "Identifier",
+                                                                    "name": "expect"
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "Identifier",
+                                                                            "name": "_0xc17598"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "code",
+                                                                            "raw": "'code'"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "toBe",
+                                                                "raw": "'toBe'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "MODULE_NOT_FOUND",
+                                                                "raw": "'MODULE_NOT_FOUND'"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ReturnStatement",
+                                                    "argument": null
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "finalizer": null
+                                },
+                                {
+                                    "type": "ThrowStatement",
+                                    "argument": {
+                                        "type": "NewExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "Error"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": "It doesn't fail",
+                                                "raw": "'It doesn't fail'"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false,
+                        "async": false
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

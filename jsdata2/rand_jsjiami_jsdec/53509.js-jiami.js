@@ -1,0 +1,8 @@
+/**
+ * @fileoverview Require or disallow Unicode BOM
+ * @author Andrew Johnston <https://github.com/ehjay>
+ */
+'use strict';//------------------------------------------------------------------------------
+             // Rule Definition
+             //------------------------------------------------------------------------------
+module['exports']={'meta':{'type':'layout','docs':{'description':'require or disallow Unicode byte order mark (BOM)','category':'Stylistic Issues','recommended':![],'url':'https://eslint.org/docs/rules/unicode-bom'},'fixable':'whitespace','schema':[{'enum':['always','never']}],'messages':{'expected':'Expected Unicode BOM (Byte Order Mark).','unexpected':'Unexpected Unicode BOM (Byte Order Mark).'}},'create'(_0x1524ef){var _0x527292={'DHzPn':'never','cZuJi':function(_0x4daf31,_0x219ed1){return _0x4daf31===_0x219ed1;},'MzzTv':'expected','oGTyH':function(_0x126296,_0x2cd7a0){return _0x126296===_0x2cd7a0;},'tmDUo':'unexpected'};return{'Program':function checkUnicodeBOM(_0x12e0c8){const _0x44b2d2=_0x1524ef['getSourceCode'](),_0x4e1cc2={'column':0x0,'line':0x1},_0x46ec26=_0x1524ef['options'][0x0]||_0x527292['DHzPn'];if(!_0x44b2d2['hasBOM']&&_0x527292['cZuJi'](_0x46ec26,'always')){_0x1524ef['report']({'node':_0x12e0c8,'loc':_0x4e1cc2,'messageId':_0x527292['MzzTv'],'fix'(_0x5ee14a){return _0x5ee14a['insertTextBeforeRange']([0x0,0x1],'\ufeff');}});}else if(_0x44b2d2['hasBOM']&&_0x527292['oGTyH'](_0x46ec26,_0x527292['DHzPn'])){_0x1524ef['report']({'node':_0x12e0c8,'loc':_0x4e1cc2,'messageId':_0x527292['tmDUo'],'fix'(_0x3eca8a){return _0x3eca8a['removeRange']([-0x1,0x0]);}});}}};}};

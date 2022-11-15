@@ -1,0 +1,1 @@
+const path=require(`path`)exports.createPages=async({graphql,actions})=>{const{createPage}=actions const{data}=await graphql(`{allMongodbCloudDocuments(limit:1000){edges{node{id}}}}`)const pageTemplate=path.resolve(`./src/templates/item.js`)for(const{node}of data.allMongodbCloudDocuments.edges){createPage({path:`/item/${node.id}/`,component:pageTemplate,context:{id:node.id,},})}}

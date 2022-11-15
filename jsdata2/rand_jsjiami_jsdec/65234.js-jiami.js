@@ -1,0 +1,4 @@
+// Copyright 2020 the V8 project authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+'use strict';load('../base.js');load('abstract-equality.js');var success=!![];function PrintResult(_0x341c7b,_0x4a97f3){print('Operators-'+_0x341c7b+'(Score):\x20'+_0x4a97f3);}function PrintError(_0x1c11b2,_0x2f3454){var _0x42d990={'vqDos':function(_0x346119,_0x171123,_0x30ca9a){return _0x346119(_0x171123,_0x30ca9a);}};_0x42d990['vqDos'](PrintResult,_0x1c11b2,_0x2f3454);success=![];}BenchmarkSuite['config']['doWarmup']=undefined;BenchmarkSuite['config']['doDeterministic']=undefined;BenchmarkSuite['RunSuites']({'NotifyResult':PrintResult,'NotifyError':PrintError});

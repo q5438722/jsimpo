@@ -1,0 +1,18 @@
+var test = require(_0xb46f6b(420)), through = require('../');
+function _0x3384(_0x3822a7, _0x25e780) {
+    return _0x3384 = function (_0x1ea840, _0x338429) {
+        _0x1ea840 = _0x1ea840 - 409;
+        var _0x1b0c14 = _0x1ea8[_0x1ea840];
+        return _0x1b0c14;
+    }, _0x3384(_0x3822a7, _0x25e780);
+}
+test('end before close', function (_0x3f1bea) {
+    var _0x46144a = _0xb46f6b, _0x18b35a = through();
+    _0x18b35a['autoDestroy'] = ![];
+    var _0x564b72 = ![], _0xe0f080 = ![];
+    _0x18b35a['on']('end', function () {
+        _0x3f1bea['ok'](!_0xe0f080), _0x564b72 = !![];
+    }), _0x18b35a['on'](_0x46144a(421), function () {
+        _0x3f1bea['ok'](_0x564b72), _0xe0f080 = !![];
+    }), _0x18b35a[_0x46144a(422)](1), _0x18b35a[_0x46144a(422)](2), _0x18b35a[_0x46144a(422)](3), _0x18b35a['end'](), _0x3f1bea['ok'](_0x564b72), _0x3f1bea[_0x46144a(423)](_0xe0f080), _0x18b35a['destroy'](), _0x3f1bea['ok'](_0xe0f080), _0x3f1bea['end']();
+});

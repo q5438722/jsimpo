@@ -1,0 +1,48 @@
+const _0x4716 = ['addListener', 'updateIcon', 'oEPAc', 'action', 'wugGs', 'browserAction', 'setIcon', 'opxGa', 'value', 'canvas', 'createElement', 'efDqU', 'getContext', 'beginPath', 'fillStyle', 'arc', 'fill', 'getImageData', '1439353opmbdg', '1ojKJUh', '6317WaXPwo', '79FPvKcB', '521044swJisB', '150809WUlkCM', '899414jiDBMN', '756706usCLDC', '2pFzqyE', '1547818llUWvi', 'runtime'];
+
+function _0x23f1(_0x273fde, _0x199629) {
+    return _0x23f1 = function (_0x4e5b54, _0x2f5b49) {
+        _0x4e5b54 = _0x4e5b54 - 388;
+        const _0x5515b1 = _0x4716[_0x4e5b54];
+
+        return _0x5515b1;
+    }, _0x23f1(_0x273fde, _0x199629);
+}
+const _0x2d253a = _0x23f1;
+
+(function (_0x5157a3, _0x2c376e) {
+    const _0x4578b1 = _0x23f1;
+
+    while (true) {
+        try {
+            const _0x1c5fd5 = -parseInt(_0x4578b1(0x184)) * parseInt(_0x4578b1(0x185)) + -parseInt(_0x4578b1(0x186)) * -parseInt(_0x4578b1(0x187)) + -parseInt(_0x4578b1(0x188)) + parseInt(_0x4578b1(0x189)) + -parseInt(_0x4578b1(0x18a)) + -parseInt(_0x4578b1(0x18b)) * -parseInt(_0x4578b1(0x18c)) + parseInt(_0x4578b1(0x18d));
+
+            if (_0x1c5fd5 === _0x2c376e) break;else _0x5157a3.push(_0x5157a3.shift());
+        } catch (_0x27f93f) {
+            _0x5157a3.push(_0x5157a3.shift());
+        }
+    }
+})(_0x4716, 851271), chrome[_0x2d253a(0x18e)].onMessage[_0x2d253a(0x18f)](function (_0x36e1a9, _0x8c1d80, _0x58881e) {
+    const _0xd3573b = _0x2d253a;
+    const _0x4f5e18 = {
+        'oEPAc': function (_0x3c3243, _0x5040da) {
+            return _0x3c3243 === _0x5040da;
+        },
+        'wugGs': _0xd3573b(0x190),
+        'opxGa': function (_0x1347ed, _0x4ed8ba) {
+            return _0x1347ed(_0x4ed8ba);
+        }
+    };
+
+    _0x4f5e18[_0xd3573b(0x191)](_0x36e1a9[_0xd3573b(0x192)], _0x4f5e18[_0xd3573b(0x193)]) && chrome[_0xd3573b(0x194)][_0xd3573b(0x195)]({ 'imageData': _0x4f5e18[_0xd3573b(0x196)](drawIcon, _0x36e1a9[_0xd3573b(0x197)]) });
+});
+function drawIcon(_0x34d9ce) {
+    const _0x12aeee = _0x2d253a;
+    const _0x43820d = { 'efDqU': _0x12aeee(0x198) };
+
+    const _0x2d1f8d = document[_0x12aeee(0x199)](_0x43820d[_0x12aeee(0x19a)]);
+
+    const _0x1b6390 = _0x2d1f8d[_0x12aeee(0x19b)]('2d');
+
+    return _0x1b6390[_0x12aeee(0x19c)](), _0x1b6390[_0x12aeee(0x19d)] = _0x34d9ce.color, _0x1b6390[_0x12aeee(0x19e)](100, 100, 50, 0, 2 * Math.PI), _0x1b6390[_0x12aeee(0x19f)](), _0x1b6390[_0x12aeee(0x1a0)](50, 50, 100, 100);
+}

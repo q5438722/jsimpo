@@ -1,0 +1,52 @@
+var _0x5ee4 = [
+    '26EgWaof',
+    '308575ewqfyB',
+    '336256kigjMJ',
+    '1778825xXcRMS',
+    '../',
+    'end\x20before\x20close',
+    'autoDestroy',
+    'end',
+    'close',
+    'write',
+    'notOk',
+    'destroy',
+    '209NtPDYH',
+    '1103IieQlm',
+    '965303AvqGIJ',
+    '703288LuzvDh',
+    '21703qxBQti'
+];
+var _0x55472c = _0x3526;
+(function (_0x2418dc, _0x44fe88) {
+    var _0x393736 = _0x3526;
+    while (!![]) {
+        try {
+            var _0x5579e4 = -parseInt(_0x393736(0x1ae)) * -parseInt(_0x393736(0x1af)) + -parseInt(_0x393736(0x1b0)) + parseInt(_0x393736(0x1b1)) + -parseInt(_0x393736(0x1b2)) * parseInt(_0x393736(0x1b3)) + -parseInt(_0x393736(0x1b4)) + -parseInt(_0x393736(0x1b5)) + parseInt(_0x393736(0x1b6));
+            if (_0x5579e4 === _0x44fe88)
+                break;
+            else
+                _0x2418dc['push'](_0x2418dc['shift']());
+        } catch (_0x4ffa0d) {
+            _0x2418dc['push'](_0x2418dc['shift']());
+        }
+    }
+}(_0x5ee4, 0x83674));
+function _0x3526(_0x1ad115, _0xb0719d) {
+    return _0x3526 = function (_0x5ee43d, _0x352638) {
+        _0x5ee43d = _0x5ee43d - 0x1ae;
+        var _0x336202 = _0x5ee4[_0x5ee43d];
+        return _0x336202;
+    }, _0x3526(_0x1ad115, _0xb0719d);
+}
+var test = require('tape'), through = require(_0x55472c(0x1b7));
+test(_0x55472c(0x1b8), function (_0x428241) {
+    var _0x1e844b = _0x55472c, _0x7f587a = through();
+    _0x7f587a[_0x1e844b(0x1b9)] = ![];
+    var _0x36664c = ![], _0x553d1e = ![];
+    _0x7f587a['on'](_0x1e844b(0x1ba), function () {
+        _0x428241['ok'](!_0x553d1e), _0x36664c = !![];
+    }), _0x7f587a['on'](_0x1e844b(0x1bb), function () {
+        _0x428241['ok'](_0x36664c), _0x553d1e = !![];
+    }), _0x7f587a[_0x1e844b(0x1bc)](0x1), _0x7f587a[_0x1e844b(0x1bc)](0x2), _0x7f587a['write'](0x3), _0x7f587a[_0x1e844b(0x1ba)](), _0x428241['ok'](_0x36664c), _0x428241[_0x1e844b(0x1bd)](_0x553d1e), _0x7f587a[_0x1e844b(0x1be)](), _0x428241['ok'](_0x553d1e), _0x428241[_0x1e844b(0x1ba)]();
+});

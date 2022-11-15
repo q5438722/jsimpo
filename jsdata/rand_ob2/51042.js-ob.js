@@ -1,0 +1,135 @@
+'use strict';
+const _0x4f85 = [
+    'read',
+    'end',
+    '580048AcGFnz',
+    '254973vSHmaj',
+    '1znOVjG',
+    '35383bLXgjj',
+    '42LCcBEN',
+    '1135006KoSPhe',
+    '127549AnDrkL',
+    '2cYQCNe',
+    '1JUsVTD',
+    '1373531lzIDYl',
+    '2389485kuDalb',
+    'crypto',
+    'createBenchmark',
+    'sha256',
+    'md5',
+    'asc',
+    'utf',
+    'buf',
+    'hex',
+    'binary',
+    'buffer',
+    'legacy',
+    'stream',
+    'test',
+    'repeat',
+    'ascii',
+    'alloc',
+    'unknown\x20message\x20type:\x20',
+    'createHash',
+    'digest',
+    'string',
+    'from',
+    'write'
+];
+const _0x1317ee = _0x393e;
+(function (_0x3dc4a8, _0x38f1ea) {
+    const _0x5d627d = _0x393e;
+    while (!![]) {
+        try {
+            const _0x3377ef = -parseInt(_0x5d627d(0x10d)) + parseInt(_0x5d627d(0x10e)) * parseInt(_0x5d627d(0x10f)) + -parseInt(_0x5d627d(0x110)) * -parseInt(_0x5d627d(0x111)) + -parseInt(_0x5d627d(0x112)) + parseInt(_0x5d627d(0x113)) * -parseInt(_0x5d627d(0x114)) + -parseInt(_0x5d627d(0x115)) * parseInt(_0x5d627d(0x116)) + parseInt(_0x5d627d(0x117));
+            if (_0x3377ef === _0x38f1ea)
+                break;
+            else
+                _0x3dc4a8['push'](_0x3dc4a8['shift']());
+        } catch (_0x313f4d) {
+            _0x3dc4a8['push'](_0x3dc4a8['shift']());
+        }
+    }
+}(_0x4f85, 0xc01ad));
+const common = require('../common.js'), crypto = require(_0x1317ee(0x118)), bench = common[_0x1317ee(0x119)](main, {
+        'writes': [0x1f4],
+        'algo': [
+            _0x1317ee(0x11a),
+            _0x1317ee(0x11b)
+        ],
+        'type': [
+            _0x1317ee(0x11c),
+            _0x1317ee(0x11d),
+            _0x1317ee(0x11e)
+        ],
+        'out': [
+            _0x1317ee(0x11f),
+            _0x1317ee(0x120),
+            _0x1317ee(0x121)
+        ],
+        'len': [
+            0x2,
+            0x400,
+            0x19000,
+            0x400 * 0x400
+        ],
+        'api': [
+            _0x1317ee(0x122),
+            _0x1317ee(0x123)
+        ]
+    });
+function main({
+    api: _0x4268f8,
+    type: _0x5c2d6b,
+    len: _0x47045e,
+    out: _0x2e8def,
+    writes: _0x178646,
+    algo: _0x3c12be
+}) {
+    const _0x5a0c56 = _0x1317ee;
+    _0x4268f8 === _0x5a0c56(0x123) && /^v0\.[0-8]\./[_0x5a0c56(0x124)](process['version']) && (console['error']('Crypto\x20streams\x20not\x20available\x20until\x20v0.10'), _0x4268f8 = _0x5a0c56(0x122));
+    let _0x16eedd, _0x128e72;
+    switch (_0x5c2d6b) {
+    case _0x5a0c56(0x11c):
+        _0x16eedd = 'a'[_0x5a0c56(0x125)](_0x47045e), _0x128e72 = _0x5a0c56(0x126);
+        break;
+    case _0x5a0c56(0x11d):
+        _0x16eedd = 'ü'[_0x5a0c56(0x125)](_0x47045e / 0x2), _0x128e72 = 'utf8';
+        break;
+    case _0x5a0c56(0x11e):
+        _0x16eedd = Buffer[_0x5a0c56(0x127)](_0x47045e, 'b');
+        break;
+    default:
+        throw new Error(_0x5a0c56(0x128) + _0x5c2d6b);
+    }
+    const _0x4a8485 = _0x4268f8 === 'stream' ? streamWrite : legacyWrite;
+    bench['start'](), _0x4a8485(_0x3c12be, _0x16eedd, _0x128e72, _0x178646, _0x47045e, _0x2e8def);
+}
+function _0x393e(_0xc875a3, _0x45abd9) {
+    return _0x393e = function (_0x4f8500, _0x393ee1) {
+        _0x4f8500 = _0x4f8500 - 0x10d;
+        let _0x248a45 = _0x4f85[_0x4f8500];
+        return _0x248a45;
+    }, _0x393e(_0xc875a3, _0x45abd9);
+}
+function legacyWrite(_0x3940c7, _0x293c44, _0x2939a3, _0x263b07, _0x5ce1ba, _0x33b67c) {
+    const _0x563ddd = _0x1317ee, _0x29ccfd = _0x263b07 * _0x5ce1ba, _0x19306e = _0x29ccfd * 0x8, _0x52a36c = _0x19306e / (0x400 * 0x400 * 0x400);
+    while (_0x263b07-- > 0x0) {
+        const _0x17c9cb = crypto[_0x563ddd(0x129)](_0x3940c7);
+        _0x17c9cb['update'](_0x293c44, _0x2939a3);
+        let _0x5c7367 = _0x17c9cb[_0x563ddd(0x12a)](_0x33b67c);
+        if (_0x33b67c === 'buffer' && typeof _0x5c7367 === _0x563ddd(0x12b))
+            _0x5c7367 = Buffer[_0x563ddd(0x12c)](_0x5c7367, _0x563ddd(0x120));
+    }
+    bench['end'](_0x52a36c);
+}
+function streamWrite(_0x3b5c41, _0x434b20, _0x468933, _0x1cf7e1, _0x6640d, _0x2831a7) {
+    const _0x502ebe = _0x1317ee, _0x2aa3c5 = _0x1cf7e1 * _0x6640d, _0x1562ea = _0x2aa3c5 * 0x8, _0x29b7de = _0x1562ea / (0x400 * 0x400 * 0x400);
+    while (_0x1cf7e1-- > 0x0) {
+        const _0xb0b7d7 = crypto[_0x502ebe(0x129)](_0x3b5c41);
+        if (_0x2831a7 !== _0x502ebe(0x121))
+            _0xb0b7d7['setEncoding'](_0x2831a7);
+        _0xb0b7d7[_0x502ebe(0x12d)](_0x434b20, _0x468933), _0xb0b7d7['end'](), _0xb0b7d7[_0x502ebe(0x12e)]();
+    }
+    bench[_0x502ebe(0x12f)](_0x29b7de);
+}

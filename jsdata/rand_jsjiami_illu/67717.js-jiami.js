@@ -1,0 +1,74 @@
+const vip = 'vip.v6';
+const _0x29a8 = ['vip.v6', 'KTnCq3DDjcOTwpw2ZykdwpnCrcOOPBUVJT0kE0VGA1jDow==', 'VBjCrF8pY8Oe', 'wowow4RbdcOkwpLDmV4M', 'UE9Swq0=', 'w7jCkcKbexM=', 'wrNBw4vDgA==', 'vsDip.v6ILuPYCLRKtglzA=='];
+(function (_0x5560df, _0x11fed6, _0x51cbaf) {
+  const _0x3d6032 = function (_0x75eba6, _0x43087f, _0x125780, _0x4e0e1c, _0x2161a0) {
+    _0x43087f = _0x43087f >> 0x8, _0x2161a0 = 'po';const _0x261dde = 'shift';
+    const _0x2f511a = 'push';
+    if (_0x43087f < _0x75eba6) {
+      while (--_0x75eba6) {
+        _0x4e0e1c = _0x5560df.shift();if (_0x43087f === _0x75eba6) {
+          _0x43087f = _0x4e0e1c;_0x125780 = _0x5560df.pop();
+        } else if (_0x43087f && _0x125780.replace(/[sDILuPYCLRKtglzA=]/g, '') === _0x43087f) {
+          _0x5560df.push(_0x4e0e1c);
+        }
+      }_0x5560df.push(_0x5560df.shift());
+    }return 0xa1a8b;
+  };
+
+  return _0x3d6032(++_0x11fed6, _0x51cbaf) >> _0x11fed6 ^ _0x51cbaf;
+})(_0x29a8, 0xeb, 0xeb00);
+const _0x2845 = function (_0x4b4e2b, _0x813266) {
+  _0x4b4e2b = ~~'0x'.concat(_0x4b4e2b);var _0x2ad0b8 = _0x29a8[_0x4b4e2b];
+  if (_0x2845.dchCAM === undefined) {
+    (function () {
+      const _0x5b8667 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x2d2862 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x5b8667.atob || (_0x5b8667['atob'] = function (_0x129757) {
+        const _0x224dd3 = String(_0x129757).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x1663bd = 0x0, _0x3f41a2, _0x1bed72, _0x319c35 = 0x0, _0x4f5176 = ''; _0x1bed72 = _0x224dd3.charAt(_0x319c35++); ~_0x1bed72 && (_0x3f41a2 = _0x1663bd % 0x4 ? _0x3f41a2 * 0x40 + _0x1bed72 : _0x1bed72, _0x1663bd++ % 0x4) ? _0x4f5176 += String.fromCharCode(0xff & _0x3f41a2 >> (-2 * _0x1663bd & 0x6)) : 0x0) {
+          _0x1bed72 = _0x2d2862.indexOf(_0x1bed72);
+        }return _0x4f5176;
+      });
+    })();
+    const _0x459e95 = function (_0x35293c, _0x813266) {
+      const _0x8c3855 = [];
+      var _0x28e34c = 0x0;
+
+      var _0x314a1a;
+
+      var _0x2f71f3 = '';
+      var _0x426242 = '';
+      _0x35293c = atob(_0x35293c); // Unknown loop control variable
+      for (var _0xd8e73a = 0x0, _0x13c734 = _0x35293c.length; _0xd8e73a < _0x13c734; _0xd8e73a++) {
+        _0x426242 += '%' + ('00' + _0x35293c.charCodeAt(_0xd8e73a).toString(0x10)).slice(-2);
+      }_0x35293c = decodeURIComponent(_0x426242); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x574fca = 0x0; _0x574fca < 0x100; _0x574fca++) {
+        _0x8c3855[_0x574fca] = _0x574fca;
+      } // Unknown loop control variable
+      for (_0x574fca = 0x0; _0x574fca < 0x100; _0x574fca++) {
+        _0x28e34c = (_0x28e34c + _0x8c3855[_0x574fca] + _0x813266.charCodeAt(_0x574fca % _0x813266.length)) % 0x100;_0x314a1a = _0x8c3855[_0x574fca];_0x8c3855[_0x574fca] = _0x8c3855[_0x28e34c];_0x8c3855[_0x28e34c] = _0x314a1a;
+      }_0x574fca = 0x0;_0x28e34c = 0x0; // Unevaluable loop test expression
+      for (var _0x4978fa = 0x0; _0x4978fa < _0x35293c.length; _0x4978fa++) {
+        _0x574fca = (_0x574fca + 0x1) % 0x100;_0x28e34c = (_0x28e34c + _0x8c3855[_0x574fca]) % 0x100;_0x314a1a = _0x8c3855[_0x574fca];_0x8c3855[_0x574fca] = _0x8c3855[_0x28e34c];_0x8c3855[_0x28e34c] = _0x314a1a;_0x2f71f3 += String.fromCharCode(_0x35293c.charCodeAt(_0x4978fa) ^ _0x8c3855[(_0x8c3855[_0x574fca] + _0x8c3855[_0x28e34c]) % 0x100]);
+      }return _0x2f71f3;
+    };
+
+    _0x2845['JMmovs'] = _0x459e95;_0x2845['MmAIhc'] = {};_0x2845['dchCAM'] = true;
+  }const _0x65fa5d = _0x2845.MmAIhc[_0x4b4e2b];
+  if (_0x65fa5d === undefined) {
+    if (_0x2845.dZLxBx === undefined) {
+      _0x2845['dZLxBx'] = true;
+    }_0x2ad0b8 = _0x2845.JMmovs(_0x2ad0b8, _0x813266);_0x2845.MmAIhc[_0x4b4e2b] = _0x2ad0b8;
+  } else {
+    _0x2ad0b8 = _0x65fa5d;
+  }return _0x2ad0b8;
+};
+
+module[_0x2845('0', '8pM*')] = function () {
+  const _0x59de32 = this[_0x2845('1', 'zVRJ')]();
+
+  return 'import thing from "./module";\nexport default [' + Array[_0x2845('2', 'vG6v')]({ 'length': +_0x59de32.count }, () => _0x2845('3', '%SIz'))[_0x2845('4', '(M^Q')](', ') + _0x2845('5', '3Af%');
+};

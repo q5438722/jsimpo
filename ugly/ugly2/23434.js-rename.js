@@ -1,0 +1,1 @@
+function*foo(){var e=yield wat(),i=2;var d=yield e=i;yield e,yield i;yield e=i;return(yield 1)||(yield 2)}

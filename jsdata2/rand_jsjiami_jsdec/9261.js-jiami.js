@@ -1,0 +1,1 @@
+import _0x592558 from'bar/a.js';import _0x56b20b from'./foo.js';export default function (){var xBKVUv={'JrsHF':function(callee){return callee();}};return''+_0x592558+xBKVUv['JrsHF'](_0x56b20b);}

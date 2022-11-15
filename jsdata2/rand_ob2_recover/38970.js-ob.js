@@ -1,0 +1,4 @@
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+Object['defineProperty'](exports, _0xa2f955(230), { 'value': !![] }), exports[_0xa2f955(231)] = void 0;
+var _createSvgIcon = _interopRequireDefault(require(_0xa2f955(232))), _jsxRuntime = require(_0xa2f955(233)), _default = (0, _createSvgIcon[_0xa2f955(231)])((0, _jsxRuntime['jsx'])(_0xa2f955(234), { 'd': 'm15 3 2.3 2.3-2.89 2.87 1.42 1.42L18.7 6.7 21 9V3h-6zM3 9l2.3-2.3 2.87 2.89 1.42-1.42L6.7 5.3 9 3H3v6zm6 12-2.3-2.3 2.89-2.87-1.42-1.42L5.3 17.3 3 15v6h6zm12-6-2.3 2.3-2.87-2.89-1.42 1.42 2.89 2.87L15 21h6v-6z' }), _0xa2f955(235));
+exports['default'] = _default;

@@ -1,0 +1,1 @@
+class Foo extends Bar{constructor(){const fn=()=>this;fn();super()}}class Foo extends Bar{constructor(){const fn=()=>this;fn();super()}}class Foo extends Bar{constructor(){const fn=()=>this;fn();super()}}class Foo extends Bar{constructor(){const fn=()=>this;fn();super()}}class Foo extends Bar{constructor(){const fn=()=>this;fn();super()}}

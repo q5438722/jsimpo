@@ -1,0 +1,1 @@
+module['exports']={'findBundle':function(_0xf3c9af,_0x1a2a4b){var _0xa2b8de={'Hpbtx':'b.js','JxovA':'deep/path/a.js','NEoiB':'somewhere/c.js'};return[_0xa2b8de['Hpbtx'],_0xa2b8de['JxovA'],_0xa2b8de['NEoiB']];}};

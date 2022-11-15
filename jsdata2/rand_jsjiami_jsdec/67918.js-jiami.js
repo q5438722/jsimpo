@@ -1,0 +1,1 @@
+var supportsWebAssembly=require('../../../helpers/supportsWebAssembly');module['exports']=function(_0x16b49f){var _0x552f44={'lQvIJ':function(_0x487e0d){return _0x487e0d();}};return _0x552f44['lQvIJ'](supportsWebAssembly);};

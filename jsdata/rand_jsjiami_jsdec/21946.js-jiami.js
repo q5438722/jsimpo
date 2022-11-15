@@ -1,0 +1,1 @@
+var p2={0:'a',2:'c','length':0x3};var arr=[...p2,'d'];expect(arr)['toEqual'](['a',undefined,'c','d']);expect(0x1 in arr)['toBe'](!![]);

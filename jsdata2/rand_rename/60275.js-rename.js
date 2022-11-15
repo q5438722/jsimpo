@@ -1,0 +1,1 @@
+function foo(){try{String.prototype.length.x()}catch(o){}}foo();foo();foo();

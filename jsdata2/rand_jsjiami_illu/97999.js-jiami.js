@@ -1,0 +1,84 @@
+const vip = 'vip.v6';
+const _0x5949 = ['vip.v6', 'Bk4sw7Aq', 'esOjw69vwpA=', 'w4tqw7NjPw==', 'OwbCkcOGwq4HLcKFEAZN', 'jvigp.xvfj6xDnkEtzBlQQC=='];
+(function (_0x2699a9, _0x501e82, _0x5b6c40) {
+  const _0xa3de42 = function (_0x26a748, _0x11084b, _0x2c2a53, _0xa6c3c8, _0x38ba25) {
+    _0x11084b = _0x11084b >> 0x8, _0x38ba25 = 'po';const _0x4cbc11 = 'shift';
+    const _0x425aa0 = 'push';
+    if (_0x11084b < _0x26a748) {
+      while (--_0x26a748) {
+        _0xa6c3c8 = _0x2699a9.shift();if (_0x11084b === _0x26a748) {
+          _0x11084b = _0xa6c3c8;_0x2c2a53 = _0x2699a9.pop();
+        } else if (_0x11084b && _0x2c2a53.replace(/[jgxfjxDnkEtzBlQQC=]/g, '') === _0x11084b) {
+          _0x2699a9.push(_0xa6c3c8);
+        }
+      }_0x2699a9.push(_0x2699a9.shift());
+    }return 0xa1dc5;
+  };
+
+  return _0xa3de42(++_0x501e82, _0x5b6c40) >> _0x501e82 ^ _0x5b6c40;
+})(_0x5949, 0x1f2, 0x1f200);
+const _0x470c = function (_0x2b9efd, _0xa8d620) {
+  _0x2b9efd = ~~'0x'.concat(_0x2b9efd);var _0x5148b6 = _0x5949[_0x2b9efd];
+  if (_0x470c.mIYXBq === undefined) {
+    (function () {
+      const _0x52b098 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x394e89 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x52b098.atob || (_0x52b098['atob'] = function (_0x2d6f0b) {
+        const _0x2740c4 = String(_0x2d6f0b).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x441886 = 0x0, _0x26c28d, _0x379dd9, _0x84a68b = 0x0, _0x324320 = ''; _0x379dd9 = _0x2740c4.charAt(_0x84a68b++); ~_0x379dd9 && (_0x26c28d = _0x441886 % 0x4 ? _0x26c28d * 0x40 + _0x379dd9 : _0x379dd9, _0x441886++ % 0x4) ? _0x324320 += String.fromCharCode(0xff & _0x26c28d >> (-2 * _0x441886 & 0x6)) : 0x0) {
+          _0x379dd9 = _0x394e89.indexOf(_0x379dd9);
+        }return _0x324320;
+      });
+    })();
+    const _0x4e4dc9 = function (_0x38deda, _0xa8d620) {
+      const _0x419df9 = [];
+      var _0x1c709c = 0x0;
+
+      var _0x58ac16;
+
+      var _0x9dd34f = '';
+      var _0x5d8fb0 = '';
+      _0x38deda = atob(_0x38deda); // Unknown loop control variable
+      for (var _0x1939b3 = 0x0, _0x481c59 = _0x38deda.length; _0x1939b3 < _0x481c59; _0x1939b3++) {
+        _0x5d8fb0 += '%' + ('00' + _0x38deda.charCodeAt(_0x1939b3).toString(0x10)).slice(-2);
+      }_0x38deda = decodeURIComponent(_0x5d8fb0); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x408e14 = 0x0; _0x408e14 < 0x100; _0x408e14++) {
+        _0x419df9[_0x408e14] = _0x408e14;
+      } // Unknown loop control variable
+      for (_0x408e14 = 0x0; _0x408e14 < 0x100; _0x408e14++) {
+        _0x1c709c = (_0x1c709c + _0x419df9[_0x408e14] + _0xa8d620.charCodeAt(_0x408e14 % _0xa8d620.length)) % 0x100;_0x58ac16 = _0x419df9[_0x408e14];_0x419df9[_0x408e14] = _0x419df9[_0x1c709c];_0x419df9[_0x1c709c] = _0x58ac16;
+      }_0x408e14 = 0x0;_0x1c709c = 0x0; // Unevaluable loop test expression
+      for (var _0x1fb69c = 0x0; _0x1fb69c < _0x38deda.length; _0x1fb69c++) {
+        _0x408e14 = (_0x408e14 + 0x1) % 0x100;_0x1c709c = (_0x1c709c + _0x419df9[_0x408e14]) % 0x100;_0x58ac16 = _0x419df9[_0x408e14];_0x419df9[_0x408e14] = _0x419df9[_0x1c709c];_0x419df9[_0x1c709c] = _0x58ac16;_0x9dd34f += String.fromCharCode(_0x38deda.charCodeAt(_0x1fb69c) ^ _0x419df9[(_0x419df9[_0x408e14] + _0x419df9[_0x1c709c]) % 0x100]);
+      }return _0x9dd34f;
+    };
+
+    _0x470c['FnSQEa'] = _0x4e4dc9;_0x470c['GwJNGp'] = {};_0x470c['mIYXBq'] = true;
+  }const _0x2d4afb = _0x470c.GwJNGp[_0x2b9efd];
+  if (_0x2d4afb === undefined) {
+    if (_0x470c.FkaDWb === undefined) {
+      _0x470c['FkaDWb'] = true;
+    }_0x5148b6 = _0x470c.FnSQEa(_0x5148b6, _0xa8d620);_0x470c.GwJNGp[_0x2b9efd] = _0x5148b6;
+  } else {
+    _0x5148b6 = _0x2d4afb;
+  }return _0x5148b6;
+};
+
+var { useState } = require(_0x470c('0', 'Bb9)'));
+
+var { useCustom } = require(_0x470c('1', '*AN&'));
+
+function Component(_0x87a2c2) {
+  const _0x45046d = { 'NYvNK': function (_0x4475a9, _0x544c21) {
+      return _0x4475a9(_0x544c21);
+    }, 'bwubD': function (_0x555927) {
+      return _0x555927();
+    } };
+
+  var [_0x10ed1b] = _0x45046d[_0x470c('2', 'pjhj')](useState, 0x0);
+
+  _0x45046d[_0x470c('3', '*v6]')](useCustom);return _0x10ed1b;
+}module['exports'] = { 'Component': Component };

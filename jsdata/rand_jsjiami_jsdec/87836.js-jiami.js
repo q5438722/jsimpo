@@ -1,0 +1,1 @@
+import{Meteor}from'meteor/meteor';Meteor['startup'](()=>{Meteor['checkMeFromShell']='oky dok';});_={'_specialUnderscoreTestObject':!![]};Meteor['methods']({'__meteor__/__self_test__/shell-tests/underscore'(){var _0x5f13da={'paJdk':function(_0x41eee3,_0x219ade){return _0x41eee3===_0x219ade;}};return _0x5f13da['paJdk'](typeof _,'object')&&Object['keys'](_);}});

@@ -1,0 +1,1 @@
+var fuse=0x1;var handler={'get':function(){return function(){};},'has'(){return!![];},'getOwnPropertyDescriptor':function(){var _0x13f37c={'YjPNY':function(_0x2f1f10,_0x226bb0){return _0x2f1f10==_0x226bb0;}};if(_0x13f37c['YjPNY'](fuse--,0x0))throw 'please die';return{'value':function(){},'configurable':!![]};}};var p=new Proxy({},handler);var o=Object['create'](p);with(o){f();}

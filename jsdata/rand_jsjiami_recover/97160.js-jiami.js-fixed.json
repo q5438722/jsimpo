@@ -1,0 +1,214 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "Literal",
+                "value": "use strict",
+                "raw": "'use strict'"
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "baseConfig"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "./config.base",
+                                "raw": "'./config.base'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "module"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "exports",
+                        "raw": "'exports'"
+                    }
+                },
+                "right": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "Object"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "assign",
+                            "raw": "'assign'"
+                        }
+                    },
+                    "arguments": [
+                        {
+                            "type": "ObjectExpression",
+                            "properties": []
+                        },
+                        {
+                            "type": "Identifier",
+                            "name": "baseConfig"
+                        },
+                        {
+                            "type": "ObjectExpression",
+                            "properties": [
+                                {
+                                    "type": "Property",
+                                    "key": {
+                                        "type": "Literal",
+                                        "value": "modulePathIgnorePatterns",
+                                        "raw": "'modulePathIgnorePatterns'"
+                                    },
+                                    "computed": false,
+                                    "value": {
+                                        "type": "ArrayExpression",
+                                        "elements": [
+                                            {
+                                                "type": "SpreadElement",
+                                                "argument": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "baseConfig"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "modulePathIgnorePatterns",
+                                                        "raw": "'modulePathIgnorePatterns'"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "Literal",
+                                                "value": "packages/react-devtools-extensions",
+                                                "raw": "'packages/react-devtools-extensions'"
+                                            },
+                                            {
+                                                "type": "Literal",
+                                                "value": "packages/react-devtools-shared",
+                                                "raw": "'packages/react-devtools-shared'"
+                                            }
+                                        ]
+                                    },
+                                    "kind": "init",
+                                    "method": false,
+                                    "shorthand": false
+                                },
+                                {
+                                    "type": "Property",
+                                    "key": {
+                                        "type": "Literal",
+                                        "value": "setupFiles",
+                                        "raw": "'setupFiles'"
+                                    },
+                                    "computed": false,
+                                    "value": {
+                                        "type": "ArrayExpression",
+                                        "elements": [
+                                            {
+                                                "type": "SpreadElement",
+                                                "argument": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "baseConfig"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "setupFiles",
+                                                        "raw": "'setupFiles'"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "require"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "resolve",
+                                                        "raw": "'resolve'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "./setupTests.www.js",
+                                                        "raw": "'./setupTests.www.js'"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "require"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "resolve",
+                                                        "raw": "'resolve'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "./setupHostConfigs.js",
+                                                        "raw": "'./setupHostConfigs.js'"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "kind": "init",
+                                    "method": false,
+                                    "shorthand": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}

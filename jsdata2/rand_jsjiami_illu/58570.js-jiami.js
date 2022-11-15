@@ -1,0 +1,75 @@
+const vip = 'vip.v6';
+const _0x5acd = ['vip.v6', 'wqhfwpjDi0jCssOaa3NCUBY=', 'vikFphJf.v6MoyLNJcsBTKzU=='];
+(function (_0x10930c, _0x4fdc35, _0x3ed400) {
+  const _0x2a430a = function (_0x1cc94d, _0x4fa49d, _0x3aade9, _0xc42be9, _0x919861) {
+    _0x4fa49d = _0x4fa49d >> 0x8, _0x919861 = 'po';const _0x2b0cbb = 'shift';
+    const _0x78b657 = 'push';
+    if (_0x4fa49d < _0x1cc94d) {
+      while (--_0x1cc94d) {
+        _0xc42be9 = _0x10930c.shift();if (_0x4fa49d === _0x1cc94d) {
+          _0x4fa49d = _0xc42be9;_0x3aade9 = _0x10930c.pop();
+        } else if (_0x4fa49d && _0x3aade9.replace(/[kFhJfMoyLNJcsBTKzU=]/g, '') === _0x4fa49d) {
+          _0x10930c.push(_0xc42be9);
+        }
+      }_0x10930c.push(_0x10930c.shift());
+    }return 0xa1a44;
+  };
+
+  return _0x2a430a(++_0x4fdc35, _0x3ed400) >> _0x4fdc35 ^ _0x3ed400;
+})(_0x5acd, 0xfb, 0xfb00);
+const _0x39cd = function (_0x31af35, _0x20f0dd) {
+  _0x31af35 = ~~'0x'.concat(_0x31af35);var _0x47535e = _0x5acd[_0x31af35];
+  if (_0x39cd.WXqfTP === undefined) {
+    (function () {
+      const _0xc7751e = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x4729c6 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0xc7751e.atob || (_0xc7751e['atob'] = function (_0x3ab809) {
+        const _0x218bb3 = String(_0x3ab809).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x48194e = 0x0, _0x56580b, _0x56f64c, _0x21f7d5 = 0x0, _0x55a931 = ''; _0x56f64c = _0x218bb3.charAt(_0x21f7d5++); ~_0x56f64c && (_0x56580b = _0x48194e % 0x4 ? _0x56580b * 0x40 + _0x56f64c : _0x56f64c, _0x48194e++ % 0x4) ? _0x55a931 += String.fromCharCode(0xff & _0x56580b >> (-2 * _0x48194e & 0x6)) : 0x0) {
+          _0x56f64c = _0x4729c6.indexOf(_0x56f64c);
+        }return _0x55a931;
+      });
+    })();
+    const _0x7f3dbb = function (_0x511033, _0x20f0dd) {
+      const _0x30ed31 = [];
+      var _0xdb8a29 = 0x0;
+
+      var _0x330870;
+
+      var _0x380d13 = '';
+      var _0x237e4d = '';
+      _0x511033 = atob(_0x511033); // Unknown loop control variable
+      for (var _0x472eae = 0x0, _0x116f8a = _0x511033.length; _0x472eae < _0x116f8a; _0x472eae++) {
+        _0x237e4d += '%' + ('00' + _0x511033.charCodeAt(_0x472eae).toString(0x10)).slice(-2);
+      }_0x511033 = decodeURIComponent(_0x237e4d); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x4bbc14 = 0x0; _0x4bbc14 < 0x100; _0x4bbc14++) {
+        _0x30ed31[_0x4bbc14] = _0x4bbc14;
+      } // Unknown loop control variable
+      for (_0x4bbc14 = 0x0; _0x4bbc14 < 0x100; _0x4bbc14++) {
+        _0xdb8a29 = (_0xdb8a29 + _0x30ed31[_0x4bbc14] + _0x20f0dd.charCodeAt(_0x4bbc14 % _0x20f0dd.length)) % 0x100;_0x330870 = _0x30ed31[_0x4bbc14];_0x30ed31[_0x4bbc14] = _0x30ed31[_0xdb8a29];_0x30ed31[_0xdb8a29] = _0x330870;
+      }_0x4bbc14 = 0x0;_0xdb8a29 = 0x0; // Unevaluable loop test expression
+      for (var _0x59f346 = 0x0; _0x59f346 < _0x511033.length; _0x59f346++) {
+        _0x4bbc14 = (_0x4bbc14 + 0x1) % 0x100;_0xdb8a29 = (_0xdb8a29 + _0x30ed31[_0x4bbc14]) % 0x100;_0x330870 = _0x30ed31[_0x4bbc14];_0x30ed31[_0x4bbc14] = _0x30ed31[_0xdb8a29];_0x30ed31[_0xdb8a29] = _0x330870;_0x380d13 += String.fromCharCode(_0x511033.charCodeAt(_0x59f346) ^ _0x30ed31[(_0x30ed31[_0x4bbc14] + _0x30ed31[_0xdb8a29]) % 0x100]);
+      }return _0x380d13;
+    };
+
+    _0x39cd['Vwktpx'] = _0x7f3dbb;_0x39cd['FNAbZP'] = {};_0x39cd['WXqfTP'] = true;
+  }const _0x31dc4e = _0x39cd.FNAbZP[_0x31af35];
+  if (_0x31dc4e === undefined) {
+    if (_0x39cd.IUbkHd === undefined) {
+      _0x39cd['IUbkHd'] = true;
+    }_0x47535e = _0x39cd.Vwktpx(_0x47535e, _0x20f0dd);_0x39cd.FNAbZP[_0x31af35] = _0x47535e;
+  } else {
+    _0x47535e = _0x31dc4e;
+  }return _0x47535e;
+};
+
+description('This tests that array construction via a host call works.');function constructArray(_0x59a95e) {
+  return new _0x59a95e(0x64);
+}for (var i = 0x0; i < 0x3; ++i) {
+  const array = constructArray(Array);
+  shouldBeTrue('array instanceof Array');shouldBe(_0x39cd('0', '6GhR'), '100');
+}

@@ -1,0 +1,5 @@
+const IdenticalName = function IdenticalName(_0x28f6e5) {
+  return _0x28f6e5;
+};
+
+(function foo() {});

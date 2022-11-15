@@ -1,0 +1,57 @@
+function _0x31e2(_0x174225, _0x2a1505) {
+    return _0x31e2 = function (_0x2cc3ed, _0x31e2a6) {
+        _0x2cc3ed = _0x2cc3ed - 187;
+        var _0x804395 = _0x2cc3[_0x2cc3ed];
+        return _0x804395;
+    }, _0x31e2(_0x174225, _0x2a1505);
+}
+var CanvasPool = require(_0x12ed07(196)), MeasureText = function (_0x41942e) {
+        var _0xe8e152 = _0x12ed07, _0x21f910 = CanvasPool[_0xe8e152(197)](this), _0x58eccd = _0x21f910[_0xe8e152(198)]('2d');
+        _0x41942e[_0xe8e152(199)](_0x21f910, _0x58eccd);
+        var _0x50cf66 = _0x58eccd[_0xe8e152(200)](_0x41942e['testString']);
+        if ('actualBoundingBoxAscent' in _0x50cf66) {
+            var _0x4ae329 = _0x50cf66[_0xe8e152(201)], _0x3aee6b = _0x50cf66[_0xe8e152(202)];
+            return CanvasPool[_0xe8e152(203)](_0x21f910), {
+                'ascent': _0x4ae329,
+                'descent': _0x3aee6b,
+                'fontSize': _0x4ae329 + _0x3aee6b
+            };
+        }
+        var _0x105d49 = Math[_0xe8e152(204)](_0x50cf66['width'] * _0x41942e[_0xe8e152(205)]), _0x1a6c18 = _0x105d49, _0x30ea09 = 2 * _0x1a6c18;
+        _0x1a6c18 = _0x1a6c18 * _0x41942e[_0xe8e152(206)] | 0, _0x21f910[_0xe8e152(207)] = _0x105d49, _0x21f910[_0xe8e152(208)] = _0x30ea09, _0x58eccd[_0xe8e152(209)] = _0xe8e152(210), _0x58eccd[_0xe8e152(211)](0, 0, _0x105d49, _0x30ea09), _0x58eccd[_0xe8e152(212)] = _0x41942e['_font'], _0x58eccd['textBaseline'] = _0xe8e152(213), _0x58eccd[_0xe8e152(209)] = _0xe8e152(214), _0x58eccd[_0xe8e152(215)](_0x41942e[_0xe8e152(216)], 0, _0x1a6c18);
+        var _0x5904b2 = {
+                'ascent': 0,
+                'descent': 0,
+                'fontSize': 0
+            }, _0x1482ec = _0x58eccd[_0xe8e152(217)](0, 0, _0x105d49, _0x30ea09);
+        if (!_0x1482ec)
+            return _0x5904b2['ascent'] = _0x1a6c18, _0x5904b2[_0xe8e152(218)] = _0x1a6c18 + 6, _0x5904b2['fontSize'] = _0x5904b2[_0xe8e152(219)] + _0x5904b2[_0xe8e152(218)], CanvasPool[_0xe8e152(203)](_0x21f910), _0x5904b2;
+        var _0x16b1ed = _0x1482ec[_0xe8e152(220)], _0x56fd96 = _0x16b1ed[_0xe8e152(221)], _0x5a29d5 = _0x105d49 * 4, _0x2b847b, _0x5d5cf4, _0x2ff4c4 = 0, _0x7036d3 = ![];
+        for (_0x2b847b = 0; _0x2b847b < _0x1a6c18; _0x2b847b++) {
+            for (_0x5d5cf4 = 0; _0x5d5cf4 < _0x5a29d5; _0x5d5cf4 += 4) {
+                if (_0x16b1ed[_0x2ff4c4 + _0x5d5cf4] !== 255) {
+                    _0x7036d3 = !![];
+                    break;
+                }
+            }
+            if (!_0x7036d3)
+                _0x2ff4c4 += _0x5a29d5;
+            else
+                break;
+        }
+        _0x5904b2[_0xe8e152(219)] = _0x1a6c18 - _0x2b847b, _0x2ff4c4 = _0x56fd96 - _0x5a29d5, _0x7036d3 = ![];
+        for (_0x2b847b = _0x30ea09; _0x2b847b > _0x1a6c18; _0x2b847b--) {
+            for (_0x5d5cf4 = 0; _0x5d5cf4 < _0x5a29d5; _0x5d5cf4 += 4) {
+                if (_0x16b1ed[_0x2ff4c4 + _0x5d5cf4] !== 255) {
+                    _0x7036d3 = !![];
+                    break;
+                }
+            }
+            if (!_0x7036d3)
+                _0x2ff4c4 -= _0x5a29d5;
+            else
+                break;
+        }
+        return _0x5904b2[_0xe8e152(218)] = _0x2b847b - _0x1a6c18, _0x5904b2[_0xe8e152(222)] = _0x5904b2['ascent'] + _0x5904b2[_0xe8e152(218)], CanvasPool[_0xe8e152(203)](_0x21f910), _0x5904b2;
+    };
+module[_0x12ed07(223)] = MeasureText;

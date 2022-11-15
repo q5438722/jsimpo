@@ -1,0 +1,327 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "Realm"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "create",
+                        "raw": "'create'"
+                    }
+                },
+                "arguments": []
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "object"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "Realm"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "eval",
+                                "raw": "'eval'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": 1,
+                                "raw": "0x1"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": "Object",
+                                "raw": "'Object'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "f"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "Realm"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "eval",
+                                "raw": "'eval'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": 1,
+                                "raw": "0x1"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": "function f() { return this }; f",
+                                "raw": "'function f() { return this }; f'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "Number"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "prototype",
+                            "raw": "'prototype'"
+                        }
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "f",
+                        "raw": "'f'"
+                    }
+                },
+                "right": {
+                    "type": "Identifier",
+                    "name": "f"
+                }
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "number"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": 1,
+                        "raw": "0x1"
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertEquals"
+                },
+                "arguments": [
+                    {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "object"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "prototype",
+                            "raw": "'prototype'"
+                        }
+                    },
+                    {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "f"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "call",
+                                        "raw": "'call'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "number"
+                                    }
+                                ]
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "__proto__",
+                                "raw": "'__proto__'"
+                            }
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "__proto__",
+                            "raw": "'__proto__'"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertEquals"
+                },
+                "arguments": [
+                    {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "object"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "prototype",
+                            "raw": "'prototype'"
+                        }
+                    },
+                    {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "number"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "f",
+                                        "raw": "'f'"
+                                    }
+                                },
+                                "arguments": []
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "__proto__",
+                                "raw": "'__proto__'"
+                            }
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "__proto__",
+                            "raw": "'__proto__'"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertEquals"
+                },
+                "arguments": [
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "Realm"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "global",
+                                "raw": "'global'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": 1,
+                                "raw": "0x1"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "f"
+                        },
+                        "arguments": []
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

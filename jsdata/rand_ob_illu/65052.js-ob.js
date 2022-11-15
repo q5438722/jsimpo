@@ -1,0 +1,70 @@
+const _0x5d52 = ['146011alqoGk', '85474aGVbhE', '1qVdjnx', '136631kMcPxm', '49394evdAKs', '13bfNwLY', 'Debug', 'a = 4', 'set_a_to_5()', 'b = 5', 'QJpOJ', 'DebugEvent', 'XWaWA', 'value', 'wZKhG', 'frame', 'evaluate', 'MQUez', 'uCDXe', 'XxqFH', 'next', 'setListener', '176007dhBZvk', '2tFBivA', '95857LBZmZk', '1529FCvGjQ', '52swIzek', '1Ztankl'];
+const _0x8732bb = _0x4268;
+
+(function (_0x56e93c, _0x4f25db) {
+    const _0x5250fd = _0x4268;
+
+    while (true) {
+        try {
+            const _0x12fa97 = -parseInt(_0x5250fd(0xbc)) + parseInt(_0x5250fd(0xbd)) * -parseInt(_0x5250fd(0xbe)) + parseInt(_0x5250fd(0xbf)) * -parseInt(_0x5250fd(0xc0)) + -parseInt(_0x5250fd(0xc1)) * parseInt(_0x5250fd(0xc2)) + -parseInt(_0x5250fd(0xc3)) * parseInt(_0x5250fd(0xc4)) + parseInt(_0x5250fd(0xc5)) + parseInt(_0x5250fd(0xc6)) * parseInt(_0x5250fd(0xc7));
+
+            if (_0x12fa97 === _0x4f25db) break;else _0x56e93c.push(_0x56e93c.shift());
+        } catch (_0x463dd0) {
+            _0x56e93c.push(_0x56e93c.shift());
+        }
+    }
+})(_0x5d52, 100039), Debug = debug[_0x8732bb(0xc8)];
+var debug_step = 0;
+var failure = null;
+
+function listener(_0x1827c4, _0x320b46, _0x232d54, _0x38eed7) {
+    const _0x5c2a57 = _0x8732bb;
+    const _0x47eccf = {
+        'QJpOJ': function (_0x277163, _0x2e8be6) {
+            return _0x277163 != _0x2e8be6;
+        },
+        'XWaWA': function (_0xb0b26c, _0x11d33a) {
+            return _0xb0b26c == _0x11d33a;
+        },
+        'Rwrja': function (_0x2786ad, _0x3a4be0, _0x3561f8) {
+            return _0x2786ad(_0x3a4be0, _0x3561f8);
+        },
+        'wZKhG': function (_0x511e6a, _0x31a403, _0x1e7cff) {
+            return _0x511e6a(_0x31a403, _0x1e7cff);
+        },
+        'MQUez': _0x5c2a57(0xc9),
+        'uCDXe': _0x5c2a57(0xca),
+        'XxqFH': _0x5c2a57(0xcb)
+    };
+
+    if (_0x47eccf[_0x5c2a57(0xcc)](_0x1827c4, Debug[_0x5c2a57(0xcd)].Break)) return;
+    try {
+        _0x47eccf[_0x5c2a57(0xce)](debug_step, 0) ? (_0x47eccf.Rwrja(assertEquals, 1, _0x320b46.frame(0).evaluate('a')[_0x5c2a57(0xcf)]()), _0x47eccf[_0x5c2a57(0xd0)](assertEquals, 3, _0x320b46[_0x5c2a57(0xd1)](0)[_0x5c2a57(0xd2)]('b').value()), _0x320b46[_0x5c2a57(0xd1)](0).evaluate(_0x47eccf[_0x5c2a57(0xd3)]).value(), debug_step++) : (_0x47eccf[_0x5c2a57(0xd0)](assertEquals, 4, _0x320b46.frame(0)[_0x5c2a57(0xd2)]('a')[_0x5c2a57(0xcf)]()), assertEquals(3, _0x320b46[_0x5c2a57(0xd1)](0).evaluate('b')[_0x5c2a57(0xcf)]()), _0x320b46[_0x5c2a57(0xd1)](0)[_0x5c2a57(0xd2)](_0x47eccf[_0x5c2a57(0xd4)]), _0x320b46.frame(0)[_0x5c2a57(0xd2)](_0x47eccf[_0x5c2a57(0xd5)]).value());
+    } catch (_0x58390f) {
+        failure = _0x58390f;
+    }
+}
+Debug.setListener(listener);
+function* generator(_0x44e131, _0x5ed1f1) {
+    function _0x41334d() {
+        _0x44e131 = 5;
+    }
+    _0x41334d;
+    const _0x5ed1f1 = 3;
+
+    debugger;
+    yield _0x44e131, yield _0x5ed1f1;
+    debugger;
+    return yield _0x44e131, _0x5ed1f1;
+}
+function _0x4268(_0x1dc69e, _0x337521) {
+    return _0x4268 = function (_0x3fd7e1, _0x1aacd5) {
+        _0x3fd7e1 = _0x3fd7e1 - 188;
+        const _0x490738 = _0x5d52[_0x3fd7e1];
+
+        return _0x490738;
+    }, _0x4268(_0x1dc69e, _0x337521);
+}
+const foo = generator(1, 2);
+
+assertEquals(4, foo[_0x8732bb(0xd6)]()[_0x8732bb(0xcf)]), assertEquals(3, foo[_0x8732bb(0xd6)]()[_0x8732bb(0xcf)]), assertEquals(5, foo[_0x8732bb(0xd6)]()[_0x8732bb(0xcf)]), assertEquals(5, foo[_0x8732bb(0xd6)]()[_0x8732bb(0xcf)]), assertNull(failure), Debug[_0x8732bb(0xd7)](null);

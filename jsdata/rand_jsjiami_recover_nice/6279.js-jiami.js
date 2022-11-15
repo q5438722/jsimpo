@@ -1,0 +1,40 @@
+'use strict';
+define(function(require) {
+  return {
+    "bindAll" : require("./object/bindAll"),
+    "contains" : require("./object/contains"),
+    "deepEquals" : require(_0x4b8ae1["YokqA"]),
+    "deepFillIn" : require(_0x4b8ae1["qMkEh"]),
+    "deepMatches" : require(_0x4b8ae1["VXpCM"]),
+    "deepMixIn" : require("./object/deepMixIn"),
+    "equals" : require(_0x4b8ae1["ZHqhx"]),
+    "every" : require(_0x4b8ae1["hEYgX"]),
+    "fillIn" : require(_0x4b8ae1["qzOFc"]),
+    "filter" : require(_0x4b8ae1["TeOuq"]),
+    "find" : require(_0x4b8ae1["SveqA"]),
+    "forIn" : require(_0x4b8ae1["BylyY"]),
+    "forOwn" : require("./object/forOwn"),
+    "functions" : require(_0x4b8ae1["NClYy"]),
+    "get" : require(_0x4b8ae1["qAHSG"]),
+    "has" : require(_0x4b8ae1["AMHdu"]),
+    "hasOwn" : require(_0x4b8ae1["YBbEV"]),
+    "keys" : require("./object/keys"),
+    "map" : require("./object/map"),
+    "matches" : require(_0x4b8ae1["HuDeg"]),
+    "max" : require(_0x4b8ae1["UiJcz"]),
+    "merge" : require("./object/merge"),
+    "min" : require(_0x4b8ae1["DHJXK"]),
+    "mixIn" : require("./object/mixIn"),
+    "namespace" : require(_0x4b8ae1["PnMgT"]),
+    "pick" : require("./object/pick"),
+    "pluck" : require("./object/pluck"),
+    "reduce" : require("./object/reduce"),
+    "reject" : require(_0x4b8ae1["fneoZ"]),
+    "set" : require(_0x4b8ae1["sCOXx"]),
+    "size" : require(_0x4b8ae1["oSKkf"]),
+    "some" : require("./object/some"),
+    "unset" : require(_0x4b8ae1["YNynC"]),
+    "values" : require("./object/values")
+  };
+});
+

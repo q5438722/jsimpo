@@ -1,0 +1,1 @@
+function id(r){return r}var x=function r(){var a=0;var n=id(r);for(var t=0;t<1e5;t++){a+=t}return r==n}();assertEquals(true,x);var x=function r(){var a=0;for(var n=0;n<9e4;n++){a+=n}return r}();assertEquals("function",typeof x);

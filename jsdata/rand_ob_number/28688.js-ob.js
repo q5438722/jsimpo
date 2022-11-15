@@ -1,0 +1,5 @@
+'use strict';
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+Object['defineProperty'](exports, '__esModule', { 'value': !![] }), exports['default'] = void (-0x1 * -0x33b + 0x451 * 0x7 + -0x2172);
+var _createSvgIcon = _interopRequireDefault(require('./utils/createSvgIcon')), _jsxRuntime = require('react/jsx-runtime'), _default = (0x1 * -0xcaf + 0x2 * 0x18d + 0x995, _createSvgIcon['default'])((0x20b * -0x9 + -0x1 * -0x1b9d + -0x2 * 0x49d, _jsxRuntime['jsx'])('path', { 'd': 'M19.3\x2016.9c.4-.7.7-1.5.7-2.4\x200-2.5-2-4.5-4.5-4.5S11\x2012\x2011\x2014.5s2\x204.5\x204.5\x204.5c.9\x200\x201.7-.3\x202.4-.7l3.2\x203.2\x201.4-1.4-3.2-3.2zm-3.8.1c-1.4\x200-2.5-1.1-2.5-2.5s1.1-2.5\x202.5-2.5\x202.5\x201.1\x202.5\x202.5-1.1\x202.5-2.5\x202.5zM12\x2020v2C6.48\x2022\x202\x2017.52\x202\x2012S6.48\x202\x2012\x202c4.84\x200\x208.87\x203.44\x209.8\x208h-2.07c-.64-2.46-2.4-4.47-4.73-5.41V5c0\x201.1-.9\x202-2\x202h-2v2c0\x20.55-.45\x201-1\x201H8v2h2v3H9l-4.79-4.79C4.08\x2010.79\x204\x2011.38\x204\x2012c0\x204.41\x203.59\x208\x208\x208z' }), 'TravelExploreOutlined');
+exports['default'] = _default;

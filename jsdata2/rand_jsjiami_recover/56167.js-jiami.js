@@ -1,0 +1,53 @@
+'use strict';
+const common = require('../common');
+const assert = require('assert');
+const http = require('http');
+const server = http['createServer'](common['mustCall'](function (_0x153f9f, _0x274f5a) {
+    _0x274f5a['writeHead'](200);
+    _0x274f5a['end']('ok');
+}));
+server['listen'](0, function () {
+    const _0x191048 = new http['Agent']();
+    _0x191048['defaultPort'] = this['address']()['port'];
+    const _0x8c4b12 = {
+        'host': undefined,
+        'hostname': common['localhostIPv4'],
+        'port': undefined,
+        'defaultPort': undefined,
+        'path': undefined,
+        'method': undefined,
+        'agent': _0x191048
+    };
+    http['request'](_0x8c4b12, function (_0x157e87) {
+        var _0x4a5859 = '6|7|3|2|5|4|0|1'['split']('|'), _0x5cfee4 = 0;
+        while (!![]) {
+            switch (_0x4a5859[_0x5cfee4++]) {
+            case '0':
+                assert['strictEqual'](_0x8c4b12['path'], undefined);
+                continue;
+            case '1':
+                assert['strictEqual'](_0x8c4b12['method'], undefined);
+                continue;
+            case '2':
+                assert['strictEqual'](_0x8c4b12['hostname'], common['localhostIPv4']);
+                continue;
+            case '3':
+                assert['strictEqual'](_0x8c4b12['host'], undefined);
+                continue;
+            case '4':
+                assert['strictEqual'](_0x8c4b12['defaultPort'], undefined);
+                continue;
+            case '5':
+                assert['strictEqual'](_0x8c4b12['port'], undefined);
+                continue;
+            case '6':
+                _0x157e87['resume']();
+                continue;
+            case '7':
+                server['close']();
+                continue;
+            }
+            break;
+        }
+    })['end']();
+});

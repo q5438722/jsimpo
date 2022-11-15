@@ -1,0 +1,22 @@
+define(function (e, t, n) {
+  "use strict";
+  const c = e("spec/SpecRunnerUtils");
+  describe("SpecRunnerUtils", function () {
+    describe("simulateKeyEvent", function () {
+      var t;
+      var n;
+      beforeEach(function () {
+        t = c.createMockElement();t.on("keydown", function (e) {
+          n = e;
+        });
+      });afterEach(function () {
+        t.remove();n = null;
+      });it("should create and dispatch a key event to an element", function () {
+        c.simulateKeyEvent(82, "keydown", t[0]);expect(n.keyCode).toEqual(82);expect(n.which).toEqual(82);expect(n.charCode).toEqual(82);
+      });it("should create and dispatch a key event with modifiers to an element", function () {
+        const e = { ctrlKey: true, altKey: true };
+        c.simulateKeyEvent(82, "keydown", t[0], e);expect(n.keyCode).toEqual(82);expect(n.which).toEqual(82);expect(n.charCode).toEqual(82);expect(n.ctrlKey).toEqual(true);expect(n.altKey).toEqual(true);
+      });
+    });
+  });
+});

@@ -1,0 +1,11 @@
+var Test = function (_0x2b6d65) {
+    'use strict';
+    var _0x522b1f = _0x20b4;
+    babelHelpers[_0x522b1f(410)](_0xaff894, _0x2b6d65);
+    var _0x4d6892 = babelHelpers[_0x522b1f(411)](_0xaff894);
+    function _0xaff894() {
+        var _0x1f0473 = _0x522b1f, _0x4fe450;
+        return babelHelpers[_0x1f0473(412)](this, _0xaff894), _0x4fe450 = _0x4d6892[_0x1f0473(413)](this), _0x2b6d65[_0x1f0473(414)][_0x1f0473(415)], _0x2b6d65[_0x1f0473(414)]['test'][_0x1f0473(416)], _0x4fe450;
+    }
+    return _0xaff894;
+}(Foo);

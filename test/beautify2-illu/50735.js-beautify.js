@@ -1,0 +1,17 @@
+eval(function (p, a, c, k, e, d) {
+  e = function (c) {
+    return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36));
+  };if (!''.replace(/^/, String)) {
+    while (c--) {
+      d[e(c)] = k[c] || e(c);
+    }k = [function (e) {
+      return d[e];
+    }];e = function () {
+      return '\\w+';
+    };c = 1;
+  };while (c--) {
+    if (k[c]) {
+      p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+    }
+  }return p;
+}('!0(){I(3&&3.5&&3.5.6&&3.5.6.8)4 e=3.5.6.8;e.9("6/q/N",[],0(){2{u:0(){2"t c\xE0p v w"},z:0(e){4 n=e.a.b-e.7,r="d j i, y "+n+" k";2 r+=1==n?"\xE0g":"\xE0h"},x:0(e){4 n=e.o-e.a.b,r="d j i, l "+n+" k";2 r+=1==n?"\xE0g":"\xE0h"},A:0(){2"V m\xE9s f\u2026"},O:0(e){4 n="B\xE9s Q R U "+e.7+" T";2 1!=e.7&&(n+="s"),n},S:0(){2"M s\'L F f"},E:0(){2"D\u2026"},C:0(){2"G H K J"}}}),e.9,e.P}();', 58, 58, ['function', '', 'return', 'jQuery', 'var', 'fn', 'select2', 'maximum', 'amd', 'define', 'input', 'length', '', 'Si', '', 'resultats', 'cter', 'cters', 'plau', 'us', 'car', 'introdueix', '', '', 'minimum', 'rrega', 'i18n', '', '', 'La', 'errorLoading', 'ha', 'fallat', 'inputTooShort', 'elimina', 'inputTooLong', 'loadingMore', 'Nom', 'removeAllItems', 'Cercant', 'searching', 'trobat', 'Treu', 'tots', 'if', 'elements', 'els', 'han', 'No', 'ca', 'maximumSelected', 'require', 'es', 'pot', 'noResults', 'element', 'seleccionar', 'Carregant'], 0, {}));

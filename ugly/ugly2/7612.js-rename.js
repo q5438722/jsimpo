@@ -1,0 +1,21 @@
+import fs from"fs";import path from"path";import*as Vue from"../../../packages/weex-vue-framework";import{compile}from"../../../packages/weex-template-compiler";import WeexRuntime from"weex-js-runtime";import styler from"weex-styler";const styleRE=/<\s*style\s*\w*>([^(<\/)]*)<\/\s*style\s*>/g;const scriptRE=/<\s*script.*>([^]*)<\/\s*script\s*>/;const templateRE=/<\s*template\s*([^>]*)>([^]*)<\/\s*template\s*>/;export function readFile(e){return fs.readFileSync(path.resolve(__dirname,"../cases/",e),"utf8")}export function readObject(e){return new Function(`return ${readFile(e)}`)()}console.debug=()=>{};const matchOperatorsRe=/[|\\{}()[\]^$+*?.]/g;export function strToRegExp(e){return new RegExp(e.replace(matchOperatorsRe,"\\$&"))}function parseStatic(e){return"["+e.map(e=>`function () { ${e} }`).join(",")+"]"}export function compileAndStringify(e){const{render:t,staticRenderFns:r}=compile(e);return{render:`function () { ${t} }`,staticRenderFns:parseStatic(r)}}export function compileVue(m,f){return new Promise((r,n)=>{if(!templateRE.test(m)){return n("No Template!")}const e=scriptRE.exec(m);const t=e?e[1]:"";const o=templateRE.exec(m);const s={};if(/\s*recyclable\=?/i.test(o[1])){s.recyclable=true}const c=compile(o[2],s);const i="test_case_"+(Math.random()*99999999).toFixed(0);const a=e=>`
+      try { weex.document.registerStyleSheets("${i}", [${JSON.stringify(e)}]) } catch(e) {};
+      var ${i} = Object.assign({
+        _scopeId: "${i}",
+        style: ${JSON.stringify(e)},
+        render: function () { ${c.render} },
+        ${c["@render"]?'"@render": function () {'+c["@render"]+"},":""}
+        staticRenderFns: ${parseStatic(c.staticRenderFns)},
+      }, (function(){
+        var module = { exports: {} };
+        ${t};
+        return module.exports;
+      })());
+    `+(f?`Vue.component('${f}', ${i});\n`:`${i}.el = 'body';new Vue(${i});`);let u="";let l=null;while(l=styleRE.exec(m)){u+=`\n${l[1]}\n`}styler.parse(u,(e,t)=>{if(e){return n(e)}r(a(t.jsonStyle))});r(a({}))})}export function compileWithDeps(e,t){return new Promise((r,n)=>{if(Array.isArray(t)){Promise.all(t.map(e=>{return compileVue(readFile(e.path),e.name).catch(n)})).then(t=>{compileVue(readFile(e)).then(e=>{r(t.join("\n")+e)}).catch(n)}).catch(n)}})}function isObject(e){return e!==null&&typeof e==="object"}function isEmptyObject(e){return isObject(e)&&Object.keys(e).length<1}function omitUseless(e){if(isObject(e)){delete e.ref;for(const t in e){omitUseless(e[t]);if(t==="@styleScope"||t==="@templateId"||t==="bindingExpression"){delete e[t]}if(t.charAt(0)!=="@"&&(isEmptyObject(e[t])||e[t]===undefined)){delete e[t]}}}return e}export function getRoot(e){return omitUseless(e.$getRoot())}export function getEvents(e){const r=[];const n=t=>{if(!t){return}if(Array.isArray(t.event)){t.event.forEach(e=>{r.push({ref:t.ref,type:e})})}if(Array.isArray(t.children)){t.children.forEach(n)}};n(e.$getRoot());return r}export function fireEvent(e,t,r,n={}){const o=e.document.getRef(t);if(o){e.document.fireEvent(o,r,n)}}export function createInstance(t,e,...r){WeexRuntime.config.frameworks={Vue:Vue};const n=WeexRuntime.init(WeexRuntime.config);n.registerModules({timer:["setTimeout","setInterval"]});const o=n.createInstance(t,`// { "framework": "Vue" }\n${e}`,...r)||{};o.document=n.getDocument(t);o.$getRoot=()=>n.getRoot(t);o.$refresh=e=>n.refreshInstance(t,e);o.$destroy=()=>{delete o.document;n.destroyInstance(t)};o.$triggerHook=(e,t,r)=>{o.document.taskCenter.triggerHook(e,"lifecycle",t,{args:r})};return o}export function compileAndExecute(s,c=""){return new Promise(e=>{const t=String(Date.now()*Math.random());const{render:r,staticRenderFns:n}=compile(s);const o=createInstance(t,`
+      new Vue({
+        el: '#whatever',
+        render: function () { ${r} },
+        staticRenderFns: ${parseStatic(n)},
+        ${c}
+      })
+    `);setTimeout(()=>e(o),10)})}export function syncPromise(e){let t=Promise.resolve();e.forEach(e=>{t=t.then(e)});return t}export function checkRefresh(t,r,n){return()=>new Promise(e=>{t.$refresh(r);setTimeout(()=>{n(getRoot(t));e()})})}export function addTaskHook(n){global.callNative=function e(t,r){if(Array.isArray(r)&&typeof n==="function"){r.forEach(e=>{n(t,{module:e.module,method:e.method,args:Array.from(e.args)})})}}}export function resetTaskHook(){delete global.callNative}

@@ -1,0 +1,24 @@
+const express = require('../../../../../shared/express');
+const cors = require('cors');
+const api = require('../../../../api')['canary'];
+const mw = require('./middleware');
+module['exports'] = function apiRoutes() {
+    const _0x343b3c = express['Router']('canary content');
+    _0x343b3c['use'](cors());
+    const _0x248f88 = api['http'];
+    _0x343b3c['get']('/posts', mw['authenticatePublic'], _0x248f88(api['postsPublic']['browse']));
+    _0x343b3c['get']('/posts/:id', mw['authenticatePublic'], _0x248f88(api['postsPublic']['read']));
+    _0x343b3c['get']('/posts/slug/:slug', mw['authenticatePublic'], _0x248f88(api['postsPublic']['read']));
+    _0x343b3c['get']('/pages', mw['authenticatePublic'], _0x248f88(api['pagesPublic']['browse']));
+    _0x343b3c['get']('/pages/:id', mw['authenticatePublic'], _0x248f88(api['pagesPublic']['read']));
+    _0x343b3c['get']('/pages/slug/:slug', mw['authenticatePublic'], _0x248f88(api['pagesPublic']['read']));
+    _0x343b3c['get']('/authors', mw['authenticatePublic'], _0x248f88(api['authorsPublic']['browse']));
+    _0x343b3c['get']('/authors/:id', mw['authenticatePublic'], _0x248f88(api['authorsPublic']['read']));
+    _0x343b3c['get']('/authors/slug/:slug', mw['authenticatePublic'], _0x248f88(api['authorsPublic']['read']));
+    _0x343b3c['get']('/tags', mw['authenticatePublic'], _0x248f88(api['tagsPublic']['browse']));
+    _0x343b3c['get']('/tags/:id', mw['authenticatePublic'], _0x248f88(api['tagsPublic']['read']));
+    _0x343b3c['get']('/tags/slug/:slug', mw['authenticatePublic'], _0x248f88(api['tagsPublic']['read']));
+    _0x343b3c['get']('/settings', mw['authenticatePublic'], _0x248f88(api['publicSettings']['browse']));
+    _0x343b3c['get']('/products', mw['authenticatePublic'], _0x248f88(api['productsPublic']['browse']));
+    return _0x343b3c;
+};

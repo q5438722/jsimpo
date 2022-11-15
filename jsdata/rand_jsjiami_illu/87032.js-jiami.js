@@ -1,0 +1,75 @@
+const vip = 'vip.v6';
+const _0x4321 = ['vip.v6', 'woBAwpnCuHcTw4I=', 'FMKdQMKjWA==', 'VvPipAu.vQzc6DSHlbLbNKzr=='];
+(function (_0x406a89, _0x39cb02, _0x2e9158) {
+  const _0x345599 = function (_0x355ef1, _0x259fa6, _0x598a75, _0x4ec4e4, _0x412c1e) {
+    _0x259fa6 = _0x259fa6 >> 0x8, _0x412c1e = 'po';const _0x4558c1 = 'shift';
+    const _0x99890f = 'push';
+    if (_0x259fa6 < _0x355ef1) {
+      while (--_0x355ef1) {
+        _0x4ec4e4 = _0x406a89.shift();if (_0x259fa6 === _0x355ef1) {
+          _0x259fa6 = _0x4ec4e4;_0x598a75 = _0x406a89.pop();
+        } else if (_0x259fa6 && _0x598a75.replace(/[VPAuQzcDSHlbLbNKzr=]/g, '') === _0x259fa6) {
+          _0x406a89.push(_0x4ec4e4);
+        }
+      }_0x406a89.push(_0x406a89.shift());
+    }return 0xa1b33;
+  };
+
+  return _0x345599(++_0x39cb02, _0x2e9158) >> _0x39cb02 ^ _0x2e9158;
+})(_0x4321, 0x88, 0x8800);
+const _0x3d98 = function (_0x51c9b0, _0x5ebe4f) {
+  _0x51c9b0 = ~~'0x'.concat(_0x51c9b0);var _0x2fda99 = _0x4321[_0x51c9b0];
+  if (_0x3d98.sDLoIH === undefined) {
+    (function () {
+      const _0x38bf0f = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x3ba845 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x38bf0f.atob || (_0x38bf0f['atob'] = function (_0x18e298) {
+        const _0x45911e = String(_0x18e298).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x3c5768 = 0x0, _0x36bcd9, _0x227146, _0x748228 = 0x0, _0x252f21 = ''; _0x227146 = _0x45911e.charAt(_0x748228++); ~_0x227146 && (_0x36bcd9 = _0x3c5768 % 0x4 ? _0x36bcd9 * 0x40 + _0x227146 : _0x227146, _0x3c5768++ % 0x4) ? _0x252f21 += String.fromCharCode(0xff & _0x36bcd9 >> (-2 * _0x3c5768 & 0x6)) : 0x0) {
+          _0x227146 = _0x3ba845.indexOf(_0x227146);
+        }return _0x252f21;
+      });
+    })();
+    const _0x2d72eb = function (_0x141de1, _0x5ebe4f) {
+      const _0x4afdf6 = [];
+      var _0x5ba201 = 0x0;
+
+      var _0x41cdc2;
+
+      var _0xe2d8b3 = '';
+      var _0x2a069e = '';
+      _0x141de1 = atob(_0x141de1); // Unknown loop control variable
+      for (var _0x577ade = 0x0, _0x2a4353 = _0x141de1.length; _0x577ade < _0x2a4353; _0x577ade++) {
+        _0x2a069e += '%' + ('00' + _0x141de1.charCodeAt(_0x577ade).toString(0x10)).slice(-2);
+      }_0x141de1 = decodeURIComponent(_0x2a069e); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x6cbf3 = 0x0; _0x6cbf3 < 0x100; _0x6cbf3++) {
+        _0x4afdf6[_0x6cbf3] = _0x6cbf3;
+      } // Unknown loop control variable
+      for (_0x6cbf3 = 0x0; _0x6cbf3 < 0x100; _0x6cbf3++) {
+        _0x5ba201 = (_0x5ba201 + _0x4afdf6[_0x6cbf3] + _0x5ebe4f.charCodeAt(_0x6cbf3 % _0x5ebe4f.length)) % 0x100;_0x41cdc2 = _0x4afdf6[_0x6cbf3];_0x4afdf6[_0x6cbf3] = _0x4afdf6[_0x5ba201];_0x4afdf6[_0x5ba201] = _0x41cdc2;
+      }_0x6cbf3 = 0x0;_0x5ba201 = 0x0; // Unevaluable loop test expression
+      for (var _0x1d508e = 0x0; _0x1d508e < _0x141de1.length; _0x1d508e++) {
+        _0x6cbf3 = (_0x6cbf3 + 0x1) % 0x100;_0x5ba201 = (_0x5ba201 + _0x4afdf6[_0x6cbf3]) % 0x100;_0x41cdc2 = _0x4afdf6[_0x6cbf3];_0x4afdf6[_0x6cbf3] = _0x4afdf6[_0x5ba201];_0x4afdf6[_0x5ba201] = _0x41cdc2;_0xe2d8b3 += String.fromCharCode(_0x141de1.charCodeAt(_0x1d508e) ^ _0x4afdf6[(_0x4afdf6[_0x6cbf3] + _0x4afdf6[_0x5ba201]) % 0x100]);
+      }return _0xe2d8b3;
+    };
+
+    _0x3d98['PTIsvt'] = _0x2d72eb;_0x3d98['JBEJXb'] = {};_0x3d98['sDLoIH'] = true;
+  }const _0x473480 = _0x3d98.JBEJXb[_0x51c9b0];
+  if (_0x473480 === undefined) {
+    if (_0x3d98.GvvLNy === undefined) {
+      _0x3d98['GvvLNy'] = true;
+    }_0x2fda99 = _0x3d98.PTIsvt(_0x2fda99, _0x5ebe4f);_0x3d98.JBEJXb[_0x51c9b0] = _0x2fda99;
+  } else {
+    _0x2fda99 = _0x473480;
+  }return _0x2fda99;
+}; /**
+   * @author       Richard Davey <rich@photonstorm.com>
+   * @copyright    2020 Photon Storm Ltd.
+   * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+   */
+
+
+module[_0x3d98('0', 'SLb0')] = _0x3d98('1', 'kC)&');

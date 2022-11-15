@@ -1,0 +1,1 @@
+module['exports'] = 0xb26 + 0x10a1 + -0x16f5;

@@ -1,0 +1,1 @@
+var supportsWebAssembly=require('../../../helpers/supportsWebAssembly');module['exports']=function(_0x2572ea){var _0x5630a6={'pKUlc':function(_0x544be5){return _0x544be5();}};return _0x5630a6['pKUlc'](supportsWebAssembly);};

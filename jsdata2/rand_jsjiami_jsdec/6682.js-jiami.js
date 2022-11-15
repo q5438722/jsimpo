@@ -1,0 +1,1 @@
+import _0x17e285 from'immer';import{CHANGE_USERNAME}from'./constants';export const initialState={'username':''};const homeReducer=(state=initialState,action)=>_0x17e285(state,draft=>{switch(action['type']){case CHANGE_USERNAME:draft['username']=action['username']['replace'](/@/gi,'');break;}});export default homeReducer;

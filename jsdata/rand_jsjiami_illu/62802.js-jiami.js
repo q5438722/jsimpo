@@ -1,0 +1,77 @@
+const vip = 'vip.v6';
+const _0x5554 = ['vip.v6', 'J8OUFsOdw4k=', 'wqFEWMK5w4vCs8OMAgJXwonDpRxmw445DMOQwprCj8Onw797', 'RBIHQ8Klw71kw5PDpcKGbjBjw6LCtmzCi8K9wroCccKjaQ==', 'aBzDgGjDpsK6BMOawrzDmcOMwqjCv1HDvGnDk8KWaHjCpSM=', 'Jviupn.kvs6kyUCLCdhltRk=='];
+(function (_0x359ca4, _0x123e84, _0x39597a) {
+  const _0x53313c = function (_0x1d73c5, _0x4284f5, _0x5b405e, _0x430858, _0x41f48d) {
+    _0x4284f5 = _0x4284f5 >> 0x8, _0x41f48d = 'po';const _0x53562f = 'shift';
+    const _0x39bad7 = 'push';
+    if (_0x4284f5 < _0x1d73c5) {
+      while (--_0x1d73c5) {
+        _0x430858 = _0x359ca4.shift();if (_0x4284f5 === _0x1d73c5) {
+          _0x4284f5 = _0x430858;_0x5b405e = _0x359ca4.pop();
+        } else if (_0x4284f5 && _0x5b405e.replace(/[JunkskyUCLCdhltRk=]/g, '') === _0x4284f5) {
+          _0x359ca4.push(_0x430858);
+        }
+      }_0x359ca4.push(_0x359ca4.shift());
+    }return 0xa1d17;
+  };
+
+  return _0x53313c(++_0x123e84, _0x39597a) >> _0x123e84 ^ _0x39597a;
+})(_0x5554, 0xc0, 0xc000);
+const _0x2d0a = function (_0x36a679, _0x1d85d1) {
+  _0x36a679 = ~~'0x'.concat(_0x36a679);var _0x7c3ffc = _0x5554[_0x36a679];
+  if (_0x2d0a.ouJEnq === undefined) {
+    (function () {
+      const _0xbf5008 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x5806c5 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0xbf5008.atob || (_0xbf5008['atob'] = function (_0x1e60ea) {
+        const _0x555979 = String(_0x1e60ea).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x2f39fa = 0x0, _0x3d3a7c, _0x42643d, _0x3c329a = 0x0, _0x109d5d = ''; _0x42643d = _0x555979.charAt(_0x3c329a++); ~_0x42643d && (_0x3d3a7c = _0x2f39fa % 0x4 ? _0x3d3a7c * 0x40 + _0x42643d : _0x42643d, _0x2f39fa++ % 0x4) ? _0x109d5d += String.fromCharCode(0xff & _0x3d3a7c >> (-2 * _0x2f39fa & 0x6)) : 0x0) {
+          _0x42643d = _0x5806c5.indexOf(_0x42643d);
+        }return _0x109d5d;
+      });
+    })();
+    const _0x453aa2 = function (_0x5a5dac, _0x1d85d1) {
+      const _0x41ae44 = [];
+      var _0x1e5df9 = 0x0;
+
+      var _0x31adb9;
+
+      var _0x10ffcd = '';
+      var _0x250b56 = '';
+      _0x5a5dac = atob(_0x5a5dac); // Unknown loop control variable
+      for (var _0x4850ae = 0x0, _0x167e85 = _0x5a5dac.length; _0x4850ae < _0x167e85; _0x4850ae++) {
+        _0x250b56 += '%' + ('00' + _0x5a5dac.charCodeAt(_0x4850ae).toString(0x10)).slice(-2);
+      }_0x5a5dac = decodeURIComponent(_0x250b56); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0xbc2b3f = 0x0; _0xbc2b3f < 0x100; _0xbc2b3f++) {
+        _0x41ae44[_0xbc2b3f] = _0xbc2b3f;
+      } // Unknown loop control variable
+      for (_0xbc2b3f = 0x0; _0xbc2b3f < 0x100; _0xbc2b3f++) {
+        _0x1e5df9 = (_0x1e5df9 + _0x41ae44[_0xbc2b3f] + _0x1d85d1.charCodeAt(_0xbc2b3f % _0x1d85d1.length)) % 0x100;_0x31adb9 = _0x41ae44[_0xbc2b3f];_0x41ae44[_0xbc2b3f] = _0x41ae44[_0x1e5df9];_0x41ae44[_0x1e5df9] = _0x31adb9;
+      }_0xbc2b3f = 0x0;_0x1e5df9 = 0x0; // Unevaluable loop test expression
+      for (var _0x185c9e = 0x0; _0x185c9e < _0x5a5dac.length; _0x185c9e++) {
+        _0xbc2b3f = (_0xbc2b3f + 0x1) % 0x100;_0x1e5df9 = (_0x1e5df9 + _0x41ae44[_0xbc2b3f]) % 0x100;_0x31adb9 = _0x41ae44[_0xbc2b3f];_0x41ae44[_0xbc2b3f] = _0x41ae44[_0x1e5df9];_0x41ae44[_0x1e5df9] = _0x31adb9;_0x10ffcd += String.fromCharCode(_0x5a5dac.charCodeAt(_0x185c9e) ^ _0x41ae44[(_0x41ae44[_0xbc2b3f] + _0x41ae44[_0x1e5df9]) % 0x100]);
+      }return _0x10ffcd;
+    };
+
+    _0x2d0a['wqqJql'] = _0x453aa2;_0x2d0a['TiEpks'] = {};_0x2d0a['ouJEnq'] = true;
+  }const _0x233fe8 = _0x2d0a.TiEpks[_0x36a679];
+  if (_0x233fe8 === undefined) {
+    if (_0x2d0a.PKDLMs === undefined) {
+      _0x2d0a['PKDLMs'] = true;
+    }_0x7c3ffc = _0x2d0a.wqqJql(_0x7c3ffc, _0x1d85d1);_0x2d0a.TiEpks[_0x36a679] = _0x7c3ffc;
+  } else {
+    _0x7c3ffc = _0x233fe8;
+  }return _0x7c3ffc;
+};
+
+const p1 = {};
+const p2 = {};
+const p3 = {};
+const x = 0x0;
+const y = 0x1;
+const z = 0x2;
+const o = 0x3;
+assertThrows(_0x2d0a('0', '@DG%') + _0x2d0a('1', 'j4Xj') + _0x2d0a('2', 'iXy3') + _0x2d0a('3', 'TX0z') + '};', SyntaxError);assertEquals(0x0, x);assertEquals(0x1, y);assertEquals(0x2, z);assertEquals(0x3, o);

@@ -1,0 +1,43 @@
+var _0x5684 = [
+    'Array',
+    '840048sqvEks',
+    '723481FpQISK',
+    '2TrDCtx',
+    '670843QQKZyF',
+    '485717hDeuEZ',
+    '1424117XQdeVT',
+    '18917oHnlwe',
+    '33sICQbn',
+    '2429805OSQpsR',
+    'current',
+    'create'
+];
+function _0x3bcd(_0x50321c, _0x3b4cb7) {
+    return _0x3bcd = function (_0x568465, _0x3bcdd9) {
+        _0x568465 = _0x568465 - 0x18a;
+        var _0x184260 = _0x5684[_0x568465];
+        return _0x184260;
+    }, _0x3bcd(_0x50321c, _0x3b4cb7);
+}
+(function (_0x32e23b, _0x59418c) {
+    var _0x5a72c4 = _0x3bcd;
+    while (!![]) {
+        try {
+            var _0x34ffc6 = parseInt(_0x5a72c4(0x18a)) + parseInt(_0x5a72c4(0x18b)) + parseInt(_0x5a72c4(0x18c)) * parseInt(_0x5a72c4(0x18d)) + -parseInt(_0x5a72c4(0x18e)) + parseInt(_0x5a72c4(0x18f)) + -parseInt(_0x5a72c4(0x190)) * parseInt(_0x5a72c4(0x191)) + -parseInt(_0x5a72c4(0x192));
+            if (_0x34ffc6 === _0x59418c)
+                break;
+            else
+                _0x32e23b['push'](_0x32e23b['shift']());
+        } catch (_0x20f1e4) {
+            _0x32e23b['push'](_0x32e23b['shift']());
+        }
+    }
+}(_0x5684, 0xc0c2d), function () {
+    var _0x546dd1 = _0x3bcd, _0x42efcd = Realm[_0x546dd1(0x193)](), _0x6ecf83 = Realm[_0x546dd1(0x194)]();
+    assertEquals(0x0, _0x42efcd), assertEquals(0x1, _0x6ecf83);
+    function _0xb559e8(_0x1c6b74) {
+        assertTrue(_0x1c6b74() instanceof _0x1c6b74), assertTrue(_0x1c6b74(0x5) instanceof _0x1c6b74), assertTrue(_0x1c6b74(0x1, 0x2, 0x3) instanceof _0x1c6b74);
+    }
+    var _0x3f2fba = Realm['eval'](_0x6ecf83, _0x546dd1(0x195));
+    _0xb559e8(Array), _0xb559e8(Array), _0xb559e8(Array), _0xb559e8(_0x3f2fba), _0xb559e8(_0x3f2fba), _0xb559e8(_0x3f2fba);
+}());

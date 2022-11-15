@@ -1,0 +1,43 @@
+var _0x3b91 = [
+    '10YwoyZp',
+    '65554yYxcTh',
+    'current',
+    'create',
+    'Array',
+    '162602siddPE',
+    '285768LbnAmU',
+    '72VnfPGk',
+    '4666LGEqML',
+    '168619oHIJbU',
+    '137263GyMEeF',
+    '329348KmxpuO'
+];
+function _0x2361(_0x44df9d, _0x320ccd) {
+    return _0x2361 = function (_0x3b9142, _0x236165) {
+        _0x3b9142 = _0x3b9142 - 0x111;
+        var _0x33b604 = _0x3b91[_0x3b9142];
+        return _0x33b604;
+    }, _0x2361(_0x44df9d, _0x320ccd);
+}
+(function (_0x234c5b, _0xb7fb64) {
+    var _0x554ebd = _0x2361;
+    while (!![]) {
+        try {
+            var _0x272552 = -parseInt(_0x554ebd(0x111)) + -parseInt(_0x554ebd(0x112)) + parseInt(_0x554ebd(0x113)) * parseInt(_0x554ebd(0x114)) + parseInt(_0x554ebd(0x115)) + -parseInt(_0x554ebd(0x116)) + -parseInt(_0x554ebd(0x117)) + parseInt(_0x554ebd(0x118)) * parseInt(_0x554ebd(0x119));
+            if (_0x272552 === _0xb7fb64)
+                break;
+            else
+                _0x234c5b['push'](_0x234c5b['shift']());
+        } catch (_0x14d577) {
+            _0x234c5b['push'](_0x234c5b['shift']());
+        }
+    }
+}(_0x3b91, 0x3bd8a), function () {
+    var _0x2faa13 = _0x2361, _0x55f6cc = Realm[_0x2faa13(0x11a)](), _0x3d11e1 = Realm[_0x2faa13(0x11b)]();
+    assertEquals(0x0, _0x55f6cc), assertEquals(0x1, _0x3d11e1);
+    function _0x191304(_0x29e0be) {
+        assertTrue(_0x29e0be() instanceof _0x29e0be), assertTrue(_0x29e0be(0x5) instanceof _0x29e0be), assertTrue(_0x29e0be(0x1, 0x2, 0x3) instanceof _0x29e0be);
+    }
+    var _0x5a1394 = Realm['eval'](_0x3d11e1, _0x2faa13(0x11c));
+    _0x191304(Array), _0x191304(Array), _0x191304(Array), _0x191304(_0x5a1394), _0x191304(_0x5a1394), _0x191304(_0x5a1394);
+}());

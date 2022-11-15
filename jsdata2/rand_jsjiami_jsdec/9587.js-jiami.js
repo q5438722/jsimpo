@@ -1,0 +1,1 @@
+output('a');function x(){var _0x39bbfd={'JKVPG':'./b'};return require(_0x39bbfd['JKVPG']);}output('d');x();

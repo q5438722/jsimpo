@@ -1,0 +1,5 @@
+'use strict';
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+Object['defineProperty'](exports, '__esModule', { 'value': !![] }), exports['default'] = void (0x13 * -0x1e1 + 0x4 * -0x373 + -0x317f * -0x1);
+var _createSvgIcon = _interopRequireDefault(require('./utils/createSvgIcon')), _jsxRuntime = require('react/jsx-runtime'), _default = (-0xee6 + -0x1451 + 0x2337, _createSvgIcon['default'])((-0x22df + 0xb28 + 0x17b7, _jsxRuntime['jsx'])('path', { 'd': 'M3\x208c0\x20.55.45\x201\x201\x201h4v2H5c-.55\x200-1\x20.45-1\x201s.45\x201\x201\x201h3v2H4c-.55\x200-1\x20.45-1\x201s.45\x201\x201\x201h4c1.1\x200\x202-.9\x202-2v-1.5c0-.83-.67-1.5-1.5-1.5.83\x200\x201.5-.67\x201.5-1.5V9c0-1.1-.9-2-2-2H4c-.55\x200-1\x20.45-1\x201zm18\x204v3c0\x201.1-.9\x202-2\x202h-5c-1.1\x200-2-.9-2-2V9c0-1.1.9-2\x202-2h6c.55\x200\x201\x20.45\x201\x201s-.45\x201-1\x201h-6v6h5v-2h-1.5c-.55\x200-1-.45-1-1s.45-1\x201-1H20c.55\x200\x201\x20.45\x201\x201z' }), 'ThreeGMobiledataRounded');
+exports['default'] = _default;

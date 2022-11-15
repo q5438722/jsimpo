@@ -1,0 +1,154 @@
+'use strict';
+const _0x396b = [
+    'tmpdir',
+    'basename',
+    'DEBIAN',
+    'usr',
+    'share',
+    'applications',
+    'pixmaps',
+    'doc',
+    'existsSync',
+    'log',
+    'removeSync',
+    'Deleting\x20existing\x20Debian\x20package\x20at\x20\x22',
+    '.deb\x22',
+    'Creating\x20Debian\x20package\x20directory\x20structure\x20at\x20\x22',
+    'mkdirpSync',
+    'copySync',
+    'chmodSync',
+    '755',
+    'Copying\x20binaries\x20into\x20\x22',
+    'repositoryRootPath',
+    'atom.sh',
+    'symlinkSync',
+    'resources',
+    'app',
+    'apm',
+    '.bin',
+    'chrome-sandbox',
+    'Writing\x20control\x20file\x20into\x20\x22',
+    '-sk',
+    'stdout',
+    'toString',
+    'split',
+    'readFileSync',
+    'linux',
+    'debian',
+    'control.in',
+    'writeFileSync',
+    'control',
+    'atom.desktop.in',
+    'appName',
+    '/usr',
+    '.desktop',
+    'Copying\x20icon\x20into\x20\x22',
+    'app.asar.unpacked',
+    'atom.png',
+    '.png',
+    'Copying\x20license\x20into\x20\x22',
+    'LICENSE.md',
+    'Copying\x20polkit\x20configuration\x20into\x20\x22',
+    'polkit-1',
+    'actions',
+    '.policy',
+    'Generating\x20.deb\x20file\x20from\x20',
+    'dpkg-deb',
+    'inherit',
+    'Copying\x20generated\x20package\x20into\x20\x22',
+    '1123699katmRS',
+    '1GFQTGd',
+    '880786kkwAgu',
+    '448065PvRiOj',
+    '601405FRReBo',
+    '385182HEcbFB',
+    '2PEJBpU',
+    '352327tGNjCc',
+    '1cPPdpv',
+    '502055kQKNDJ',
+    'fs-extra',
+    './spawn-sync',
+    'lodash.template',
+    'exports',
+    'Creating\x20Debian\x20package\x20for\x20\x22',
+    'channel',
+    'stable',
+    'atom',
+    'atom-',
+    'apm-',
+    'description',
+    'appMetadata',
+    'version',
+    'arch',
+    'ia32',
+    'x64',
+    'amd64',
+    'join',
+    'buildOutputPath',
+    '.deb'
+];
+const _0x2b7a33 = _0x1be7;
+function _0x1be7(_0x4d8750, _0x16f3c2) {
+    return _0x1be7 = function (_0x396b79, _0x1be7a2) {
+        _0x396b79 = _0x396b79 - 0x1df;
+        let _0x1a5ed8 = _0x396b[_0x396b79];
+        return _0x1a5ed8;
+    }, _0x1be7(_0x4d8750, _0x16f3c2);
+}
+(function (_0x4a8282, _0x24dde8) {
+    const _0x3b03a6 = _0x1be7;
+    while (!![]) {
+        try {
+            const _0xad9535 = -parseInt(_0x3b03a6(0x1df)) * parseInt(_0x3b03a6(0x1e0)) + -parseInt(_0x3b03a6(0x1e1)) + parseInt(_0x3b03a6(0x1e2)) + parseInt(_0x3b03a6(0x1e3)) + parseInt(_0x3b03a6(0x1e4)) + parseInt(_0x3b03a6(0x1e5)) * parseInt(_0x3b03a6(0x1e6)) + parseInt(_0x3b03a6(0x1e7)) * parseInt(_0x3b03a6(0x1e8));
+            if (_0xad9535 === _0x24dde8)
+                break;
+            else
+                _0x4a8282['push'](_0x4a8282['shift']());
+        } catch (_0xff7b53) {
+            _0x4a8282['push'](_0x4a8282['shift']());
+        }
+    }
+}(_0x396b, 0x9b7cc));
+const fs = require(_0x2b7a33(0x1e9)), os = require('os'), path = require('path'), spawnSync = require(_0x2b7a33(0x1ea)), template = require(_0x2b7a33(0x1eb)), CONFIG = require('../config');
+module[_0x2b7a33(0x1ec)] = function (_0x525894) {
+    const _0x31aa6d = _0x2b7a33;
+    console['log'](_0x31aa6d(0x1ed) + _0x525894 + '\x22');
+    const _0x4a3849 = CONFIG[_0x31aa6d(0x1ee)] === _0x31aa6d(0x1ef) ? _0x31aa6d(0x1f0) : _0x31aa6d(0x1f1) + CONFIG[_0x31aa6d(0x1ee)], _0x360cff = CONFIG[_0x31aa6d(0x1ee)] === _0x31aa6d(0x1ef) ? 'apm' : _0x31aa6d(0x1f2) + CONFIG[_0x31aa6d(0x1ee)], _0x5f1d1d = CONFIG['appMetadata'][_0x31aa6d(0x1f3)], _0xa5cd75 = CONFIG[_0x31aa6d(0x1f4)][_0x31aa6d(0x1f5)];
+    let _0x39b463;
+    if (process[_0x31aa6d(0x1f6)] === _0x31aa6d(0x1f7))
+        _0x39b463 = 'i386';
+    else {
+        if (process[_0x31aa6d(0x1f6)] === _0x31aa6d(0x1f8))
+            _0x39b463 = _0x31aa6d(0x1f9);
+        else
+            process['arch'] === 'ppc' ? _0x39b463 = 'powerpc' : _0x39b463 = process['arch'];
+    }
+    const _0x2f99e9 = path[_0x31aa6d(0x1fa)](CONFIG[_0x31aa6d(0x1fb)], _0x31aa6d(0x1f1) + _0x39b463 + _0x31aa6d(0x1fc)), _0x460137 = path['join'](os[_0x31aa6d(0x1fd)](), path[_0x31aa6d(0x1fe)](_0x525894)), _0x43d584 = path[_0x31aa6d(0x1fa)](_0x460137, _0x31aa6d(0x1ff)), _0x1f48fd = path[_0x31aa6d(0x1fa)](_0x460137, _0x31aa6d(0x200)), _0x394fbf = path['join'](_0x1f48fd, 'bin'), _0x26c399 = path[_0x31aa6d(0x1fa)](_0x1f48fd, _0x31aa6d(0x201)), _0x431418 = path[_0x31aa6d(0x1fa)](_0x26c399, _0x4a3849), _0x2a03bc = path[_0x31aa6d(0x1fa)](_0x26c399, _0x31aa6d(0x202)), _0x5914dd = path[_0x31aa6d(0x1fa)](_0x26c399, _0x31aa6d(0x203)), _0x4fa40b = path[_0x31aa6d(0x1fa)](_0x26c399, _0x31aa6d(0x204), _0x4a3849);
+    fs[_0x31aa6d(0x205)](_0x460137) && (console[_0x31aa6d(0x206)]('Deleting\x20existing\x20build\x20dir\x20for\x20Debian\x20package\x20at\x20\x22' + _0x460137 + '\x22'), fs[_0x31aa6d(0x207)](_0x460137));
+    fs[_0x31aa6d(0x205)](_0x460137 + '.deb') && (console[_0x31aa6d(0x206)](_0x31aa6d(0x208) + _0x460137 + _0x31aa6d(0x209)), fs['removeSync'](_0x460137 + '.deb'));
+    fs[_0x31aa6d(0x205)](_0x460137) && (console[_0x31aa6d(0x206)](_0x31aa6d(0x208) + _0x2f99e9 + '\x22'), fs[_0x31aa6d(0x207)](_0x460137));
+    console[_0x31aa6d(0x206)](_0x31aa6d(0x20a) + _0x460137 + '\x22'), fs[_0x31aa6d(0x20b)](_0x460137), fs[_0x31aa6d(0x20b)](_0x43d584), fs[_0x31aa6d(0x20b)](_0x1f48fd), fs[_0x31aa6d(0x20b)](_0x26c399), fs[_0x31aa6d(0x20b)](_0x2a03bc), fs[_0x31aa6d(0x20b)](_0x5914dd), fs[_0x31aa6d(0x20b)](_0x4fa40b), fs[_0x31aa6d(0x20b)](_0x394fbf), console['log']('Copying\x20\x22' + _0x525894 + '\x22\x20to\x20\x22' + _0x431418 + '\x22'), fs[_0x31aa6d(0x20c)](_0x525894, _0x431418), fs[_0x31aa6d(0x20d)](_0x431418, _0x31aa6d(0x20e)), console[_0x31aa6d(0x206)](_0x31aa6d(0x20f) + _0x394fbf + '\x22'), fs[_0x31aa6d(0x20c)](path[_0x31aa6d(0x1fa)](CONFIG[_0x31aa6d(0x210)], _0x31aa6d(0x211)), path[_0x31aa6d(0x1fa)](_0x394fbf, _0x4a3849)), fs[_0x31aa6d(0x212)](path['join']('..', _0x31aa6d(0x201), _0x4a3849, _0x31aa6d(0x213), _0x31aa6d(0x214), _0x31aa6d(0x215), 'node_modules', _0x31aa6d(0x216), 'apm'), path['join'](_0x394fbf, _0x360cff)), fs['chmodSync'](path['join'](_0x431418, _0x31aa6d(0x217)), '4755'), console[_0x31aa6d(0x206)](_0x31aa6d(0x218) + _0x43d584 + '\x22');
+    const _0x5890a7 = spawnSync('du', [
+            _0x31aa6d(0x219),
+            _0x525894
+        ])[_0x31aa6d(0x21a)][_0x31aa6d(0x21b)]()[_0x31aa6d(0x21c)](/\s+/)[0x0], _0x43bf0b = fs[_0x31aa6d(0x21d)](path[_0x31aa6d(0x1fa)](CONFIG[_0x31aa6d(0x210)], _0x31aa6d(0x213), _0x31aa6d(0x21e), _0x31aa6d(0x21f), _0x31aa6d(0x220))), _0x2d6316 = template(_0x43bf0b)({
+            'appFileName': _0x4a3849,
+            'version': _0xa5cd75,
+            'arch': _0x39b463,
+            'installedSize': _0x5890a7,
+            'description': _0x5f1d1d
+        });
+    fs[_0x31aa6d(0x221)](path[_0x31aa6d(0x1fa)](_0x43d584, _0x31aa6d(0x222)), _0x2d6316), console['log']('Writing\x20desktop\x20entry\x20file\x20into\x20\x22' + _0x2a03bc + '\x22');
+    const _0x4346bc = fs[_0x31aa6d(0x21d)](path['join'](CONFIG[_0x31aa6d(0x210)], 'resources', 'linux', _0x31aa6d(0x223))), _0x32b5b1 = template(_0x4346bc)({
+            'appName': CONFIG[_0x31aa6d(0x224)],
+            'appFileName': _0x4a3849,
+            'description': _0x5f1d1d,
+            'installDir': _0x31aa6d(0x225),
+            'iconPath': _0x4a3849
+        });
+    fs['writeFileSync'](path[_0x31aa6d(0x1fa)](_0x2a03bc, _0x4a3849 + _0x31aa6d(0x226)), _0x32b5b1), console['log'](_0x31aa6d(0x227) + _0x5914dd + '\x22'), fs[_0x31aa6d(0x20c)](path[_0x31aa6d(0x1fa)](_0x525894, _0x31aa6d(0x213), _0x31aa6d(0x228), _0x31aa6d(0x213), _0x31aa6d(0x229)), path[_0x31aa6d(0x1fa)](_0x5914dd, _0x4a3849 + _0x31aa6d(0x22a))), console[_0x31aa6d(0x206)](_0x31aa6d(0x22b) + _0x4fa40b + '\x22'), fs[_0x31aa6d(0x20c)](path['join'](_0x525894, 'resources', _0x31aa6d(0x22c)), path[_0x31aa6d(0x1fa)](_0x4fa40b, 'copyright')), console[_0x31aa6d(0x206)](_0x31aa6d(0x22d) + _0x26c399 + '\x22'), fs[_0x31aa6d(0x20c)](path[_0x31aa6d(0x1fa)](CONFIG[_0x31aa6d(0x210)], _0x31aa6d(0x213), 'linux', 'atom.policy'), path[_0x31aa6d(0x1fa)](_0x26c399, _0x31aa6d(0x22e), _0x31aa6d(0x22f), _0x31aa6d(0x1f1) + CONFIG['channel'] + _0x31aa6d(0x230))), console[_0x31aa6d(0x206)](_0x31aa6d(0x231) + _0x460137), spawnSync('fakeroot', [
+        _0x31aa6d(0x232),
+        '-b',
+        _0x460137
+    ], { 'stdio': _0x31aa6d(0x233) }), console[_0x31aa6d(0x206)](_0x31aa6d(0x234) + _0x2f99e9 + '\x22'), fs['copySync'](_0x460137 + '.deb', _0x2f99e9);
+};

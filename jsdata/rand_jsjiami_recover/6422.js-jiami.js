@@ -1,0 +1,8 @@
+define(['../lang/toString'], function (_0x1fc0f5) {
+    function _0x3af48f(_0x3eaf41, _0x5719f9, _0x6845cf) {
+        _0x3eaf41 = _0x1fc0f5(_0x3eaf41);
+        _0x5719f9 = _0x1fc0f5(_0x5719f9);
+        return _0x3eaf41['indexOf'](_0x5719f9, _0x6845cf) !== -1;
+    }
+    return _0x3af48f;
+});

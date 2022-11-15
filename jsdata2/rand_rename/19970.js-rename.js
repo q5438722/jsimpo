@@ -1,0 +1,1 @@
+"use strict";var _a2=require("./a");var Foo=function(){function e(){babelHelpers.classCallCheck(this,e)}babelHelpers.createClass(e,[{key:"_a",value:function e(){(0,_a2.a)()}}]);return e}();

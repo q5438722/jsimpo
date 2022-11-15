@@ -1,0 +1,160 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "p2"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": []
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "arr"
+                    },
+                    "init": {
+                        "type": "ArrayExpression",
+                        "elements": [
+                            {
+                                "type": "SpreadElement",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "p2"
+                                }
+                            },
+                            {
+                                "type": "Literal",
+                                "value": "d",
+                                "raw": "'d'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "expect"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Identifier",
+                                "name": "arr"
+                            }
+                        ]
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "toEqual",
+                        "raw": "'toEqual'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "ArrayExpression",
+                        "elements": [
+                            {
+                                "type": "Literal",
+                                "value": "a",
+                                "raw": "'a'"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "undefined"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": "c",
+                                "raw": "'c'"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": "d",
+                                "raw": "'d'"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "expect"
+                        },
+                        "arguments": [
+                            {
+                                "type": "BinaryExpression",
+                                "operator": "in",
+                                "left": {
+                                    "type": "Literal",
+                                    "value": 1,
+                                    "raw": "0x1"
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "arr"
+                                }
+                            }
+                        ]
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "toBe",
+                        "raw": "'toBe'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "UnaryExpression",
+                        "operator": "!",
+                        "argument": {
+                            "type": "UnaryExpression",
+                            "operator": "!",
+                            "argument": {
+                                "type": "ArrayExpression",
+                                "elements": []
+                            },
+                            "prefix": true
+                        },
+                        "prefix": true
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

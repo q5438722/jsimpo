@@ -1,0 +1,1 @@
+XmlBuilder=Npm.require('xmlbuilder');

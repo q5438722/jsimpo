@@ -1,0 +1,76 @@
+const vip = 'vip.v6';
+const _0x36a6 = ['vip.v6', 'w53DhcKyw60=', 'QcKlPMOCwoVowpZqw60=', 'FMKKw65NKsKUw5s+wqY=', 'wrLDnRvCssOswqFgcTY=', 'OAxowrk/SGd6wok=', 'JVwFw5jChMKb', 'b0jDgjhKw4k=', 'w5YXwo/DiQ==', 'HGjCkxA=', 'w4pHw77CvcKxBCzDkcOKPETDulnDnsOUKRPCm8K/I8OmG8OPwr0yw7YHTsOLw6Zq', 'Uw5nJMKEwpMew7xz', 'ZLvipND.v6xSNrzkamHkekcR=='];
+(function (_0x42ce30, _0x3481ca, _0x4a86c0) {
+  const _0x2468fa = function (_0x63e660, _0x5cddae, _0x321231, _0x24e1a0, _0x2eb125) {
+    _0x5cddae = _0x5cddae >> 0x8, _0x2eb125 = 'po';const _0x444eac = 'shift';
+    const _0x3140c4 = 'push';
+    if (_0x5cddae < _0x63e660) {
+      while (--_0x63e660) {
+        _0x24e1a0 = _0x42ce30.shift();if (_0x5cddae === _0x63e660) {
+          _0x5cddae = _0x24e1a0;_0x321231 = _0x42ce30.pop();
+        } else if (_0x5cddae && _0x321231.replace(/[ZLNDxSNrzkamHkekcR=]/g, '') === _0x5cddae) {
+          _0x42ce30.push(_0x24e1a0);
+        }
+      }_0x42ce30.push(_0x42ce30.shift());
+    }return 0xa1a64;
+  };
+
+  return _0x2468fa(++_0x3481ca, _0x4a86c0) >> _0x3481ca ^ _0x4a86c0;
+})(_0x36a6, 0x74, 0x7400);
+const _0x8a06 = function (_0x12c058, _0x105c15) {
+  _0x12c058 = ~~'0x'.concat(_0x12c058);var _0x5ea225 = _0x36a6[_0x12c058];
+  if (_0x8a06.DXisUu === undefined) {
+    (function () {
+      const _0xf83bf5 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x147f53 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0xf83bf5.atob || (_0xf83bf5['atob'] = function (_0x4c7176) {
+        const _0x35fff1 = String(_0x4c7176).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x2eb89d = 0x0, _0x28f4c9, _0x55bbf6, _0x58d5f5 = 0x0, _0x40d4db = ''; _0x55bbf6 = _0x35fff1.charAt(_0x58d5f5++); ~_0x55bbf6 && (_0x28f4c9 = _0x2eb89d % 0x4 ? _0x28f4c9 * 0x40 + _0x55bbf6 : _0x55bbf6, _0x2eb89d++ % 0x4) ? _0x40d4db += String.fromCharCode(0xff & _0x28f4c9 >> (-2 * _0x2eb89d & 0x6)) : 0x0) {
+          _0x55bbf6 = _0x147f53.indexOf(_0x55bbf6);
+        }return _0x40d4db;
+      });
+    })();
+    const _0x2cb777 = function (_0x4faa4f, _0x105c15) {
+      const _0x13fcd4 = [];
+      var _0x1414f1 = 0x0;
+
+      var _0x41c0be;
+
+      var _0x525d5c = '';
+      var _0x281512 = '';
+      _0x4faa4f = atob(_0x4faa4f); // Unknown loop control variable
+      for (var _0x47af90 = 0x0, _0x1601ff = _0x4faa4f.length; _0x47af90 < _0x1601ff; _0x47af90++) {
+        _0x281512 += '%' + ('00' + _0x4faa4f.charCodeAt(_0x47af90).toString(0x10)).slice(-2);
+      }_0x4faa4f = decodeURIComponent(_0x281512); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x50cae5 = 0x0; _0x50cae5 < 0x100; _0x50cae5++) {
+        _0x13fcd4[_0x50cae5] = _0x50cae5;
+      } // Unknown loop control variable
+      for (_0x50cae5 = 0x0; _0x50cae5 < 0x100; _0x50cae5++) {
+        _0x1414f1 = (_0x1414f1 + _0x13fcd4[_0x50cae5] + _0x105c15.charCodeAt(_0x50cae5 % _0x105c15.length)) % 0x100;_0x41c0be = _0x13fcd4[_0x50cae5];_0x13fcd4[_0x50cae5] = _0x13fcd4[_0x1414f1];_0x13fcd4[_0x1414f1] = _0x41c0be;
+      }_0x50cae5 = 0x0;_0x1414f1 = 0x0; // Unevaluable loop test expression
+      for (var _0x3b7b4f = 0x0; _0x3b7b4f < _0x4faa4f.length; _0x3b7b4f++) {
+        _0x50cae5 = (_0x50cae5 + 0x1) % 0x100;_0x1414f1 = (_0x1414f1 + _0x13fcd4[_0x50cae5]) % 0x100;_0x41c0be = _0x13fcd4[_0x50cae5];_0x13fcd4[_0x50cae5] = _0x13fcd4[_0x1414f1];_0x13fcd4[_0x1414f1] = _0x41c0be;_0x525d5c += String.fromCharCode(_0x4faa4f.charCodeAt(_0x3b7b4f) ^ _0x13fcd4[(_0x13fcd4[_0x50cae5] + _0x13fcd4[_0x1414f1]) % 0x100]);
+      }return _0x525d5c;
+    };
+
+    _0x8a06['mslrsW'] = _0x2cb777;_0x8a06['zccMrC'] = {};_0x8a06['DXisUu'] = true;
+  }const _0x127d03 = _0x8a06.zccMrC[_0x12c058];
+  if (_0x127d03 === undefined) {
+    if (_0x8a06.ciafuv === undefined) {
+      _0x8a06['ciafuv'] = true;
+    }_0x5ea225 = _0x8a06.mslrsW(_0x5ea225, _0x105c15);_0x8a06.zccMrC[_0x12c058] = _0x5ea225;
+  } else {
+    _0x5ea225 = _0x127d03;
+  }return _0x5ea225;
+};
+
+Realm[_0x8a06('0', '8dw&')]();
+const object = Realm[_0x8a06('1', ')k&y')](0x1, 'Object');
+
+const f = Realm[_0x8a06('2', '6KIs')](0x1, _0x8a06('3', '(b%!'));
+
+Number[_0x8a06('4', '@YUa')]['f'] = f;const number = 0x1;
+assertEquals(object.prototype, f[_0x8a06('5', 'Vn[c')](number)[_0x8a06('6', 'CvrB')][_0x8a06('7', '8Dfq')]);assertEquals(object.prototype, undefined()[_0x8a06('8', '#Ogs')][_0x8a06('9', 'qZwX')]);assertEquals(Realm[_0x8a06('a', '66!e')](0x1), f());

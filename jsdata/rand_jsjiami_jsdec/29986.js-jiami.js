@@ -1,0 +1,1 @@
+import _0x50214f from'./utils/createSvgIcon';import{jsx as _0x39e1ad}from'react/jsx-runtime';export default _0x50214f([_0x39e1ad('path',{'d':'m12 2-5.5 9h11z'},'0'),_0x39e1ad('circle',{'cx':'17.5','cy':'17.5','r':'4.5'},'1'),_0x39e1ad('path',{'d':'M3 13.5h8v8H3z'},'2')],'CategorySharp');

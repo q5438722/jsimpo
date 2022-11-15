@@ -1,0 +1,1 @@
+class Foo{method(e){return super.method(e)}}class Bar{method(){return()=>{let e;return super.method(e)}}}class Baz{method(){class e{f(){let e=1;return e}}return super.method(e)}}

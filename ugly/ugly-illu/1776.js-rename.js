@@ -1,0 +1,11 @@
+const less = require("less");
+
+const path = require("path");
+
+module.exports = (e, t = path.resolve(__dirname, "../../src/core")) => new Promise((s, r) => {
+  less.render(e, { paths: [t] }).then(e => {
+    s(e.css);
+  }).catch(e => {
+    r(e);throw e;
+  });
+});

@@ -1,0 +1,1 @@
+function getTemplate(_0x284985){var _0x479379={'OjUMt':function(_0x361fc2,_0x44a8d5){return _0x361fc2(_0x44a8d5);},'iFawI':function(_0x432b0b,_0x97eb55){return _0x432b0b+_0x97eb55;}};return _0x479379['OjUMt'](require,_0x479379['iFawI']('./templates/',_0x284985));}console['log'](getTemplate('a'));console['log'](getTemplate('b'));

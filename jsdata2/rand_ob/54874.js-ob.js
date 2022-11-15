@@ -1,0 +1,94 @@
+'use strict';
+const _0x4289 = [
+    '2qmGITk',
+    '838589aIyBVg',
+    '1619wtXmJq',
+    '597TlOuRM',
+    '3464207GiCwhL',
+    'net',
+    'createServer',
+    'This\x20was\x20the\x20year\x20he\x20fell\x20to\x20pieces.',
+    'VuaBW',
+    'qEREJ',
+    'close',
+    'data',
+    'address',
+    'port',
+    'resume',
+    'createConnection',
+    'pause',
+    'SVHUi',
+    'FaTyX',
+    'localhost',
+    'CEZvZ',
+    'removeAllListeners',
+    'MZkSZ',
+    'exit',
+    'strictEqual',
+    '1300662Lsyijk',
+    '519879bzZcyp',
+    '1357380WvfJmU',
+    '1TBtZre',
+    '485441YzXixw'
+];
+const _0x27b1c7 = _0x242c;
+(function (_0x13d77c, _0x4d0433) {
+    const _0x2da5f5 = _0x242c;
+    while (!![]) {
+        try {
+            const _0x286575 = -parseInt(_0x2da5f5(0x1dc)) + -parseInt(_0x2da5f5(0x1dd)) + parseInt(_0x2da5f5(0x1de)) + parseInt(_0x2da5f5(0x1df)) * parseInt(_0x2da5f5(0x1e0)) + -parseInt(_0x2da5f5(0x1e1)) * parseInt(_0x2da5f5(0x1e2)) + parseInt(_0x2da5f5(0x1e3)) * -parseInt(_0x2da5f5(0x1e4)) + parseInt(_0x2da5f5(0x1e5));
+            if (_0x286575 === _0x4d0433)
+                break;
+            else
+                _0x13d77c['push'](_0x13d77c['shift']());
+        } catch (_0x54fa5b) {
+            _0x13d77c['push'](_0x13d77c['shift']());
+        }
+    }
+}(_0x4289, 0x86ea0 + -0xd654 * 0x1d + 0x1cb4f2));
+const common = require('../common'), assert = require('assert'), net = require(_0x27b1c7(0x1e6));
+function _0x242c(_0x1a5a45, _0x5112fc) {
+    return _0x242c = function (_0x3f2dd1, _0x28f201) {
+        _0x3f2dd1 = _0x3f2dd1 - (-0x5 * 0x403 + 0x2684 + -0x1099);
+        let _0xdc563d = _0x4289[_0x3f2dd1];
+        return _0xdc563d;
+    }, _0x242c(_0x1a5a45, _0x5112fc);
+}
+let connections = -0x1c90 + 0x7 + 0x1c89, dataEvents = 0x6d5 + -0x1697 + 0xfc2, conn;
+const server = net[_0x27b1c7(0x1e7)](function (_0x29f642) {
+    const _0x20b43b = _0x27b1c7, _0x439300 = {
+            'VuaBW': _0x20b43b(0x1e8),
+            'qEREJ': function (_0x386b71, _0x30e5e1) {
+                return _0x386b71 === _0x30e5e1;
+            }
+        };
+    connections++, _0x29f642['end'](_0x439300[_0x20b43b(0x1e9)]);
+    if (_0x439300[_0x20b43b(0x1ea)](connections, -0x14 * 0x169 + 0x21e3 + 0x2d5 * -0x2))
+        server[_0x20b43b(0x1eb)]();
+});
+server['listen'](0x18e8 + 0x2705 + 0xf * -0x443, function () {
+    const _0x14262b = _0x27b1c7, _0x2583fb = {
+            'CEZvZ': function (_0x432b5f, _0x391d62, _0x5c3223) {
+                return _0x432b5f(_0x391d62, _0x5c3223);
+            },
+            'SVHUi': _0x14262b(0x1ec),
+            'FaTyX': 'localhost',
+            'CmcZk': function (_0x3933ba, _0x47c217) {
+                return _0x3933ba(_0x47c217);
+            }
+        };
+    conn = net['createConnection'](this[_0x14262b(0x1ed)]()[_0x14262b(0x1ee)], 'localhost'), conn[_0x14262b(0x1ef)](), conn['on'](_0x2583fb['SVHUi'], _0x301ae7), conn = net[_0x14262b(0x1f0)](this[_0x14262b(0x1ed)]()[_0x14262b(0x1ee)], 'localhost'), conn[_0x14262b(0x1f1)](), conn['resume'](), conn['on'](_0x2583fb[_0x14262b(0x1f2)], _0x301ae7), conn = net[_0x14262b(0x1f0)](this[_0x14262b(0x1ed)]()[_0x14262b(0x1ee)], _0x2583fb[_0x14262b(0x1f3)]), conn[_0x14262b(0x1f1)](), conn['on'](_0x2583fb[_0x14262b(0x1f2)], common['mustNotCall']()), _0x2583fb['CmcZk'](_0x54a708, conn), conn = net[_0x14262b(0x1f0)](this[_0x14262b(0x1ed)]()['port'], _0x2583fb[_0x14262b(0x1f3)]), conn[_0x14262b(0x1ef)](), conn[_0x14262b(0x1f1)](), conn[_0x14262b(0x1ef)](), conn['on'](_0x2583fb[_0x14262b(0x1f2)], _0x301ae7), conn = net['createConnection'](this['address']()[_0x14262b(0x1ee)], _0x14262b(0x1f4)), conn[_0x14262b(0x1ef)](), conn[_0x14262b(0x1ef)](), conn[_0x14262b(0x1f1)](), conn['on'](_0x2583fb[_0x14262b(0x1f2)], common['mustNotCall']()), _0x54a708(conn);
+    function _0x301ae7() {
+        dataEvents++;
+    }
+    function _0x54a708(_0x83186f) {
+        const _0xc1b280 = _0x14262b, _0x55f529 = { 'MZkSZ': _0xc1b280(0x1ec) };
+        _0x2583fb[_0xc1b280(0x1f5)](setTimeout, function () {
+            const _0x2afa97 = _0xc1b280;
+            _0x83186f[_0x2afa97(0x1f6)](_0x55f529[_0x2afa97(0x1f7)]), _0x83186f[_0x2afa97(0x1ef)]();
+        }, 0x1b1e + -0x1245 * 0x1 + -0x875);
+    }
+}), process['on'](_0x27b1c7(0x1f8), function () {
+    const _0x1c206f = _0x27b1c7;
+    assert['strictEqual'](connections, 0x44 * -0x56 + -0x253b + 0x3c18), assert[_0x1c206f(0x1f9)](dataEvents, -0x1 * -0x256f + -0x36c * 0x6 + -0x2f * 0x5c);
+});

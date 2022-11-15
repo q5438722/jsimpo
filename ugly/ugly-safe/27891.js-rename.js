@@ -1,0 +1,19 @@
+"use strict";
+  var raccoon; // _interopRequireDefault
+  var hamster; // _createSvgIcon
+  var chinchilla; // _jsxRuntime
+  var ibex; // _default
+  
+  raccoon = require("@babel/runtime/helpers/interopRequireDefault");
+  Object.defineProperty(exports, "__esModule", {
+    value : true
+  });
+  exports.default = void 0;
+  hamster = raccoon(require("./utils/createSvgIcon"));
+  chinchilla = require("react/jsx-runtime");
+  ibex = (0, hamster.default)((0, chinchilla.jsx)("path", {
+    d : "M22 3.41 16.71 8.7 20 12h-8V4l3.29 3.29L20.59 2 22 3.41zM3.41 22l5.29-5.29L12 20v-8H4l3.29 3.29L2 20.59 3.41 22z"
+  }), 
+  "CloseFullscreenOutlined");
+  exports.default = ibex;
+  

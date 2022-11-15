@@ -1,0 +1,440 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "debug"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "require"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": "debug",
+                                    "raw": "'debug'"
+                                }
+                            ]
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "cypress:e2e",
+                                "raw": "'cypress:e2e'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "module"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "exports",
+                        "raw": "'exports'"
+                    }
+                },
+                "right": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "params": [
+                        {
+                            "type": "Identifier",
+                            "name": "_0x24be36"
+                        },
+                        {
+                            "type": "Identifier",
+                            "name": "_0x19ecd6"
+                        }
+                    ],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "debug"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "plugin file %s",
+                                            "raw": "'plugin\\x20file\\x20%s'"
+                                        },
+                                        {
+                                            "type": "Identifier",
+                                            "name": "__filename"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "debug"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "received config with browsers %o",
+                                            "raw": "'received\\x20config\\x20with\\x20browsers\\x20%o'"
+                                        },
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "_0x19ecd6"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "browsers",
+                                                "raw": "'browsers'"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "IfStatement",
+                                "test": {
+                                    "type": "UnaryExpression",
+                                    "operator": "!",
+                                    "argument": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "Array"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "isArray",
+                                                "raw": "'isArray'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "_0x19ecd6"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "browsers",
+                                                    "raw": "'browsers'"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "prefix": true
+                                },
+                                "consequent": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ThrowStatement",
+                                            "argument": {
+                                                "type": "NewExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "Error"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "Expected list of browsers in the config",
+                                                        "raw": "'Expected list of browsers in the config'"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "alternate": null
+                            },
+                            {
+                                "type": "IfStatement",
+                                "test": {
+                                    "type": "BinaryExpression",
+                                    "operator": "===",
+                                    "left": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "_0x19ecd6"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "browsers",
+                                                "raw": "'browsers'"
+                                            }
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "length",
+                                            "raw": "'length'"
+                                        }
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": 0,
+                                        "raw": "0x0"
+                                    }
+                                },
+                                "consequent": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ThrowStatement",
+                                            "argument": {
+                                                "type": "NewExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "Error"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "Expected at least 1 browser in the config",
+                                                        "raw": "'Expected at least 1 browser in the config'"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "alternate": null
+                            },
+                            {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "Identifier",
+                                            "name": "_0x3eade2"
+                                        },
+                                        "init": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "_0x19ecd6"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "browsers",
+                                                        "raw": "'browsers'"
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "find",
+                                                    "raw": "'find'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "ArrowFunctionExpression",
+                                                    "id": null,
+                                                    "params": [
+                                                        {
+                                                            "type": "Identifier",
+                                                            "name": "_0x205077"
+                                                        }
+                                                    ],
+                                                    "body": {
+                                                        "type": "BlockStatement",
+                                                        "body": [
+                                                            {
+                                                                "type": "ReturnStatement",
+                                                                "argument": {
+                                                                    "type": "BinaryExpression",
+                                                                    "operator": "===",
+                                                                    "left": {
+                                                                        "type": "MemberExpression",
+                                                                        "computed": true,
+                                                                        "object": {
+                                                                            "type": "Identifier",
+                                                                            "name": "_0x205077"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Literal",
+                                                                            "value": "name",
+                                                                            "raw": "'name'"
+                                                                        }
+                                                                    },
+                                                                    "right": {
+                                                                        "type": "Literal",
+                                                                        "value": "electron",
+                                                                        "raw": "'electron'"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    "generator": false,
+                                                    "expression": false,
+                                                    "async": false
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "kind": "const"
+                            },
+                            {
+                                "type": "IfStatement",
+                                "test": {
+                                    "type": "UnaryExpression",
+                                    "operator": "!",
+                                    "argument": {
+                                        "type": "Identifier",
+                                        "name": "_0x3eade2"
+                                    },
+                                    "prefix": true
+                                },
+                                "consequent": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ThrowStatement",
+                                            "argument": {
+                                                "type": "NewExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "Error"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "List of browsers passed into plugins does not include Electron browser",
+                                                        "raw": "'List of browsers passed into plugins does not include Electron browser'"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "alternate": null
+                            },
+                            {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "Identifier",
+                                            "name": "_0x3e9e78"
+                                        },
+                                        "init": {
+                                            "type": "ObjectExpression",
+                                            "properties": [
+                                                {
+                                                    "type": "Property",
+                                                    "key": {
+                                                        "type": "Literal",
+                                                        "value": "browsers",
+                                                        "raw": "'browsers'"
+                                                    },
+                                                    "computed": false,
+                                                    "value": {
+                                                        "type": "ArrayExpression",
+                                                        "elements": [
+                                                            {
+                                                                "type": "Identifier",
+                                                                "name": "_0x3eade2"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "kind": "init",
+                                                    "method": false,
+                                                    "shorthand": false
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "kind": "const"
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "debug"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "returning only Electron browser from plugins %o",
+                                            "raw": "'returning only Electron browser from plugins %o'"
+                                        },
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x3e9e78"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ReturnStatement",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "_0x3e9e78"
+                                }
+                            }
+                        ]
+                    },
+                    "generator": false,
+                    "expression": false,
+                    "async": false
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}

@@ -1,0 +1,137 @@
+'use strict';
+var _0x5aa0 = [
+    'xfeIt',
+    'createElement',
+    'Dark\x20mode?\x20',
+    'Count:\x20',
+    'dGEwF',
+    'FGqbB',
+    'wBNxE',
+    'jefdL',
+    'useEffect',
+    'useDebugValue',
+    '1fQAeDD',
+    '127009XlhZIS',
+    '207880HMwVKc',
+    '237925juNaLv',
+    '10487zcytaC',
+    '9gzOkeo',
+    '1471GkdtHw',
+    '179cyHtHK',
+    '776XOlwEg',
+    '131NblCJH',
+    '10JRQzxJ',
+    '28658ieNAvf',
+    'defineProperty',
+    'Component',
+    'react',
+    'function',
+    'object',
+    '__esModule',
+    'fbHYm',
+    'ILlMx',
+    'QlIbB',
+    'Qbcls',
+    'has',
+    'get',
+    'getOwnPropertyDescriptor',
+    'prototype',
+    'hasOwnProperty',
+    'call',
+    'default',
+    'set',
+    'Foo:\x20',
+    'button',
+    'Update\x20count',
+    'useState'
+];
+var _0x106614 = _0x497b;
+(function (_0x58409f, _0x4f9c5d) {
+    var _0x394433 = _0x497b;
+    while (!![]) {
+        try {
+            var _0xd72fae = -parseInt(_0x394433(0x178)) * parseInt(_0x394433(0x179)) + parseInt(_0x394433(0x17a)) + -parseInt(_0x394433(0x17b)) + parseInt(_0x394433(0x17c)) * -parseInt(_0x394433(0x17d)) + -parseInt(_0x394433(0x17e)) * -parseInt(_0x394433(0x17f)) + parseInt(_0x394433(0x180)) * -parseInt(_0x394433(0x181)) + -parseInt(_0x394433(0x182)) * -parseInt(_0x394433(0x183));
+            if (_0xd72fae === _0x4f9c5d)
+                break;
+            else
+                _0x58409f['push'](_0x58409f['shift']());
+        } catch (_0x46b92f) {
+            _0x58409f['push'](_0x58409f['shift']());
+        }
+    }
+}(_0x5aa0, 0x40807 + 0x16ce8 + -0x27433));
+Object[_0x106614(0x184)](exports, '__esModule', { 'value': !![] }), exports[_0x106614(0x185)] = Component;
+var _react = _interopRequireWildcard(require(_0x106614(0x186)));
+function _getRequireWildcardCache() {
+    var _0x549f7e = _0x106614, _0x1e0e42 = {
+            'BzJrR': function (_0x1fd862, _0x4e9bb6) {
+                return _0x1fd862 !== _0x4e9bb6;
+            }
+        };
+    if (_0x1e0e42['BzJrR'](typeof WeakMap, _0x549f7e(0x187)))
+        return null;
+    var _0x4f19f7 = new WeakMap();
+    return _getRequireWildcardCache = function () {
+        return _0x4f19f7;
+    }, _0x4f19f7;
+}
+function _interopRequireWildcard(_0x81ac0) {
+    var _0x49e50e = _0x106614, _0x3f585a = {
+            'fbHYm': function (_0x39585f, _0x1405b5) {
+                return _0x39585f === _0x1405b5;
+            },
+            'ILlMx': function (_0x13528e, _0x5d5bed) {
+                return _0x13528e !== _0x5d5bed;
+            },
+            'QlIbB': _0x49e50e(0x188),
+            'Qbcls': _0x49e50e(0x187)
+        };
+    if (_0x81ac0 && _0x81ac0[_0x49e50e(0x189)])
+        return _0x81ac0;
+    if (_0x3f585a[_0x49e50e(0x18a)](_0x81ac0, null) || _0x3f585a[_0x49e50e(0x18b)](typeof _0x81ac0, _0x3f585a[_0x49e50e(0x18c)]) && _0x3f585a['ILlMx'](typeof _0x81ac0, _0x3f585a[_0x49e50e(0x18d)]))
+        return { 'default': _0x81ac0 };
+    var _0x3df5e6 = _getRequireWildcardCache();
+    if (_0x3df5e6 && _0x3df5e6[_0x49e50e(0x18e)](_0x81ac0))
+        return _0x3df5e6[_0x49e50e(0x18f)](_0x81ac0);
+    var _0x121c64 = {}, _0x4ae9de = Object[_0x49e50e(0x184)] && Object[_0x49e50e(0x190)];
+    for (var _0x507251 in _0x81ac0) {
+        if (Object[_0x49e50e(0x191)][_0x49e50e(0x192)][_0x49e50e(0x193)](_0x81ac0, _0x507251)) {
+            var _0x4c385c = _0x4ae9de ? Object[_0x49e50e(0x190)](_0x81ac0, _0x507251) : null;
+            _0x4c385c && (_0x4c385c['get'] || _0x4c385c['set']) ? Object[_0x49e50e(0x184)](_0x121c64, _0x507251, _0x4c385c) : _0x121c64[_0x507251] = _0x81ac0[_0x507251];
+        }
+    }
+    return _0x121c64[_0x49e50e(0x194)] = _0x81ac0, _0x3df5e6 && _0x3df5e6[_0x49e50e(0x195)](_0x81ac0, _0x121c64), _0x121c64;
+}
+function _0x497b(_0x52aa71, _0x3ae67d) {
+    return _0x497b = function (_0x46e7ae, _0x878f44) {
+        _0x46e7ae = _0x46e7ae - (0x76 * 0x3e + -0x102b * -0x2 + 0x1 * -0x3b72);
+        var _0xb95650 = _0x5aa0[_0x46e7ae];
+        return _0xb95650;
+    }, _0x497b(_0x52aa71, _0x3ae67d);
+}
+function Component() {
+    var _0x3cfabb = _0x106614, _0x32f656 = {
+            'xfeIt': function (_0x414387) {
+                return _0x414387();
+            },
+            'dGEwF': 'div',
+            'FGqbB': _0x3cfabb(0x196),
+            'wBNxE': _0x3cfabb(0x197),
+            'jefdL': _0x3cfabb(0x198)
+        };
+    const [_0x23000c, _0x1639be] = (-0x134f * -0x1 + 0x1073 + -0x23c2, _react[_0x3cfabb(0x199)])(-0x7 * -0x329 + -0x1551 + -0xce), _0x4558ce = _0x32f656[_0x3cfabb(0x19a)](useIsDarkMode), {foo: _0x594795} = useFoo();
+    (0xb84 * -0x1 + 0x4f * -0x3f + 0x1ef5, _react['useEffect'])(() => {
+    }, []);
+    const _0x32d10d = () => _0x1639be(_0x23000c + (-0x136a + -0xbe0 + 0x1f4b));
+    return _react[_0x3cfabb(0x194)][_0x3cfabb(0x19b)](_react[_0x3cfabb(0x194)]['Fragment'], null, _react[_0x3cfabb(0x194)][_0x3cfabb(0x19b)](_0x32f656['dGEwF'], null, _0x3cfabb(0x19c), _0x4558ce), _react['default'][_0x3cfabb(0x19b)](_0x32f656['dGEwF'], null, _0x3cfabb(0x19d), _0x23000c), _react[_0x3cfabb(0x194)][_0x3cfabb(0x19b)](_0x32f656[_0x3cfabb(0x19e)], null, _0x32f656[_0x3cfabb(0x19f)], _0x594795), _react[_0x3cfabb(0x194)]['createElement'](_0x32f656[_0x3cfabb(0x1a0)], { 'onClick': _0x32d10d }, _0x32f656[_0x3cfabb(0x1a1)]));
+}
+function useIsDarkMode() {
+    var _0x1987fc = _0x106614;
+    const [_0x28a73d] = (0x1 * 0x9ef + 0xcc8 * 0x3 + 0x1 * -0x3047, _react['useState'])(![]);
+    return (-0x13 * -0x1b9 + 0x1 * -0x1f0f + 0x1 * -0x1ac, _react[_0x1987fc(0x1a2)])(function _0x358ac9() {
+    }, []), _0x28a73d;
+}
+function useFoo() {
+    var _0x2cc6a4 = _0x106614, _0x3583a8 = { 'plFxJ': 'foo' };
+    return (-0x2 * 0xa75 + -0x1 * 0x668 + 0x21a * 0xd, _react[_0x2cc6a4(0x1a3)])(_0x3583a8['plFxJ']), { 'foo': !![] };
+}

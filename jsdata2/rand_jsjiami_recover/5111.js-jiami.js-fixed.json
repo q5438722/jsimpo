@@ -1,0 +1,160 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "TryStatement",
+            "block": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "util"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "require"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "util",
+                                            "raw": "'util'"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "var"
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": "!==",
+                            "left": {
+                                "type": "UnaryExpression",
+                                "operator": "typeof",
+                                "argument": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "util"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "inherits",
+                                        "raw": "'inherits'"
+                                    }
+                                },
+                                "prefix": true
+                            },
+                            "right": {
+                                "type": "Literal",
+                                "value": "function",
+                                "raw": "'function'"
+                            }
+                        },
+                        "consequent": {
+                            "type": "ThrowStatement",
+                            "argument": {
+                                "type": "Literal",
+                                "value": "",
+                                "raw": "''"
+                            }
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "module"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "exports",
+                                    "raw": "'exports'"
+                                }
+                            },
+                            "right": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "util"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "inherits",
+                                    "raw": "'inherits'"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "handler": {
+                "type": "CatchClause",
+                "param": {
+                    "type": "Identifier",
+                    "name": "_0x4b2521"
+                },
+                "body": {
+                    "type": "BlockStatement",
+                    "body": [
+                        {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                                "type": "AssignmentExpression",
+                                "operator": "=",
+                                "left": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "module"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "exports",
+                                        "raw": "'exports'"
+                                    }
+                                },
+                                "right": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "require"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "./inherits_browser.js",
+                                            "raw": "'./inherits_browser.js'"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "finalizer": null
+        }
+    ],
+    "sourceType": "script"
+}

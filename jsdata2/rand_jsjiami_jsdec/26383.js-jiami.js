@@ -1,0 +1,1 @@
+import _0xc3b86b from'@emotion/cache';export default function createEmotionCache(){var _0x8c233={'lkOxS':function(_0x292b56,_0x43d811){return _0x292b56(_0x43d811);}};return _0x8c233['lkOxS'](_0xc3b86b,{'key':'css'});}

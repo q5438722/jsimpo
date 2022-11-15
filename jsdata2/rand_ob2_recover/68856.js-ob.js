@@ -1,0 +1,12 @@
+function _0x1978(_0xaaa647, _0x267394) {
+    return _0x1978 = function (_0x2cbfab, _0x19780f) {
+        _0x2cbfab = _0x2cbfab - 100;
+        var _0x86ceaf = _0x2cbf[_0x2cbfab];
+        return _0x86ceaf;
+    }, _0x1978(_0xaaa647, _0x267394);
+}
+var c = require(_0x22a1a6(110));
+it(_0x22a1a6(111), function () {
+    var _0x47972c = _0x22a1a6;
+    expect(c[_0x47972c(112)])['toBe'](_0x47972c(112));
+});

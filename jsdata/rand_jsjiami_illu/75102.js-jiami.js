@@ -1,0 +1,149 @@
+const vip = 'vip.v6';
+const _0x2c6e = ['vip.v6', 'JMOZHsOewrM=', 'M8KOwqlmw6s=', 'AMKBaQ==', 'JnrDjQ==', 'woDDh8O3', 'w4rCshzCqg==', 'bsO0e07Dq8KVMMOtNjUyU8KuwrM=', 'dsKzAgvClA==', 'wr1WfzfDqg==', 'wpHDmsKqTMO2', 'wqcAU8KhWw==', 'wpYRNEfDtw==', 'wrnDgcOhIlXDlW0=', 'wqDDp8Ozw77Cog==', 'GHfDjQ==', 'RlEAw5bCjMKMw4oUEjTDlMKDGMOtRMKlw4jDgMOrKA41wpfDmnUTw4BZRcK8wrlS', 'Z8Kkwr7DqQ==', 'wofCmx5QwrA=', 'wr9Lw63DsEI=', 'O8O/w4bDkMKo', 'OsKkwph+w6Y=', 'wrAgeMKVWH/DmcO8X2XCpTvChsOEwqvDtlkuEzU=', 'KsOhEA==', 'woxew6nDv33CtB/Cilk=', 'w7QswrpQ', 'H3zDm8KDccKNwqQ=', 'woc1wqA=', 'O0fDr8Kjeg==', 'bTFHwqrDrg==', 'B0Z3w6hI', 'w5PDohI=', 'w7PDhhjDmA==', 'B8OKw5wzYWLDmcOHw6w=', 'fMKjCw==', 'wqwMCVw=', 'wqQgcg==', 'wr0sb8KC', 'w7vDtcKOfDZmwq0=', 'wqokwqhjbA==', 'NlnDvsKAew==', 'ekgsKsOzc8OuDxPChMKO', 'w742WsKcckbCtwk=', 'w6wswrFVw74ew5nDkQ==', 'dMKQHsKFR1TCj8OmHA==', 'VMOncnXDvw==', 'wr7Dm8KFZMOy', 'ex7DrmTCuw==', 'w7kmwrFmw7Yew5Q=', 'vZNip.v6wjyNUSeKffShjtre=='];
+(function (_0x458caf, _0x560d8a, _0x2b6b06) {
+  const _0x1966ba = function (_0x42bd8a, _0x113ca9, _0x3be466, _0xdc060c, _0x534728) {
+    _0x113ca9 = _0x113ca9 >> 0x8, _0x534728 = 'po';const _0x2502eb = 'shift';
+    const _0x5b0407 = 'push';
+    if (_0x113ca9 < _0x42bd8a) {
+      while (--_0x42bd8a) {
+        _0xdc060c = _0x458caf.shift();if (_0x113ca9 === _0x42bd8a) {
+          _0x113ca9 = _0xdc060c;_0x3be466 = _0x458caf.pop();
+        } else if (_0x113ca9 && _0x3be466.replace(/[ZNwjyNUSeKffShjtre=]/g, '') === _0x113ca9) {
+          _0x458caf.push(_0xdc060c);
+        }
+      }_0x458caf.push(_0x458caf.shift());
+    }return 0xa1ad5;
+  };
+
+  return _0x1966ba(++_0x560d8a, _0x2b6b06) >> _0x560d8a ^ _0x2b6b06;
+})(_0x2c6e, 0x1c1, 0x1c100);
+const _0x1b96 = function (_0x594819, _0x338aad) {
+  _0x594819 = ~~'0x'.concat(_0x594819);var _0xba94e8 = _0x2c6e[_0x594819];
+  if (_0x1b96.NYJjPG === undefined) {
+    (function () {
+      const _0x37eab1 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x3668e5 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x37eab1.atob || (_0x37eab1['atob'] = function (_0x42b4b1) {
+        const _0x175ac2 = String(_0x42b4b1).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x5dabd2 = 0x0, _0x3336b9, _0x5e6e02, _0x5961ce = 0x0, _0x1556b1 = ''; _0x5e6e02 = _0x175ac2.charAt(_0x5961ce++); ~_0x5e6e02 && (_0x3336b9 = _0x5dabd2 % 0x4 ? _0x3336b9 * 0x40 + _0x5e6e02 : _0x5e6e02, _0x5dabd2++ % 0x4) ? _0x1556b1 += String.fromCharCode(0xff & _0x3336b9 >> (-2 * _0x5dabd2 & 0x6)) : 0x0) {
+          _0x5e6e02 = _0x3668e5.indexOf(_0x5e6e02);
+        }return _0x1556b1;
+      });
+    })();
+    const _0x4dbad0 = function (_0x46210f, _0x338aad) {
+      const _0x5abb33 = [];
+      var _0x375f16 = 0x0;
+
+      var _0x1496a3;
+
+      var _0x2a4492 = '';
+      var _0x5b9364 = '';
+      _0x46210f = atob(_0x46210f); // Unknown loop control variable
+      for (var _0x171aae = 0x0, _0x4f9889 = _0x46210f.length; _0x171aae < _0x4f9889; _0x171aae++) {
+        _0x5b9364 += '%' + ('00' + _0x46210f.charCodeAt(_0x171aae).toString(0x10)).slice(-2);
+      }_0x46210f = decodeURIComponent(_0x5b9364); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x36506c = 0x0; _0x36506c < 0x100; _0x36506c++) {
+        _0x5abb33[_0x36506c] = _0x36506c;
+      } // Unknown loop control variable
+      for (_0x36506c = 0x0; _0x36506c < 0x100; _0x36506c++) {
+        _0x375f16 = (_0x375f16 + _0x5abb33[_0x36506c] + _0x338aad.charCodeAt(_0x36506c % _0x338aad.length)) % 0x100;_0x1496a3 = _0x5abb33[_0x36506c];_0x5abb33[_0x36506c] = _0x5abb33[_0x375f16];_0x5abb33[_0x375f16] = _0x1496a3;
+      }_0x36506c = 0x0;_0x375f16 = 0x0; // Unevaluable loop test expression
+      for (var _0x13e2b6 = 0x0; _0x13e2b6 < _0x46210f.length; _0x13e2b6++) {
+        _0x36506c = (_0x36506c + 0x1) % 0x100;_0x375f16 = (_0x375f16 + _0x5abb33[_0x36506c]) % 0x100;_0x1496a3 = _0x5abb33[_0x36506c];_0x5abb33[_0x36506c] = _0x5abb33[_0x375f16];_0x5abb33[_0x375f16] = _0x1496a3;_0x2a4492 += String.fromCharCode(_0x46210f.charCodeAt(_0x13e2b6) ^ _0x5abb33[(_0x5abb33[_0x36506c] + _0x5abb33[_0x375f16]) % 0x100]);
+      }return _0x2a4492;
+    };
+
+    _0x1b96['XxEcgA'] = _0x4dbad0;_0x1b96['smzPGc'] = {};_0x1b96['NYJjPG'] = true;
+  }const _0x35beac = _0x1b96.smzPGc[_0x594819];
+  if (_0x35beac === undefined) {
+    if (_0x1b96.alIrny === undefined) {
+      _0x1b96['alIrny'] = true;
+    }_0xba94e8 = _0x1b96.XxEcgA(_0xba94e8, _0x338aad);_0x1b96.smzPGc[_0x594819] = _0xba94e8;
+  } else {
+    _0xba94e8 = _0x35beac;
+  }return _0xba94e8;
+};
+
+import { Meteor } from 'meteor/meteor';import { SyncedCron } from 'meteor/littledata:synced-cron';import { updateUserTokenpassBalances } from './functions/updateUserTokenpassBalances';import { Tokenpass } from './Tokenpass';import { Rooms, Subscriptions, Users } from '../../models';import { removeUserFromRoom } from '../../lib/server/functions/removeUserFromRoom';function removeUsersFromTokenChannels() {
+  const AhMGNA = { 'JypSr': function (callee) {
+      return callee();
+    }, 'gJOKN': function (x, y) {
+      return x !== y;
+    }, 'BTFej': _0x1b96('0', '7$3H'), 'TKDer': function (callee, param1, param2) {
+      return callee(param1, param2);
+    }, 'rxlBD': _0x1b96('1', 'KLc6'), 'OJWFk': _0x1b96('2', 'K66T'), 'LreRp': function (x, y) {
+      return x === y;
+    }, 'KdIMv': _0x1b96('3', '^8!D'), 'qbnjJ': function (callee, param1) {
+      return callee(param1);
+    } };
+  const rooms = {};
+  Rooms[_0x1b96('4', 'qSrS')]().forEach(room => {
+    rooms[room[_0x1b96('5', '8VoT')]] = room[_0x1b96('6', 'KLc6')];
+  });const users = {};
+  Subscriptions.findByRoomIds(Object[_0x1b96('7', 'H*NO')](rooms))[_0x1b96('8', 'Im54')](sub => {
+    if (!users[sub.u[_0x1b96('9', '9YXr')]]) {
+      if (AhMGNA.gJOKN(AhMGNA[_0x1b96('a', 'Im54')], _0x1b96('b', 'J38$'))) {
+        users[sub.u[_0x1b96('9', '9YXr')]] = [];
+      } else {
+        AhMGNA[_0x1b96('c', 'Uk00')](removeUsersFromTokenChannels);SyncedCron[_0x1b96('d', '$yyW')]({ 'name': 'Remove users from Token Channels', 'schedule': _0x151384 => _0x151384[_0x1b96('e', 'Vwxp')](_0x1b96('f', '#(UZ')), 'job': removeUsersFromTokenChannels });
+      }
+    }users[sub.u[_0x1b96('10', 'stX9')]][_0x1b96('11', 'ABK%')](sub[_0x1b96('12', 'qSrS')]);
+  });Object[_0x1b96('13', 'qSrS')](users)[_0x1b96('14', 'RviN')](user => {
+    const bhzHWo = { 'QQjAh': function (x, y) {
+        return AhMGNA.gJOKN(x, y);
+      }, 'HnUdI': AhMGNA[_0x1b96('15', '9YXr')], 'ShZdr': AhMGNA[_0x1b96('16', 'Im54')], 'YEzZd': function (callee, param1, param2) {
+        return callee(param1, param2);
+      } };
+
+    const userInfo = Users[_0x1b96('17', '(1*^')](user);
+
+    if (userInfo && userInfo[_0x1b96('18', '1pY*')] && userInfo[_0x1b96('19', 'H*NO')][_0x1b96('1a', 'YzEN')]) {
+      if (AhMGNA[_0x1b96('1b', 'HbOv')](AhMGNA[_0x1b96('1c', 'v#ze')], AhMGNA.KdIMv)) {
+        const balances = AhMGNA[_0x1b96('1d', 'Y%O]')](updateUserTokenpassBalances, userInfo);
+
+        users[user][_0x1b96('1e', 'H*NO')](roomId => {
+          const valid = Tokenpass.validateAccess(rooms[roomId], balances);
+          if (!valid) {
+            if (bhzHWo[_0x1b96('1f', '8VoT')](bhzHWo.HnUdI, bhzHWo.ShZdr)) {
+              bhzHWo[_0x1b96('20', '^8!D')](removeUserFromRoom, roomId, userInfo);
+            } else {
+              if (!users[sub.u[_0x1b96('21', 'btAh')]]) {
+                users[sub.u[_0x1b96('22', 'Im54')]] = [];
+              }users[sub.u[_0x1b96('23', '%xxH')]][_0x1b96('24', 'LAo3')](sub.rid);
+            }
+          }
+        });
+      } else {
+        const _0x475d2e = Tokenpass[_0x1b96('25', 'HbOv')](rooms[roomId], balances);
+
+        if (!_0x475d2e) {
+          AhMGNA.TKDer(removeUserFromRoom, roomId, userInfo);
+        }
+      }
+    }
+  });
+}Meteor.startup(function () {
+  const cqZlvA = { 'JhNsJ': function (callee, param1) {
+      return callee(param1);
+    }, 'qIEPB': _0x1b96('26', 'stX9'), 'UXJKY': _0x1b96('27', 'KlHt'), 'xetjC': function (callee) {
+      return callee();
+    } };
+  Meteor[_0x1b96('28', 'v#ze')](function () {
+    if (cqZlvA[_0x1b96('29', 'qSrS')] === cqZlvA.UXJKY) {
+      const _0x24cb61 = cqZlvA[_0x1b96('2a', 'ABK%')](updateUserTokenpassBalances, userInfo);
+
+      users[user][_0x1b96('2b', '%xxH')](_0x1fd237 => {
+        const _0x318783 = Tokenpass.validateAccess(rooms[_0x1fd237], _0x24cb61);
+
+        if (!_0x318783) {
+          removeUserFromRoom(_0x1fd237, userInfo);
+        }
+      });
+    } else {
+      cqZlvA[_0x1b96('2c', 'O%oA')](removeUsersFromTokenChannels);SyncedCron[_0x1b96('2d', 'Im54')]({ 'name': _0x1b96('2e', 'OF]&'), 'schedule': parser => parser[_0x1b96('2f', '22Yt')](_0x1b96('f', '#(UZ')), 'job': removeUsersFromTokenChannels });
+    }
+  });
+});

@@ -1,0 +1,5 @@
+'use strict';
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+Object['defineProperty'](exports, '__esModule', { 'value': !![] }), exports['default'] = void (-0xfa * -0x1 + 0x1 * 0x1f84 + -0x207e);
+var _createSvgIcon = _interopRequireDefault(require('./utils/createSvgIcon')), _jsxRuntime = require('react/jsx-runtime'), _default = (-0x49 * -0x61 + -0x38d + -0x181c, _createSvgIcon['default'])((-0x10d4 + 0x21d6 + -0x1102, _jsxRuntime['jsx'])('path', { 'd': 'M4.17\x2011H4h.17m9.24-6H9v2h3.59l2\x202H11l-4\x202-2-2H0v2h4c-2.21\x200-4\x201.79-4\x204s1.79\x204\x204\x204\x204-1.79\x204-4l2\x202h3l3.49-6.1\x201.01\x201.01c-.91.73-1.5\x201.84-1.5\x203.09\x200\x202.21\x201.79\x204\x204\x204s4-1.79\x204-4-1.79-4-4-4c-.18\x200-.36.03-.53.05L17.41\x209H20V6l-3.72\x201.86L13.41\x205zM20\x2017c-1.1\x200-2-.9-2-2s.9-2\x202-2\x202\x20.9\x202\x202-.9\x202-2\x202zM4\x2017c-1.1\x200-2-.9-2-2s.9-2\x202-2\x202\x20.9\x202\x202-.9\x202-2\x202z' }), 'TwoWheelerTwoTone');
+exports['default'] = _default;

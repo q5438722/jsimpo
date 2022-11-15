@@ -1,0 +1,1 @@
+export var foo=0x2;

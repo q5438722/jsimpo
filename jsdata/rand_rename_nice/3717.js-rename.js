@@ -1,0 +1,3 @@
+'use strict';
+module["exports"] = ["Rock", "Metal", "Pop", "Electronic", "Folk", "World", "Country", "Jazz", "Funk", "Soul", "Hip Hop", "Classical", "Latin", "Reggae", "Stage And Screen", "Blues", "Non Music", "Rap"];
+

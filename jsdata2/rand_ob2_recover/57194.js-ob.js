@@ -1,0 +1,27 @@
+function _0x3bd2(_0x151ed0, _0x1b3e83) {
+    return _0x3bd2 = function (_0x2370f8, _0x3bd264) {
+        _0x2370f8 = _0x2370f8 - 165;
+        let _0xebb956 = _0x2370[_0x2370f8];
+        return _0xebb956;
+    }, _0x3bd2(_0x151ed0, _0x1b3e83);
+}
+function blob_url_reload_test(_0x2e4151, _0x347429) {
+    const _0x4fa6ff = _0x3bd2, _0x36da18 = _0x4fa6ff(174), _0x34d185 = _0x4fa6ff(175) + '<script>window.test_result = "' + _0x36da18 + _0x4fa6ff(176), _0x103709 = new Blob([_0x34d185], { 'type': _0x4fa6ff(177) }), _0x3a497c = URL[_0x4fa6ff(178)](_0x103709), _0x33c373 = document[_0x4fa6ff(179)](_0x4fa6ff(180));
+    _0x33c373[_0x4fa6ff(181)](_0x4fa6ff(182), _0x3a497c), _0x33c373[_0x4fa6ff(181)]('style', _0x4fa6ff(183)), document[_0x4fa6ff(184)][_0x4fa6ff(185)](_0x33c373), _0x33c373[_0x4fa6ff(186)] = _0x2e4151['step_func'](() => {
+        const _0x27f7b3 = _0x4fa6ff;
+        if (_0x347429)
+            URL['revokeObjectURL'](_0x3a497c);
+        assert_equals(_0x33c373[_0x27f7b3(187)][_0x27f7b3(188)], _0x36da18), _0x33c373[_0x27f7b3(187)][_0x27f7b3(188)] = null, _0x33c373[_0x27f7b3(186)] = _0x2e4151[_0x27f7b3(189)](() => {
+            const _0x4d5b50 = _0x27f7b3;
+            assert_equals(_0x33c373[_0x4d5b50(187)][_0x4d5b50(188)], _0x36da18);
+        }), _0x2e4151[_0x27f7b3(190)](() => {
+            const _0x2fcbcd = _0x27f7b3;
+            _0x33c373[_0x2fcbcd(187)][_0x2fcbcd(191)]['reload']();
+        }, 250);
+    });
+}
+async_test(_0x20f1c5 => {
+    blob_url_reload_test(_0x20f1c5, ![]);
+}, _0x33c45e(192)), async_test(_0x239db9 => {
+    blob_url_reload_test(_0x239db9, !![]);
+}, _0x33c45e(193));

@@ -1,0 +1,1 @@
+export default function ({error}){error({'message':'Middleware Error','statusCode':0x1f9});}

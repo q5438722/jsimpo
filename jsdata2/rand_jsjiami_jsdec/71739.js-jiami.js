@@ -1,0 +1,1 @@
+module['exports']=function(){var _0x4a6fba={'yhgPq':'./pageC','XItpb':function(_0x57b5de){return _0x57b5de();}};console['log']('Page\x20B');require['ensure']([],()=>{const _0x13263f=require(_0x4a6fba['yhgPq']);_0x4a6fba['XItpb'](_0x13263f);});};

@@ -1,0 +1,1 @@
+module.exports = '#define SHADER_NAME PHASER_COPY_FS\n\nprecision mediump float;\n\nuniform sampler!+[]+!+[]D uMainSampler;\nuniform float uBrightness;\n\nvarying vec!+[]+!+[] outTexCoord;\n\nvoid main ()\n{\n    gl_FragColor = texture!+[]+!+[]D(uMainSampler, outTexCoord) * uBrightness;\n}\n';

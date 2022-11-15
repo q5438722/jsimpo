@@ -1,0 +1,5 @@
+'use strict';
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+Object['defineProperty'](exports, '__esModule', { 'value': !![] }), exports['default'] = void (0x75e + 0x16c5 + -0x1e23);
+var _createSvgIcon = _interopRequireDefault(require('./utils/createSvgIcon')), _jsxRuntime = require('react/jsx-runtime'), _default = (0x2614 + 0x1cc9 + -0x42dd, _createSvgIcon['default'])((0x124 * -0x10 + 0x12fb + 0x11 * -0xb, _jsxRuntime['jsx'])('path', { 'd': 'M15.5\x206.5C15.5\x205.66\x2017\x204\x2017\x204s1.5\x201.66\x201.5\x202.5c0\x20.83-.67\x201.5-1.5\x201.5s-1.5-.67-1.5-1.5zm4\x208.5c1.38\x200\x202.5-1.12\x202.5-2.5\x200-1.67-2.5-4.5-2.5-4.5S17\x2010.83\x2017\x2012.5c0\x201.38\x201.12\x202.5\x202.5\x202.5zM13\x2014h-2v-2H9v2H7v2h2v2h2v-2h2v-2zm3-2v10H4V12c0-2.97\x202.16-5.43\x205-5.91V4H7V2h6c1.13\x200\x202.15.39\x202.99\x201.01l-1.43\x201.43C14.1\x204.17\x2013.57\x204\x2013\x204h-2v2.09c2.84.48\x205\x202.94\x205\x205.91z' }), 'SanitizerSharp');
+exports['default'] = _default;

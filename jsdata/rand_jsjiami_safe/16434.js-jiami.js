@@ -1,0 +1,5 @@
+  _0x17e1fa : while (! ! [])
+  {
+    break _0x17e1fa;
+  }
+  

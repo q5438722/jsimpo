@@ -1,0 +1,1 @@
+typeof window !== _0xacc065(198) && require('whatwg-fetch');

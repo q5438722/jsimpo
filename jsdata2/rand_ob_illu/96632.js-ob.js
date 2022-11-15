@@ -1,0 +1,44 @@
+const _0x1002 = ['106717PWxksT', '5271XoEGtG', '183SfxryC', '179TefCvt', '3001CTZhDa', '194861BcPtht', '1YMVFyN', '547405pIXpKB', '1frttmh', '594764qcgPQJ', 'nw.gui', 'require', 'pLfKb', 'WiFKr', 'apply', 'slice', 'cache', 'extensions', 'resolve', 'process', 'Buffer', 'global', '462370ICBsJO', '7WEKJsA'];
+
+function _0x3d6a(_0x2a8fe1, _0x27651b) {
+    return _0x3d6a = function (_0x123715, _0x1a4647) {
+        _0x123715 = _0x123715 - 193;
+        const _0x4002b1 = _0x1002[_0x123715];
+
+        return _0x4002b1;
+    }, _0x3d6a(_0x2a8fe1, _0x27651b);
+}
+(function (_0x3f129c, _0x509ef3) {
+    const _0x169cb7 = _0x3d6a;
+
+    while (true) {
+        try {
+            const _0x5f2763 = parseInt(_0x169cb7(0xc1)) + -parseInt(_0x169cb7(0xc2)) * -parseInt(_0x169cb7(0xc3)) + -parseInt(_0x169cb7(0xc4)) * -parseInt(_0x169cb7(0xc5)) + -parseInt(_0x169cb7(0xc6)) * parseInt(_0x169cb7(0xc7)) + parseInt(_0x169cb7(0xc8)) + parseInt(_0x169cb7(0xc9)) * -parseInt(_0x169cb7(0xca)) + -parseInt(_0x169cb7(0xcb)) * parseInt(_0x169cb7(0xcc));
+
+            if (_0x5f2763 === _0x509ef3) break;else _0x3f129c.push(_0x3f129c.shift());
+        } catch (_0xc2d6c0) {
+            _0x3f129c.push(_0x3f129c.shift());
+        }
+    }
+})(_0x1002, 689495), function () {
+    const _0xa93d45 = _0x3d6a;
+    const _0x4e6969 = {
+        'pLfKb': function (_0x5815bc, _0x1f13ae) {
+            return _0x5815bc === _0x1f13ae;
+        },
+        'WiFKr': _0xa93d45(0xcd)
+    };
+
+    if (!(self.nw && self.nw[_0xa93d45(0xce)])) return;
+
+    const _0x17a410 = nw[_0xa93d45(0xce)];
+
+    self[_0xa93d45(0xce)] = function () {
+        const _0x1c9597 = _0xa93d45;
+
+        return _0x4e6969[_0x1c9597(0xcf)](arguments[0], _0x4e6969[_0x1c9597(0xd0)]) ? nw : _0x17a410[_0x1c9597(0xd1)](self, [][_0x1c9597(0xd2)].call(arguments, 0));
+    }, self.require[_0xa93d45(0xd3)] = _0x17a410.cache, self[_0xa93d45(0xce)][_0xa93d45(0xd4)] = _0x17a410[_0xa93d45(0xd4)], self.require[_0xa93d45(0xd5)] = _0x17a410[_0xa93d45(0xd5)];
+    if (!self[_0xa93d45(0xd6)]) self[_0xa93d45(0xd6)] = self.nw[_0xa93d45(0xd6)];
+    if (!self.Buffer) self[_0xa93d45(0xd7)] = self.nw[_0xa93d45(0xd7)];
+    if (!self[_0xa93d45(0xd8)]) self[_0xa93d45(0xd8)] = self.nw[_0xa93d45(0xd8)];
+}();

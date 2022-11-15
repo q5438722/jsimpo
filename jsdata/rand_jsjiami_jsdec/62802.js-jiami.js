@@ -1,0 +1,1 @@
+var p1={};var p2={};var p3={};var x=0x0;var y=0x1;var z=0x2;var o=0x3;assertThrows('o = {'+'  __proto__: (x++, p1),'+'  __proto__: (y++, p2),'+'  __proto__: (z++, p3)'+'};',SyntaxError);assertEquals(0x0,x);assertEquals(0x1,y);assertEquals(0x2,z);assertEquals(0x3,o);

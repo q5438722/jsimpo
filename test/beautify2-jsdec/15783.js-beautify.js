@@ -1,0 +1,1 @@
+function foo(){await foo}function foo(){await foo}function foo(){await foo}function foo(){await foo}

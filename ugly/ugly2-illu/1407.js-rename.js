@@ -1,0 +1,51 @@
+"use strict";
+
+const fs = require("fs-extra");
+
+const os = require("os");
+
+const path = require("path");
+
+const spawnSync = require("./spawn-sync");
+
+const template = require("lodash.template");
+
+const CONFIG = require("../config");
+
+module.exports = function (o) {
+  console.log(`Creating Debian package for "${o}"`);const n = CONFIG.channel === "stable" ? "atom" : `atom-${CONFIG.channel}`;
+  const e = CONFIG.channel === "stable" ? "apm" : `apm-${CONFIG.channel}`;
+  const t = CONFIG.appMetadata.description;
+  const s = CONFIG.appMetadata.version;
+  var i;
+  if (process.arch === "ia32") {
+    i = "i386";
+  } else if (process.arch === "x64") {
+    i = "amd64";
+  } else if (process.arch === "ppc") {
+    i = "powerpc";
+  } else {
+    i = process.arch;
+  }const a = path.join(CONFIG.buildOutputPath, `atom-${i}.deb`);
+  const c = path.join(os.tmpdir(), path.basename(o));
+  const p = path.join(c, "DEBIAN");
+  const r = path.join(c, "usr");
+  const l = path.join(r, "bin");
+  const h = path.join(r, "share");
+  const y = path.join(h, n);
+  const d = path.join(h, "applications");
+  const f = path.join(h, "pixmaps");
+  const g = path.join(h, "doc", n);
+  if (fs.existsSync(c)) {
+    console.log(`Deleting existing build dir for Debian package at "${c}"`);fs.removeSync(c);
+  }if (fs.existsSync(`${c}.deb`)) {
+    console.log(`Deleting existing Debian package at "${c}.deb"`);fs.removeSync(`${c}.deb`);
+  }if (fs.existsSync(c)) {
+    console.log(`Deleting existing Debian package at "${a}"`);fs.removeSync(c);
+  }console.log(`Creating Debian package directory structure at "${c}"`);fs.mkdirpSync(c);fs.mkdirpSync(p);fs.mkdirpSync(r);fs.mkdirpSync(h);fs.mkdirpSync(d);fs.mkdirpSync(f);fs.mkdirpSync(g);fs.mkdirpSync(l);console.log(`Copying "${o}" to "${y}"`);fs.copySync(o, y);fs.chmodSync(y, "755");console.log(`Copying binaries into "${l}"`);fs.copySync(path.join(CONFIG.repositoryRootPath, "atom.sh"), path.join(l, n));fs.symlinkSync(path.join("..", "share", n, "resources", "app", "apm", "node_modules", ".bin", "apm"), path.join(l, e));fs.chmodSync(path.join(y, "chrome-sandbox"), "4755");console.log(`Writing control file into "${p}"`);const m = spawnSync("du", ["-sk", o]).stdout.toString().split(/\s+/)[0];
+  const S = fs.readFileSync(path.join(CONFIG.repositoryRootPath, "resources", "linux", "debian", "control.in"));
+  const u = template(S)({ appFileName: n, version: s, arch: i, installedSize: m, description: t });
+  fs.writeFileSync(path.join(p, "control"), u);console.log(`Writing desktop entry file into "${d}"`);const j = fs.readFileSync(path.join(CONFIG.repositoryRootPath, "resources", "linux", "atom.desktop.in"));
+  const k = template(j)({ appName: CONFIG.appName, appFileName: n, description: t, installDir: "/usr", iconPath: n });
+  fs.writeFileSync(path.join(d, `${n}.desktop`), k);console.log(`Copying icon into "${f}"`);fs.copySync(path.join(o, "resources", "app.asar.unpacked", "resources", "atom.png"), path.join(f, `${n}.png`));console.log(`Copying license into "${g}"`);fs.copySync(path.join(o, "resources", "LICENSE.md"), path.join(g, "copyright"));console.log(`Copying polkit configuration into "${h}"`);fs.copySync(path.join(CONFIG.repositoryRootPath, "resources", "linux", "atom.policy"), path.join(h, "polkit-1", "actions", `atom-${CONFIG.channel}.policy`));console.log(`Generating .deb file from ${c}`);spawnSync("fakeroot", ["dpkg-deb", "-b", path.join(os.tmpdir(), path.basename(o))], { stdio: "inherit" });console.log(`Copying generated package into "${a}"`);fs.copySync(`${c}.deb`, a);
+};

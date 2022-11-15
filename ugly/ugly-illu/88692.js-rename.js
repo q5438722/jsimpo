@@ -1,0 +1,6 @@
+const oldNoDeprecationValue = process.noDeprecation;
+try {
+  process.noDeprecation = true;NpmModuleMongodb = Npm.require("mongodb");
+} finally {
+  process.noDeprecation = oldNoDeprecationValue;
+}NpmModuleMongodbVersion = Npm.require("mongodb/package.json").version;

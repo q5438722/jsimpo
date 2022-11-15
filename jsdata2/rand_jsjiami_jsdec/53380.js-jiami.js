@@ -1,0 +1,13 @@
+/**
+ * @fileoverview Rule to flag use of unary increment and decrement operators.
+ * @author Ian Christian Myers
+ * @author Brody McKee (github.com/mrmckeb)
+ */
+'use strict';//------------------------------------------------------------------------------
+             // Helpers
+             //------------------------------------------------------------------------------
+             /**
+ * Determines whether the given node is the update node of a `ForStatement`.
+ * @param {ASTNode} node The node to check.
+ * @returns {boolean} `true` if the node is `ForStatement` update.
+ */function isForStatementUpdate(_0x44082b){var _0x3858c5={'WOJOb':function(_0x3d0f0d,_0x3f1204){return _0x3d0f0d===_0x3f1204;},'hGbFG':function(_0x5d9bf3,_0xe31e92){return _0x5d9bf3===_0xe31e92;}};const _0x23f42e=_0x44082b['parent'];return _0x3858c5['WOJOb'](_0x23f42e['type'],'ForStatement')&&_0x3858c5['hGbFG'](_0x23f42e['update'],_0x44082b);}function isForLoopAfterthought(_0x5dd3eb){var _0x45d327={'atWBx':function(_0x378153,_0x155af1){return _0x378153===_0x155af1;},'QFPaW':'SequenceExpression','mtFLZ':function(_0x24e303,_0x240ad6){return _0x24e303(_0x240ad6);}};const _0x3ce6c8=_0x5dd3eb['parent'];if(_0x45d327['atWBx'](_0x3ce6c8['type'],_0x45d327['QFPaW'])){return isForLoopAfterthought(_0x3ce6c8);}return _0x45d327['mtFLZ'](isForStatementUpdate,_0x5dd3eb);}module['exports']={'meta':{'type':'suggestion','docs':{'description':'disallow the unary operators `++` and `--`','category':'Stylistic Issues','recommended':![],'url':'https://eslint.org/docs/rules/no-plusplus'},'schema':[{'type':'object','properties':{'allowForLoopAfterthoughts':{'type':'boolean','default':![]}},'additionalProperties':![]}],'messages':{'unexpectedUnaryOp':'Unary\x20operator\x20\x27{{operator}}\x27\x20used.'}},'create'(_0x1b8b66){var _0x3b1883={'GIimp':function(_0x3c3d8b,_0x48885d){return _0x3c3d8b(_0x48885d);},'pAYGo':'unexpectedUnaryOp','klhnf':function(_0xf8c52f,_0x2779b1){return _0xf8c52f===_0x2779b1;},'FXgXZ':'object'};const _0x2792dd=_0x1b8b66['options'][0x0];let _0x4f053a=![];if(_0x3b1883['klhnf'](typeof _0x2792dd,_0x3b1883['FXgXZ'])){_0x4f053a=_0x2792dd['allowForLoopAfterthoughts']===!![];}return{'UpdateExpression'(_0x516b1a){if(_0x4f053a&&_0x3b1883['GIimp'](isForLoopAfterthought,_0x516b1a)){return;}_0x1b8b66['report']({'node':_0x516b1a,'messageId':_0x3b1883['pAYGo'],'data':{'operator':_0x516b1a['operator']}});}};}};

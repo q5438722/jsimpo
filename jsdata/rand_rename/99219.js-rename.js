@@ -1,0 +1,1 @@
+"use strict";const cliCommandsSchema=require("../cli/commands-schema");class Metrics{constructor(s,c){this.serverless=s;this.options=c;this.commands={metrics:{...cliCommandsSchema.get("metrics")}}}}module.exports=Metrics;

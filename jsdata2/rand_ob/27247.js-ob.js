@@ -1,0 +1,122 @@
+const _0x1828 = [
+    'AutocompleteInputChangeReason',
+    'AutocompleteChangeReason',
+    'AutocompleteCloseReason',
+    'jscodeshift',
+    'source',
+    'printOptions',
+    'TGhUD',
+    'FilterOptionsState',
+    'yBsVi',
+    'PFqNb',
+    'erBUF',
+    'NUfyx',
+    'RtYjS',
+    'JSkQE',
+    'NBpJU',
+    'gyImq',
+    'AQopS',
+    'find',
+    'ImportDeclaration',
+    'filter',
+    'value',
+    'match',
+    'forEach',
+    'specifiers',
+    'includes',
+    'imported',
+    'name',
+    'local',
+    'pyJNB',
+    'importDefaultSpecifier',
+    'identifier',
+    'node',
+    'importDeclaration',
+    'literal',
+    'insertAfter',
+    'length',
+    'remove',
+    '34631FHpdbw',
+    '25DePcsB',
+    '865528gnpXEK',
+    '268914PlxIQv',
+    '1008053UKldXh',
+    '37ijRPaC',
+    '33017mYpRmV',
+    '89MEgKZA',
+    '15374LAhOeg',
+    '2247966jRzPde',
+    'useAutocomplete',
+    'single',
+    'createFilterOptions',
+    'CreateFilterOptionsConfig',
+    'AutocompleteFreeSoloValueMapping',
+    'Value'
+];
+function _0x33e6(_0x48dc84, _0x1a209c) {
+    return _0x33e6 = function (_0x16f506, _0x32ea7e) {
+        _0x16f506 = _0x16f506 - (-0x238e + -0x1 * 0x63b + -0x2 * -0x153e);
+        let _0x3f3d0a = _0x1828[_0x16f506];
+        return _0x3f3d0a;
+    }, _0x33e6(_0x48dc84, _0x1a209c);
+}
+(function (_0x1c74a1, _0x48858c) {
+    const _0x3259aa = _0x33e6;
+    while (!![]) {
+        try {
+            const _0x190bd3 = parseInt(_0x3259aa(0xb3)) * parseInt(_0x3259aa(0xb4)) + -parseInt(_0x3259aa(0xb5)) + -parseInt(_0x3259aa(0xb6)) + -parseInt(_0x3259aa(0xb7)) + parseInt(_0x3259aa(0xb8)) * parseInt(_0x3259aa(0xb9)) + -parseInt(_0x3259aa(0xba)) * parseInt(_0x3259aa(0xbb)) + parseInt(_0x3259aa(0xbc));
+            if (_0x190bd3 === _0x48858c)
+                break;
+            else
+                _0x1c74a1['push'](_0x1c74a1['shift']());
+        } catch (_0x519822) {
+            _0x1c74a1['push'](_0x1c74a1['shift']());
+        }
+    }
+}(_0x1828, 0x6669b * 0x1 + -0x9fa34 + 0x1028a6));
+export default function transformer(_0x13cb37, _0x3bb9f4, _0x4caa60) {
+    const _0x59807d = _0x33e6, _0x4c1875 = {
+            'bBXaR': function (_0x56ba7, _0x4d7f41) {
+                return _0x56ba7 === _0x4d7f41;
+            },
+            'AQopS': _0x59807d(0xbd),
+            'VcUAV': function (_0x2b27f9, _0x4d2aa8) {
+                return _0x2b27f9(_0x4d2aa8);
+            },
+            'TGhUD': _0x59807d(0xbe),
+            'yBsVi': _0x59807d(0xbf),
+            'PFqNb': _0x59807d(0xc0),
+            'erBUF': _0x59807d(0xc1),
+            'ibSGu': _0x59807d(0xc2),
+            'NUfyx': 'UseAutocompleteProps',
+            'RtYjS': 'AutocompleteHighlightChangeReason',
+            'JSkQE': _0x59807d(0xc3),
+            'NBpJU': _0x59807d(0xc4),
+            'gyImq': _0x59807d(0xc5)
+        }, _0x2eca46 = _0x3bb9f4[_0x59807d(0xc6)], _0x13cf86 = _0x4c1875['VcUAV'](_0x2eca46, _0x13cb37[_0x59807d(0xc7)]), _0x4ab0f5 = _0x4caa60[_0x59807d(0xc8)] || { 'quote': _0x4c1875[_0x59807d(0xc9)] }, _0x89e1e9 = [
+            _0x59807d(0xca),
+            _0x4c1875[_0x59807d(0xcb)],
+            _0x4c1875[_0x59807d(0xcc)],
+            _0x4c1875[_0x59807d(0xcd)],
+            _0x4c1875['ibSGu'],
+            _0x4c1875[_0x59807d(0xce)],
+            _0x4c1875[_0x59807d(0xcf)],
+            _0x4c1875[_0x59807d(0xd0)],
+            _0x4c1875[_0x59807d(0xd1)],
+            _0x4c1875[_0x59807d(0xd2)],
+            _0x4c1875[_0x59807d(0xd3)]
+        ];
+    let _0x5910bc;
+    return _0x13cf86[_0x59807d(0xd4)](_0x2eca46[_0x59807d(0xd5)])[_0x59807d(0xd6)](_0x553516 => _0x553516['node'][_0x59807d(0xc7)][_0x59807d(0xd7)][_0x59807d(0xd8)](/^@material-ui\/lab\/?(useAutocomplete)?$/))[_0x59807d(0xd9)](_0x1cbaf5 => {
+        const _0x4e6238 = _0x59807d, _0x56c89a = {
+                'pyJNB': function (_0x119578, _0x54fc05) {
+                    return _0x4c1875['bBXaR'](_0x119578, _0x54fc05);
+                },
+                'aUnZs': _0x4c1875['AQopS']
+            }, _0x38e180 = [];
+        _0x1cbaf5['node'][_0x4e6238(0xda)][_0x4e6238(0xd9)]((_0xe09bcd, _0x568c33) => {
+            const _0x46b5ae = _0x4e6238;
+            _0x89e1e9[_0x46b5ae(0xdb)](_0xe09bcd[_0x46b5ae(0xdc)] ? _0xe09bcd[_0x46b5ae(0xdc)][_0x46b5ae(0xdd)] : _0xe09bcd[_0x46b5ae(0xde)][_0x46b5ae(0xdd)]) && (_0x56c89a[_0x46b5ae(0xdf)](_0xe09bcd[_0x46b5ae(0xde)][_0x46b5ae(0xdd)], _0x56c89a['aUnZs']) ? _0x38e180['push'](_0x2eca46[_0x46b5ae(0xe0)](_0x2eca46[_0x46b5ae(0xe1)](_0x56c89a['aUnZs']))) : _0x38e180['push'](_0xe09bcd), delete _0x1cbaf5[_0x46b5ae(0xe2)][_0x46b5ae(0xda)][_0x568c33]);
+        }), _0x38e180['length'] && (!_0x5910bc ? (_0x5910bc = _0x2eca46[_0x4e6238(0xe3)](_0x38e180, _0x2eca46[_0x4e6238(0xe4)]('@material-ui/core/useAutocomplete')), _0x1cbaf5[_0x4e6238(0xe5)](_0x5910bc)) : _0x5910bc[_0x4e6238(0xda)]['push'](..._0x38e180));
+    })['filter'](_0x5b1760 => !Object['keys'](_0x5b1760[_0x59807d(0xe2)][_0x59807d(0xda)])[_0x59807d(0xe6)])[_0x59807d(0xe7)](), _0x13cf86['toSource'](_0x4ab0f5);
+}

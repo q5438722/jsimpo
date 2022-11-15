@@ -1,0 +1,644 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "description"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "This tests that inlining a function that does not use this does not result in this being lost entirely, if we succeed in doing method check optimizations.",
+                        "raw": "'This tests that inlining a function that does not use this does not result in this being lost entirely, if we succeed in doing method check optimizations.'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "foo"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x2b96bd"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x213458"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "_0x2b96bd"
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "_0x213458"
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "bar"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x6cfb9e"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x1337c6"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                                "type": "BinaryExpression",
+                                "operator": "+",
+                                "left": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "ThisExpression"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "f",
+                                        "raw": "'f'"
+                                    }
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "_0x6cfb9e"
+                                }
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "_0x1337c6"
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "baz"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x62def0"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x4f7765"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x949d5a"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "_0x62def0"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "stuff",
+                                    "raw": "'stuff'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x4f7765"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x949d5a"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "functionToCall"
+                    },
+                    "init": {
+                        "type": "Identifier",
+                        "name": "foo"
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "offset"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": 0,
+                        "raw": "0x0"
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ForStatement",
+            "init": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "i"
+                        },
+                        "init": {
+                            "type": "Literal",
+                            "value": 0,
+                            "raw": "0x0"
+                        }
+                    }
+                ],
+                "kind": "var"
+            },
+            "test": {
+                "type": "BinaryExpression",
+                "operator": "<",
+                "left": {
+                    "type": "Identifier",
+                    "name": "i"
+                },
+                "right": {
+                    "type": "Literal",
+                    "value": 1000,
+                    "raw": "0x3e8"
+                }
+            },
+            "update": {
+                "type": "UpdateExpression",
+                "operator": "++",
+                "argument": {
+                    "type": "Identifier",
+                    "name": "i"
+                },
+                "prefix": true
+            },
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "MINbll"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Literal",
+                                            "value": "4|0|2|1|3",
+                                            "raw": "'4|0|2|1|3'"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "split",
+                                            "raw": "'split'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": "|",
+                                            "raw": "'|'"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "fWgyVw"
+                                },
+                                "init": {
+                                    "type": "Literal",
+                                    "value": 0,
+                                    "raw": "0x0"
+                                }
+                            }
+                        ],
+                        "kind": "var"
+                    },
+                    {
+                        "type": "WhileStatement",
+                        "test": {
+                            "type": "UnaryExpression",
+                            "operator": "!",
+                            "argument": {
+                                "type": "UnaryExpression",
+                                "operator": "!",
+                                "argument": {
+                                    "type": "ArrayExpression",
+                                    "elements": []
+                                },
+                                "prefix": true
+                            },
+                            "prefix": true
+                        },
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "SwitchStatement",
+                                    "discriminant": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "MINbll"
+                                        },
+                                        "property": {
+                                            "type": "UpdateExpression",
+                                            "operator": "++",
+                                            "argument": {
+                                                "type": "Identifier",
+                                                "name": "fWgyVw"
+                                            },
+                                            "prefix": false
+                                        }
+                                    },
+                                    "cases": [
+                                        {
+                                            "type": "SwitchCase",
+                                            "test": {
+                                                "type": "Literal",
+                                                "value": "0",
+                                                "raw": "'0'"
+                                            },
+                                            "consequent": [
+                                                {
+                                                    "type": "VariableDeclaration",
+                                                    "declarations": [
+                                                        {
+                                                            "type": "VariableDeclarator",
+                                                            "id": {
+                                                                "type": "Identifier",
+                                                                "name": "object"
+                                                            },
+                                                            "init": {
+                                                                "type": "ObjectExpression",
+                                                                "properties": []
+                                                            }
+                                                        }
+                                                    ],
+                                                    "kind": "var"
+                                                },
+                                                {
+                                                    "type": "ContinueStatement",
+                                                    "label": null
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "SwitchCase",
+                                            "test": {
+                                                "type": "Literal",
+                                                "value": "1",
+                                                "raw": "'1'"
+                                            },
+                                            "consequent": [
+                                                {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                        "type": "AssignmentExpression",
+                                                        "operator": "=",
+                                                        "left": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "object"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "f",
+                                                                "raw": "'f'"
+                                                            }
+                                                        },
+                                                        "right": {
+                                                            "type": "Literal",
+                                                            "value": 42,
+                                                            "raw": "0x2a"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ContinueStatement",
+                                                    "label": null
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "SwitchCase",
+                                            "test": {
+                                                "type": "Literal",
+                                                "value": "2",
+                                                "raw": "'2'"
+                                            },
+                                            "consequent": [
+                                                {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                        "type": "AssignmentExpression",
+                                                        "operator": "=",
+                                                        "left": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "object"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "stuff",
+                                                                "raw": "'stuff'"
+                                                            }
+                                                        },
+                                                        "right": {
+                                                            "type": "Identifier",
+                                                            "name": "functionToCall"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ContinueStatement",
+                                                    "label": null
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "SwitchCase",
+                                            "test": {
+                                                "type": "Literal",
+                                                "value": "3",
+                                                "raw": "'3'"
+                                            },
+                                            "consequent": [
+                                                {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "Identifier",
+                                                            "name": "shouldBe"
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "BinaryExpression",
+                                                                "operator": "+",
+                                                                "left": {
+                                                                    "type": "BinaryExpression",
+                                                                    "operator": "+",
+                                                                    "left": {
+                                                                        "type": "BinaryExpression",
+                                                                        "operator": "+",
+                                                                        "left": {
+                                                                            "type": "BinaryExpression",
+                                                                            "operator": "+",
+                                                                            "left": {
+                                                                                "type": "Literal",
+                                                                                "value": "baz(object, ",
+                                                                                "raw": "'baz(object,\\x20'"
+                                                                            },
+                                                                            "right": {
+                                                                                "type": "Identifier",
+                                                                                "name": "i"
+                                                                            }
+                                                                        },
+                                                                        "right": {
+                                                                            "type": "Literal",
+                                                                            "value": ", ",
+                                                                            "raw": "',\\x20'"
+                                                                        }
+                                                                    },
+                                                                    "right": {
+                                                                        "type": "BinaryExpression",
+                                                                        "operator": "*",
+                                                                        "left": {
+                                                                            "type": "Identifier",
+                                                                            "name": "i"
+                                                                        },
+                                                                        "right": {
+                                                                            "type": "Literal",
+                                                                            "value": 2,
+                                                                            "raw": "0x2"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "right": {
+                                                                    "type": "Literal",
+                                                                    "value": ")",
+                                                                    "raw": "')'"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "BinaryExpression",
+                                                                "operator": "+",
+                                                                "left": {
+                                                                    "type": "Literal",
+                                                                    "value": "",
+                                                                    "raw": "''"
+                                                                },
+                                                                "right": {
+                                                                    "type": "BinaryExpression",
+                                                                    "operator": "+",
+                                                                    "left": {
+                                                                        "type": "BinaryExpression",
+                                                                        "operator": "+",
+                                                                        "left": {
+                                                                            "type": "Identifier",
+                                                                            "name": "offset"
+                                                                        },
+                                                                        "right": {
+                                                                            "type": "Identifier",
+                                                                            "name": "i"
+                                                                        }
+                                                                    },
+                                                                    "right": {
+                                                                        "type": "BinaryExpression",
+                                                                        "operator": "*",
+                                                                        "left": {
+                                                                            "type": "Identifier",
+                                                                            "name": "i"
+                                                                        },
+                                                                        "right": {
+                                                                            "type": "Literal",
+                                                                            "value": 2,
+                                                                            "raw": "0x2"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ContinueStatement",
+                                                    "label": null
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "SwitchCase",
+                                            "test": {
+                                                "type": "Literal",
+                                                "value": "4",
+                                                "raw": "'4'"
+                                            },
+                                            "consequent": [
+                                                {
+                                                    "type": "IfStatement",
+                                                    "test": {
+                                                        "type": "BinaryExpression",
+                                                        "operator": "==",
+                                                        "left": {
+                                                            "type": "Identifier",
+                                                            "name": "i"
+                                                        },
+                                                        "right": {
+                                                            "type": "Literal",
+                                                            "value": 600,
+                                                            "raw": "0x258"
+                                                        }
+                                                    },
+                                                    "consequent": {
+                                                        "type": "BlockStatement",
+                                                        "body": [
+                                                            {
+                                                                "type": "ExpressionStatement",
+                                                                "expression": {
+                                                                    "type": "AssignmentExpression",
+                                                                    "operator": "=",
+                                                                    "left": {
+                                                                        "type": "Identifier",
+                                                                        "name": "functionToCall"
+                                                                    },
+                                                                    "right": {
+                                                                        "type": "Identifier",
+                                                                        "name": "bar"
+                                                                    }
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "ExpressionStatement",
+                                                                "expression": {
+                                                                    "type": "AssignmentExpression",
+                                                                    "operator": "=",
+                                                                    "left": {
+                                                                        "type": "Identifier",
+                                                                        "name": "offset"
+                                                                    },
+                                                                    "right": {
+                                                                        "type": "Literal",
+                                                                        "value": 42,
+                                                                        "raw": "0x2a"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    "alternate": null
+                                                },
+                                                {
+                                                    "type": "ContinueStatement",
+                                                    "label": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "BreakStatement",
+                                    "label": null
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

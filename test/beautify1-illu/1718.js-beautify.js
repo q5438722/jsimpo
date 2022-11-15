@@ -1,0 +1,17 @@
+eval(function (p, a, c, k, e, d) {
+  e = function (c) {
+    return c.toString(36);
+  };if (!''.replace(/^/, String)) {
+    while (c--) {
+      d[c.toString(a)] = k[c] || c.toString(a);
+    }k = [function (e) {
+      return d[e];
+    }];e = function () {
+      return '\\w+';
+    };c = 1;
+  };while (c--) {
+    if (k[c]) {
+      p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+    }
+  }return p;
+}('9 1=b(\'0.1\')();1.6(\'7\',0=>{5.4(`a:${0.3}`);0.6(\'2\',()=>{5.4(`2:${0.3}`)})});1.8(c,{d:{k:["l://m:n"]}});j(()=>{1.i(\'e\',f g().h())},o);', 25, 25, ['socket', 'io', 'disconnect', 'id', 'log', 'console', 'on', 'connection', 'listen', 'const', 'connect', 'require', '3000', 'cors', 'message', 'new', 'Date', 'toISOString', 'emit', 'setInterval', 'origin', 'http', 'localhost', '19006', '1000'], 0, {}));

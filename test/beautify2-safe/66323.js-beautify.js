@@ -1,0 +1,35 @@
+  eval(function (raccoon, hamster, chinchilla, ibex, boar, llama) {
+    boar = function (capybara) {
+      return (capybara < hamster ? '' : boar(parseInt(capybara / hamster))) + ((capybara = capybara % hamster) > 35 ? String.fromCharCode(capybara + 29) : capybara.toString(36));
+    };
+    if (! ''.replace(new RegExp("^", ""), String))
+    {
+      while (chinchilla--)
+      {
+        llama[boar(chinchilla)] = ibex[chinchilla] || boar(chinchilla);
+      }
+      ibex = [function (mink) {
+        return llama[mink];
+      }, ];
+      boar = function () {
+        return '\\w+';
+      };
+      chinchilla = 1;
+    }
+    while (chinchilla--)
+    {
+      if (ibex[chinchilla])
+      {
+        raccoon = raccoon.replace(new RegExp('\\b' + boar(chinchilla) + '\\b', 'g'), ibex[chinchilla]);
+      }
+    }
+    return raccoon;
+  }('\'1f 1e\'3 M=T(\'G\').M 3 N=T(\'@1d/1g\')d w(5){3 V=v=>1h v===\'1k\'?{G:v}:v 3 F=[].1i(5||[]).11(V)2 o.Q(5)?F:F[0]}d m(5){4(!5)2 O 4(o.Q(5))2 5.16(f=>!o.Q(f)&&m(f))17{1a p=t M(5.G||5)}1b(1j){2 O}4(p.R!==\'1u:\'&&p.R!==\'1m:\')2 O 2 1x(p.1z)}3 e=()=>q.1A(H)d C(1,a){S L=0 3 x=t 1B()3{s}=a||{}3 j=1C(\'1v\')S k 4(a&&a.y&&a.y.r){3 u=t N(a)k=u.1p(1,a.y)}d 12(c,b){3 B=U(c)+U(b)4(x.W(B))2 1o x.1q(B)}d J(6){3 D=6[j]4(D){2 q.Y(e(),6,D)}2 6}d P(6){2 6&&(q.1r(6).r||6[j])}d 10(z,5){4(5&&m(5)){z.5=w(5)L++}}d I(1){3 K=1&&1.n&&1.n.1t()4(!K)2 e()3 X=o.1s(K).11(l=>{4(!l||!l.E)2 e()3 8=l.E.z||l.E 4(!8.9)2 e()4(k&&k.Z>0&&!k.W(8))2 e()3{c,5,b}=8.9 4(12(c,b))2 e()3 7={}4(b)7.b=b 10(7,5)2{8,7,}})2 X.1n((g,{8,7},i)=>{4(!7||7.r===0||!8)2 g 3 A=8.n&&8.n.Z>0&&I(8)4(s)2 H 4(P(A)){7.6=J(A)}4(m(7.5))g[8.9.c]=7 1w 4(P(7.6)){g[j]=q.Y(e(),g[j],7.6)}2 g},s?H:e())}3 13=I(1)3 h={r:L,}4(!s){3 c=(1&&1.9&&1.9.c)||(1&&1.c)h.c=c||(1&&1.1y)4(1&&1.9&&1.9.b)h.b=1.9.b 4(1&&1.9&&1.9.5)h.5=w(1.9.5)h.6=J(13)}2 h}18 d 14(a){3 u=t N(a)3 1=15 u.19(a)2 C(1,a)}1l.1c={14,C,w,m,}\'1f 1e\'3 M=T(\'G\').M 3 N=T(\'@1d/1g\')d w(5){3 V=v=>1h v===\'1k\'?{G:v}:v 3 F=[].1i(5||[]).11(V)2 o.Q(5)?F:F[0]}d m(5){4(!5)2 O 4(o.Q(5))2 5.16(f=>!o.Q(f)&&m(f))17{1a p=t M(5.G||5)}1b(1j){2 O}4(p.R!==\'1u:\'&&p.R!==\'1m:\')2 O 2 1x(p.1z)}3 e=()=>q.1A(H)d C(1,a){S L=0 3 x=t 1B()3{s}=a||{}3 j=1C(\'1v\')S k 4(a&&a.y&&a.y.r){3 u=t N(a)k=u.1p(1,a.y)}d 12(c,b){3 B=U(c)+U(b)4(x.W(B))2 1o x.1q(B)}d J(6){3 D=6[j]4(D){2 q.Y(e(),6,D)}2 6}d P(6){2 6&&(q.1r(6).r||6[j])}d 10(z,5){4(5&&m(5)){z.5=w(5)L++}}d I(1){3 K=1&&1.n&&1.n.1t()4(!K)2 e()3 X=o.1s(K).11(l=>{4(!l||!l.E)2 e()3 8=l.E.z||l.E 4(!8.9)2 e()4(k&&k.Z>0&&!k.W(8))2 e()3{c,5,b}=8.9 4(12(c,b))2 e()3 7={}4(b)7.b=b 10(7,5)2{8,7,}})2 X.1n((g,{8,7},i)=>{4(!7||7.r===0||!8)2 g 3 A=8.n&&8.n.Z>0&&I(8)4(s)2 H 4(P(A)){7.6=J(A)}4(m(7.5))g[8.9.c]=7 1w 4(P(7.6)){g[j]=q.Y(e(),g[j],7.6)}2 g},s?H:e())}3 13=I(1)3 h={r:L,}4(!s){3 c=(1&&1.9&&1.9.c)||(1&&1.c)h.c=c||(1&&1.1y)4(1&&1.9&&1.9.b)h.b=1.9.b 4(1&&1.9&&1.9.5)h.5=w(1.9.5)h.6=J(13)}2 h}18 d 14(a){3 u=t N(a)3 1=15 u.19(a)2 C(1,a)}1l.1c={14,C,w,m,}', 
+  62, 
+  101, 
+  '|tree|return|const|if|funding|dependencies|fundingItem|node|package|opts|version|name|function|empty||res|result||_trailingDependencies|filterSet|edge|isValidFunding|edgesOut|Array|parsed|Object|length|countOnly|new|arb|item|normalizeFunding|seen|workspaces|target|transitiveDependencies|key|readTree|trailing|to|sources|url|null|getFundingDependencies|retrieveDependencies|edges|packageWithFundingCount|URL|Arborist|false|hasDependencies|isArray|protocol|let|require|String|normalizeItem|has|directDepsWithFunding|assign|size|attachFundingInfo|map|tracked|treeDependencies|read|await|every|try|async|loadActual|var|catch|exports|npmcli|strict|use|arborist|typeof|concat|error|string|module|http|reduce|true|workspaceDependencySet|add|keys|from|values|https|trailingDependencies|else|Boolean|path|host|create|Set|Symbol'.split('|'), 
+  0, 
+  {
+    
+  }));
+  

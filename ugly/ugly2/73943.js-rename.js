@@ -1,0 +1,1 @@
+import toNumber from"./toNumber.js";const INFINITY=1/0;const MAX_INTEGER=17976931348623157e292;function toFinite(t){if(!t){return t===0?t:0}t=toNumber(t);if(t===INFINITY||t===-INFINITY){const o=t<0?-1:1;return o*MAX_INTEGER}return t===t?t:0}export default toFinite;

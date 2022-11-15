@@ -1,0 +1,1 @@
+var MergeXY=function(t,a,r){var e=Math.min(t.x,a);var h=Math.max(t.right,a);t.x=e;t.width=h-e;var i=Math.min(t.y,r);var m=Math.max(t.bottom,r);t.y=i;t.height=m-i;return t};module.exports=MergeXY;

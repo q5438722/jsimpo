@@ -1,0 +1,1 @@
+import"./module-unused";import{NativeClass,TranspiledClass}from"./module-used";export function test(){

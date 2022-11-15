@@ -1,0 +1,29 @@
+(function () {
+    var _0x2ccaee = new String('ab');
+    function _0x4d99c8(_0x264b34, _0x389321, _0x3d26fe) {
+        _0x264b34[_0x389321] = _0x3d26fe;
+    }
+    function _0x46d6d4(_0x25e035, _0x186b36) {
+        return _0x25e035[_0x186b36];
+    }
+    _0x4d99c8(_0x2ccaee, 2, 10), _0x46d6d4(_0x2ccaee, 2), _0x4d99c8(_0x2ccaee, 0, 100), assertEquals('a', _0x46d6d4(_0x2ccaee, 0));
+}(), function () {
+    var _0x34d4b1 = { '__proto__': new String('ab') };
+    function _0x1e25be(_0x37f159, _0x147954, _0x241275) {
+        _0x37f159[_0x147954] = _0x241275;
+    }
+    function _0x5c6920(_0x3a0fce, _0x41425e) {
+        return _0x3a0fce[_0x41425e];
+    }
+    _0x1e25be(_0x34d4b1, 2, 10), _0x5c6920(_0x34d4b1, 2), _0x1e25be(_0x34d4b1, 0, 100), assertEquals('a', _0x5c6920(_0x34d4b1, 0));
+}(), function () {
+    'use strict';
+    var _0x322972 = _0x4695;
+    var _0x59e0c1 = { '__proto__': {} };
+    function _0x482a9b(_0x52ab52, _0x5f5696, _0x2bb307) {
+        _0x52ab52[_0x5f5696] = _0x2bb307;
+    }
+    _0x482a9b(_0x59e0c1, 0, 100), _0x59e0c1[_0x322972(495)][_0x322972(495)] = new String(_0x322972(496)), assertThrows(function () {
+        _0x482a9b(_0x59e0c1, 1, 100);
+    });
+}());

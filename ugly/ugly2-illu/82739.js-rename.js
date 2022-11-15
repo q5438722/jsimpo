@@ -1,0 +1,139 @@
+const should = require("should");
+
+const sinon = require("sinon");
+
+const moment = require("moment");
+
+const supertest = require("supertest");
+
+const _ = require("lodash");
+
+const labs = require("../../../../../core/shared/labs");
+
+const testUtils = require("../../../../utils");
+
+const localUtils = require("./utils");
+
+const configUtils = require("../../../../utils/configUtils");
+
+const urlUtils = require("../../../../utils/urlUtils");
+
+const config = require("../../../../../core/shared/config");
+
+const ghost = testUtils.startGhost;
+var request;
+describe("api/v3/content/posts", function () {
+  before(function () {
+    return ghost().then(function () {
+      request = supertest.agent(config.get("url"));
+    }).then(function () {
+      return testUtils.initFixtures("users:no-owner", "user:inactive", "posts", "tags:extra", "api_keys");
+    });
+  });afterEach(function () {
+    configUtils.restore();urlUtils.restore();
+  });const l = localUtils.getValidKey();
+  it("browse posts", function (o) {
+    request.get(localUtils.API.getApiQuery(`posts/?key=${l}`)).set("Origin", testUtils.API.getURL()).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).end(function (t, e) {
+      if (t) {
+        return o(t);
+      }e.headers.vary.should.eql("Accept-Encoding");should.exist(e.headers.access-control-allow-origin);should.not.exist(e.headers.x-cache-invalidate);const s = e.body;
+      should.exist(s.posts);localUtils.API.checkResponse(s, "posts");s.posts.should.have.length(11);localUtils.API.checkResponse(s.posts[0], "post");localUtils.API.checkResponse(s.meta.pagination, "pagination");_.isBoolean(s.posts[0].featured).should.eql(true);s.posts[0].slug.should.eql("welcome");s.posts[6].slug.should.eql("integrations");s.meta.pagination.page.should.eql(1);s.meta.pagination.limit.should.eql(15);s.meta.pagination.pages.should.eql(1);s.meta.pagination.total.should.eql(11);s.meta.pagination.hasOwnProperty("next").should.be.true();s.meta.pagination.hasOwnProperty("prev").should.be.true();should.not.exist(s.meta.pagination.next);should.not.exist(s.meta.pagination.prev);o();
+    });
+  });it("browse posts with related authors/tags also returns primary_author/primary_tag", function (o) {
+    request.get(localUtils.API.getApiQuery(`posts/?key=${l}&include=authors,tags`)).set("Origin", testUtils.API.getURL()).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).end(function (t, e) {
+      if (t) {
+        return o(t);
+      }e.headers.vary.should.eql("Accept-Encoding");should.exist(e.headers.access-control-allow-origin);should.not.exist(e.headers.x-cache-invalidate);const s = e.body;
+      should.exist(s.posts);localUtils.API.checkResponse(s, "posts");s.posts.should.have.length(11);localUtils.API.checkResponse(s.posts[0], "post", ["authors", "tags", "primary_tag", "primary_author"], null);localUtils.API.checkResponse(s.meta.pagination, "pagination");_.isBoolean(s.posts[0].featured).should.eql(true);s.posts[0].slug.should.eql("welcome");s.posts[6].slug.should.eql("integrations");s.meta.pagination.page.should.eql(1);s.meta.pagination.limit.should.eql(15);s.meta.pagination.pages.should.eql(1);s.meta.pagination.total.should.eql(11);s.meta.pagination.hasOwnProperty("next").should.be.true();s.meta.pagination.hasOwnProperty("prev").should.be.true();should.not.exist(s.meta.pagination.next);should.not.exist(s.meta.pagination.prev);o();
+    });
+  });it("browse posts with basic page filter should not return pages", function (o) {
+    request.get(localUtils.API.getApiQuery(`posts/?key=${l}&filter=page:true`)).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).end(function (t, e) {
+      if (t) {
+        return o(t);
+      }const s = e.body;
+      should.not.exist(e.headers.x-cache-invalidate);should.exist(s.posts);localUtils.API.checkResponse(s, "posts");localUtils.API.checkResponse(s.meta.pagination, "pagination");s.posts.should.have.length(0);o();
+    });
+  });it("browse posts with basic page filter should not return pages", function (o) {
+    request.get(localUtils.API.getApiQuery(`posts/?key=${l}&filter=page:true,featured:true`)).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).end(function (t, e) {
+      if (t) {
+        return o(t);
+      }const s = e.body;
+      should.not.exist(e.headers.x-cache-invalidate);should.exist(s.posts);localUtils.API.checkResponse(s, "posts");localUtils.API.checkResponse(s.meta.pagination, "pagination");s.posts.should.have.length(2);s.posts.filter(t => t.page === true).should.have.length(0);o();
+    });
+  });it("browse posts with published and draft status, should not return drafts", function (o) {
+    request.get(localUtils.API.getApiQuery(`posts/?key=${l}&filter=status:published,status:draft`)).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).end(function (t, e) {
+      if (t) {
+        return o(t);
+      }const s = e.body;
+      s.posts.should.be.an.Array().with.lengthOf(11);o();
+    });
+  });it("browse posts with slug filter, should order in slug order", function () {
+    return request.get(localUtils.API.getApiQuery(`posts/?key=${l}&filter=slug:[write,ghostly-kitchen-sink,grow]`)).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).then(t => {
+      const e = t.body;
+      e.posts.should.be.an.Array().with.lengthOf(3);e.posts[0].slug.should.equal("write");e.posts[1].slug.should.equal("ghostly-kitchen-sink");e.posts[2].slug.should.equal("grow");
+    });
+  });it("browse posts with slug filter should order taking order parameter into account", function () {
+    return request.get(localUtils.API.getApiQuery(`posts/?key=${l}&order=slug%20DESC&filter=slug:[write,ghostly-kitchen-sink,grow]`)).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).then(t => {
+      const e = t.body;
+      e.posts.should.be.an.Array().with.lengthOf(3);e.posts[0].slug.should.equal("write");e.posts[1].slug.should.equal("grow");e.posts[2].slug.should.equal("ghostly-kitchen-sink");
+    });
+  });it("ensure origin header on redirect is not getting lost", function (s) {
+    configUtils.set("admin:url", "http://localhost:9999");urlUtils.stubUrlUtilsFromConfig();request.get(localUtils.API.getApiQuery(`posts?key=${l}`)).set("Origin", "https://example.com").expect("Cache-Control", testUtils.cacheRules.year).expect(301).end(function (t, e) {
+      if (t) {
+        return s(t);
+      }e.headers.vary.should.eql("Accept, Accept-Encoding");e.headers.location.should.eql(`http://localhost:9999/ghost/api/v3/content/posts/?key=${l}`);should.exist(e.headers.access-control-allow-origin);should.not.exist(e.headers.x-cache-invalidate);s();
+    });
+  });it("can't read page", function () {
+    return request.get(localUtils.API.getApiQuery(`posts/${testUtils.DataGenerator.Content.posts[5].id}/?key=${l}`)).set("Origin", testUtils.API.getURL()).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(404);
+  });it("can read post with fields", function () {
+    const t = testUtils.DataGenerator.Content.posts.find(t => t.slug === "not-so-short-bit-complex").id;
+    return request.get(localUtils.API.getApiQuery(`posts/${t}/?key=${l}&fields=title,slug,excerpt&formats=plaintext`)).set("Origin", testUtils.API.getURL()).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).then(t => {
+      localUtils.API.checkResponse(t.body.posts[0], "post", null, null, ["id", "title", "slug", "excerpt", "plaintext"]);t.body.posts[0].excerpt.should.match(/\* Aliquam \[http:\/\/127.0.0.1:2369\/about#nowhere\]/);
+    });
+  });describe("content gating", function () {
+    var t;
+    var e;
+    var s;
+    var o;
+    before(function () {
+      sinon.stub(labs, "isSet").withArgs("members").returns(true);
+    });before(function () {
+      t = testUtils.DataGenerator.forKnex.createPost({ slug: "free-to-see", visibility: "public", published_at: moment().add(15, "seconds").toDate() });e = testUtils.DataGenerator.forKnex.createPost({ slug: "thou-shalt-not-be-seen", visibility: "members", published_at: moment().add(45, "seconds").toDate() });s = testUtils.DataGenerator.forKnex.createPost({ slug: "thou-shalt-be-paid-for", visibility: "paid", published_at: moment().add(30, "seconds").toDate() });o = testUtils.DataGenerator.forKnex.createPost({ slug: "thou-shalt-have-a-taste", visibility: "members", mobiledoc: "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"paywall\",{}]],\"sections\":[[1,\"p\",[[0,[],0,\"Free content\"]]],[10,0],[1,\"p\",[[0,[],0,\"Members content\"]]]]}", html: "<p>Free content</p><!--members-only--><p>Members content</p>", published_at: moment().add(5, "seconds").toDate() });return testUtils.fixtures.insertPosts([t, e, s, o]);
+    });it("public post fields are always visible", function () {
+      return request.get(localUtils.API.getApiQuery(`posts/${t.id}/?key=${l}&fields=slug,html,plaintext&formats=html,plaintext`)).set("Origin", testUtils.API.getURL()).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).then(t => {
+        const e = t.body;
+        should.exist(e.posts);const s = e.posts[0];
+        localUtils.API.checkResponse(s, "post", null, null, ["id", "slug", "html", "plaintext"]);s.slug.should.eql("free-to-see");s.html.should.not.eql("");s.plaintext.should.not.eql("");
+      });
+    });it("cannot read members only post content", function () {
+      return request.get(localUtils.API.getApiQuery(`posts/${e.id}/?key=${l}`)).set("Origin", testUtils.API.getURL()).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).then(t => {
+        const e = t.body;
+        should.exist(e.posts);const s = e.posts[0];
+        localUtils.API.checkResponse(s, "post", null, null);s.slug.should.eql("thou-shalt-not-be-seen");s.html.should.eql("");s.excerpt.should.eql("");
+      });
+    });it("cannot read paid only post content", function () {
+      return request.get(localUtils.API.getApiQuery(`posts/${s.id}/?key=${l}`)).set("Origin", testUtils.API.getURL()).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).then(t => {
+        const e = t.body;
+        should.exist(e.posts);const s = e.posts[0];
+        localUtils.API.checkResponse(s, "post", null, null);s.slug.should.eql("thou-shalt-be-paid-for");s.html.should.eql("");s.excerpt.should.eql("");
+      });
+    });it("cannot read members only post plaintext", function () {
+      return request.get(localUtils.API.getApiQuery(`posts/${e.id}/?key=${l}&formats=html,plaintext&fields=html,plaintext`)).set("Origin", testUtils.API.getURL()).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).then(t => {
+        const e = t.body;
+        should.exist(e.posts);const s = e.posts[0];
+        localUtils.API.checkResponse(s, "post", null, null, ["id", "html", "plaintext"]);s.html.should.eql("");s.plaintext.should.eql("");
+      });
+    });it("can read \"free\" html and plaintext content of members post when using paywall card", function () {
+      return request.get(localUtils.API.getApiQuery(`posts/${o.id}/?key=${l}&formats=html,plaintext`)).set("Origin", testUtils.API.getURL()).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).then(t => {
+        const e = t.body;
+        should.exist(e.posts);const s = e.posts[0];
+        localUtils.API.checkResponse(s, "post", ["plaintext"]);s.html.should.eql("<p>Free content</p>");s.plaintext.should.eql("Free content");
+      });
+    });it("cannot browse members only posts content", function () {
+      return request.get(localUtils.API.getApiQuery(`posts/?key=${l}`)).set("Origin", testUtils.API.getURL()).expect("Content-Type", /json/).expect("Cache-Control", testUtils.cacheRules.private).expect(200).then(t => {
+        t.headers.vary.should.eql("Accept-Encoding");should.exist(t.headers.access-control-allow-origin);should.not.exist(t.headers.x-cache-invalidate);const e = t.body;
+        should.exist(e.posts);localUtils.API.checkResponse(e, "posts");e.posts.should.have.length(15);localUtils.API.checkResponse(e.posts[0], "post", null, null);localUtils.API.checkResponse(e.meta.pagination, "pagination");_.isBoolean(e.posts[0].featured).should.eql(true);e.posts[0].slug.should.eql("thou-shalt-not-be-seen");e.posts[1].slug.should.eql("thou-shalt-be-paid-for");e.posts[2].slug.should.eql("free-to-see");e.posts[3].slug.should.eql("thou-shalt-have-a-taste");e.posts[8].slug.should.eql("sell");e.posts[0].html.should.eql("");e.posts[1].html.should.eql("");e.posts[2].html.should.not.eql("");e.posts[8].html.should.not.eql("");e.posts[0].excerpt.should.eql("");e.posts[1].excerpt.should.eql("");e.posts[2].excerpt.should.not.eql("");e.posts[3].excerpt.should.not.eql("");e.posts[8].excerpt.should.not.eql("");e.meta.pagination.page.should.eql(1);e.meta.pagination.limit.should.eql(15);e.meta.pagination.pages.should.eql(1);e.meta.pagination.total.should.eql(15);e.meta.pagination.hasOwnProperty("next").should.be.true();e.meta.pagination.hasOwnProperty("prev").should.be.true();should.not.exist(e.meta.pagination.next);should.not.exist(e.meta.pagination.prev);
+      });
+    });
+  });
+});

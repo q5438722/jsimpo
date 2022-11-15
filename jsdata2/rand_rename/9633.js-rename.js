@@ -1,0 +1,1 @@
+exports.setValue=function(e){exports.value=e};

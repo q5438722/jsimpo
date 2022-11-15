@@ -1,0 +1,42 @@
+var _0x9cba = [
+    'foo',
+    'thingy',
+    '\x22foo\x22',
+    '449481KrtUGC',
+    '6dfIZFL',
+    '121789LnIgHB',
+    '631064MWZfJy',
+    '322205rBCdpM',
+    '1sooXgE',
+    '390366csuSTi',
+    '1xEaWFm',
+    '469790huUnjW',
+    '1660720yMECrD',
+    '__defineSetter__'
+];
+var _0x195f2c = _0xd574;
+(function (_0x134e78, _0xda7334) {
+    var _0x459ef2 = _0xd574;
+    while (!![]) {
+        try {
+            var _0x4810e1 = -parseInt(_0x459ef2(0x17e)) + parseInt(_0x459ef2(0x17f)) * -parseInt(_0x459ef2(0x180)) + -parseInt(_0x459ef2(0x181)) + -parseInt(_0x459ef2(0x182)) + -parseInt(_0x459ef2(0x183)) * -parseInt(_0x459ef2(0x184)) + parseInt(_0x459ef2(0x185)) * parseInt(_0x459ef2(0x186)) + parseInt(_0x459ef2(0x187));
+            if (_0x4810e1 === _0xda7334)
+                break;
+            else
+                _0x134e78['push'](_0x134e78['shift']());
+        } catch (_0x4aca9b) {
+            _0x134e78['push'](_0x134e78['shift']());
+        }
+    }
+}(_0x9cba, 0x1 * 0x97b81 + -0x63d * -0x115 + -0xa5242), description('Tests\x20that\x20creating\x20an\x20indexed\x20setter\x20on\x20the\x20global\x20object\x20doesn\x27t\x20break\x20things.'));
+function _0xd574(_0x1fdb0b, _0x305cb1) {
+    return _0xd574 = function (_0x3fa04e, _0x227e7a) {
+        _0x3fa04e = _0x3fa04e - (0x2201 + -0x2494 + 0x411);
+        var _0x212402 = _0x9cba[_0x3fa04e];
+        return _0x212402;
+    }, _0xd574(_0x1fdb0b, _0x305cb1);
+}
+var thingy;
+this[_0x195f2c(0x188)](-0xbaf + 0x2 * 0x44e + 0x33d * 0x1, function (_0x3e4076) {
+    thingy = _0x3e4076;
+}), this[0xbf1 * 0x2 + -0x266d + 0xf * 0xfb] = _0x195f2c(0x189), shouldBe(_0x195f2c(0x18a), _0x195f2c(0x18b));

@@ -1,0 +1,40 @@
+var _0x4411 = [
+    '4YNSvnL',
+    '8275mmTBCT',
+    '47130JQjJSQ',
+    '204035pLixym',
+    '1635dHTVwa',
+    '84PhPjOz',
+    '{\x22result\x22:{\x22profile\x22:{\x22head\x22:{\x22functionName\x22:\x22(root)\x22,\x22url\x22:\x22\x22,\x22lineNumber\x22:0,\x22totalTime\x22:495.7243772462511,\x22selfTime\x22:0,\x22numberOfCalls\x22:0,\x22visible\x22:true,\x22callUID\x22:2771605942,\x22children\x22:[{\x22functionName\x22:\x22(program)\x22,\x22url\x22:\x22\x22,\x22lineNumber\x22:0,\x22totalTime\x22:495.7243772462511,\x22selfTime\x22:495.7243772462511,\x22numberOfCalls\x22:0,\x22visible\x22:true,\x22callUID\x22:1902715303,\x22children\x22:[]}]},\x22bottomUpHead\x22:{\x22functionName\x22:\x22(root)\x22,\x22url\x22:\x22\x22,\x22lineNumber\x22:0,\x22totalTime\x22:495.7243772462511,\x22selfTime\x22:0,\x22numberOfCalls\x22:0,\x22visible\x22:true,\x22callUID\x22:2771605942,\x22children\x22:[{\x22functionName\x22:\x22(program)\x22,\x22url\x22:\x22\x22,\x22lineNumber\x22:0,\x22totalTime\x22:495.7243772462511,\x22selfTime\x22:495.7243772462511,\x22numberOfCalls\x22:0,\x22visible\x22:true,\x22callUID\x22:1902715303,\x22children\x22:[]}]}}},\x22id\x22:41}',
+    'parse',
+    'stringify',
+    '953KqdTDe',
+    '230xhELQV',
+    '101jRPkYq',
+    '925zgaGci',
+    '101820QknIbl'
+];
+var _0x3ebd38 = _0x2276;
+(function (_0x1f80d9, _0xf36e02) {
+    var _0x597cdc = _0x2276;
+    while (!![]) {
+        try {
+            var _0x49531d = -parseInt(_0x597cdc(0x1a0)) * -parseInt(_0x597cdc(0x1a1)) + -parseInt(_0x597cdc(0x1a2)) * parseInt(_0x597cdc(0x1a3)) + parseInt(_0x597cdc(0x1a4)) + parseInt(_0x597cdc(0x1a5)) * parseInt(_0x597cdc(0x1a6)) + -parseInt(_0x597cdc(0x1a7)) + -parseInt(_0x597cdc(0x1a8)) + parseInt(_0x597cdc(0x1a9)) * parseInt(_0x597cdc(0x1aa));
+            if (_0x49531d === _0xf36e02)
+                break;
+            else
+                _0x1f80d9['push'](_0x1f80d9['shift']());
+        } catch (_0x45c662) {
+            _0x1f80d9['push'](_0x1f80d9['shift']());
+        }
+    }
+}(_0x4411, 0x41c1a + -0x16a3 * -0x14 + -0x3a32a));
+function _0x2276(_0x5019e7, _0x4ffd23) {
+    return _0x2276 = function (_0x11a022, _0x23009e) {
+        _0x11a022 = _0x11a022 - (0x234d + -0x1385 + -0xc * 0x12e);
+        var _0x22aa76 = _0x4411[_0x11a022];
+        return _0x22aa76;
+    }, _0x2276(_0x5019e7, _0x4ffd23);
+}
+var msg = _0x3ebd38(0x1ab), obj = JSON['parse'](msg), obj2 = JSON[_0x3ebd38(0x1ac)](msg);
+assertEquals(JSON['stringify'](obj), JSON[_0x3ebd38(0x1ad)](obj2)), assertEquals(JSON['stringify'](obj, null, -0xaab + -0x1348 + -0x29 * -0xbb), JSON[_0x3ebd38(0x1ad)](obj2));

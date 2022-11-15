@@ -1,0 +1,1 @@
+var x_=0;this.__defineSetter__('x',function(x){x_=x});this.__defineGetter__('x',function(){return x_});this.__defineSetter__('y',function(x){});this.__defineGetter__('y',function(){return 7});function f(a){x=x+a;return x}function g(a){y=y+a;return y}assertEquals(1,f(1));assertEquals(3,f(2));assertEquals(7,g(1));assertEquals(7,g(2));

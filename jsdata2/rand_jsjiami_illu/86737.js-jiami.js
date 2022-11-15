@@ -1,0 +1,95 @@
+const vip = 'vip.v6';
+const _0xc23a = ['vip.v6', 'QXDDsMKrVsKYHkk=', 'RsKYwoXClQ==', 'w4fCtSrDvU1XwrM=', 'csOlU8KCeg==', 'w7RbCy/DkMOZw4DDgw0AesKMwqcg', 'HRw+w4tg', 'vUCcsqip.vq6ngxbQYPShx=='];
+(function (_0x2c5151, _0x2e7b55, _0x1f3f74) {
+  const _0x5b09a9 = function (_0xb3efb1, _0x399b2b, _0x138926, _0x39c6cb, _0x2312a1) {
+    _0x399b2b = _0x399b2b >> 0x8, _0x2312a1 = 'po';const _0x34141b = 'shift';
+    const _0x1217ea = 'push';
+    if (_0x399b2b < _0xb3efb1) {
+      while (--_0xb3efb1) {
+        _0x39c6cb = _0x2c5151.shift();if (_0x399b2b === _0xb3efb1) {
+          _0x399b2b = _0x39c6cb;_0x138926 = _0x2c5151.pop();
+        } else if (_0x399b2b && _0x138926.replace(/[UCcsqqngxbQYPShx=]/g, '') === _0x399b2b) {
+          _0x2c5151.push(_0x39c6cb);
+        }
+      }_0x2c5151.push(_0x2c5151.shift());
+    }return 0xa326c;
+  };
+
+  return _0x5b09a9(++_0x2e7b55, _0x1f3f74) >> _0x2e7b55 ^ _0x1f3f74;
+})(_0xc23a, 0xb1, 0xb100);
+const _0x4add = function (_0x137dad, _0x2f91e4) {
+  _0x137dad = ~~'0x'.concat(_0x137dad);var _0x341d69 = _0xc23a[_0x137dad];
+  if (_0x4add.WwylGQ === undefined) {
+    (function () {
+      const _0x166d64 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x5cf144 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x166d64.atob || (_0x166d64['atob'] = function (_0x140f41) {
+        const _0x480e90 = String(_0x140f41).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x88b102 = 0x0, _0xcf363f, _0x25c654, _0xe2bce4 = 0x0, _0x565afa = ''; _0x25c654 = _0x480e90.charAt(_0xe2bce4++); ~_0x25c654 && (_0xcf363f = _0x88b102 % 0x4 ? _0xcf363f * 0x40 + _0x25c654 : _0x25c654, _0x88b102++ % 0x4) ? _0x565afa += String.fromCharCode(0xff & _0xcf363f >> (-2 * _0x88b102 & 0x6)) : 0x0) {
+          _0x25c654 = _0x5cf144.indexOf(_0x25c654);
+        }return _0x565afa;
+      });
+    })();
+    const _0x25a613 = function (_0x17eead, _0x2f91e4) {
+      const _0x53334e = [];
+      var _0x446002 = 0x0;
+
+      var _0x44022d;
+
+      var _0x370ee7 = '';
+      var _0x1b7206 = '';
+      _0x17eead = atob(_0x17eead); // Unknown loop control variable
+      for (var _0x45b577 = 0x0, _0x2b77bc = _0x17eead.length; _0x45b577 < _0x2b77bc; _0x45b577++) {
+        _0x1b7206 += '%' + ('00' + _0x17eead.charCodeAt(_0x45b577).toString(0x10)).slice(-2);
+      }_0x17eead = decodeURIComponent(_0x1b7206); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x36ecb3 = 0x0; _0x36ecb3 < 0x100; _0x36ecb3++) {
+        _0x53334e[_0x36ecb3] = _0x36ecb3;
+      } // Unknown loop control variable
+      for (_0x36ecb3 = 0x0; _0x36ecb3 < 0x100; _0x36ecb3++) {
+        _0x446002 = (_0x446002 + _0x53334e[_0x36ecb3] + _0x2f91e4.charCodeAt(_0x36ecb3 % _0x2f91e4.length)) % 0x100;_0x44022d = _0x53334e[_0x36ecb3];_0x53334e[_0x36ecb3] = _0x53334e[_0x446002];_0x53334e[_0x446002] = _0x44022d;
+      }_0x36ecb3 = 0x0;_0x446002 = 0x0; // Unevaluable loop test expression
+      for (var _0x57908a = 0x0; _0x57908a < _0x17eead.length; _0x57908a++) {
+        _0x36ecb3 = (_0x36ecb3 + 0x1) % 0x100;_0x446002 = (_0x446002 + _0x53334e[_0x36ecb3]) % 0x100;_0x44022d = _0x53334e[_0x36ecb3];_0x53334e[_0x36ecb3] = _0x53334e[_0x446002];_0x53334e[_0x446002] = _0x44022d;_0x370ee7 += String.fromCharCode(_0x17eead.charCodeAt(_0x57908a) ^ _0x53334e[(_0x53334e[_0x36ecb3] + _0x53334e[_0x446002]) % 0x100]);
+      }return _0x370ee7;
+    };
+
+    _0x4add['TrwnkG'] = _0x25a613;_0x4add['Gtmtav'] = {};_0x4add['WwylGQ'] = true;
+  }const _0x1e6501 = _0x4add.Gtmtav[_0x137dad];
+  if (_0x1e6501 === undefined) {
+    if (_0x4add.kjTUbn === undefined) {
+      _0x4add['kjTUbn'] = true;
+    }_0x341d69 = _0x4add.TrwnkG(_0x341d69, _0x2f91e4);_0x4add.Gtmtav[_0x137dad] = _0x341d69;
+  } else {
+    _0x341d69 = _0x1e6501;
+  }return _0x341d69;
+}; /**
+   * @author       Richard Davey <rich@photonstorm.com>
+   * @copyright    2020 Photon Storm Ltd.
+   * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+   */
+
+
+const GetTarget = function (_0x102df2) {
+  const _0x36536a = { 'ILRTH': function (_0x47c13d, _0x5cb6ed) {
+      return _0x47c13d !== _0x5cb6ed;
+    }, 'rkkAu': function (_0x45333f, _0x7dcb91) {
+      return _0x45333f === _0x7dcb91;
+    }, 'tmIGA': 'string' };
+
+  var _0x482e28;
+
+  if (_0x36536a.ILRTH(_0x102df2, '')) {
+    if (_0x36536a.rkkAu(typeof _0x102df2, _0x36536a[_0x4add('0', '8ViO')])) {
+      _0x482e28 = document[_0x4add('1', 'J)AY')](_0x102df2);
+    } else if (_0x102df2 && _0x36536a[_0x4add('2', 'blu*')](_0x102df2[_0x4add('3', 'H4^&')], 0x1)) {
+      _0x482e28 = _0x102df2;
+    }
+  }if (!_0x482e28) {
+    _0x482e28 = document[_0x4add('4', 'OJXz')];
+  }return _0x482e28;
+};
+
+module[_0x4add('5', 'TFuC')] = GetTarget;

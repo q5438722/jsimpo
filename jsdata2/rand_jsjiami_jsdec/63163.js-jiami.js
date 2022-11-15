@@ -1,0 +1,1 @@
+assertThrows('function f() { break }',SyntaxError);assertThrows('function\x20f()\x20{\x20break\x20a\x20}',SyntaxError);assertThrows('function\x20f()\x20{\x20continue\x20}',SyntaxError);assertThrows('function f() { continue a }',SyntaxError);

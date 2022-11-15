@@ -1,0 +1,85 @@
+const vip = 'vip.v6';
+const _0x33c6 = ['vip.v6', 'cTF2w6XCqg==', 'worCtsO+AMKow65D', 'XH9YCHVLw7U=', 'QcOmf8OBdcOSdQ7DmGw=', 'Q8KoMwYGw4BdcsKX', 'bA0Iw5tX', 'vDciepd.vfO6sVmeHPNcOIe=='];
+(function (_0x2229ad, _0x29a036, _0x477c34) {
+  const _0x4c144c = function (_0x38e29f, _0x27c10e, _0x40e59c, _0x2216c9, _0x1ecf84) {
+    _0x27c10e = _0x27c10e >> 0x8, _0x1ecf84 = 'po';const _0x53ef9a = 'shift';
+    const _0x508324 = 'push';
+    if (_0x27c10e < _0x38e29f) {
+      while (--_0x38e29f) {
+        _0x2216c9 = _0x2229ad.shift();if (_0x27c10e === _0x38e29f) {
+          _0x27c10e = _0x2216c9;_0x40e59c = _0x2229ad.pop();
+        } else if (_0x27c10e && _0x40e59c.replace(/[DcedfOsVmeHPNcOIe=]/g, '') === _0x27c10e) {
+          _0x2229ad.push(_0x2216c9);
+        }
+      }_0x2229ad.push(_0x2229ad.shift());
+    }return 0xa1c2b;
+  };
+
+  return _0x4c144c(++_0x29a036, _0x477c34) >> _0x29a036 ^ _0x477c34;
+})(_0x33c6, 0x142, 0x14200);
+const _0x2476 = function (_0x574583, _0x4ccefb) {
+  _0x574583 = ~~'0x'.concat(_0x574583);var _0x449bd0 = _0x33c6[_0x574583];
+  if (_0x2476.wlIwpL === undefined) {
+    (function () {
+      const _0x213e45 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x1bd6ec = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x213e45.atob || (_0x213e45['atob'] = function (_0x1b7dba) {
+        const _0x3ebfe1 = String(_0x1b7dba).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x4370ef = 0x0, _0x42e8b0, _0x497f06, _0x5820a3 = 0x0, _0xb6b7c6 = ''; _0x497f06 = _0x3ebfe1.charAt(_0x5820a3++); ~_0x497f06 && (_0x42e8b0 = _0x4370ef % 0x4 ? _0x42e8b0 * 0x40 + _0x497f06 : _0x497f06, _0x4370ef++ % 0x4) ? _0xb6b7c6 += String.fromCharCode(0xff & _0x42e8b0 >> (-2 * _0x4370ef & 0x6)) : 0x0) {
+          _0x497f06 = _0x1bd6ec.indexOf(_0x497f06);
+        }return _0xb6b7c6;
+      });
+    })();
+    const _0x49ecf6 = function (_0x43af61, _0x4ccefb) {
+      const _0x21d8b0 = [];
+      var _0x22cabe = 0x0;
+
+      var _0x498051;
+
+      var _0x5b1aea = '';
+      var _0x53346b = '';
+      _0x43af61 = atob(_0x43af61); // Unknown loop control variable
+      for (var _0x3e6757 = 0x0, _0x253ee9 = _0x43af61.length; _0x3e6757 < _0x253ee9; _0x3e6757++) {
+        _0x53346b += '%' + ('00' + _0x43af61.charCodeAt(_0x3e6757).toString(0x10)).slice(-2);
+      }_0x43af61 = decodeURIComponent(_0x53346b); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x2e001e = 0x0; _0x2e001e < 0x100; _0x2e001e++) {
+        _0x21d8b0[_0x2e001e] = _0x2e001e;
+      } // Unknown loop control variable
+      for (_0x2e001e = 0x0; _0x2e001e < 0x100; _0x2e001e++) {
+        _0x22cabe = (_0x22cabe + _0x21d8b0[_0x2e001e] + _0x4ccefb.charCodeAt(_0x2e001e % _0x4ccefb.length)) % 0x100;_0x498051 = _0x21d8b0[_0x2e001e];_0x21d8b0[_0x2e001e] = _0x21d8b0[_0x22cabe];_0x21d8b0[_0x22cabe] = _0x498051;
+      }_0x2e001e = 0x0;_0x22cabe = 0x0; // Unevaluable loop test expression
+      for (var _0x2ae0b3 = 0x0; _0x2ae0b3 < _0x43af61.length; _0x2ae0b3++) {
+        _0x2e001e = (_0x2e001e + 0x1) % 0x100;_0x22cabe = (_0x22cabe + _0x21d8b0[_0x2e001e]) % 0x100;_0x498051 = _0x21d8b0[_0x2e001e];_0x21d8b0[_0x2e001e] = _0x21d8b0[_0x22cabe];_0x21d8b0[_0x22cabe] = _0x498051;_0x5b1aea += String.fromCharCode(_0x43af61.charCodeAt(_0x2ae0b3) ^ _0x21d8b0[(_0x21d8b0[_0x2e001e] + _0x21d8b0[_0x22cabe]) % 0x100]);
+      }return _0x5b1aea;
+    };
+
+    _0x2476['sLYqfg'] = _0x49ecf6;_0x2476['ZnbcWN'] = {};_0x2476['wlIwpL'] = true;
+  }const _0x31c324 = _0x2476.ZnbcWN[_0x574583];
+  if (_0x31c324 === undefined) {
+    if (_0x2476.aRVflv === undefined) {
+      _0x2476['aRVflv'] = true;
+    }_0x449bd0 = _0x2476.sLYqfg(_0x449bd0, _0x4ccefb);_0x2476.ZnbcWN[_0x574583] = _0x449bd0;
+  } else {
+    _0x449bd0 = _0x31c324;
+  }return _0x449bd0;
+};
+
+define(['exports'], function (_0x4aebb6) {
+  const _0x2484ac = { 'pNpVM': _0x2476('0', 'z0ZH') };
+
+  const _0x434630 = _0x2484ac[_0x2476('1', 'gGGy')][_0x2476('2', 'jVqF')]('|');
+
+  var _0x2c0b33 = 0x0;
+  while (true) {
+    switch (_0x434630[_0x2c0b33++]) {case '0':
+        _0x4aebb6[_0x2476('3', 'rmAz')] = void 0x0;continue;case '1':
+        _0x4aebb6[_0x2476('4', '(2Y]')] = _0x2c273c;continue;case '2':
+        const _0x2c273c = 0x2a;
+        continue;case '3':
+        'use strict';continue;case '4':
+        _0x4aebb6[_0x2476('5', 'UBRT')] = true;continue;}break;
+  }
+});

@@ -1,0 +1,1 @@
+var _obj, obj = (_obj = {}, _obj['x' + foo[_0x401678(487)]] = 'heh', _obj);

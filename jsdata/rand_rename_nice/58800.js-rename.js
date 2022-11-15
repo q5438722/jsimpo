@@ -1,0 +1,12 @@
+'use strict';
+let options = {};
+new Intl.DateTimeFormat(undefined, options);
+assertEquals([], Object.getOwnPropertyNames(options));
+let date = new Date;
+date.toLocaleString(undefined, options);
+assertEquals([], Object.getOwnPropertyNames(options));
+date.toLocaleDateString(undefined, options);
+assertEquals([], Object.getOwnPropertyNames(options));
+date.toLocaleTimeString(undefined, options);
+assertEquals([], Object.getOwnPropertyNames(options));
+

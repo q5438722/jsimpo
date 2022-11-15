@@ -1,0 +1,36 @@
+'use strict';
+import Button from "../button.js";
+import Component from "../component.js";
+import document from "global/document";
+class MuteToggle extends Button {
+  constructor(player, options) {
+    super(player, options);
+    this.on(player, "fullscreenchange", (e) => {
+      return this.handleFullscreenChange(e);
+    });
+    if (document[player.fsApi_.fullscreenEnabled] === false) {
+      this.disable();
+    }
+  }
+  buildCSSClass() {
+    return `vjs-fullscreen-control ${super.buildCSSClass()}`;
+  }
+  handleFullscreenChange(event) {
+    if (this.player_.isFullscreen()) {
+      this.controlText("Non-Fullscreen");
+    } else {
+      this.controlText("Fullscreen");
+    }
+  }
+  handleClick(options) {
+    if (!this.player_.isFullscreen()) {
+      this.player_.requestFullscreen();
+    } else {
+      this.player_.exitFullscreen();
+    }
+  }
+}
+MuteToggle.prototype.controlText_ = "Fullscreen";
+Component.registerComponent("FullscreenToggle", MuteToggle);
+export default MuteToggle;
+

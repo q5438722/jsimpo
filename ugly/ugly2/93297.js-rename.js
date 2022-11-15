@@ -1,0 +1,1 @@
+export default function dpTopDownJumpGame(t,n=0,o=[],e=[]){if(n===t.length-1){return true}const u=[...e];if(!u.length){t.forEach(()=>u.push(undefined));u[e.length-1]=true}const f=Math.min(t[n],t.length-1-n);for(let e=f;e>0;e-=1){const r=n+e;if(u[r]!==false){o.push(r);const p=dpTopDownJumpGame(t,r,o,u);if(p){return true}o.pop();u[r]=false}}return false}

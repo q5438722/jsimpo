@@ -1,0 +1,263 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertThrows"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "for(const { method() {} } = this) {}",
+                        "raw": "'for(const\\x20{\\x20method()\\x20{}\\x20}\\x20=\\x20this)\\x20{}'"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "SyntaxError"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertThrows"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "var { method() {} } = this;",
+                        "raw": "'var\\x20{\\x20method()\\x20{}\\x20}\\x20=\\x20this;'"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "SyntaxError"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertThrows"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "for(const { *method() {} } = this) {}",
+                        "raw": "'for(const\\x20{\\x20*method()\\x20{}\\x20}\\x20=\\x20this)\\x20{}'"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "SyntaxError"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertThrows"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "var { *method() {} } = this;",
+                        "raw": "'var\\x20{\\x20*method()\\x20{}\\x20}\\x20=\\x20this;'"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "SyntaxError"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertThrows"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "for(var { get foo() {} } = this) {}",
+                        "raw": "'for(var { get foo() {} } = this) {}'"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "SyntaxError"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertThrows"
+                },
+                "arguments": [
+                    {
+                        "type": "Literal",
+                        "value": "for(var { set foo() {} } = this) {}",
+                        "raw": "'for(var { set foo() {} } = this) {}'"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "SyntaxError"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ForInStatement",
+            "left": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "ObjectPattern",
+                            "properties": [
+                                {
+                                    "type": "Property",
+                                    "key": {
+                                        "type": "Identifier",
+                                        "name": "name"
+                                    },
+                                    "computed": false,
+                                    "value": {
+                                        "type": "AssignmentPattern",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "name"
+                                        },
+                                        "right": {
+                                            "type": "BinaryExpression",
+                                            "operator": "+",
+                                            "left": {
+                                                "type": "Literal",
+                                                "value": "",
+                                                "raw": "''"
+                                            },
+                                            "right": {
+                                                "type": "ObjectExpression",
+                                                "properties": [
+                                                    {
+                                                        "type": "Property",
+                                                        "key": {
+                                                            "type": "Literal",
+                                                            "value": "toString",
+                                                            "raw": "'toString'"
+                                                        },
+                                                        "computed": false,
+                                                        "value": {
+                                                            "type": "FunctionExpression",
+                                                            "id": null,
+                                                            "params": [],
+                                                            "body": {
+                                                                "type": "BlockStatement",
+                                                                "body": [
+                                                                    {
+                                                                        "type": "ReturnStatement",
+                                                                        "argument": {
+                                                                            "type": "Literal",
+                                                                            "value": "test",
+                                                                            "raw": "'test'"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "generator": false,
+                                                            "expression": false,
+                                                            "async": false
+                                                        },
+                                                        "kind": "init",
+                                                        "method": true,
+                                                        "shorthand": false
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "kind": "init",
+                                    "method": false,
+                                    "shorthand": true
+                                }
+                            ]
+                        },
+                        "init": null
+                    }
+                ],
+                "kind": "var"
+            },
+            "right": {
+                "type": "ObjectExpression",
+                "properties": [
+                    {
+                        "type": "Property",
+                        "key": {
+                            "type": "Literal",
+                            "value": "a",
+                            "raw": "'a'"
+                        },
+                        "computed": false,
+                        "value": {
+                            "type": "Literal",
+                            "value": 1,
+                            "raw": "0x1"
+                        },
+                        "kind": "init",
+                        "method": false,
+                        "shorthand": false
+                    }
+                ]
+            },
+            "body": {
+                "type": "BreakStatement",
+                "label": null
+            },
+            "each": false
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "assertEquals"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "name"
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "test",
+                        "raw": "'test'"
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

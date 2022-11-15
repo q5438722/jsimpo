@@ -1,0 +1,20 @@
+"use strict";
+function isForStatementUpdate(e) {
+  const t = e.parent;
+  return t.type === "ForStatement" && t.update === e;
+}function isForLoopAfterthought(e) {
+  const t = e.parent;
+  if (t.type === "SequenceExpression") {
+    return isForLoopAfterthought(t);
+  }return isForStatementUpdate(e);
+}module.exports = { meta: { type: "suggestion", docs: { description: "disallow the unary operators `++` and `--`", category: "Stylistic Issues", recommended: false, url: "https://eslint.org/docs/rules/no-plusplus" }, schema: [{ type: "object", properties: { allowForLoopAfterthoughts: { type: "boolean", default: false } }, additionalProperties: false }], messages: { unexpectedUnaryOp: "Unary operator '{{operator}}' used." } }, create(t) {
+    const e = t.options[0];
+    var o = false;
+    if (typeof e === "object") {
+      o = e.allowForLoopAfterthoughts === true;
+    }return { UpdateExpression(e) {
+        if (o && isForLoopAfterthought(e)) {
+          return;
+        }t.report({ node: e, messageId: "unexpectedUnaryOp", data: { operator: e.operator } });
+      } };
+  } };

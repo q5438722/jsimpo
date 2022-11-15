@@ -1,0 +1,1 @@
+import{flatten}from'lodash';import curriculum from'../../../../config/curriculum.json';export function getChallenges(){return Object.keys(curriculum).map(key=>curriculum[key].blocks).reduce((challengeArray,superBlock)=>{const challengesForBlock=Object.keys(superBlock).map(key=>superBlock[key].challenges);return[...challengeArray,...flatten(challengesForBlock)]},[])}

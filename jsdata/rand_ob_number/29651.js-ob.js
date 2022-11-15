@@ -1,0 +1,5 @@
+'use strict';
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+Object['defineProperty'](exports, '__esModule', { 'value': !![] }), exports['default'] = void (-0x11 * 0x1d + 0xc + 0x1e1);
+var _createSvgIcon = _interopRequireDefault(require('./utils/createSvgIcon')), _jsxRuntime = require('react/jsx-runtime'), _default = (0xb04 + 0x1 * -0xb7a + 0x76, _createSvgIcon['default'])((-0x39b + -0x185 * 0x13 + 0x207a, _jsxRuntime['jsx'])('path', { 'd': 'M11.99\x202C6.47\x202\x202\x206.48\x202\x2012s4.47\x2010\x209.99\x2010C17.52\x2022\x2022\x2017.52\x2022\x2012S17.52\x202\x2011.99\x202zM12\x2020c-4.42\x200-8-3.58-8-8s3.58-8\x208-8\x208\x203.58\x208\x208-3.58\x208-8\x208zm3.5-9c.83\x200\x201.5-.67\x201.5-1.5S16.33\x208\x2015.5\x208\x2014\x208.67\x2014\x209.5s.67\x201.5\x201.5\x201.5zm-7\x200c.83\x200\x201.5-.67\x201.5-1.5S9.33\x208\x208.5\x208\x207\x208.67\x207\x209.5\x207.67\x2011\x208.5\x2011zm3.5\x206.5c2.03\x200\x203.8-1.11\x204.75-2.75.19-.33-.05-.75-.44-.75H7.69c-.38\x200-.63.42-.44.75.95\x201.64\x202.72\x202.75\x204.75\x202.75z' }), 'MoodRounded');
+exports['default'] = _default;

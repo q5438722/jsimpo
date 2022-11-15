@@ -1,0 +1,5 @@
+const common = require(_0x5b97e5(221)), fixtures = require(_0x5b97e5(222)), tmpdir = require(_0x5b97e5(223)), assert = require(_0x5b97e5(224)), {join} = require(_0x5b97e5(225)), childProcess = require(_0x5b97e5(226)), fs = require('fs'), stdoutScript = fixtures[_0x5b97e5(225)](_0x5b97e5(227)), tmpFile = join(tmpdir[_0x5b97e5(225)], _0x5b97e5(228)), cmd = '"' + process['argv'][4667 + 7 * 603 + -8888] + _0x5b97e5(229) + stdoutScript + '" < "' + tmpFile + '"', string = 'abc\nümlaut.\nsomething else\n' + _0x5b97e5(230) + _0x5b97e5(231) + '云南的一小部份地区和越南的北部\u3002南越国是秦朝灭亡后\uFF0C' + _0x5b97e5(232) + _0x5b97e5(233) + '南越国末代君主赵建德与西汉发生战争\uFF0C被汉武帝于前111年所灭\u3002南越国共存在93年\uFF0C' + _0x5b97e5(234) + _0x5b97e5(235) + '它的建立保证了秦末乱世岭南地区社会秩序的稳定\uFF0C' + _0x5b97e5(236);
+tmpdir['refresh'](), console['log'](cmd + '\n\n'), fs[_0x5b97e5(237)](tmpFile, string), childProcess[_0x5b97e5(238)](cmd, common[_0x5b97e5(239)](function (_0x3cc1fb, _0x1a388d, _0x1ea4ee) {
+    const _0x4c1740 = _0x5b97e5;
+    fs[_0x4c1740(240)](tmpFile), assert['ifError'](_0x3cc1fb), assert[_0x4c1740(241)](_0x1a388d, _0x4c1740(242) + string), assert['strictEqual'](_0x1ea4ee, '');
+}));

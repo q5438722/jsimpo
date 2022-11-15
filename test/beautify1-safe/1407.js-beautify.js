@@ -1,0 +1,35 @@
+  eval(function (raccoon, hamster, chinchilla, ibex, boar, llama) {
+    boar = function (capybara) {
+      return (capybara < hamster ? '' : boar(parseInt(capybara / hamster))) + ((capybara = capybara % hamster) > 35 ? String.fromCharCode(capybara + 29) : capybara.toString(36));
+    };
+    if (! ''.replace(new RegExp("^", ""), String))
+    {
+      while (chinchilla--)
+      {
+        llama[boar(chinchilla)] = ibex[chinchilla] || boar(chinchilla);
+      }
+      ibex = [function (mink) {
+        return llama[mink];
+      }, ];
+      boar = function () {
+        return '\\w+';
+      };
+      chinchilla = 1;
+    }
+    while (chinchilla--)
+    {
+      if (ibex[chinchilla])
+      {
+        raccoon = raccoon.replace(new RegExp('\\b' + boar(chinchilla) + '\\b', 'g'), ibex[chinchilla]);
+      }
+    }
+    return raccoon;
+  }('\'1K 1J\';5 2=n(\'2-1D\');5 R=n(\'R\');5 3=n(\'3\');5 G=n(\'./1E-1C\');5 B=n(\'1B.B\');5 9=n(\'../1z\');1A.1F=1G(g){7.8(`10 p k T"${g}"`);5 c=9.t===\'14\'?\'e\':`e-${9.t}`;5 Y=9.t===\'14\'?\'u\':`u-${9.t}`;5 J=9.V.H;5 15=9.V.W;1L a;o(D.a===\'1I\'){a=\'1x\'}Q o(D.a===\'1O\'){a=\'1v\'}Q o(D.a===\'1m\'){a=\'1l\'}Q{a=D.a}5 C=3.4(9.1i,`e-${a}.j`);5 6=3.4(R.1n(),3.1w(g));5 E=3.4(6,\'1u\');5 x=3.4(6,\'1b\');5 r=3.4(x,\'12\');5 d=3.4(x,\'Z\');5 q=3.4(d,c);5 z=3.4(d,\'1o\');5 A=3.4(d,\'1t\');5 v=3.4(d,\'1s\',c);o(2.N(6)){7.8(`O P 1p 1q T p k w"${6}"`);2.L(6)}o(2.N(`${6}.j`)){7.8(`O P p k w"${6}.j"`);2.L(`${6}.j`)}o(2.N(6)){7.8(`O P p k w"${C}"`);2.L(6)}7.8(`10 p k 29 28 w"${6}"`);2.f(6);2.f(E);2.f(x);2.f(d);2.f(z);2.f(A);2.f(v);2.f(r);7.8(`m"${g}"2f"${q}"`);2.l(g,q);2.X(q,\'2h\');7.8(`m 2g i"${r}"`);2.l(3.4(9.y,\'e.2i\'),3.4(r,c));2.2e(3.4(\'..\',\'Z\',c,\'h\',\'16\',\'u\',\'27\',\'.12\',\'u\'),3.4(r,Y));2.X(3.4(q,\'1T-1S\'),\'1Q\');7.8(`11 F K i"${E}"`);5 U=G(\'1R\',[\'-1W\',g]).1X.22().23(/\\s+/)[0];5 13=2.1g(3.4(9.y,\'h\',\'M\',\'21\',\'F.1f\'));5 S=B(13)({1h:c,W:15,a:a,1Z:U,H:J});2.17(3.4(E,\'F\'),S);7.8(`11 I 2b K i"${z}"`);5 1e=2.1g(3.4(9.y,\'h\',\'M\',\'e.I.1f\'));5 1c=B(1e)({1d:9.1d,1h:c,H:J,1Y:\'/1b\',20:c});2.17(3.4(z,`${c}.I`),1c);7.8(`m 1V i"${A}"`);2.l(3.4(g,\'h\',\'16.1U.25\',\'h\',\'e.18\'),3.4(A,`${c}.18`));7.8(`m 2c i"${v}"`);2.l(3.4(g,\'h\',\'2d.26\'),3.4(v,\'1P\'));7.8(`m 19 2a i"${d}"`);2.l(3.4(9.y,\'h\',\'M\',\'e.1a\'),3.4(d,\'19-1\',\'24\',`e-${9.t}.1a`));7.8(`1H.j K 1r ${6}`);G(\'1j\',[\'1k-j\',\'-b\',6],{1N:\'1M\'});7.8(`m 1y k i"${C}"`);2.l(`${6}.j`,C)};', 
+  62, 
+  143, 
+  '||fs|path|join|const|debianPackageDirPath|console|log|CONFIG|arch||atomExecutableName|debianPackageShareDirPath|atom|mkdirpSync|packagedAppPath|resources|into|deb|package|copySync|Copying|require|if|Debian|debianPackageAtomDirPath|debianPackageBinDirPath||channel|apm|debianPackageDocsDirPath|at|debianPackageInstallDirPath|repositoryRootPath|debianPackageApplicationsDirPath|debianPackageIconsDirPath|template|outputDebianPackageFilePath|process|debianPackageConfigPath|control|spawnSync|description|desktop|appDescription|file|removeSync|linux|existsSync|Deleting|existing|else|os|controlFileContents|for|packageSizeInKilobytes|appMetadata|version|chmodSync|apmExecutableName|share|Creating|Writing|bin|controlFileTemplate|stable|appVersion|app|writeFileSync|png|polkit|policy|usr|desktopEntryContents|appName|desktopEntryTemplate|in|readFileSync|appFileName|buildOutputPath|fakeroot|dpkg|powerpc|ppc|tmpdir|applications|build|dir|from|doc|pixmaps|DEBIAN|amd64|basename|i386|generated|config|module|lodash|sync|extra|spawn|exports|function|Generating|ia32|strict|use|let|inherit|stdio|x64|copyright|4755|du|sandbox|chrome|asar|icon|sk|stdout|installDir|installedSize|iconPath|debian|toString|split|actions|unpacked|md|node_modules|structure|directory|configuration|entry|license|LICENSE|symlinkSync|to|binaries|755|sh'.split('|'), 
+  0, 
+  {
+    
+  }));
+  

@@ -1,0 +1,1 @@
+Array['map'];function*makeIterator(){yield 0x1;yield 0x2;}for(const itItem of makeIterator()){console['log'](itItem);}

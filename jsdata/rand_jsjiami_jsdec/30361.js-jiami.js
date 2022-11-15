@@ -1,0 +1,1 @@
+import _0x27a8cd from'./utils/createSvgIcon';import{jsx as _0x22da3a}from'react/jsx-runtime';export default _0x27a8cd([_0x22da3a('path',{'d':'M8.5\x208.62v6.76L5.12\x2012\x208.5\x208.62','opacity':'.3'},'0'),_0x22da3a('path',{'d':'M8.5 8.62v6.76L5.12 12 8.5 8.62M10 5l-7 7 7 7V5zm4 0v14l7-7-7-7z'},'1')],'SwitchLeftTwoTone');

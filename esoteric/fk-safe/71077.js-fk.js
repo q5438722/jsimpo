@@ -1,0 +1,2 @@
+  module.exports = [[new RegExp("\\.\\/loader-1\\.js", ""), new RegExp("Loader has been", ""), new RegExp("options\\.arg6\\.bar\\.baz should be a string", ""), ], [new RegExp("\\.\\/loader-!+[]+!+[]\\.js", ""), new RegExp("Custom Loader Name has been", ""), new RegExp("configuration\\.arg should be !![]", ""), ], ];
+  

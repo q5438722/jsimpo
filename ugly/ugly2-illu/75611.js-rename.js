@@ -1,0 +1,22 @@
+import { HTTP } from "meteor/http";import { settings } from "../../../settings";import { callbacks } from "../../../callbacks";import { Livechat } from "../lib/Livechat";function sendToRDStation(t) {
+  if (!settings.get("Livechat_RDStation_Token")) {
+    return t;
+  }const i = Livechat.getLivechatRoomGuestInfo(t);
+  if (!i.visitor.email) {
+    return t;
+  }const o = Array.isArray(i.visitor.email) ? i.visitor.email[0].address : i.visitor.email;
+  const a = { headers: { "Content-Type": "application/json" }, data: { token_rdstation: settings.get("Livechat_RDStation_Token"), identificador: "rocketchat-livechat", client_id: i.visitor._id, email: o } };
+  a.data.nome = i.visitor.name || i.visitor.username;if (i.visitor.phone) {
+    a.data.telefone = i.visitor.phone;
+  }if (i.tags) {
+    a.data.tags = i.tags;
+  }Object.keys(i.customFields || {}).forEach(t => {
+    a.data[t] = i.customFields[t];
+  });Object.keys(i.visitor.customFields || {}).forEach(t => {
+    a.data[t] = i.visitor.customFields[t];
+  });try {
+    HTTP.call("POST", "https://www.rdstation.com.br/api/1.3/conversions", a);
+  } catch (t) {
+    console.error("Error sending lead to RD Station ->", t);
+  }return t;
+}callbacks.add("livechat.closeRoom", sendToRDStation, callbacks.priority.MEDIUM, "livechat-rd-station-close-room");callbacks.add("livechat.saveInfo", sendToRDStation, callbacks.priority.MEDIUM, "livechat-rd-station-save-info");

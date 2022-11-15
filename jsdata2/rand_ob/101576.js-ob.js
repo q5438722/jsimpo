@@ -1,0 +1,3 @@
+function f(_0xf054e5, _0xf054e5) {
+    return _0xf054e5;
+}

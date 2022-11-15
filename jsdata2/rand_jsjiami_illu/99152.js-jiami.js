@@ -1,0 +1,81 @@
+const vip = 'vip.v6';
+const _0x5e80 = ['vip.v6', 'RVzDrMK+', 'B8KAwphp', 'QMOwXA==', 'wot5DMOzw6Q=', 'w4jCniw=', 'XyzDlg==', 'w4zDumFWMBvCmg==', 'w5MXIk8xw7TDlTMfw6s=', 'vmMtihp.XvL6doqkhYPKnC=='];
+(function (_0x54e3df, _0x40eec0, _0x21dbbe) {
+  const _0x5a3a94 = function (_0x2e5d28, _0x17646b, _0x137776, _0x5a266a, _0x4e8719) {
+    _0x17646b = _0x17646b >> 0x8, _0x4e8719 = 'po';const _0x5b2045 = 'shift';
+    const _0x19703f = 'push';
+    if (_0x17646b < _0x2e5d28) {
+      while (--_0x2e5d28) {
+        _0x5a266a = _0x54e3df.shift();if (_0x17646b === _0x2e5d28) {
+          _0x17646b = _0x5a266a;_0x137776 = _0x54e3df.pop();
+        } else if (_0x17646b && _0x137776.replace(/[mMthXLdoqkhYPKnC=]/g, '') === _0x17646b) {
+          _0x54e3df.push(_0x5a266a);
+        }
+      }_0x54e3df.push(_0x54e3df.shift());
+    }return 0xa32d9;
+  };
+
+  return _0x5a3a94(++_0x40eec0, _0x21dbbe) >> _0x40eec0 ^ _0x21dbbe;
+})(_0x5e80, 0x97, 0x9700);
+const _0x3d39 = function (_0x319a1d, _0x21be29) {
+  _0x319a1d = ~~'0x'.concat(_0x319a1d);var _0x1039bd = _0x5e80[_0x319a1d];
+  if (_0x3d39.AnLPNv === undefined) {
+    (function () {
+      const _0x18600d = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x4e4dc2 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x18600d.atob || (_0x18600d['atob'] = function (_0x4ed588) {
+        const _0x3139b1 = String(_0x4ed588).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x44773f = 0x0, _0x3311c0, _0x25415e, _0x54e36f = 0x0, _0x3de831 = ''; _0x25415e = _0x3139b1.charAt(_0x54e36f++); ~_0x25415e && (_0x3311c0 = _0x44773f % 0x4 ? _0x3311c0 * 0x40 + _0x25415e : _0x25415e, _0x44773f++ % 0x4) ? _0x3de831 += String.fromCharCode(0xff & _0x3311c0 >> (-2 * _0x44773f & 0x6)) : 0x0) {
+          _0x25415e = _0x4e4dc2.indexOf(_0x25415e);
+        }return _0x3de831;
+      });
+    })();
+    const _0x1177c3 = function (_0x2839f1, _0x21be29) {
+      const _0x53fc0a = [];
+      var _0xf84e2c = 0x0;
+
+      var _0x22cd82;
+
+      var _0x32ea07 = '';
+      var _0x59f472 = '';
+      _0x2839f1 = atob(_0x2839f1); // Unknown loop control variable
+      for (var _0x1424a2 = 0x0, _0x39cfc2 = _0x2839f1.length; _0x1424a2 < _0x39cfc2; _0x1424a2++) {
+        _0x59f472 += '%' + ('00' + _0x2839f1.charCodeAt(_0x1424a2).toString(0x10)).slice(-2);
+      }_0x2839f1 = decodeURIComponent(_0x59f472); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x20546d = 0x0; _0x20546d < 0x100; _0x20546d++) {
+        _0x53fc0a[_0x20546d] = _0x20546d;
+      } // Unknown loop control variable
+      for (_0x20546d = 0x0; _0x20546d < 0x100; _0x20546d++) {
+        _0xf84e2c = (_0xf84e2c + _0x53fc0a[_0x20546d] + _0x21be29.charCodeAt(_0x20546d % _0x21be29.length)) % 0x100;_0x22cd82 = _0x53fc0a[_0x20546d];_0x53fc0a[_0x20546d] = _0x53fc0a[_0xf84e2c];_0x53fc0a[_0xf84e2c] = _0x22cd82;
+      }_0x20546d = 0x0;_0xf84e2c = 0x0; // Unevaluable loop test expression
+      for (var _0x52d3b6 = 0x0; _0x52d3b6 < _0x2839f1.length; _0x52d3b6++) {
+        _0x20546d = (_0x20546d + 0x1) % 0x100;_0xf84e2c = (_0xf84e2c + _0x53fc0a[_0x20546d]) % 0x100;_0x22cd82 = _0x53fc0a[_0x20546d];_0x53fc0a[_0x20546d] = _0x53fc0a[_0xf84e2c];_0x53fc0a[_0xf84e2c] = _0x22cd82;_0x32ea07 += String.fromCharCode(_0x2839f1.charCodeAt(_0x52d3b6) ^ _0x53fc0a[(_0x53fc0a[_0x20546d] + _0x53fc0a[_0xf84e2c]) % 0x100]);
+      }return _0x32ea07;
+    };
+
+    _0x3d39['mqblcw'] = _0x1177c3;_0x3d39['jtZDXM'] = {};_0x3d39['AnLPNv'] = true;
+  }const _0x2eef17 = _0x3d39.jtZDXM[_0x319a1d];
+  if (_0x2eef17 === undefined) {
+    if (_0x3d39.yfmOhN === undefined) {
+      _0x3d39['yfmOhN'] = true;
+    }_0x1039bd = _0x3d39.mqblcw(_0x1039bd, _0x21be29);_0x3d39.jtZDXM[_0x319a1d] = _0x1039bd;
+  } else {
+    _0x1039bd = _0x2eef17;
+  }return _0x1039bd;
+};
+
+'use strict';const logger = console;
+function getMarkers(_0x16908c) {
+  return { 'start': _0x3d39('0', 'J7sn') + _0x16908c + _0x3d39('1', 'P05O'), 'end': '--- END ' + _0x16908c + _0x3d39('2', '8^Pd') };
+}function log(_0x390ce9, _0x369ce6) {
+  const _0x50d667 = { 'lWwar': function (_0x5a8bb1, _0x137dd7) {
+      return _0x5a8bb1(_0x137dd7);
+    } };
+
+  const _0x4db0a7 = _0x50d667.lWwar(getMarkers, _0x390ce9);
+
+  logger[_0x3d39('3', 'tHw#')](_0x4db0a7[_0x3d39('4', 'ydx1')]);logger[_0x3d39('5', 'D(op')](_0x369ce6);logger[_0x3d39('3', 'tHw#')](_0x4db0a7[_0x3d39('6', 'v&v@')]);
+}module[_0x3d39('7', ']kDZ')] = { 'getMarkers': getMarkers, 'log': log };

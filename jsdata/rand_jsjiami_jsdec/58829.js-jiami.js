@@ -1,0 +1,1 @@
+let getCount=0x0;new Intl[('ListFormat')](['en-US'],{get 'localeMatcher'(){assertEquals(0x0,getCount++);},get 'type'(){var _0x2065bc={'tfIEO':function(_0x1e4a35,_0x7b7a3e,_0x3241e3){return _0x1e4a35(_0x7b7a3e,_0x3241e3);}};_0x2065bc['tfIEO'](assertEquals,0x1,getCount++);},get 'style'(){assertEquals(0x2,getCount++);}});assertEquals(0x3,getCount);

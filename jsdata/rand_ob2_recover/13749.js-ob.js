@@ -1,0 +1,8 @@
+function _0x563c(_0x46c8c5, _0x16f429) {
+    return _0x563c = function (_0x2ffc10, _0x563cc4) {
+        _0x2ffc10 = _0x2ffc10 - 350;
+        var _0x35ab0f = _0x2ffc[_0x2ffc10];
+        return _0x35ab0f;
+    }, _0x563c(_0x46c8c5, _0x16f429);
+}
+var foo = 'test ' + _[_0x5d3b30(359)](foo) + ' ' + bar;

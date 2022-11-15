@@ -1,0 +1,1 @@
+import _0x3300df from'external';it('should\x20harmony\x20import\x20a\x20dependency',function(){var _0x1137b1={'gKKSb':function(_0x47b90c,_0x4f0e49){return _0x47b90c(_0x4f0e49);}};_0x1137b1['gKKSb'](expect,_0x3300df)['toBe']('abc');});

@@ -1,0 +1,20 @@
+module['exports'] = [
+    'Rock',
+    'Metal',
+    'Pop',
+    'Electronic',
+    'Folk',
+    'World',
+    'Country',
+    'Jazz',
+    'Funk',
+    'Soul',
+    'Hip\x20Hop',
+    'Classical',
+    'Latin',
+    'Reggae',
+    'Stage\x20And\x20Screen',
+    'Blues',
+    'Non\x20Music',
+    'Rap'
+];

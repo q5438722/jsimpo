@@ -1,0 +1,44 @@
+const _0x59ee = ['13JpsWHz', '46946npyOHH', 'define', 'boot utils', 'foobar', 'TtaPl', 'ACOpi', 'expectTrue', 'validPid', 'iqUpJ', 'expectFalse', 'lkLjY', '561kkUGzj', '713agzmxC', '763995mYETiJ', '606525UtHAXu', '655108podFJh', '1neAFnU', '52692VzCMNZ', '30611GUgutb'];
+
+function _0x3471(_0x456559, _0x543194) {
+    return _0x3471 = function (_0x1008e4, _0x4e0976) {
+        _0x1008e4 = _0x1008e4 - 122;
+        const _0x58f57a = _0x59ee[_0x1008e4];
+
+        return _0x58f57a;
+    }, _0x3471(_0x456559, _0x543194);
+}
+const _0x552b2a = _0x3471;
+
+(function (_0xa0d501, _0x48e8c5) {
+    const _0x480a7e = _0x3471;
+
+    while (true) {
+        try {
+            const _0x400a19 = -parseInt(_0x480a7e(0x7a)) * -parseInt(_0x480a7e(0x7b)) + parseInt(_0x480a7e(0x7c)) + -parseInt(_0x480a7e(0x7d)) + parseInt(_0x480a7e(0x7e)) * -parseInt(_0x480a7e(0x7f)) + parseInt(_0x480a7e(0x80)) + parseInt(_0x480a7e(0x81)) + parseInt(_0x480a7e(0x82)) * parseInt(_0x480a7e(0x83));
+
+            if (_0x400a19 === _0x48e8c5) break;else _0xa0d501.push(_0xa0d501.shift());
+        } catch (_0x1c9e84) {
+            _0xa0d501.push(_0xa0d501.shift());
+        }
+    }
+})(_0x59ee, 595956);
+
+const selftest = require('../tool-testing/selftest.js');
+
+selftest[_0x552b2a(0x84)](_0x552b2a(0x85), function (_0x14c46a) {
+    const _0x1de2ca = _0x552b2a;
+    const _0x70ab92 = {
+        'TtaPl': function (_0x1bb6d3, _0x32da87) {
+            return _0x1bb6d3(_0x32da87);
+        },
+        'ACOpi': '../static-assets/server/boot-utils.js',
+        'iqUpJ': '123',
+        'MPgGj': 'foo123',
+        'lkLjY': _0x1de2ca(0x86)
+    };
+
+    const _0x2439d1 = _0x70ab92[_0x1de2ca(0x87)](require, _0x70ab92[_0x1de2ca(0x88)]);
+
+    selftest[_0x1de2ca(0x89)](_0x2439d1.validPid(123)), selftest[_0x1de2ca(0x89)](_0x2439d1[_0x1de2ca(0x8a)](_0x70ab92[_0x1de2ca(0x8b)])), selftest[_0x1de2ca(0x89)](_0x2439d1[_0x1de2ca(0x8a)](291)), selftest[_0x1de2ca(0x89)](_0x2439d1[_0x1de2ca(0x8a)]('0x123')), selftest[_0x1de2ca(0x8c)](_0x2439d1[_0x1de2ca(0x8a)](_0x70ab92.MPgGj)), selftest.expectFalse(_0x2439d1[_0x1de2ca(0x8a)](_0x70ab92[_0x1de2ca(0x8d)])), selftest.expectFalse(_0x2439d1[_0x1de2ca(0x8a)]('123foo'));
+});

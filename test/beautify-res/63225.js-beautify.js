@@ -1,0 +1,1 @@
+var threw=false;try{var obj=new(Function.__proto__)()}catch(e){assertInstanceof(e,TypeError);threw=true}assertTrue(threw);var threw=false;try{var obj=new(Function.__proto__)()}catch(e){assertInstanceof(e,TypeError);threw=true}assertTrue(threw);

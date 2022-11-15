@@ -1,0 +1,1 @@
+(function(){var _0x2b3088={'ZTlcq':function(_0x4af4e0,_0x35dfa3,_0x19c93f){return _0x4af4e0(_0x35dfa3,_0x19c93f);}};var _0xed7c3e=babelHelpers['asyncToGenerator'](function*(){console['log'](yield Promise['resolve']('Hello'));_0x2b3088['ZTlcq'](setTimeout,_0x50e59a,0x3e8);});function _0x50e59a(){return _0xed7c3e['apply'](this,arguments);}return _0x50e59a;}()());

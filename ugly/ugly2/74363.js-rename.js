@@ -1,0 +1,1 @@
+var moment=require("./../moment.js");var base=moment("2013-05-25");var value=2;function createTest(e){return{fn:function(){base.set(e,value)},async:false}}var units=["second","minute","hour","date","day","isoWeek","week","month","quarter","year"];var tests=units.reduce(function(e,t){e["set "+t]=createTest(t);return e},{});module.exports={name:"set",tests:tests};

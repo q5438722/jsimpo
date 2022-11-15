@@ -1,0 +1,75 @@
+const vip = 'vip.v6';
+const _0x33b7 = ['vip.v6', 'AGrCt27CrcKURsK0', 'Vvip.v6xsLaeFNPNMmaAZWCs=='];
+(function (_0xb87314, _0xfd859f, _0x3e4303) {
+  const _0x31c47c = function (_0xc13caf, _0x513714, _0x560e5c, _0x2a310b, _0x13c7e8) {
+    _0x513714 = _0x513714 >> 0x8, _0x13c7e8 = 'po';const _0x3a2234 = 'shift';
+    const _0x36919e = 'push';
+    if (_0x513714 < _0xc13caf) {
+      while (--_0xc13caf) {
+        _0x2a310b = _0xb87314.shift();if (_0x513714 === _0xc13caf) {
+          _0x513714 = _0x2a310b;_0x560e5c = _0xb87314.pop();
+        } else if (_0x513714 && _0x560e5c.replace(/[VxsLaeFNPNMmaAZWCs=]/g, '') === _0x513714) {
+          _0xb87314.push(_0x2a310b);
+        }
+      }_0xb87314.push(_0xb87314.shift());
+    }return 0xa1d88;
+  };
+
+  return _0x31c47c(++_0xfd859f, _0x3e4303) >> _0xfd859f ^ _0x3e4303;
+})(_0x33b7, 0xa4, 0xa400);
+const _0x5a2c = function (_0x36d543, _0x29a2bd) {
+  _0x36d543 = ~~'0x'.concat(_0x36d543);var _0x29fc02 = _0x33b7[_0x36d543];
+  if (_0x5a2c.qZJjUB === undefined) {
+    (function () {
+      const _0x59cf2c = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x4da211 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x59cf2c.atob || (_0x59cf2c['atob'] = function (_0x15dbaf) {
+        const _0x3cf4ec = String(_0x15dbaf).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x5eff3e = 0x0, _0x40aae2, _0x4e86b6, _0x12c0e8 = 0x0, _0x215ae8 = ''; _0x4e86b6 = _0x3cf4ec.charAt(_0x12c0e8++); ~_0x4e86b6 && (_0x40aae2 = _0x5eff3e % 0x4 ? _0x40aae2 * 0x40 + _0x4e86b6 : _0x4e86b6, _0x5eff3e++ % 0x4) ? _0x215ae8 += String.fromCharCode(0xff & _0x40aae2 >> (-2 * _0x5eff3e & 0x6)) : 0x0) {
+          _0x4e86b6 = _0x4da211.indexOf(_0x4e86b6);
+        }return _0x215ae8;
+      });
+    })();
+    const _0x4a2811 = function (_0x3361a5, _0x29a2bd) {
+      const _0x1ec159 = [];
+      var _0x462748 = 0x0;
+
+      var _0x3d6968;
+
+      var _0x5d1574 = '';
+      var _0x4d422c = '';
+      _0x3361a5 = atob(_0x3361a5); // Unknown loop control variable
+      for (var _0x245537 = 0x0, _0x4c8228 = _0x3361a5.length; _0x245537 < _0x4c8228; _0x245537++) {
+        _0x4d422c += '%' + ('00' + _0x3361a5.charCodeAt(_0x245537).toString(0x10)).slice(-2);
+      }_0x3361a5 = decodeURIComponent(_0x4d422c); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x58196e = 0x0; _0x58196e < 0x100; _0x58196e++) {
+        _0x1ec159[_0x58196e] = _0x58196e;
+      } // Unknown loop control variable
+      for (_0x58196e = 0x0; _0x58196e < 0x100; _0x58196e++) {
+        _0x462748 = (_0x462748 + _0x1ec159[_0x58196e] + _0x29a2bd.charCodeAt(_0x58196e % _0x29a2bd.length)) % 0x100;_0x3d6968 = _0x1ec159[_0x58196e];_0x1ec159[_0x58196e] = _0x1ec159[_0x462748];_0x1ec159[_0x462748] = _0x3d6968;
+      }_0x58196e = 0x0;_0x462748 = 0x0; // Unevaluable loop test expression
+      for (var _0x357c36 = 0x0; _0x357c36 < _0x3361a5.length; _0x357c36++) {
+        _0x58196e = (_0x58196e + 0x1) % 0x100;_0x462748 = (_0x462748 + _0x1ec159[_0x58196e]) % 0x100;_0x3d6968 = _0x1ec159[_0x58196e];_0x1ec159[_0x58196e] = _0x1ec159[_0x462748];_0x1ec159[_0x462748] = _0x3d6968;_0x5d1574 += String.fromCharCode(_0x3361a5.charCodeAt(_0x357c36) ^ _0x1ec159[(_0x1ec159[_0x58196e] + _0x1ec159[_0x462748]) % 0x100]);
+      }return _0x5d1574;
+    };
+
+    _0x5a2c['PrEsMb'] = _0x4a2811;_0x5a2c['YmQMVV'] = {};_0x5a2c['qZJjUB'] = true;
+  }const _0x15b35d = _0x5a2c.YmQMVV[_0x36d543];
+  if (_0x15b35d === undefined) {
+    if (_0x5a2c.mQZvre === undefined) {
+      _0x5a2c['mQZvre'] = true;
+    }_0x29fc02 = _0x5a2c.PrEsMb(_0x29fc02, _0x29a2bd);_0x5a2c.YmQMVV[_0x36d543] = _0x29fc02;
+  } else {
+    _0x29fc02 = _0x15b35d;
+  }return _0x29fc02;
+}; /**
+   * @author       Richard Davey <rich@photonstorm.com>
+   * @copyright    2020 Photon Storm Ltd.
+   * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+   */
+
+
+module['exports'] = _0x5a2c('0', 'tg22');

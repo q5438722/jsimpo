@@ -1,0 +1,17 @@
+eval(function (p, a, c, k, e, d) {
+  e = function (c) {
+    return c.toString(36);
+  };if (!''.replace(/^/, String)) {
+    while (c--) {
+      d[c.toString(a)] = k[c] || c.toString(a);
+    }k = [function (e) {
+      return d[e];
+    }];e = function () {
+      return '\\w+';
+    };c = 1;
+  };while (c--) {
+    if (k[c]) {
+      p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+    }
+  }return p;
+}('f{}a(e){}5 4(7,0){8 6=0()};4("[1,2,3]",()=>(5(){d(c()=>{[...b 9]})()})());', 16, 16, ['run', '', '', '', '__f_7', 'function', '__v_10', 'expected', 'var', 'arguments', 'catch', 'await', 'async', 'return', '', 'try'], 0, {}));

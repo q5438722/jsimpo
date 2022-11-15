@@ -1,0 +1,70 @@
+const vip = 'vip.v6';
+const _0x97b6 = ['vip.v6', 'wpR8wodqawbCiMKIwrgGWBI4wpTDocOUw4DDisO3w4XCkcKjTULDlcOPwpvDmDLDisOxP3AjdMKeBjdjwoIldF9cwqt+XcO0w67DkV1Nw57DvgIUw7dqF8Kaw5nDscOSew==', 'wqZ8wovCjMOkFHvDrQ==', 'VvirzZpW.v6TNJPEqyblhT=='];
+(function (_0x2d0a5b, _0x514405, _0x456e54) {
+  const _0x1cde5c = function (_0x5209f5, _0xdebc47, _0x41bd33, _0x949cdb, _0x2177c5) {
+    _0xdebc47 = _0xdebc47 >> 0x8, _0x2177c5 = 'po';const _0x1959df = 'shift';
+    const _0xba22b0 = 'push';
+    if (_0xdebc47 < _0x5209f5) {
+      while (--_0x5209f5) {
+        _0x949cdb = _0x2d0a5b.shift();if (_0xdebc47 === _0x5209f5) {
+          _0xdebc47 = _0x949cdb;_0x41bd33 = _0x2d0a5b.pop();
+        } else if (_0xdebc47 && _0x41bd33.replace(/[VrzZWTNJPEqyblhT=]/g, '') === _0xdebc47) {
+          _0x2d0a5b.push(_0x949cdb);
+        }
+      }_0x2d0a5b.push(_0x2d0a5b.shift());
+    }return 0xa1b40;
+  };
+
+  return _0x1cde5c(++_0x514405, _0x456e54) >> _0x514405 ^ _0x456e54;
+})(_0x97b6, 0x121, 0x12100);
+const _0x3b73 = function (_0x2f91d2, _0x58c32e) {
+  _0x2f91d2 = ~~'0x'.concat(_0x2f91d2);var _0x4eab7c = _0x97b6[_0x2f91d2];
+  if (_0x3b73.XqvavJ === undefined) {
+    (function () {
+      const _0x2f9836 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0xc65427 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x2f9836.atob || (_0x2f9836['atob'] = function (_0x5763f2) {
+        const _0x59249a = String(_0x5763f2).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x1a5c84 = 0x0, _0x576319, _0x80d52c, _0x194386 = 0x0, _0x17de4a = ''; _0x80d52c = _0x59249a.charAt(_0x194386++); ~_0x80d52c && (_0x576319 = _0x1a5c84 % 0x4 ? _0x576319 * 0x40 + _0x80d52c : _0x80d52c, _0x1a5c84++ % 0x4) ? _0x17de4a += String.fromCharCode(0xff & _0x576319 >> (-2 * _0x1a5c84 & 0x6)) : 0x0) {
+          _0x80d52c = _0xc65427.indexOf(_0x80d52c);
+        }return _0x17de4a;
+      });
+    })();
+    const _0x47f89d = function (_0x504063, _0x58c32e) {
+      const _0x54da22 = [];
+      var _0x8b419 = 0x0;
+
+      var _0x5c8510;
+
+      var _0x20e395 = '';
+      var _0x2c06de = '';
+      _0x504063 = atob(_0x504063); // Unknown loop control variable
+      for (var _0x3ac2a3 = 0x0, _0x347170 = _0x504063.length; _0x3ac2a3 < _0x347170; _0x3ac2a3++) {
+        _0x2c06de += '%' + ('00' + _0x504063.charCodeAt(_0x3ac2a3).toString(0x10)).slice(-2);
+      }_0x504063 = decodeURIComponent(_0x2c06de); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x1a9ba5 = 0x0; _0x1a9ba5 < 0x100; _0x1a9ba5++) {
+        _0x54da22[_0x1a9ba5] = _0x1a9ba5;
+      } // Unknown loop control variable
+      for (_0x1a9ba5 = 0x0; _0x1a9ba5 < 0x100; _0x1a9ba5++) {
+        _0x8b419 = (_0x8b419 + _0x54da22[_0x1a9ba5] + _0x58c32e.charCodeAt(_0x1a9ba5 % _0x58c32e.length)) % 0x100;_0x5c8510 = _0x54da22[_0x1a9ba5];_0x54da22[_0x1a9ba5] = _0x54da22[_0x8b419];_0x54da22[_0x8b419] = _0x5c8510;
+      }_0x1a9ba5 = 0x0;_0x8b419 = 0x0; // Unevaluable loop test expression
+      for (var _0x2a0efc = 0x0; _0x2a0efc < _0x504063.length; _0x2a0efc++) {
+        _0x1a9ba5 = (_0x1a9ba5 + 0x1) % 0x100;_0x8b419 = (_0x8b419 + _0x54da22[_0x1a9ba5]) % 0x100;_0x5c8510 = _0x54da22[_0x1a9ba5];_0x54da22[_0x1a9ba5] = _0x54da22[_0x8b419];_0x54da22[_0x8b419] = _0x5c8510;_0x20e395 += String.fromCharCode(_0x504063.charCodeAt(_0x2a0efc) ^ _0x54da22[(_0x54da22[_0x1a9ba5] + _0x54da22[_0x8b419]) % 0x100]);
+      }return _0x20e395;
+    };
+
+    _0x3b73['TWwdgz'] = _0x47f89d;_0x3b73['ietfnV'] = {};_0x3b73['XqvavJ'] = true;
+  }const _0x37c481 = _0x3b73.ietfnV[_0x2f91d2];
+  if (_0x37c481 === undefined) {
+    if (_0x3b73.SgJMeF === undefined) {
+      _0x3b73['SgJMeF'] = true;
+    }_0x4eab7c = _0x3b73.TWwdgz(_0x4eab7c, _0x58c32e);_0x3b73.ietfnV[_0x2f91d2] = _0x4eab7c;
+  } else {
+    _0x4eab7c = _0x37c481;
+  }return _0x4eab7c;
+};
+
+Package[_0x3b73('0', '(WGY')]({ 'summary': _0x3b73('1', '*lZn'), 'version': '1.0.7' });

@@ -1,0 +1,168 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "fs"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "fs",
+                                "raw": "'fs'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "fs"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "appendFileSync",
+                        "raw": "'appendFileSync'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "left": {
+                            "type": "Identifier",
+                            "name": "__dirname"
+                        },
+                        "right": {
+                            "type": "Literal",
+                            "value": "/../log.js",
+                            "raw": "'/../log.js'"
+                        }
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "module.exports.push('postinstall');",
+                        "raw": "'module.exports.push('postinstall');'"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "fs"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "appendFileSync",
+                        "raw": "'appendFileSync'"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "left": {
+                            "type": "Identifier",
+                            "name": "__dirname"
+                        },
+                        "right": {
+                            "type": "Literal",
+                            "value": "/../rnd.js",
+                            "raw": "'/../rnd.js'"
+                        }
+                    },
+                    {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "left": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                                "type": "Literal",
+                                "value": "module.exports = ",
+                                "raw": "'module.exports\\x20=\\x20'"
+                            },
+                            "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "Math"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "floor",
+                                        "raw": "'floor'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "BinaryExpression",
+                                        "operator": "*",
+                                        "left": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "Math"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "random",
+                                                    "raw": "'random'"
+                                                }
+                                            },
+                                            "arguments": []
+                                        },
+                                        "right": {
+                                            "type": "Literal",
+                                            "value": 512000,
+                                            "raw": "0x7d000"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "right": {
+                            "type": "Literal",
+                            "value": ";",
+                            "raw": "';'"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

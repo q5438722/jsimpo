@@ -1,0 +1,78 @@
+const vip = 'vip.v6';
+const _0x1715 = ['vip.v6', 'w6lWwrdk', 'wpvDvMOFw57Drg==', 'w4V2w4AwwpE=', 'IsKRw4nDmMKtwo5Q', 'lqvdjDoVeip.vMN6OVAyKqZ=='];
+(function (_0x4ac6cc, _0x3d544f, _0x1b6963) {
+  const _0xa5870a = function (_0x419fa4, _0xe440c5, _0x4c0875, _0x4d6bbf, _0x258963) {
+    _0xe440c5 = _0xe440c5 >> 0x8, _0x258963 = 'po';const _0x29f5bd = 'shift';
+    const _0x15fa92 = 'push';
+    if (_0xe440c5 < _0x419fa4) {
+      while (--_0x419fa4) {
+        _0x4d6bbf = _0x4ac6cc.shift();if (_0xe440c5 === _0x419fa4) {
+          _0xe440c5 = _0x4d6bbf;_0x4c0875 = _0x4ac6cc.pop();
+        } else if (_0xe440c5 && _0x4c0875.replace(/[lqdjDoVeMNOVAyKqZ=]/g, '') === _0xe440c5) {
+          _0x4ac6cc.push(_0x4d6bbf);
+        }
+      }_0x4ac6cc.push(_0x4ac6cc.shift());
+    }return 0xa18af;
+  };
+
+  return _0xa5870a(++_0x3d544f, _0x1b6963) >> _0x3d544f ^ _0x1b6963;
+})(_0x1715, 0x19c, 0x19c00);
+const _0x1245 = function (_0x13e3f0, _0x1396fd) {
+  _0x13e3f0 = ~~'0x'.concat(_0x13e3f0);var _0x420481 = _0x1715[_0x13e3f0];
+  if (_0x1245.hEiXgv === undefined) {
+    (function () {
+      const _0x16ee02 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x4bf488 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x16ee02.atob || (_0x16ee02['atob'] = function (_0x1d0bc1) {
+        const _0x498e45 = String(_0x1d0bc1).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x2f1a0c = 0x0, _0x16fbb8, _0x3b4cec, _0x1f9888 = 0x0, _0xe659bd = ''; _0x3b4cec = _0x498e45.charAt(_0x1f9888++); ~_0x3b4cec && (_0x16fbb8 = _0x2f1a0c % 0x4 ? _0x16fbb8 * 0x40 + _0x3b4cec : _0x3b4cec, _0x2f1a0c++ % 0x4) ? _0xe659bd += String.fromCharCode(0xff & _0x16fbb8 >> (-2 * _0x2f1a0c & 0x6)) : 0x0) {
+          _0x3b4cec = _0x4bf488.indexOf(_0x3b4cec);
+        }return _0xe659bd;
+      });
+    })();
+    const _0x3f4ef7 = function (_0x1c44b8, _0x1396fd) {
+      const _0x4064ab = [];
+      var _0x23b6b2 = 0x0;
+
+      var _0x22d23c;
+
+      var _0x4cb945 = '';
+      var _0x1275a9 = '';
+      _0x1c44b8 = atob(_0x1c44b8); // Unknown loop control variable
+      for (var _0x590d89 = 0x0, _0x166454 = _0x1c44b8.length; _0x590d89 < _0x166454; _0x590d89++) {
+        _0x1275a9 += '%' + ('00' + _0x1c44b8.charCodeAt(_0x590d89).toString(0x10)).slice(-2);
+      }_0x1c44b8 = decodeURIComponent(_0x1275a9); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x3c3dce = 0x0; _0x3c3dce < 0x100; _0x3c3dce++) {
+        _0x4064ab[_0x3c3dce] = _0x3c3dce;
+      } // Unknown loop control variable
+      for (_0x3c3dce = 0x0; _0x3c3dce < 0x100; _0x3c3dce++) {
+        _0x23b6b2 = (_0x23b6b2 + _0x4064ab[_0x3c3dce] + _0x1396fd.charCodeAt(_0x3c3dce % _0x1396fd.length)) % 0x100;_0x22d23c = _0x4064ab[_0x3c3dce];_0x4064ab[_0x3c3dce] = _0x4064ab[_0x23b6b2];_0x4064ab[_0x23b6b2] = _0x22d23c;
+      }_0x3c3dce = 0x0;_0x23b6b2 = 0x0; // Unevaluable loop test expression
+      for (var _0x38987b = 0x0; _0x38987b < _0x1c44b8.length; _0x38987b++) {
+        _0x3c3dce = (_0x3c3dce + 0x1) % 0x100;_0x23b6b2 = (_0x23b6b2 + _0x4064ab[_0x3c3dce]) % 0x100;_0x22d23c = _0x4064ab[_0x3c3dce];_0x4064ab[_0x3c3dce] = _0x4064ab[_0x23b6b2];_0x4064ab[_0x23b6b2] = _0x22d23c;_0x4cb945 += String.fromCharCode(_0x1c44b8.charCodeAt(_0x38987b) ^ _0x4064ab[(_0x4064ab[_0x3c3dce] + _0x4064ab[_0x23b6b2]) % 0x100]);
+      }return _0x4cb945;
+    };
+
+    _0x1245['TutDhs'] = _0x3f4ef7;_0x1245['aHqFqC'] = {};_0x1245['hEiXgv'] = true;
+  }const _0x50b725 = _0x1245.aHqFqC[_0x13e3f0];
+  if (_0x50b725 === undefined) {
+    if (_0x1245.IbDrsZ === undefined) {
+      _0x1245['IbDrsZ'] = true;
+    }_0x420481 = _0x1245.TutDhs(_0x420481, _0x1396fd);_0x1245.aHqFqC[_0x13e3f0] = _0x420481;
+  } else {
+    _0x420481 = _0x50b725;
+  }return _0x420481;
+};
+
+'use strict';function hasPragma(_0x4750d0) {
+  return (/^\s*#[^\S\n]*@(format|prettier)\s*(\n|$)/[_0x1245('0', '2*SI')](_0x4750d0)
+  );
+}function insertPragma(_0x59546a) {
+  const _0x5c8011 = { 'paaom': function (_0x39ec32, _0x33ce46) {
+      return _0x39ec32 + _0x33ce46;
+    }, 'ZNHsc': '# @format\n\n' };
+  return _0x5c8011[_0x1245('1', 'cRc^')](_0x5c8011[_0x1245('2', '85@q')], _0x59546a);
+}module[_0x1245('3', 'snGJ')] = { 'hasPragma': hasPragma, 'insertPragma': insertPragma };

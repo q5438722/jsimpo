@@ -1,0 +1,1 @@
+const WINDOW_NAMES=['VUniLeftWindow','VUniTopWindow','VUniRightWindow'];export function checkInWindows(_0x194fb0){var _0x5077f3={'swkfZ':function(_0x5d90b3,_0x582352){return _0x5d90b3!==_0x582352;}};if(_0x5077f3['swkfZ'](__PLATFORM__,'h5')){return![];}while(_0x194fb0){if(WINDOW_NAMES['indexOf'](_0x194fb0['$options']['name'])!==-0x1){return!![];}_0x194fb0=_0x194fb0['$parent'];}}

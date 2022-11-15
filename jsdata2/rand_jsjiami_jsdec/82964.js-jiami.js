@@ -1,0 +1,2 @@
+/* eslint-env node */
+'use strict';module['exports']=function(_0x3f27c8){var _0x396ce9={'qyQoD':'angular','ZMTxh':'angular-animate','basYi':'/build/angular-animate.js','nBCbr':'app','kQFCO':'app.js','RWDwE':'common.js'};_0x3f27c8['set']({'scripts':[{'id':_0x396ce9['qyQoD'],'src':'/build/angular.js'},{'id':_0x396ce9['ZMTxh'],'src':_0x396ce9['basYi']},{'id':_0x396ce9['nBCbr'],'src':_0x396ce9['kQFCO']},{'src':_0x396ce9['RWDwE']}]});};

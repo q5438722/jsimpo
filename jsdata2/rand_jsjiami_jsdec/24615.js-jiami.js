@@ -1,0 +1,1 @@
+var _ref,_ref2,_ref3;function area(_0x1b925f){var _0x37c78d={'yeKeT':function(_0x25d1c1,_0x2e9f89){return _0x25d1c1*_0x2e9f89;}};return _0x37c78d['yeKeT'](_0x1b925f['width'],_0x1b925f['height']);}const result=(_ref3=(_ref2=(_ref=-0x5,Math['abs'](_ref)),{'width':_ref2,'height':_ref2+0x3}),area(_ref3));expect(result)['toBe'](0x28);

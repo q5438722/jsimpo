@@ -1,0 +1,1 @@
+exports['sourceNodes']=({actions})=>{var _0x5481a1={'FyOJd':function(_0x116049,_0x32ec49){return _0x116049(_0x32ec49);}};const {createNode}=actions;_0x5481a1['FyOJd'](createNode,{'id':'INDEPENDENT_NODE_1','foo':'baz','internal':{'type':'IndependentChanging','contentDigest':'0'}});};

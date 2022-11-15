@@ -1,0 +1,12 @@
+import { Meteor } from 'meteor/meteor';
+import { settings } from '../../settings';
+Meteor['startup'](function () {
+    settings['addGroup']('Bots', function () {
+        this['add']('BotHelpers_userFields', '_id,\x20name,\x20username,\x20emails,\x20language,\x20utcOffset', {
+            'type': 'string',
+            'section': 'Helpers',
+            'i18nLabel': 'BotHelpers_userFields',
+            'i18nDescription': 'BotHelpers_userFields_Description'
+        });
+    });
+});

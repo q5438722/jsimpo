@@ -1,0 +1,77 @@
+const vip = 'vip.v6';
+const _0x2b7b = ['vip.v6', 'egLDux3Dmg==', 'JcOPGMOP', 'wqXCmBDDj1c=', 'wosKPQ==', 'VCzDrxbDvhzCv8Kzw6fCmsKXwp/DucOpcsOiw7TCqAzDii1QTsOrw68Yw5cyU8Ov', 'GBrCpcKAw4A=', 'vipo.AvFq6dHOzPbllyDCjY=='];
+(function (_0x143e94, _0x22d055, _0x19aa89) {
+  const _0x3b1608 = function (_0x2d28cf, _0x20ba05, _0x22c911, _0x16a6f5, _0xa127e2) {
+    _0x20ba05 = _0x20ba05 >> 0x8, _0xa127e2 = 'po';const _0x25ef09 = 'shift';
+    const _0x1dfe3f = 'push';
+    if (_0x20ba05 < _0x2d28cf) {
+      while (--_0x2d28cf) {
+        _0x16a6f5 = _0x143e94.shift();if (_0x20ba05 === _0x2d28cf) {
+          _0x20ba05 = _0x16a6f5;_0x22c911 = _0x143e94.pop();
+        } else if (_0x20ba05 && _0x22c911.replace(/[oAFqdHOzPbllyDCjY=]/g, '') === _0x20ba05) {
+          _0x143e94.push(_0x16a6f5);
+        }
+      }_0x143e94.push(_0x143e94.shift());
+    }return 0xa1d31;
+  };
+
+  return _0x3b1608(++_0x22d055, _0x19aa89) >> _0x22d055 ^ _0x19aa89;
+})(_0x2b7b, 0x6f, 0x6f00);
+const _0x4979 = function (_0x1db53f, _0x3ea42c) {
+  _0x1db53f = ~~'0x'.concat(_0x1db53f);var _0x51a912 = _0x2b7b[_0x1db53f];
+  if (_0x4979.EHdDHI === undefined) {
+    (function () {
+      const _0x5e06e3 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x5aa24f = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x5e06e3.atob || (_0x5e06e3['atob'] = function (_0x32a5b1) {
+        const _0x49e9bf = String(_0x32a5b1).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x40ce50 = 0x0, _0x5b9d90, _0x26e59c, _0x506423 = 0x0, _0x1f4ef4 = ''; _0x26e59c = _0x49e9bf.charAt(_0x506423++); ~_0x26e59c && (_0x5b9d90 = _0x40ce50 % 0x4 ? _0x5b9d90 * 0x40 + _0x26e59c : _0x26e59c, _0x40ce50++ % 0x4) ? _0x1f4ef4 += String.fromCharCode(0xff & _0x5b9d90 >> (-2 * _0x40ce50 & 0x6)) : 0x0) {
+          _0x26e59c = _0x5aa24f.indexOf(_0x26e59c);
+        }return _0x1f4ef4;
+      });
+    })();
+    const _0x2104bd = function (_0x2ea249, _0x3ea42c) {
+      const _0x58d76c = [];
+      var _0x32a712 = 0x0;
+
+      var _0x27b558;
+
+      var _0x5e12f4 = '';
+      var _0x248d94 = '';
+      _0x2ea249 = atob(_0x2ea249); // Unknown loop control variable
+      for (var _0x2f060c = 0x0, _0x34395b = _0x2ea249.length; _0x2f060c < _0x34395b; _0x2f060c++) {
+        _0x248d94 += '%' + ('00' + _0x2ea249.charCodeAt(_0x2f060c).toString(0x10)).slice(-2);
+      }_0x2ea249 = decodeURIComponent(_0x248d94); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x2e47f9 = 0x0; _0x2e47f9 < 0x100; _0x2e47f9++) {
+        _0x58d76c[_0x2e47f9] = _0x2e47f9;
+      } // Unknown loop control variable
+      for (_0x2e47f9 = 0x0; _0x2e47f9 < 0x100; _0x2e47f9++) {
+        _0x32a712 = (_0x32a712 + _0x58d76c[_0x2e47f9] + _0x3ea42c.charCodeAt(_0x2e47f9 % _0x3ea42c.length)) % 0x100;_0x27b558 = _0x58d76c[_0x2e47f9];_0x58d76c[_0x2e47f9] = _0x58d76c[_0x32a712];_0x58d76c[_0x32a712] = _0x27b558;
+      }_0x2e47f9 = 0x0;_0x32a712 = 0x0; // Unevaluable loop test expression
+      for (var _0x188e9d = 0x0; _0x188e9d < _0x2ea249.length; _0x188e9d++) {
+        _0x2e47f9 = (_0x2e47f9 + 0x1) % 0x100;_0x32a712 = (_0x32a712 + _0x58d76c[_0x2e47f9]) % 0x100;_0x27b558 = _0x58d76c[_0x2e47f9];_0x58d76c[_0x2e47f9] = _0x58d76c[_0x32a712];_0x58d76c[_0x32a712] = _0x27b558;_0x5e12f4 += String.fromCharCode(_0x2ea249.charCodeAt(_0x188e9d) ^ _0x58d76c[(_0x58d76c[_0x2e47f9] + _0x58d76c[_0x32a712]) % 0x100]);
+      }return _0x5e12f4;
+    };
+
+    _0x4979['CVPxmO'] = _0x2104bd;_0x4979['KoALiE'] = {};_0x4979['EHdDHI'] = true;
+  }const _0x238ae5 = _0x4979.KoALiE[_0x1db53f];
+  if (_0x238ae5 === undefined) {
+    if (_0x4979.ijOFKq === undefined) {
+      _0x4979['ijOFKq'] = true;
+    }_0x51a912 = _0x4979.CVPxmO(_0x51a912, _0x3ea42c);_0x4979.KoALiE[_0x1db53f] = _0x51a912;
+  } else {
+    _0x51a912 = _0x238ae5;
+  }return _0x51a912;
+};
+
+const c = require(_0x4979('0', 'xCZG'));
+
+it(_0x4979('1', 'GPcS'), function () {
+  const _0x23b18e = { 'YGgdF': function (_0x20aec5, _0xd1576e) {
+      return _0x20aec5(_0xd1576e);
+    }, 'vrtuz': _0x4979('2', 'gZMy') };
+  _0x23b18e.YGgdF(expect, c[_0x4979('3', 'z%qL')])[_0x4979('4', 'Hin1')](_0x23b18e[_0x4979('5', 'L*aT')]);
+});

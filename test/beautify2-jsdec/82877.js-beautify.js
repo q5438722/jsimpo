@@ -1,0 +1,1 @@
+'use strict';angular.module('test',[]).controller('TestController',function($anchorScroll,$location,$scope){$anchorScroll.yOffset=50;$scope.scrollTo=function(target){if($location.hash()!==target){$location.hash(target)}else{$anchorScroll()}}});

@@ -1,0 +1,59 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "SequenceExpression",
+                "expressions": [
+                    {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "global"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "NO_TARGET_ARGS",
+                                "raw": "'NO_TARGET_ARGS'"
+                            }
+                        },
+                        "right": {
+                            "type": "UnaryExpression",
+                            "operator": "!",
+                            "argument": {
+                                "type": "UnaryExpression",
+                                "operator": "!",
+                                "argument": {
+                                    "type": "ArrayExpression",
+                                    "elements": []
+                                },
+                                "prefix": true
+                            },
+                            "prefix": true
+                        }
+                    },
+                    {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../build-common",
+                                "raw": "'../build-common'"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

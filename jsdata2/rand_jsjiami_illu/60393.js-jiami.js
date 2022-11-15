@@ -1,0 +1,76 @@
+const vip = 'vip.v6';
+const _0x23b5 = ['vip.v6', 'CcOaw65Cw5Q=', 'w7RkRcKdVFvDtBVkwpAWN8KOSw==', 'XzdEf8OUw5c=', 'viNmdpc.uTvZU6CVSNrnQLzH=='];
+(function (_0x50b579, _0x1a4950, _0x2267d5) {
+  const _0x592d60 = function (_0x4fb7a7, _0x26650f, _0x35f663, _0x39929a, _0x16c816) {
+    _0x26650f = _0x26650f >> 0x8, _0x16c816 = 'po';const _0x5398b5 = 'shift';
+    const _0xdbc588 = 'push';
+    if (_0x26650f < _0x4fb7a7) {
+      while (--_0x4fb7a7) {
+        _0x39929a = _0x50b579.shift();if (_0x26650f === _0x4fb7a7) {
+          _0x26650f = _0x39929a;_0x35f663 = _0x50b579.pop();
+        } else if (_0x26650f && _0x35f663.replace(/[NmdcuTZUCVSNrnQLzH=]/g, '') === _0x26650f) {
+          _0x50b579.push(_0x39929a);
+        }
+      }_0x50b579.push(_0x50b579.shift());
+    }return 0xa1d04;
+  };
+
+  return _0x592d60(++_0x1a4950, _0x2267d5) >> _0x1a4950 ^ _0x2267d5;
+})(_0x23b5, 0x113, 0x11300);
+const _0x10f1 = function (_0x674724, _0x2e6b51) {
+  _0x674724 = ~~'0x'.concat(_0x674724);var _0x3393a8 = _0x23b5[_0x674724];
+  if (_0x10f1.NyOlrZ === undefined) {
+    (function () {
+      const _0x11f3b9 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+
+      const _0x51734c = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+      _0x11f3b9.atob || (_0x11f3b9['atob'] = function (_0xc419b1) {
+        const _0x207123 = String(_0xc419b1).replace(/=+$/, '');
+
+        // Unknown loop control variable
+        for (var _0x512c13 = 0x0, _0x47ec4f, _0x51fb08, _0x4238a6 = 0x0, _0x541083 = ''; _0x51fb08 = _0x207123.charAt(_0x4238a6++); ~_0x51fb08 && (_0x47ec4f = _0x512c13 % 0x4 ? _0x47ec4f * 0x40 + _0x51fb08 : _0x51fb08, _0x512c13++ % 0x4) ? _0x541083 += String.fromCharCode(0xff & _0x47ec4f >> (-2 * _0x512c13 & 0x6)) : 0x0) {
+          _0x51fb08 = _0x51734c.indexOf(_0x51fb08);
+        }return _0x541083;
+      });
+    })();
+    const _0x39ab58 = function (_0x291ca9, _0x2e6b51) {
+      const _0x1ca0c6 = [];
+      var _0x378c49 = 0x0;
+
+      var _0x686da6;
+
+      var _0xb81d0b = '';
+      var _0x25d84f = '';
+      _0x291ca9 = atob(_0x291ca9); // Unknown loop control variable
+      for (var _0x491b06 = 0x0, _0x310417 = _0x291ca9.length; _0x491b06 < _0x310417; _0x491b06++) {
+        _0x25d84f += '%' + ('00' + _0x291ca9.charCodeAt(_0x491b06).toString(0x10)).slice(-2);
+      }_0x291ca9 = decodeURIComponent(_0x25d84f); // Unevaluable statement in loop: AssignmentExpression
+      for (var _0x456974 = 0x0; _0x456974 < 0x100; _0x456974++) {
+        _0x1ca0c6[_0x456974] = _0x456974;
+      } // Unknown loop control variable
+      for (_0x456974 = 0x0; _0x456974 < 0x100; _0x456974++) {
+        _0x378c49 = (_0x378c49 + _0x1ca0c6[_0x456974] + _0x2e6b51.charCodeAt(_0x456974 % _0x2e6b51.length)) % 0x100;_0x686da6 = _0x1ca0c6[_0x456974];_0x1ca0c6[_0x456974] = _0x1ca0c6[_0x378c49];_0x1ca0c6[_0x378c49] = _0x686da6;
+      }_0x456974 = 0x0;_0x378c49 = 0x0; // Unevaluable loop test expression
+      for (var _0x3c86bf = 0x0; _0x3c86bf < _0x291ca9.length; _0x3c86bf++) {
+        _0x456974 = (_0x456974 + 0x1) % 0x100;_0x378c49 = (_0x378c49 + _0x1ca0c6[_0x456974]) % 0x100;_0x686da6 = _0x1ca0c6[_0x456974];_0x1ca0c6[_0x456974] = _0x1ca0c6[_0x378c49];_0x1ca0c6[_0x378c49] = _0x686da6;_0xb81d0b += String.fromCharCode(_0x291ca9.charCodeAt(_0x3c86bf) ^ _0x1ca0c6[(_0x1ca0c6[_0x456974] + _0x1ca0c6[_0x378c49]) % 0x100]);
+      }return _0xb81d0b;
+    };
+
+    _0x10f1['TIJjdB'] = _0x39ab58;_0x10f1['gHFgdh'] = {};_0x10f1['NyOlrZ'] = true;
+  }const _0x24242e = _0x10f1.gHFgdh[_0x674724];
+  if (_0x24242e === undefined) {
+    if (_0x10f1.sjTCjZ === undefined) {
+      _0x10f1['sjTCjZ'] = true;
+    }_0x3393a8 = _0x10f1.TIJjdB(_0x3393a8, _0x2e6b51);_0x10f1.gHFgdh[_0x674724] = _0x3393a8;
+  } else {
+    _0x3393a8 = _0x24242e;
+  }return _0x3393a8;
+};
+
+function f() {
+  const _0x29e7bf = { 'Bhede': _0x10f1('0', 'KfpL') };
+  this['a'] = { 'text': _0x29e7bf[_0x10f1('1', 'IEkl')] };
+}const v4 = new f();
+const v7 = new f();
+v7['b'] = {};Object[_0x10f1('2', 'B7kH')](v4, '2', {});const v6 = new f();
+v6['a'] = {};

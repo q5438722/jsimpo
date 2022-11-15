@@ -1,0 +1,1 @@
+import _0x3f2a05 from'../util/createUtilityPlugin';export default function (){var _0xdedaaf={'OzCVW':function(_0x2bfad6,_0x5e202f,_0x114d5d){return _0x2bfad6(_0x5e202f,_0x114d5d);},'lYsWQ':'transformOrigin','WANnd':'origin'};return _0xdedaaf['OzCVW'](_0x3f2a05,_0xdedaaf['lYsWQ'],[[_0xdedaaf['WANnd'],[_0xdedaaf['lYsWQ']]]]);}

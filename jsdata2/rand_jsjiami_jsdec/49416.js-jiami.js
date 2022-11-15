@@ -1,0 +1,1 @@
+import _0x42ec84 from'../../lib/auth0';export default async function logout(_0x11f0a2,_0x5245ed){try{await _0x42ec84['handleLogout'](_0x11f0a2,_0x5245ed);}catch(_0x3721e7){console['error'](_0x3721e7);_0x5245ed['status'](_0x3721e7['status']||0x1f4)['end'](_0x3721e7['message']);}}

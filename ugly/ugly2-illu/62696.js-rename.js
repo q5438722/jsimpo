@@ -1,0 +1,17 @@
+var o1 = {};
+var o2 = {};
+var wr1;
+var wr2;
+(function () {
+  wr1 = new WeakRef(o1);wr2 = new WeakRef(o2);
+})();gc();(function () {
+  assertNotEquals(undefined, wr1.deref());assertNotEquals(undefined, wr2.deref());
+})();setTimeout(function () {
+  wr1.deref();o1 = null;gc();setTimeout(function () {
+    wr2.deref();o2 = null;gc();setTimeout(function () {
+      assertEquals(undefined, wr1.deref());gc();setTimeout(function () {
+        assertEquals(undefined, wr2.deref());
+      }, 0);
+    }, 0);
+  }, 0);
+}, 0);

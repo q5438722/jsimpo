@@ -1,0 +1,1 @@
+(function(f){var r=function(f,n){return f+n};var n=function(){var f=r(1,2);var n=r(f,f);return n}})(typeof fff=="undefined"?fff={}:fff);

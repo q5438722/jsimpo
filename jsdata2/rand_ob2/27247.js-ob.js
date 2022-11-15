@@ -1,0 +1,88 @@
+const _0x1733 = [
+    'filter',
+    'remove',
+    'toSource',
+    '2Jotdsp',
+    '80535loRTth',
+    '69547eFappQ',
+    '2DGEOOQ',
+    '3284zEmjxL',
+    '46jZZOdx',
+    '64782ZpKDLd',
+    '43761HFfwWz',
+    '165SfWDNq',
+    '1032npLbIL',
+    '157317tOoESW',
+    'jscodeshift',
+    'source',
+    'printOptions',
+    'single',
+    'AutocompleteFreeSoloValueMapping',
+    'Value',
+    'UseAutocompleteProps',
+    'AutocompleteHighlightChangeReason',
+    'AutocompleteInputChangeReason',
+    'AutocompleteChangeReason',
+    'AutocompleteCloseReason',
+    'useAutocomplete',
+    'find',
+    'ImportDeclaration',
+    'node',
+    'value',
+    'match',
+    'forEach',
+    'imported',
+    'name',
+    'local',
+    'push',
+    'identifier',
+    'specifiers',
+    'length',
+    'literal',
+    '@material-ui/core/useAutocomplete',
+    'insertAfter'
+];
+function _0x3bc4(_0x1d3cad, _0x38a978) {
+    return _0x3bc4 = function (_0x1733b4, _0x3bc413) {
+        _0x1733b4 = _0x1733b4 - 0x13a;
+        let _0xa29c76 = _0x1733[_0x1733b4];
+        return _0xa29c76;
+    }, _0x3bc4(_0x1d3cad, _0x38a978);
+}
+(function (_0x317a8f, _0xbb0617) {
+    const _0xbc635b = _0x3bc4;
+    while (!![]) {
+        try {
+            const _0x99ba05 = parseInt(_0xbc635b(0x13a)) * parseInt(_0xbc635b(0x13b)) + parseInt(_0xbc635b(0x13c)) * parseInt(_0xbc635b(0x13d)) + -parseInt(_0xbc635b(0x13e)) * parseInt(_0xbc635b(0x13f)) + parseInt(_0xbc635b(0x140)) + -parseInt(_0xbc635b(0x141)) + -parseInt(_0xbc635b(0x142)) * parseInt(_0xbc635b(0x143)) + parseInt(_0xbc635b(0x144));
+            if (_0x99ba05 === _0xbb0617)
+                break;
+            else
+                _0x317a8f['push'](_0x317a8f['shift']());
+        } catch (_0x253421) {
+            _0x317a8f['push'](_0x317a8f['shift']());
+        }
+    }
+}(_0x1733, 0x265e6));
+export default function transformer(_0x423a0a, _0x42d421, _0x4b9bb9) {
+    const _0x10cc50 = _0x3bc4, _0x4d5a8a = _0x42d421[_0x10cc50(0x145)], _0x187ce3 = _0x4d5a8a(_0x423a0a[_0x10cc50(0x146)]), _0x2a1548 = _0x4b9bb9[_0x10cc50(0x147)] || { 'quote': _0x10cc50(0x148) }, _0x23306e = [
+            'FilterOptionsState',
+            'createFilterOptions',
+            'CreateFilterOptionsConfig',
+            _0x10cc50(0x149),
+            _0x10cc50(0x14a),
+            _0x10cc50(0x14b),
+            _0x10cc50(0x14c),
+            _0x10cc50(0x14d),
+            _0x10cc50(0x14e),
+            _0x10cc50(0x14f),
+            _0x10cc50(0x150)
+        ];
+    let _0x343027;
+    return _0x187ce3[_0x10cc50(0x151)](_0x4d5a8a[_0x10cc50(0x152)])['filter'](_0x55c1f0 => _0x55c1f0[_0x10cc50(0x153)]['source'][_0x10cc50(0x154)][_0x10cc50(0x155)](/^@material-ui\/lab\/?(useAutocomplete)?$/))[_0x10cc50(0x156)](_0x330818 => {
+        const _0x25a28f = _0x10cc50, _0x1bcfb4 = [];
+        _0x330818[_0x25a28f(0x153)]['specifiers'][_0x25a28f(0x156)]((_0x2ac5a1, _0x321a59) => {
+            const _0x488e2e = _0x25a28f;
+            _0x23306e['includes'](_0x2ac5a1[_0x488e2e(0x157)] ? _0x2ac5a1['imported'][_0x488e2e(0x158)] : _0x2ac5a1[_0x488e2e(0x159)][_0x488e2e(0x158)]) && (_0x2ac5a1[_0x488e2e(0x159)]['name'] === _0x488e2e(0x150) ? _0x1bcfb4[_0x488e2e(0x15a)](_0x4d5a8a['importDefaultSpecifier'](_0x4d5a8a[_0x488e2e(0x15b)](_0x488e2e(0x150)))) : _0x1bcfb4['push'](_0x2ac5a1), delete _0x330818[_0x488e2e(0x153)][_0x488e2e(0x15c)][_0x321a59]);
+        }), _0x1bcfb4[_0x25a28f(0x15d)] && (!_0x343027 ? (_0x343027 = _0x4d5a8a['importDeclaration'](_0x1bcfb4, _0x4d5a8a[_0x25a28f(0x15e)](_0x25a28f(0x15f))), _0x330818[_0x25a28f(0x160)](_0x343027)) : _0x343027['specifiers']['push'](..._0x1bcfb4));
+    })[_0x10cc50(0x161)](_0x5c6ec6 => !Object['keys'](_0x5c6ec6[_0x10cc50(0x153)][_0x10cc50(0x15c)])[_0x10cc50(0x15d)])[_0x10cc50(0x162)](), _0x187ce3[_0x10cc50(0x163)](_0x2a1548);
+}

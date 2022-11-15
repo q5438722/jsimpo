@@ -1,0 +1,2832 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "Literal",
+                "value": "use strict",
+                "raw": "'use strict'"
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "common"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "../common",
+                                "raw": "'../common'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "assert"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "assert",
+                                "raw": "'assert'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "stream"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "stream",
+                                "raw": "'stream'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "BlockStatement",
+            "body": [
+                {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                        {
+                            "type": "VariableDeclarator",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "stream"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "Writable",
+                                        "raw": "'Writable'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        }
+                    ],
+                    "kind": "const"
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "_write",
+                                "raw": "'_write'"
+                            }
+                        },
+                        "right": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x5e193b"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x432ec6"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x79d3dc"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0x79d3dc"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "NewExpression",
+                                                    "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "Error"
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "Literal",
+                                                            "value": "write test error",
+                                                            "raw": "'write\\x20test\\x20error'"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "finish",
+                                "raw": "'finish'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustNotCall",
+                                        "raw": "'mustNotCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "prefinish",
+                                "raw": "'prefinish'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustNotCall",
+                                        "raw": "'mustNotCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "error",
+                                "raw": "'error'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustCall",
+                                        "raw": "'mustCall'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "ArrowFunctionExpression",
+                                        "id": null,
+                                        "params": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "_0x4e882e"
+                                            }
+                                        ],
+                                        "body": {
+                                            "type": "BlockStatement",
+                                            "body": [
+                                                {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "assert"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "strictEqual",
+                                                                "raw": "'strictEqual'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x4e882e"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "message",
+                                                                    "raw": "'message'"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "write test error",
+                                                                "raw": "'write test error'"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "generator": false,
+                                        "expression": false,
+                                        "async": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "end",
+                                "raw": "'end'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "test",
+                                "raw": "'test'"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "BlockStatement",
+            "body": [
+                {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                        {
+                            "type": "VariableDeclarator",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "stream"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "Writable",
+                                        "raw": "'Writable'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        }
+                    ],
+                    "kind": "const"
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "_write",
+                                "raw": "'_write'"
+                            }
+                        },
+                        "right": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x2a4e2f"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0xed009f"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x4557a5"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "setImmediate"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x4557a5"
+                                                },
+                                                {
+                                                    "type": "NewExpression",
+                                                    "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "Error"
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "Literal",
+                                                            "value": "write test error",
+                                                            "raw": "'write\\x20test\\x20error'"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "finish",
+                                "raw": "'finish'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustNotCall",
+                                        "raw": "'mustNotCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "prefinish",
+                                "raw": "'prefinish'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustNotCall",
+                                        "raw": "'mustNotCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "error",
+                                "raw": "'error'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustCall",
+                                        "raw": "'mustCall'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "ArrowFunctionExpression",
+                                        "id": null,
+                                        "params": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "_0x3f231c"
+                                            }
+                                        ],
+                                        "body": {
+                                            "type": "BlockStatement",
+                                            "body": [
+                                                {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "assert"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "strictEqual",
+                                                                "raw": "'strictEqual'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x3f231c"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "message",
+                                                                    "raw": "'message'"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "write test error",
+                                                                "raw": "'write\\x20test\\x20error'"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "generator": false,
+                                        "expression": false,
+                                        "async": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "end",
+                                "raw": "'end'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "test",
+                                "raw": "'test'"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "BlockStatement",
+            "body": [
+                {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                        {
+                            "type": "VariableDeclarator",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "stream"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "Writable",
+                                        "raw": "'Writable'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        }
+                    ],
+                    "kind": "const"
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "_write",
+                                "raw": "'_write'"
+                            }
+                        },
+                        "right": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0xfa6e7d"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x4dac52"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0xcbde43"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0xcbde43"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "NewExpression",
+                                                    "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "Error"
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "Literal",
+                                                            "value": "write test error",
+                                                            "raw": "'write test error'"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "_writev",
+                                "raw": "'_writev'"
+                            }
+                        },
+                        "right": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x301c3d"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x39f206"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0x39f206"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "NewExpression",
+                                                    "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "Error"
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "Literal",
+                                                            "value": "writev test error",
+                                                            "raw": "'writev\\x20test\\x20error'"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "finish",
+                                "raw": "'finish'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustNotCall",
+                                        "raw": "'mustNotCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "prefinish",
+                                "raw": "'prefinish'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustNotCall",
+                                        "raw": "'mustNotCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "error",
+                                "raw": "'error'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustCall",
+                                        "raw": "'mustCall'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "ArrowFunctionExpression",
+                                        "id": null,
+                                        "params": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "_0x26ecbd"
+                                            }
+                                        ],
+                                        "body": {
+                                            "type": "BlockStatement",
+                                            "body": [
+                                                {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "assert"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "strictEqual",
+                                                                "raw": "'strictEqual'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x26ecbd"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "message",
+                                                                    "raw": "'message'"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "writev test error",
+                                                                "raw": "'writev\\x20test\\x20error'"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "generator": false,
+                                        "expression": false,
+                                        "async": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "cork",
+                                "raw": "'cork'"
+                            }
+                        },
+                        "arguments": []
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "write",
+                                "raw": "'write'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "test",
+                                "raw": "'test'"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "setImmediate"
+                        },
+                        "arguments": [
+                            {
+                                "type": "FunctionExpression",
+                                "id": null,
+                                "params": [],
+                                "body": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "writable"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "end",
+                                                        "raw": "'end'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "test",
+                                                        "raw": "'test'"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "generator": false,
+                                "expression": false,
+                                "async": false
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "BlockStatement",
+            "body": [
+                {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                        {
+                            "type": "VariableDeclarator",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "stream"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "Writable",
+                                        "raw": "'Writable'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        }
+                    ],
+                    "kind": "const"
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "_write",
+                                "raw": "'_write'"
+                            }
+                        },
+                        "right": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x25112b"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x275b07"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x29149c"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "setImmediate"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x29149c"
+                                                },
+                                                {
+                                                    "type": "NewExpression",
+                                                    "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "Error"
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "Literal",
+                                                            "value": "write test error",
+                                                            "raw": "'write\\x20test\\x20error'"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "_writev",
+                                "raw": "'_writev'"
+                            }
+                        },
+                        "right": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x30c97f"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x184553"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "setImmediate"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x184553"
+                                                },
+                                                {
+                                                    "type": "NewExpression",
+                                                    "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "Error"
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "Literal",
+                                                            "value": "writev test error",
+                                                            "raw": "'writev test error'"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "finish",
+                                "raw": "'finish'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustNotCall",
+                                        "raw": "'mustNotCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "prefinish",
+                                "raw": "'prefinish'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustNotCall",
+                                        "raw": "'mustNotCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "error",
+                                "raw": "'error'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustCall",
+                                        "raw": "'mustCall'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "ArrowFunctionExpression",
+                                        "id": null,
+                                        "params": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "_0x3a3ff4"
+                                            }
+                                        ],
+                                        "body": {
+                                            "type": "BlockStatement",
+                                            "body": [
+                                                {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "assert"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "strictEqual",
+                                                                "raw": "'strictEqual'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "_0x3a3ff4"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "message",
+                                                                    "raw": "'message'"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "Literal",
+                                                                "value": "writev test error",
+                                                                "raw": "'writev test error'"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "generator": false,
+                                        "expression": false,
+                                        "async": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "cork",
+                                "raw": "'cork'"
+                            }
+                        },
+                        "arguments": []
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "writable"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "write",
+                                "raw": "'write'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "test",
+                                "raw": "'test'"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "setImmediate"
+                        },
+                        "arguments": [
+                            {
+                                "type": "FunctionExpression",
+                                "id": null,
+                                "params": [],
+                                "body": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "writable"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "end",
+                                                        "raw": "'end'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "test",
+                                                        "raw": "'test'"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "generator": false,
+                                "expression": false,
+                                "async": false
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "BlockStatement",
+            "body": [
+                {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                        {
+                            "type": "VariableDeclarator",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "rs"
+                            },
+                            "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "stream"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "Readable",
+                                        "raw": "'Readable'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        }
+                    ],
+                    "kind": "const"
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "rs"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "push",
+                                "raw": "'push'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "ok",
+                                "raw": "'ok'"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "rs"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "push",
+                                "raw": "'push'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": null,
+                                "raw": "null"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "rs"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "_read",
+                                "raw": "'_read'"
+                            }
+                        },
+                        "right": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": []
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                        {
+                            "type": "VariableDeclarator",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "ws"
+                            },
+                            "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "stream"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "Writable",
+                                        "raw": "'Writable'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        }
+                    ],
+                    "kind": "const"
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "ws"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "finish",
+                                "raw": "'finish'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustNotCall",
+                                        "raw": "'mustNotCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "ws"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "error",
+                                "raw": "'error'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustCall",
+                                        "raw": "'mustCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "ws"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "_write",
+                                "raw": "'_write'"
+                            }
+                        },
+                        "right": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x22fc1d"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x10f911"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x432267"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "setImmediate"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x432267"
+                                                },
+                                                {
+                                                    "type": "NewExpression",
+                                                    "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "Error"
+                                                    },
+                                                    "arguments": []
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "rs"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "pipe",
+                                "raw": "'pipe'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Identifier",
+                                "name": "ws"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "BlockStatement",
+            "body": [
+                {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                        {
+                            "type": "VariableDeclarator",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "rs"
+                            },
+                            "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "stream"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "Readable",
+                                        "raw": "'Readable'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        }
+                    ],
+                    "kind": "const"
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "rs"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "push",
+                                "raw": "'push'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "ok",
+                                "raw": "'ok'"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "rs"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "push",
+                                "raw": "'push'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": null,
+                                "raw": "null"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "rs"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "_read",
+                                "raw": "'_read'"
+                            }
+                        },
+                        "right": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": []
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                        {
+                            "type": "VariableDeclarator",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "ws"
+                            },
+                            "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "stream"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "Writable",
+                                        "raw": "'Writable'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        }
+                    ],
+                    "kind": "const"
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "ws"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "finish",
+                                "raw": "'finish'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustNotCall",
+                                        "raw": "'mustNotCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "ws"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "error",
+                                "raw": "'error'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustCall",
+                                        "raw": "'mustCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "ws"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "_write",
+                                "raw": "'_write'"
+                            }
+                        },
+                        "right": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x9fb075"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x1c6376"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x4dc5dd"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0x4dc5dd"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "NewExpression",
+                                                    "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "Error"
+                                                    },
+                                                    "arguments": []
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "rs"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "pipe",
+                                "raw": "'pipe'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Identifier",
+                                "name": "ws"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "BlockStatement",
+            "body": [
+                {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                        {
+                            "type": "VariableDeclarator",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "w"
+                            },
+                            "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "stream"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "Writable",
+                                        "raw": "'Writable'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        }
+                    ],
+                    "kind": "const"
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "w"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "_write",
+                                "raw": "'_write'"
+                            }
+                        },
+                        "right": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x601eba"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0xc57e9e"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x449186"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "process"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "nextTick",
+                                                    "raw": "'nextTick'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x449186"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "w"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "error",
+                                "raw": "'error'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustCall",
+                                        "raw": "'mustCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "w"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "finish",
+                                "raw": "'finish'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustNotCall",
+                                        "raw": "'mustNotCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "w"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "prefinish",
+                                "raw": "'prefinish'"
+                            },
+                            {
+                                "type": "ArrowFunctionExpression",
+                                "id": null,
+                                "params": [],
+                                "body": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "w"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "write",
+                                                        "raw": "'write'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "shouldn't write in prefinish listener",
+                                                        "raw": "'shouldn\\x27t\\x20write\\x20in\\x20prefinish\\x20listener'"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "generator": false,
+                                "expression": false,
+                                "async": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "w"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "end",
+                                "raw": "'end'"
+                            }
+                        },
+                        "arguments": []
+                    }
+                }
+            ]
+        },
+        {
+            "type": "BlockStatement",
+            "body": [
+                {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                        {
+                            "type": "VariableDeclarator",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "w"
+                            },
+                            "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "stream"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "Writable",
+                                        "raw": "'Writable'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        }
+                    ],
+                    "kind": "const"
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "w"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "_write",
+                                "raw": "'_write'"
+                            }
+                        },
+                        "right": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x5aa0c6"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x4a0dc5"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x3a392a"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "process"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "nextTick",
+                                                    "raw": "'nextTick'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x3a392a"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "w"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "error",
+                                "raw": "'error'"
+                            },
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "common"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "mustCall",
+                                        "raw": "'mustCall'"
+                                    }
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "w"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "on",
+                                "raw": "'on'"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "finish",
+                                "raw": "'finish'"
+                            },
+                            {
+                                "type": "ArrowFunctionExpression",
+                                "id": null,
+                                "params": [],
+                                "body": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "w"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "write",
+                                                        "raw": "'write'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "shouldn't write in finish listener",
+                                                        "raw": "'shouldn't write in finish listener'"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "generator": false,
+                                "expression": false,
+                                "async": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "w"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "end",
+                                "raw": "'end'"
+                            }
+                        },
+                        "arguments": []
+                    }
+                }
+            ]
+        }
+    ],
+    "sourceType": "script"
+}

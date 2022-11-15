@@ -1,0 +1,5 @@
+const CopyFrom = function (o, r) {
+  return r.setTo(o.x, o.y);
+};
+
+module.exports = CopyFrom;

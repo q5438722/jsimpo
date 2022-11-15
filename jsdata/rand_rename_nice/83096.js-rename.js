@@ -1,0 +1,292 @@
+'use strict';
+var isArray;
+var isObject;
+var isDefined;
+var noop;
+var ngRouteModule = angular.module("ngRoute", []).info({
+  angularVersion : '"NG_VERSION_FULL"'
+}).provider("$route", $RouteProvider).run(instantiateRoute);
+var $routeMinErr = angular.$$minErr("ngRoute");
+var isEagerInstantiationEnabled;
+function $RouteProvider() {
+  function inherit(parent, view) {
+    return angular.extend(Object.create(parent), view);
+  }
+  isArray = angular.isArray;
+  isObject = angular.isObject;
+  isDefined = angular.isDefined;
+  noop = angular.noop;
+  var routes = {};
+  this.when = function(path, route) {
+    var routeCopy = shallowCopy(route);
+    if (angular.isUndefined(routeCopy.reloadOnUrl)) {
+      routeCopy.reloadOnUrl = true;
+    }
+    if (angular.isUndefined(routeCopy.reloadOnSearch)) {
+      routeCopy.reloadOnSearch = true;
+    }
+    if (angular.isUndefined(routeCopy.caseInsensitiveMatch)) {
+      routeCopy.caseInsensitiveMatch = this.caseInsensitiveMatch;
+    }
+    routes[path] = angular.extend(routeCopy, {
+      originalPath : path
+    }, path && routeToRegExp(path, routeCopy));
+    if (path) {
+      var redirectPath = path[path.length - 1] === "/" ? path.substr(0, path.length - 1) : path + "/";
+      routes[redirectPath] = angular.extend({
+        originalPath : path,
+        redirectTo : path
+      }, routeToRegExp(redirectPath, routeCopy));
+    }
+    return this;
+  };
+  this.caseInsensitiveMatch = false;
+  this.otherwise = function(params) {
+    if (typeof params === "string") {
+      params = {
+        redirectTo : params
+      };
+    }
+    this.when(null, params);
+    return this;
+  };
+  isEagerInstantiationEnabled = true;
+  this.eagerInstantiationEnabled = function eagerInstantiationEnabled(enabled) {
+    if (isDefined(enabled)) {
+      isEagerInstantiationEnabled = enabled;
+      return this;
+    }
+    return isEagerInstantiationEnabled;
+  };
+  this.$get = ["$rootScope", "$location", "$routeParams", "$q", "$injector", "$templateRequest", "$sce", "$browser", function($rootScope, $location, nyaSelectObj, $q, $injector, $templateRequest, $sce, $browser) {
+    function switchRouteMatcher(on, route) {
+      var keys = route.keys;
+      var params = {};
+      if (!route.regexp) {
+        return null;
+      }
+      var m = route.regexp.exec(on);
+      if (!m) {
+        return null;
+      }
+      var i = 1;
+      var u = m.length;
+      for (; i < u; ++i) {
+        var key = keys[i - 1];
+        var val = m[i];
+        if (key && val) {
+          params[key.name] = val;
+        }
+      }
+      return params;
+    }
+    function prepareRoute($locationEvent) {
+      var lastRoute = $route.current;
+      preparedRoute = parseRoute();
+      preparedRouteIsUpdateOnly = updateRoute(preparedRoute, lastRoute);
+      if (!preparedRouteIsUpdateOnly && (lastRoute || preparedRoute)) {
+        if ($rootScope.$broadcast("$routeChangeStart", preparedRoute, lastRoute).defaultPrevented) {
+          if ($locationEvent) {
+            $locationEvent.preventDefault();
+          }
+        }
+      }
+    }
+    function commitRoute() {
+      var lastRoute = $route.current;
+      var nextRoute = preparedRoute;
+      if (preparedRouteIsUpdateOnly) {
+        lastRoute.params = nextRoute.params;
+        angular.copy(lastRoute.params, nyaSelectObj);
+        $rootScope.$broadcast("$routeUpdate", lastRoute);
+      } else {
+        if (nextRoute || lastRoute) {
+          loading = false;
+          $route.current = nextRoute;
+          var nextRoutePromise = $q.resolve(nextRoute);
+          $browser.$$incOutstandingRequestCount("$route");
+          nextRoutePromise.then(getRedirectionData).then(handlePossibleRedirection).then(function(canCreateDiscussions) {
+            return canCreateDiscussions && nextRoutePromise.then(resolveLocals).then(function(locals) {
+              if (nextRoute === $route.current) {
+                if (nextRoute) {
+                  nextRoute.locals = locals;
+                  angular.copy(nextRoute.params, nyaSelectObj);
+                }
+                $rootScope.$broadcast("$routeChangeSuccess", nextRoute, lastRoute);
+              }
+            });
+          }).catch(function(animate) {
+            if (nextRoute === $route.current) {
+              $rootScope.$broadcast("$routeChangeError", nextRoute, lastRoute, animate);
+            }
+          }).finally(function() {
+            $browser.$$completeOutstandingRequest(noop, "$route");
+          });
+        }
+      }
+    }
+    function getRedirectionData(route) {
+      var data = {
+        route : route,
+        hasRedirection : false
+      };
+      if (route) {
+        if (route.redirectTo) {
+          if (angular.isString(route.redirectTo)) {
+            data.path = interpolate(route.redirectTo, route.params);
+            data.search = route.params;
+            data.hasRedirection = true;
+          } else {
+            var oldPath = $location.path();
+            var oldSearch = $location.search();
+            var newUrl = route.redirectTo(route.pathParams, oldPath, oldSearch);
+            if (angular.isDefined(newUrl)) {
+              data.url = newUrl;
+              data.hasRedirection = true;
+            }
+          }
+        } else {
+          if (route.resolveRedirectTo) {
+            return $q.resolve($injector.invoke(route.resolveRedirectTo)).then(function(newUrl) {
+              if (angular.isDefined(newUrl)) {
+                data.url = newUrl;
+                data.hasRedirection = true;
+              }
+              return data;
+            });
+          }
+        }
+      }
+      return data;
+    }
+    function handlePossibleRedirection(data) {
+      var keepProcessingRoute = true;
+      if (data.route !== $route.current) {
+        keepProcessingRoute = false;
+      } else {
+        if (data.hasRedirection) {
+          var oldUrl = $location.url();
+          var newUrl = data.url;
+          if (newUrl) {
+            $location.url(newUrl).replace();
+          } else {
+            newUrl = $location.path(data.path).search(data.search).replace().url();
+          }
+          if (newUrl !== oldUrl) {
+            keepProcessingRoute = false;
+          }
+        }
+      }
+      return keepProcessingRoute;
+    }
+    function resolveLocals(route) {
+      if (route) {
+        var locals = angular.extend({}, route.resolve);
+        angular.forEach(locals, function(value, key) {
+          locals[key] = angular.isString(value) ? $injector.get(value) : $injector.invoke(value, null, null, key);
+        });
+        var template = getTemplateFor(route);
+        if (angular.isDefined(template)) {
+          locals["$template"] = template;
+        }
+        return $q.all(locals);
+      }
+    }
+    function getTemplateFor(route) {
+      var template;
+      var templateUrl;
+      if (angular.isDefined(template = route.template)) {
+        if (angular.isFunction(template)) {
+          template = template(route.params);
+        }
+      } else {
+        if (angular.isDefined(templateUrl = route.templateUrl)) {
+          if (angular.isFunction(templateUrl)) {
+            templateUrl = templateUrl(route.params);
+          }
+          if (angular.isDefined(templateUrl)) {
+            route.loadedTemplateUrl = $sce.valueOf(templateUrl);
+            template = $templateRequest(templateUrl);
+          }
+        }
+      }
+      return template;
+    }
+    function parseRoute() {
+      var params;
+      var match;
+      angular.forEach(routes, function(route, canCreateDiscussions) {
+        if (!match && (params = switchRouteMatcher($location.path(), route))) {
+          match = inherit(route, {
+            params : angular.extend({}, $location.search(), params),
+            pathParams : params
+          });
+          match.$$route = route;
+        }
+      });
+      return match || routes[null] && inherit(routes[null], {
+        params : {},
+        pathParams : {}
+      });
+    }
+    function updateRoute(next, last) {
+      return !loading && next && last && next.$$route === last.$$route && (!next.reloadOnUrl || !next.reloadOnSearch && angular.equals(next.pathParams, last.pathParams));
+    }
+    function interpolate(string, params) {
+      var input = [];
+      angular.forEach((string || "").split(":"), function(text, canCreateDiscussions) {
+        if (canCreateDiscussions === 0) {
+          input.push(text);
+        } else {
+          var methodParts = text.match(/(\w+)(?:[?*])?(.*)/);
+          var name = methodParts[1];
+          input.push(params[name]);
+          input.push(methodParts[2] || "");
+          delete params[name];
+        }
+      });
+      return input.join("");
+    }
+    var loading = false;
+    var preparedRoute;
+    var preparedRouteIsUpdateOnly;
+    var $route = {
+      routes : routes,
+      reload : function() {
+        loading = true;
+        var fakeLocationEvent = {
+          defaultPrevented : false,
+          preventDefault : function fakePreventDefault() {
+            this.defaultPrevented = true;
+            loading = false;
+          }
+        };
+        $rootScope.$evalAsync(function() {
+          prepareRoute(fakeLocationEvent);
+          if (!fakeLocationEvent.defaultPrevented) {
+            commitRoute();
+          }
+        });
+      },
+      updateParams : function(newParams) {
+        if (this.current && this.current.$$route) {
+          newParams = angular.extend({}, this.current.params, newParams);
+          $location.path(interpolate(this.current.$$route.originalPath, newParams));
+          $location.search(newParams);
+        } else {
+          throw $routeMinErr("norout", "Tried updating route with no current route");
+        }
+      }
+    };
+    $rootScope.$on("$locationChangeStart", prepareRoute);
+    $rootScope.$on("$locationChangeSuccess", commitRoute);
+    return $route;
+  }];
+}
+instantiateRoute.$inject = ["$injector"];
+function instantiateRoute($injector) {
+  if (isEagerInstantiationEnabled) {
+    $injector.get("$route");
+  }
+}
+;

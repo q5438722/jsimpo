@@ -1,0 +1,200 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "module"
+                    },
+                    "property": {
+                        "type": "Literal",
+                        "value": "exports",
+                        "raw": "'exports'"
+                    }
+                },
+                "right": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "Identifier",
+                        "name": "require"
+                    },
+                    "arguments": [
+                        {
+                            "type": "Literal",
+                            "value": "./package.json",
+                            "raw": "'./package.json'"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "ForOfStatement",
+            "left": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "key"
+                        },
+                        "init": null
+                    }
+                ],
+                "kind": "const"
+            },
+            "right": {
+                "type": "ArrayExpression",
+                "elements": [
+                    {
+                        "type": "Literal",
+                        "value": "dependencies",
+                        "raw": "'dependencies'"
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "devDependencies",
+                        "raw": "'devDependencies'"
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "peerDependencies",
+                        "raw": "'peerDependencies'"
+                    }
+                ]
+            },
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ForOfStatement",
+                        "left": {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                                {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                        "type": "Identifier",
+                                        "name": "dep"
+                                    },
+                                    "init": null
+                                }
+                            ],
+                            "kind": "const"
+                        },
+                        "right": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "Object"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "keys",
+                                    "raw": "'keys'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "LogicalExpression",
+                                    "operator": "||",
+                                    "left": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "module"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "exports",
+                                                "raw": "'exports'"
+                                            }
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "key"
+                                        }
+                                    },
+                                    "right": {
+                                        "type": "ObjectExpression",
+                                        "properties": []
+                                    }
+                                }
+                            ]
+                        },
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "AssignmentExpression",
+                                        "operator": "=",
+                                        "left": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "module"
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "exports",
+                                                        "raw": "'exports'"
+                                                    }
+                                                },
+                                                "property": {
+                                                    "type": "Identifier",
+                                                    "name": "key"
+                                                }
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "dep"
+                                            }
+                                        },
+                                        "right": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "require"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "dep"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

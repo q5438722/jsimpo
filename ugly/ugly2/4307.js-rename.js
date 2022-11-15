@@ -1,0 +1,1 @@
+var browserify=require("../");var vm=require("vm");var test=require("tap").test;var fs=require("fs");test("stream",function(a){a.plan(2);var r=fs.createReadStream(__dirname+"/stream/main.js");var e=browserify(r,{basedir:__dirname+"/stream"});e.bundle(function(r,e){vm.runInNewContext(e,{t:a})})});

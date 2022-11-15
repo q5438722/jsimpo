@@ -1,0 +1,165 @@
+'use strict';
+
+const _0x3bcf = ['createBenchmark', 'md5', 'asc', 'utf', 'buf', 'hex', 'binary', 'buffer', 'legacy', 'Crypto streams not available until v0.10', 'ascii', 'utf8', 'stream', 'test', 'version', 'cRNId', 'CTsFT', 'WJFiH', 'repeat', 'PfhyT', 'oIJkG', 'oBNRz', 'alloc', 'unknown message type: ', 'NNQdD', 'CQjBL', 'hCgmu', 'string', 'SQnMW', 'RBheI', 'ygCZl', 'createHash', 'update', 'digest', 'Matpp', 'KzGXu', 'from', 'JlbiI', 'end', 'KYjEl', 'CwtMN', 'iVRAF', 'MIFCC', 'UEJdI', 'setEncoding', '574832rNpgtg', '5011GbbqUt', '48nBctuC', '1474006Mibhri', '25559IJmPzz', '13LSlIkj', '1869613pMwfJs', '1667486BPPgZn', '2267319jbaWse', '../common.js', 'crypto'];
+const _0x4727ed = _0x1c25;
+
+(function (_0x57ebe4, _0x37ebf9) {
+    const _0x615682 = _0x1c25;
+
+    while (true) {
+        try {
+            const _0x5a7d0e = -parseInt(_0x615682(0x15a)) + -parseInt(_0x615682(0x15b)) * -parseInt(_0x615682(0x15c)) + -parseInt(_0x615682(0x15d)) + -parseInt(_0x615682(0x15e)) * -parseInt(_0x615682(0x15f)) + parseInt(_0x615682(0x160)) + -parseInt(_0x615682(0x161)) + parseInt(_0x615682(0x162));
+
+            if (_0x5a7d0e === _0x37ebf9) break;else _0x57ebe4.push(_0x57ebe4.shift());
+        } catch (_0x494694) {
+            _0x57ebe4.push(_0x57ebe4.shift());
+        }
+    }
+})(_0x3bcf, 993403);
+
+const common = require(_0x4727ed(0x163));
+
+const crypto = require(_0x4727ed(0x164));
+
+const bench = common[_0x4727ed(0x165)](main, {
+    'writes': [500],
+    'algo': ['sha256', _0x4727ed(0x166)],
+    'type': [_0x4727ed(0x167), _0x4727ed(0x168), _0x4727ed(0x169)],
+    'out': [_0x4727ed(0x16a), _0x4727ed(0x16b), _0x4727ed(0x16c)],
+    'len': [2, 1024, 102400, 1048576],
+    'api': [_0x4727ed(0x16d), 'stream']
+});
+
+function main({
+    api: _0x7b43c,
+    type: _0x1605ed,
+    len: _0x4ce4ab,
+    out: _0x32d182,
+    writes: _0x453f00,
+    algo: _0x596408
+}) {
+    const _0x111a1c = _0x4727ed;
+    const _0x3db4c7 = {
+        'gwMcy': function (_0x1981f9, _0x48f7fd) {
+            return _0x1981f9 === _0x48f7fd;
+        },
+        'cRNId': _0x111a1c(0x16e),
+        'CTsFT': _0x111a1c(0x16d),
+        'WJFiH': _0x111a1c(0x167),
+        'PfhyT': _0x111a1c(0x16f),
+        'oIJkG': 'utf',
+        'HhbDm': _0x111a1c(0x170),
+        'oBNRz': _0x111a1c(0x169),
+        'NNQdD': function (_0x195b44, _0xd4b4c0) {
+            return _0x195b44 === _0xd4b4c0;
+        },
+        'CQjBL': _0x111a1c(0x171),
+        'hCgmu': function (_0x1e382e, _0x59eb83, _0x1f4e0e, _0xafccbb, _0x3a2014, _0x1b7588, _0x4d3e1d) {
+            return _0x1e382e(_0x59eb83, _0x1f4e0e, _0xafccbb, _0x3a2014, _0x1b7588, _0x4d3e1d);
+        }
+    };
+
+    _0x3db4c7.gwMcy(_0x7b43c, 'stream') && /^v0\.[0-8]\./[_0x111a1c(0x172)](process[_0x111a1c(0x173)]) && (console.error(_0x3db4c7[_0x111a1c(0x174)]), _0x7b43c = _0x3db4c7[_0x111a1c(0x175)]);
+
+    var _0x1dd5a5;
+
+    var _0xc91251;
+
+    switch (_0x1605ed) {
+        case _0x3db4c7[_0x111a1c(0x176)]:
+            _0x1dd5a5 = 'a'[_0x111a1c(0x177)](_0x4ce4ab), _0xc91251 = _0x3db4c7[_0x111a1c(0x178)];
+            break;
+        case _0x3db4c7[_0x111a1c(0x179)]:
+            _0x1dd5a5 = '\xFC'.repeat(_0x4ce4ab / 2), _0xc91251 = _0x3db4c7.HhbDm;
+            break;
+        case _0x3db4c7[_0x111a1c(0x17a)]:
+            _0x1dd5a5 = Buffer[_0x111a1c(0x17b)](_0x4ce4ab, 'b');
+            break;
+        default:
+            throw new Error(_0x111a1c(0x17c) + _0x1605ed);
+    }
+
+    const _0x49b59c = _0x3db4c7[_0x111a1c(0x17d)](_0x7b43c, _0x3db4c7[_0x111a1c(0x17e)]) ? streamWrite : legacyWrite;
+
+    bench.start(), _0x3db4c7[_0x111a1c(0x17f)](_0x49b59c, _0x596408, _0x1dd5a5, _0xc91251, _0x453f00, _0x4ce4ab, _0x32d182);
+}
+function legacyWrite(_0x32312c, _0x54b008, _0x3f62f3, _0x13372c, _0x3b2c0e, _0x5207da) {
+    const _0x330493 = _0x4727ed;
+    const _0x34f6ea = {
+        'SQnMW': function (_0xdfc090, _0xf9c2fc) {
+            return _0xdfc090 * _0xf9c2fc;
+        },
+        'RBheI': function (_0x4d71f2, _0x3f0176) {
+            return _0x4d71f2 / _0x3f0176;
+        },
+        'ygCZl': function (_0x174f34, _0x55762d) {
+            return _0x174f34 > _0x55762d;
+        },
+        'Matpp': _0x330493(0x16c),
+        'AVCmd': function (_0x152383, _0x57f302) {
+            return _0x152383 === _0x57f302;
+        },
+        'KzGXu': _0x330493(0x180),
+        'JlbiI': 'binary'
+    };
+
+    const _0x40d515 = _0x13372c * _0x3b2c0e;
+
+    const _0x5817f3 = _0x34f6ea[_0x330493(0x181)](_0x40d515, 8);
+
+    const _0x3f9c9a = _0x34f6ea[_0x330493(0x182)](_0x5817f3, _0x34f6ea[_0x330493(0x181)](_0x34f6ea[_0x330493(0x181)](1024, 1024), 1024));
+
+    while (_0x34f6ea[_0x330493(0x183)](_0x13372c--, 0)) {
+        const _0x29be35 = crypto[_0x330493(0x184)](_0x32312c);
+
+        _0x29be35[_0x330493(0x185)](_0x54b008, _0x3f62f3);
+
+        var _0x53a6ea = _0x29be35[_0x330493(0x186)](_0x5207da);
+
+        if (_0x5207da === _0x34f6ea[_0x330493(0x187)] && _0x34f6ea.AVCmd(typeof _0x53a6ea, _0x34f6ea[_0x330493(0x188)])) _0x53a6ea = Buffer[_0x330493(0x189)](_0x53a6ea, _0x34f6ea[_0x330493(0x18a)]);
+    }
+    bench[_0x330493(0x18b)](_0x3f9c9a);
+}
+function _0x1c25(_0x5747ad, _0x2c97b3) {
+    return _0x1c25 = function (_0x451ba8, _0x3f7481) {
+        _0x451ba8 = _0x451ba8 - 346;
+        const _0x118692 = _0x3bcf[_0x451ba8];
+
+        return _0x118692;
+    }, _0x1c25(_0x5747ad, _0x2c97b3);
+}
+function streamWrite(_0x59f32d, _0x1c8aef, _0x3c4cbc, _0x571746, _0x21d9e7, _0x2e4a38) {
+    const _0x59736c = _0x4727ed;
+    const _0x2a765b = {
+        'KYjEl': function (_0x5539ef, _0x4de503) {
+            return _0x5539ef * _0x4de503;
+        },
+        'OPepK': function (_0x533b9f, _0x2bf38f) {
+            return _0x533b9f * _0x2bf38f;
+        },
+        'CwtMN': function (_0x15bce4, _0x1b197d) {
+            return _0x15bce4 * _0x1b197d;
+        },
+        'iVRAF': function (_0x5dfd3b, _0x4208b9) {
+            return _0x5dfd3b > _0x4208b9;
+        },
+        'MIFCC': function (_0x590d21, _0x112a3c) {
+            return _0x590d21 !== _0x112a3c;
+        },
+        'UEJdI': _0x59736c(0x16c)
+    };
+
+    const _0x1b794a = _0x571746 * _0x21d9e7;
+
+    const _0x516f95 = _0x2a765b[_0x59736c(0x18c)](_0x1b794a, 8);
+
+    const _0x21fdf4 = _0x516f95 / _0x2a765b.OPepK(_0x2a765b[_0x59736c(0x18d)](1024, 1024), 1024);
+
+    while (_0x2a765b[_0x59736c(0x18e)](_0x571746--, 0)) {
+        const _0x37eca5 = crypto.createHash(_0x59f32d);
+
+        if (_0x2a765b[_0x59736c(0x18f)](_0x2e4a38, _0x2a765b[_0x59736c(0x190)])) _0x37eca5[_0x59736c(0x191)](_0x2e4a38);
+        _0x37eca5.write(_0x1c8aef, _0x3c4cbc), _0x37eca5[_0x59736c(0x18b)](), _0x37eca5.read();
+    }
+    bench[_0x59736c(0x18b)](_0x21fdf4);
+}

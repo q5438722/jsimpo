@@ -1,0 +1,3 @@
+import _0x176d93 from './utils/createSvgIcon';
+import { jsx as _0x99d74e } from 'react/jsx-runtime';
+export default _0x176d93(_0x99d74e('path', { 'd': 'M21\x203H5.83L21\x2018.17zM2.81\x202.81\x201.39\x204.22\x203\x205.83V21h15.17l1.61\x201.61\x201.41-1.41L2.81\x202.81zM6\x2017l3-4\x202.25\x203\x20.82-1.1\x202.1\x202.1H6z' }), 'HideImageSharp');

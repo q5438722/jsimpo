@@ -1,0 +1,1 @@
+Package.describe({summary:"Blaze configuration templates for Weibo OAuth.",version:"1.0.2"});Package.onUse(e=>{e.use("ecmascript","client");e.use("templating@1.4.0","client");e.addFiles("weibo_login_button.css","client");e.addFiles(["weibo_configure.html","weibo_configure.js"],"client")});

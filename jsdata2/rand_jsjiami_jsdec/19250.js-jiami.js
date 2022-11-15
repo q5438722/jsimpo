@@ -1,0 +1,1 @@
+if(!![]){async function*run(){return!![];}}function test(){var _0x4ec73c={'cENCa':function(_0x225861){return _0x225861();}};return _0x4ec73c['cENCa'](run);}

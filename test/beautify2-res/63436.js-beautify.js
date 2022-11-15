@@ -1,0 +1,1 @@
+var fuse=1;var handler={get:function(){return function(){}},has(){return true},getOwnPropertyDescriptor:function(){if(fuse--==0)throw"please die";return{value:function(){},configurable:true}}};var p=new Proxy({},handler);var o=Object.create(p);with(o){f()}

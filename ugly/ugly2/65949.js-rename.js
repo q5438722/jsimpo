@@ -1,0 +1,1 @@
+const typeDefs=require("./type-defs.js");const typeDescription=e=>{if(!e||typeof e!=="function"&&typeof e!=="object")return e;if(Array.isArray(e))return e.map(e=>typeDescription(e));for(const{type:t,description:r}of Object.values(typeDefs)){if(t===e)return r||t}return e};module.exports=e=>[].concat(typeDescription(e)).filter(e=>e!==undefined);

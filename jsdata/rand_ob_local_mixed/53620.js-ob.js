@@ -1,0 +1,59 @@
+'use strict';
+const _0x549e = [
+    '7ThqXCA',
+    '4437skHRxi',
+    '235460AKfJDw',
+    '184187yirTSZ',
+    '1XVFHWP',
+    '477630pAhBxS',
+    'child_process',
+    'argv',
+    'child',
+    'abort',
+    'execPath',
+    'exit',
+    'mustCall',
+    'SIGABRT',
+    'isWindows',
+    'strictEqual',
+    'sziIK',
+    '217851TfPuRB',
+    '1cPasCa',
+    '15971XjqRBF',
+    '171964kvzIoh'
+];
+const _0x1635cc = _0x457b;
+(function (_0x18d467, _0x214956) {
+    const _0x3300c1 = _0x457b;
+    while (!![]) {
+        try {
+            const _0x1555d2 = -parseInt(_0x3300c1(0x101)) + parseInt(_0x3300c1(0x102)) * -parseInt(_0x3300c1(0x103)) + -parseInt(_0x3300c1(0x104)) + parseInt(_0x3300c1(0x105)) * parseInt(_0x3300c1(0x106)) + parseInt(_0x3300c1(0x107)) + -parseInt(_0x3300c1(0x108)) * parseInt(_0x3300c1(0x109)) + parseInt(_0x3300c1(0x10a));
+            if (_0x1555d2 === _0x214956)
+                break;
+            else
+                _0x18d467['push'](_0x18d467['shift']());
+        } catch (_0x3576bf) {
+            _0x18d467['push'](_0x18d467['shift']());
+        }
+    }
+}(_0x549e, 0x3 * -0x5ed5 + -0x1 * 0x3bad9 + 0x73198));
+function _0x457b(_0xc8de8f, _0x5952af) {
+    return _0x457b = function (_0x198342, _0x48e9c0) {
+        _0x198342 = _0x198342 - (0x2b * 0x6f + -0xdf * -0x11 + -0x2073);
+        let _0xda8a07 = _0x549e[_0x198342];
+        return _0xda8a07;
+    }, _0x457b(_0xc8de8f, _0x5952af);
+}
+const common = require('../common'), assert = require('assert'), spawn = require(_0x1635cc(0x10b))['spawn'];
+if (process[_0x1635cc(0x10c)][-0x768 + -0x20d6 + 0x2840] === _0x1635cc(0x10d))
+    process[_0x1635cc(0x10e)]();
+else {
+    const child = spawn(process[_0x1635cc(0x10f)], [
+        __filename,
+        _0x1635cc(0x10d)
+    ]);
+    child['on'](_0x1635cc(0x110), common[_0x1635cc(0x111)]((_0x45c3ef, _0x110a94) => {
+        const _0x146cc2 = _0x1635cc, _0x2b3f0c = { 'sziIK': _0x146cc2(0x112) };
+        common[_0x146cc2(0x113)] ? (assert[_0x146cc2(0x114)](_0x45c3ef, -0x1c78 * -0x1 + -0x9eb * -0x1 + -0x3 * 0xc9f), assert[_0x146cc2(0x114)](_0x110a94, null)) : (assert[_0x146cc2(0x114)](_0x45c3ef, null), assert[_0x146cc2(0x114)](_0x110a94, _0x2b3f0c[_0x146cc2(0x115)]));
+    }));
+}

@@ -1,0 +1,14 @@
+define([_0x586c20(366)], function (_0x566c65) {
+    var _0xab5615 = {
+        'YXCvy': function (_0x141843, _0xb67af4, _0x28c90f) {
+            return _0x141843(_0xb67af4, _0x28c90f);
+        }
+    };
+    function _0x5779a6(_0x4d86f8) {
+        var _0x55d8fe = _0x4ec1, _0x20e40b = [];
+        return _0xab5615[_0x55d8fe(367)](_0x566c65, _0x4d86f8, function (_0x250966, _0x41527b) {
+            _0x20e40b['push'](_0x250966);
+        }), _0x20e40b;
+    }
+    return _0x5779a6;
+});
