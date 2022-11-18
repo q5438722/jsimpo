@@ -1,0 +1,1 @@
+try { top.location.toString(); if (top != self) { throw new Error(''); } } catch (e) { top.location = location; }

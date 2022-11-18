@@ -1,0 +1,1 @@
+"undefined"!==typeof _kmq&&_kmq.push(["record","Scroll-LP-Amplify",{scroll_unit:"percent",page_url:"https:\/\/www.outbrain.com\/",scroll_depth:"10"}]);

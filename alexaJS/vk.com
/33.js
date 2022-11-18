@@ -1,0 +1,1 @@
+window.domStarted && domStarted();

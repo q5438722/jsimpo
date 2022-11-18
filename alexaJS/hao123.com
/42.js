@@ -1,0 +1,1 @@
+BigPipe.lazyPagelets = [];

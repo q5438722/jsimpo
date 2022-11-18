@@ -1,0 +1,2 @@
+BigPipe.hooks["__cb_0_43"]=function(){'use strict';
+var pagelet = this;require.defer(["indexnew:static/js/jquery.js","indexnew:component/toppicture/toppicture.js"], function($){var interval = parseInt(10000, 10);var lazy = false;var $mod = $("#toppicture6377795b799a4").toppicture({'interval': interval,'lazy': lazy});pagelet.on('unload', function () {$mod.toppicture("destroy");});});};

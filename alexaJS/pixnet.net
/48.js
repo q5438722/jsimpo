@@ -1,0 +1,1 @@
+jQuery(function(){jQuery.getScript('//falcon.pixnet.net/ad/js?fields[]=none,254&fields[]=%3Enavigation,671&fields[]=pixad1747d,1747&fields[]=%3Espotlight-adtext,232&fields[]=%3Espotlight-adtext,643&fields[]=ad-followme,257');});

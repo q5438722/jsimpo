@@ -1,0 +1,5 @@
+
+        const _clientSettings = JSON.parse(document.head.dataset.clientSettings);
+
+                function preloadConfigIDB(){const o=window.indexedDB;if(!o)return;const e="Configurations_12",n="IndexedDB-"+e+".",r=window._appTimings||(window._appTimings={});r[n+"open-Start"]=performance.now(),window._idbConfigLookup={};const i=window._idbConfigLookup;let t,s;window._idbConfigReadPromise=new Promise((o,e)=>{t=o,s=e}),window._idbConfigOpenPromise=(()=>{try{const d=o.open("wwConfigs",1);return new Promise((o,c)=>{d.onerror=(()=>{c(new Error("Config IDB preload open failure: "+d.error))}),d.onsuccess=(()=>{r[n+"open-End"]=performance.now();const c=d.result;o(c),r[n+"getAllObjects-Start"]=performance.now();const a=c.transaction(e,"readonly").objectStore(e).openCursor();a.onsuccess=function(){const o=this.result;o?(i[o.key]=o.value,o.continue()):(r[n+"getAllObjects-End"]=performance.now(),t())},a.onerror=(()=>{s(new Error("Config IDB preload read failure"))})}),d.onupgradeneeded=(()=>{d.result.createObjectStore(e)})})}catch(o){return Promise.reject(new Error("Config IDB preload open failure: "+o))}})()}preloadConfigIDB();
+        

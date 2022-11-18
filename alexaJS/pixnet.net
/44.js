@@ -1,0 +1,1 @@
+mainpage.blog_blogger_subscription("panel.pixnet.cc");mainpage.blog_display_more();$('.box-body').delegate('ol.article-list li','mouseenter',function(){$(this).addClass('hover');}).delegate('li','mouseleave',function(e){$(this).removeClass('hover');});

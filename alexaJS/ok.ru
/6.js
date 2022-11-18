@@ -1,0 +1,1 @@
+if(navigator.sendBeacon){ var data = "a=" +JSON.stringify({ startupData: { headBeacon:1 } }); var headers = { type: 'application/x-www-form-urlencoded' }; var blob = new Blob([data], headers); navigator.sendBeacon('/gwtlog', blob); }

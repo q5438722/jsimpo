@@ -1,0 +1,1 @@
+__perfMark('app_html_start');

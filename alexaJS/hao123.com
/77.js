@@ -1,0 +1,2 @@
+BigPipe.hooks["__cb_0_34"]=function(){'use strict';
+require.async(['indexnew:static/js/events.js','indexnew:static/js/count.js'],function(events, countPv){events.on('js_track_loaded', function () {require.defer(['indexnew:static/js/jquery.js','indexnew:static/js/changelink.js'],function($, changeLink){var $ctx = $(document);changeLink.init($ctx, null, false);});});countPv('none',"normal");});};

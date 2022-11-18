@@ -1,0 +1,1 @@
+{"@context":"http://schema.org","@type":"WebSite","url":"https://www.pinterest.com/","potentialAction":{"@type":"SearchAction","target":"https://www.pinterest.com/search/pins/?q={search_term_string}\u0026rs=sitelinks_searchbox","query-input":"required name=search_term_string"}}

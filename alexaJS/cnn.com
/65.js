@@ -1,0 +1,1 @@
+CNN.covCon.push({id: "coverageContainer_94666ABA-6F11-0405-F645-CF22729BC16F",layout: "list-hierarchical-horizontal-simple",src: "/data/ocs/container/coverageContainer_94666ABA-6F11-0405-F645-CF22729BC16F:list-hierarchical-horizontal-simple/views/containers/common/container-manager.html"});

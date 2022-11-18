@@ -1,0 +1,1 @@
+WM.UserConsent.addScript({async: true,id: "dianomi_context_script",src: "https://www.dianomi.com/js/contextfeed.js",type: "text/javascript"}, ["iab-gdpr","data-store","ads-contextual","ads-person-prof","ads-person","content-person-prof","content-person","measure-ads","measure-content","measure-market","product-develop","vendor"]);

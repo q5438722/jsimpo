@@ -1,0 +1,1 @@
+var hc=navigator&&navigator.hardwareConcurrency;null!=hc&&4>hc&&document.documentElement.classList.add("_8ykn");

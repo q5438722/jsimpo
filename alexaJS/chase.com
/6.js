@@ -1,0 +1,1 @@
+var analyticsLiteConfig = { svcDomain: "https://analytics.chase.com" };

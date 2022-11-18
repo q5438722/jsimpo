@@ -1,0 +1,1 @@
+var tagManagerConfig = { tagServer: "https://www.chase.com" };

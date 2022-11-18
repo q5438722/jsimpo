@@ -1,0 +1,3 @@
+//<![CDATA[
+_G!==undefined&&_G.EF!==undefined&&_G.EF.bmasynctrigger===1&&window.requestAnimationFrame!==undefined&&document.visibilityState!==undefined&&document.visibilityState==="visible"?requestAnimationFrame(function(){_G.EF.bmasynctrigger2===1?requestAnimationFrame(function(){BM.trigger()}):_G.EF.bmasynctrigger3===1?requestAnimationFrame(function(){setTimeout(function(){BM.trigger()},0)}):setTimeout(function(){BM.trigger()},0)}):BM.trigger();
+//]]>

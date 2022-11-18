@@ -1,0 +1,1 @@
+(function (d) {var e = d.createElement('script');e.async = true;e.type = 'text/javascript';e.onload = function _onJSMDLoad(e) {jQuery(d).triggerAnalyticsReady();};e.src = '//lightning.cnn.com/launch/7be62238e4c3/97fa00444124/launch-2878c87af5e3.min.js';d.body.appendChild(e);})(document);

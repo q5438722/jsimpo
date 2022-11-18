@@ -1,0 +1,1 @@
+(function(){var a=document.querySelector("input.search-text");a&&a.addEventListener("keydown",function(b){13===b.keyCode&&dataLayer.push({event:"enterClick"})})})();

@@ -1,0 +1,1 @@
+if (WM.UserConsent.inUserConsentState(["data-store","measure-ads","measure-content","measure-market","product-develop"], { id: "usabilla" })) {CNN.INJECTOR.loadFeature('usabilla');}

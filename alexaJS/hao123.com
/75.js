@@ -1,0 +1,2 @@
+BigPipe.hooks["__cb_0_32"]=function(){'use strict';
+require.defer(['indexnew:static/js/refer.js'],function(refer){var ho;var ver;var ref = document.referrer || '';var embed = (self!==top) ? 1 : 0;try{ho = refer.getUserType() === 0 ? 1 : 0;ver = 'none';}catch(e){ho = 0;ver = 'none';}var query = ['v=index','pid=113','ref='+encodeURIComponent(ref),'embed='+embed,'ho='+ho,'ver='+encodeURIComponent(ver),'_='+ +new Date()].join('&');window["__timg__"] = new Image();window["__timg__"].src = "/t.gif?"+query;});};

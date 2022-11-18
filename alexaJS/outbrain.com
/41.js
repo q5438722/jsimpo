@@ -1,0 +1,1 @@
+document.addEventListener("scroll",scrollFunctionGtm);function scrollFunctionGtm(){dataLayer.push({event:"Functional Delay"});document.removeEventListener("scroll",scrollFunctionGtm,!1)};

@@ -1,0 +1,2 @@
+function updateHelpLink(c){c++;var a="";ga&&"function"===typeof ga.getAll&&0<ga.getAll().length&&(a="u\x3d"+ga.getAll()[0].get("clientId"),clearInterval(lookForGAObj),updateLink(a));10===c&&(clearInterval(lookForGAObj),updateLink(a))}
+function updateLink(c){var a=document.querySelectorAll(".PartialPageFooter-list a"),b=document.querySelectorAll(".footer-menu a");a=a&&0<a.length?a:b;for(b=0;b<a.length;b++){var d=a[b];"Help"===d.text&&(d.href=d.href+"?domain\x3d"+document.location.hostname+"\x26"+c)}}var clearCounter=0,lookForGAObj=setInterval(updateHelpLink,100,clearCounter);

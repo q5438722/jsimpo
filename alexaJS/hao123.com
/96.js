@@ -1,0 +1,2 @@
+BigPipe.hooks["__cb_0_45"]=function(){'use strict';
+require.defer(['indexnew:static/js/jquery.js','indexnew:component/topzixun/searchblock.js'], function($, searchblock) {searchblock($('[data-hook="topzixun-content"]'), 'toutiao');});};

@@ -1,0 +1,1 @@
+try{Ya.Rum.sendRaf('header')}catch(e){}

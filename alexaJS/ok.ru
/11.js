@@ -1,0 +1,1 @@
+var OK = OK || {}; OK.startupData = OK.startupData || {}; OK.startupData['okHeadStart'] = window.performance.now();

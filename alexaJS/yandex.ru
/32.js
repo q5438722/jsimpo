@@ -1,0 +1,1 @@
+(self.webpackChunklakpwolk_q5a5nn971e=self.webpackChunklakpwolk_q5a5nn971e||[]).push([[272],{301:(e,a,k)=>{"use strict";k(132)},132:()=>{Ya.Rum.observeDOMNode("2876",".feed__item")}},e=>{var a;a=301,e(e.s=a)}]);

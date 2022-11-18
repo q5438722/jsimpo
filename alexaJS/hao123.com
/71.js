@@ -1,0 +1,2 @@
+BigPipe.hooks["__cb_0_28"]=function(){'use strict';
+require.defer(['indexnew:static/js/jquery.js','indexnew:component/aging-tools/aging-tools.js'],function($, tools){(function () {$.ajax({url: 'https://www.hao123.com/api/smalltestpublicmethod?key=class_audiovisual_hit',dataType: 'jsonp',success: function (data) {if(data) {tools.init();}}});})()});};

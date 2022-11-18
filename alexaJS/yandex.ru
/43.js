@@ -1,0 +1,1 @@
+;!function(){function main(i){var n=i.yandexCookie,a=i.mailCookie;function e(i){var n="; "+document.cookie;var a=new RegExp("; "+i+"=([^;]*)");var e=n.match(a);if(!e){return undefined}return e[1]}function r(){var i=e(n);if(i){var a=new Image;a.src="https://ad.mail.ru/cm.gif?p=146&id="+i}}if(!e(a)){r()}};main({"yandexCookie":"yandexuid","mailCookie":"vid"})}();

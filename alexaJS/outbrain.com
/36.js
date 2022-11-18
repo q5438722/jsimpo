@@ -1,0 +1,2 @@
+var gclidMatch=/[?&]gclid=([^&]*)/.exec(window.location.search),gclid=gclidMatch&&decodeURIComponent(gclidMatch[1].replace(/\+/g," "));
+if(gclid){var gclsrcMatch=/[?&]gclsrc=([^&]*)/.exec(window.location.search),gclsrc=gclsrcMatch&&decodeURIComponent(gclsrcMatch[1].replace(/\+/g," "));if(!gclsrc||-1!==gclsrc.indexOf("aw")){var date=new Date;date.setTime(date.getTime()+7776E6);var expires="; expires\x3d"+date.toGMTString(),domain="; domain\x3d.outbrain.com";document.cookie="gclid\x3d"+gclid+expires+domain}};

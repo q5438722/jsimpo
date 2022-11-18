@@ -1,0 +1,1 @@
+var bodyWidth=document.body.offsetWidth;768>bodyWidth?document.addEventListener("touchstart",function scrollFunction(a){a.stopPropagation();dataLayer.push({event:"Targeting Delay"});document.removeEventListener("touchstart",scrollFunction,!1)},!1):setTimeout(function(){dataLayer.push({event:"Targeting Delay"})},3E3);

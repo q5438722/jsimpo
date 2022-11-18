@@ -1,0 +1,1 @@
+var dataLayer = {"contentCountry":"JP","contentLanguage":"ja","localTimeZone":"","localTime":"Fri Nov 18 2022 04:29:55 GMT-0800 (Pacific Standard Time)"};

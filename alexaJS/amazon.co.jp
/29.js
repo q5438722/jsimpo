@@ -1,0 +1,1 @@
+(function(f){f(P._namespace('gwiAutoInstVisible'));}(function(P) {if(window.GWI){GWI.Card.autoInstVisible('rnBrGUcU0_wJ5tC5kJJ4gA');}}));

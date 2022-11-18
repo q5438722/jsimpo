@@ -1,0 +1,1 @@
+window.serverTimedeltaMs = Math.round(Date.now() - 1668775663291.3 - 300);

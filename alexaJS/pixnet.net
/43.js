@@ -1,0 +1,1 @@
+<a href="${users[0].profile_link}"target="_blank">${users[0].display_name}</a>，<a href="${users[1].profile_link}"target="_blank">${users[1].display_name}</a>...等<a href="#"class="popup-click"data-url="${blogger.reader_popup_link}"data-title="${blogger.display_name} 的讀者列表">${count}</a>人已經加入訂閱

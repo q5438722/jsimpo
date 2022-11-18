@@ -1,0 +1,4 @@
+
+        /* global: ensemble is from dws-ensemble-appshell. */
+        ensemble.processChunk("embedded-app", "css_files-1", function(){ensemble.loadCSS(["https://cfl.dropboxstatic.com/static/metaserver/static/css/accessibility-vfliGZNRm.css", "https://cfl.dropboxstatic.com/static/metaserver/static/css/font_paper_atlas_grotesk-vflDoDLsu.css", "https://cfl.dropboxstatic.com/static/metaserver/static/css/font_sharp_grotesk-vflc_xLXt.css", "https://cfl.dropboxstatic.com/static/metaserver/static/css/dig-fonts/sharp_grotesk_23.metaserver-vflgQV__K.css", "https://cfl.dropboxstatic.com/static/metaserver/static/css/dig-components/tokens-vfl_0ZbRd.css", "https://cfl.dropboxstatic.com/static/typescript/component_libraries/dwg-components/src/index.web-vflWS5A5T.css", "https://cfl.dropboxstatic.com/static/metaserver/static/css/notify-vflZVEumu.css", "https://cfl.dropboxstatic.com/static/metaserver/static/css/warp/skip_to_main_content-vflQkkjpI.css"])});
+        

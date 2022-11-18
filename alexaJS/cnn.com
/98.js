@@ -1,0 +1,3 @@
+_satellite["_runScript11"](function(event, target, Promise) {
+wminst.Util.loadScript("//www.i.cdn.cnn.com/zion/zion-mb.min.js",(function(){try{if("undefined"!=typeof s){var i=ZionMessageBus.getInstance(),e=s.visitor.getMarketingCloudVisitorID(),n=s.visitor.getAnalyticsVisitorID();i.publish("id_found",{type:"adobe_ecid",value:e}),i.publish("id_found",{type:"adobe_vi",value:n})}}catch(i){console.error(i)}}));
+});

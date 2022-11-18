@@ -1,0 +1,1 @@
+var swPath = "/app.js";

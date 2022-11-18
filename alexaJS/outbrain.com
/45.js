@@ -1,0 +1,1 @@
+(function(a){a=document.createElement("script");a.src="https://survey.survicate.com/workspaces/d4cced045f6fc99623c608f55eb5a97e/web_surveys.js";a.async=!0;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})(window);

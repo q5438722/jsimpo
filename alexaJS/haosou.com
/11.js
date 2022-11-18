@@ -1,0 +1,1 @@
+$("#so_tabs_more").click(function(){So.lib.log("so_tabs_more")})

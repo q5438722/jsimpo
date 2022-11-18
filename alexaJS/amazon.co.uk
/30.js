@@ -1,0 +1,1 @@
+P.register('sp-cc-ready');

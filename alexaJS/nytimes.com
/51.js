@@ -1,0 +1,1 @@
+var event=google_tag_manager["GTM-P528B3"].macro(31);event.subject="ab_expose";event.gtm=google_tag_manager["GTM-P528B3"].macro(32);(function(){nyt_et("soon",event)})();dataLayer.push({abtest:null});

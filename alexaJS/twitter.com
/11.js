@@ -1,0 +1,1 @@
+document.cookie = decodeURIComponent("gt=1593579854381076481; Max-Age=10800; Domain=.twitter.com; Path=/; Secure");

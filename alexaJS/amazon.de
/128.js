@@ -1,0 +1,1 @@
+ { "rhfHandlerParams":{"currentPageType":"Gateway","currentSubPageType":"desktop","excludeAsin":"","fieldKeywords":"","k":"","keywords":"","search":"","auditEnabled":"","previewCampaigns":"","forceWidgets":"","searchAlias":""} } 

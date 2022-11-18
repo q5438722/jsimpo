@@ -1,0 +1,2 @@
+try{if(window.Iterate&&"function"===typeof Iterate){var subscriberInfo="[object Object]",uType="anon",eduSubscriber="object"===typeof subscriberInfo?subscriberInfo.eduSubscriber:"",userType="string"===typeof uType?uType:"",surveyTriggerCookie="false",params={eduSubscriber:eduSubscriber,userType:userType};surveyTriggerCookie?(params.external_id="",params.agentId="hrlrhQgUNLqU7kte7lQLR-",Iterate("identify",params),Iterate("install",surveyTriggerCookie)):
+Iterate("identify",params)}}catch(a){console.log(a)};

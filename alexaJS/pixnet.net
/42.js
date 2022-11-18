@@ -1,0 +1,1 @@
+<a href="${users[0].profile_link}"target="_blank">${users[0].display_name}</a>和<a href="${users[1].profile_link}"target="_blank">${users[1].display_name}</a>已經加入訂閱

@@ -1,0 +1,1 @@
+if (WM.UserConsent.inUserConsentState(["vendor","data-store","content-person-prof","content-person","measure-ads","measure-content","product-develop"], {id: "optimizely"}) === false) {window.optimizely = window.optimizely || [];window.optimizely.push({ 'type': 'disable' });console.log('Optimizely disabled.');}

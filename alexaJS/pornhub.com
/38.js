@@ -1,0 +1,2 @@
+
+    var FOOTER_LINKS = {"mobile":"\/front\/set_mobile?redirect=sQhFgLlkLNxhsiuFapMwKM6tuZSMO4tyYvC8JDzd7_UBPnZp9x1IXnaf9b5Pnirn&amp;token=MTY2ODc3NTI5MrXCpfGSo9pM1nluxcateQxiOWc0mxAgzLPwbgLcYD_EwmOOO8vnH6zB-FtD-UGg8x3XMthVcWb1q4Ec3iN-lgw.","visuallyImpaired":"\/front\/set_vi?segment=straight&amp;token=MTY2ODc3NTI5MrXCpfGSo9pM1nluxcateQxiOWc0mxAgzLPwbgLcYD_EwmOOO8vnH6zB-FtD-UGg8x3XMthVcWb1q4Ec3iN-lgw."};

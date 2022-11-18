@@ -1,0 +1,14 @@
+
+    /**
+     *  LAZY LOAD 2.0.1
+     *  This plugin will use IntersectionObserver to lazyload
+     *  For browsers do not support IntersectionObserver, it falls back to the old methods in v1.0.1
+     *  it will run when javascript kicks in via head_js
+     *  for individual images please use "lazy" class name
+     *  for background images please use "js_lazy_bkg" class name
+     *  make sure elements have the proper data attribute
+     *  data-src for images
+     *  data-bkg for backgrounds
+     **/
+
+    var LazyLoadImage=function(){"use strict";var t=this,e="section",a="image",r="bkg",s="video",i=/^((?!chrome|android).)*safari/i.test(navigator.userAgent);t.init=function(i){if(t.isObserverDisabled=i&&void 0!==i.disableObserver&&i.disableObserver,t.supportsObserver="IntersectionObserver"in window,t.supportsObserver&&!t.isObserverDisabled){var o={root:null,rootMargin:"0px",threshold:[i&&void 0!==i.threshold?i.threshold:0]};t.setObserver(o)}if(t.params=t.params||{},i&&void 0!==i.sections&&void 0!==i.thumbUrl){t.params[e]=t.setParams(i.sections,"src",function(t){return t.getAttribute("data-"+i.thumbUrl)},"#"," li:not(.hidden) img"),t.subscribe(e)}i&&void 0!==i.class_name&&void 0!==i.dataSrc&&(t.params[a]=t.setParams(i.class_name,"src",function(t){return t.getAttribute("data-"+i.dataSrc)},".",""),t.subscribe(a)),i&&void 0!==i.classBkg&&void 0!==i.dataBkg&&(t.params[r]=t.setParams(i.classBkg,"style",function(t){return'url("'+t.getAttribute("data-"+i.dataBkg)+'")'},".",""),t.subscribe(r)),i&&void 0!==i.classVideo&&void 0!==i.dataPoster&&(t.params[s]=t.setParams(i.classVideo,"poster",function(t){return t.getAttribute("data-"+i.dataPoster)},".",""),t.subscribe(s))},t.setParams=function(t,e,a,r,s){return{tag:t,attr:e,value:a,prefix:r,suffix:s}},t.subscribe=function(e){var a=t.params[e];a.tag=a.tag instanceof Array?a.tag:[a.tag],[].forEach.call(a.tag,function(r){var s=document.querySelectorAll(a.prefix+r+a.suffix+":not([data-img_type])");[].forEach.call(s,function(a){t.params[e].value(a)&&(t.supportsObserver&&!t.isObserverDisabled?(a.setAttribute("data-img_type",e),t.observer.observe(a)):i||window.isAndroid?t.isVisible(a)?t.loadImage(a,t.params[e].attr,t.params[e].value(a),e):setTimeout(function(){t.loadImage(a,t.params[e].attr,t.params[e].value(a),e)},2e3):t.loadImage(a,t.params[e].attr,t.params[e].value(a),e))})})},t.setObserver=function(e){t.observer=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){var a=e.target,r=a.getAttribute("data-img_type");t.loadImage(a,t.params[r].attr,t.params[r].value(a),r),t.observer.unobserve(a)}})},e)},t.loadImage=function(t,e,a,s){s===r?t.style.backgroundImage=a:t.setAttribute(e,a)},t.isVisible=function(t){var e=t.getBoundingClientRect();return e.top>=0&&e.top+10<(window.innerHeight||document.documentElement.clientHeight)||e.bottom>0&&e.bottom<(window.innerHeight||document.documentElement.clientHeight)}};

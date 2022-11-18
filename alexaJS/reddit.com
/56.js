@@ -1,0 +1,1 @@
+!function(a,b,c,d,e,f){a.ddjskey=e;a.ddoptions=f||null;var m=b.createElement(c),n=b.getElementsByTagName(c)[0];m.async=1,m.src=d,n.parentNode.insertBefore(m,n)}(window,document,"script","https://www.redditstatic.com/js/tags-slim.js","288922D4BE1987530B4E5D4A17952C", { ajaxListenerPath: ["reddit.com/api", "gql.reddit.com", "gateway.reddit.com/desktopapi"] });

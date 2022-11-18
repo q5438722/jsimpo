@@ -1,0 +1,1 @@
+window.plbs = {"htmlStart":[60217,11716],"tierOne":[162241,51673],"tierTwo":[40690,6685],"tierThree":[12652,3516]};

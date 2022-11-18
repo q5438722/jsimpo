@@ -1,0 +1,1 @@
+ window.setTimeout(function() { new Image().src="https://r3.mail.ru/k?fver="+okFlashVersion[0] +"." + okFlashVersion[1] + "&ok_id=&t=&bci=2127651413945084917&src=desktop"; }, 200); 

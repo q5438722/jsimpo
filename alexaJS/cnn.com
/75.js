@@ -1,0 +1,1 @@
+if (!CNN.Features || CNN.Features.enableBounceX !== false) {(function (d) {WM.UserConsent.addScript({async: true,src: d.location.protocol + '//tag.bounceexchange.com/340/i.js'}, ["iab","vendor","data-store","ads-contextual","ads-person-prof","ads-person","content-person-prof","content-person","measure-ads","measure-content","measure-market","product-develop"]);})(document);}

@@ -1,0 +1,1 @@
+var onPolymerReady = function(e) {window.removeEventListener('script-load-dpj', onPolymerReady);if (window.ytcsi) {window.ytcsi.tick('apr', null, '');}}; if (window.Polymer && Polymer.RenderStatus) {onPolymerReady();} else {window.addEventListener('script-load-dpj', onPolymerReady);}

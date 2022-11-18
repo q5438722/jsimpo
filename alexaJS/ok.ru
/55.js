@@ -1,0 +1,1 @@
+(function(){var requestCounter = function(){window.setTimeout(function(){new Image().src='//www.tns-counter.ru/V13a***R>' + document.referrer.replace(/\*/g,'%2a') + '*odnoklassniki_ru/ru/UTF-8/tmsec=odnoklassniki_site/' + Math.round(Math.random() * 1000000000)}, 100);}; OK.afterWindowOnloadAttach(requestCounter);})();

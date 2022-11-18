@@ -1,0 +1,2 @@
+BigPipe.hooks["__cb_0_39"]=function(){'use strict';
+var pagelet = this;require.defer(['indexnew:static/js/events.js','indexnew:static/js/jquery.js'], function(events, $) {events.on('weather.firstload', function () {events.emit('weather.registreload', 'hao123-govsite');});pagelet.on('unload', function () {events.emit('weather.unregistreload', 'hao123-govsite');});});};

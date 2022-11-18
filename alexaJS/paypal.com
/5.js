@@ -1,0 +1,1 @@
+{"@context": "http://schema.org/","@type": "Organization","url": "https://www.paypal.com/","logo": "https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.png"}

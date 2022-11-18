@@ -1,0 +1,1 @@
+requireLazy(["JSScheduler"],function(j){j.makeSchedulerGlobalEntry(null,false)})

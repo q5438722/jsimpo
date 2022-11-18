@@ -1,0 +1,2 @@
+BigPipe.hooks["__cb_0_29"]=function(){'use strict';
+require.defer(['indexnew:static/js/jquery.js'], function($){var hasTraceid = document.cookie.indexOf('traceid') !== -1;if (!hasTraceid) {(function () {$.ajax({url: 'https://hcl.baidu.com/trace/id',type: "get",dataType: 'json',success: function (data) {var id = data && encodeURIComponent(data.id);var date = new Date();date.setTime(date.getTime() + 86400000);document.cookie = 'traceid=' + id + ';expires=' + date.toGMTString();}})})();}});};

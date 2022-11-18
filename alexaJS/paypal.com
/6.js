@@ -1,0 +1,1 @@
+if (self === top || /(paypal.com|paypal.cn)$/.test(window.parent.location.hostname)) {var antiClickjack = document.getElementById('antiClickjack');if (antiClickjack) {antiClickjack.parentNode.removeChild(antiClickjack);}} else {top.location = self.location;}

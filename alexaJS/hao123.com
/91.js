@@ -1,0 +1,1 @@
+BigPipe.setResourceMap({"8ff7540_9552":{"src":"https:\/\/hao123-static.cdn.bcebos.com\/fe-res\/her\/static\/indexnew\/component\/hotlist\/hotlist.8ff7540.js","type":"js","deps":[],"mods":["indexnew:component\/hotlist\/hotlist.js"]}});

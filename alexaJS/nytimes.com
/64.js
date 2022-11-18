@@ -1,0 +1,1 @@
+(function(){function c(d,a){var b=document.createElement("script");b.type="text/javascript";a&&(b.onload=a,b.onerror=a);a=document.getElementsByTagName("head")[0];a.appendChild(b);b.src=d}c("https://a1.nyt.com/analytics/show-ads.js",function(){window.nyt_et&&nyt_et({subject:"page_update",adBlockEnabled:!1!==window.adBlockDetected})})})();

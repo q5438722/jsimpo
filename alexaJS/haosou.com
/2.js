@@ -1,0 +1,1 @@
+var TIME = {_: +new Date}

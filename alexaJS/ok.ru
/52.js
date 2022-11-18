@@ -1,0 +1,1 @@
+function scriptsReload() { var xhttp = new XMLHttpRequest(); xhttp.open("POST", "/gwtlog", true); xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); xhttp.send('a=' + JSON.stringify({ oldscripts: { reload:1 } })); xhttp.onload = function() { window.location.reload(); }; }

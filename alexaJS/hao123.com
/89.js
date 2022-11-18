@@ -1,0 +1,1 @@
+BigPipe.onPageletArrive({"id":"box-toplist2","children":[],"renderMode":"default","parent":null,"hooks":{"load":["__cb_0_40"]},"deps":{"load":[]}});

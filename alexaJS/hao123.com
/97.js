@@ -1,0 +1,2 @@
+BigPipe.hooks["__cb_0_46"]=function(){'use strict';
+var pagelet = this;require.defer(['indexnew:static/js/ctr.js'], function (ctr) {ctr.callCTR('#box-toplist0 div[data-ctr]');pagelet.on('unload', ctr.cleanTarget);});};

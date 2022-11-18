@@ -1,0 +1,1 @@
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-6671908-2","auto")

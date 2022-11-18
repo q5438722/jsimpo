@@ -1,0 +1,1 @@
+__perfMark('head_tag_start');

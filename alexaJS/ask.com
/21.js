@@ -1,0 +1,1 @@
+if("SS"in window&&"Debug"in SS){SS.Debug.trackJSErrors();}

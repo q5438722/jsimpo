@@ -1,0 +1,3 @@
+
+                var cafRL={container:"rb-default",type:"relatedsearch",styleId:9330244380,number:3};if("adLoaded"in dto.postActionParameter.token&&dto.postActionParameter.token.adLoaded){cafRL.adLoadedCallback=callbackAdLoaded}var cafEl=[{meta:{layoutTypes:[1]},caf:{container:"ab-default",type:"ads",lines:3,linkTarget:"_blank",styleId:9330244380}},{meta:{layoutTypes:[5]},caf:cafRL},{meta:{layoutTypes:[1,2,3,5]},caf:{container:"sb-default",type:"searchbox",hideSearchInputBorder:true,hideSearchButtonBorder:true,colorSearchButtonText:"#638296",fontSizeSearchInput:12,fontSizeSearchButton:12,fontFamily:"Arial"}}];
+    

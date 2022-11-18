@@ -1,0 +1,1 @@
+!function(a,b,c,d,e,f){a.ddjskey=e;a.ddoptions=f||null;a=b.createElement(c);b=b.getElementsByTagName(c)[0];a.async=1;a.src=d;b.parentNode.insertBefore(a,b)}(window,document,"script","https://dd.nytimes.com/tags.js","499AE34129FA4E4FABC31582C3075D",{endpoint:"https://dd.nytimes.com/js/"});

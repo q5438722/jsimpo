@@ -1,0 +1,5 @@
+"use strict";(function(){// prevent menus from overflowing into right rail on desktop
+function a(){var a=document.querySelector("nav[aria-labelledby=\"styln-2022-midterms-hp-menu\"]"),b=document.querySelectorAll("[data-hierarchy=\"zone\"]"),c=Array.from(b).filter(function(b){return b.contains(a)})[0];if(c&&a.clientWidth>c.clientWidth)// remove the last item from the menu if it is overflowing
+{var d=a.querySelectorAll("li"),e=d[d.length-1];e.remove()}}// only check for overflow if the user is on desktop or tablet
+// remove links that match ones already shown in the live band
+var b=document.querySelector("#hp-live-band-list");if(b){var c=Array.from(b.querySelectorAll("a")).map(function(b){return b.href}),d=document.querySelectorAll("nav[aria-labelledby=\"styln-2022-midterms-hp-menu\"] li");d.forEach(function(a){var b=a.querySelector("a"),d=b.pathname;c.forEach(function(b){b.includes(d)&&a.remove()})})}if(!window.matchMedia("(pointer: coarse) and (max-width: 739px)").matches){a();var e;window.addEventListener("resize",function(){clearTimeout(e),e=setTimeout(a,250)})}})();

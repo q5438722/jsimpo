@@ -1,0 +1,2 @@
+BigPipe.hooks["__cb_0_8"]=function(){'use strict';
+require.defer(['indexnew:static/js/slider.js'], function (slider) {slider = slider({slider: '#noticeslider',grid: '>div.slider__grid',gridhoverCls: 'slider__grid--hover',slides: '>.slider__grid>.slider__content>ul.slider__slides',points: '>.slider__grid>div.slider__pagination',next: '>.slider__grid>a.slider__nav--next',prev: '>.slider__grid>a.slider__nav--prev',type: 'l2r',auto: true,interval: 5000,notAutoHide: true,scrollType: "left"});});};

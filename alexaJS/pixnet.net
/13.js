@@ -1,0 +1,1 @@
+var pix=pix||{};pix.apisite='api.pixnet.cc';pix.login_name='fb0a4de5d58d846016349224c3a6439e';pix.server_name='www.pixnet.net';pix.visitor="";pix.openid="";pix.member_uniqid="";pix.demo_ad_no=0;pix.demo_ad_sig=null;pix.checklogin_version=2;pix.nocache=0;

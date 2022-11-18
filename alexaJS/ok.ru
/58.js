@@ -1,0 +1,1 @@
+(function(w){w.OK && w.OK.util && w.OK.util.setHighDensityCookie('_hd');})(window);

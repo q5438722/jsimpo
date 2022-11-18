@@ -1,0 +1,4 @@
+
+        /* global: ensemble is from dws-ensemble-appshell. */
+        ensemble.processChunk("embedded-app", "const_module-10", function(){ensemble.defineConstModule("metaserver/static/js/modules/constants/page_load", "3846076f4167b81fa9f68dc464d3bba15aaef21b", {"COUNTRY_OVERRIDE": null, "PUBLIC_MODE_OVERRIDE": null, "REPO_REV": "3846076f4167b81fa9f68dc464d3bba15aaef21b", "HOSTNAME": "atlas-acquisition-eng-live-prod-sjc-675bc4768b-fdswv", "YAPS_DEPLOYMENT": "prod-sjc", "YAPS_PROJECT": "atlasservlet.acquisition_eng-live", "USER_LOCALE": "en", "SESSION_ID": "10685980150862979503401876200263995294", "IS_SELENIUM_TEST": false, "__esModule": true})});
+        

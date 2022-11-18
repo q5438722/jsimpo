@@ -1,0 +1,1 @@
+requireLazy(["replaceNativeTimer"],function(j){j()})

@@ -1,0 +1,1 @@
+/*nomodule*/(function(){"use strict";function t(){var t=new XMLHttpRequest;t.open("GET","/badbrowser_stat.php?act=nomodule"),t.send()}return t})()({});

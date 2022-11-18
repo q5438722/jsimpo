@@ -1,0 +1,1 @@
+performance && performance.measure && performance.measure('scripts-blocking', 'scripts-blocking-start')

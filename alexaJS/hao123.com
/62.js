@@ -1,0 +1,2 @@
+BigPipe.hooks["__cb_0_19"]=function(){'use strict';
+require.defer(['indexnew:static/js/jquery.js','indexnew:static/js/events.js'], function ($, events) {events.on('zhankai.cover', function (type) {if (type === 'down') {$('#coolsites_wrapper').slideDown();$('#sites_cover').fadeOut();$('#sites2_wrapper').css('padding-bottom', 12);} else {$('#coolsites_wrapper').slideUp();$('#sites_cover').fadeIn();$('#sites2_wrapper').css('padding-bottom', 35);}})});};

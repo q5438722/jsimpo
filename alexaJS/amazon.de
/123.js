@@ -1,0 +1,1 @@
+(function carouselBtf(d, w) {var p = d.getElementById("ko7ZDA33EQqMoypSAgym2Q-btfCarouselContent"), h = p && p.innerHTML, v = h ? [h] : []; w.GWData = w.GWData || {}; w.GWData['ko7ZDA33EQqMoypSAgym2Q'] = { loaded: false, data: v }; }(document, window));

@@ -1,0 +1,1 @@
+$(function(){$("body").on("click",".mod-topbnr-close",function(e){$(".topbnr").hide()})})

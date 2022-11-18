@@ -1,0 +1,2 @@
+BigPipe.hooks["__cb_0_4"]=function(){'use strict';
+require.defer(['indexnew:static/js/jquery.js','indexnew:component/logo/tmp.js'], function ($, init) {$('#indexLogo a.hao123logourl').on('click', function () {});});};

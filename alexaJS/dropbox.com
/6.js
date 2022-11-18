@@ -1,0 +1,1 @@
+window._REPORT_ALL_JS_EXCEPTIONS_ENABLED = false;

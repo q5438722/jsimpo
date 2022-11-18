@@ -1,0 +1,1 @@
+{"@context":"https://schema.org","@type":"WebSite","url":"https://twitter.com/","potentialAction":{"@type":"SearchAction","query-input":"required name=search_term_string","target":{"@type":"EntryPoint","urlTemplate":"https://twitter.com/search?q={search_term_string}&ref_src=twcamp%5Eseo_searchbox%7Ctwsrc%5Eseo"}}}

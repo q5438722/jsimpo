@@ -1,0 +1,1 @@
+var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"22489583"}),function(){var c=document.createElement("script"),e=document.getElementsByTagName("script")[0];c.async=!0,c.src="https://sb.scorecardresearch.com/cs/22489583/beacon.js",e.parentNode.insertBefore(c,e)}()

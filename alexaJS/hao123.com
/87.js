@@ -1,0 +1,2 @@
+BigPipe.hooks["__cb_0_40"]=function(){'use strict';
+window.ecommerceData = [];window.ecommercePosition = '1';var positionData = [{"title":"1","url":"","style":"","imgurl":"","tip":""}];if(positionData && positionData.length > 0) {if(positionData[0] &&  positionData[0].title) {window.ecommercePosition = positionData[0].title;}}require.defer(['indexnew:component/ecommerce/ecommerce.js'], function () {});};

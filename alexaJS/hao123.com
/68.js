@@ -1,0 +1,2 @@
+BigPipe.hooks["__cb_0_25"]=function(){'use strict';
+var pageId = 'hao123-indexnunew16';pageId = pageId === 'hao123-indexnunew7' ? 'nunew7' : (pageId === 'hao123-indexnunew11' ? 'nunew11' : 'nunew9');require.defer(['indexnew:static/js/addsearchparams.js'], function (init) {init.addParams({'H123Tmp': pageId}, 'body, #hotsearch-box');});};

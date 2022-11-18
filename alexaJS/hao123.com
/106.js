@@ -1,0 +1,1 @@
+BigPipe.setResourceMap({"053fa49_0542":{"src":"https:\/\/hao123-static.cdn.bcebos.com\/fe-res\/her\/static\/indexnew\/pkg\/aio-feed.053fa49.js","type":"js","deps":["6113a23_334b","f11a626_855a","a6a5c09_14b3"],"mods":["indexnew:component\/feednews\/feed.js","indexnew:component\/feednews\/feednews.js"]}});
