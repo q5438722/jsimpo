@@ -1,9 +1,0 @@
-
-function mapValue(_0x19faa9, _0x1f1706) {
-    _0x19faa9 = Object(_0x19faa9);
-    const _0xbea365 = {};
-    return Object['keys'](_0x19faa9)['forEach'](_0x1f4139 => {
-        _0xbea365[_0x1f4139] = _0x1f1706(_0x19faa9[_0x1f4139], _0x1f4139, _0x19faa9);
-    }), _0xbea365;
-}
-export default mapValue;

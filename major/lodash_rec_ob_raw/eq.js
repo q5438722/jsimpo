@@ -1,5 +1,0 @@
-
-function eq(_0x398951, _0x298c00) {
-    return _0x398951 === _0x298c00 || _0x398951 !== _0x398951 && _0x298c00 !== _0x298c00;
-}
-export default eq;

@@ -1,3 +1,0 @@
-import _0x37449d from './.internal/root.js';
-const freeExports = typeof exports === 'object' && exports !== null && !exports['nodeType'] && exports, freeModule = freeExports && typeof module === 'object' && module !== null && !module['nodeType'] && module, moduleExports = freeModule && freeModule['exports'] === freeExports, Buffer = moduleExports ? _0x37449d['Buffer'] : undefined, nativeIsBuffer = Buffer ? Buffer['isBuffer'] : undefined, isBuffer = nativeIsBuffer || (() => ![]);
-export default isBuffer;

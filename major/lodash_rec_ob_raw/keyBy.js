@@ -1,6 +1,0 @@
-import _0x124f14 from './.internal/baseAssignValue.js';
-import _0x48e53d from './reduce.js';
-function keyBy(_0x5ae11c, _0x437d1b) {
-    return _0x48e53d(_0x5ae11c, (_0xb1fcf, _0x467a3c, _0x377e0e) => (_0x124f14(_0xb1fcf, _0x437d1b(_0x467a3c), _0x467a3c), _0xb1fcf), {});
-}
-export default keyBy;
