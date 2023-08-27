@@ -1,0 +1,12 @@
+
+;
+function map(_0x5c4c8a, _0x3c92a1) {
+    let _0xcabe15 = -1;
+    const _0x304b0c = _0x5c4c8a == null ? 0 : _0x5c4c8a['length'];
+    const _0x312eb2 = new Array(_0x304b0c);
+    while (++_0xcabe15 < _0x304b0c) {
+        _0x312eb2[_0xcabe15] = _0x3c92a1(_0x5c4c8a[_0xcabe15], _0xcabe15, _0x5c4c8a);
+    }
+    return _0x312eb2;
+}
+export default map;

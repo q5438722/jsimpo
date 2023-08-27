@@ -1,0 +1,173 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "MAX_SAFE_INTEGER"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": 9007199254740991,
+                        "raw": "0x1fffffffffffff"
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "toSafeInteger"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x21a6d5"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "UnaryExpression",
+                            "operator": "!",
+                            "argument": {
+                                "type": "Identifier",
+                                "name": "_0x21a6d5"
+                            },
+                            "prefix": true
+                        },
+                        "consequent": {
+                            "type": "ReturnStatement",
+                            "argument": {
+                                "type": "ConditionalExpression",
+                                "test": {
+                                    "type": "BinaryExpression",
+                                    "operator": "===",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "_0x21a6d5"
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": 0,
+                                        "raw": "0x0"
+                                    }
+                                },
+                                "consequent": {
+                                    "type": "Identifier",
+                                    "name": "_0x21a6d5"
+                                },
+                                "alternate": {
+                                    "type": "Literal",
+                                    "value": 0,
+                                    "raw": "0x0"
+                                }
+                            }
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "_0x21a6d5"
+                            },
+                            "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "_0x2f9c7f"
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "_0x21a6d5"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": "<",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "_0x21a6d5"
+                            },
+                            "right": {
+                                "type": "UnaryExpression",
+                                "operator": "-",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "MAX_SAFE_INTEGER"
+                                },
+                                "prefix": true
+                            }
+                        },
+                        "consequent": {
+                            "type": "ReturnStatement",
+                            "argument": {
+                                "type": "UnaryExpression",
+                                "operator": "-",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "MAX_SAFE_INTEGER"
+                                },
+                                "prefix": true
+                            }
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": ">",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "_0x21a6d5"
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "MAX_SAFE_INTEGER"
+                            }
+                        },
+                        "consequent": {
+                            "type": "ReturnStatement",
+                            "argument": {
+                                "type": "Identifier",
+                                "name": "MAX_SAFE_INTEGER"
+                            }
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "Identifier",
+                            "name": "_0x21a6d5"
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

@@ -1,0 +1,320 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "MAX_SAFE_INTEGER"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": 9007199254740991,
+                        "raw": "0x1fffffffffffff"
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "MAX_ARRAY_LENGTH"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": 4294967295,
+                        "raw": "0xffffffff"
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "times"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x47dd7d"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x40abf0"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "LogicalExpression",
+                            "operator": "||",
+                            "left": {
+                                "type": "BinaryExpression",
+                                "operator": "<",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "_0x47dd7d"
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": 1,
+                                    "raw": "0x1"
+                                }
+                            },
+                            "right": {
+                                "type": "BinaryExpression",
+                                "operator": ">",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "_0x47dd7d"
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "MAX_SAFE_INTEGER"
+                                }
+                            }
+                        },
+                        "consequent": {
+                            "type": "ReturnStatement",
+                            "argument": {
+                                "type": "ArrayExpression",
+                                "elements": []
+                            }
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "_0x35f25c"
+                                },
+                                "init": {
+                                    "type": "UnaryExpression",
+                                    "operator": "-",
+                                    "argument": {
+                                        "type": "Literal",
+                                        "value": 1,
+                                        "raw": "0x1"
+                                    },
+                                    "prefix": true
+                                }
+                            }
+                        ],
+                        "kind": "let"
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "_0x1ae07b"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "Math"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "min",
+                                            "raw": "'min'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x47dd7d"
+                                        },
+                                        {
+                                            "type": "Identifier",
+                                            "name": "MAX_ARRAY_LENGTH"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "_0x1912d6"
+                                },
+                                "init": {
+                                    "type": "NewExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "Array"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x1ae07b"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "WhileStatement",
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": "<",
+                            "left": {
+                                "type": "UpdateExpression",
+                                "operator": "++",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "_0x35f25c"
+                                },
+                                "prefix": true
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "_0x1ae07b"
+                            }
+                        },
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "AssignmentExpression",
+                                        "operator": "=",
+                                        "left": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "_0x1912d6"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "_0x35f25c"
+                                            }
+                                        },
+                                        "right": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0x40abf0"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "_0x35f25c"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "SequenceExpression",
+                            "expressions": [
+                                {
+                                    "type": "AssignmentExpression",
+                                    "operator": "=",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "_0x35f25c"
+                                    },
+                                    "right": {
+                                        "type": "Identifier",
+                                        "name": "MAX_ARRAY_LENGTH"
+                                    }
+                                },
+                                {
+                                    "type": "AssignmentExpression",
+                                    "operator": "-=",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "_0x47dd7d"
+                                    },
+                                    "right": {
+                                        "type": "Identifier",
+                                        "name": "MAX_ARRAY_LENGTH"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "WhileStatement",
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": "<",
+                            "left": {
+                                "type": "UpdateExpression",
+                                "operator": "++",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "_0x35f25c"
+                                },
+                                "prefix": true
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "_0x47dd7d"
+                            }
+                        },
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "_0x40abf0"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "_0x35f25c"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "Identifier",
+                            "name": "_0x1912d6"
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

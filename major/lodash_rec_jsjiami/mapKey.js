@@ -1,0 +1,11 @@
+
+;
+function mapKey(_0x3110dd, _0x3f668b) {
+    _0x3110dd = Object(_0x3110dd);
+    Object['keys'](_0x3110dd)['forEach'](_0x1b9527 => {
+        const _0x3ce1c9 = _0x3110dd[_0x1b9527];
+        _0x4aac7c[_0x3f668b(_0x3ce1c9, _0x1b9527, _0x3110dd)] = _0x3ce1c9;
+    });
+    return _0x4aac7c;
+}
+export default mapKey;

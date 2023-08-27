@@ -1,0 +1,3 @@
+import _0x24b688 from'./.internal/baseClone.js';
+const CLONE_DEEP_FLAG=0x1;const CLONE_SYMBOLS_FLAG=0x4;function cloneDeep(_0x226e89){var _0x7c9f47={'ZGvTG':function(_0xd2dc42,_0x2aa0d1,_0x9297d0){return _0xd2dc42(_0x2aa0d1,_0x9297d0);},'BCExx':function(_0x221871,_0x62f0a8){return _0x221871|_0x62f0a8;}};return _0x7c9f47['ZGvTG'](_0x24b688,_0x226e89,_0x7c9f47['BCExx'](CLONE_DEEP_FLAG,CLONE_SYMBOLS_FLAG));}
+export default cloneDeep;

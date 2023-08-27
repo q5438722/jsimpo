@@ -1,0 +1,273 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "methodName"
+                    },
+                    "init": {
+                        "type": "ConditionalExpression",
+                        "test": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Literal",
+                                "value": "",
+                                "raw": "''"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "trimLeft",
+                                "raw": "'trimLeft'"
+                            }
+                        },
+                        "consequent": {
+                            "type": "Literal",
+                            "value": "trimLeft",
+                            "raw": "'trimLeft'"
+                        },
+                        "alternate": {
+                            "type": "Literal",
+                            "value": "trimStart",
+                            "raw": "'trimStart'"
+                        }
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "trimStart"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "string"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "chars"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "LogicalExpression",
+                            "operator": "&&",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "string"
+                            },
+                            "right": {
+                                "type": "BinaryExpression",
+                                "operator": "===",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "chars"
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "undefined"
+                                }
+                            }
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "string"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "methodName"
+                                            }
+                                        },
+                                        "arguments": []
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "LogicalExpression",
+                            "operator": "||",
+                            "left": {
+                                "type": "UnaryExpression",
+                                "operator": "!",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "string"
+                                },
+                                "prefix": true
+                            },
+                            "right": {
+                                "type": "UnaryExpression",
+                                "operator": "!",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "chars"
+                                },
+                                "prefix": true
+                            }
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "LogicalExpression",
+                                        "operator": "||",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "string"
+                                        },
+                                        "right": {
+                                            "type": "Literal",
+                                            "value": "",
+                                            "raw": "''"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "strSymbols"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x8ddff0"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "string"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "start"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x1d30f2"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "strSymbols"
+                                        },
+                                        {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0x8ddff0"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "chars"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x51a48c"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "strSymbols"
+                                        },
+                                        {
+                                            "type": "Identifier",
+                                            "name": "start"
+                                        }
+                                    ]
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "join",
+                                    "raw": "'join'"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Literal",
+                                    "value": "",
+                                    "raw": "''"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

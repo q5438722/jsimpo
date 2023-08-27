@@ -1,0 +1,11 @@
+
+function startsWith(_0x11d89b, _0x128718, _0xd19f35) {
+    const {length: _0x3b75ed} = _0x11d89b;
+    _0xd19f35 = _0xd19f35 == null ? 0 : _0xd19f35;
+    if (_0xd19f35 < 0)
+        _0xd19f35 = 0;
+    else
+        _0xd19f35 > _0x3b75ed && (_0xd19f35 = _0x3b75ed);
+    return _0x128718 = '' + _0x128718, _0x11d89b['slice'](_0xd19f35, _0xd19f35 + _0x128718['length']) == _0x128718;
+}
+export default startsWith;

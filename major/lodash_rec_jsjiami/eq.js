@@ -1,0 +1,6 @@
+
+;
+function eq(_0x497f48, _0x27a9ae) {
+    return _0x497f48 === _0x27a9ae || _0x497f48 !== _0x497f48 && _0x27a9ae !== _0x27a9ae;
+}
+export default eq;

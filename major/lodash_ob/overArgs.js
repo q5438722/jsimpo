@@ -1,0 +1,56 @@
+(function (_0xe46200, _0x3b3173) {
+    const _0x1a388d = _0x4dea, _0x79e78 = _0xe46200();
+    while (!![]) {
+        try {
+            const _0x5f6585 = parseInt(_0x1a388d(0x99)) / 0x1 * (parseInt(_0x1a388d(0x9a)) / 0x2) + parseInt(_0x1a388d(0x9b)) / 0x3 * (-parseInt(_0x1a388d(0x9c)) / 0x4) + parseInt(_0x1a388d(0x9d)) / 0x5 * (parseInt(_0x1a388d(0x9e)) / 0x6) + parseInt(_0x1a388d(0x9f)) / 0x7 + -parseInt(_0x1a388d(0xa0)) / 0x8 + parseInt(_0x1a388d(0xa1)) / 0x9 + parseInt(_0x1a388d(0xa2)) / 0xa;
+            if (_0x5f6585 === _0x3b3173)
+                break;
+            else
+                _0x79e78['push'](_0x79e78['shift']());
+        } catch (_0x293694) {
+            _0x79e78['push'](_0x79e78['shift']());
+        }
+    }
+}(_0x3c5a, 0xd910d));
+function overArgs(_0x3eaefc, _0x1cc66d) {
+    const _0x98dd0b = _0x4dea, _0x598917 = _0x1cc66d[_0x98dd0b(0xa3)];
+    return function (..._0x3d79a2) {
+        const _0x5d4af1 = _0x98dd0b;
+        let _0x4cce57 = -0x1;
+        const _0x37e47f = Math[_0x5d4af1(0xa4)](_0x3d79a2[_0x5d4af1(0xa3)], _0x598917);
+        while (++_0x4cce57 < _0x37e47f) {
+            _0x3d79a2[_0x4cce57] = _0x1cc66d[_0x4cce57][_0x5d4af1(0xa5)](this, _0x3d79a2[_0x4cce57]);
+        }
+        return _0x3eaefc['apply'](this, _0x3d79a2);
+    };
+}
+function _0x3c5a() {
+    const _0x47c07a = [
+        '2946ycNZvc',
+        '1564gzjBAw',
+        '1638235qhlJSn',
+        '6VUskZc',
+        '3886190dZiMxc',
+        '14197864Mushsg',
+        '5609799ppVhFB',
+        '14612640SSInus',
+        'length',
+        'min',
+        'call',
+        '2xTanvt',
+        '80404NavUUo'
+    ];
+    _0x3c5a = function () {
+        return _0x47c07a;
+    };
+    return _0x3c5a();
+}
+function _0x4dea(_0x245434, _0x281219) {
+    const _0x3c5ae2 = _0x3c5a();
+    return _0x4dea = function (_0x4deaa8, _0x3c575f) {
+        _0x4deaa8 = _0x4deaa8 - 0x99;
+        let _0x5e040e = _0x3c5ae2[_0x4deaa8];
+        return _0x5e040e;
+    }, _0x4dea(_0x245434, _0x281219);
+}
+export default overArgs;

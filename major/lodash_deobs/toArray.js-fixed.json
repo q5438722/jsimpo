@@ -1,0 +1,338 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "mapTag"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "[object Map]",
+                        "raw": "'[object Map]'"
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "setTag"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "[object Set]",
+                        "raw": "'[object Set]'"
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "symIterator"
+                    },
+                    "init": {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "Symbol"
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": "iterator",
+                            "raw": "'iterator'"
+                        }
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "toArray"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "value"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "UnaryExpression",
+                            "operator": "!",
+                            "argument": {
+                                "type": "Identifier",
+                                "name": "value"
+                            },
+                            "prefix": true
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "ArrayExpression",
+                                        "elements": []
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "_0x1d6d3e"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "value"
+                                }
+                            ]
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "ConditionalExpression",
+                                        "test": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0x5a159e"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "value"
+                                                }
+                                            ]
+                                        },
+                                        "consequent": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0x19d1c0"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "value"
+                                                }
+                                            ]
+                                        },
+                                        "alternate": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0x1059f6"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "value"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "LogicalExpression",
+                            "operator": "&&",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "symIterator"
+                            },
+                            "right": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "value"
+                                },
+                                "property": {
+                                    "type": "Identifier",
+                                    "name": "symIterator"
+                                }
+                            }
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "_0xd1a940"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "value"
+                                                    },
+                                                    "property": {
+                                                        "type": "Identifier",
+                                                        "name": "symIterator"
+                                                    }
+                                                },
+                                                "arguments": []
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "tag"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x401e0c"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "value"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "func"
+                                },
+                                "init": {
+                                    "type": "ConditionalExpression",
+                                    "test": {
+                                        "type": "BinaryExpression",
+                                        "operator": "==",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "tag"
+                                        },
+                                        "right": {
+                                            "type": "Identifier",
+                                            "name": "mapTag"
+                                        }
+                                    },
+                                    "consequent": {
+                                        "type": "Identifier",
+                                        "name": "_0x15570f"
+                                    },
+                                    "alternate": {
+                                        "type": "ConditionalExpression",
+                                        "test": {
+                                            "type": "BinaryExpression",
+                                            "operator": "==",
+                                            "left": {
+                                                "type": "Identifier",
+                                                "name": "tag"
+                                            },
+                                            "right": {
+                                                "type": "Identifier",
+                                                "name": "setTag"
+                                            }
+                                        },
+                                        "consequent": {
+                                            "type": "Identifier",
+                                            "name": "_0x45def9"
+                                        },
+                                        "alternate": {
+                                            "type": "Identifier",
+                                            "name": "_0x420b9e"
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "func"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "value"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

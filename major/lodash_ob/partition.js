@@ -1,0 +1,49 @@
+(function (_0xbeafe8, _0x545a2a) {
+    var _0x4d4648 = _0x6452, _0x146c8b = _0xbeafe8();
+    while (!![]) {
+        try {
+            var _0x2283e4 = parseInt(_0x4d4648(0x139)) / 0x1 + parseInt(_0x4d4648(0x13a)) / 0x2 * (-parseInt(_0x4d4648(0x13b)) / 0x3) + parseInt(_0x4d4648(0x13c)) / 0x4 * (-parseInt(_0x4d4648(0x13d)) / 0x5) + -parseInt(_0x4d4648(0x13e)) / 0x6 + parseInt(_0x4d4648(0x13f)) / 0x7 + -parseInt(_0x4d4648(0x140)) / 0x8 + parseInt(_0x4d4648(0x141)) / 0x9;
+            if (_0x2283e4 === _0x545a2a)
+                break;
+            else
+                _0x146c8b['push'](_0x146c8b['shift']());
+        } catch (_0x2b912f) {
+            _0x146c8b['push'](_0x146c8b['shift']());
+        }
+    }
+}(_0x4bad, 0x33d50));
+import _0x2a0c90 from './reduce.js';
+function _0x6452(_0x2ef358, _0x1a9d01) {
+    var _0x4bad19 = _0x4bad();
+    return _0x6452 = function (_0x645234, _0x57e279) {
+        _0x645234 = _0x645234 - 0x139;
+        var _0x556368 = _0x4bad19[_0x645234];
+        return _0x556368;
+    }, _0x6452(_0x2ef358, _0x1a9d01);
+}
+function _0x4bad() {
+    var _0x376b80 = [
+        '59680GrPBhr',
+        '1919169KpcBQN',
+        'push',
+        '289335THCLcM',
+        '2ZnZzuY',
+        '460974NgrycA',
+        '107336Ymmsqc',
+        '15ayWxwr',
+        '911166TRUTjN',
+        '722463QEUMPS'
+    ];
+    _0x4bad = function () {
+        return _0x376b80;
+    };
+    return _0x4bad();
+}
+function partition(_0xe95517, _0x5212be) {
+    var _0x1f08bb = _0x6452;
+    return _0x2a0c90(_0xe95517, (_0x96d5d2, _0x58640a, _0x2316c8) => (_0x96d5d2[_0x5212be(_0x58640a) ? 0x0 : 0x1][_0x1f08bb(0x142)](_0x58640a), _0x96d5d2), [
+        [],
+        []
+    ]);
+}
+export default partition;

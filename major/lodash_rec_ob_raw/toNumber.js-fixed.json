@@ -1,0 +1,562 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "NAN"
+                    },
+                    "init": {
+                        "type": "BinaryExpression",
+                        "operator": "/",
+                        "left": {
+                            "type": "Literal",
+                            "value": 0,
+                            "raw": "0x0"
+                        },
+                        "right": {
+                            "type": "Literal",
+                            "value": 0,
+                            "raw": "0x0"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reTrim"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": {},
+                        "raw": "/^\\s+|\\s+$/g",
+                        "regex": {
+                            "pattern": "^\\s+|\\s+$",
+                            "flags": "g"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reIsBadHex"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": {},
+                        "raw": "/^[-+]0x[0-9a-f]+$/i",
+                        "regex": {
+                            "pattern": "^[-+]0x[0-9a-f]+$",
+                            "flags": "i"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reIsBinary"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": {},
+                        "raw": "/^0b[01]+$/i",
+                        "regex": {
+                            "pattern": "^0b[01]+$",
+                            "flags": "i"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reIsOctal"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": {},
+                        "raw": "/^0o[0-7]+$/i",
+                        "regex": {
+                            "pattern": "^0o[0-7]+$",
+                            "flags": "i"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "freeParseInt"
+                    },
+                    "init": {
+                        "type": "Identifier",
+                        "name": "parseInt"
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "toNumber"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x21ed4d"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": "===",
+                            "left": {
+                                "type": "UnaryExpression",
+                                "operator": "typeof",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "_0x21ed4d"
+                                },
+                                "prefix": true
+                            },
+                            "right": {
+                                "type": "Literal",
+                                "value": "number",
+                                "raw": "'number'"
+                            }
+                        },
+                        "consequent": {
+                            "type": "ReturnStatement",
+                            "argument": {
+                                "type": "Identifier",
+                                "name": "_0x21ed4d"
+                            }
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "_0x2bf1a"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x21ed4d"
+                                }
+                            ]
+                        },
+                        "consequent": {
+                            "type": "ReturnStatement",
+                            "argument": {
+                                "type": "Identifier",
+                                "name": "NAN"
+                            }
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "_0x22a799"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "_0x21ed4d"
+                                }
+                            ]
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "VariableDeclaration",
+                                    "declarations": [
+                                        {
+                                            "type": "VariableDeclarator",
+                                            "id": {
+                                                "type": "Identifier",
+                                                "name": "_0x2970b6"
+                                            },
+                                            "init": {
+                                                "type": "ConditionalExpression",
+                                                "test": {
+                                                    "type": "BinaryExpression",
+                                                    "operator": "===",
+                                                    "left": {
+                                                        "type": "UnaryExpression",
+                                                        "operator": "typeof",
+                                                        "argument": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "_0x21ed4d"
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "valueOf",
+                                                                "raw": "'valueOf'"
+                                                            }
+                                                        },
+                                                        "prefix": true
+                                                    },
+                                                    "right": {
+                                                        "type": "Literal",
+                                                        "value": "function",
+                                                        "raw": "'function'"
+                                                    }
+                                                },
+                                                "consequent": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "_0x21ed4d"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "valueOf",
+                                                            "raw": "'valueOf'"
+                                                        }
+                                                    },
+                                                    "arguments": []
+                                                },
+                                                "alternate": {
+                                                    "type": "Identifier",
+                                                    "name": "_0x21ed4d"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "kind": "const"
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "AssignmentExpression",
+                                        "operator": "=",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "_0x21ed4d"
+                                        },
+                                        "right": {
+                                            "type": "ConditionalExpression",
+                                            "test": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "_0x22a799"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "_0x2970b6"
+                                                    }
+                                                ]
+                                            },
+                                            "consequent": {
+                                                "type": "BinaryExpression",
+                                                "operator": "+",
+                                                "left": {
+                                                    "type": "Literal",
+                                                    "value": "",
+                                                    "raw": "''"
+                                                },
+                                                "right": {
+                                                    "type": "Identifier",
+                                                    "name": "_0x2970b6"
+                                                }
+                                            },
+                                            "alternate": {
+                                                "type": "Identifier",
+                                                "name": "_0x2970b6"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": "!==",
+                            "left": {
+                                "type": "UnaryExpression",
+                                "operator": "typeof",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "_0x21ed4d"
+                                },
+                                "prefix": true
+                            },
+                            "right": {
+                                "type": "Literal",
+                                "value": "string",
+                                "raw": "'string'"
+                            }
+                        },
+                        "consequent": {
+                            "type": "ReturnStatement",
+                            "argument": {
+                                "type": "ConditionalExpression",
+                                "test": {
+                                    "type": "BinaryExpression",
+                                    "operator": "===",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "_0x21ed4d"
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": 0,
+                                        "raw": "0x0"
+                                    }
+                                },
+                                "consequent": {
+                                    "type": "Identifier",
+                                    "name": "_0x21ed4d"
+                                },
+                                "alternate": {
+                                    "type": "UnaryExpression",
+                                    "operator": "+",
+                                    "argument": {
+                                        "type": "Identifier",
+                                        "name": "_0x21ed4d"
+                                    },
+                                    "prefix": true
+                                }
+                            }
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "_0x21ed4d"
+                            },
+                            "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "_0x21ed4d"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "replace",
+                                        "raw": "'replace'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "reTrim"
+                                    },
+                                    {
+                                        "type": "Literal",
+                                        "value": "",
+                                        "raw": "''"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "_0x90660"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "reIsBinary"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "test",
+                                            "raw": "'test'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x21ed4d"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "ConditionalExpression",
+                            "test": {
+                                "type": "LogicalExpression",
+                                "operator": "||",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "_0x90660"
+                                },
+                                "right": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "reIsOctal"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "test",
+                                            "raw": "'test'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x21ed4d"
+                                        }
+                                    ]
+                                }
+                            },
+                            "consequent": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "freeParseInt"
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "_0x21ed4d"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "slice",
+                                                "raw": "'slice'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": 2,
+                                                "raw": "0x2"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "ConditionalExpression",
+                                        "test": {
+                                            "type": "Identifier",
+                                            "name": "_0x90660"
+                                        },
+                                        "consequent": {
+                                            "type": "Literal",
+                                            "value": 2,
+                                            "raw": "0x2"
+                                        },
+                                        "alternate": {
+                                            "type": "Literal",
+                                            "value": 8,
+                                            "raw": "0x8"
+                                        }
+                                    }
+                                ]
+                            },
+                            "alternate": {
+                                "type": "ConditionalExpression",
+                                "test": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "reIsBadHex"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "test",
+                                            "raw": "'test'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x21ed4d"
+                                        }
+                                    ]
+                                },
+                                "consequent": {
+                                    "type": "Identifier",
+                                    "name": "NAN"
+                                },
+                                "alternate": {
+                                    "type": "UnaryExpression",
+                                    "operator": "+",
+                                    "argument": {
+                                        "type": "Identifier",
+                                        "name": "_0x21ed4d"
+                                    },
+                                    "prefix": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

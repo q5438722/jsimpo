@@ -1,0 +1,4 @@
+import _0x3f127c from'./.internal/arrayEach.js';
+import _0x20f0b from'./.internal/baseEach.js';
+function forEach(collection,iteratee){var dcudHk={'hSfiY':function(callee,param1,param2){return callee(param1,param2);}};const func=Array['isArray'](collection)?_0x3f127c:_0x20f0b;return dcudHk['hSfiY'](func,collection,iteratee);}
+export default forEach;

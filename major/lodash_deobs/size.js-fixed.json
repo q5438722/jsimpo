@@ -1,0 +1,276 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "mapTag"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "[object Map]",
+                        "raw": "'[object\\x20Map]'"
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "setTag"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "[object Set]",
+                        "raw": "'[object Set]'"
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "size"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "collection"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": "==",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "collection"
+                            },
+                            "right": {
+                                "type": "Literal",
+                                "value": null,
+                                "raw": "null"
+                            }
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "Literal",
+                                        "value": 0,
+                                        "raw": "0x0"
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "_0xcb14b2"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "collection"
+                                }
+                            ]
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "ConditionalExpression",
+                                        "test": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0x4a87a6"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "collection"
+                                                }
+                                            ]
+                                        },
+                                        "consequent": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0x3950c4"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "collection"
+                                                }
+                                            ]
+                                        },
+                                        "alternate": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "collection"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "length",
+                                                "raw": "'length'"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "tag"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x2abf7e"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "collection"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "LogicalExpression",
+                            "operator": "||",
+                            "left": {
+                                "type": "BinaryExpression",
+                                "operator": "==",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "tag"
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "mapTag"
+                                }
+                            },
+                            "right": {
+                                "type": "BinaryExpression",
+                                "operator": "==",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "tag"
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "setTag"
+                                }
+                            }
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "collection"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "size",
+                                            "raw": "'size'"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "Object"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "keys",
+                                        "raw": "'keys'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "collection"
+                                    }
+                                ]
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "length",
+                                "raw": "'length'"
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

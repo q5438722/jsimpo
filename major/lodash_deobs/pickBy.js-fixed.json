@@ -1,0 +1,183 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "pickBy"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "object"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "predicate"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": "==",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "object"
+                            },
+                            "right": {
+                                "type": "Literal",
+                                "value": null,
+                                "raw": "null"
+                            }
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "ObjectExpression",
+                                        "properties": []
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "props"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x3ad54a"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0x5dd186"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "object"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "ArrowFunctionExpression",
+                                            "id": null,
+                                            "params": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "prop"
+                                                }
+                                            ],
+                                            "body": {
+                                                "type": "ArrayExpression",
+                                                "elements": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "prop"
+                                                    }
+                                                ]
+                                            },
+                                            "generator": false,
+                                            "expression": true,
+                                            "async": false
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "_0x4b4a8b"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "object"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "props"
+                                },
+                                {
+                                    "type": "ArrowFunctionExpression",
+                                    "id": null,
+                                    "params": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "value"
+                                        },
+                                        {
+                                            "type": "Identifier",
+                                            "name": "path"
+                                        }
+                                    ],
+                                    "body": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "predicate"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "value"
+                                            },
+                                            {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "path"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": 0,
+                                                    "raw": "0x0"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "generator": false,
+                                    "expression": true,
+                                    "async": false
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

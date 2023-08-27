@@ -1,0 +1,56 @@
+function _0x5871(_0x3f86be, _0x49832b) {
+    const _0x5aebd1 = _0x5aeb();
+    return _0x5871 = function (_0x58718a, _0x1bb5e3) {
+        _0x58718a = _0x58718a - 0x153;
+        let _0x1f16b1 = _0x5aebd1[_0x58718a];
+        return _0x1f16b1;
+    }, _0x5871(_0x3f86be, _0x49832b);
+}
+(function (_0xa8be8d, _0x16c3b0) {
+    const _0x43fa5f = _0x5871, _0x1f4d60 = _0xa8be8d();
+    while (!![]) {
+        try {
+            const _0x29889c = parseInt(_0x43fa5f(0x153)) / 0x1 * (parseInt(_0x43fa5f(0x154)) / 0x2) + -parseInt(_0x43fa5f(0x155)) / 0x3 * (parseInt(_0x43fa5f(0x156)) / 0x4) + parseInt(_0x43fa5f(0x157)) / 0x5 * (parseInt(_0x43fa5f(0x158)) / 0x6) + parseInt(_0x43fa5f(0x159)) / 0x7 * (-parseInt(_0x43fa5f(0x15a)) / 0x8) + parseInt(_0x43fa5f(0x15b)) / 0x9 * (parseInt(_0x43fa5f(0x15c)) / 0xa) + -parseInt(_0x43fa5f(0x15d)) / 0xb * (-parseInt(_0x43fa5f(0x15e)) / 0xc) + parseInt(_0x43fa5f(0x15f)) / 0xd * (-parseInt(_0x43fa5f(0x160)) / 0xe);
+            if (_0x29889c === _0x16c3b0)
+                break;
+            else
+                _0x1f4d60['push'](_0x1f4d60['shift']());
+        } catch (_0x510fcb) {
+            _0x1f4d60['push'](_0x1f4d60['shift']());
+        }
+    }
+}(_0x5aeb, 0x6c6b4));
+import _0x41e06c from './.internal/baseSortedIndex.js';
+import _0x1c6960 from './eq.js';
+function sortedLastIndexOf(_0x3eccbe, _0x101162) {
+    const _0x369041 = _0x3eccbe == null ? 0x0 : _0x3eccbe['length'];
+    if (_0x369041) {
+        const _0x49f63b = _0x41e06c(_0x3eccbe, _0x101162, !![]) - 0x1;
+        if (_0x1c6960(_0x3eccbe[_0x49f63b], _0x101162))
+            return _0x49f63b;
+    }
+    return -0x1;
+}
+function _0x5aeb() {
+    const _0x36dbff = [
+        '17562jTPbKe',
+        '231HGlLWj',
+        '106544LUzfew',
+        '18dgGCYU',
+        '2187100sggUny',
+        '55reaRuc',
+        '891348kbbJqH',
+        '1287YuaQse',
+        '16982hCHUxj',
+        '1GyUhAp',
+        '681542ZbYFGL',
+        '9SOEPWF',
+        '842404IoeRLX',
+        '830COfRml'
+    ];
+    _0x5aeb = function () {
+        return _0x36dbff;
+    };
+    return _0x5aeb();
+}
+export default sortedLastIndexOf;

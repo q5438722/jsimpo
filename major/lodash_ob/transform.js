@@ -1,0 +1,62 @@
+function _0x46f6() {
+    const _0x16730a = [
+        'isArray',
+        'function',
+        'create',
+        'getPrototypeOf',
+        '468715NggEyK',
+        '6GrUXTZ',
+        '9gmjRpH',
+        '683268sUYvjy',
+        '20nVVMOZ',
+        '237702LPvyVT',
+        '6295520PDYIzi',
+        '5149024kxDEZj',
+        '9252765uAXUgy',
+        '280jzyltY',
+        '505285HpNdVL'
+    ];
+    _0x46f6 = function () {
+        return _0x16730a;
+    };
+    return _0x46f6();
+}
+(function (_0x2be5ef, _0x30f486) {
+    const _0x24317f = _0x34f7, _0x684928 = _0x2be5ef();
+    while (!![]) {
+        try {
+            const _0x54b5b9 = -parseInt(_0x24317f(0x1df)) / 0x1 * (parseInt(_0x24317f(0x1e0)) / 0x2) + parseInt(_0x24317f(0x1e1)) / 0x3 * (-parseInt(_0x24317f(0x1e2)) / 0x4) + -parseInt(_0x24317f(0x1e3)) / 0x5 * (-parseInt(_0x24317f(0x1e4)) / 0x6) + parseInt(_0x24317f(0x1e5)) / 0x7 + -parseInt(_0x24317f(0x1e6)) / 0x8 + parseInt(_0x24317f(0x1e7)) / 0x9 + parseInt(_0x24317f(0x1e8)) / 0xa * (parseInt(_0x24317f(0x1e9)) / 0xb);
+            if (_0x54b5b9 === _0x30f486)
+                break;
+            else
+                _0x684928['push'](_0x684928['shift']());
+        } catch (_0x263323) {
+            _0x684928['push'](_0x684928['shift']());
+        }
+    }
+}(_0x46f6, 0xc5b8d));
+import _0x4ad4e6 from './.internal/arrayEach.js';
+import _0x1f637b from './.internal/baseForOwn.js';
+import _0x2af606 from './isBuffer.js';
+import _0xc905e6 from './isObject.js';
+import _0x324392 from './isTypedArray.js';
+function transform(_0x24b6f7, _0x338295, _0x4e9ca4) {
+    const _0x23cd91 = _0x34f7, _0x4bdd92 = Array[_0x23cd91(0x1ea)](_0x24b6f7), _0x316ee6 = _0x4bdd92 || _0x2af606(_0x24b6f7) || _0x324392(_0x24b6f7);
+    if (_0x4e9ca4 == null) {
+        const _0x45a08e = _0x24b6f7 && _0x24b6f7['constructor'];
+        if (_0x316ee6)
+            _0x4e9ca4 = _0x4bdd92 ? new _0x45a08e() : [];
+        else
+            _0xc905e6(_0x24b6f7) ? _0x4e9ca4 = typeof _0x45a08e === _0x23cd91(0x1eb) ? Object[_0x23cd91(0x1ec)](Object[_0x23cd91(0x1ed)](_0x24b6f7)) : {} : _0x4e9ca4 = {};
+    }
+    return (_0x316ee6 ? _0x4ad4e6 : _0x1f637b)(_0x24b6f7, (_0x405b27, _0x7aa292, _0x180352) => _0x338295(_0x4e9ca4, _0x405b27, _0x7aa292, _0x180352)), _0x4e9ca4;
+}
+function _0x34f7(_0x8c3c1c, _0x29e72b) {
+    const _0x46f637 = _0x46f6();
+    return _0x34f7 = function (_0x34f772, _0x361f03) {
+        _0x34f772 = _0x34f772 - 0x1df;
+        let _0x10c7eb = _0x46f637[_0x34f772];
+        return _0x10c7eb;
+    }, _0x34f7(_0x8c3c1c, _0x29e72b);
+}
+export default transform;

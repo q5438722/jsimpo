@@ -1,0 +1,135 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "CLONE_DEEP_FLAG"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": 1,
+                        "raw": "0x1"
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "CLONE_SYMBOLS_FLAG"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": 4,
+                        "raw": "0x4"
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "cloneDeepWith"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x42a394"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "_0x6fca58"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "SequenceExpression",
+                            "expressions": [
+                                {
+                                    "type": "AssignmentExpression",
+                                    "operator": "=",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "_0x6fca58"
+                                    },
+                                    "right": {
+                                        "type": "ConditionalExpression",
+                                        "test": {
+                                            "type": "BinaryExpression",
+                                            "operator": "===",
+                                            "left": {
+                                                "type": "UnaryExpression",
+                                                "operator": "typeof",
+                                                "argument": {
+                                                    "type": "Identifier",
+                                                    "name": "_0x6fca58"
+                                                },
+                                                "prefix": true
+                                            },
+                                            "right": {
+                                                "type": "Literal",
+                                                "value": "function",
+                                                "raw": "'function'"
+                                            }
+                                        },
+                                        "consequent": {
+                                            "type": "Identifier",
+                                            "name": "_0x6fca58"
+                                        },
+                                        "alternate": {
+                                            "type": "Identifier",
+                                            "name": "undefined"
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x5f1476"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x42a394"
+                                        },
+                                        {
+                                            "type": "BinaryExpression",
+                                            "operator": "|",
+                                            "left": {
+                                                "type": "Identifier",
+                                                "name": "CLONE_DEEP_FLAG"
+                                            },
+                                            "right": {
+                                                "type": "Identifier",
+                                                "name": "CLONE_SYMBOLS_FLAG"
+                                            }
+                                        },
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x6fca58"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

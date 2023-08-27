@@ -1,0 +1,294 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "freeExports"
+                    },
+                    "init": {
+                        "type": "LogicalExpression",
+                        "operator": "&&",
+                        "left": {
+                            "type": "LogicalExpression",
+                            "operator": "&&",
+                            "left": {
+                                "type": "LogicalExpression",
+                                "operator": "&&",
+                                "left": {
+                                    "type": "BinaryExpression",
+                                    "operator": "===",
+                                    "left": {
+                                        "type": "UnaryExpression",
+                                        "operator": "typeof",
+                                        "argument": {
+                                            "type": "Identifier",
+                                            "name": "exports"
+                                        },
+                                        "prefix": true
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": "object",
+                                        "raw": "'object'"
+                                    }
+                                },
+                                "right": {
+                                    "type": "BinaryExpression",
+                                    "operator": "!==",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "exports"
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": null,
+                                        "raw": "null"
+                                    }
+                                }
+                            },
+                            "right": {
+                                "type": "UnaryExpression",
+                                "operator": "!",
+                                "argument": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "exports"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "nodeType",
+                                        "raw": "'nodeType'"
+                                    }
+                                },
+                                "prefix": true
+                            }
+                        },
+                        "right": {
+                            "type": "Identifier",
+                            "name": "exports"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "freeModule"
+                    },
+                    "init": {
+                        "type": "LogicalExpression",
+                        "operator": "&&",
+                        "left": {
+                            "type": "LogicalExpression",
+                            "operator": "&&",
+                            "left": {
+                                "type": "LogicalExpression",
+                                "operator": "&&",
+                                "left": {
+                                    "type": "LogicalExpression",
+                                    "operator": "&&",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "freeExports"
+                                    },
+                                    "right": {
+                                        "type": "BinaryExpression",
+                                        "operator": "===",
+                                        "left": {
+                                            "type": "UnaryExpression",
+                                            "operator": "typeof",
+                                            "argument": {
+                                                "type": "Identifier",
+                                                "name": "module"
+                                            },
+                                            "prefix": true
+                                        },
+                                        "right": {
+                                            "type": "Literal",
+                                            "value": "object",
+                                            "raw": "'object'"
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "type": "BinaryExpression",
+                                    "operator": "!==",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "module"
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": null,
+                                        "raw": "null"
+                                    }
+                                }
+                            },
+                            "right": {
+                                "type": "UnaryExpression",
+                                "operator": "!",
+                                "argument": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "module"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "nodeType",
+                                        "raw": "'nodeType'"
+                                    }
+                                },
+                                "prefix": true
+                            }
+                        },
+                        "right": {
+                            "type": "Identifier",
+                            "name": "module"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "moduleExports"
+                    },
+                    "init": {
+                        "type": "LogicalExpression",
+                        "operator": "&&",
+                        "left": {
+                            "type": "Identifier",
+                            "name": "freeModule"
+                        },
+                        "right": {
+                            "type": "BinaryExpression",
+                            "operator": "===",
+                            "left": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "freeModule"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "exports",
+                                    "raw": "'exports'"
+                                }
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "freeExports"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "Buffer"
+                    },
+                    "init": {
+                        "type": "ConditionalExpression",
+                        "test": {
+                            "type": "Identifier",
+                            "name": "moduleExports"
+                        },
+                        "consequent": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "_0x37449d"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "Buffer",
+                                "raw": "'Buffer'"
+                            }
+                        },
+                        "alternate": {
+                            "type": "Identifier",
+                            "name": "undefined"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "nativeIsBuffer"
+                    },
+                    "init": {
+                        "type": "ConditionalExpression",
+                        "test": {
+                            "type": "Identifier",
+                            "name": "Buffer"
+                        },
+                        "consequent": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "Buffer"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "isBuffer",
+                                "raw": "'isBuffer'"
+                            }
+                        },
+                        "alternate": {
+                            "type": "Identifier",
+                            "name": "undefined"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "isBuffer"
+                    },
+                    "init": {
+                        "type": "LogicalExpression",
+                        "operator": "||",
+                        "left": {
+                            "type": "Identifier",
+                            "name": "nativeIsBuffer"
+                        },
+                        "right": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [],
+                            "body": {
+                                "type": "UnaryExpression",
+                                "operator": "!",
+                                "argument": {
+                                    "type": "ArrayExpression",
+                                    "elements": []
+                                },
+                                "prefix": true
+                            },
+                            "generator": false,
+                            "expression": true,
+                            "async": false
+                        }
+                    }
+                }
+            ],
+            "kind": "const"
+        }
+    ],
+    "sourceType": "script"
+}

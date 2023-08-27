@@ -1,0 +1,94 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "isNumber"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "value"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "LogicalExpression",
+                            "operator": "||",
+                            "left": {
+                                "type": "BinaryExpression",
+                                "operator": "===",
+                                "left": {
+                                    "type": "UnaryExpression",
+                                    "operator": "typeof",
+                                    "argument": {
+                                        "type": "Identifier",
+                                        "name": "value"
+                                    },
+                                    "prefix": true
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": "number",
+                                    "raw": "'number'"
+                                }
+                            },
+                            "right": {
+                                "type": "LogicalExpression",
+                                "operator": "&&",
+                                "left": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x44e53e"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "value"
+                                        }
+                                    ]
+                                },
+                                "right": {
+                                    "type": "BinaryExpression",
+                                    "operator": "==",
+                                    "left": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "_0x8149d5"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "value"
+                                            }
+                                        ]
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": "[object Number]",
+                                        "raw": "'[object\\x20Number]'"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

@@ -1,0 +1,3 @@
+import _0x1fbee5 from'./.internal/createMathOperation.js';
+const add=_0x1fbee5((_0x5c1d99,_0x36382c)=>_0x5c1d99+_0x36382c,0x0);
+export default add;

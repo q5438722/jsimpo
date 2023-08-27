@@ -1,0 +1,7 @@
+
+;
+function forOwn(_0xfbcb8e, _0x57db1c) {
+    _0xfbcb8e = Object(_0xfbcb8e);
+    Object['keys'](_0xfbcb8e)['forEach'](_0x16e153 => _0x57db1c(_0xfbcb8e[_0x16e153], _0x16e153, _0xfbcb8e));
+}
+export default forOwn;

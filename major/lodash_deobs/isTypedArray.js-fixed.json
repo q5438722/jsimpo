@@ -1,0 +1,172 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reTypedTag"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": {},
+                        "raw": "/^\\[object (?:Float(?:32|64)|(?:Int|Uint)(?:8|16|32)|Uint8Clamped)Array\\]$/",
+                        "regex": {
+                            "pattern": "^\\[object (?:Float(?:32|64)|(?:Int|Uint)(?:8|16|32)|Uint8Clamped)Array\\]$",
+                            "flags": ""
+                        }
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "nodeIsTypedArray"
+                    },
+                    "init": {
+                        "type": "LogicalExpression",
+                        "operator": "&&",
+                        "left": {
+                            "type": "Identifier",
+                            "name": "_0x2f8ba1"
+                        },
+                        "right": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "_0x2f8ba1"
+                            },
+                            "property": {
+                                "type": "Literal",
+                                "value": "isTypedArray",
+                                "raw": "'isTypedArray'"
+                            }
+                        }
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "isTypedArray"
+                    },
+                    "init": {
+                        "type": "ConditionalExpression",
+                        "test": {
+                            "type": "Identifier",
+                            "name": "nodeIsTypedArray"
+                        },
+                        "consequent": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "value"
+                                }
+                            ],
+                            "body": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "nodeIsTypedArray"
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "value"
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": true,
+                            "async": false
+                        },
+                        "alternate": {
+                            "type": "ArrowFunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "value"
+                                }
+                            ],
+                            "body": {
+                                "type": "LogicalExpression",
+                                "operator": "&&",
+                                "left": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x27056c"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "value"
+                                        }
+                                    ]
+                                },
+                                "right": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "reTypedTag"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "test",
+                                            "raw": "'test'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "_0x115e20"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "value"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            "generator": false,
+                            "expression": true,
+                            "async": false
+                        }
+                    }
+                }
+            ],
+            "kind": "const"
+        }
+    ],
+    "sourceType": "script"
+}

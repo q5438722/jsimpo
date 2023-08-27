@@ -1,0 +1,55 @@
+(function (_0x2af214, _0x4ef890) {
+    const _0x2d3f82 = _0xfce9, _0x452f87 = _0x2af214();
+    while (!![]) {
+        try {
+            const _0x2d8c0f = parseInt(_0x2d3f82(0x96)) / 0x1 + parseInt(_0x2d3f82(0x97)) / 0x2 * (-parseInt(_0x2d3f82(0x98)) / 0x3) + parseInt(_0x2d3f82(0x99)) / 0x4 + -parseInt(_0x2d3f82(0x9a)) / 0x5 + -parseInt(_0x2d3f82(0x9b)) / 0x6 + parseInt(_0x2d3f82(0x9c)) / 0x7 + parseInt(_0x2d3f82(0x9d)) / 0x8 * (parseInt(_0x2d3f82(0x9e)) / 0x9);
+            if (_0x2d8c0f === _0x4ef890)
+                break;
+            else
+                _0x452f87['push'](_0x452f87['shift']());
+        } catch (_0x59cbf6) {
+            _0x452f87['push'](_0x452f87['shift']());
+        }
+    }
+}(_0x847e, 0x2151d));
+import _0x8c48c7 from './.internal/basePullAt.js';
+function _0xfce9(_0x2b65c4, _0x41ddb7) {
+    const _0x847e0f = _0x847e();
+    return _0xfce9 = function (_0xfce968, _0x2928ea) {
+        _0xfce968 = _0xfce968 - 0x96;
+        let _0x16df0c = _0x847e0f[_0xfce968];
+        return _0x16df0c;
+    }, _0xfce9(_0x2b65c4, _0x41ddb7);
+}
+function remove(_0x4b71f0, _0x17e3e3) {
+    const _0x3896f0 = _0xfce9, _0x394aa6 = [];
+    if (!(_0x4b71f0 != null && _0x4b71f0[_0x3896f0(0x9f)]))
+        return _0x394aa6;
+    let _0x1d8564 = -0x1;
+    const _0x347608 = [], {length: _0xc351b2} = _0x4b71f0;
+    while (++_0x1d8564 < _0xc351b2) {
+        const _0x3122a3 = _0x4b71f0[_0x1d8564];
+        _0x17e3e3(_0x3122a3, _0x1d8564, _0x4b71f0) && (_0x394aa6['push'](_0x3122a3), _0x347608[_0x3896f0(0xa0)](_0x1d8564));
+    }
+    return _0x8c48c7(_0x4b71f0, _0x347608), _0x394aa6;
+}
+export default remove;
+function _0x847e() {
+    const _0x21962e = [
+        '66128cpMNqy',
+        '279noZUCN',
+        'length',
+        'push',
+        '160700EHVRLP',
+        '4072kFKwFr',
+        '372nYTsVl',
+        '443320tqSPRR',
+        '501850GGznSc',
+        '1618752PIQAJT',
+        '1619289cFWpBo'
+    ];
+    _0x847e = function () {
+        return _0x21962e;
+    };
+    return _0x847e();
+}

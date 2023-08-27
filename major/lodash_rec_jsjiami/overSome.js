@@ -1,0 +1,3 @@
+import _0xfa88d6 from'./some.js';
+function overSome(_0x34d5ed){var _0x48d493={'RGGJC':function(_0x230ec2,_0x34b34e,_0x511eb6){return _0x230ec2(_0x34b34e,_0x511eb6);}};return function(..._0x267cda){return _0x48d493['RGGJC'](_0xfa88d6,_0x34d5ed,_0x39a47f=>_0x39a47f['apply'](this,_0x267cda));};}
+export default overSome;

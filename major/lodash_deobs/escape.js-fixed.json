@@ -1,0 +1,200 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "htmlEscapes"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": []
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reUnescapedHtml"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": {},
+                        "raw": "/[&<>\"']/g",
+                        "regex": {
+                            "pattern": "[&<>\"']",
+                            "flags": "g"
+                        }
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reHasUnescapedHtml"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "RegExp"
+                        },
+                        "arguments": [
+                            {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "reUnescapedHtml"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "source",
+                                    "raw": "'source'"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "escape"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x5668b6"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "ConditionalExpression",
+                            "test": {
+                                "type": "LogicalExpression",
+                                "operator": "&&",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "_0x5668b6"
+                                },
+                                "right": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "reHasUnescapedHtml"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "test",
+                                            "raw": "'test'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x5668b6"
+                                        }
+                                    ]
+                                }
+                            },
+                            "consequent": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "_0x5668b6"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "replace",
+                                        "raw": "'replace'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "reUnescapedHtml"
+                                    },
+                                    {
+                                        "type": "ArrowFunctionExpression",
+                                        "id": null,
+                                        "params": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "_0x4e42d3"
+                                            }
+                                        ],
+                                        "body": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "htmlEscapes"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "_0x4e42d3"
+                                            }
+                                        },
+                                        "generator": false,
+                                        "expression": true,
+                                        "async": false
+                                    }
+                                ]
+                            },
+                            "alternate": {
+                                "type": "LogicalExpression",
+                                "operator": "||",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "_0x5668b6"
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": "",
+                                    "raw": "''"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

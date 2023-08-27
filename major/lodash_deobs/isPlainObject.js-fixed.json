@@ -1,0 +1,274 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "isPlainObject"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "value"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "LogicalExpression",
+                            "operator": "||",
+                            "left": {
+                                "type": "UnaryExpression",
+                                "operator": "!",
+                                "argument": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x3ada74"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "value"
+                                        }
+                                    ]
+                                },
+                                "prefix": true
+                            },
+                            "right": {
+                                "type": "BinaryExpression",
+                                "operator": "!=",
+                                "left": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0xfd4540"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "value"
+                                        }
+                                    ]
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": "[object Object]",
+                                    "raw": "'[object Object]'"
+                                }
+                            }
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "UnaryExpression",
+                                        "operator": "!",
+                                        "argument": {
+                                            "type": "ArrayExpression",
+                                            "elements": []
+                                        },
+                                        "prefix": true
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": "===",
+                            "left": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "Object"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "getPrototypeOf",
+                                        "raw": "'getPrototypeOf'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "value"
+                                    }
+                                ]
+                            },
+                            "right": {
+                                "type": "Literal",
+                                "value": null,
+                                "raw": "null"
+                            }
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "UnaryExpression",
+                                        "operator": "!",
+                                        "argument": {
+                                            "type": "UnaryExpression",
+                                            "operator": "!",
+                                            "argument": {
+                                                "type": "ArrayExpression",
+                                                "elements": []
+                                            },
+                                            "prefix": true
+                                        },
+                                        "prefix": true
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "proto"
+                                },
+                                "init": {
+                                    "type": "Identifier",
+                                    "name": "value"
+                                }
+                            }
+                        ],
+                        "kind": "let"
+                    },
+                    {
+                        "type": "WhileStatement",
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": "!==",
+                            "left": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "Object"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "getPrototypeOf",
+                                        "raw": "'getPrototypeOf'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "proto"
+                                    }
+                                ]
+                            },
+                            "right": {
+                                "type": "Literal",
+                                "value": null,
+                                "raw": "null"
+                            }
+                        },
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "AssignmentExpression",
+                                        "operator": "=",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "proto"
+                                        },
+                                        "right": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "Object"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "getPrototypeOf",
+                                                    "raw": "'getPrototypeOf'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "proto"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "BinaryExpression",
+                            "operator": "===",
+                            "left": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "Object"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "getPrototypeOf",
+                                        "raw": "'getPrototypeOf'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "value"
+                                    }
+                                ]
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "proto"
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

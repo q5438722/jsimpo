@@ -1,0 +1,48 @@
+(function (_0x4ddb4b, _0x3214da) {
+    const _0xab1e3a = _0x193e, _0x5a35c3 = _0x4ddb4b();
+    while (!![]) {
+        try {
+            const _0x440948 = parseInt(_0xab1e3a(0xac)) / 0x1 + parseInt(_0xab1e3a(0xad)) / 0x2 * (-parseInt(_0xab1e3a(0xae)) / 0x3) + -parseInt(_0xab1e3a(0xaf)) / 0x4 * (parseInt(_0xab1e3a(0xb0)) / 0x5) + parseInt(_0xab1e3a(0xb1)) / 0x6 * (parseInt(_0xab1e3a(0xb2)) / 0x7) + parseInt(_0xab1e3a(0xb3)) / 0x8 + -parseInt(_0xab1e3a(0xb4)) / 0x9 * (-parseInt(_0xab1e3a(0xb5)) / 0xa) + -parseInt(_0xab1e3a(0xb6)) / 0xb;
+            if (_0x440948 === _0x3214da)
+                break;
+            else
+                _0x5a35c3['push'](_0x5a35c3['shift']());
+        } catch (_0x519065) {
+            _0x5a35c3['push'](_0x5a35c3['shift']());
+        }
+    }
+}(_0x1674, 0x37120));
+import _0x3d1d93 from './slice.js';
+function initial(_0x4de8b1) {
+    const _0x45aca6 = _0x193e, _0x50677c = _0x4de8b1 == null ? 0x0 : _0x4de8b1[_0x45aca6(0xb7)];
+    return _0x50677c ? _0x3d1d93(_0x4de8b1, 0x0, -0x1) : [];
+}
+function _0x193e(_0x8f2b0d, _0x37c1c3) {
+    const _0x1674c4 = _0x1674();
+    return _0x193e = function (_0x193ef2, _0x611369) {
+        _0x193ef2 = _0x193ef2 - 0xac;
+        let _0x56ab97 = _0x1674c4[_0x193ef2];
+        return _0x56ab97;
+    }, _0x193e(_0x8f2b0d, _0x37c1c3);
+}
+function _0x1674() {
+    const _0x4a36ed = [
+        'length',
+        '53832cPTKTS',
+        '1360dFRxar',
+        '60cuDawB',
+        '156EhaXMu',
+        '26155uGaWSj',
+        '6LyjYfk',
+        '2535155pjbpfE',
+        '909376BnzdfO',
+        '72LkYYLH',
+        '258250vKDBBt',
+        '3224012yzRcmQ'
+    ];
+    _0x1674 = function () {
+        return _0x4a36ed;
+    };
+    return _0x1674();
+}
+export default initial;

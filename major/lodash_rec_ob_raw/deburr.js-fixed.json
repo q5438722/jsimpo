@@ -1,0 +1,266 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reLatin"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": {},
+                        "raw": "/[\\xc0-\\xd6\\xd8-\\xf6\\xf8-\\xff\\u0100-\\u017f]/g",
+                        "regex": {
+                            "pattern": "[\\xc0-\\xd6\\xd8-\\xf6\\xf8-\\xff\\u0100-\\u017f]",
+                            "flags": "g"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "rsComboMarksRange"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "\\u0300-\\u036f",
+                        "raw": "'\\u0300-\\u036f'"
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reComboHalfMarksRange"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "\\ufe20-\\ufe2f",
+                        "raw": "'\\ufe20-\\ufe2f'"
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "rsComboSymbolsRange"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "\\u20d0-\\u20ff",
+                        "raw": "'\\u20d0-\\u20ff'"
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "rsComboMarksExtendedRange"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "\\u1ab0-\\u1aff",
+                        "raw": "'\\u1ab0-\\u1aff'"
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "rsComboMarksSupplementRange"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "\\u1dc0-\\u1dff",
+                        "raw": "'\\u1dc0-\\u1dff'"
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "rsComboRange"
+                    },
+                    "init": {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "left": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                                "type": "BinaryExpression",
+                                "operator": "+",
+                                "left": {
+                                    "type": "BinaryExpression",
+                                    "operator": "+",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "rsComboMarksRange"
+                                    },
+                                    "right": {
+                                        "type": "Identifier",
+                                        "name": "reComboHalfMarksRange"
+                                    }
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "rsComboSymbolsRange"
+                                }
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "rsComboMarksExtendedRange"
+                            }
+                        },
+                        "right": {
+                            "type": "Identifier",
+                            "name": "rsComboMarksSupplementRange"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "rsCombo"
+                    },
+                    "init": {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "left": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                                "type": "Literal",
+                                "value": "[",
+                                "raw": "'['"
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "rsComboRange"
+                            }
+                        },
+                        "right": {
+                            "type": "Literal",
+                            "value": "]",
+                            "raw": "']'"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reComboMark"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "RegExp"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Identifier",
+                                "name": "rsCombo"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": "g",
+                                "raw": "'g'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "deburr"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x204372"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "LogicalExpression",
+                            "operator": "&&",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "_0x204372"
+                            },
+                            "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "_0x204372"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "replace",
+                                                "raw": "'replace'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "reLatin"
+                                            },
+                                            {
+                                                "type": "Identifier",
+                                                "name": "_0x2501b7"
+                                            }
+                                        ]
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "replace",
+                                        "raw": "'replace'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "reComboMark"
+                                    },
+                                    {
+                                        "type": "Literal",
+                                        "value": "",
+                                        "raw": "''"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

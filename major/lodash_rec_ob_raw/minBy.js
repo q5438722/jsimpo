@@ -1,0 +1,13 @@
+import _0x2f569b from './isSymbol.js';
+function minBy(_0x59d937, _0x42a5e5) {
+    let _0x51a8e4;
+    if (_0x59d937 == null)
+        return _0x51a8e4;
+    let _0x2ea410;
+    for (const _0x4e078f of _0x59d937) {
+        const _0x1b170e = _0x42a5e5(_0x4e078f);
+        _0x1b170e != null && (_0x2ea410 === undefined ? _0x1b170e === _0x1b170e && !_0x2f569b(_0x1b170e) : _0x1b170e < _0x2ea410) && (_0x2ea410 = _0x1b170e, _0x51a8e4 = _0x4e078f);
+    }
+    return _0x51a8e4;
+}
+export default minBy;
