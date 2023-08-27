@@ -39,7 +39,10 @@ Other:
 We use Jaccard similarity over the identifiers of programs to see the improvement of JSNice. 
 We find that JSNice has a hard time recovering the identifiers of JS programs only obfuscated by name replacement (1.6% improvement), indicating that the downstream impact over JSNice is limited due to JSNice itself.
 
+Major Revision:
 
+`major/lodash_jsjiami` and `major/lodash_ob` corresponds to the obfuscated programs (by jsjiami and javascript-obfuscator).
+`major/lodash_rec_jsjiami` and `major/lodash_rec_ob` corresponds to their deobfuscated programs.
 
 
 
