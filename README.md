@@ -34,3 +34,12 @@ dicrectory `test` contains the experiments results over `BeautifyJS`
 
 dicrectory `esoteric` contains the experiments results over `esoteric` and `fkJS`
 
+Other:
+`jsdata/improve_jiami.csv` are the experimental results over JSNice.
+We use Jaccard similarity over the identifiers of programs to see the improvement of JSNice. 
+We find that JSNice has a hard time recovering the identifiers of JS programs only obfuscated by name replacement (1.6% improvement), indicating that the downstream impact over JSNice is limited due to JSNice itself.
+
+
+
+
+
