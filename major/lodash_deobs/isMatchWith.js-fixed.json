@@ -1,0 +1,115 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "isMatchWith"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "object"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "source"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "customizer"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "customizer"
+                            },
+                            "right": {
+                                "type": "ConditionalExpression",
+                                "test": {
+                                    "type": "BinaryExpression",
+                                    "operator": "===",
+                                    "left": {
+                                        "type": "UnaryExpression",
+                                        "operator": "typeof",
+                                        "argument": {
+                                            "type": "Identifier",
+                                            "name": "customizer"
+                                        },
+                                        "prefix": true
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": "function",
+                                        "raw": "'function'"
+                                    }
+                                },
+                                "consequent": {
+                                    "type": "Identifier",
+                                    "name": "customizer"
+                                },
+                                "alternate": {
+                                    "type": "Identifier",
+                                    "name": "undefined"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "_0x4334d4"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "object"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "source"
+                                },
+                                {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x111c3d"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "source"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "customizer"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

@@ -1,0 +1,245 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "pad"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "string"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "length"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "chars"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "strLength"
+                                },
+                                "init": {
+                                    "type": "ConditionalExpression",
+                                    "test": {
+                                        "type": "Identifier",
+                                        "name": "length"
+                                    },
+                                    "consequent": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "_0x2d5d57"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "string"
+                                            }
+                                        ]
+                                    },
+                                    "alternate": {
+                                        "type": "Literal",
+                                        "value": 0,
+                                        "raw": "0x0"
+                                    }
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "LogicalExpression",
+                            "operator": "||",
+                            "left": {
+                                "type": "UnaryExpression",
+                                "operator": "!",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "length"
+                                },
+                                "prefix": true
+                            },
+                            "right": {
+                                "type": "BinaryExpression",
+                                "operator": ">=",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "strLength"
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "length"
+                                }
+                            }
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "LogicalExpression",
+                                        "operator": "||",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "string"
+                                        },
+                                        "right": {
+                                            "type": "Literal",
+                                            "value": "",
+                                            "raw": "''"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "mid"
+                                },
+                                "init": {
+                                    "type": "BinaryExpression",
+                                    "operator": "/",
+                                    "left": {
+                                        "type": "BinaryExpression",
+                                        "operator": "-",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "length"
+                                        },
+                                        "right": {
+                                            "type": "Identifier",
+                                            "name": "strLength"
+                                        }
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": 2,
+                                        "raw": "0x2"
+                                    }
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                                "type": "BinaryExpression",
+                                "operator": "+",
+                                "left": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x2da929"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "Math"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "floor",
+                                                    "raw": "'floor'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "Identifier",
+                                                    "name": "mid"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Identifier",
+                                            "name": "chars"
+                                        }
+                                    ]
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "string"
+                                }
+                            },
+                            "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "_0x2da929"
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "Math"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "ceil",
+                                                "raw": "'ceil'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "mid"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Identifier",
+                                        "name": "chars"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

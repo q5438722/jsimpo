@@ -1,0 +1,1 @@
+const capitalize=string=>_0x42ec6e(_0xf1ffc1(string)['toLowerCase']());

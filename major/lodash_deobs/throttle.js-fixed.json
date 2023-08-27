@@ -1,0 +1,339 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "throttle"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "func"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "wait"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "options"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "leading"
+                                },
+                                "init": {
+                                    "type": "UnaryExpression",
+                                    "operator": "!",
+                                    "argument": {
+                                        "type": "UnaryExpression",
+                                        "operator": "!",
+                                        "argument": {
+                                            "type": "ArrayExpression",
+                                            "elements": []
+                                        },
+                                        "prefix": true
+                                    },
+                                    "prefix": true
+                                }
+                            }
+                        ],
+                        "kind": "let"
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "trailing"
+                                },
+                                "init": {
+                                    "type": "UnaryExpression",
+                                    "operator": "!",
+                                    "argument": {
+                                        "type": "UnaryExpression",
+                                        "operator": "!",
+                                        "argument": {
+                                            "type": "ArrayExpression",
+                                            "elements": []
+                                        },
+                                        "prefix": true
+                                    },
+                                    "prefix": true
+                                }
+                            }
+                        ],
+                        "kind": "let"
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": "!==",
+                            "left": {
+                                "type": "UnaryExpression",
+                                "operator": "typeof",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "func"
+                                },
+                                "prefix": true
+                            },
+                            "right": {
+                                "type": "Literal",
+                                "value": "function",
+                                "raw": "'function'"
+                            }
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ThrowStatement",
+                                    "argument": {
+                                        "type": "NewExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "TypeError"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": "Expected a function",
+                                                "raw": "'Expected a function'"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "_0x34b7b9"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "options"
+                                }
+                            ]
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "AssignmentExpression",
+                                        "operator": "=",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "leading"
+                                        },
+                                        "right": {
+                                            "type": "ConditionalExpression",
+                                            "test": {
+                                                "type": "BinaryExpression",
+                                                "operator": "in",
+                                                "left": {
+                                                    "type": "Literal",
+                                                    "value": "leading",
+                                                    "raw": "'leading'"
+                                                },
+                                                "right": {
+                                                    "type": "Identifier",
+                                                    "name": "options"
+                                                }
+                                            },
+                                            "consequent": {
+                                                "type": "UnaryExpression",
+                                                "operator": "!",
+                                                "argument": {
+                                                    "type": "UnaryExpression",
+                                                    "operator": "!",
+                                                    "argument": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "options"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "leading",
+                                                            "raw": "'leading'"
+                                                        }
+                                                    },
+                                                    "prefix": true
+                                                },
+                                                "prefix": true
+                                            },
+                                            "alternate": {
+                                                "type": "Identifier",
+                                                "name": "leading"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "AssignmentExpression",
+                                        "operator": "=",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "trailing"
+                                        },
+                                        "right": {
+                                            "type": "ConditionalExpression",
+                                            "test": {
+                                                "type": "BinaryExpression",
+                                                "operator": "in",
+                                                "left": {
+                                                    "type": "Literal",
+                                                    "value": "trailing",
+                                                    "raw": "'trailing'"
+                                                },
+                                                "right": {
+                                                    "type": "Identifier",
+                                                    "name": "options"
+                                                }
+                                            },
+                                            "consequent": {
+                                                "type": "UnaryExpression",
+                                                "operator": "!",
+                                                "argument": {
+                                                    "type": "UnaryExpression",
+                                                    "operator": "!",
+                                                    "argument": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "options"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "trailing",
+                                                            "raw": "'trailing'"
+                                                        }
+                                                    },
+                                                    "prefix": true
+                                                },
+                                                "prefix": true
+                                            },
+                                            "alternate": {
+                                                "type": "Identifier",
+                                                "name": "trailing"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "_0x305a2d"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "func"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "wait"
+                                },
+                                {
+                                    "type": "ObjectExpression",
+                                    "properties": [
+                                        {
+                                            "type": "Property",
+                                            "key": {
+                                                "type": "Literal",
+                                                "value": "leading",
+                                                "raw": "'leading'"
+                                            },
+                                            "computed": false,
+                                            "value": {
+                                                "type": "Identifier",
+                                                "name": "leading"
+                                            },
+                                            "kind": "init",
+                                            "method": false,
+                                            "shorthand": false
+                                        },
+                                        {
+                                            "type": "Property",
+                                            "key": {
+                                                "type": "Literal",
+                                                "value": "trailing",
+                                                "raw": "'trailing'"
+                                            },
+                                            "computed": false,
+                                            "value": {
+                                                "type": "Identifier",
+                                                "name": "trailing"
+                                            },
+                                            "kind": "init",
+                                            "method": false,
+                                            "shorthand": false
+                                        },
+                                        {
+                                            "type": "Property",
+                                            "key": {
+                                                "type": "Literal",
+                                                "value": "maxWait",
+                                                "raw": "'maxWait'"
+                                            },
+                                            "computed": false,
+                                            "value": {
+                                                "type": "Identifier",
+                                                "name": "wait"
+                                            },
+                                            "kind": "init",
+                                            "method": false,
+                                            "shorthand": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

@@ -1,0 +1,607 @@
+
+> lodash@5.0.0 test
+> mocha -r esm test/*.test.js
+
+
+
+  "Strings" category methods
+    ✓ `_.camelCase` should return an empty string for empty values
+    ✓ `_.capitalize` should return an empty string for empty values
+    ✓ `_.escape` should return an empty string for empty values
+    ✓ `_.kebabCase` should return an empty string for empty values
+    ✓ `_.lowerCase` should return an empty string for empty values
+    ✓ `_.lowerFirst` should return an empty string for empty values
+    ✓ `_.pad` should return an empty string for empty values
+    ✓ `_.padEnd` should return an empty string for empty values
+    ✓ `_.padStart` should return an empty string for empty values
+    ✓ `_.repeat` should return an empty string for empty values
+    ✓ `_.snakeCase` should return an empty string for empty values
+    ✓ `_.trim` should return an empty string for empty values
+    ✓ `_.trimEnd` should return an empty string for empty values
+    ✓ `_.trimStart` should return an empty string for empty values
+    ✓ `_.truncate` should return an empty string for empty values
+    ✓ `_.unescape` should return an empty string for empty values
+    ✓ `_.upperCase` should return an empty string for empty values
+    ✓ `_.upperFirst` should return an empty string for empty values
+
+  add
+    ✓ should add two numbers
+    ✓ should not coerce arguments to numbers
+
+  after
+    ✓ should create a function that invokes `func` after `n` calls
+    ✓ should coerce `n` values of `NaN` to `0`
+    ✓ should use `this` binding of function
+
+  at
+    ✓ should return the elements corresponding to the specified keys
+    ✓ should return `undefined` for nonexistent keys
+    ✓ should work with non-index keys on array values
+    ✓ should return an empty array when no keys are given
+    ✓ should accept multiple key arguments
+    ✓ should work with a falsey `object` when keys are given
+    ✓ should work with an `arguments` object for `object`
+    ✓ should work with `arguments` object as secondary arguments
+    ✓ should work with an object for `object`
+    ✓ should pluck inherited property values
+    ✓ should work in a lazy sequence
+    ✓ should support shortcut fusion
+    ✓ work with an object for `object` when chaining
+
+  attempt
+    ✓ should return the result of `func`
+    ✓ should provide additional arguments to `func`
+    ✓ should return the caught error
+    ✓ should coerce errors to error objects
+    ✓ should preserve custom errors
+    ✓ should work with an error object from another realm
+    ✓ should return an unwrapped value when implicitly chaining
+    ✓ should return a wrapped value when explicitly chaining
+
+  camelCase
+    ✓ should work with numbers
+    ✓ should handle acronyms
+
+  capitalize
+    ✓ should capitalize the first character of a string
+
+  case methods
+    ✓ `_.camelCase` should convert `string` to camel case
+    ✓ `_.camelCase` should handle double-converting strings
+    ✓ `_.camelCase` should remove contraction apostrophes
+    ✓ `_.camelCase` should remove Latin mathematical operators
+    ✓ `_.camelCase` should coerce `string` to a string
+    ✓ `_.kebabCase` should convert `string` to kebab case
+    ✓ `_.kebabCase` should handle double-converting strings
+    ✓ `_.kebabCase` should remove contraction apostrophes
+    ✓ `_.kebabCase` should remove Latin mathematical operators
+    ✓ `_.kebabCase` should coerce `string` to a string
+    ✓ `_.lowerCase` should convert `string` to lower case
+    ✓ `_.lowerCase` should handle double-converting strings
+    ✓ `_.lowerCase` should remove contraction apostrophes
+    ✓ `_.lowerCase` should remove Latin mathematical operators
+    ✓ `_.lowerCase` should coerce `string` to a string
+    ✓ `_.snakeCase` should convert `string` to snake case
+    ✓ `_.snakeCase` should handle double-converting strings
+    ✓ `_.snakeCase` should remove contraction apostrophes
+    ✓ `_.snakeCase` should remove Latin mathematical operators
+    ✓ `_.snakeCase` should coerce `string` to a string
+    ✓ `_.startCase` should convert `string` to start case
+    ✓ `_.startCase` should handle double-converting strings
+    ✓ `_.startCase` should remove contraction apostrophes
+    ✓ `_.startCase` should remove Latin mathematical operators
+    ✓ `_.startCase` should coerce `string` to a string
+    ✓ `_.upperCase` should convert `string` to upper case
+    ✓ `_.upperCase` should handle double-converting strings
+    ✓ `_.upperCase` should remove contraction apostrophes
+    ✓ `_.upperCase` should remove Latin mathematical operators
+    ✓ `_.upperCase` should coerce `string` to a string
+    ✓ should get the original value after cycling through all case methods
+
+  castArray
+    ✓ should wrap non-array items in an array
+    ✓ should return array values by reference
+    ✓ should return an empty array when no arguments are given
+
+  chunk
+    ✓ should return chunked arrays
+    ✓ should return the last chunk as remaining elements
+    ✓ should treat falsey `size` values, except `undefined`, as `0`
+    ✓ should ensure the minimum `size` is `0`
+    ✓ should coerce `size` to an integer
+
+  create
+    ✓ should create an object that inherits from the given `prototype` object
+    ✓ should assign `properties` to the created object
+    ✓ should assign own properties
+    ✓ should assign properties that shadow those of `prototype`
+    ✓ should accept a falsey `prototype`
+    ✓ should accept a primitive `prototype`
+    ✓ should work as an iteratee for methods like `_.map`
+
+  debounce
+    ✓ should debounce a function (258ms)
+    ✓ subsequent debounced calls return the last `func` result (130ms)
+    ✓ should not immediately call `func` when `wait` is `0`
+    ✓ should apply default options (66ms)
+    ✓ should support a `leading` option (65ms)
+    ✓ subsequent leading debounced calls return the last `func` result (65ms)
+    ✓ should support a `trailing` option (66ms)
+    ✓ should support a `maxWait` option (257ms)
+    ✓ should support `maxWait` in a tight loop (1001ms)
+    ✓ should queue a trailing call for subsequent debounced calls after `maxWait` (500ms)
+    ✓ should cancel `maxDelayed` when `delayed` is invoked (194ms)
+    ✓ should invoke the trailing call with the correct arguments and `this` binding (128ms)
+
+  deburr
+    ✓ should convert Latin Unicode letters to basic Latin
+    ✓ should not deburr Latin mathematical operators
+    ✓ should deburr combining diacritical marks
+
+  defaultTo
+    ✓ should return a default value if `value` is `NaN` or nullish
+
+  defaults
+    ✓ should assign source properties if missing on `object`
+    ✓ should accept multiple sources
+    ✓ should not overwrite `null` values
+    ✓ should overwrite `undefined` values
+    ✓ should assign `undefined` values
+    ✓ should assign properties that shadow those on `Object.prototype`
+
+  defer
+    ✓ should defer `func` execution
+    ✓ should provide additional arguments to `func`
+    ✓ should be cancelable
+
+  differenceWith
+    ✓ should work with a `comparator`
+    ✓ should preserve the sign of `0`
+
+  divide
+    ✓ should divide two numbers
+    ✓ should coerce arguments to numbers
+
+  drop
+    ✓ should drop the first two elements
+    ✓ should treat falsey `n` values, except `undefined`, as `0`
+    ✓ should return all elements when `n` < `1`
+    ✓ should return an empty array when `n` >= `length`
+    ✓ should coerce `n` to an integer
+    ✓ should work in a lazy sequence
+
+  dropRight
+    ✓ should drop the last two elements
+    ✓ should treat falsey `n` values, except `undefined`, as `0`
+    ✓ should return all elements when `n` < `1`
+    ✓ should return an empty array when `n` >= `length`
+    ✓ should coerce `n` to an integer
+    ✓ should work in a lazy sequence
+
+  endsWith
+    ✓ should return `true` if a string ends with `target`
+    ✓ should return `false` if a string does not end with `target`
+    ✓ should work with a `position`
+    ✓ should work with `position` >= `length`
+    ✓ should treat falsey `position` values, except `undefined`, as `0`
+    ✓ should treat a negative `position` as `0`
+    ✓ should coerce `position` to an integer
+
+  eq
+    ✓ should perform a `SameValueZero` comparison of two values
+
+  escape
+    ✓ should escape values
+    ✓ should handle strings with nothing to escape
+    ✓ should escape the same characters unescaped by `_.unescape`
+    ✓ should not escape the "`" character
+    ✓ should not escape the "/" character
+
+  escapeRegExp
+    ✓ should escape values
+    ✓ should handle strings with nothing to escape
+    ✓ should return an empty string for empty values
+
+  filter
+    ✓ should return elements `predicate` returns truthy for
+
+  findLast
+    ✓ should work with an `arguments` object and a positive `fromIndex`
+    ✓ should work with an `arguments` object and a `fromIndex` >= `length`
+    ✓ should work with an `arguments` object and treat falsey `fromIndex` values correctly
+    ✓ should work with an `arguments` object and coerce `fromIndex` to an integer
+    ✓ should work with an `arguments` object and a negative `fromIndex`
+    ✓ should work with an `arguments` object and a negative `fromIndex` <= `-length`
+    ✓ should work with an array and a positive `fromIndex`
+    ✓ should work with an array and a `fromIndex` >= `length`
+    ✓ should work with an array and treat falsey `fromIndex` values correctly
+    ✓ should work with an array and coerce `fromIndex` to an integer
+    ✓ should work with an array and a negative `fromIndex`
+    ✓ should work with an array and a negative `fromIndex` <= `-length`
+
+  findLastIndex and lastIndexOf
+    ✓ `_.findLastIndex` should return the index of the last matched value
+    ✓ `_.findLastIndex` should work with a positive `fromIndex`
+    ✓ `_.findLastIndex` should work with a `fromIndex` >= `length`
+    ✓ `_.findLastIndex` should work with a negative `fromIndex`
+    ✓ `_.findLastIndex` should work with a negative `fromIndex` <= `-length`
+    ✓ `_.findLastIndex` should treat falsey `fromIndex` values correctly
+    ✓ `_.findLastIndex` should coerce `fromIndex` to an integer
+    ✓ `_.lastIndexOf` should return the index of the last matched value
+    ✓ `_.lastIndexOf` should work with a positive `fromIndex`
+    ✓ `_.lastIndexOf` should work with a `fromIndex` >= `length`
+    ✓ `_.lastIndexOf` should work with a negative `fromIndex`
+    ✓ `_.lastIndexOf` should work with a negative `fromIndex` <= `-length`
+    ✓ `_.lastIndexOf` should treat falsey `fromIndex` values correctly
+    ✓ `_.lastIndexOf` should coerce `fromIndex` to an integer
+
+  flip
+    ✓ should flip arguments provided to `func`
+
+  flow methods
+    ✓ `_.flow` should supply each function with the return value of the previous
+    ✓ `_.flow` should return a new function
+    ✓ `_.flow` should work with a curried function and `_.head`
+    ✓ `_.flow` should work with curried functions with placeholders
+    ✓ `_.flowRight` should supply each function with the return value of the previous
+    ✓ `_.flowRight` should return a new function
+    ✓ `_.flowRight` should work with a curried function and `_.head`
+    ✓ `_.flowRight` should work with curried functions with placeholders
+
+  forEach
+    ✓ should be aliased
+
+  forEachRight
+    ✓ should be aliased
+
+  functions
+    ✓ should return the function names of an object
+    ✓ should not include inherited functions
+
+  gt
+    ✓ should return `true` if `value` > `other`
+    ✓ should return `false` if `value` is <= `other`
+
+  gte
+    ✓ should return `true` if `value` >= `other`
+    ✓ should return `false` if `value` is less than `other`
+
+  indexOf
+    ✓ `_.indexOf` should return the index of the first matched value
+    ✓ `_.indexOf` should work with a positive `fromIndex`
+    ✓ `_.indexOf` should work with a `fromIndex` >= `length`
+    ✓ `_.indexOf` should work with a negative `fromIndex`
+    ✓ `_.indexOf` should work with a negative `fromIndex` <= `-length`
+    ✓ `_.indexOf` should treat falsey `fromIndex` values as `0`
+    ✓ `_.indexOf` should coerce `fromIndex` to an integer
+
+  intersectionWith
+    ✓ should work with a `comparator`
+    ✓ should preserve the sign of `0`
+
+  invert
+    ✓ should invert an object
+    ✓ should work with values that shadow keys on `Object.prototype`
+    ✓ should work with an object that has a `length` property
+    ✓ should return a wrapped value when chaining
+
+  isArguments
+    ✓ should return `true` for `arguments` objects
+    ✓ should return `false` for non `arguments` objects
+    ✓ should work with an `arguments` object from another realm
+
+  isArrayBuffer
+    ✓ should return `true` for array buffers
+    ✓ should return `false` for non array buffers
+    ✓ should work with array buffers from another realm
+
+  isArrayLike
+    ✓ should return `true` for array-like values
+    ✓ should return `false` for non-arrays
+    ✓ should work with an array from another realm
+
+  isBoolean
+    ✓ should return `true` for booleans
+    ✓ should return `false` for non-booleans
+    ✓ should work with a boolean from another realm
+
+  isBuffer
+    ✓ should return `true` for buffers
+    ✓ should return `false` for non-buffers
+    ✓ should return `false` if `Buffer` is not defined
+
+  isDate
+    ✓ should return `true` for dates
+    ✓ should return `false` for non-dates
+    ✓ should work with a date object from another realm
+
+  isElement
+    ✓ should return `true` for elements
+    ✓ should return `true` for non-plain objects
+    ✓ should return `false` for non DOM elements
+    ✓ should return `false` for plain objects
+    ✓ should work with a DOM element from another realm
+
+  isError
+    ✓ should return `true` for error objects
+    ✓ should return `true` for subclassed values
+    ✓ should return `false` for non error objects
+    ✓ should return `false` for plain objects
+    ✓ should work with an error object from another realm
+
+  isIndex
+    ✓ should return `true` for indexes
+    ✓ should return `false` for non-indexes
+
+  isLength
+    ✓ should return `true` for lengths
+    ✓ should return `false` for non-lengths
+
+  isMap
+    ✓ should return `true` for maps
+    ✓ should return `false` for non-maps
+    ✓ should work for objects with a non-function `constructor` (test in IE 11)
+    ✓ should work with maps from another realm
+
+  isNil
+    ✓ should return `true` for nullish values
+    ✓ should return `false` for non-nullish values
+    ✓ should work with nils from another realm
+
+  isNull
+    ✓ should return `true` for `null` values
+    ✓ should return `false` for non `null` values
+    ✓ should work with nulls from another realm
+
+  isNumber
+    ✓ should return `true` for numbers
+    ✓ should return `false` for non-numbers
+    ✓ should work with numbers from another realm
+
+  isObject
+    ✓ should return `true` for objects
+    ✓ should return `false` for non-objects
+    ✓ should work with objects from another realm
+
+  isObjectLike
+    ✓ should return `true` for objects
+    ✓ should return `false` for non-objects
+    ✓ should work with objects from another realm
+
+  isRegExp
+    ✓ should return `true` for regexes
+    ✓ should return `false` for non-regexes
+    ✓ should work with regexes from another realm
+
+  isSet
+    ✓ should return `true` for sets
+    ✓ should return `false` for non-sets
+    ✓ should work for objects with a non-function `constructor` (test in IE 11)
+    ✓ should work with weak sets from another realm
+
+  isString
+    ✓ should return `true` for strings
+    ✓ should return `false` for non-strings
+    ✓ should work with strings from another realm
+
+  isSymbol
+    ✓ should return `true` for symbols
+    ✓ should return `false` for non-symbols
+    ✓ should work with symbols from another realm
+
+  isUndefined
+    ✓ should return `true` for `undefined` values
+    ✓ should return `false` for non `undefined` values
+    ✓ should work with `undefined` from another realm
+
+  isWeakMap
+    ✓ should return `true` for weak maps
+    ✓ should return `false` for non weak maps
+    ✓ should work for objects with a non-function `constructor` (test in IE 11)
+    ✓ should work with weak maps from another realm
+
+  isWeakSet
+    ✓ should return `true` for weak sets
+    ✓ should return `false` for non weak sets
+    ✓ should work with weak sets from another realm
+
+  lowerCase
+    ✓ should lowercase as space-separated words
+
+  lowerFirst
+    ✓ should lowercase only the first character
+
+  lt
+    ✓ should return `true` if `value` is less than `other`
+    ✓ should return `false` if `value` >= `other`
+
+  lte
+    ✓ should return `true` if `value` is <= `other`
+    ✓ should return `false` if `value` > `other`
+
+  mean
+    ✓ should return the mean of an array of numbers
+    ✓ should return `NaN` when passing empty `array` values
+
+  memoize
+    ✓ should memoize results based on the first argument given
+    ✓ should support a `resolver`
+    ✓ should use `this` binding of function for `resolver`
+    ✓ should throw a TypeError if `resolve` is truthy and not a function
+    ✓ should not error if `resolver` is nullish
+    ✓ should check cache for own properties
+    ✓ should cache the `__proto__` key
+    ✓ should allow `_.memoize.Cache` to be customized
+    ✓ should works with an immutable `_.memoize.Cache` 
+
+  memoizeCapped
+    ✓ should enforce a max cache size of `MAX_MEMOIZE_SIZE`
+
+  merge
+    ✓ should merge `source` into `object`
+    ✓ should merge sources containing circular references
+    ✓ should work with four arguments
+    ✓ should merge onto function `object` values
+    ✓ should merge first source object properties to function
+    ✓ should merge first and second source object properties to function
+    ✓ should not merge onto function values of sources
+    ✓ should merge onto non-plain `object` values
+    - should treat sparse array sources as dense
+    ✓ should merge `arguments` objects
+    ✓ should merge typed arrays
+    ✓ should assign `null` values
+    ✓ should assign non array/buffer/typed-array/plain-object source values directly
+    ✓ should clone buffer source values
+    ✓ should deep clone array/typed-array/plain-object source values
+    ✓ should not augment source objects
+    ✓ should merge plain objects onto non-plain objects
+    ✓ should not overwrite existing values with `undefined` values of object sources
+    ✓ should not overwrite existing values with `undefined` values of array sources
+    ✓ should skip merging when `object` and `source` are the same value
+    ✓ should convert values to arrays when merging arrays of `source`
+    ✓ should convert strings to arrays when merging arrays of `source`
+    ✓ should not error on DOM elements
+
+  multiply
+    ✓ should multiply two numbers
+    ✓ should coerce arguments to numbers
+
+  once
+    ✓ should invoke `func` once
+    ✓ should ignore recursive calls
+    ✓ should not throw more than once
+
+  pickBy
+    ✓ should work with a predicate argument
+    ✓ should not treat keys with dots as deep paths
+
+  property
+    ✓ should create a function that plucks a property value of a given object
+    ✓ should pluck deep property values
+    ✓ should pluck inherited property values
+    ✓ should work with a non-string `path`
+    ✓ should preserve the sign of `0`
+    ✓ should coerce `path` to a string
+    ✓ should pluck a key over a path
+    ✓ should return `undefined` when `object` is nullish
+    ✓ should return `undefined` for deep paths when `object` is nullish
+    ✓ should return `undefined` if parts of `path` are missing
+
+  propertyOf
+    ✓ should create a function that plucks a property value of a given key
+    ✓ should pluck deep property values
+    ✓ should pluck inherited property values
+    ✓ should work with a non-string `path`
+    ✓ should preserve the sign of `0`
+    ✓ should coerce `path` to a string
+    ✓ should pluck a key over a path
+    ✓ should return `undefined` when `object` is nullish
+    ✓ should return `undefined` for deep paths when `object` is nullish
+    ✓ should return `undefined` if parts of `path` are missing
+
+  pullAll
+    ✓ should work with the same value for `array` and `values`
+
+  pullAllBy
+    ✓ should accept an `iteratee`
+    ✓ should provide correct `iteratee` arguments
+
+  pullAllWith
+    ✓ should work with a `comparator`
+
+  reject
+    ✓ should return elements the `predicate` returns falsey for
+
+  replace
+    ✓ should replace the matched pattern
+
+  result
+    ✓ should invoke function values
+    ✓ should invoke default function values
+    ✓ should invoke nested function values
+    ✓ should invoke deep property methods with the correct `this` binding
+
+  size
+    ✓ should return the number of own enumerable string keyed properties of an object
+    ✓ should return the length of an array
+    ✓ should accept a falsey `object`
+    ✓ should work with `arguments` objects
+    ✓ should work with jQuery/MooTools DOM query collections
+    ✓ should work with maps
+    ✓ should work with sets
+    ✓ should not treat objects with negative lengths as array-like
+    ✓ should not treat objects with lengths larger than `MAX_SAFE_INTEGER` as array-like
+    ✓ should not treat objects with non-number lengths as array-like
+
+  sortedUniq
+    ✓ should return unique values of a sorted array
+
+  startCase
+    ✓ should uppercase only the first character of each word
+
+  subtract
+    ✓ should subtract two numbers
+    ✓ should coerce arguments to numbers
+
+  toArray
+    ✓ should convert objects to arrays
+    ✓ should convert iterables to arrays
+    ✓ should convert maps to arrays
+    ✓ should convert strings to arrays
+    ✓ should work in a lazy sequence
+
+  toLength
+    ✓ should return a valid length
+    ✓ should return `value` if a valid length
+    ✓ should convert `-0` to `0`
+
+  toString
+    ✓ should treat nullish values as empty strings
+    ✓ should preserve the sign of `0`
+    ✓ should preserve the sign of `0` in an array
+    ✓ should handle symbols
+    ✓ should handle an array of symbols
+    ✓ should return the `toString` result of the wrapped value
+
+  unionWith
+    ✓ should work with a `comparator`
+    ✓ should output values from the first possible array
+
+  uniqWith
+    ✓ should work with a `comparator`
+    ✓ should preserve the sign of `0`
+
+  uniqueId
+    ✓ should generate unique ids
+    ✓ should return a string value when not providing a `prefix`
+    ✓ should coerce the prefix argument to a string
+
+  upperCase
+    ✓ should uppercase as space-separated words
+
+  upperFirst
+    ✓ should uppercase only the first character
+
+  without
+    ✓ should return the difference of values
+    ✓ should use strict equality to determine the values to reject
+    ✓ should remove all occurrences of each value from an array
+
+  words
+    ✓ should match words containing Latin Unicode letters
+    ✓ should support a `pattern`
+    ✓ should work with compound words
+    ✓ should work with compound words containing diacritical marks
+    ✓ should not treat contractions as separate words
+    ✓ should not treat ordinal numbers as separate words
+    ✓ should not treat mathematical operators as words
+    ✓ should not treat punctuation as words
+    ✓ should prevent ReDoS
+
+  xorWith
+    ✓ should work with a `comparator`
+
+
+  408 passing (3s)
+  1 pending
+

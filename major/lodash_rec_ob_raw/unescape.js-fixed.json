@@ -1,0 +1,280 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "htmlUnescapes"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "&amp;",
+                                    "raw": "'&amp;'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Literal",
+                                    "value": "&",
+                                    "raw": "'&'"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "&lt;",
+                                    "raw": "'&lt;'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Literal",
+                                    "value": "<",
+                                    "raw": "'<'"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "&gt;",
+                                    "raw": "'&gt;'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Literal",
+                                    "value": ">",
+                                    "raw": "'>'"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "&quot;",
+                                    "raw": "'&quot;'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Literal",
+                                    "value": "\"",
+                                    "raw": "'\\x22'"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Literal",
+                                    "value": "&#39;",
+                                    "raw": "'&#39;'"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "Literal",
+                                    "value": "'",
+                                    "raw": "'\\x27'"
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reEscapedHtml"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": {},
+                        "raw": "/&(?:amp|lt|gt|quot|#(0+)?39);/g",
+                        "regex": {
+                            "pattern": "&(?:amp|lt|gt|quot|#(0+)?39);",
+                            "flags": "g"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reHasEscapedHtml"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "RegExp"
+                        },
+                        "arguments": [
+                            {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "reEscapedHtml"
+                                },
+                                "property": {
+                                    "type": "Literal",
+                                    "value": "source",
+                                    "raw": "'source'"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "unescape"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x4a8f92"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "ConditionalExpression",
+                            "test": {
+                                "type": "LogicalExpression",
+                                "operator": "&&",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "_0x4a8f92"
+                                },
+                                "right": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "reHasEscapedHtml"
+                                        },
+                                        "property": {
+                                            "type": "Literal",
+                                            "value": "test",
+                                            "raw": "'test'"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "_0x4a8f92"
+                                        }
+                                    ]
+                                }
+                            },
+                            "consequent": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "_0x4a8f92"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "replace",
+                                        "raw": "'replace'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "reEscapedHtml"
+                                    },
+                                    {
+                                        "type": "ArrowFunctionExpression",
+                                        "id": null,
+                                        "params": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "_0xfe2222"
+                                            }
+                                        ],
+                                        "body": {
+                                            "type": "LogicalExpression",
+                                            "operator": "||",
+                                            "left": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "htmlUnescapes"
+                                                },
+                                                "property": {
+                                                    "type": "Identifier",
+                                                    "name": "_0xfe2222"
+                                                }
+                                            },
+                                            "right": {
+                                                "type": "Literal",
+                                                "value": "'",
+                                                "raw": "'\\x27'"
+                                            }
+                                        },
+                                        "generator": false,
+                                        "expression": true,
+                                        "async": false
+                                    }
+                                ]
+                            },
+                            "alternate": {
+                                "type": "LogicalExpression",
+                                "operator": "||",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "_0x4a8f92"
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": "",
+                                    "raw": "''"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

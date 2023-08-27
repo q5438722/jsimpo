@@ -1,0 +1,273 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "INFINITY"
+                    },
+                    "init": {
+                        "type": "BinaryExpression",
+                        "operator": "/",
+                        "left": {
+                            "type": "Literal",
+                            "value": 1,
+                            "raw": "0x1"
+                        },
+                        "right": {
+                            "type": "Literal",
+                            "value": 0,
+                            "raw": "0x0"
+                        }
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "MAX_INTEGER"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": 1.7976931348623157e+308,
+                        "raw": "0xfffffffffffff800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "toFinite"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0xe709cc"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "UnaryExpression",
+                            "operator": "!",
+                            "argument": {
+                                "type": "Identifier",
+                                "name": "_0xe709cc"
+                            },
+                            "prefix": true
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "ConditionalExpression",
+                                        "test": {
+                                            "type": "BinaryExpression",
+                                            "operator": "===",
+                                            "left": {
+                                                "type": "Identifier",
+                                                "name": "_0xe709cc"
+                                            },
+                                            "right": {
+                                                "type": "Literal",
+                                                "value": 0,
+                                                "raw": "0x0"
+                                            }
+                                        },
+                                        "consequent": {
+                                            "type": "Identifier",
+                                            "name": "_0xe709cc"
+                                        },
+                                        "alternate": {
+                                            "type": "Literal",
+                                            "value": 0,
+                                            "raw": "0x0"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "_0xe709cc"
+                            },
+                            "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "_0x18d342"
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "_0xe709cc"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "LogicalExpression",
+                            "operator": "||",
+                            "left": {
+                                "type": "BinaryExpression",
+                                "operator": "===",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "_0xe709cc"
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "INFINITY"
+                                }
+                            },
+                            "right": {
+                                "type": "BinaryExpression",
+                                "operator": "===",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "_0xe709cc"
+                                },
+                                "right": {
+                                    "type": "UnaryExpression",
+                                    "operator": "-",
+                                    "argument": {
+                                        "type": "Identifier",
+                                        "name": "INFINITY"
+                                    },
+                                    "prefix": true
+                                }
+                            }
+                        },
+                        "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "VariableDeclaration",
+                                    "declarations": [
+                                        {
+                                            "type": "VariableDeclarator",
+                                            "id": {
+                                                "type": "Identifier",
+                                                "name": "_0x3442f2"
+                                            },
+                                            "init": {
+                                                "type": "ConditionalExpression",
+                                                "test": {
+                                                    "type": "BinaryExpression",
+                                                    "operator": "<",
+                                                    "left": {
+                                                        "type": "Identifier",
+                                                        "name": "_0xe709cc"
+                                                    },
+                                                    "right": {
+                                                        "type": "Literal",
+                                                        "value": 0,
+                                                        "raw": "0x0"
+                                                    }
+                                                },
+                                                "consequent": {
+                                                    "type": "UnaryExpression",
+                                                    "operator": "-",
+                                                    "argument": {
+                                                        "type": "Literal",
+                                                        "value": 1,
+                                                        "raw": "0x1"
+                                                    },
+                                                    "prefix": true
+                                                },
+                                                "alternate": {
+                                                    "type": "Literal",
+                                                    "value": 1,
+                                                    "raw": "0x1"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "kind": "const"
+                                },
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "BinaryExpression",
+                                        "operator": "*",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "_0x3442f2"
+                                        },
+                                        "right": {
+                                            "type": "Identifier",
+                                            "name": "MAX_INTEGER"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "ConditionalExpression",
+                            "test": {
+                                "type": "BinaryExpression",
+                                "operator": "===",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "_0xe709cc"
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "_0xe709cc"
+                                }
+                            },
+                            "consequent": {
+                                "type": "Identifier",
+                                "name": "_0xe709cc"
+                            },
+                            "alternate": {
+                                "type": "Literal",
+                                "value": 0,
+                                "raw": "0x0"
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

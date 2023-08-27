@@ -1,0 +1,8 @@
+
+function mapObject(_0x1ac601, _0xb6ce4d) {
+    const _0x353159 = Object['keys'](_0x1ac601), _0x48ecbc = new Array(_0x353159['length']);
+    return _0x353159['forEach']((_0x32aec0, _0x4d3a73) => {
+        _0x48ecbc[_0x4d3a73] = _0xb6ce4d(_0x1ac601[_0x32aec0], _0x32aec0, _0x1ac601);
+    }), _0x48ecbc;
+}
+export default mapObject;

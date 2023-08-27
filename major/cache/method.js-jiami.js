@@ -1,0 +1,1 @@
+import _0x13c59c from'./invoke.js';function method(_0x11619e,_0x1573ea){return _0x434f02=>_0x13c59c(_0x434f02,_0x11619e,_0x1573ea);}export default method;

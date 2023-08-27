@@ -1,0 +1,131 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "flip"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x4f42c3"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "IfStatement",
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": "!==",
+                            "left": {
+                                "type": "UnaryExpression",
+                                "operator": "typeof",
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "_0x4f42c3"
+                                },
+                                "prefix": true
+                            },
+                            "right": {
+                                "type": "Literal",
+                                "value": "function",
+                                "raw": "'function'"
+                            }
+                        },
+                        "consequent": {
+                            "type": "ThrowStatement",
+                            "argument": {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "TypeError"
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Literal",
+                                        "value": "Expected a function",
+                                        "raw": "'Expected a function'"
+                                    }
+                                ]
+                            }
+                        },
+                        "alternate": null
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "FunctionExpression",
+                            "id": null,
+                            "params": [
+                                {
+                                    "type": "RestElement",
+                                    "argument": {
+                                        "type": "Identifier",
+                                        "name": "_0x1f4cc0"
+                                    }
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ReturnStatement",
+                                        "argument": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "_0x4f42c3"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "apply",
+                                                    "raw": "'apply'"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "ThisExpression"
+                                                },
+                                                {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "_0x1f4cc0"
+                                                        },
+                                                        "property": {
+                                                            "type": "Literal",
+                                                            "value": "reverse",
+                                                            "raw": "'reverse'"
+                                                        }
+                                                    },
+                                                    "arguments": []
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

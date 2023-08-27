@@ -1,0 +1,234 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reRegExpChar"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": {},
+                        "raw": "/[\\\\^$.*+?()[\\]{}|]/g",
+                        "regex": {
+                            "pattern": "[\\\\^$.*+?()[\\]{}|]",
+                            "flags": "g"
+                        }
+                    }
+                },
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "reIsNative"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "RegExp"
+                        },
+                        "arguments": [
+                            {
+                                "type": "BinaryExpression",
+                                "operator": "+",
+                                "left": {
+                                    "type": "BinaryExpression",
+                                    "operator": "+",
+                                    "left": {
+                                        "type": "Literal",
+                                        "value": "^",
+                                        "raw": "'^'"
+                                    },
+                                    "right": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "Identifier",
+                                                                        "name": "Function"
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "prototype",
+                                                                        "raw": "'prototype'"
+                                                                    }
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "toString",
+                                                                    "raw": "'toString'"
+                                                                }
+                                                            },
+                                                            "property": {
+                                                                "type": "Literal",
+                                                                "value": "call",
+                                                                "raw": "'call'"
+                                                            }
+                                                        },
+                                                        "arguments": [
+                                                            {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": true,
+                                                                    "object": {
+                                                                        "type": "Identifier",
+                                                                        "name": "Object"
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Literal",
+                                                                        "value": "prototype",
+                                                                        "raw": "'prototype'"
+                                                                    }
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "hasOwnProperty",
+                                                                    "raw": "'hasOwnProperty'"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    "property": {
+                                                        "type": "Literal",
+                                                        "value": "replace",
+                                                        "raw": "'replace'"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "reRegExpChar"
+                                                    },
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "\\$&",
+                                                        "raw": "'\\$&'"
+                                                    }
+                                                ]
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "replace",
+                                                "raw": "'replace'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": {},
+                                                "raw": "/hasOwnProperty|(function).*?(?=\\\\\\()| for .+?(?=\\\\\\])/g",
+                                                "regex": {
+                                                    "pattern": "hasOwnProperty|(function).*?(?=\\\\\\()| for .+?(?=\\\\\\])",
+                                                    "flags": "g"
+                                                }
+                                            },
+                                            {
+                                                "type": "Literal",
+                                                "value": "$1.*?",
+                                                "raw": "'$1.*?'"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": "$",
+                                    "raw": "'$'"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "isNative"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "_0x4ece30"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "LogicalExpression",
+                            "operator": "&&",
+                            "left": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "_0x5b2100"
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "_0x4ece30"
+                                    }
+                                ]
+                            },
+                            "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": true,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "reIsNative"
+                                    },
+                                    "property": {
+                                        "type": "Literal",
+                                        "value": "test",
+                                        "raw": "'test'"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "_0x4ece30"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

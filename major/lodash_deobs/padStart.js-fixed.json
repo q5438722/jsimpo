@@ -1,0 +1,148 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "padStart"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "string"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "length"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "chars"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "strLength"
+                                },
+                                "init": {
+                                    "type": "ConditionalExpression",
+                                    "test": {
+                                        "type": "Identifier",
+                                        "name": "length"
+                                    },
+                                    "consequent": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "_0x1cb79b"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "string"
+                                            }
+                                        ]
+                                    },
+                                    "alternate": {
+                                        "type": "Literal",
+                                        "value": 0,
+                                        "raw": "0x0"
+                                    }
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "ConditionalExpression",
+                            "test": {
+                                "type": "LogicalExpression",
+                                "operator": "&&",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "length"
+                                },
+                                "right": {
+                                    "type": "BinaryExpression",
+                                    "operator": "<",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "strLength"
+                                    },
+                                    "right": {
+                                        "type": "Identifier",
+                                        "name": "length"
+                                    }
+                                }
+                            },
+                            "consequent": {
+                                "type": "BinaryExpression",
+                                "operator": "+",
+                                "left": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "_0x23d6a8"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "BinaryExpression",
+                                            "operator": "-",
+                                            "left": {
+                                                "type": "Identifier",
+                                                "name": "length"
+                                            },
+                                            "right": {
+                                                "type": "Identifier",
+                                                "name": "strLength"
+                                            }
+                                        },
+                                        {
+                                            "type": "Identifier",
+                                            "name": "chars"
+                                        }
+                                    ]
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "string"
+                                }
+                            },
+                            "alternate": {
+                                "type": "LogicalExpression",
+                                "operator": "||",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "string"
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": "",
+                                    "raw": "''"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

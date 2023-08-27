@@ -1,0 +1,111 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "_0x36ea5a"
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./.internal/baseAt.js",
+        "raw": "'./.internal/baseAt.js'"
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "_0x180662"
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./.internal/baseFlatten.js",
+        "raw": "'./.internal/baseFlatten.js'"
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "at"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "object"
+              },
+              {
+                "type": "RestElement",
+                "argument": {
+                  "type": "Identifier",
+                  "name": "paths"
+                }
+              }
+            ],
+            "body": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "_0x36ea5a"
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "object"
+                },
+                {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "_0x180662"
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "paths"
+                    },
+                    {
+                      "type": "Literal",
+                      "value": 1,
+                      "raw": "0x1"
+                    }
+                  ]
+                }
+              ]
+            },
+            "generator": false,
+            "expression": true,
+            "async": false
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "declaration": {
+        "type": "Identifier",
+        "name": "at"
+      }
+    }
+  ],
+  "sourceType": "module"
+}

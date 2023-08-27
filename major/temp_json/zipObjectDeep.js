@@ -1,0 +1,1 @@
+function zipObjectDeep(props,values){return _0x38a7c6(props||[],values||[],_0x5e7e1a);}

@@ -1,0 +1,100 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "forEachRight"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "collection"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "iteratee"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "func"
+                                },
+                                "init": {
+                                    "type": "ConditionalExpression",
+                                    "test": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "Array"
+                                            },
+                                            "property": {
+                                                "type": "Literal",
+                                                "value": "isArray",
+                                                "raw": "'isArray'"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "collection"
+                                            }
+                                        ]
+                                    },
+                                    "consequent": {
+                                        "type": "Identifier",
+                                        "name": "_0x105972"
+                                    },
+                                    "alternate": {
+                                        "type": "Identifier",
+                                        "name": "_0x224926"
+                                    }
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "func"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "collection"
+                                },
+                                {
+                                    "type": "Identifier",
+                                    "name": "iteratee"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

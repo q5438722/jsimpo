@@ -1,0 +1,266 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "EmptyStatement"
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "invokeMap"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "collection"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "path"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "args"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "index"
+                                },
+                                "init": {
+                                    "type": "UnaryExpression",
+                                    "operator": "-",
+                                    "argument": {
+                                        "type": "Literal",
+                                        "value": 1,
+                                        "raw": "0x1"
+                                    },
+                                    "prefix": true
+                                }
+                            }
+                        ],
+                        "kind": "let"
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "isFunc"
+                                },
+                                "init": {
+                                    "type": "BinaryExpression",
+                                    "operator": "===",
+                                    "left": {
+                                        "type": "UnaryExpression",
+                                        "operator": "typeof",
+                                        "argument": {
+                                            "type": "Identifier",
+                                            "name": "path"
+                                        },
+                                        "prefix": true
+                                    },
+                                    "right": {
+                                        "type": "Literal",
+                                        "value": "function",
+                                        "raw": "'function'"
+                                    }
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "result"
+                                },
+                                "init": {
+                                    "type": "ConditionalExpression",
+                                    "test": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "_0x1fb4b8"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Identifier",
+                                                "name": "collection"
+                                            }
+                                        ]
+                                    },
+                                    "consequent": {
+                                        "type": "NewExpression",
+                                        "callee": {
+                                            "type": "Identifier",
+                                            "name": "Array"
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "collection"
+                                                },
+                                                "property": {
+                                                    "type": "Literal",
+                                                    "value": "length",
+                                                    "raw": "'length'"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "alternate": {
+                                        "type": "ArrayExpression",
+                                        "elements": []
+                                    }
+                                }
+                            }
+                        ],
+                        "kind": "const"
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "_0x16322d"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "collection"
+                                },
+                                {
+                                    "type": "ArrowFunctionExpression",
+                                    "id": null,
+                                    "params": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "value"
+                                        }
+                                    ],
+                                    "body": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                            {
+                                                "type": "ExpressionStatement",
+                                                "expression": {
+                                                    "type": "AssignmentExpression",
+                                                    "operator": "=",
+                                                    "left": {
+                                                        "type": "MemberExpression",
+                                                        "computed": true,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "result"
+                                                        },
+                                                        "property": {
+                                                            "type": "UpdateExpression",
+                                                            "operator": "++",
+                                                            "argument": {
+                                                                "type": "Identifier",
+                                                                "name": "index"
+                                                            },
+                                                            "prefix": true
+                                                        }
+                                                    },
+                                                    "right": {
+                                                        "type": "ConditionalExpression",
+                                                        "test": {
+                                                            "type": "Identifier",
+                                                            "name": "isFunc"
+                                                        },
+                                                        "consequent": {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "MemberExpression",
+                                                                "computed": true,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "path"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Literal",
+                                                                    "value": "apply",
+                                                                    "raw": "'apply'"
+                                                                }
+                                                            },
+                                                            "arguments": [
+                                                                {
+                                                                    "type": "Identifier",
+                                                                    "name": "value"
+                                                                },
+                                                                {
+                                                                    "type": "Identifier",
+                                                                    "name": "args"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "alternate": {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "Identifier",
+                                                                "name": "_0x1b4c73"
+                                                            },
+                                                            "arguments": [
+                                                                {
+                                                                    "type": "Identifier",
+                                                                    "name": "value"
+                                                                },
+                                                                {
+                                                                    "type": "Identifier",
+                                                                    "name": "path"
+                                                                },
+                                                                {
+                                                                    "type": "Identifier",
+                                                                    "name": "args"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "generator": false,
+                                    "expression": false,
+                                    "async": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "Identifier",
+                            "name": "result"
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

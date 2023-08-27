@@ -1,0 +1,1 @@
+import _0xf49102 from'./.internal/baseSortedIndexBy.js';function sortedIndexBy(_0x1c348b,_0x2b9371,_0x38baa0){return _0xf49102(_0x1c348b,_0x2b9371,_0x38baa0);}export default sortedIndexBy;
